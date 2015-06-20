@@ -1,0 +1,730 @@
+#HTML
+1
+
+#News
+TimeStamp 1407603839
+NewsData  Can now start fights with kick and punch skills~
+End
+
+#News
+TimeStamp 1407606225
+NewsData  Human form skill enhanced to allow dragons in human form to defend 
+            themselves better~
+End
+
+#News
+TimeStamp 1407609961
+NewsData  removed human form exp penalty~
+End
+
+#News
+TimeStamp 1407612456
+NewsData  city banks have been added so city officials can beef up forces~
+End
+
+#News
+TimeStamp 1407668748
+NewsData  New Lua MSP plugin for MushClient provided by NickGammon~
+End
+
+#News
+TimeStamp 1407835837
+NewsData  Now if quest mobs know your hands are full or your carrying too 
+            much they will place the item on the ground.~
+End
+
+#News
+TimeStamp 1407927882
+NewsData  Happy Hour all day today double experience for fighting, crafting 
+            or triple while grouped~
+End
+
+#News
+TimeStamp 1407975767
+NewsData  cone skill now doesn't need argument if already fighting~
+End
+
+#News
+TimeStamp 1407978804
+NewsData  Fixed a bug where dragons in human form could change back to 
+            dragons in rooms too small for the dragon form~
+End
+
+#News
+TimeStamp 1407988160
+NewsData  paleon.wav forbidden.wav dakar.wav files volume levels adjusted~
+End
+
+#News
+TimeStamp 1408013936
+NewsData  fixed a bug with sugar-cane not actually gathering in bag~
+End
+
+#News
+TimeStamp 1408060122
+NewsData  config command revamped to be more accessible~
+End
+
+#News
+TimeStamp 1408061830
+NewsData  You now get a message and sound when someone posts a new note on 
+            our global boards~
+End
+
+#News
+TimeStamp 1408063008
+NewsData  sound added for announcement on arena events~
+End
+
+#News
+TimeStamp 1408100213
+NewsData  sounds have been added to all magic spells in the game that are 
+            coded, please bug magic spells that don't have sound. I will code 
+            them with sound as I am aware of them~
+End
+
+#News
+TimeStamp 1408148723
+NewsData  New skill for carpenter tradeskill added mill. However testing 
+            required yet before carpenter available for players.~
+End
+
+#News
+TimeStamp 1408149189
+NewsData  Each time news is updated you will now get a announcement~
+End
+
+#News
+TimeStamp 1408156047
+NewsData  fixed paleon prison quest item reward~
+End
+
+#News
+TimeStamp 1408160806
+NewsData  New ID number assigned to all objects, that can be visible when 
+            you config id. This lets you pick specific objects even when they 
+            have the same name. Helpful for tradeskills.~
+End
+
+#News
+TimeStamp 1408163965
+NewsData  New config option autorecast allows you to automatically recast a 
+            spell if it fails.~
+End
+
+#News
+TimeStamp 1408328121
+NewsData  Vault code removed due to not being needed with houses, lairs and 
+            clan store rooms~
+End
+
+#News
+TimeStamp 1408364522
+NewsData  ship sailing code added~
+End
+
+#News
+TimeStamp 1408395690
+NewsData  New area ships installed for ship sailing code~
+End
+
+#News
+TimeStamp 1408407515
+NewsData  new help files aboard, deed, pilot, steer, view, sail, depart and 
+            hull created~
+End
+
+#News
+TimeStamp 1408444357
+NewsData  many ship sailing sounds acquired and added to sound.zip and 
+            Communication.zip~
+End
+
+#News
+TimeStamp 1408531096
+NewsData  Lumber sleds created for carpenter tradeskill~
+End
+
+#News
+TimeStamp 1408619209
+NewsData  paleon and dakar sewer now will only attack with basher thieves 
+            who are appropriate for your level.~
+End
+
+#News
+TimeStamp 1408892801
+NewsData  Carpenter tradeskill now available please report all bugs~
+End
+
+#News
+TimeStamp 1408896485
+NewsData  New sound files added for fell skill and mill skill of carpenters~
+End
+
+#News
+TimeStamp 1408900191
+NewsData  Happy Hour All Day Sunday!~
+End
+
+#News
+TimeStamp 1408934262
+NewsData  Remove watch code, didn't use it, so got rid of it.~
+End
+
+#News
+TimeStamp 1409051114
+NewsData  ran cppcheck on game code and fixed some uninitialized errors.~
+End
+
+#News
+TimeStamp 1409265696
+NewsData  Happy Hour on all day!~
+End
+
+#News
+TimeStamp 1409310305
+NewsData  New mail sound should someone post a note directly to you.~
+End
+
+#News
+TimeStamp 1409577459
+NewsData  New skill added disguise for monk, thief and bard~
+End
+
+#News
+TimeStamp 1409826913
+NewsData  mill skill for carpenters no longer will use mana~
+End
+
+#News
+TimeStamp 1410949199
+NewsData  fixed a bug with multiple vaskar mobs appearing in dakar city~
+End
+
+#News
+TimeStamp 1411091036
+NewsData  Made punch skill do less damage then kick. Also kick has a longer 
+            pause in combat then punch.~
+End
+
+#News
+TimeStamp 1411423697
+NewsData  New command added checksieges to allow staff to end all sieges 
+            running, or just check the status~
+End
+
+#News
+TimeStamp 1411423698
+NewsData  Carpenters can produce hardened defenses that when dropped in a city, increases the city defenses and makes it harder to sabotage in sieges pick axe and axe made by carpenter will not snap into as likely.  Moving in ocean water eats up A LOT of move, so carpenter sailing ships will be more desired Furniture crafted by carpenter regenerates players at higher rate then normal furniture if resting or sleeping on it.  Players can no longer rapidly level from 1 to 5 by using the portalstone. Under level 5 it will need to recharge a moment before you can use it again.  All tutorial areas have descriptions added for all mobs and objects ALL mobs in paleon city now have a description if you look at them.~
+End
+
+#News
+TimeStamp 1411988048
+NewsData  Happy Hour this week due to down server time last weekend.~
+End
+
+#News
+TimeStamp 1412072825
+NewsData  fixed a crash issue with autorecast config~
+End
+
+#News
+TimeStamp 1412127840
+NewsData  fixed a issue with crawl command~
+End
+
+#News
+TimeStamp 1412210467
+NewsData  6d.genesismuds.com now should work for domain name~
+End
+
+#News
+TimeStamp 1412247561
+NewsData  I added a tab icon graphic to website 6d.genesismuds.com Yah it's 
+            nothing great, but little things make me happy.~
+End
+
+#News
+TimeStamp 1412340189
+NewsData  Slice skill is slowly being made more relevant with mobs as to 
+            chances of discovering a object in corpses.~
+End
+
+#News
+TimeStamp 1412341527
+NewsData  New Area Tomb of the Green Dragon added for levels 20 - 35. It is 
+            a Group Area, if you try it solo, you better pack a lunch... 
+            MUYAHAHAHAH!~
+End
+
+#News
+TimeStamp 1412357279
+NewsData  Teacher in bowels of the citadel has been swamped to a new teacher 
+            in a different area to the north. This is due to i ncreasing 
+            difficulty of grouped areas. Send me a tell if you want to know 
+            exact location I'll tell players who knew the old, as the change 
+            is just because of my adjustment.~
+End
+
+#News
+TimeStamp 1412390345
+NewsData  Attributes during creation no longer affected by your class 
+            choice. You can be a mage with 25 strength if that is what you 
+            wish to put your points towards. Or a warrior with 25 
+            intelligence.~
+End
+
+#News
+TimeStamp 1412394480
+NewsData  You can now be a troll mage, or ogre mage if you want. Don't 
+            expect high intelligence or even average though.~
+End
+
+#News
+TimeStamp 1412423115
+NewsData  If your intelligence is too low, there will be a chance you forget 
+            key phrases when casting spells.~
+End
+
+#News
+TimeStamp 1412424211
+NewsData  fixed bug where occassionally you would see yourself tumbling away 
+            from your dragon breathe.~
+End
+
+#News
+TimeStamp 1412729014
+NewsData  Race attributes at creation were adjusted some. Ask me, and I'll 
+            grant you the points if your missing any that new creation players 
+            of that race have.~
+End
+
+#News
+TimeStamp 1412734696
+NewsData  The various races help files have been updated~
+End
+
+#News
+TimeStamp 1412991998
+NewsData  Shadowknight Class updated - some stock skills replaced with 
+            chilled touch, icy touch, frost touch, frigid touch, also chilled 
+            ward, frost ward, ice ward, and frigid ward~
+End
+
+#News
+TimeStamp 1413031138
+NewsData  New skill for shadowknight and crusader called steed.~
+End
+
+#News
+TimeStamp 1413033894
+NewsData  new skill for crusader added overhead slash~
+End
+
+#News
+TimeStamp 1413037270
+NewsData  New spells static ward, shocking ward, energy ward, lightning ward 
+            for crusader~
+End
+
+#News
+TimeStamp 1413037901
+NewsData  New attack skill double slash for crusaders~
+End
+
+#News
+TimeStamp 1413048438
+NewsData  New skill for monk judo chop replaces judo~
+End
+
+#News
+TimeStamp 1413049987
+NewsData  New skill Butterfly Kick added for monks~
+End
+
+#News
+TimeStamp 1413115291
+NewsData  Shadowknights and Crusaders gain experience from fighting in 
+            battle grouped with their steeds.~
+End
+
+#News
+TimeStamp 1413134915
+NewsData  sitting on a mount equals the same as resting for hitpoint 
+            recovery except when fighting~
+End
+
+#News
+TimeStamp 1413250633
+NewsData  Fixed a crash from mobs killing archers/soldiers in siege~
+End
+
+#News
+TimeStamp 1413253056
+NewsData  mounts now travel with portalstone when you do~
+End
+
+#News
+TimeStamp 1413455427
+NewsData  New skill added for druids called poultice~
+End
+
+#News
+TimeStamp 1413643712
+NewsData  New skill added for Druid called animal form, it allows the druid 
+            to take on a new set of skills for a animal form they go to.~
+End
+
+#News
+TimeStamp 1413720687
+NewsData  New skill for druid's wolf, bear, gryphon, treant form. Regenerate 
+            it works when resting or sleeping.~
+End
+
+#News
+TimeStamp 1413721646
+NewsData  animal forms the druid takes are limited in the equipment they can 
+            wear~
+End
+
+#News
+TimeStamp 1413766629
+NewsData  New skill for druid's owl and fish form. Serenity it works for 
+            mana regeneration when resting or sleeping.~
+End
+
+#News
+TimeStamp 1413797752
+NewsData  new skill for Druid in bear form called maul~
+End
+
+#News
+TimeStamp 1413799223
+NewsData  New skill for Druid wolf form called crushing jaw~
+End
+
+#News
+TimeStamp 1413886963
+NewsData  Multiclass druids now will revert to 1 class if in animal form~
+End
+
+#News
+TimeStamp 1413889811
+NewsData  miners over level 10 have a chance of mining multiple ores or gems~
+End
+
+#News
+TimeStamp 1413937640
+NewsData  Fixed look command so you can do look bear, fish, owl, wolf, 
+            treant, instead of only look player name.~
+End
+
+#News
+TimeStamp 1413942575
+NewsData  Also have a chance now to gather more then one thing as a higher 
+            level baker~
+End
+
+#News
+TimeStamp 1414017146
+NewsData  fixed a bug where players got no coins from mobs they killed.~
+End
+
+#News
+TimeStamp 1414059157
+NewsData  New animal form skills thick hide, hardened scales, and bark skin 
+            they only work for corresponding animals.~
+End
+
+#News
+TimeStamp 1414114699
+NewsData  New channel option for speaking to a player. Talkto~
+End
+
+#News
+TimeStamp 1414327231
+NewsData  fixed a few bugs with player tradeskills. Thank you for reporting 
+            them.~
+End
+
+#News
+TimeStamp 1414328089
+NewsData  Players are now set to config id when entering tradeskills 
+            building and turned off when they leave it~
+End
+
+#News
+TimeStamp 1414579181
+NewsData  Tanning skill rename rekey option changed to use object ID number~
+End
+
+#News
+TimeStamp 1414625744
+NewsData  Fixed a infinite loop bug, where if you typed run direction 
+            without specifying a number it would crash us.~
+End
+
+#News
+TimeStamp 1414627722
+NewsData  Jewelry skill rename rekey option changed to use object ID number~
+End
+
+#News
+TimeStamp 1414634219
+NewsData  Forge skill rename rekey option changed to use object ID number~
+End
+
+#News
+TimeStamp 1414635139
+NewsData  Bake skill rename rekey option changed to use object ID number~
+End
+
+#News
+TimeStamp 1414635961
+NewsData  Mix Skill rename rekey option changed to use object ID number~
+End
+
+#News
+TimeStamp 1414718189
+NewsData  Beast Master Class will encounter animal mobs that they can tame 
+            in wilderness.~
+End
+
+#News
+TimeStamp 1414718226
+NewsData  Beast Master Class can beast meld with the animal, taking over 
+            their body.~
+End
+
+#News
+TimeStamp 1414720538
+NewsData  New skill Tame added for Beast Master to tame animals they find in 
+            wild~
+End
+
+#News
+TimeStamp 1414750774
+NewsData  New skill shroud spirit for beast master hides the pet and 
+            beastmaster.~
+End
+
+#News
+TimeStamp 1414841764
+NewsData  New skill for beast master find water, let's pets find suitable 
+            water.~
+End
+
+#News
+TimeStamp 1414845479
+NewsData  New skill for beast master stalk prey, let's pets find food, by 
+            killing small prey.~
+End
+
+#News
+TimeStamp 1414851544
+NewsData  New skill for beast master sharpen claws, let's their pets sharpen 
+            their claws for more damage.~
+End
+
+#News
+TimeStamp 1414852944
+NewsData  New skill for beast master net, allows the beast master to slow 
+            their enemies down by throwing a net on them.~
+End
+
+#News
+TimeStamp 1414859392
+NewsData  New skill for beast master, infectious claws allows them to open 
+            the poison gland to their pet's claws.~
+End
+
+#News
+TimeStamp 1414941361
+NewsData  Beast master in beast meld mode now can fight till a mob is dead, 
+            and can use skills claw, bite.~
+End
+
+#News
+TimeStamp 1414946756
+NewsData  added petexp, petlevel, pettnl, and petaffection to save on 
+            beastmaster player file.~
+End
+
+#News
+TimeStamp 1414981581
+NewsData  Beast Master pet's now gain exp for kills that are higher level 
+            then them.~
+End
+
+#News
+TimeStamp 1415012180
+NewsData  Beast Master pet's now gain levels from fighting.~
+End
+
+#News
+TimeStamp 1415013436
+NewsData  added check so Beast Master pets cannot wear shields or weapons~
+End
+
+#News
+TimeStamp 1415062641
+NewsData  tradeskills now use object id for repair as well~
+End
+
+#News
+TimeStamp 1415067968
+NewsData  Beast Master pet's now get hungry and thirsty, and it affects 
+            their affection level~
+End
+
+#News
+TimeStamp 1415098482
+NewsData  fixed a crash bug with stalk animal command~
+End
+
+#News
+TimeStamp 1415100975
+NewsData  Got beast master class showing up in who now, when using beast 
+            meld~
+End
+
+#News
+TimeStamp 1415186158
+NewsData  fixed issue with pet hunger/thirsty for beastmaster~
+End
+
+#News
+TimeStamp 1415232949
+NewsData  fixed crash issue with beast master in beast meld using level 
+            command.~
+End
+
+#News
+TimeStamp 1415233800
+NewsData  Beast Master Class made available to players, please report all 
+            bugs.~
+End
+
+#News
+TimeStamp 1415235070
+NewsData  New skill bull spirit for beast master, applies constitution of 
+            the bull to the beast master and their pet.~
+End
+
+#News
+TimeStamp 1415235640
+NewsData  New skill bear spirit for beast master, gives the strength of a 
+            bear to the beast master and their pet~
+End
+
+#News
+TimeStamp 1415235933
+NewsData  New skill wolf spirit for beast master, gives the stamina of the 
+            wolf to the beast master and their pet.~
+End
+
+#News
+TimeStamp 1415402187
+NewsData  Pet exp bug with gaining levels fixed!~
+End
+
+#News
+TimeStamp 1415404588
+NewsData  New command for pet owners, petreport. Order pet petreport~
+End
+
+#News
+TimeStamp 1415408456
+NewsData  fixed issue with needing to drink and eat every few seconds for 
+            beast master pets~
+End
+
+#News
+TimeStamp 1415447855
+NewsData  Now will no longer hear ooc.wav messages when staff talk on the 
+            staff channel.~
+End
+
+#News
+TimeStamp 1415448344
+NewsData  fixed a few bugs, will try to catch up on them all soon~
+End
+
+#News
+TimeStamp 1415457269
+NewsData  Beast Master Pet hitpoints increased~
+End
+
+#News
+TimeStamp 1415460636
+NewsData  Pet's now allowed to be order to use wimpy command.~
+End
+
+#News
+TimeStamp 1415539447
+NewsData  New command deed allows carpenter to sign over a ship deed to 
+            whoever they want, enabling them to make some gold for ship sales~
+End
+
+#News
+TimeStamp 1415540047
+NewsData  New command hull for use at shipwright at dock to repair your 
+            ship.~
+End
+
+#News
+TimeStamp 1415544038
+NewsData  now will not fail as often the higher level craftsman you are.~
+End
+
+#News
+TimeStamp 1415704922
+NewsData  fixed bug with jewelery not allowing all items listed to be 
+            crafted~
+End
+
+#News
+TimeStamp 1415757409
+NewsData  Drow and Centaur race can now be bards~
+End
+
+#News
+TimeStamp 1415931833
+NewsData  New skill for Beast Master elbow.~
+End
+
+#News
+TimeStamp 1415933268
+NewsData  New skill ferocious strike added for beast master class~
+End
+
+#News
+TimeStamp 1415963970
+NewsData  Beast Master pets giving a pause with order command when fighting, 
+            so they can't just spam attacks killing mobs players normally 
+            would struggle with.~
+End
+
+#News
+TimeStamp 1416693173
+NewsData  Fixed up gunthis quest so easier to understand~
+End
+
+#News
+TimeStamp 1416740824
+NewsData  fixed solve code to remove a few ansci characters screen readers 
+            had issue with~
+End
+
+#News
+TimeStamp 1416879104
+NewsData  Drow Vaskar quest fixed in Dakar City~
+End
+
+#News
+TimeStamp 1417006755
+NewsData  Portal Stone now will send you to Santa's Workshop for the 
+            holidays~
+End
+
+#End

@@ -1,0 +1,781 @@
+#AREA        Tomb of the Green Dragon~
+
+
+
+#VERSION     9
+#AUTHOR      Vladaar~
+#DERIVATIVES ~
+#COLOR       0
+#HTOWN       ~
+#DESC        ~
+
+#RANGES
+0 0 0 0
+$
+
+#SPELLLIMIT 0
+#WEATHERCELL 0 0
+
+#RESETMSG &cThe silence of the surrounding area is broken by the sound of something crunching nearby.~
+
+#FLAGS
+0
+
+#CURRENCY 0
+
+#HIGHECONOMY 0 0 0 0 0 -1
+
+#LOWECONOMY 0 0 0 0 0 -1
+
+#CLANNAME (null)~
+
+#INFLUENCE 0
+
+#MOBILES
+#28350
+blast of wind~
+a blast of wind~
+A blast of wind
+~
+~
+1
+Clanname none~
+0
+0
+1073872899 4259842 0 C
+104 0 0 0d0+10000 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+if rand(50)
+mpea $n &CA blast of wind blows through the cavern!
+mpforce $n ne
+else
+mpea $n &CA blast of wind blows through the cavern!
+mpforce $n nw
+endif
+~
+|
+#28351
+barracuda fish~
+a barracuda fish~
+A barracuda fish stalks its prey here.
+~
+~
+13
+clanname none~
+0
+0
+1073758217 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 3 0 0 0 0 0
+0 0 0 0 0 0 1 2
+#28352
+massive python snake~
+a massive phython snake~
+A massive phython snake is slithering about here.
+~
+~
+1
+clanname none~
+0
+0
+1073872899 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#28353
+dwarf miner~
+a dwarven miner~
+A miner tunnels through the stone walls looking for silver.
+~
+~
+0
+clanname none~
+0
+0
+1073872931 680 0 C
+55 0 0 20d20+7500 0d0+0
+0 0 0 0 0 
+0
+115 115 1
+13 13 13 13 13 13 13
+0 0 0 0 0
+2 4 0 0 0 0 5
+0 0 0 0 0 0 177 0
+#28400
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1
+Clanname none~
+0
+0
+1073741825 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#28350
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 1073741824 0
+0 0 0 0 0 0 0
+1 0 0
+1
+0
+S 0 0
+#28400
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 1073741824 0
+0 0 0 0 0 0 0
+1 0 0
+1
+0
+S 0 0
+#0
+
+
+#ROOMS
+#28350
+A Tunnel Entrance~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D0
+~
+~
+0 -1 28365
+S
+#28351
+A Tunnel Intersection~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D2
+~
+~
+0 -1 28384
+D6
+~
+~
+0 -1 28352
+D7
+~
+~
+0 -1 28353
+S
+#28352
+Within the Tunnel~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D6
+~
+~
+0 -1 28354
+D9
+~
+~
+0 -1 28351
+S
+#28353
+Within the Tunnel~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D7
+~
+~
+0 -1 28362
+D8
+~
+~
+0 -1 28351
+S
+#28354
+A Massive Pit~
+Not Assigned~
+~
+1 1092681737 13 0 0 0 90
+D5
+~
+~
+0 -1 28355
+D9
+~
+~
+0 -1 28352
+S
+#28355
+Within the Pit~
+Not Assigned~
+~
+1 1092681737 13 0 0 0 90
+D4
+~
+~
+0 -1 28354
+D5
+~
+~
+0 -1 28356
+S
+#28356
+The Pit Bottom~
+Not Assigned~
+~
+1 1092681737 13 0 0 0 90
+D0
+~
+~
+256 -1 28358
+D4
+~
+~
+0 -1 28355
+S
+#28357
+Floating in a void~
+Not Assigned~
+~
+1 1092681737 13 0 0 0 90
+D2
+~
+~
+0 -1 28356
+S
+#28358
+A Secret Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D2
+~
+~
+0 -1 28356
+D3
+~
+~
+0 -1 28359
+S
+#28359
+Within the Secret Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D1
+~
+~
+0 -1 28358
+D7
+~
+~
+0 -1 28360
+S
+#28360
+Along the Secret Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D0
+~
+~
+0 -1 28361
+D8
+~
+~
+0 -1 28359
+S
+#28361
+Before a Unmarked Tomb~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D2
+~
+~
+0 -1 28364
+S
+#28362
+Before a Descending Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D5
+~
+~
+0 -1 28363
+D8
+~
+~
+0 -1 28353
+S
+#28363
+Descending Downward~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D4
+~
+~
+0 -1 28362
+D5
+~
+~
+0 -1 28364
+S
+#28364
+Before a Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D0
+~
+~
+0 -1 28361
+D4
+~
+~
+0 -1 28363
+S
+#28365
+Within the Tunnel~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D2
+~
+~
+0 -1 28350
+D6
+~
+~
+0 -1 28366
+D7
+~
+~
+0 -1 28367
+R M 0 28350 2 28365
+S
+#28366
+Within a Passageway~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D0
+~
+~
+0 -1 28368
+S
+#28367
+Within a Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D0
+~
+~
+0 -1 28378
+S
+#28368
+A Collapsed Section of Passageway~
+Not Assigned~
+There appears to be a pile of boulders to the west that maybe blocking something.  The
+passageway is filled with a cluster of giant mushrooms.  There are stalagmites scattered
+throughout the area here.  A broken timbre is what used to hold that west side up.
+~
+1 1075904525 13 0 0 0 90
+D2
+~
+~
+0 -1 28366
+D3
+~
+~
+256 -1 28385
+D6
+~
+~
+0 -1 28369
+S
+#28369
+Within a Passageway~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D0
+~
+~
+0 -1 28370
+D9
+~
+~
+0 -1 28368
+S
+#28370
+Before a Intersection~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D2
+~
+~
+0 -1 28369
+D6
+~
+~
+0 -1 28371
+D7
+~
+~
+0 -1 28372
+R M 1 28350 2 28370
+S
+#28371
+A Massive Cavern~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D0
+~
+~
+0 -1 28373
+S
+#28372
+Along a Passageway~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D7
+~
+~
+0 -1 28375
+S
+#28373
+Along a Passageway~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D0
+~
+~
+0 -1 28374
+D2
+~
+~
+0 -1 28371
+S
+#28374
+A Collapsed Dead End~
+Not Assigned~
+There are a pile of boulders on the ground here that appear to be covering up something.
+Stalagmites are scattered throughout the passageway.  A few giant mushrooms are growing from
+the ground in small clusters.  Some creatures tracks lead in and out of this area.
+~
+1 1075904525 13 0 0 0 90
+D2
+~
+~
+0 -1 28373
+D5
+~
+~
+256 -1 28351
+S
+#28375
+Within a Passageway~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D0
+~
+~
+0 -1 28376
+D8
+~
+~
+0 -1 28372
+S
+#28376
+Along a Passageway~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D2
+~
+~
+0 -1 28375
+D7
+~
+~
+0 -1 28377
+S
+#28377
+Within a Lair~
+Not Assigned~
+~
+1 1075904525 13 0 0 0 90
+D8
+~
+~
+0 -1 28376
+R M 1 28352 1 28377
+S
+#28378
+Along a Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D0
+~
+~
+0 -1 28379
+D2
+~
+~
+0 -1 28367
+S
+#28379
+Within a Massive Cavern~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D2
+~
+~
+0 -1 28378
+D6
+~
+~
+0 -1 28380
+S
+#28380
+Along a Passageway~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D0
+~
+~
+0 -1 28381
+D9
+~
+~
+0 -1 28379
+S
+#28381
+Before a Small Mine Shaft~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 90
+D0
+~
+~
+0 -1 28382
+D1
+~
+~
+256 -1 28391
+D2
+~
+~
+0 -1 28380
+S
+#28382
+Within a Small Mine Shaft~
+Not Assigned~
+~
+1 1075904521 13 0 0 1 50
+D0
+~
+~
+0 -1 28383
+D2
+~
+~
+0 -1 28381
+R M 1 28353 1 28382
+S
+#28383
+Within a Small Mine Shaft~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 50
+D2
+~
+~
+0 -1 28382
+D6
+~
+~
+0 -1 28384
+S
+#28384
+Along the Small Mine Shaft~
+Not Assigned~
+~
+1 1075904521 13 0 0 0 50
+D0
+~
+~
+0 -1 28351
+D9
+~
+~
+0 -1 28383
+S
+#28385
+Within a Massive Pool~
+Not Assigned~
+~
+1 1092681741 13
+D1
+~
+~
+0 -1 28368
+D5
+~
+~
+0 -1 28386
+S
+#28386
+Within a Underground Pool~
+Not Assigned~
+~
+1 1075904525 8
+D0
+~
+~
+0 -1 28387
+D4
+~
+~
+0 -1 28385
+R M 1 28351 1 28386
+S
+#28387
+Underwater Passageway~
+Not Assigned~
+~
+1 1075904525 8
+D2
+~
+~
+0 -1 28386
+D6
+~
+~
+0 -1 28388
+S
+#28388
+Underground Lake~
+Not Assigned~
+~
+1 1075904525 8
+D4
+~
+~
+0 -1 28389
+D9
+~
+~
+0 -1 28387
+S
+#28389
+Within a Underground Lake~
+Not Assigned~
+~
+1 1075904525 29
+D0
+~
+~
+0 -1 28390
+D5
+~
+~
+0 -1 28388
+S
+#28390
+Beside the Shore~
+Not Assigned~
+~
+1 1075904525 29
+D0
+~
+~
+0 -1 28391
+D2
+~
+~
+0 -1 28389
+S
+#28391
+Within a Collapsed Section of Passageway~
+Not Assigned~
+There are a pile of boulders blocking something to the west of here.  A broken old timbre is
+laying about on the rubble.  There are massive mushrooms growing in clusters around this area.
+The tracks of a strange creature lead towards the lake to the south.
+~
+1 1075904525 13
+D2
+~
+~
+0 -1 28390
+D3
+~
+~
+256 -1 28381
+S
+#28400
+Floating in a void~
+Not Assigned~
+~
+1 1073741836 13
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

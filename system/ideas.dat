@@ -1,0 +1,406 @@
+#IDEA
+MadeBy        Riyu~
+MadeWhen      07-27-2014 04:45:41PM~
+IdeaDesc      There's another site for screen reader users it's www.nvaccess.org It's home to the NVDA Screen reader
+~
+Type          1
+UsedBy        Vladaar~
+UsedWhen      07-29-2014 09:47:11PM~
+UseDesc       thanks
+~
+Reward        0
+RewardBonus   1
+Room          5100
+End
+
+#IDEA
+MadeBy        Malukus~
+MadeWhen      08-15-2014 08:17:30PM~
+IdeaDesc      The commands "junk" and "sacrifice" could be aliases for "trash", for ease of discovering how to get rid of useless items.
+Another alternative could be a donation room, where you could leave items for newbies.
+~
+Type          1
+UsedBy        Vladaar~
+UsedWhen      08-15-2014 10:08:39PM~
+UseDesc       Used junk alternative
+~
+Reward        0
+RewardBonus   1
+Room          16007
+End
+
+#IDEA
+MadeBy        Vladaar~
+MadeWhen      08-25-2014 07:56:13AM~
+IdeaDesc      Go through each area and make sure all objects and mobs have extra descriptions
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          1201
+End
+
+#IDEA
+MadeBy        Kalryn~
+MadeWhen      10-14-2014 00:19:35PM~
+IdeaDesc      remove the help wizlist file
+~
+Type          1
+UsedBy        Vladaar~
+UsedWhen      10-14-2014 03:27:14PM~
+UseDesc       done
+~
+Reward        0
+RewardBonus   1
+Room          16016
+End
+
+#IDEA
+MadeBy        Vladaar~
+MadeWhen      10-16-2014 05:22:40PM~
+IdeaDesc      make a CP for percentage till crafting level, when players crafting instead of fighting.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          8110
+End
+
+#IDEA
+MadeBy        Caelum~
+MadeWhen      10-23-2014 02:59:47PM~
+IdeaDesc      Possibly include the tradeskills to be able to create dragon equipment.
+I think it would be interesting. Players could craft high level dragon gear, 
+and Dragons could pay them high price for their work since dragons
+lack the tradeskill abilities all together.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          27001
+End
+
+#IDEA
+MadeBy        Kimel~
+MadeWhen      10-26-2014 00:38:41PM~
+IdeaDesc      a sound for when you become an adept at something would be awesome. if needed I have quite a number of sounds I'd be willing to contribute.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          10008
+End
+
+#IDEA
+MadeBy        Kimel~
+MadeWhen      11-02-2014 07:49:54AM~
+IdeaDesc      adr
+main
+It would be super fabulously awesome to maintain groups through a copyover.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          7501
+End
+
+#IDEA
+MadeBy        Mirinda~
+MadeWhen      11-07-2014 09:33:58PM~
+IdeaDesc      Please make a help file that tells what areas in the wilderness people can look in to find ingredients.
+~
+Type          1
+UsedBy        Vladaar~
+UsedWhen      11-08-2014 04:09:42AM~
+UseDesc       Sorry Mirinda I thought You had it, when I left.  Anywhere in wilderness is good
+for gathering baker ingredients.
+
+~
+Reward        0
+RewardBonus   1
+Room          49809
+End
+
+#IDEA
+MadeBy        Ragnar~
+MadeWhen      11-08-2014 08:15:48AM~
+IdeaDesc      Allow pets to have wimpy level set
+~
+Type          3
+UsedBy        Vladaar~
+UsedWhen      11-08-2014 09:17:20AM~
+UseDesc       done
+~
+Reward        0
+RewardBonus   3
+Room          11268
+End
+
+#IDEA
+MadeBy        Dagon~
+MadeWhen      11-08-2014 09:17:59AM~
+IdeaDesc      it would be great if automoney, autoloot, autotrash and other such commands worked for the beast master when his/her animal gets the kill.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          18604
+End
+
+#IDEA
+MadeBy        Dagon~
+MadeWhen      11-08-2014 09:27:36AM~
+IdeaDesc      It would also be nice if the beast master could use the aid skill on his animal.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          18618
+End
+
+#IDEA
+MadeBy        Dagon~
+MadeWhen      11-08-2014 08:40:28PM~
+IdeaDesc      it would be superb if while melded with our beast we could see affects, stat, status for the animal we are currently residing in. I had a problem where it kept saying my animal could use my help but i had no clue what it meant and had no means to figure it out.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          16007
+End
+
+#IDEA
+MadeBy        Dagon~
+MadeWhen      11-09-2014 00:06:58PM~
+IdeaDesc      in addition to shroud spirit, could beast master gain the ability keen eyes. This would not only be fitting but it would allow them to see their pet while it is hidden from shroud spirit. currently while the shroud spirit is active you are unable to order your pet. it simply states their aren't here.
+Also I'm not certain if I've idea submitted this before but being able to have some sort of first aid skill for our pets. perhaps two, possibly three levels of this, which can only be used on an animal companion.
+basic first aid. = heals 1 die 10 damage per use. costs beast master movement points.
+Advanced first aid. = heals 3 die 10 damage. costs beast master movement points.
+Expert first aid. = heals 10 die 10 damage to animal, plus 1 to affection. costs the beast master movement points and some mana.
+the costs associated with above skills could be based for basic and advanced. basic = 15 movement. advanced = 40 movement
+Expert first aid would however cost the beast master 25 percent of their movement. This would be a fair trade off for such a large heal and a point of affection.
+
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          16007
+End
+
+#IDEA
+MadeBy        Saltus~
+MadeWhen      11-09-2014 10:49:48PM~
+IdeaDesc      Possibly give hr/dr bonus when in bear form. Bear form is nice. it
+is decent for maul, but their doesn't seem to be an ac, dr, hr, or any
+type of bonus while in this form.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          16073
+End
+
+#IDEA
+MadeBy        Samael~
+MadeWhen      11-14-2014 01:56:13PM~
+IdeaDesc      Yes, maybe have rhe players' class right aligned Vlad?
+So instead of:
+
+--------------------------------=[ Players ]=---------------------------------
+
+[5  ][Warrior     ] Zira the Swordpupil
+[10 ][Beast Master] Krystothon the (null) [Throng] [Baron of Dakar City] [
+[4  ][Sha/Mag/Pri] Estella the Swordpupil
+[58 ][Gold        ] Caelum Viator: Nomad of the Sky. [Duke of Forbidden City] [
+
+--------------------------------=[  STAFF  ]=---------------------------------
+
+We see this instead we see this:
+
+--------------------------------=[ Players ]=---------------------------------
+[  5][     Warrior] Zira the Swordpupil
+[ 10][Beast Master] Krystothon the (null) [Throng] [Baron of Dakar City]
+[  4][ Sha/Mag/Pri] Estella the Swordpupil
+[ 58][        Gold] Caelum Viator: Nomad of the Sky. [Duke of Forbidden City]
+--------------------------------=[  STAFF  ]=---------------------------------
+
+Just a thought!
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          1233
+End
+
+#IDEA
+MadeBy        Vladaar~
+MadeWhen      11-15-2014 05:46:36AM~
+IdeaDesc      Skills need checks so they don't allow people from other classes to use them.
+Particularly defensive/passive ones.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          1200
+End
+
+#IDEA
+MadeBy        Kyndai~
+MadeWhen      11-29-2014 05:44:24AM~
+IdeaDesc      I think it would be a good idea to give Monks hide. It is very hard to 
+move around on the wildnerness map as well in most areas with agro mobs. 
+Thanks for considering my idea. 
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          1164
+End
+
+#IDEA
+MadeBy        Elysia~
+MadeWhen      12-02-2014 01:12:14PM~
+IdeaDesc      Default description that includes race, or other means of seeing someone's current race (or what they appear to be) when looking at them.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          29000
+End
+
+#IDEA
+MadeBy        Gilanthas~
+MadeWhen      12-12-2014 05:44:02PM~
+IdeaDesc      I think it would be nice if beast masters could name there pets. I think this
+would help with rp.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          1164
+End
+
+#IDEA
+MadeBy        Gilanthas~
+MadeWhen      12-13-2014 04:41:33PM~
+IdeaDesc      I think beast masters need a few more weapon choices. It would be nice if they
+had 1h axes, 1h bludgeons staffs and flails.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          16016
+End
+
+#IDEA
+MadeBy        Gilanthas~
+MadeWhen      12-16-2014 08:04:30AM~
+IdeaDesc      Beast masters really need some better defensive capabilities. I was 
+thinking that bull spirit could kinda be like a monks Iron skin skill. It 
+could give them some damage reduction. 
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          1164
+End
+
+#IDEA
+MadeBy        Mordion~
+MadeWhen      01-16-2015 10:47:39AM~
+IdeaDesc      Currently if I understand the help file correctly, devour simply allows you to go longer periods of time without eating items designated as food. Being a dragon and consuming the entire body of our foes I think should logically sate hunger. I think think makes sense from a roleplay perspective and it also makes the game more enjoyable.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          35523
+End
+
+#IDEA
+MadeBy        Galryn~
+MadeWhen      01-19-2015 04:17:01PM~
+IdeaDesc      The blade master help file doesnt explain anything about what the skill actually does. Could it be given some more detailed info?
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          42178
+End
+
+#IDEA
+MadeBy        Galryn~
+MadeWhen      01-20-2015 03:14:33PM~
+IdeaDesc      Could blacksmithing get some craftable 2h weapons such as lances, greatswords, etc?
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          42077
+End
+
+#IDEA
+MadeBy        Galryn~
+MadeWhen      01-20-2015 06:23:51PM~
+IdeaDesc      (null)~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          16107
+End
+
+#IDEA
+MadeBy        Mordion~
+MadeWhen      01-20-2015 10:45:07PM~
+IdeaDesc      Make config slots adaptable to dragon characters so that it doesnt show slots that dragons cant equip armor in such as legs.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          35523
+End
+
+#IDEA
+MadeBy        Mordion~
+MadeWhen      01-21-2015 06:41:59PM~
+IdeaDesc      Add a siege score command that shows the progress of the current siege.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          27006
+End
+
+#IDEA
+MadeBy        Mordion~
+MadeWhen      01-21-2015 06:48:25PM~
+IdeaDesc      Also, in addition to the last idea for a siege score command please add the remaining time for the siege to that.
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          27013
+End
+
+#IDEA
+MadeBy        Mirkoros~
+MadeWhen      01-22-2015 00:50:01PM~
+IdeaDesc      Core.KeepAliveSince dragons don't have the cook skill and can't wield weapons, could we get the slice and create fire skills removed and replaced with something more useful to new characters?
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          27001
+End
+
+#IDEA
+MadeBy        Kalinaar~
+MadeWhen      01-22-2015 09:27:02PM~
+IdeaDesc      The NPC that lets you switch cities in Paleon is in plain sight where as the one in Dakar (if there is one?) has been impossible for me to find. Could the difficulty of finding each of these please be balanced?
+~
+Type          -1
+Reward        0
+RewardBonus   0
+Room          16240
+End
+
+#END

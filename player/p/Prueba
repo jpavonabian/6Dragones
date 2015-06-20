@@ -1,0 +1,94 @@
+#PLAYER
+Version      6
+Name         Prueba~
+Sex          1
+Class        1
+Secondclass  -1
+Thirdclass   -1
+Race         0
+Age          0 21 13 854
+Languages    -1 1
+Level        2
+Firstlevel   0
+Secondlevel  0
+Thirdlevel   0
+Played       1202
+Room         35510
+HpManaMove   22 155 102 166 124 140
+BaseHp       0 
+Blood        10 157
+Money         0 0 0 0 0 -1
+Exp           0
+Firstexp      0
+Secondexp     0
+Thirdexp      0
+Height        84
+Weight        184
+Act           671122760&6144
+Channels      chat decir~
+Position      115
+Style         2
+Practice      6
+SavingThrows  0 0 0 0 -12
+Alignment     0
+AppBlood      0
+Hitroll       12
+Damroll       0
+Armor         100
+Mentalstate   -6
+Password      85c6cec7249bc02c17f98e0cfb6216b3743f74fe21d63de46b86c404bba2e502~
+Title          the Believer~
+Lastip         84.122.176.243~
+RECAST          0
+AuthedBy     Daryl~
+Prompt       >~
+GetsDExp     0
+LDExpUpdate  1430049284
+tmpsecond -1
+tmpthird -1
+tmproom 1200
+Textspeed          5
+PotionTimer        0 0 0
+FirstExpR          0
+SecondExpR         0
+ThirdExpR          0
+FocusLevel         0
+UsedTrade          0
+Faith              0
+ChanInvite         0
+QuestCurr          0
+QuestAccum         0
+MobCount           0
+ObjCount           0
+ArenaWins          0
+ArenaLoss          0
+MapToggle          0
+MapSize            0
+MapDescToggle      0
+MapNameToggle      0
+MapType            0
+Htown      Paleon City~
+Flags        32802
+Bardtimer    0
+Bardsn       0
+PKills       0
+PDeaths      1
+MKills       0
+MDeaths      0
+IllegalPK    0
+AttrPerm     16 15 14 14 21 15 14
+AttrMod      0 0 0 0 0 0 0
+Condition    0 47 50 0
+Site         84.122.176.243
+LastNews     1417006755
+Holdbreath 0
+Frostbite 0
+Adjust 0
+AffectDataL   'bless' 100 927  12  18 0
+AffectDataL   'bless' 100 927 -12  24 0
+MaxColors    111
+Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
+Portalstonelag     0
+End
+
+#END

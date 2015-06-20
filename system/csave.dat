@@ -1,0 +1,526 @@
+ 
+&CWolfe: ups (chat)&D
+&CRaoden: nas (chat)&D
+&CRaoden: mhm (chat)&D
+&CRaoden: es raro este mud (chat)&D
+&CRaoden: [used as light     ] <>  3237.a ball of light (chat)&D
+&CRaoden: eso depende de la raza (chat)&D
+&CRaoden: cada raza tiene el... usando como luz, en el dedo, en el cuello... (chat)&D
+&CZlorth: mm (chat)&D
+&CZlorth: lo tiene por que tiene que tenerlo (chat)&D
+&CZlorth: pero al mud le importa una mierda (chat)&D
+&CZlorth: al menos que yo sepa (chat)&D
+&CRaoden: lo raro es que no esta traducido (chat)&D
+&CZlorth: hum (chat)&D
+&CZlorth: no está traducido pero se ve bien (chat)&D
+&CZlorth: Pues nada, con no traducirlo en el otro lado arreglado xd (chat)&D
+&CZlorth: ala (chat)&D
+&CZlorth: puto player.c (chat)&D
+&CRaoden: en q estsa (chat)&D
+&CRaoden: personajepk... comando raro xd (chat)&D
+&CZlorth: sirve para hacerse pk antes de tiempo creo (chat)&D
+&CZlorth: es raro, pero ya está traducido (chat)&D
+&CZlorth: has visto el comando expire? (chat)&D
+&CZlorth: has visto el comando expire? (chat)&D
+&CZlorth: es el comando más tonto que he visto en la vida (chat)&D
+&CRaoden: sí, pa que sirve? (chat)&D
+&CRaoden: a mi me dice que no que soy un jugador extremo y que no se que mas xd (chat)&D
+&CZlorth: sirve para mirse (chat)&D
+&CZlorth: morirse* (chat)&D
+&CRaoden: juaaas (chat)&D
+&CRaoden: y eso?= (chat)&D
+&CRaoden: lo quitamos o q xd (chat)&D
+&CZlorth: para cuando te quedas a -10 (chat)&D
+&CZlorth: pones expire y mueres  (chat)&D
+&CRaoden: ah pues, en realidad no está tan mal si no existe el leva (chat)&D
+&CRaoden: el tema es que no se si se podrian hacer turbiedades con eso (chat)&D
+&CRaoden: onda evitar que te maten en una pk usando ese comando cuando te dejan en negativo... (chat)&D
+&CZlorth: no se puede... creo (chat)&D
+&CRaoden: el tragar esta mal traducido, creo. (chat)&D
+&CRaoden: tragar ¿Qué quieres beber?? (chat)&D
+&CRaoden: o no, depende como se mire. el tema que tambien esta beber xd (chat)&D
+&CZlorth: pues con cambiarlo arreglao (chat)&D
+&CRaoden: Zlorth te golpeas al patearte 6 veces causándote 2160 puntos de daño! (chat)&D
+&CRaoden: wtf xd (chat)&D
+&CRaoden: por que dice que golpeas una imagen mía si no tengo espejismo? (chat)&D
+&CZlorth: uuups (chat)&D
+&CZlorth: dame un segundito (chat)&D
+&CRaoden: pero que mierda el bs xd (chat)&D
+&CZlorth: ten en cuenta que no tienes los bonus de bs y demás (chat)&D
+&CZlorth: por que leches a los mobs le pego tanto (chat)&D
+&CZlorth: y a ti casi no te toco? (chat)&D
+&CRaoden: porque tengo un huevo de hp, stats y eso xd? (chat)&D
+&CRaoden: no se las salvas como las tendre (chat)&D
+&CZlorth: supongo será por el equipo, el hit y esas cosas (chat)&D
+&CZlorth: supongo (chat)&D
+&CRaoden: equipo no uso xd (chat)&D
+&CRaoden: igual son fuertes los mobs (chat)&D
+&CRaoden: si le hago 20000 puntos de daño y no muere pues xd (chat)&D
+&CRaoden: aqui hay otro tipo (chat)&D
+&CRaoden: Horvak te rozass 8 veces causándote 88 puntos de daño. (chat)&D
+&CRaoden: sale cuando te miro? (chat)&D
+&CZlorth: si (chat)&D
+&CZlorth: una tontería menos (chat)&D
+&CRaoden: como se hace para editar un objeto? (chat)&D
+&CZlorth: le he metido un adelantón al player.c, que si no nos eternizamos (chat)&D
+&CZlorth: oset (chat)&D
+&CRaoden: lo invocas, le pones el flag proto, lo editas y foldarea? (chat)&D
+&CRaoden: no que el foldarea te quitaba automaticamente el prototype? (chat)&D
+&CZlorth: solo si no está instalada creo (chat)&D
+&CRaoden: rechup xd (chat)&D
+&CZlorth: supongo que editaré las areas que me toquen usando notepad++ (chat)&D
+&CRaoden: juas y eso? (chat)&D
+&CRaoden: te vas a volver gey xd (chat)&D
+&CZlorth: por que me rayo tanto prototype, no se que, foldarea, prototype, foldarea... (chat)&D
+&CRaoden: si eso si (chat)&D
+&CRaoden: pero editar las areas ofline uf (chat)&D
+&CRaoden: que si se te escapa una tilde, que los flags van por numero, etc xd (chat)&D
+&CZlorth: cierto, además petas el mud (chat)&D
+&CRaoden: su puta madre (chat)&D
+&CZlorth: what? (chat)&D
+&CRaoden: nada, el oset que edita cualquier objeto xd (chat)&D
+&CZlorth: sep (chat)&D
+&CZlorth: el 100 y el 11 ni lo toques xD (chat)&D
+&CZlorth: 10 y 11* (chat)&D
+&CRaoden: xd (chat)&D
+&CZlorth: truquito (chat)&D
+&CZlorth: oset 3 on (chat)&D
+&CZlorth: y te ahorras el oset lo que sea name lo que sea, pones name y lo que sea y ya (chat)&D
+&CZlorth: luego desactivas con off (chat)&D
+&CRaoden: y me dice renombre, si al final seria mejor editar las areas con notepad++ para no andar con el puto protitype xd (chat)&D
+&CZlorth: xd (chat)&D
+&CZlorth: foldarea antes de quitar flag xd (chat)&D
+&CZlorth: luego lo quitas y haces otro foldarea :P (chat)&D
+&CRaoden: va a ser muy divertido todo el mud traduciendo areas (chat)&D
+&CZlorth: sep (chat)&D
+&CRaoden: y puteando los comandos xd (chat)&D
+&CZlorth: te quitas el log y ya (chat)&D
+&CZlorth: o editas con notepad++. (chat)&D
+&CRaoden: estos strings donde estan? dejar 3 cobre You let a few cobre coins slip from your hand. (chat)&D
+&CRaoden: y... Coges 3 cobre coins. (chat)&D
+&CZlorth: sospecho que en el act_obj.c (chat)&D
+&CRaoden: si el primero quizas si (chat)&D
+&CRaoden: el otro no me parece xd (chat)&D
+&CZlorth: y el segundo también (chat)&D
+&CRaoden: Vacías un bolsillo extradimensional y dejas más de 1000000 de monedas de cobre!! (chat)&D
+&CRaoden: juas xd (chat)&D
+&CZlorth: sep (chat)&D
+&CRaoden: No tienes tanto cobre. (chat)&D
+&CRaoden: eso lo dejamos asi? o no tienes tantas monedas de xxx (chat)&D
+&CZlorth: como veas (chat)&D
+&CRaoden: q ando con el string en frente por eso xd (chat)&D
+&CZlorth: queda más bonito lo de las monedas digo yo (chat)&D
+&CRaoden: Puff drops a few cobre coins. (chat)&D
+&CRaoden: deja algunas monedas? (chat)&D
+&CZlorth: sip (chat)&D
+&CRaoden: pues (chat)&D
+&CZlorth: uuups (chat)&D
+&CRaoden: y eso? (chat)&D
+&CRaoden: que que no tienes gloria? xd (chat)&D
+&CZlorth: ya me está tocando esto los cojones (chat)&D
+&CRaoden: puto mud xd (chat)&D
+&CRaoden: no entiendo pq hay tantos objetos duplicados pero weno (chat)&D
+&CRaoden: como seria esto? (chat)&D
+&CRaoden: Long description : A massive pile of %s coins! (chat)&D
+&CRaoden: una pila masiva wtf xd (chat)&D
+&CRaoden: ah enorme xd (chat)&D
+&CZlorth: puedo hacer copyover? (chat)&D
+&CZlorth: call.are? (chat)&D
+&CRaoden: ahora si xd (chat)&D
+&CZlorth: no está en el limbo.are? (chat)&D
+&CRaoden: no, eso me parecio raro pero.. (chat)&D
+&CRaoden: a saber xd (chat)&D
+&CRaoden: taria wapo un mud traducido a lo google (chat)&D
+&CRaoden: Así que muchas monedas% s, no se puede contar con ellos! (chat)&D
+&CZlorth: hum (chat)&D
+&CZlorth: reboot (chat)&D
+&CRaoden: juaaas que wapo (chat)&D
+&CZlorth: que? (chat)&D
+&CRaoden: el saveall xd (chat)&D
+&CZlorth: uuuups (chat)&D
+&CRaoden: juas que haces xd (chat)&D
+&CZlorth: uuups uuups uuuups xd (chat)&D
+&CZlorth: cosas que pasan por traducir los flags (chat)&D
+&CRaoden: jajajaja (chat)&D
+&CRaoden: lastima q sea chungo hacer un mud como elq ue querian hacer los de phantasien... que esto de tener el codigo en spanglish xd (chat)&D
+&CZlorth: pues si que... (chat)&D
+&CZlorth: es cosa de editar progs (chat)&D
+&CZlorth: Ya no escuchas el canal log (chat)&D
+&CRaoden: joajoajoajoajao (chat)&D
+&CRaoden: pos hare lo mismo xd (chat)&D
+&CRaoden: pues, lo de las monedas, ya está (chat)&D
+&CZlorth: hasta que se traduzcan las areas. Por cierto hay que traducir todos los flags, ya que estamos (chat)&D
+&CRaoden: pa que? xd (chat)&D
+&CZlorth: los del build.c (chat)&D
+&CZlorth: por que odio el spanglish (chat)&D
+&CRaoden: jajajaja (chat)&D
+&CZlorth: y al código tampoco le sienta bien, que luego pasan cosas como estas :P (chat)&D
+&CRaoden: pos por mi wapo, pero se me hace un tanto complicated xd (chat)&D
+&CZlorth: na, es fácil (chat)&D
+&CZlorth: son constantes, traduces lo que hay entre las comillas y ya (chat)&D
+&CZlorth: si fuera un smaugfuss si habría más problema (chat)&D
+&CZlorth: pero aquí problema ninguno (chat)&D
+&CRaoden: pero no hay que tocar despues en el mud.h y los demas archivos donde este ese flag? (chat)&D
+&CZlorth: no (chat)&D
+&CZlorth: lo que se traducen son los strings del build.c (chat)&D
+&CZlorth: que usa el mud para... (chat)&D
+&CZlorth: para no se qué exactamente (chat)&D
+&CZlorth: son strings que usa el mud para según que cosas (chat)&D
+&CRaoden: xd (chat)&D
+&CZlorth: por que tu no modificas los flags, modificas la... forma de interactuar con ellos (chat)&D
+&CZlorth: digo. tu no modificas el plr_cosa, modificas lo que el mud entiende como nombre para referirse desde fuera de código al plr_cosa (chat)&D
+&CZlorth: lo pillas? (chat)&D
+&CRaoden: ah ya (chat)&D
+&CZlorth: anda, felix felicis me ahorrará el trabajo (chat)&D
+&CRaoden: jjajajajaa (chat)&D
+&CZlorth: ala (chat)&D
+&CZlorth: traduciré conforme los vayamos necesitando (chat)&D
+&CZlorth: los que no se necesiten se quedan en inglés hasta nuevo aviso (chat)&D
+&CRaoden: igual no son tantos, o sí (chat)&D
+&CZlorth: no, no lo son (chat)&D
+&CZlorth: écha un ojo al build.c (chat)&D
+&CZlorth: son todas constantes (chat)&D
+&CZlorth: no me hace gracia traducirlos pero toca joderse xd (chat)&D
+&CRaoden: oe (chat)&D
+&CRaoden: mi duda existencial siempre fue (chat)&D
+&CZlorth: de todos modos así mola más, por que puedes usar los nombres en español y en el identificar se ven bien (chat)&D
+&CRaoden: como coño funcionan los mobs xd (chat)&D
+&CZlorth: como que como funcionan' (chat)&D
+&CRaoden: me refiero para el daño y eso (chat)&D
+&CRaoden: pq no les puedes poner hit y dam (chat)&D
+&CZlorth: fácil y sencillo (chat)&D
+&CRaoden: son estos, no? const char             *const ex_pmisc[] ={"indefinido",	"vórtice",	"vacio",	"resvalon", (chat)&D
+&CZlorth: hitnumdie hitsizedie hitplus (chat)&D
+&CZlorth: si pones 1 6 10 el mob tendrá como máximo 16 de vida (chat)&D
+&CZlorth: esos, sí (chat)&D
+&CZlorth: ya os explicaré la fórmula que tiene su aquel (chat)&D
+&CRaoden: es rarisimo xd (chat)&D
+&CZlorth: traduces tu las constantes esas tocanarices? (chat)&D
+&CZlorth: lo digo para terminar el player (chat)&D
+&CRaoden: bueno a ver (chat)&D
+&CRaoden: esto esta bien? (chat)&D
+&CRaoden: "corriente",	"ola"	"remolino",	"geiser" (chat)&D
+&CRaoden: o falta una coma xd (chat)&D
+&CZlorth: eso dice aryeh (chat)&D
+&CZlorth: copié de FF (chat)&D
+&CRaoden: ah pues xd (chat)&D
+&CRaoden: si compila... (chat)&D
+&CZlorth: pero me di cuenta que salvo lo que le copié (chat)&D
+&CZlorth: no tenemos nada igual (chat)&D
+&CRaoden: claro, aryeh es... aryeh xd (chat)&D
+&CZlorth: así que lo que le pillé bueno es, he exprimido ese código al máximo (chat)&D
+&CRaoden: pasdfjoipasdjfiasjdf (chat)&D
+&CRaoden: "isdoor", "closed", "locked", "secret", "swim", "pickproof", "fly", "climb", (chat)&D
+&CZlorth: sep (chat)&D
+&CRaoden: pero por ejemplo (chat)&D
+&CRaoden: fly es volar xd (chat)&D
+&CRaoden: volar asi sin mas le pongo? xd (chat)&D
+&CZlorth: pero son constantes distintas (chat)&D
+&CZlorth: sip (chat)&D
+&CRaoden: y en masculino o femenino xd (chat)&D
+&CRaoden: cerrado o cerrada xd (chat)&D
+&CRaoden: bloqueado o bloqueada xd (chat)&D
+&CZlorth: supongo cerrado (chat)&D
+&CZlorth: o cerrada, depende si es flag para salidas (chat)&D
+&CRaoden: ah pues si (chat)&D
+&CRaoden: pos si que son tocanarices (chat)&D
+&CRaoden: una salida con flag swim (chat)&D
+&CRaoden: nadar? xd (chat)&D
+&CRaoden: a mi es que me suena a que queda incoerente pero weno xd (chat)&D
+&CZlorth: sip (chat)&D
+&CZlorth: para que solo puedas ir nadando para llá (chat)&D
+&CRaoden: el pickproof pa que seria? (chat)&D
+&CZlorth: NPI (chat)&D
+&CRaoden: climb (chat)&D
+&CRaoden: ? (chat)&D
+&CZlorth: clim es escalable (chat)&D
+&CRaoden: eatkey? (chat)&D
+&CZlorth: NPI (chat)&D
+&CRaoden: nopassdoor (chat)&D
+&CRaoden: es noatravesar? (chat)&D
+&CZlorth: sip (chat)&D
+&CZlorth: notraspasar supongo (chat)&D
+&CRaoden: y esta mierda de r1,r2,r3, etc? (chat)&D
+&CZlorth: déjalos (chat)&D
+&CZlorth: esos no se tocan pero por algún motivo desconocido deben estar ahí (chat)&D
+&CRaoden: searchable (chat)&D
+&CRaoden: encontrable? buscable? q xd (chat)&D
+&CZlorth: teniendo en cuenta que eso no lo verá el jugador... buscable supongo xd (chat)&D
+&CZlorth: el jjugador solo verá los flags de affects (chat)&D
+&CZlorth: Player.c terminado, falta solo una función que ya haré cuando me acuerde de ella (chat)&D
+&CRaoden: cual? (chat)&D
+&CZlorth: si no la elimino xd (chat)&D
+&CZlorth: una que te muestra los mejores roleadores (chat)&D
+&CRaoden: bashed (chat)&D
+&CRaoden: son inentendibles estas meirdas xd (chat)&D
+&CZlorth: bashed tiene pinta de ser... (chat)&D
+&CZlorth: que dice google que es? (chat)&D
+&CZlorth: creo que se refiere a las salidas derribadas, pero no estoy yo seguro (chat)&D
+&CRaoden: no traduce (chat)&D
+&CZlorth: sip (chat)&D
+&CZlorth: bashed es cuando derribas una puerta (chat)&D
+&CZlorth: acabo de probar (chat)&D
+&CRaoden: derrivable? xd (chat)&D
+&CZlorth: derribada (chat)&D
+&CRaoden: autofull... (chat)&D
+&CZlorth: eso déjalo (chat)&D
+&CZlorth: es un auto de algo que vete a saber que leches es (chat)&D
+&CZlorth: y en el config no aparece así que sospecho que no es tocable por jugadores (chat)&D
+&CRaoden: isbolt y bolted? (chat)&D
+&CZlorth: eso es una cosa que han dejado a medio implementar (chat)&D
+&CZlorth: así que... (chat)&D
+&CRaoden: que lo upe xd (chat)&D
+&CRaoden: bashproof (chat)&D
+&CZlorth: eso era... (chat)&D
+&CZlorth: BASHPROOF     | Cannot bash the door (chat)&D
+&CZlorth: ayuda exflag xd (chat)&D
+&CRaoden: yyy... (chat)&D
+&CRaoden: notraspasar? xd (chat)&D
+&CZlorth: pue se (chat)&D
+&CRaoden: aps (chat)&D
+&CRaoden: hay  2 con el mismo nombre (chat)&D
+&CZlorth: en inglés también? (chat)&D
+&CRaoden: no (chat)&D
+&CZlorth: pues busca un sinónimo? (chat)&D
+&CRaoden: uno era bashdoor y el otro el de recien... a uno le puse traspasar y al otro no traspasar xd (chat)&D
+&CZlorth: que dice la ayuda? (chat)&D
+&CRaoden: NOPASSDOOR    | Door is resistant to the passdoor spell (chat)&D
+&CRaoden: BASHPROOF     | Cannot bash the door (chat)&D
+&CZlorth: uno para derribar otro para el spell atravesar (chat)&D
+&CRaoden: el ultimo... noderribar? (chat)&D
+&CZlorth: sip (chat)&D
+&CZlorth: [Chat] Raoden 'BASHPROOF     | Cannot bash the door' (chat)&D
+&CZlorth: ese es noderribar (chat)&D
+&CRaoden: PICKPROOF     | Door is pickproof (chat)&D
+&CRaoden: vale... wapa explicacion. lo peor que en los flags de contenedores aparece tambien xd (chat)&D
+&CRaoden: forzable, no forzable? xd (chat)&D
+&CZlorth: sep (chat)&D
+&CZlorth: pues pues pues (chat)&D
+&CZlorth: seg que pruebo (chat)&D
+&CZlorth: donde aparece? (chat)&D
+&CRaoden: pos ahi, en los exflags... y en container_flag (chat)&D
+&CZlorth: déjalo pues xd (chat)&D
+&CZlorth: se salta y cuando se sepa se mira, que por lo que se ve no funciona (chat)&D
+&CRaoden: xd (chat)&D
+&CZlorth: juas juas juas (chat)&D
+&CRaoden: ? xd (chat)&D
+&CZlorth: pues... (chat)&D
+&CZlorth: déjalo así a ver que leches pasa (chat)&D
+&CZlorth: voy a echar un ojo al do_pick (chat)&D
+&CZlorth: if ( IS_SET( pexit->exit_info, EX_PICKPROOF ) ) { (chat)&D
+&CZlorth: noforzable (chat)&D
+&CRaoden: road (chat)&D
+&CRaoden: que sector seria ese? (chat)&D
+&CZlorth: Pues su traducción literal es calle o carretera (chat)&D
+&CRaoden: hills... seria cerros... (chat)&D
+&CRaoden: o algo asi xd (chat)&D
+&CZlorth: colinas (chat)&D
+&CRaoden: montaña... o montanya xd (chat)&D
+&CZlorth: hills colinas (chat)&D
+&CRaoden: ya despues sale montain xd (chat)&D
+&CZlorth: si ves un montain montanya (chat)&D
+&CZlorth: que luego se nos quejan los builders que no tienen ñ en el teclado (chat)&D
+&CRaoden: sector area_ent? (chat)&D
+&CZlorth: pues ese no sale xd (chat)&D
+&CRaoden: ocean floor? oceano sin mas? (chat)&D
+&CZlorth: area_ent        11 (adds explore exit to the room) (chat)&D
+&CZlorth: ese es... final_area (chat)&D
+&CZlorth: para antes  la room a la que se añade la salida explorar (chat)&D
+&CZlorth: supongo, si no hay otro oceano, si lo hay sería suelo_oceanico (chat)&D
+&CZlorth: salgo (chat)&D
+&CRaoden: ale (chat)&D
+&CZlorth: configurar music  (chat)&D
+&CZlorth: configurar communication (chat)&D
+&CKais: zlorth es mu feo (chat)&D
+&CZlorth: @smile (chat)&D
+&CZlorth: este (chat)&D
+&WZlorth tells: Novick este&D
+&WMewrsuin tells: Kais wla&D
+&WKais tells: Mewrsuin enas&D
+&WKais tells: Mewrsuin enas&D
+&CZlorth: **** DESINTEGRAS **** a Kais al patearle 8 veces causándole 15776 puntos de daño! (chat)&D
+&CKais: zalgo (chat)&D
+&CKais: diiigo (chat)&D
+&CZlorth: adv bicho first (chat)&D
+&CZlorth: adv bicho nivel first (chat)&D
+&CRaoden: nas (chat)&D
+&CZlorth: nas (chat)&D
+&CZlorth: con que archivo estás tu? (chat)&D
+&CRaoden: juas como esta el log xd (chat)&D
+&CRaoden: pues ayer andaba traduciendo los flags, que traduje unos cuantos pq se me hacía complicado (chat)&D
+&CZlorth: hasta que no se traduzcan las areas te jodes o desactivas el log xd (chat)&D
+&CZlorth: los traduje yo (chat)&D
+&CZlorth: mira el cambios, ya me encargo yo de los flags (chat)&D
+&CRaoden: que queda? (chat)&D
+&CRaoden: que es el zot? (chat)&D
+&CZlorth: NPI (chat)&D
+&CZlorth: puedes ponerte con el calendar, por ejemplo (chat)&D
+&CRaoden: aer (chat)&D
+&CRaoden: {"GMT-3", "Brazilia, Buenos Aries", -3, 0}, (chat)&D
+&CRaoden: buenos aries si si (chat)&D
+&CRaoden: lo que no entiendo es por que sale Your local time        :   Mon May 11, 2015 6:29:05 AM Eniwetok (chat)&D
+&CZlorth: que es eso? (chat)&D
+&CRaoden: en el calendar xd (chat)&D
+&CRaoden: salen las zonas horarias... (chat)&D
+&CZlorth: Supongo para que lo configures a placer? (chat)&D
+&CRaoden: si el tema es... donde se configurara xd (chat)&D
+&CZlorth: comando time que voy a traducir ahora (chat)&D
+&CZlorth: listo (chat)&D
+&CZlorth: comando zonahoraria gmt+1 en tucaso (chat)&D
+&CRaoden: es raro porque la mia es gmt -4... pero deberia ser gmt-3. en fin xd (chat)&D
+&CRaoden: tu has traducido el copy? (chat)&D
+&CZlorth: sip (chat)&D
+&CRaoden: ea xd (chat)&D
+&CZlorth: coño, quedan mensajes en inglés (chat)&D
+&CZlorth: ah no xd (chat)&D
+&CRaoden: yo los veo ya en español (chat)&D
+&CRaoden: pero las primeras veces si´ (chat)&D
+&CZlorth: listo ahora (chat)&D
+&CRaoden: quien es novic? (chat)&D
+&CRaoden: bull es toro? x}d (chat)&D
+&CZlorth: novick es claudia (chat)&D
+&CRaoden: the Grand Struggle (chat)&D
+&CRaoden: asi se llama un mes (chat)&D
+&CRaoden: q seria? google me lo pone como... el gran lucha xd (chat)&D
+&CZlorth: la gran guerra (chat)&D
+&CZlorth: queda más bonito (chat)&D
+&CRaoden: mes de la futilidad? xd (chat)&D
+&CRaoden: Futility... hay alguna palabra mas... xD (chat)&D
+&CZlorth: sep (chat)&D
+&CRaoden: por que pegas mas con lo fisico q con los hechizos? (chat)&D
+&CZlorth: Ni idea (chat)&D
+&CZlorth: Dios (chat)&D
+&CZlorth: puto death field (chat)&D
+&CZlorth: me ha dejado sordo (chat)&D
+&CRaoden: q xd (chat)&D
+&CRaoden: pero que mierda de hechizo (chat)&D
+&CRaoden: esta bug o que xd (chat)&D
+&CZlorth: pero que coño hace ese puto hechizo? (chat)&D
+&CZlorth: no, no tiene pinta de ser bug (chat)&D
+&CRaoden: a mi, tirarme el mush client xd (chat)&D
+&CZlorth: pero arrea mucho y el bufer se limpia por flood (chat)&D
+&CZlorth: como se sabe la función de un hechizo? (chat)&D
+&CZlorth: para ver que código tiene el death field este de los cojones (chat)&D
+&CRaoden: hmm en el magic.c? (chat)&D
+&CRaoden: Wolfe is no longer idle. (chat)&D
+&CRaoden: y eso? (chat)&D
+&CRaoden: hay una estacion (chat)&D
+&CRaoden: que se llama fall... sería otonio? xd (chat)&D
+&CRaoden: otoño* (chat)&D
+&CWolfe: si (chat)&D
+&CZlorth: si acaso otoño con ñ (chat)&D
+&CWolfe: si, es otoño en enguaje americano (chat)&D
+&CWolfe: lenguaje* (chat)&D
+&CRaoden: putos yanquis xd (chat)&D
+&CRaoden: qué wea son las vacaciones? (chat)&D
+&CZlorth: pues vacaciones (chat)&D
+&CRaoden: pero pa que sirven xd (chat)&D
+&CZlorth: días festivos de mud (chat)&D
+&CZlorth: donde hay ciertas clases que arrean más y esas cosas (chat)&D
+&CRaoden: ah pues entonces no le pongo vacaciones xd (chat)&D
+&CZlorth: por ejemplo, un mago pegará más con bolas de fuego en verano (chat)&D
+&CRaoden: o nose (chat)&D
+&CRaoden: sorry xd (chat)&D
+&CZlorth: que lo petó? (chat)&D
+&CRaoden: poner hora swicheando un mob (chat)&D
+&CZlorth: vale, hay que añadirle a ese comando que los mobs no puedan ejecutarlo para que no pete xd (chat)&D
+&CHorvak: dr (chat)&D
+&CZlorth: tnendremos el IMC activo? (chat)&D
+&CRaoden: ¿Huh? - Escribe bien el comando. (chat)&D
+&CZlorth: eso veo (chat)&D
+&CZlorth: anda, ya se que pasa (chat)&D
+&CRaoden: ? (chat)&D
+&CRaoden: que llega el invierno y se congelan los rios juas (chat)&D
+&CZlorth: Juas? (chat)&D
+&CRaoden: te cambia el sector de ciertas room a articos (chat)&D
+&CRaoden: artic (chat)&D
+&CRaoden: y hablando de eso hay que tradicir el puto flag xd (chat)&D
+&CRaoden: yo salgo, vuelvo del conser y sigo con eso (chat)&D
+&CZlorth: que flag? (chat)&D
+&CZlorth: el flag está traducido en el build.c (chat)&D
+&CRaoden: ah (chat)&D
+&CRaoden: no hace falta tocar los demas archivos? (chat)&D
+&CZlorth: los sectores están todos (chat)&D
+&CRaoden: o sea si en otro archivo aparece en ingles... (chat)&D
+&CZlorth: en que archivo está? (chat)&D
+&CRaoden: calendar (chat)&D
+&CZlorth: no veo ningún river en calendar (chat)&D
+&CRaoden: no (chat)&D
+&CZlorth: donde está el flag entonces? (chat)&D
+&CRaoden: case SECT_WATER_SWIM:                case SECT_WATER_NOSWIM:                     room->winter_sector = room->sector_type;                     room->sector_type = SECT_ARCTIC; (chat)&D
+&CZlorth: ah si (chat)&D
+&CZlorth: te explico (chat)&D
+&CZlorth: eso son flags definidos en mud.h (chat)&D
+&CZlorth: lo que yo he tocado (chat)&D
+&CZlorth: es la forma que hay de referise a ellos muderamente hablando (chat)&D
+&CZlorth: cuando una room le haces un rstat (chat)&D
+&CZlorth: no te muestra SECT_WATER_SWIM como sector (chat)&D
+&CZlorth: sino te muestra sector nadar (chat)&D
+&CZlorth: y cuando tu escoges el sector usas sector nadar, lo pillas? (chat)&D
+&CRaoden: aha claro (chat)&D
+&CRaoden: en resumen... eso se deja asi xd (chat)&D
+&CZlorth: si, por que hace referencia a un número definido en mud.h (chat)&D
+&CZlorth: un coñazo, pero para nuestra tranquilidad no hay que tocarlo (chat)&D
+&CRaoden: nas (chat)&D
+&CRaoden: ah estoy solo xd (chat)&D
+&CZlorth: que es MDT? (chat)&D
+&CRaoden: npi (chat)&D
+&CRaoden: ps que sistema raro el de las subastas (chat)&D
+&CRaoden: enas  (chat)&D
+&CWolfe: va copyover (chat)&D
+&CRaoden: go (chat)&D
+&CWolfe: shops compiladp (chat)&D
+&CWolfe: compilado* (chat)&D
+&CRaoden: completo? (chat)&D
+&CWolfe: sip (chat)&D
+&CRaoden: wapo (chat)&D
+&CWolfe: o creo xd (chat)&D
+&CRaoden: como mierda funciona el puto banco aqui xd (chat)&D
+&CRaoden: jajajaaaa es un lio usar el banco (chat)&D
+&CTestraoden: juaaas (chat)&D
+&CTestraoden: sabiendo el pass de la cuenta de banco de otro la puede usar cualquiera (chat)&D
+&CWolfe: juaaaaaas (chat)&D
+&CZlorth: PULVERIZAS a Horvak al patearle 8 veces causándole 30432 puntos de daño! (chat)&D
+&CRaoden: Warning: the htown Forbidden City no longer exists, and herefore you no longer (chat)&D
+&CRaoden: qué rompiste xd (chat)&D
+&CRaoden: &ZYou met the challenge with determination, strength, and total confidence! Congratulations! (ooc)&D
+&CRaoden: OMG could it be....you must be a leveling &ZMACHINE! (ooc)&D
+&CRaoden: &Zbuen trabajo! (ooc)&D
+&CRaoden: espera que todo siga yendo igual de bien! (ooc)&D
+&CRaoden: recognizes the Stunning performance! (ooc)&D
+&CRaoden: wtf (chat)&D
+&CRaoden: ponesela a alguien que no traduzca codigo por gey xd (chat)&D
+&CRaoden: y ya de paso que ayuden tambien a traducir comandos joe xd (chat)&D
+&CZlorth: es que ese area tiene mobprogs (chat)&D
+&CZlorth: y de los delicados, por eso el bug. Y me da pereza explicarles con manzanitas ese tipo de progs por que solo están en un area (chat)&D
+&CRaoden: That Mobile has no Programs set. (chat)&D
+&CRaoden: ah son rprogs (chat)&D
+&CZlorth: bueno, pues solo queda... (chat)&D
+&CZlorth: traducir hareas y clases con sus skills y mierdas correspondientes (chat)&D
+&CZlorth: es la parte que más pereza me da (chat)&D
+&CRaoden: a mi me da pereza lo de los comandos xd (chat)&D
+&CZlorth: pero si eso en una media hora está listo xD (chat)&D
+&CRaoden: viste como funciona el banco? (chat)&D
+&CZlorth: nu (chat)&D
+&CRaoden: que por cierto no esta traducido xd (chat)&D
+&CZlorth: si, a alguien se le debió pasar (chat)&D
+&CZlorth: su puta madre (chat)&D
+&CRaoden: ? (chat)&D
+&CZlorth: como coño funciona? (chat)&D
+&CRaoden: creas una cuenta con una contraseña (chat)&D
+&CRaoden: y ya xd (chat)&D
+&CRaoden: y cualquiera que sepa tu contraseña pue (chat)&D
+&CRaoden: te deja en bolas xd (chat)&D
+&CZlorth: acojona un poquito (chat)&D
+&CZlorth: acojona un poquito (chat)&D
+&CZlorth: ups (chat)&D
+&CRaoden: es raro (chat)&D
+&CZlorth: sep (chat)&D
+&CZlorth: en que archivo estará? (chat)&D
+&CRaoden: según mis deducciones lógicas que aprendí en la escuela de detectives... en el banc.c xd (chat)&D
+&CZlorth: ah, que hay bank.c? (chat)&D
+&CZlorth: jojojo xd (chat)&D
+&CRaoden: pos eso, que es una puta rareza. tienes que abrir la cuenta, luego depositar, luego cerrar... xd (chat)&D
+&CZlorth: no tendrás el ftp abierto para compilar? que estoy perezoso (chat)&D
+&CZlorth: bank.c traducido (chat)&D
+&CRaoden: aer (chat)&D

@@ -1,0 +1,56 @@
+#CITY
+Name          Forbidden City~
+Filename      forbidden.city~
+Bank          forbidden~
+Duke          Klorawn~
+Baron         Mirkoros~
+Captain       Kingston~
+Allegiance    Halcyon~
+Defense          500
+Offense          415
+OffenseCatapult  3
+DefenseCatapult  10
+Ballista         3
+Soldiers         40
+Guards           50
+DefenseArchers   50
+OffenseArchers   40
+DefenseWarriors  50
+OffenseWarriors  50
+Arrows           50
+Platform         3
+Ram              2
+Pitch            10
+Wins             334
+Loses            42
+Recall           35515
+Siege1           35509
+Siege2           35511
+Siege3           35512
+Defend1          35515
+Defend2          35530
+Defend3          35535
+MSoldier         41038
+MArcher          41039
+OCatapult        41008
+OBallista        41009
+OPitch           41010
+OPlatform        41011
+ORam             41012
+OArrow           41023
+MinHouse         0
+MaxHouse         0
+Hardened         0
+End
+
+#ROLLCALL
+Name      Zlorth~
+Joined    1431215806
+Updated    1431215962
+Class     twoheaded~
+Level     108
+Kills     36
+Deaths    0
+End
+
+#END

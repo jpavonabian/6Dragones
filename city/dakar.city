@@ -1,0 +1,45 @@
+#CITY
+Name          Dakar City~
+Filename      dakar.city~
+Bank          dakar~
+Duke          Lassiekysh~
+Baron         Krystothon~
+Allegiance    Throng~
+Defense          221
+Offense          215
+OffenseCatapult  4
+DefenseCatapult  2
+Ballista         0
+Soldiers         50
+Guards           44
+DefenseArchers   50
+OffenseArchers   2
+DefenseWarriors  1
+OffenseWarriors  3
+Arrows           1
+Platform         1
+Ram              2
+Pitch            2
+Wins             9
+Loses            24
+Recall           11210
+Siege1           27013
+Siege2           27012
+Siege3           27006
+Defend1          11206
+Defend2          11205
+Defend3          11214
+MSoldier         41038
+MArcher          41039
+OCatapult        41008
+OBallista        41009
+OPitch           41010
+OPlatform        41011
+ORam             41012
+OArrow           41023
+MinHouse         57001
+MaxHouse         58000
+Hardened         0
+End
+
+#END

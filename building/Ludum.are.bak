@@ -1,0 +1,165 @@
+#AREA        {PROTO} Ludum's area in progress~
+
+
+
+#VERSION     9
+#AUTHOR      Ludum~
+#DERIVATIVES ~
+#COLOR       0
+#HTOWN       ~
+#DESC        ~
+
+#RANGES
+0 0 0 0
+$
+
+#SPELLLIMIT 0
+#RESETMSG ~
+
+#FLAGS
+0
+
+#CURRENCY 0
+
+#HIGHECONOMY 0 0 0 0 0 -1
+
+#LOWECONOMY 0 0 0 0 0 -1
+
+#CLANNAME (null)~
+
+#INFLUENCE 0
+
+#MOBILES
+#63000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1
+Clanname none~
+0
+0
+1073741825 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#63099
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1
+Clanname none~
+0
+0
+1073741825 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#63099
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 1073741824 0
+0 0 0 0 0 0 0
+1 0 0
+1
+0
+S 0 0
+#0
+
+
+#ROOMS
+#63000
+&zApproaching an &WOminous &cStorm &wCloud&D~
+Not Assigned~
+Billowing black clouds can be seen in the distance. They rise and swell with intense
+raw power. Static electricity permeates the air here, as the humidity changes almost
+instantaneously from swampy to arid. The swirling vortex of cloud-bank moves closer,
+and it seems that the clouds themselves are forming familiar shapes. Towers, walkways,
+walls, and doors slowly coalesce from the mass of atmosphere as if sculpted by an unseen
+hand. The smell of rain rides on the breezes, quickly forgotten as a low rumbling of
+thunder radiates through the entire terrain.
+~
+1 1090519040 1
+D0
+~
+~
+0 -1 63001
+> entry_prog 100~
+mppause 10
+mpechoat $n &zA soft wisp of cumulonimbus &wcloud&z floats gently past your face...
+~
+> time_prog 1~
+mpecho &cA breeze from the north sends shivers down your spine...
+mppause 9
+mpforce all shiver
+~
+|
+S
+#63001
+&zThe &wCloud&z Bridge~
+Not Assigned~
+Approaching the massive storm front, the swirling atmosphere is sculpted into
+a long bridge. A cloudy cross-walk can be seen at the other end. A fine mist floats
+adrift above the bridge, shifting and swirling with the air currents coming from the
+storm. A faint image of the ground can be seen miles below through the transluscent
+bridge.
+~
+1 1090519040 1
+D2
+~
+~
+0 -1 63000
+S
+#63002
+Floating in a void~
+Not Assigned~
+~
+1 1073741828 1
+S
+#63009
+Floating in a void~
+Not Assigned~
+~
+1 1073741828 1
+S
+#63099
+Floating in a void~
+Not Assigned~
+~
+1 1073741828 1
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

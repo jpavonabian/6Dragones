@@ -1,0 +1,55 @@
+#CITY
+Name          Paleon City~
+Filename      paleon.city~
+Bank          paleon~
+Duke          Kyrigan~
+Baron         Gilanthas~
+Allegiance    Alliance~
+Defense          500
+Offense          490
+OffenseCatapult  4
+DefenseCatapult  10
+Ballista         4
+Soldiers         50
+Guards           50
+DefenseArchers   50
+OffenseArchers   50
+DefenseWarriors  50
+OffenseWarriors  50
+Arrows           50
+Platform         4
+Ram              2
+Pitch            10
+Wins             52
+Loses            63
+Recall           16007
+Siege1           3503
+Siege2           16140
+Siege3           16142
+Defend1          16020
+Defend2          16001
+Defend3          16019
+MSoldier         41038
+MArcher          41039
+OCatapult        41008
+OBallista        41009
+OPitch           41010
+OPlatform        41011
+ORam             41012
+OArrow           41023
+MinHouse         54001
+MaxHouse         55000
+Hardened         8
+End
+
+#ROLLCALL
+Name      Zlorth~
+Joined    1431215797
+Updated    1431215797
+Class     twoheaded~
+Level     108
+Kills     36
+Deaths    0
+End
+
+#END

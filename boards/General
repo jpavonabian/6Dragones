@@ -1,0 +1,164 @@
+Sender      Vladaar~
+PostTime    1406257836
+To          All~
+Subject     Welcome!~
+Read        Vladaar~
+Read        Zaiden~
+Read        Thamr~
+Read        Amaru~
+Read        Lassiekysh~
+Read        Bansheena~
+Read        Zhaxiaoyen~
+Read        Roselia~
+Read        Malukus~
+Read        Kyrigan~
+Read        Samael~
+Read        Galt~
+Read        Armando~
+Read        Remcon~
+Read        Yabeno~
+Read        Razmus~
+Read        Irniss~
+Read        Numair~
+Read        Myrlan~
+Read        Toireasa~
+Read        Kimel~
+Read        Darthorien~
+Read        Weibble~
+Read        Rasiel~
+Read        Dagon~
+Read        Haine~
+Read        Zira~
+Read        Mordion~
+Text
+Greetings to Classic 6Dragons!
+
+Please enjoy the game.  I very happy with the end product and will not be making
+many code changes now.
+
+This global boards code was provided by Remcon, and allows us to auction objects on the boards.
+
+~
+End
+
+Sender      Vladaar~
+PostTime    1414894400
+To          All~
+Subject     Good to Know~
+Read        Caelum~
+Read        Vladaar~
+Read        Amaru~
+Read        Rasiel~
+Read        Samael~
+Read        Myrlan~
+Read        Kimel~
+Read        Weibble~
+Read        Ludum~
+Read        Dagon~
+Read        Haine~
+Read        Zira~
+Read        Kyrigan~
+Read        Lassiekysh~
+Read        Abidawn~
+Read        Mordion~
+Text
+Please check out help contribute.
+
+
+It has several ways to earn heaps of Glory!
+
+What can you do with glory?  Type glory costs and it will tell you.
+
+~
+End
+
+Sender      Abidawn~
+PostTime    1420492629
+To          Samael~
+Subject     Quest ideas~
+Read        Abidawn~
+Read        Samael~
+Read        Ludum~
+Text
+Hi Samael.
+Here goes-
+For starters, Mob #31377 can be a possible questgiver.
+E.G- The dwarven Jester calls you over. Leaning in close, he frantically whispers to you, informing you that he has lost his lute. He tells you that he was playing songs for the king and queen in the royal gardens, and after he had finished strumming and the royalty had departed, a raven swooped down and stole his instrument.
+The dwarven jester implores you, to search around the gardens, and find the large vicious raven that stole his instrument.
+I thought that maybe in the gardens, there could be a room, that features a description of what looks to be a nest in a tree. Like, something that you have to search for, before you can climb up the tree to find the master raven that stole the instrument.
+You will then have to fight the raven and take it's corpse and the lute to the jester. This can then lead on to a second quest.
+Having given the jester his instrument, he informs the king of your deeds. the dwarven king, (mob #31401) then asks you to perform a service for the crown.
+He directs you to the cathedral within the city, and informs you of a problem the dwarven high priest Vregion has told him about.
+When you arrive at the room holding the mob, the mob can inform you of some dark necromancy which has been cast upon the residents of the cathedral crypt.
+He asks you if you can ensure that the zombies are finally laid to rest. If you accept, he directs you to the crypt keeper, Mob #31400, and asks that you find out how these undead have been animated.
+To gain entry, you must tell the cryptkeeper that Vregion has sent you, and the cryptkeeper opens the gate for you.
+Entering the crypt, you must find and destroy each animated corpse, and collect an unholy charm from their corpses.
+Once you've found all charms, you must return them to the high priest, who destroys their dark magic and thanks you for helping.
+As another step for the quest, the high priest tells you to inform the king of this victory.
+Returning to the king, he asks you to search the city for the necromancer, and tells you to ask the people you meet about unholy magic to see if they can direct you to the correct mob.
+I was thinking that the mob 31339 the royal adviser could be the one to trigger the next part. Finding him will also be a challenge, as he is mobile.
+When you find the adviser, he tells you that he knows who had cast the dark magic, and tells you that it is #31403 'lendra dwarven queen.
+As a twist, He can ask you whether you wish to continue serving the king, or if you want to serve the queen.
+If you choose to continue with the king quest, you have to kill the adviser and take it to the queen to trigger the next part of the king quest.
+if you choose to switch to the queen's side, he gives you his blessing, and tells you to seek her out to receive the next quest from her.
+Returning to the dwarven queen, you tell her you know she created the animated slaves in the cathedral crypt. If you have chosen to serve the queen, she tells you she wants you to assassinate the dwarf king and bring the body to her as she wishes to rule manoake alone.
+If you tell her you serve the king, she attacks you and you have to kill her and take her corpse to the king, and tell him what you've learned about her plotting.
+Got a few other ideas too, let me know what you think about this first attempt. :p
+~
+End
+
+Sender      Samael~
+PostTime    1421702858
+To          Sorine~
+Subject     abidawn quest~
+Read        Samael~
+Read        Ludum~
+Text
+For starters, Mob #31377 can be a possible questgiver.
+E.G- The dwarven Jester calls you over. Leaning in close, he frantically whispers to you, informing 
+you that he has lost his lute. He tells you that he was playing songs for the king and queen in the 
+royal gardens, and after he had finished strumming and the royalty had departed, a raven swooped 
+down and stole his instrument.
+The dwarven jester implores you, to search around the gardens, and find the large vicious raven that 
+stole his instrument.
+I thought that maybe in the gardens, there could be a room, that features a description of what 
+looks to be a nest in a tree. Like, something that you have to search for, before you can climb up 
+the tree to find the master raven that stole the instrument.
+You will then have to fight the raven and take it's corpse and the lute to the jester. This can then 
+lead on to a second quest.
+Having given the jester his instrument, he informs the king of your deeds. the dwarven king, (mob 
+#31401) then asks you to perform a service for the crown.
+He directs you to the cathedral within the city, and informs you of a problem the dwarven high 
+priest Vregion has told him about.
+When you arrive at the room holding the mob, the mob can inform you of some dark necromancy which 
+has been cast upon the residents of the cathedral crypt.
+He asks you if you can ensure that the zombies are finally laid to rest. If you accept, he directs 
+you to the crypt keeper, Mob #31400, and asks that you find out how these undead have been animated.
+To gain entry, you must tell the cryptkeeper that Vregion has sent you, and the cryptkeeper opens 
+the gate for you.
+Entering the crypt, you must find and destroy each animated corpse, and collect an unholy charm from 
+their corpses.
+Once you've found all charms, you must return them to the high priest, who destroys their dark magic 
+and thanks you for helping.
+As another step for the quest, the high priest tells you to inform the king of this victory.
+Returning to the king, he asks you to search the city for the necromancer, and tells you to ask the 
+people you meet about unholy magic to see if they can direct you to the correct mob.
+I was thinking that the mob 31339 the royal adviser could be the one to trigger the next part. 
+Finding him will also be a challenge, as he is mobile.
+When you find the adviser, he tells you that he knows who had cast the dark magic, and tells you 
+that it is #31403 'lendra dwarven queen.
+As a twist, He can ask you whether you wish to continue serving the king, or if you want to serve 
+the queen.
+If you choose to continue with the king quest, you have to kill the adviser and take it to the queen 
+to trigger the next part of the king quest.
+if you choose to switch to the queen's side, he gives you his blessing, and tells you to seek her 
+out to receive the next quest from her.
+Returning to the dwarven queen, you tell her you know she created the animated slaves in the 
+cathedral crypt. If you have chosen to serve the queen, she tells you she wants you to assassinate 
+the dwarf king and bring the body to her as she wishes to rule manoake alone.
+If you tell her you serve the king, she attacks you and you have to kill her and take her corpse to 
+the king, and tell him what you've learned about her plotting.
+Got a few other ideas too, let me know what you think about this first attempt. :p 
+~
+End
+

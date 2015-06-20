@@ -1,0 +1,91 @@
+#PLAYER
+Version      6
+Name         Galor~
+Sex          1
+Class        2
+Secondclass  6
+Thirdclass   4
+Race         0
+Age          0 0 15 854
+Languages    -1 1
+Level        2
+Firstlevel   1
+Secondlevel  1
+Thirdlevel   1
+Played       643
+Room         5109
+HpManaMove   28 67 108 119 140 140
+BaseHp       0 
+Blood        10 336
+Money         0 10 50 100 1000 -1
+Exp           0
+Firstexp      0
+Secondexp     0
+Thirdexp      0
+Height        78
+Weight        197
+Act           536872776&6144
+Channels      chat decir~
+Position      115
+Style         2
+Practice      8
+SavingThrows  0 0 0 0 0
+Alignment     0
+AppBlood      0
+Hitroll       0
+Damroll       0
+Armor         100
+Mentalstate   0
+Password      b380617b098aa3255255c678dc2e66e83d10294da277f4a2f94b4ebf1523b5ba~
+Title          the Apprentice of Magic~
+Lastip         84.122.176.243~
+RECAST          0
+Prompt       >~
+GetsDExp     0
+LDExpUpdate  1430049424
+tmpsecond -1
+tmpthird -1
+tmproom 5109
+Textspeed          5
+PotionTimer        0 0 0
+FirstExpR          50
+SecondExpR         30
+ThirdExpR          20
+FocusLevel         0
+UsedTrade          0
+Faith              0
+ChanInvite         0
+QuestCurr          0
+QuestAccum         0
+MobCount           0
+ObjCount           0
+ArenaWins          0
+ArenaLoss          0
+MapToggle          0
+MapSize            0
+MapDescToggle      0
+MapNameToggle      0
+MapType            0
+Htown      Paleon City~
+Flags        32806
+Bardtimer    0
+Bardsn       0
+PKills       0
+PDeaths      0
+MKills       0
+MDeaths      0
+IllegalPK    0
+AttrPerm     16 16 16 15 17 15 14
+AttrMod      0 0 0 0 0 0 0
+Condition    0 97 100 0
+Site         (Link-Dead)
+LastNews     1417006755
+Holdbreath 0
+Frostbite 0
+Adjust 0
+MaxColors    111
+Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
+Portalstonelag     0
+End
+
+#END
