@@ -649,7 +649,7 @@ Log         0
 End
 
 #COMMAND
-Name        councils~
+Name        concilios~
 Code        do_councils
 Position    100
 Level       101

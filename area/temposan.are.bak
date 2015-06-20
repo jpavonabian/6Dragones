@@ -1,0 +1,1204 @@
+#AREA        Temple of the Sand-god~
+
+
+
+#VERSION     8
+#AUTHOR      Danell~
+#DERIVATIVES ~
+#COLOR       0
+#HTOWN       ~
+#DESC        ~
+
+#RANGES
+100 100 100 100
+$
+
+#SPELLLIMIT 0
+#WEATHERCELL 0 0
+
+#RESETMSG The sands of time blow, in the ever-changing winds.~
+
+#FLAGS
+0
+
+#CURRENCY 0
+
+#HIGHECONOMY 0 0 0 0 0 -1
+
+#LOWECONOMY 0 31250000 0 0 0 -1
+
+#CLANNAME (null)~
+
+#INFLUENCE 0
+
+#MOBILES
+#1650
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+0
+Clanname none~
+0
+0
+1 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#1651
+elemental guardian Rorok~
+Rorok~
+An elemental guardian stands guard here.
+~
+This guard stands tall, no good description can be used but to say it is a 
+being a true magic. It has no form or shape but seems to be able to move 
+quickly and can see all that goes on in its realms. 
+~
+0
+Clanname none~
+0
+0
+99 369098920&2113536&0&64 1000 C
+100 0 0 0d0+10000 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+25 13 13 25 25 13 13
+0 0 0 0 0
+81 4 0 0 1 1 0
+0 0 0 0 0 0 277348352&3 33554499
+> death_prog 100~
+mpechoat $n &CRorok says, 'Fine you want to continue, then feel free to do so!'&D
+mpechoat $n &cRorok waves his hand and sends you deeper into the temple!&D
+mptransfer $n 1673
+~
+> fight_prog 20~
+mpechoat $n &ORorok calls the elements!
+mpechoat $n &OSand from the ground becomes a funnel, and then buries into your skin!
+mpdamage $n 1000
+~
+|
+#1652
+sand god Grazzle ~
+Grazzle~
+The sand god stands here ready to kill!
+~
+The Sand-god swirls around, his body completely made of sand. He moves 
+quickly as he twists and turns, making any earth around him instantly part 
+of him if he wishes. 
+~
+0
+Clanname none~
+0
+0
+2147 369109160&-2147467264&0&64 -1000 C
+100 0 0 0d0+10000 0d0+0
+0 0 0 0 0 
+0
+115 115 1
+25 13 13 25 25 13 13
+0 0 0 0 0
+86 4 0 0 1 1 0
+0 0 0 0 0 0 277594112&3 33554499
+> fight_prog 20~
+mpecho &RThe sand king swirls around sending sand in all directions pelting your body!
+mpdamage $n 2000
+~
+|
+#1653
+hermit Barkel~
+Barkel~
+An old hermit stands here going about his business.
+~
+The old hermit looks like just an average elf, but in a very old age. His 
+hair is long and gray and his features tell the story of having lived many 
+years. The old drunk sits at the bar drinking away not paying attention to 
+anything around him. He wears just basic rags and has a medallion strung 
+around his neck. The old hermit looks like just an average elf, but in a 
+very old age. His hair is long and gray and his features tell the story of 
+having lived many years. 
+~
+0
+Clanname none~
+0
+0
+67108867 4194304 1000 C
+100 0 0 0d0+10000 0d0+0
+0 0 0 0 0 
+0
+115 115 1
+25 13 13 25 25 13 13
+0 0 0 0 0
+1 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if quest(sandblade) == 8
+  mpechoat $n &CBarkel says, 'Oh, hello again.  I see you have the medallion.  Good, give it to me and I can get you the sandblade from it!'&D
+  mpechoat $n &CBarkel smiles.&D
+endif
+if quest(sandblade) == 9
+  mpechoat $n &CBarkel says, 'Hello, do you have it yet?'&D
+else
+  if quest(sandblade) < 1
+    mpechoat $n &cBarkel peers around, for thieves no doubt.&C
+    mppause 3
+    mpechoat $n &CBarkel says, 'Oh, hello there, haven't seen anyone for a very long time...'&D
+    mppause 3
+    mpechoat $n &CBarkel says, 'You wouldn't want to hear a story would you?'&D
+    mpechoat $n &cBarkel sighs.&D
+    mppause 2
+    mpechoat $n &cType &WSAY YES &cto accept this task.&D
+  endif
+endif
+
+~
+> speech_prog yes~
+mpechoat $n &CBarkel says, 'Ok then, well here goes.'&D
+mppause 3
+mpechoat $n &cBarkel sighs.&D
+mppause 3
+mpechoat $n &CBarkel says, 'Many years ago, there was a great one, a god, known only as the sand 
+mpechoat $n god, that presented himself to the world in an attempt to take over the entire 
+mpechoat $n world.  After many warriors fell, he was finally subdued here, in the temple to
+mpechoat $n the northeast.  The sandstorms rage as his power is trying to return to him.
+mpechoat $n But, alas, they can't and hopefully never will...'&D
+mppause 16
+mpechoat $n &CBarkel says, 'I've grown old, I hate to admit it, but it's true.  So, I've waited 
+mpechoat $n here for a long time for a champion to find this place and go after him.  His 
+mpechoat $n powers were sealed but he is still immortal, the only way to beat him is with 
+mpechoat $n the sandblade.  The only way to retrieve that, is to reassemble the sandstorm 
+mpechoat $n medallion.'&D
+mppause 20
+mpat 4 look
+mppause 15
+mpechoat $n &CBarkel says, 'I have one part, and there are 3 others in the world with them as 
+mpechoat $n well.  But, I only know of one, who happens to have the other part of the sandstorm
+mpechoat $n medallion, the fire medallion. The other parts are the wind and water medallions, 
+mpechoat $n but maybe he'll know who has them...  Once assembled, the four quarters make two 
+mpechoat $n halves, then the two halves make the whole, and with the sandstorm medallion, I 
+mpechoat $n can make the sandblade, which can be used to defeat the Sand-god.'&D
+mppause 20
+mpat 4 look
+mppause 20
+mpechoat $n &CBarkel says, 'Oh...you wouldn't happen to be the champion of whom I've waited for
+mpechoat $n all these years are you? If you want to try the task of taking him down...I guess
+mpechoat $n there isn't much time till the magic fade. WORD OF WARNING: DO NOT TRY TO KILL
+mpechoat $n THE SAND-GOD WITHOUT THE SANDBLADE!'&D
+mppause 3
+mpechoat $n &cType &CSAY I AM THAT CHAMPION &cto accept this task.&D
+~
+> speech_prog p I am that champion~
+mppause 2
+mpechoat $n &cBarkel smiles.&D
+mpechoat $n &CBarkel says, 'I really hope you are...'&D
+mppause 3
+mpechoat $n &CBarkel says, 'Well, you'll be needing my part wont you, but I will need a trade for it.  Bring me a tail of a giant sandrat and you can have my piece of the medallion.'&D
+mpquest $n sandblade 1
+~
+> act_prog p gives you the tail of a giant sandrat.~
+if quest(sandblade) == 1
+  mpechoat $n &CBarkel says, 'Ok! Thanks.  Well, as per my deal, here is my part of the medallion.'&D
+  mpoload 1651
+  give earth $n
+  mpechoat $n &CBarkel says, 'My friend, the one with the water one, he can be found in the city of Paleon, somewhere, most likely a bar, he does love to drink.'&D
+  mpechoat $n &cBarkel smiles.&D
+  mpechoat $n &CBarkel says, 'Now go, and come back to me only when you have the full medallion!'&D
+  mpechoat $n &cBarkel goes back to doing whatever it was he was doing.&D
+  mppurge tail
+  mpquest $n sandblade 2
+endif
+~
+> act_prog p gives you The sandstorm medallion.~
+if quest(sandblade) == 8
+  mpechoat $n &CBarkel says, 'Oh good, now we can get to work on this!'&D
+  mppause 2
+  mpechoat $n &cBarkel smiles.&D
+  mppause 2
+  mpechoat $n &cBarkel waves his hand over the medallion but nothing seems to happen...&D
+  mppause 2
+  mpechoat $n &cBarkel frowns.
+  mpechoat $n &CBarkel says, 'Almost, looks like we need one more thing.  Get me a blackened 
+  mpechoat $n &Cdagger from a shop somewhere in Dakar, then the spell can be completed...'&D
+  mpquest $n sandblade 9
+endif
+~
+> act_prog p gives you a blackened dagger.~
+if quest(sandblade) == 9
+  mppause 2
+  mpechoat $n &CBarkel says, 'Ok, here we go!'&D
+  mpechoat $n &BBarkel says a mystical chant and the medallion and the dagger disappear in his hands.&D
+  mppause 2
+  mpechoat $n &RA small glowing dagger appears in Barkel's hands!&D
+  mppause 2
+  mpechoat $n &CBarkel says, 'Here, now go slay the sand god! I'm counting on you!'&D
+  mppurge dagger
+  mpoload 1658
+  give sandblade $n
+  mpquest $n sandblade 10
+endif
+~
+|
+#1654
+drunkard Mealie~
+Mealie~
+A drunk sits at a bar drinking happily.
+~
+The old drunk sits at the bar drinking away not paying attention to 
+anything around him. He wears just basic rags and has a medallion strung 
+around his neck. 
+~
+0
+Clanname none~
+0
+0
+67108867 0 1000 C
+100 0 0 0d0+10000 0d0+0
+0 0 0 0 0 
+0
+115 115 1
+25 13 13 25 25 13 13
+0 0 0 0 0
+1 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+if quest(sandblade) == 2
+  peer $n
+  mpechoat $n &CBMealie says, 'I've been waiting for you, got something for you if you get something for me.'&D
+  mppause 3
+  mpechoat $n &cMealie pulls out a medallion and waves it around a bit before pocketing it.&D
+  mpechoat $n &CMealie says, 'Bring me an item called &Wthe amulet of the magi&C, and the medallion is yours, along with some information about where the next one is and the truth on how to assemble them.'&D
+  mpechoat $n &cMealie goes back to drinking his mead.&D
+  mpechoat $n &CMealie says, 'Come back and give it to me to get what you want.'&D
+  mpquest $n sandblade 3
+endif
+~
+> act_prog p gives you amulet of the magi.~
+if quest(sandblade) == 3
+  mppause 3
+  mpechoat $n &CMealie says, 'OK, a deal is a deal, here.'&D
+  mpoload 1652
+  give water $n
+  mppurge amulet
+  mpechoat $n &CMealie says, 'Ok, now for the information part. I'm sure he told you the earth and water ones combine right? Well i did some research and that is wrong, its the fire and earth, and the water and wind, that combine, ok?  Last, but not least, of course...'&D
+  chuckle
+  mppause 5
+  mpechoat $n &CMealie says, 'The next piece, the next medallion can be found near the spider swamp.  Look for an old shade, he'll tell you whats next. Now go away and let me drink... oh and good luck.'&D
+  mpquest $n sandblade 4
+else
+  mpechoat $n &CMealie says, 'I don't want this, go away and let me drink!'&D
+endif
+~
+|
+#1657
+weakened sand god~
+The weakened Sand-god~
+The sand god attacks in his weakened form!
+~
+The Sand-god swirls around, his body completely weakened now. He limps and 
+swaggers unlike he would normally at full strength. 
+~
+0
+Clanname none~
+0
+0
+99 369098920 -1000 C
+100 0 0 0d0+10000 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+25 13 13 25 25 13 13
+0 0 0 0 0
+86 4 0 0 1 1 0
+0 0 0 0 0 0 277594112&3 33554499
+> death_prog 100~
+mpechoat $n &CSand-god says, 'AHHHH!!!!!!!!!!!! I...couldn't have...lost...'&D
+~
+> fight_prog 100~
+if istagged( $n, sandblade )
+mppause 2
+else
+  mpoload 1661
+  mpoload 1659
+  mptag $n sandblade
+endif
+~
+|
+#1700
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+0
+Clanname none~
+0
+0
+1 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#1650
+first obj~
+a newly created first obj~
+Some god dropped a newly created first obj here.~
+~
+13 0 0
+0 0 0 0 0 0 0
+1 0 0
+1
+0
+S 0 0
+#1651
+earth medallion~
+The earth medallion~
+The earth medallion lays here unattended~
+~
+54 0 1
+1653 0 1655 0 0 0 0
+1 18 1
+4
+0
+S 0 0
+#1652
+water medallion~
+The water medallion~
+The water medallion lays here unattended.~
+~
+54 0 1
+1654 0 1656 0 0 0 0
+1 22 2
+4
+0
+S 0 0
+#1653
+fire medallion~
+The fire medallion~
+The fire medallion lays here unattended.~
+~
+54 0 1
+0 1651 1655 0 0 0 0
+1 1 0
+4
+0
+S 0 0
+#1654
+wind medallion~
+The wind medallion~
+The wind medallion lays here unattended.~
+~
+54 0 1
+0 1652 1656 0 0 0 0
+1 1 0
+4
+0
+S 0 0
+#1655
+sand medallion~
+the sand medallion~
+The sand medallion lays here emitting a faint glow.~
+~
+54 0 1
+1656 0 1657 0 0 0 0
+1 1 0
+4
+0
+S 0 0
+#1656
+storm medallion~
+The storm medallion~
+The storm medallion lays here emitting a faint glow.~
+~
+54 0 1
+0 1655 1657 0 0 0 0
+1 29 2
+4
+0
+S 0 0
+#1657
+sandstorm medallion~
+The sandstorm medallion~
+The sandstorm medallion lays here emitting a powerful glow.~
+~
+9 0 5
+60 60 0 0 0 0 0
+1 300 30
+1
+0
+S 0 0
+#1658
+sandblade~
+The sandblade~
+The sandblade lays here waiting for an owner.~
+~
+5 0 8193
+0 50 100 2 1 100 0
+1 250 19
+1
+0
+S 0 0
+#1659
+legendary cloak protection~
+The legendary cloak of protection~
+The legendary cloak of protection lays here abandoned.  ~
+~
+9 0 1025 128
+60 60 0 0 0 100 0
+1 291 32
+1
+2
+S 0 0
+A
+26 128
+A
+24 5
+A
+18 15
+A
+19 15
+#1660
+A shimmering portal~
+a shimmering portal~
+A shimmering portal stands here as an exit~
+~
+46 0 0
+0 0 0 0 1657 0 0
+1 1 0
+4
+0
+S 0 0
+#1661
+boot insert~
+a pair of boot inserts~
+A pair of boot inserts has been left here.~
+~
+9 0 65 2
+60 60 0 0 0 100 0
+1 298 29
+1
+13
+S 0 0
+A
+18 8
+A
+19 8
+#1700
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0 0
+1 0 0
+1
+0
+S 0 0
+#0
+
+
+#ROOMS
+#1650
+Within the Massive Desert~
+&OThe vast wasteland reaches out into the distance. Sand and wind is all 
+that can be seen at this point. Dunes reach in the air making the scenery 
+pretty bland. Large dunes shift the sands through the winding wind. Sand 
+blasts around causing the area to be quite unpleasant at most times from 
+the shear force of it.
+~
+1 4 11
+D1
+~
+~
+0 -1 1651
+D11
+~
+~
+0 -1 43916
+S
+#1651
+The Living Dunes~
+&OThe wind blows furiously here shifting the sands around at a rapid pace. 
+The sun is hardly visible through the eternal sandstorm that hides what 
+lays inside the desert. 
+~
+1 4 10
+D3
+~
+~
+0 -1 1650
+D8
+~
+~
+0 -1 1652
+S
+#1652
+Amoung the Dunes~
+&OThe sands whip around rapidly pelting everything in its path, a 
+sandstorm of epic proportions. The Light from the sun is hardly able to 
+make it through the dense sands in the air constantly blowing around. 
+~
+1 4 10
+D2
+~
+~
+0 -1 1653
+D7
+~
+~
+0 -1 1651
+S
+#1653
+In the Vast Wasteland~
+&OGiant dunes look as through they are teaming with life, moving across 
+the desert like waves on an ocean. Sand moves about rapidly as the 
+sandstorm continues its cruel path through the desert. 
+~
+1 4 10
+D0
+~
+~
+0 -1 1652
+D9
+~
+~
+0 -1 1655
+S
+#1654
+Before an Ancient Temple~
+&OA temple to the south is barely visible from here. The temple's exterior 
+looks to have taken a large amount of damage from the sands being blown 
+about in the sandstorm. There is a small path to the west that is only 
+able to be seen by those who pay the utmost attention. 
+~
+1 4 10
+D2
+~
+~
+0 -1 1658
+D3
+~
+~
+0 -1 1657
+S
+#1655
+Along a Hidden Path~
+&OThe sandstorm seems to have died down here a little and more so to the 
+south where a patch of sunlight can be seen over a old hut. The hut is 
+hard to see from here but looks like it can be easily accessed to the 
+south.
+~
+1 4 10
+D2
+~
+~
+0 -1 1656
+D6
+~
+~
+0 -1 1653
+S
+#1656
+Before an Old Hut~
+&OThe sandstorm swirls around here, completely not able to touch the hut 
+for some odd reason. Strong magic's can be sensed here by almost anyone who 
+enters magical or not. The hut stands not touched by the storm in perfect 
+condition like it was just constructed.
+~
+1 4 10
+D0
+~
+~
+0 -1 1655
+D2
+~
+~
+1 -1 1657
+S
+#1657
+Inside an Old Hut~
+&OStrange artifacts line the walls in here giving the place an odd look. 
+Many items of magic can be seen cluttered around and a large mat on which 
+an old man sits is visable in the middle of the floor. 
+~
+1 4 0
+D0
+~
+~
+1 -1 1656
+D1
+~
+~
+0 -1 1654
+R M 0 1653 1 1657
+S
+#1658
+Inside the Great Temple~
+&OThe temple opens wide here in a grand court. To the south a large gate 
+that glows with a magical aura stands blocking all from gaining passage. 
+Gold lines the walls with murals of ancient wars and battles. Words 
+written in a long forgotten language spread themselves along the walls.
+~
+1 3153933 0
+D0
+~
+~
+0 -1 1654
+D2
+~
+~
+0 -1 1659
+S
+#1659
+A Long Corridor~
+&OA huge door blocks the path to the south, it glows with a bright blue 
+aura of powerful magic's. The wind from the storm whistles through the 
+temple giving it a eerie sound.
+~
+1 3153933 0
+D0
+~
+~
+0 -1 1658
+D2
+~
+~
+8389671 -1 1660
+R D 0 1659 2 2
+> entry_prog 100~
+mpecho &CA strange voice says, 'If you seek the Sand God, you will only find death"
+mppause 10
+mpecho &CA strange voice says, 'If you insist, say &RI'm ready to go&C then'
+~
+> speech_prog p I'm ready to go~
+mppause 3
+mpecho The strange voice says, 'Very well, expect to stay a long time then'
+mppause 3
+mpecho &RA strange magical wind carries you to the other side of the door!
+mppause 4
+mptransfer $n 1660
+mpat 1660 force $n look
+~
+|
+S
+#1660
+Inside the Temple~
+&OThe large door looms to the north blocking all from leaving. There 
+doesn't seem to be a way out that way, but the path continues to the south 
+deeper into the dark and ancient temple. 
+~
+1 3153933 0 0 0 1 0
+D0
+~
+~
+8389671 -1 1659
+D2
+~
+~
+0 -1 1661
+R D 0 1660 0 2
+S
+#1661
+A Path Through the Temple~
+&OThe wall to the south seems to be a complete fake, a magical appearance 
+of a long corridor. A trapdoor goes down, sending anyone who isn't flying 
+down into the next level down. A path leads to the north to a large blue 
+magical doorway. 
+~
+1 19931149 1 0 0 1 0
+D0
+~
+~
+0 -1 1660
+D5
+~
+~
+0 -1 1662
+S
+#1662
+A Single Room~
+&OBlood stains the floors of this room, and many holes are on the north 
+and south walls. A few &Rwords&O can be seen on one of the walls without 
+any holes in it, it might be a good idea to look at them. 
+~
+1 3153933 0
+E
+words~
+A note along the walls says "To get out you must say aloud the name of the spell
+that Tanzean'al slayed the last green dragon with"
+~
+> entry_prog 100~
+mpecho &RA Clicking sound can be heard as spikes come through the walls.
+mppause 20
+mpecho &RThe clicking sound gets louder as the walls begin to move inward!
+mppause 20
+mpecho &RThe walls begin to close in as the clicking gets louder!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls continue moving slowly towards you!
+Mppause 20
+mpecho &RThe walls move in very close as the spikes get closer!
+mppause 20 
+mpecho &RYou feel the spikes begin to penetrate your skin! 
+mppause 20 
+mpecho &RThe walls close in, crushing the life out of you! 
+mpdamage $n 10000
+~
+> speech_prog p eldritch bolt~
+mpecho &YA trapdoor sends you down farther into the temple!
+mptransfer $n 1667
+~
+|
+S
+#1663
+Floating in a void~
+~
+1 4 1
+S
+#1664
+Floating in a void~
+~
+1 4 1
+S
+#1665
+Floating in a void~
+~
+1 4 1
+S
+#1666
+Floating in a void~
+~
+1 4 1
+S
+#1667
+Deeper in the Temple~
+&OThe temple continues its dangerous path down into the earth. Magical 
+words are etched on the walls of the temple, glowing slighty giving just a 
+little light. No real sounds can be heard at the moment. 
+~
+1 3153933 0
+D0
+~
+~
+33 -1 1668
+> leave_prog 100~
+mppause 3
+mpat 1668 mpecho &RThe door quickly slams behind you!
+~
+|
+S
+#1668
+A long Corridor~
+&OA long corridor stretches to the north. Many small holes line the walls 
+of the corridor with small red spikes sticking out of them. To the south 
+there is a door blocking the pathway back.
+~
+1 3153933 0 0 0 1 0
+D0
+~
+~
+0 -1 1669
+D2
+~
+~
+8389664 -1 1667
+> entry_prog 100~
+if dex($n) < 18
+mpecho &RSpikes fly from the walls grazing you!&D
+mpdamage $n 100
+endif
+if dex($n) < 14
+mpecho &RSpikes fly from the walls stabbing into your skin hard!&D
+mpdamage $n 1000
+endif
+~
+|
+S
+#1669
+A long Corridor~
+&OSmall red tips that look like they could be arrow heads protrude from 
+the walls here. The corridor spans a ways to the north and a little to the 
+south where a door can be seen blocking the path that way. 
+~
+1 3153933 0 0 0 1 0
+D0
+~
+~
+0 -1 1670
+D2
+~
+~
+0 -1 1668
+> entry_prog 20~
+if dex($n) < 18
+mpecho &RSpikes fly from the walls grazing you!&D
+mpdamage $n 100
+endif
+if dex($n) < 14
+mpecho &RSpikes fly from the walls stabbing into your skin hard!&D
+mpdamage $n 1000
+endif
+~
+|
+S
+#1670
+A long Corridor~
+&OThe corridor spans to the north and south. From here a doorway can be 
+seen to the north a ways. Small red metal spikes stick out of the walls 
+giving the room a dangerous feel. 
+~
+1 3153933 0 0 0 1 0
+D0
+~
+~
+0 -1 1671
+D2
+~
+~
+0 -1 1669
+> entry_prog 20~
+if dex($n) < 18
+mpecho &RSpikes fly from the walls grazing you!&D
+mpdamage $n 100
+endif
+if dex($n) < 14
+mpecho &RSpikes fly from the walls stabbing into your skin hard!&D
+mpdamage $n 1000
+endif
+~
+|
+S
+#1671
+A long Corridor~
+&OTo the north a doorway blocks the path, glowing with a deep blue magical 
+aura. To the south the corridor spans out. Red tipped spikes stick out 
+from the walls making the room seem like there is something to watch out 
+for. 
+~
+1 3153933 0 0 0 1 0
+D0
+~
+~
+1 -1 1672
+D2
+~
+~
+0 -1 1670
+> entry_prog 20~
+if dex($n) < 18
+mpecho &RSpikes fly from the walls grazing you!&D
+mpdamage $n 100
+endif
+if dex($n) < 14
+mpecho &RSpikes fly from the walls stabbing into your skin hard!&D
+mpdamage $n 1000
+endif
+~
+|
+S
+#1672
+An Alter of the Elements~
+&OA large alter stands here in dedication to the elements. Murals of 
+earth, wind, fire and water line the walls here. There is a whole in the 
+ceiling where a deep breathing can be heard coming from it. 
+~
+1 3153933 0
+D2
+~
+~
+8389671 -1 1671
+R M 0 1651 1 1672
+R D 0 1672 2 2
+S
+#1673
+Deep in the Temple~
+&OThe temple continues deeper into the earth, at this point there is no 
+real way to tell just how deep one is. There are golden murals on the wall 
+depicting a great war that happened long ago, bloodshed of a forgotten 
+time, brought back to life. 
+~
+1 3153933 0
+D0
+~
+~
+0 -1 1674
+S
+#1674
+A Large Seal~
+&OA large seal forms it's self on the floor here. The seal has the shape 
+of a five pointed star, and a shape in the middle with a small hole in it. 
+The rooms echo's loudly, no murals on the walls, no shapes, just dug out 
+earth.
+~
+1 3145741 0 0 0 1 0
+D2
+~
+~
+0 -1 1673
+> entry_prog 100~
+mpecho &CA strange voice says 'If you want to continue you must sacrifice your magic!
+mppause 2
+mpecho &CA strange voice says 'Say &Ryes&C if you agree to!
+~
+> speech_prog yes~
+mppause 1
+mpecho &RA strange force gathers over you as you feel weakened!
+mppause 1
+mpecho &CThe star opens up and drops you down deeper into the temple!
+mptransfer $n 1675
+~
+|
+S
+#1675
+Deep Inside the Temple~
+&OThe walls of the temple grow smaller as they move to the north. There 
+are no bricks or any kind of pillars supporting the cave, its apperant 
+that it is a powerful magic that makes this place continue to be. 
+~
+1 3154061 1
+D0
+~
+~
+0 -1 1676
+S
+#1676
+A Long Corridor~
+&OThe path to the north continues for a long ways, even though one may 
+have only taken a few steps from the south, the look of the temple is much 
+different then one would think it would from this angle.
+~
+1 3154061 0
+D0
+~
+~
+0 -1 1676
+D2
+~
+~
+0 -1 1677
+S
+#1677
+A Trick Path~
+&OThe patch intertwines back and forth over it's self here. The magic's 
+which once made this maze impossible to maneuver have long faded, giving a 
+clear path to the south now, and a bright light just ahead. 
+~
+1 3154061 0 0 0 1 0
+D0
+~
+~
+0 -1 1676
+D2
+~
+~
+0 -1 1678
+S
+#1678
+The Lair of the Sand God~
+&OGreat magic's surround the room, making anyone who enters instantly feel 
+weaker. As one would know no magic can be conjured here as the barrier's 
+full strength can be felt weighting apon one's shoulders. 
+~
+1 3145869 0
+> fight_prog 20~
+if race($n) == dragon
+  if iscarrying($n) == 1658
+    mpechoat $n &cThe Sand-god cringes as the sandblade weakens him!&D
+    mppurge grazzle
+    mpmload 1657
+    mpechoat $n &CThe Sand-god says 'You may have weakened me but you'll still die!'&D
+    mpforce $n drop sandblade
+    mppurge sandblade
+    mpechoat $n &RThe Sand-god waves his hand and makes you drop the sandblade, it shatters into pieces!&D
+    mpforce weakened kill $n
+  endif
+else
+  if iswearing($n) == 1658
+    mpechoat $n &cThe Sand-god cringes as the sandblade weakens him!&D
+    mppurge grazzle
+    mpmload 1657
+    mpechoat $n &CThe Sand-god says 'You may have weakened me but you'll still die!'&D
+    mpforce $n remove sandblade
+    mpforce $n drop sandblade
+    mppurge sandblade
+    mpechoat $n &RThe Sand-god waves his hand and makes you drop the sandblade, it shatters into pieces!&D
+    mpforce weakened kill $n
+  endif
+endif
+~
+> entry_prog 100~
+if mobinroom(1652) > 0
+else
+  mpmload 1652
+  mpecho &RThe sand in the room begins to move as the sand king is formed from it!&D
+  mpecho &CGrazzle says 'To the one who awakens me, DIE!'&D
+endif
+~
+> rand_prog 50~
+if mobinroom(1652) < 1
+or mobinroom(1657) < 1
+  mpecho &cIf you wish to leave, &WSAY LEAVE&c.&D
+endif
+~
+> speech_prog leave~
+if mobinroom(1652) < 1
+or mobinroom(1657) < 1
+  mptrans $n 1650
+  mpat $n mpforce $n look
+endif
+~
+|
+S
+#1679
+Behind the Old Hut~
+~
+1 4 1
+D0
+~
+~
+0 -1 1657
+S
+#1680
+Floating in a void~
+~
+1 4 1
+S
+#1681
+Floating in a void~
+~
+1 4 1
+S
+#1682
+Floating in a void~
+~
+1 4 1
+S
+#1683
+Floating in a void~
+~
+1 4 1
+S
+#1684
+Floating in a void~
+~
+1 4 1
+S
+#1685
+Floating in a void~
+~
+1 4 1
+S
+#1686
+Floating in a void~
+~
+1 4 1
+S
+#1687
+Floating in a void~
+~
+1 4 1
+S
+#1688
+Floating in a void~
+~
+1 4 1
+S
+#1689
+Floating in a void~
+~
+1 4 1
+S
+#1690
+Floating in a void~
+~
+1 4 1
+S
+#1691
+Floating in a void~
+~
+1 4 1
+S
+#1692
+Floating in a void~
+~
+1 4 1
+S
+#1693
+Floating in a void~
+~
+1 4 1
+S
+#1694
+Floating in a void~
+~
+1 4 1
+S
+#1695
+Floating in a void~
+~
+1 4 1
+S
+#1696
+Floating in a void~
+~
+1 4 1
+S
+#1697
+Floating in a void~
+~
+1 4 1
+S
+#1698
+Floating in a void~
+~
+1 4 1
+S
+#1700
+Floating in a void~
+~
+1 4 1
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

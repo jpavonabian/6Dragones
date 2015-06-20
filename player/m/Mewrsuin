@@ -2,34 +2,34 @@
 Version      6
 Name         Mewrsuin~
 Sex          1
-Class        12
+Class        21
 Secondclass  -1
 Thirdclass   -1
 Race         13
 Age          0 6 5 855
 Languages    -1 1
 Level        108
-Firstlevel   0
-Secondlevel  0
-Thirdlevel   0
-Played       7003
-Room         35576
-HpManaMove   11396 11396 2589 2589 4480 4480
+Firstlevel   -1
+Secondlevel  -1
+Thirdlevel   -1
+Played       12726
+Room         5109
+HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
-Blood        10 158
+Blood        158 310
 Money         0 10 50 132 1225 -1
 Exp           0
 Firstexp      0
 Secondexp     0
 Thirdexp      0
-Height        1041
-Weight        8591
-Act           536872776&1660950528
+Height        1028
+Weight        8679
+Act           1610618696&1644173344
 AffectedBy    512
-Channels      chat decir inmortales~
-Position      109
+Channels      chat decir inmortales ooc shout yell icc wartalk event music Think muse comm info auth warn build counciltalk avtalk ask answer swear flirt hint osay 6d reunion halcyon paleon dakar~
+Position      115
 Style         2
-Practice      646
+Practice      608
 SavingThrows  0 0 0 0 0
 Alignment     0
 AppBlood      0
@@ -44,9 +44,10 @@ RECAST          0
 AuthedBy     Zlorth~
 Prompt       >~
 GetsDExp     0
+tmpcrawl 72
 tmpsecond -1
 tmpthird -1
-tmproom 35576
+tmproom 5109
 Textspeed          5
 PotionTimer        0 0 0
 FirstExpR          0
@@ -56,8 +57,8 @@ FocusLevel         0
 UsedTrade          0
 Faith              0
 ChanInvite         0
-QuestCurr          0
-QuestAccum         0
+QuestCurr          30
+QuestAccum         30
 MobCount           0
 ObjCount           0
 ArenaWins          0
@@ -67,8 +68,10 @@ MapSize            0
 MapDescToggle      0
 MapNameToggle      0
 MapType            0
+FoundArea       Wilderness~
+FoundArea       Under the Volcano~
 WizInvis     108
-Htown      Forbidden City~
+Htown      Ciudad Prohibida~
 Flags        32802
 Bardtimer    0
 Bardsn       0
@@ -77,9 +80,9 @@ PDeaths      0
 MKills       8
 MDeaths      0
 IllegalPK    0
-AttrPerm     25 21 18 10 16 10 12
+AttrPerm     25 25 25 25 25 25 25
 AttrMod      0 0 0 0 0 0 0
-Condition    0 100 100 0
+Condition    0 100 100 118
 Site         81.34.147.50
 LastNews     1417006755
 Holdbreath 0
@@ -206,6 +209,7 @@ NNSpell       100 100 'holy word' 0 0
 NNSpell       100 100 'ice ward' 0 0
 NNSpell       100 100 'iceshard' 0 0
 NNSpell       100 100 'iceshield' 0 0
+NNSpell       100 100 'identificar' 0 0
 NNSpell       100 100 'incinerate' 0 0
 NNSpell       100 100 'indignation' 0 0
 NNSpell       100 100 'infravision' 0 0
@@ -627,14 +631,6 @@ NNSong        100 100 'sound waves' 0 0
 NNSong        100 100 'stirring ballad' 0 0
 NNSong        100 100 'thunderous hymn' 0 0
 NNSong        100 100 'unholy melody' 0 0
-Killed       35510
-Killed       35511
-Killed       35509
-Killed       35512
-Killed       35510
-Killed       35510
-Killed       35510
-Killed       35510
 MaxColors    111
 Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
 Portalstonelag     0
@@ -676,6 +672,14 @@ End
 Vnum         139
 Currtype     4
 Color        5
+Size   0
+End
+
+#OBJECT
+Vnum         1224
+Level        108
+Currtype     1
+Color        12
 Size   0
 End
 

@@ -1,29 +1,29 @@
-Sat May  9 17:29:09 2015 :: Booting Database
-Sat May  9 17:29:09 2015 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
-Sat May  9 17:29:09 2015 :: Loading commands
-Sat May  9 17:29:09 2015 :: Loading mud channels...
-Sat May  9 17:29:09 2015 :: Loading sysdata configuration...
-Sat May  9 17:29:09 2015 :: Loading socials
-Sat May  9 17:29:09 2015 :: Loading skill table
-Sat May  9 17:29:09 2015 :: Sorting skill table...
-Sat May  9 17:29:09 2015 :: Remapping slots to sns
-Sat May  9 17:29:09 2015 :: Loading classes
-Sat May  9 17:29:09 2015 :: Loading races
-Sat May  9 17:29:09 2015 :: Loading herb table
-Sat May  9 17:29:09 2015 :: Loading tongues
-Sat May  9 17:29:09 2015 :: Making 6 Dragons stafflist
-Sat May  9 17:29:09 2015 :: Loading MSSP Data...
-Sat May  9 17:29:09 2015 :: Building wizinfo
-Sat May  9 17:29:09 2015 :: Initializing random number generator
-Sat May  9 17:29:09 2015 :: Setting time and weather.
-Sat May  9 17:29:09 2015 :: Loading holiday chart...
-Sat May  9 17:29:09 2015 :: Assigning gsn's
+Sat Jun 13 04:58:19 2015 :: Booting Database
+Sat Jun 13 04:58:19 2015 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Sat Jun 13 04:58:19 2015 :: Loading commands
+Sat Jun 13 04:58:19 2015 :: Loading mud channels...
+Sat Jun 13 04:58:19 2015 :: Loading sysdata configuration...
+Sat Jun 13 04:58:19 2015 :: Loading socials
+Sat Jun 13 04:58:19 2015 :: Loading skill table
+Sat Jun 13 04:58:19 2015 :: Sorting skill table...
+Sat Jun 13 04:58:19 2015 :: Remapping slots to sns
+Sat Jun 13 04:58:19 2015 :: Loading classes
+Sat Jun 13 04:58:19 2015 :: Loading races
+Sat Jun 13 04:58:19 2015 :: Loading herb table
+Sat Jun 13 04:58:19 2015 :: Loading tongues
+Sat Jun 13 04:58:19 2015 :: Making 6 Dragons stafflist
+Sat Jun 13 04:58:19 2015 :: Loading MSSP Data...
+Sat Jun 13 04:58:19 2015 :: Building wizinfo
+Sat Jun 13 04:58:19 2015 :: Initializing random number generator
+Sat Jun 13 04:58:19 2015 :: Setting time and weather.
+Sat Jun 13 04:58:19 2015 :: Loading holiday chart...
+Sat Jun 13 04:58:19 2015 :: Assigning gsn's
 ASSIGN_GSN: Skill death embrace not found.
 ASSIGN_GSN: Skill heart grab not found.
 ASSIGN_GSN: Skill demonic sight not found.
 ASSIGN_GSN: Skill boost not found.
 ASSIGN_GSN: Skill hog affinity not found.
-Sat May  9 17:29:09 2015 :: Reading in area files...
+Sat Jun 13 04:58:19 2015 :: Reading in area files...
 (help.are)
 limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
 staff.are     : Rooms:  1200 - 1299  Objs:  1200 - 1299  Mobs:  1200 - 1299
@@ -128,228 +128,243 @@ grovestone.are: Rooms: 32000 - 32100 Objs: 32000 - 32100 Mobs: 32000 - 32100
 torain.are    : Rooms: 11600 - 11700 Objs: 11600 - 11700 Mobs: 11600 - 11700
 parade.are    : Rooms: 45150 - 45250 Objs: 45150 - 45250 Mobs: 45150 - 45250
 theatre.are   : Rooms:   500 - 525   Objs:   500 - 525   Mobs:   500 - 525
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54001) has owner set to (Kyrigan), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54002) has owner set to (Galt), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54003) has owner set to (Roselia), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54004) has owner set to (Osaerok), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54005) has owner set to (Koraesag), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54006) has owner set to (Norrindio), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54007) has owner set to (Numair), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54008) has owner set to (Maleficus), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54009) has owner set to (Kimel), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54010) has owner set to (Althea), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54011) has owner set to (Saltus), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54012) has owner set to (Weibble), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54013) has owner set to (Leonem), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54014) has owner set to (Kyndai), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (54015) has owner set to (Gilanthas), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54001) has owner set to (Kyrigan), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54002) has owner set to (Galt), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54003) has owner set to (Roselia), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54004) has owner set to (Osaerok), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54005) has owner set to (Koraesag), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54006) has owner set to (Norrindio), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54007) has owner set to (Numair), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54008) has owner set to (Maleficus), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54009) has owner set to (Kimel), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54010) has owner set to (Althea), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54011) has owner set to (Saltus), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54012) has owner set to (Weibble), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54013) has owner set to (Leonem), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54014) has owner set to (Kyndai), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (54015) has owner set to (Gilanthas), but there is no pfile to go with it.
 phouse.are    : Rooms: 54000 - 55000 Objs: 54000 - 55000 Mobs: 54000 - 55000
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57001) has owner set to (Zaiden), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57002) has owner set to (Yorae), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57003) has owner set to (Lassiekysh), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57004) has owner set to (Bansheena), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57005) has owner set to (Zhaxiaoyen), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57006) has owner set to (Voluntas), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57007) has owner set to (Voluntas), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57008) has owner set to (Voluntas), but there is no pfile to go with it.
-Sat May  9 17:29:09 2015 :: load_rooms: Room (57009) has owner set to (Gonth), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57001) has owner set to (Zaiden), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57002) has owner set to (Yorae), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57003) has owner set to (Lassiekysh), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57004) has owner set to (Bansheena), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57005) has owner set to (Zhaxiaoyen), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57006) has owner set to (Voluntas), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57007) has owner set to (Voluntas), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57008) has owner set to (Voluntas), but there is no pfile to go with it.
+Sat Jun 13 04:58:19 2015 :: load_rooms: Room (57009) has owner set to (Gonth), but there is no pfile to go with it.
 dhouse.are    : Rooms: 57000 - 58000 Objs: 57000 - 58000 Mobs: 57000 - 58000
 hive.are      : Rooms: 25000 - 25050 Objs: 25000 - 25050 Mobs: 25000 - 25050
 riders.are    : Rooms: 25200 - 25250 Objs: 25200 - 25250 Mobs: 25200 - 25250
 ships.are     : Rooms: 56300 - 56500 Objs: 56300 - 56500 Mobs: 56300 - 56500
 tomb.are      : Rooms: 28350 - 28400 Objs: 28350 - 28400 Mobs: 28350 - 28400
-Sat May  9 17:29:09 2015 :: Loading boards
-Sat May  9 17:29:09 2015 :: boards/Auction
-Sat May  9 17:29:09 2015 :: boards/Roleplay
-Sat May  9 17:29:09 2015 :: boards/General
-Sat May  9 17:29:09 2015 :: Loading buildlist
-Sat May  9 17:29:09 2015 :: staff/Zlorth
-Sat May  9 17:29:09 2015 :: staff/Mewrsuin
-Sat May  9 17:29:09 2015 :: staff/Kais
-Sat May  9 17:29:09 2015 :: staff/Raoden
-Sat May  9 17:29:09 2015 :: staff/Wolfe
-Sat May  9 17:29:09 2015 :: Fixing exits
-Sat May  9 17:29:09 2015 :: Initializing economy
-Sat May  9 17:29:09 2015 :: Resetting areas
-Sat May  9 17:29:10 2015 :: Loading storerooms
-Sat May  9 17:29:10 2015 :: Loading clans
-Sat May  9 17:29:10 2015 :: Loading clans...
-Sat May  9 17:29:10 2015 :: throng.cln
-Sat May  9 17:29:10 2015 :: alliance.cln
-Sat May  9 17:29:10 2015 :: halcyon.cln
-Sat May  9 17:29:10 2015 :: $
-Sat May  9 17:29:10 2015 ::  Done clans 
-Sat May  9 17:29:10 2015 :: Loading quests
-Sat May  9 17:29:10 2015 :: Loading currency...
-Sat May  9 17:29:10 2015 :: Loading banks
-Sat May  9 17:29:10 2015 :: Loading landmarks
-Sat May  9 17:29:10 2015 :: Loading councils
-Sat May  9 17:29:10 2015 :: Loading councils...
-Sat May  9 17:29:10 2015 :: $
-Sat May  9 17:29:10 2015 ::  Done councils 
-Sat May  9 17:29:10 2015 :: Loading hometowns
-Sat May  9 17:29:10 2015 :: Loading htowns...
-Sat May  9 17:29:10 2015 :: paleon.city
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Name
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Description
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Tanzean'al's
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Nation
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Members
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Race
-Sat May  9 17:29:10 2015 :: Valnaes.htown
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Name
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Description
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: King
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Nation
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Members
-Sat May  9 17:29:10 2015 :: forbidden.htown
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Name
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Description
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: uninvited.~
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Nation
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Members
-Sat May  9 17:29:10 2015 :: [*****] BUG: Fread_htown: no match: Race
-Sat May  9 17:29:10 2015 :: $
-Sat May  9 17:29:10 2015 ::  Done htowns 
-Sat May  9 17:29:10 2015 :: Loading cities
-Sat May  9 17:29:10 2015 :: Loading cities...
-Sat May  9 17:29:10 2015 :: paleon.city
-Sat May  9 17:29:10 2015 :: dakar.city
-Sat May  9 17:29:10 2015 :: forbidden.city
-Sat May  9 17:29:10 2015 ::  Done cities 
-Sat May  9 17:29:10 2015 :: Loading bans
-Sat May  9 17:29:10 2015 :: Done.
-Sat May  9 17:29:10 2015 :: Loading reserved names
-Sat May  9 17:29:10 2015 :: Loading auth namelist
-Sat May  9 17:29:10 2015 :: Loading corpses
-Sat May  9 17:29:10 2015 :: Loading News
-Sat May  9 17:29:10 2015 :: Loading Hints...
-Sat May  9 17:29:10 2015 :: Loading Morphs
-Sat May  9 17:29:10 2015 :: Optimizing Morphs.
-Sat May  9 17:29:10 2015 :: Done.
-Sat May  9 17:29:10 2015 :: Initializing Autoboot
-Sat May  9 17:29:10 2015 :: Initializing socket
-Sat May  9 17:29:10 2015 :: 6 Dragones ready at address portent.digital-genesis.com on port 2020.
-Sat May  9 17:29:17 2015 :: Preloading player data for: Zlorth
-Sat May  9 17:29:18 2015 :: Loading player data for Zlorth (23K)
-Sat May  9 17:29:18 2015 :: Zlorth (127.0.0.1) has connected.
-Sat May  9 17:29:19 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:29:19 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:29:19 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:29:39 2015 :: Log Zlorth: wizlo
-Sat May  9 17:29:40 2015 :: Log Zlorth: wizlo
-Sat May  9 17:30:25 2015 :: Probando@84.122.176.243 new Dragon Red.
-Sat May  9 17:30:28 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:30:28 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:30:28 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:30:28 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:30:28 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:30:28 2015 :: [*****] BUG: new_str_cmp: [Forbidden City] astr NULL bstr (File: hometowns.c Line: 23).
-Sat May  9 17:30:41 2015 :: Log Zlorth: destroy probando
-Sat May  9 17:30:47 2015 :: EOF encountered on read from host 84.122.176.243.
-Sat May  9 17:33:27 2015 :: Log Zlorth: reboot mud now
-Sat May  9 17:33:27 2015 :: Normal termination of game.
-Sat May  9 17:33:27 2015 :: Cleaning up Memory.
-Sat May  9 17:33:27 2015 :: Local Channels.
-Sat May  9 17:33:27 2015 :: Commands.
-Sat May  9 17:33:27 2015 :: Help files.
-Sat May  9 17:33:27 2015 :: Reserved name list.
-Sat May  9 17:33:27 2015 :: Socials.
-Sat May  9 17:33:27 2015 :: Whacking supermob.
-Sat May  9 17:33:27 2015 :: Freeing mppause data.
-Sat May  9 17:33:27 2015 :: Objects.
-Sat May  9 17:33:27 2015 :: Characters.
-Sat May  9 17:33:27 2015 :: Descriptors.
-Sat May  9 17:33:27 2015 :: Wizinfo Data.
-Sat May  9 17:33:27 2015 :: Classes.
-Sat May  9 17:33:27 2015 :: Races.
-Sat May  9 17:33:27 2015 :: Currency.
-Sat May  9 17:33:27 2015 :: Clans.
-Sat May  9 17:33:27 2015 :: HTowns.
-Sat May  9 17:33:27 2015 :: Cities.
-Sat May  9 17:33:27 2015 :: Councils.
-Sat May  9 17:33:27 2015 :: Morphs.
-Sat May  9 17:33:27 2015 :: Title table.
-Sat May  9 17:33:27 2015 :: Bans.
-Sat May  9 17:33:27 2015 :: Boards.
-Sat May  9 17:33:27 2015 :: Area and Build data.
-Sat May  9 17:33:28 2015 :: Languages.
-Sat May  9 17:33:28 2015 :: Auction.
-Sat May  9 17:33:28 2015 :: System data.
-Sat May  9 17:33:28 2015 :: Mudprog act lists.
-Sat May  9 17:33:28 2015 :: Herbs.
-Sat May  9 17:33:28 2015 :: Skills.
-Sat May  9 17:33:28 2015 :: Mprog act list.
-Sat May  9 17:33:28 2015 :: Globals.
-Sat May  9 17:33:28 2015 :: News.
-Sat May  9 17:33:28 2015 :: Ideas.
-Sat May  9 17:33:28 2015 :: Bugs.
-Sat May  9 17:33:28 2015 :: Typos.
-Sat May  9 17:33:28 2015 :: Quests.
-Sat May  9 17:33:28 2015 :: Locations.
-Sat May  9 17:33:28 2015 :: Holidays.
-Sat May  9 17:33:28 2015 :: Banks.
-Sat May  9 17:33:28 2015 :: Landmarks.
-Sat May  9 17:33:28 2015 :: Hints.
-Sat May  9 17:33:28 2015 :: Scores.
-Sat May  9 17:33:28 2015 :: Checking hash for leftovers.
-Len:    2 Lnks:     1 Str: I3
-Total strings in hash 2: 1
-Len:    4 Lnks:     1 Str: Galt
-Len:    4 Lnks:     1 Str: full
-Len:    4 Lnks:     1 Str: Live
-Total strings in hash 4: 3
-Len:    5 Lnks:     1 Str: Gonth
-Len:    5 Lnks:     1 Str: Yorae
-Len:    5 Lnks:     1 Str: Kimel
-Len:    5 Lnks:     2 Str: Level
-Total strings in hash 5: 4
-Len:    6 Lnks:     1 Str: Zaiden
-Len:    6 Lnks:     1 Str: Leonem
-Len:    6 Lnks:     1 Str: Numair
-Len:    6 Lnks:     1 Str: Kyndai
-Len:    6 Lnks:     1 Str: Saltus
-Len:    6 Lnks:     1 Str: Althea
-Len:    6 Lnks:     1 Str: Custom
-Total strings in hash 6: 7
-Len:    7 Lnks:     1 Str: Osaerok
-Len:    7 Lnks:     1 Str: Roselia
-Len:    7 Lnks:     1 Str: Kyrigan
-Len:    7 Lnks:     1 Str: Weibble
-Len:    7 Lnks:     1 Str: Fantasy
-Len:    7 Lnks:     1 Str: dikumud
-Len:    7 Lnks:     1 Str: English
-Total strings in hash 7: 7
-Len:    8 Lnks:     3 Str: Voluntas
-Len:    8 Lnks:     1 Str: Koraesag
-Total strings in hash 8: 2
-Len:    9 Lnks:     1 Str: Bansheena
-Len:    9 Lnks:     1 Str: Maleficus
-Len:    9 Lnks:     1 Str: Norrindio
-Len:    9 Lnks:     1 Str: Gilanthas
-Total strings in hash 9: 4
-Len:   10 Lnks:     1 Str: Zhaxiaoyen
-Len:   10 Lnks:     1 Str: Lassiekysh
-Len:   10 Lnks:     1 Str: Encouraged
-Len:   10 Lnks:     1 Str: Integrated
-Len:   10 Lnks:     1 Str: Restricted
-Total strings in hash 10: 5
-Len:   12 Lnks:  2291 Str: Not Assigned
-Len:   12 Lnks:     1 Str: All Original
-Total strings in hash 12: 2
-Len:   13 Lnks:     1 Str: United States
-Total strings in hash 13: 1
-Len:   14 Lnks:     3 Str: 84.122.176.243
-Len:   14 Lnks:     1 Str: Hack and Slash
-Total strings in hash 14: 2
-Len:   15 Lnks:     1 Str: evault@zoho.com
-Total strings in hash 15: 1
-Len:   16 Lnks:     1 Str: Medieval Fantasy
-Total strings in hash 16: 1
-Len:   17 Lnks:     1 Str: 6D.themudhost.net
-Total strings in hash 17: 1
-Len:   24 Lnks:     1 Str: http://6d.themudhost.net
-Total strings in hash 24: 1
-Len:   46 Lnks:     1 Str: http://www.mudconnect.com/logos/4733_small.gif
-Total strings in hash 46: 1
-Sat May  9 17:33:28 2015 :: Cleanup complete, exiting.
+Sat Jun 13 04:58:19 2015 :: [*****] BUG: __FileOpen: can't open area/Zlorth.are for r. Called from db.c:6144
+area/Zlorth.are: No such file or directory
+area/Zlorth.are: No such file or directory
+Sat Jun 13 04:58:19 2015 :: [*****] BUG: load_area: area/Zlorth.are error loading file (can't open)
+Sat Jun 13 04:58:19 2015 :: Loading boards
+Sat Jun 13 04:58:19 2015 :: boards/subastas
+Sat Jun 13 04:58:19 2015 :: boards/Roleplay
+Sat Jun 13 04:58:19 2015 :: boards/General
+Sat Jun 13 04:58:19 2015 :: Loading buildlist
+Sat Jun 13 04:58:19 2015 :: staff/Zlorth
+Sat Jun 13 04:58:19 2015 :: staff/Mewrsuin
+Sat Jun 13 04:58:19 2015 :: staff/Robb
+Sat Jun 13 04:58:19 2015 :: staff/Alanis
+Sat Jun 13 04:58:19 2015 :: staff/Novick
+Sat Jun 13 04:58:19 2015 :: staff/Syldreik
+Sat Jun 13 04:58:19 2015 :: staff/Kais
+Sat Jun 13 04:58:19 2015 :: staff/Raoden
+Sat Jun 13 04:58:19 2015 :: Fixing exits
+Sat Jun 13 04:58:19 2015 :: Initializing economy
+Sat Jun 13 04:58:19 2015 :: Resetting areas
+Sat Jun 13 04:58:19 2015 :: Loading storerooms
+Sat Jun 13 04:58:19 2015 :: Loading clans
+Sat Jun 13 04:58:19 2015 :: Loading clans...
+Sat Jun 13 04:58:19 2015 :: throng.cln
+Sat Jun 13 04:58:19 2015 :: alliance.cln
+Sat Jun 13 04:58:19 2015 :: halcyon.cln
+Sat Jun 13 04:58:19 2015 :: $
+Sat Jun 13 04:58:19 2015 ::  Done clans 
+Sat Jun 13 04:58:19 2015 :: Loading quests
+Sat Jun 13 04:58:19 2015 :: Loading currency...
+Sat Jun 13 04:58:19 2015 :: Loading banks
+Sat Jun 13 04:58:19 2015 :: Loading landmarks
+Sat Jun 13 04:58:19 2015 :: Loading councils
+Sat Jun 13 04:58:19 2015 :: Loading councils...
+Sat Jun 13 04:58:19 2015 :: $
+Sat Jun 13 04:58:19 2015 ::  Done councils 
+Sat Jun 13 04:58:19 2015 :: Loading hometowns
+Sat Jun 13 04:58:19 2015 :: Loading htowns...
+Sat Jun 13 04:58:19 2015 :: paleon.city
+Sat Jun 13 04:58:19 2015 :: Valnaes.htown
+Sat Jun 13 04:58:19 2015 :: forbidden.htown
+Sat Jun 13 04:58:19 2015 :: $
+Sat Jun 13 04:58:19 2015 ::  Done htowns 
+Sat Jun 13 04:58:19 2015 :: Loading cities
+Sat Jun 13 04:58:19 2015 :: Loading cities...
+Sat Jun 13 04:58:19 2015 :: paleon.city
+Sat Jun 13 04:58:19 2015 :: dakar.city
+Sat Jun 13 04:58:19 2015 :: forbidden.city
+Sat Jun 13 04:58:19 2015 ::  Done cities 
+Sat Jun 13 04:58:19 2015 :: Loading bans
+Sat Jun 13 04:58:19 2015 :: Done.
+Sat Jun 13 04:58:19 2015 :: Loading reserved names
+Sat Jun 13 04:58:19 2015 :: Loading auth namelist
+Sat Jun 13 04:58:19 2015 :: Loading corpses
+Sat Jun 13 04:58:19 2015 :: Loading News
+Sat Jun 13 04:58:19 2015 :: Loading Hints...
+Sat Jun 13 04:58:19 2015 :: Loading Morphs
+Sat Jun 13 04:58:19 2015 :: Optimizing Morphs.
+Sat Jun 13 04:58:19 2015 :: Done.
+Sat Jun 13 04:58:19 2015 :: Initializing Autoboot
+Sat Jun 13 04:58:19 2015 :: Initializing socket
+Sat Jun 13 04:58:19 2015 :: 6 Dragones ready at address portent.digital-genesis.com on port 2020.
+Sat Jun 13 04:58:19 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:19 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:23 2015 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:27 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:27 2015 :: [*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:28 2015 :: Preloading player data for: Zlorth
+Sat Jun 13 04:58:30 2015 :: Loading player data for Zlorth (23K)
+Sat Jun 13 04:58:30 2015 :: Zlorth (127.0.0.1) has connected.
+Sat Jun 13 04:58:31 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:35 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:39 2015 :: [*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:39 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Sat Jun 13 04:58:39 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:43 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:43 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:43 2015 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:43 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:43 2015 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:51 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:55 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:55 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:55 2015 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:55 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:55 2015 :: [*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop].
+Sat Jun 13 04:58:55 2015 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:55 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:58:59 2015 :: Log Zlorth: oset cartel ed cartel
+Sat Jun 13 04:58:59 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:03 2015 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:07 2015 :: [*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:11 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Sat Jun 13 04:59:11 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:11 2015 :: [*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:11 2015 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:11 2015 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:15 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:15 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Sat Jun 13 04:59:17 2015 :: Log Zlorth: folda all
+Sat Jun 13 04:59:17 2015 :: Saving limbo.are...
+Sat Jun 13 04:59:17 2015 :: Saving staff.are...
+Sat Jun 13 04:59:17 2015 :: Saving call.are...
+Sat Jun 13 04:59:17 2015 :: Saving haon.are...
+Sat Jun 13 04:59:17 2015 :: Saving midennir.are...
+Sat Jun 13 04:59:17 2015 :: Saving astral.are...
+Sat Jun 13 04:59:17 2015 :: Saving srefuge.are...
+Sat Jun 13 04:59:17 2015 :: Saving chapel.are...
+Sat Jun 13 04:59:17 2015 :: Saving export.are...
+Sat Jun 13 04:59:17 2015 :: Saving plains.are...
+Sat Jun 13 04:59:17 2015 :: Saving gallery.are...
+Sat Jun 13 04:59:17 2015 :: Saving grave.are...
+Sat Jun 13 04:59:17 2015 :: Saving unholy.are...
+Sat Jun 13 04:59:17 2015 :: Saving pixie.are...
+Sat Jun 13 04:59:17 2015 :: Saving manor.are...
+Sat Jun 13 04:59:17 2015 :: Saving roads.are...
+Sat Jun 13 04:59:17 2015 :: Saving asgard.are...
+Sat Jun 13 04:59:17 2015 :: Saving warkeep.are...
+Sat Jun 13 04:59:17 2015 :: Saving abandoned.are...
+Sat Jun 13 04:59:17 2015 :: Saving drakkel.are...
+Sat Jun 13 04:59:17 2015 :: Saving 1stplane.are...
+Sat Jun 13 04:59:17 2015 :: Saving heaven.are...
+Sat Jun 13 04:59:17 2015 :: Saving manoake.are...
+Sat Jun 13 04:59:17 2015 :: Saving loramoor.are...
+Sat Jun 13 04:59:17 2015 :: Saving beach.are...
+Sat Jun 13 04:59:17 2015 :: Saving ship.are...
+Sat Jun 13 04:59:17 2015 :: Saving Vila.are...
+Sat Jun 13 04:59:17 2015 :: Saving abyss.are...
+Sat Jun 13 04:59:17 2015 :: Saving citadel.are...
+Sat Jun 13 04:59:17 2015 :: Saving ocean.are...
+Sat Jun 13 04:59:17 2015 :: Saving paleon.are...
+Sat Jun 13 04:59:17 2015 :: Saving garden.are...
+Sat Jun 13 04:59:17 2015 :: Saving prison.are...
+Sat Jun 13 04:59:17 2015 :: Saving jarynth.are...
+Sat Jun 13 04:59:17 2015 :: Saving cierra.are...
+Sat Jun 13 04:59:17 2015 :: Saving regius.are...
+Sat Jun 13 04:59:17 2015 :: Saving isle.are...
+Sat Jun 13 04:59:17 2015 :: Saving caverns.are...
+Sat Jun 13 04:59:17 2015 :: Saving shoreline.are...
+Sat Jun 13 04:59:17 2015 :: Saving stutorial.are...
+Sat Jun 13 04:59:17 2015 :: Saving waterarena.are...
+Sat Jun 13 04:59:17 2015 :: Saving tufkular.are...
+Sat Jun 13 04:59:17 2015 :: Saving undersewer.are...
+Sat Jun 13 04:59:17 2015 :: Saving tutorial.are...
+Sat Jun 13 04:59:17 2015 :: Saving bowels.are...
+Sat Jun 13 04:59:17 2015 :: Saving atheneum.are...
+Sat Jun 13 04:59:17 2015 :: Saving desertarena.are...
+Sat Jun 13 04:59:17 2015 :: Saving kirwood.are...
+Sat Jun 13 04:59:17 2015 :: Saving junglearena.are...
+Sat Jun 13 04:59:17 2015 :: Saving arcticarena.are...
+Sat Jun 13 04:59:17 2015 :: Saving Dis.are...
+Sat Jun 13 04:59:17 2015 :: Saving labarena.are...
+Sat Jun 13 04:59:17 2015 :: Saving durdun.are...
+Sat Jun 13 04:59:17 2015 :: Saving dakar.are...
+Sat Jun 13 04:59:17 2015 :: Saving etutorial.are...
+Sat Jun 13 04:59:17 2015 :: Saving wild.are...
+Sat Jun 13 04:59:17 2015 :: Saving xwild.are...
+Sat Jun 13 04:59:17 2015 :: Saving santasws.are...
+Sat Jun 13 04:59:17 2015 :: Saving forbidden.are...
+Sat Jun 13 04:59:17 2015 :: Saving dtutorial.are...
+Sat Jun 13 04:59:17 2015 :: Saving estate.are...
+Sat Jun 13 04:59:17 2015 :: Saving spidswamp.are...
+Sat Jun 13 04:59:17 2015 :: Saving icecastle.are...
+Sat Jun 13 04:59:17 2015 :: Saving crysforest.are...
+Sat Jun 13 04:59:17 2015 :: Saving lvalley.are...
+Sat Jun 13 04:59:17 2015 :: Saving ixious.are...
+Sat Jun 13 04:59:17 2015 :: Saving Szithlin.are...
+Sat Jun 13 04:59:17 2015 :: Saving gtower.are...
+Sat Jun 13 04:59:17 2015 :: Saving newunder.are...
+Sat Jun 13 04:59:17 2015 :: Saving foxden.are...
+Sat Jun 13 04:59:17 2015 :: Saving goldpen.are...
+Sat Jun 13 04:59:17 2015 :: Saving ruins.are...
+Sat Jun 13 04:59:17 2015 :: Saving merchant.are...
+Sat Jun 13 04:59:17 2015 :: Saving shatkul.are...
+Sat Jun 13 04:59:17 2015 :: Saving sos.are...
+Sat Jun 13 04:59:17 2015 :: Saving appgarden.are...
+Sat Jun 13 04:59:17 2015 :: Saving soscata.are...
+Sat Jun 13 04:59:17 2015 :: Saving throngfort.are...
+Sat Jun 13 04:59:17 2015 :: Saving allifort.are...
+Sat Jun 13 04:59:17 2015 :: Saving accura.are...
+Sat Jun 13 04:59:17 2015 :: Saving events.are...
+Sat Jun 13 04:59:17 2015 :: Saving halcyon.are...
+Sat Jun 13 04:59:17 2015 :: Saving terizak.are...
+Sat Jun 13 04:59:17 2015 :: Saving mausoleum.are...
+Sat Jun 13 04:59:17 2015 :: Saving spivill.are...
+Sat Jun 13 04:59:17 2015 :: Saving ywild.are...
+Sat Jun 13 04:59:17 2015 :: Saving cliffs.are...
+Sat Jun 13 04:59:17 2015 :: Saving icecavern.are...
+Sat Jun 13 04:59:17 2015 :: Saving oisland.are...
+Sat Jun 13 04:59:17 2015 :: Saving harpy.are...
+Sat Jun 13 04:59:17 2015 :: Saving rift.are...
+Sat Jun 13 04:59:17 2015 :: Saving invasion.are...
+Sat Jun 13 04:59:17 2015 :: Saving palace.are...
+Sat Jun 13 04:59:17 2015 :: Saving ttower.are...
+Sat Jun 13 04:59:17 2015 :: Saving pixadale.are...
+Sat Jun 13 04:59:17 2015 :: Saving volcano.are...
+Sat Jun 13 04:59:17 2015 :: Saving psewer.are...
+Sat Jun 13 04:59:17 2015 :: Saving dsewer.are...
+Sat Jun 13 04:59:17 2015 :: Saving dragonden.are...
+Sat Jun 13 04:59:17 2015 :: Saving grovestone.are...
+Sat Jun 13 04:59:17 2015 :: Saving torain.are...
+Sat Jun 13 04:59:17 2015 :: Saving parade.are...
+Sat Jun 13 04:59:17 2015 :: Saving theatre.are...
+Sat Jun 13 04:59:17 2015 :: Saving phouse.are...
+Sat Jun 13 04:59:17 2015 :: Saving dhouse.are...
+Sat Jun 13 04:59:17 2015 :: Saving hive.are...
+Sat Jun 13 04:59:17 2015 :: Saving riders.are...
+Sat Jun 13 04:59:17 2015 :: Saving ships.are...
+Sat Jun 13 04:59:17 2015 :: Saving tomb.are...
+Sat Jun 13 04:59:19 2015 :: Log Zlorth: copyo

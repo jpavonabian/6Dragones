@@ -1,14 +1,13 @@
 #CITY
-Name          Forbidden City~
+Name          Ciudad Prohibida~
 Filename      forbidden.city~
 Bank          forbidden~
-Duke          Klorawn~
-Baron         Mirkoros~
-Captain       Kingston~
+Duke          Mirkoros~
+Baron         Kingston~
 Allegiance    Halcyon~
 Defense          500
-Offense          415
-OffenseCatapult  3
+Offense          445
+OffenseCatapult  6
 DefenseCatapult  10
 Ballista         3
 Soldiers         40
@@ -22,7 +21,7 @@ Platform         3
 Ram              2
 Pitch            10
 Wins             334
-Loses            42
+Loses            43
 Recall           35515
 Siege1           35509
 Siege2           35511
@@ -45,11 +44,51 @@ End
 
 #ROLLCALL
 Name      Zlorth~
-Joined    1431215806
-Updated    1431215962
+Joined    1433874441
+Updated    1434718098
 Class     twoheaded~
 Level     108
-Kills     36
+Kills     32
+Deaths    0
+End
+
+#ROLLCALL
+Name      Wolfe~
+Joined    1433787548
+Updated    1433807577
+Class     gold~
+Level     108
+Kills     1
+Deaths    0
+End
+
+#ROLLCALL
+Name      Syldreik~
+Joined    1433609962
+Updated    1433611587
+Class     red~
+Level     108
+Kills     0
+Deaths    0
+End
+
+#ROLLCALL
+Name      Mewrsuin~
+Joined    1431359117
+Updated    1431673915
+Class     blue~
+Level     108
+Kills     8
+Deaths    0
+End
+
+#ROLLCALL
+Name      Wolfe~
+Joined    1431359610
+Updated    1431657302
+Class     gold~
+Level     108
+Kills     0
 Deaths    0
 End
 

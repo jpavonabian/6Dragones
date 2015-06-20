@@ -12,11 +12,11 @@ Level        108
 Firstlevel   0
 Secondlevel  0
 Thirdlevel   0
-Played       17559
-Room         1218
-HpManaMove   7614 11488 3301 3301 4480 4480
+Played       31395
+Room         5109
+HpManaMove   11488 11488 3301 3301 4480 4480
 BaseHp       0 
-Blood        10 168
+Blood        168 168
 Money         0 10 50 100 1000 -1
 Exp           0
 Firstexp      0
@@ -24,9 +24,9 @@ Secondexp     0
 Thirdexp      0
 Height        130
 Weight        8420
-Act           536878920&1660950544
+Act           536887112&1660950544
 AffectedBy    512
-Channels      chat decir inmortales~
+Channels      chat decir inmortales ooc shout yell icc wartalk event music Think muse info auth warn build counciltalk alianza avtalk ask answer swear flirt hint osay 6d Multitud reunion halcyon paleon dakar prohibida subastas comm~
 Position      115
 Style         2
 Practice      860
@@ -44,11 +44,11 @@ RECAST          0
 AuthedBy     Zlorth~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1431216574
+LDExpUpdate  1433806924
 tmpcrawl 72
 tmpsecond -1
 tmpthird -1
-tmproom 1213
+tmproom 5109
 Textspeed          5
 PotionTimer        0 0 0
 FirstExpR          0
@@ -58,8 +58,8 @@ FocusLevel         0
 UsedTrade          0
 Faith              0
 ChanInvite         0
-QuestCurr          0
-QuestAccum         0
+QuestCurr          15
+QuestAccum         15
 MobCount           0
 ObjCount           0
 ArenaWins          0
@@ -69,16 +69,18 @@ MapSize            0
 MapDescToggle      0
 MapNameToggle      0
 MapType            0
+FoundArea       Wilderness~
 Bamfin       $n emerge de una columna de fuego~
 Bamfout      $n se convierte en niebla y se desvanece~
-WizInvis     106
-Htown      Forbidden City~
+WizInvis     101
+Htown      Ciudad Prohibida~
+City      Ciudad Prohibida~
 Flags        32802
 Bardtimer    0
 Bardsn       0
 PKills       0
 PDeaths      0
-MKills       0
+MKills       1
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 18 21 10 16 10 12
@@ -631,6 +633,7 @@ NNSong        100 100 'sound waves' 0 0
 NNSong        100 100 'stirring ballad' 0 0
 NNSong        100 100 'thunderous hymn' 0 0
 NNSong        100 100 'unholy melody' 0 0
+Killed       16045
 MaxColors    111
 Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
 Portalstonelag     0

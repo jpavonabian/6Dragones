@@ -12,44 +12,46 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       318458
+Played       852662
 Room         35515
 HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
-Blood        305 305
-Money         0 20 50 116 905 -1
+Blood        459 459
+Money         0 200000 23 126 905 -1
 Exp           0
 Firstexp      0
 Secondexp     0
 Thirdexp      0
-Height        1050
-Weight        8391
-Act           536878920&-351266768
+Height        993
+Weight        8436
+Act           536878920&-351266784
 AffectedBy    512
-Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion auction Think muse comm auth warn build log counciltalk alliance avtalk 6d throng halcyon paleon dakar forbidden decir inmortales chillar~
+Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d halcyon paleon dakar decir inmortales shout yell~
 Position      115
 Style         2
-Practice      608
+Practice      1196
 SavingThrows  0 0 0 0 0
-Alignment     -6
+Alignment     -9
 AppBlood      0
 Hitroll       0
 Damroll       0
 Armor         100
+Wimpy         6000
 Resistant     8320
 Password      b380617b098aa3255255c678dc2e66e83d10294da277f4a2f94b4ebf1523b5ba~
 Title          El Señor de los Dragones~
-Lastip         84.122.176.243~
+Lastip         77.230.130.35~
 RECAST          0
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1431216102
-tmpcrawl 85
+LDExpUpdate  1434718082
+tmpcrawl 72
 extlevel 108
 tmpsecond -1
 tmpthird -1
 tmproom 35515
+timezone 13
 Textspeed          5
 PotionTimer        0 0 0
 FirstExpR          0
@@ -59,8 +61,8 @@ FocusLevel         0
 UsedTrade          0
 Faith              0
 ChanInvite         0
-QuestCurr          120
-QuestAccum         120
+QuestCurr          150
+QuestAccum         185
 MobCount           0
 ObjCount           0
 ArenaWins          0
@@ -75,27 +77,33 @@ FoundArea       Abyss~
 FoundArea       Drakkel Sharda~
 FoundArea       Merchant Discovery~
 FoundArea       Wilderness~
-Bamfin       Las moléculas dispersas en el aire se unen para formar ante tus ojos a un poderoso dragón. $n aparece ante ti en todo su explendor.~
-Bamfout      $n se desvanece en el aire con un poderoso rujido.~
+FoundArea       Ixious Village~
+FoundArea       Iron City of Dis~
+FoundArea       Demon Palace~
+FoundArea       Throng Training Tower~
+Bamfin       $n aparece ante ti plegando sus poderosas alas~
+Bamfout      $n alza el vuelo desplegando sus enormes alas.~
 Restore_time 1430853613
 Heaven_time 1430830310
 WizInvis     108
-Htown      Forbidden City~
+Htown      Ciudad Prohibida~
+City      Ciudad Prohibida~
 Flags        34
+Siege        1431545934
 Bardtimer    0
 Bardsn       0
 PKills       0
 PDeaths      0
-MKills       12
+MKills       32
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
 AttrMod      0 0 0 0 0 0 0
-Condition    0 107 107 118
-Site         84.122.176.243
-LastNews     1417006755
+Condition    0 100 100 118
+Site         77.230.130.35
+LastNews     1432380664
 Holdbreath 0
-Frostbite 0
+Frostbite 15
 Adjust 0
 NNSpell       100 100 'acid breath' 0 0
 NNSpell       100 100 'acidic touch' 0 0
@@ -641,17 +649,20 @@ NNSong        100 100 'stirring ballad' 0 0
 NNSong        100 100 'thunderous hymn' 0 0
 NNSong        100 100 'unholy melody' 0 0
 Killed       35531
+Killed       35531
+Killed       35531
+Killed       35531
+Killed       104
+Killed       104
+Killed       35531
+Killed       35531
+Killed       35531
+Killed       5101
+THYQuestN 58 1 0 0 1 0
+THYQuestN 89 1 0 0 1 0
 MaxColors    111
 Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
 Portalstonelag     0
-End
-
-#OBJECT
-Vnum         35543
-Level        96
-Currtype     4
-Color        1
-Size   0
 End
 
 #END

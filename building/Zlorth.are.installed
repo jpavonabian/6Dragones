@@ -1,0 +1,142 @@
+#AREA        Miscelanea~
+
+
+
+#VERSION     9
+#AUTHOR      Zlorth~
+#DERIVATIVES ~
+#COLOR       0
+#HTOWN       ~
+#DESC        ~
+
+#RANGES
+0 108 0 108
+$
+
+#SPELLLIMIT 0
+#RESETMSG ~
+
+#FLAGS
+0
+
+#CURRENCY 0
+
+#HIGHECONOMY 0 0 0 0 0 -1
+
+#LOWECONOMY 0 0 0 0 0 -1
+
+#CLANNAME (null)~
+
+#INFLUENCE 0
+
+#MOBILES
+#59000
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1
+Clanname none~
+0
+0
+1 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#59999
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1
+Clanname none~
+0
+0
+1 0 0 C
+1 0 0 0d0+0 0d0+0
+0 0 0 0 0 
+0
+115 115 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 4 0 0 1 1 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#59000
+anillo %s~
+El anillo de %s~
+El anillo de %s~
+~
+8 0 3
+0 0 0 0 0 0 0
+1 10 1
+1
+0
+S 0 0
+E
+Te quiero.~
+(null)~
+#59001
+collar~
+un collar~
+Un collar de bodas.~
+~
+9 0 5
+2 2 0 0 0 0 0
+1 58 5
+4
+0
+S 0 0
+#59999
+last obj~
+a newly created last obj~
+Some god dropped a newly created last obj here.~
+~
+13 0 0
+0 0 0 0 0 0 0
+1 0 0
+1
+0
+S 0 0
+#0
+
+
+#ROOMS
+#59000
+Floating in a void~
+Not Assigned~
+~
+1 4 1
+S
+#59999
+Floating in a void~
+Not Assigned~
+~
+1 4 1
+S
+#0
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

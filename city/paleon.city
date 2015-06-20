@@ -1,26 +1,26 @@
 #CITY
-Name          Paleon City~
+Name          ciudad paleon~
 Filename      paleon.city~
 Bank          paleon~
 Duke          Kyrigan~
 Baron         Gilanthas~
 Allegiance    Alliance~
-Defense          500
+Defense          366
 Offense          490
 OffenseCatapult  4
-DefenseCatapult  10
+DefenseCatapult  6
 Ballista         4
 Soldiers         50
 Guards           50
 DefenseArchers   50
 OffenseArchers   50
-DefenseWarriors  50
+DefenseWarriors  25
 OffenseWarriors  50
-Arrows           50
+Arrows           26
 Platform         4
 Ram              2
-Pitch            10
-Wins             52
+Pitch            6
+Wins             53
 Loses            63
 Recall           16007
 Siege1           3503
@@ -40,6 +40,36 @@ OArrow           41023
 MinHouse         54001
 MaxHouse         55000
 Hardened         8
+End
+
+#ROLLCALL
+Name      Kais~
+Joined    1433789580
+Updated    1434450243
+Class     mage~
+Level     108
+Kills     0
+Deaths    0
+End
+
+#ROLLCALL
+Name      Novick~
+Joined    1431359191
+Updated    1431366127
+Class     mage~
+Level     108
+Kills     0
+Deaths    0
+End
+
+#ROLLCALL
+Name      Kais~
+Joined    1431359219
+Updated    1431360088
+Class     mage~
+Level     108
+Kills     0
+Deaths    0
 End
 
 #ROLLCALL
