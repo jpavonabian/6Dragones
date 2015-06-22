@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /* Volk: ALL CLASS DEFINES IN HERE!! Had to do this because of multiclass. Stop changing it idiots. */
 
 #define CLASS_NONE        -1                           /* USED DON'T REMOVE! */

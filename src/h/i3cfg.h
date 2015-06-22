@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /* Codebase macros - Change as you might need.
  * Yes, Rogel, you can gloat all you want. You win, this is cleaner, though not by a whole lot.
  */

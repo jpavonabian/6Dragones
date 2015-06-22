@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /* Volk! 
  * I was getting confused at all the different functions etc we have for 
  * multiclassed players, so I thought i'd just make a new file and put

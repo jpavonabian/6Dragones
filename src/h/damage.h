@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /* Damage allocations for most spells skills in game */
 
 #define  nominal    number_range( 4+ch->level, 20+ch->level )

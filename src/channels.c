@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
  /****************************************************************************
  * AFKMud Copyright 1997-2002 Alsherok. Contributors: Samson, Dwip, Whir,   *
  * Cyberfox, Karangi, Rathian, Cam, Raine, and Tarl.                        *

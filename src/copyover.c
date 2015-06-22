@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /***************************************************************************
  * - Chronicles Copyright 2001, 2002 by Brad Ensley (Orion Elder)          *
  * - AFKMud     Copyright 1997, 1998, 1999, 2000, 2001, 2002 by Alsherok   *

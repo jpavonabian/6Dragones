@@ -1,4 +1,6 @@
-// Archivo del tiempo. Traducido por Lucía Ramos para Felix Felicis. Copiado descaradamente por Zlorth para la traducción de 6 Dragones.
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
+// Archivo del tiempo. Traducido por Lucía Ramos para Felix Felicis. Copiado por Zlorth para la traducción de 6 Dragones.
 #include <string.h>
 #include <stdio.h>
 #include "h/mud.h"

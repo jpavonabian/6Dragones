@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /***************************************************************************
 * Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer, *
 * Michael Seifert, Hans Henrik Stærfeldt, Tom Madsen, and Katja Nyboe. *

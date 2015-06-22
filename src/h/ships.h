@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 #define FIRST_DECK_ROOM 56300
 #define SECOND_DECK_ROOM 56307
 #define THIRD_DECK_ROOM 56312

@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /***************************************************************************
  * This code may be used freely within any non-commercial MUD, all I ask   *
  * is that these comments remain in tact and that you give me any feedback *

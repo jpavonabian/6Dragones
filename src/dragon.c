@@ -1,3 +1,5 @@
+/* Copyright 2014, 2015 Jesús Pavón Abián
+Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /* Figured it would be nice to put all dragon skills in one file, easier for me to balance the power anyways.
    - Vladaar
 :::::::-.  :::::::..    :::.      .,-:::::/      ...   :::.    :::. .::::::. 
