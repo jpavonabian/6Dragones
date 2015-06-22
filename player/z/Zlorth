@@ -12,7 +12,7 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       852662
+Played       852676
 Room         35515
 HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
@@ -45,7 +45,7 @@ RECAST          0
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1434718082
+LDExpUpdate  1434989983
 tmpcrawl 72
 extlevel 108
 tmpsecond -1

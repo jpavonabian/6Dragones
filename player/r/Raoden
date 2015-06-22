@@ -12,8 +12,8 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       189372
-Room         1200
+Played       189486
+Room         120
 HpManaMove   300000 300000 300000 300000 300000 300000
 BaseHp       0 
 Blood        310 310
@@ -24,7 +24,7 @@ Secondexp     0
 Thirdexp      0
 Height        1053
 Weight        8471
-Act           1610620232&1795168304
+Act           1610620744&1795168304
 AffectedBy    512
 Channels      chat decir ooc icc wartalk event music Think muse comm info auth warn build counciltalk avtalk ask answer swear flirt hint osay 6d reunion halcyon paleon dakar inmortales~
 Position      115
@@ -49,7 +49,7 @@ GetsDExp     0
 extlevel 108
 tmpsecond -1
 tmpthird -1
-tmproom 5101
+tmproom 54000
 timezone 8
 Textspeed          5
 PotionTimer        0 0 0
@@ -649,12 +649,6 @@ NNSong        100 100 'sound waves' 0 0
 NNSong        100 100 'stirring ballad' 0 0
 NNSong        100 100 'thunderous hymn' 0 0
 NNSong        100 100 'unholy melody' 0 0
-Killed       104
-Killed       5501
-Killed       35531
-Killed       35510
-Killed       35531
-Killed       35531
 MaxColors    111
 Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
 Portalstonelag     0
