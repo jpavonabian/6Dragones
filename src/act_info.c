@@ -5089,13 +5089,13 @@ void do_config( CHAR_DATA *ch, char *argument )
             ch_printf( ch, "\r\n%s[%s%d%s] Cobardía\r\n", s2, ch->wimpy > 0 ? s4 : s3, ch->wimpy, s2 );
             ch_printf( ch, "%s[%s%d%s] Paginador\r\n", s2, ch->pcdata->pagerlen > 0 ? s4 : s3,
                        ch->pcdata->pagerlen, s2 );
-            ch_printf( ch, "%sTo use triple experience points type 'config texp'\r\n", s2 );
+            ch_printf( ch, "%spara usar la triple experiencia teclea 'configurar texp'\r\n", s2 );
         }
         else {
             ch_printf( ch, "\r\n%s[%s%d%s] Cobardía   ", s2, ch->wimpy > 0 ? s4 : s3, ch->wimpy, s2 );
             ch_printf( ch, "%s[%s%d%s] Paginador   ", s2, ch->pcdata->pagerlen > 0 ? s4 : s3,
                        ch->pcdata->pagerlen, s2 );
-            ch_printf( ch, "%sTo use triple experience points type 'config texp'\r\n", s2 );
+            ch_printf( ch, "%sPara usar la triple experiencia teclea 'configurar texp'\r\n", s2 );
         }
         // Option to hear battle, communications, music, crafts
         set_char_color( AT_CYAN, ch );
