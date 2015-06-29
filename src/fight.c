@@ -4390,7 +4390,7 @@ void do_rush( CHAR_DATA *ch, char *argument )
         return;
     }
     if ( ch->fighting->distance == MIN_DISTANCE )
-        send_to_char( "You can't get any closer!\r\n", ch );
+        send_to_char( "¡No puedes acercarte más!\r\n", ch );
     else {
         distance = ch->fighting->distance - number_chance( 1, 4 );
 //    ch->fighting->who->fighting->distance = ch->fighting->distance;
@@ -4398,11 +4398,11 @@ void do_rush( CHAR_DATA *ch, char *argument )
             distance = MIN_DISTANCE;
         set_distance( ch, distance );
 
-        act( AT_GREEN, "Yelling a battle cry you rush in towards $N.", ch, NULL, ch->fighting->who,
+        act( AT_GREEN, "Gritas y sales corriendo en dirección a $N.", ch, NULL, ch->fighting->who,
              TO_CHAR );
-        act( AT_GREEN, "$n yelling a battle cry rushes in towards you.", ch, NULL,
+        act( AT_GREEN, "$n grita y corre hacia tí.", ch, NULL,
              ch->fighting->who, TO_VICT );
-        act( AT_GREEN, "$n yelling a battle cry rushes in towards $N.", ch, NULL, ch->fighting->who,
+        act( AT_GREEN, "$n grita y corre hacia $N.", ch, NULL, ch->fighting->who,
              TO_NOTVICT );
         WAIT_STATE( ch, 12 );
     }
@@ -4415,13 +4415,13 @@ void do_retreat( CHAR_DATA *ch, char *argument )
     if ( ( victim = who_fighting( ch ) ) != NULL ) {
         set_distance( ch, ch->fighting->distance + number_range( 1, 4 ) );
 //  ch->fighting->who->fighting->distance = ch->fighting->distance;
-        act( AT_GREEN, "You move back away from $N.", ch, NULL, ch->fighting->who, TO_CHAR );
-        act( AT_GREEN, "$n moves back away from you.", ch, NULL, ch->fighting->who, TO_VICT );
-        act( AT_GREEN, "$n moves back away from $N.", ch, NULL, ch->fighting->who, TO_NOTVICT );
+        act( AT_GREEN, "Te alejas de $N.", ch, NULL, ch->fighting->who, TO_CHAR );
+        act( AT_GREEN, "$n se aleja de tí.", ch, NULL, ch->fighting->who, TO_VICT );
+        act( AT_GREEN, "$n se aleja de $N.", ch, NULL, ch->fighting->who, TO_NOTVICT );
         WAIT_STATE( ch, 12 );
     }
     else
-        send_to_char( "You aren't fighting anyone.\r\n", ch );
+        send_to_char( "No estás luchando con nadie.\r\n", ch );
     return;
 
 }
@@ -5298,11 +5298,11 @@ void raw_kill( CHAR_DATA *ch, CHAR_DATA *victim )
      */
     if ( xIS_SET( victim->act, PLR_KILLER ) ) {
         xREMOVE_BIT( victim->act, PLR_KILLER );
-        send_to_char( "The City officials have pardoned you for your murderous acts.\r\n", victim );
+        send_to_char( "Los oficiales de la ciudad han perdonado tus actos asesinos.\r\n", victim );
     }
     if ( xIS_SET( victim->act, PLR_THIEF ) ) {
         xREMOVE_BIT( victim->act, PLR_THIEF );
-        send_to_char( "The City officials have pardoned you for your thievery.\r\n", victim );
+        send_to_char( "Los oficiales de la ciudad han perdonado tus robos.\r\n", victim );
     }
     victim->pcdata->condition[COND_FULL] = 50;
     victim->pcdata->condition[COND_THIRST] = 50;
@@ -5325,8 +5325,8 @@ void align_zap( CHAR_DATA *ch )
         if ( ( IS_OBJ_STAT( obj, ITEM_ANTI_EVIL ) && IS_EVIL( ch ) )
              || ( IS_OBJ_STAT( obj, ITEM_ANTI_GOOD ) && IS_GOOD( ch ) )
              || ( IS_OBJ_STAT( obj, ITEM_ANTI_NEUTRAL ) && IS_NEUTRAL( ch ) ) ) {
-            act( AT_MAGIC, "You are zapped by $p.", ch, obj, NULL, TO_CHAR );
-            act( AT_MAGIC, "$n is zapped by $p.", ch, obj, NULL, TO_ROOM );
+            act( AT_MAGIC, "Te apuntan con $p.", ch, obj, NULL, TO_CHAR );
+            act( AT_MAGIC, "A $n le apunta $p.", ch, obj, NULL, TO_ROOM );
             obj_from_char( obj );
             obj = obj_to_room( obj, ch->in_room );
             oprog_zap_trigger( ch, obj );              /* mudprogs */
