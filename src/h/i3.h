@@ -63,8 +63,11 @@ Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYI
 #define NUMLOGINS_PLACEHOLDER   0
 #define RFC1123FMT              "%a, %d %b %Y %H:%M:%S %Z"
 #define CODETYPE                "DikuMUD"
-#define CODEBASE                "Chronicles1.2a"
-#define CODEVERSION             "1.9q1"
+#define CODEBASE                "6Dragones"
+#define CODEVERSION             "1"
+#define CODEBASE_VERSION_TITLE                "6Dragones"
+#define CODEBASE_VERSION_MAJOR             "1"
+#define CODEBASE_VERSION_MINOR             "1"
 
 #define I3_CONFIG_FILE   I3_DIR "i3.config"
 #define I3_CHANNEL_FILE  I3_DIR "i3.channels"

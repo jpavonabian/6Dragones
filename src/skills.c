@@ -223,7 +223,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
             if ( sn > 0 )
                 if ( skill_table[sn]->type == SKILL_SONG )
                     break;
-//          send_to_char("That is a song, you need to PLAY it.\r\n", ch);
+//          send_to_char("Las canciones hay que interpretarlas.\r\n", ch);
 
             return FALSE;
         }
@@ -236,7 +236,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
     if ( xIS_SET( ch->act, PLR_LIFE ) ) {
         if ( get_trust( ch ) < LEVEL_IMMORTAL && !IS_NPC( ch ) ) {
             if ( !CAN_LEARN( ch, sn, TRUE ) ) {
-                send_to_char( "&BYou can't do that.\r\n", ch );
+                send_to_char( "&BNo puedes hacer eso.\r\n", ch );
                 return FALSE;
             }
         }
@@ -250,8 +250,8 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
         /*   crashing game when ordering pet to do_claw
             if ( !ch->desc && !ch->desc->original ) 
             {
-            send_to_char( "For some reason, you seem unable to perform that...\r\n", ch );
-            act( AT_GREY, "$n wanders around aimlessly.", ch, NULL, NULL, TO_ROOM );
+            send_to_char( "Por alguna razón, te ves incapaz de hacerlo...\r\n", ch );
+            act( AT_GREY, "$n parece confuso.", ch, NULL, NULL, TO_ROOM );
             return TRUE;
             }
         */
@@ -259,8 +259,8 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
           {
            if ( str_cmp( command, "beast") && str_cmp( command, "claw") && str_cmp( command, "bite") )
           {
-            send_to_char( "For some reason, you seem unable to perform that...\r\n", ch );
-            act( AT_GREY, "$n wanders around aimlessly.", ch, NULL, NULL, TO_ROOM );
+            send_to_char( "Por alguna razón, te ves incapaz de hacer eso...\r\n", ch );
+            act( AT_GREY, "$n parece confuso.", ch, NULL, NULL, TO_ROOM );
             return TRUE;
           }
           }
@@ -279,12 +279,12 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
 
         if ( IS_BLOODCLASS( ch ) ) {
             if ( ch->blood < blood ) {
-                send_to_char( "You don't have enough blood power.\r\n", ch );
+                send_to_char( "No tienes suficiente sangre.\r\n", ch );
                 return TRUE;
             }
         }
         else if ( !IS_NPC( ch ) && ch->mana < mana ) {
-            send_to_char( "You don't have enough mana.\r\n", ch );
+            send_to_char( "No tienes suficiente poder.\r\n", ch );
             return TRUE;
         }
     }
@@ -307,7 +307,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
         switch ( skill_table[sn]->target ) {
             default:
                 bug( "Check_skill: bad target for sn %d.", sn );
-                send_to_char( "Something went wrong...\r\n", ch );
+                send_to_char( "halgo ha fallado...\r\n", ch );
                 return TRUE;
 
             case TAR_IGNORE:
@@ -324,13 +324,13 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
                 {
                     if ( argument[0] == '\0' && ( victim = who_fighting( ch ) ) == NULL ) {
                         ch_printf( ch,
-                                   "Confusion overcomes you as your '%s' has no target.\r\n",
+                                   "la cunfusión te invade al comprobar que tu '%s' no tiene objetivo.\r\n",
                                    skill_table[sn]->name );
                         return TRUE;
                     }
                     else if ( argument[0] != '\0'
                               && ( victim = get_char_room( ch, argument ) ) == NULL ) {
-                        send_to_char( "They aren't here.\r\n", ch );
+                        send_to_char( "No está aquí.\r\n", ch );
                         return TRUE;
                     }
                 }
@@ -339,7 +339,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
                     return TRUE;
 
                 if ( ch == victim && SPELL_FLAG( skill_table[sn], SF_NOSELF ) ) {
-                    send_to_char( "You can't target yourself!\r\n", ch );
+                    send_to_char( "¿Para qué?\r\n", ch );
                     return TRUE;
                 }
 
@@ -347,18 +347,18 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
                     if ( !IS_NPC( victim )
                          && ( !who_fighting( victim ) || who_fighting( victim ) != ch ) ) {
                         if ( get_timer( ch, TIMER_PKILLED ) > 0 ) {
-                            send_to_char( "You have been killed in the last 5 minutes.\r\n", ch );
+                            send_to_char( "Te han asesinado en los últimos 5 minutos.\r\n", ch );
                             return TRUE;
                         }
 
                         if ( get_timer( victim, TIMER_PKILLED ) > 0 ) {
-                            send_to_char( "This player has been killed in the last 5 minutes.\r\n",
+                            send_to_char( "Ese personaje ha sido asesinado en los últimos 5 minutos.\r\n",
                                           ch );
                             return TRUE;
                         }
 
                         if ( IS_AFFECTED( ch, AFF_CHARM ) && ch->master == victim ) {
-                            send_to_char( "You can't do that on your own follower.\r\n", ch );
+                            send_to_char( "No puedes hacer eso con tus propios seguidores.\r\n", ch );
                             return TRUE;
                         }
                     }
@@ -371,7 +371,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
             case TAR_CHAR_DEFENSIVE:
                 {
                     if ( argument[0] != '\0' && ( victim = get_char_room( ch, argument ) ) == NULL ) {
-                        send_to_char( "They aren't here.\r\n", ch );
+                        send_to_char( "No está aquí.\r\n", ch );
                         return TRUE;
                     }
                     if ( !victim )
@@ -379,7 +379,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
                 }
 
                 if ( ch == victim && SPELL_FLAG( skill_table[sn], SF_NOSELF ) ) {
-                    send_to_char( "You can't target yourself!\r\n", ch );
+                    send_to_char( "¿Para qué?\r\n", ch );
                     return TRUE;
                 }
 
@@ -393,7 +393,7 @@ bool check_skill( CHAR_DATA *ch, char *command, char *argument )
             case TAR_OBJ_INV:
                 {
                     if ( ( obj = get_obj_carry( ch, argument ) ) == NULL ) {
-                        send_to_char( "You can't find that.\r\n", ch );
+                        send_to_char( "No puedes encontrar eso.\r\n", ch );
                         return TRUE;
                     }
                 }
@@ -1655,21 +1655,21 @@ void learn_from_success( CHAR_DATA *ch, int sn )
             // bonus to gain. (gain of 3%).
             if ( number_range( 1, 2 ) == 1 )
                 ch_printf( ch,
-                           "Your high intelligence helps improve your understanding of %s greatly.\n\r",
+                           "Tu gran inteligencia te ayuda a comprender mejor como usar %s.\n\r",
                            skill_table[sn]->name );
         }
         else if ( chance > 10 ) {
             learn = 2;                                 // If over 100, player learns
             // skill with gain of 2%.
             if ( number_range( 1, 3 ) == 1 )
-                ch_printf( ch, "Your high intelligence helps improve your understanding of %s.\n\r",
+                ch_printf( ch, "Tu gran inteligencia te ayuda a comprender mejor como usar %s.\n\r",
                            skill_table[sn]->name );
         }
 
         ch->pcdata->learned[sn] = UMIN( adept, ch->pcdata->learned[sn] + learn );
         if ( ch->pcdata->learned[sn] == adept ) {      /* fully learned! */
             set_char_color( AT_WHITE, ch );
-            ch_printf( ch, "You are now an adept of %s!\r\n", skill_table[sn]->name );
+            ch_printf( ch, "¡Alcanzas el grado de Maestro en %s!\r\n", skill_table[sn]->name );
         }
         // Now we have result, which should tell us which is the highest VALID skill
         // level. 
@@ -1768,7 +1768,7 @@ void learn_from_failure( CHAR_DATA *ch, int sn )
         if ( ch->pcdata->learned[sn] < adept && chance > 8 ) {
             learn = 1;
             ch->pcdata->learned[sn] = UMIN( adept, ch->pcdata->learned[sn] + learn );
-            act( AT_WHITE, "You learned something new from this failed attempt.", ch, NULL,
+            act( AT_WHITE, "Aprendes algo nuevo gracias a tu intento erróneo.", ch, NULL,
                  NULL, TO_CHAR );
         }
     }

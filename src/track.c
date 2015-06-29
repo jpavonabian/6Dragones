@@ -189,19 +189,19 @@ void do_track( CHAR_DATA *ch, char *argument )
     bool                    firststep = true;
 
     if ( !IS_NPC( ch ) && ch->pcdata->learned[gsn_track] <= 0 ) {
-        send_to_char( "You do not know of this skill yet.\r\n", ch );
+        send_to_char( "No conoces esta habilidad todavía.\r\n", ch );
         return;
     }
 
     one_argument( argument, arg );
     if ( arg == NULL || arg[0] == '\0' ) {
-        send_to_char( "Whom are you trying to track?\r\n", ch );
+        send_to_char( "¿Rastrear a quién?\r\n", ch );
         return;
     }
     WAIT_STATE( ch, skill_table[gsn_track]->beats );
 
     if ( !( vict = get_char_area( ch, arg ) ) ) {
-        send_to_char( "You can't find a trail of anyone like that.\r\n", ch );
+        send_to_char( "no puedes rastrear a nadie con ese nombre.\r\n", ch );
         return;
     }
     maxdist = 100 + ch->level * 30;
@@ -225,15 +225,15 @@ void do_track( CHAR_DATA *ch, char *argument )
             dir = find_first_step( fromroom, vict->in_room, maxdist );
             if ( steps == 0 ) {
                 if ( dir == BFS_ERROR ) {
-                    send_to_char( "Hmm... At some point something went wrong.\r\n", ch );
+                    send_to_char( "Hmm... No está claro...\r\n", ch );
                     return;
                 }
                 else if ( dir == BFS_ALREADY_THERE ) {
-                    send_to_char( "You're already in the same room!\r\n", ch );
+                    send_to_char( "¡Pero si estás en el mismo lugar!\r\n", ch );
                     return;
                 }
                 else if ( dir == BFS_NO_PATH ) {
-                    send_to_char( "You can't sense a trail from here.\r\n", ch );
+                    send_to_char( "No puedes detectar ningún rastro aquí.\r\n", ch );
                     return;
                 }
 
@@ -242,7 +242,7 @@ void do_track( CHAR_DATA *ch, char *argument )
             else {
                 if ( dir == BFS_ERROR ) {
                     send_to_char
-                        ( "Hmm... At some point something went wrong.\r\nsomething seems to be wrong.\r\n",
+                        ( "Hmm... No está claro.\r\nAlgo salió mal.\r\n",
                           ch );
                     return;
                 }
@@ -274,7 +274,7 @@ void do_track( CHAR_DATA *ch, char *argument )
         }
     }
 
-    ch_printf( ch, "&cYou notice signs of someone passing that lead %s from here...\r\n", fpath );
+    ch_printf( ch, "&cDesde aquí notas signos de que ha pasado hacia la siguiente ruta: %s.\r\n", fpath );
     learn_from_success( ch, gsn_track );
 }
 
@@ -299,21 +299,21 @@ void found_prey( CHAR_DATA *ch, CHAR_DATA *victim )
             return;
         switch ( number_bits( 2 ) ) {
             case 0:
-                snprintf( buf, MSL, "say Don't make me find you, %s!", victname );
+                snprintf( buf, MSL, "decir ¡No me hagas encontrarte, %s!", victname );
                 interpret( ch, buf );
                 break;
             case 1:
-                act( AT_ACTION, "$n sniffs around the room for $N.", ch, NULL, victim, TO_NOTVICT );
-                act( AT_ACTION, "You sniff around the room for $N.", ch, NULL, victim, TO_CHAR );
-                act( AT_ACTION, "$n sniffs around the room for you.", ch, NULL, victim, TO_VICT );
-                interpret( ch, ( char * ) "say I can smell your blood!" );
+                act( AT_ACTION, "$n mira a su alrededor, buscando a $N.", ch, NULL, victim, TO_NOTVICT );
+                act( AT_ACTION, "Miras a tu alrededor, buscando a $N.", ch, NULL, victim, TO_CHAR );
+                act( AT_ACTION, "$n mira a su alrededor buscándote.", ch, NULL, victim, TO_VICT );
+                interpret( ch, ( char * ) "Decir ¡Tu miedo se huele a leguas! ¡No te escondas!" );
                 break;
             case 2:
-                snprintf( buf, MSL, "yell I'm going to tear %s apart!", victname );
+                snprintf( buf, MSL, "decir ¡Voy a matarte, %s!", victname );
                 interpret( ch, buf );
                 break;
             case 3:
-                interpret( ch, ( char * ) "say Just wait until I find you..." );
+                interpret( ch, ( char * ) "Decir Solo espera que te encuentre..." );
                 break;
         }
         return;
@@ -324,22 +324,22 @@ void found_prey( CHAR_DATA *ch, CHAR_DATA *victim )
             return;
         switch ( number_bits( 2 ) ) {
             case 0:
-                interpret( ch, ( char * ) "say C'mon out, you coward!" );
-                snprintf( buf, MSL, "yell %s is a bloody coward!", victname );
+                interpret( ch, ( char * ) "decir ¡Cobarde!" );
+                snprintf( buf, MSL, "decir ¡%s es un cobarde!", victname );
                 interpret( ch, buf );
                 break;
             case 1:
-                snprintf( buf, MSL, "say Let's take this outside, %s", victname );
+                snprintf( buf, MSL, "Decir solucionemos esto fuera, %s", victname );
                 interpret( ch, buf );
                 break;
             case 2:
-                snprintf( buf, MSL, "yell %s is a yellow-bellied wimp!", victname );
+                snprintf( buf, MSL, "decir Vamos, %s. ¡Sal fuera!", victname );
                 interpret( ch, buf );
                 break;
             case 3:
-                act( AT_ACTION, "$n takes a few swipes at $N.", ch, NULL, victim, TO_NOTVICT );
-                act( AT_ACTION, "You try to take a few swipes $N.", ch, NULL, victim, TO_CHAR );
-                act( AT_ACTION, "$n takes a few swipes at you.", ch, NULL, victim, TO_VICT );
+                act( AT_ACTION, "$n da unos golpecitos a $N.", ch, NULL, victim, TO_NOTVICT );
+                act( AT_ACTION, "Das unos golpecitos a $N.", ch, NULL, victim, TO_CHAR );
+                act( AT_ACTION, "$n te da unos golpecitos.", ch, NULL, victim, TO_VICT );
                 break;
         }
         return;
@@ -347,21 +347,21 @@ void found_prey( CHAR_DATA *ch, CHAR_DATA *victim )
 
     switch ( number_bits( 2 ) ) {
         case 0:
-            snprintf( buf, MSL, "yell Your blood is mine, %s!", victname );
+            snprintf( buf, MSL, "decir Tu sangre es mía, ¡%s!", victname );
             interpret( ch, buf );
             break;
         case 1:
-            snprintf( buf, MSL, "say Alas, we meet again, %s!", victname );
+            snprintf( buf, MSL, "Decir Nos volvemos a ver las caras, ¡%s!", victname );
             interpret( ch, buf );
             break;
         case 2:
-            snprintf( buf, MSL, "say What do you want on your tombstone, %s?", victname );
+            snprintf( buf, MSL, "Decir ¿Cuál será tu epitafio, %s?", victname );
             interpret( ch, buf );
             break;
         case 3:
-            act( AT_ACTION, "$n lunges at $N from out of nowhere!", ch, NULL, victim, TO_NOTVICT );
-            act( AT_ACTION, "You lunge at $N catching $M off guard!", ch, NULL, victim, TO_CHAR );
-            act( AT_ACTION, "$n lunges at you from out of nowhere!", ch, NULL, victim, TO_VICT );
+            act( AT_ACTION, "¡$n aparece tras $N!", ch, NULL, victim, TO_NOTVICT );
+            act( AT_ACTION, "¡apareces tras $N!", ch, NULL, victim, TO_CHAR );
+            act( AT_ACTION, "¡$n aparece tras de tí!", ch, NULL, victim, TO_VICT );
     }
     stop_hunting( ch );
     set_fighting( ch, victim );
@@ -387,7 +387,7 @@ void hunt_victim( CHAR_DATA *ch )
             found = TRUE;
 
     if ( !found ) {
-        do_tell( ch, ( char * ) "Damn!  My prey is gone!!" );
+        do_tell( ch, ( char * ) "¡ARGH! ¡Mi presa ha escapado!" );
         stop_hunting( ch );
         return;
     }
@@ -401,7 +401,7 @@ void hunt_victim( CHAR_DATA *ch )
 
     ret = find_first_step( ch->in_room, ch->hunting->who->in_room, 500 + ch->level * 25 );
     if ( ret < 0 ) {
-        do_tell( ch, ( char * ) "Damn!  Lost my prey!" );
+        do_tell( ch, ( char * ) "¡ARGH! ¡he perdido a mi presa!" );
         stop_hunting( ch );
         return;
     }
@@ -425,7 +425,7 @@ void hunt_victim( CHAR_DATA *ch )
                 char_to_room( ch, get_room_index( ROOM_VNUM_LIMBO ) );
                 return;
             }
-            do_tell( ch, ( char * ) "Damn!  Lost my prey!" );
+            do_tell( ch, ( char * ) "¡ARgH! ¡Perdí mi presa!" );
             return;
         }
         if ( ch->in_room == ch->hunting->who->in_room )
@@ -468,7 +468,7 @@ void do_landmark( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    if ( !str_cmp( argument, "clear" ) ) {
+    if ( !str_cmp( argument, "limpiar" ) ) {
         send_to_char( "You are no longer looking at that landmark.\r\n", ch );
         if ( ch->landmark )
             STRFREE( ch->landmark );
