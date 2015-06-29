@@ -1050,7 +1050,7 @@ bool process_spell_components( CHAR_DATA *ch, int sn )
                 for ( obj = ch->first_carrying; obj; obj = obj->next_content )
                     if ( obj->item_type == value ) {
                         if ( fail ) {
-                            send_to_char( "Something disrupts the casting of this spell...\r\n",
+                            send_to_char( "Algo te impide terminar el hechizo...\r\n",
                                           ch );
                             return FALSE;
                         }
@@ -1062,7 +1062,7 @@ bool process_spell_components( CHAR_DATA *ch, int sn )
                 for ( obj = ch->first_carrying; obj; obj = obj->next_content )
                     if ( obj->pIndexData->vnum == value ) {
                         if ( fail ) {
-                            send_to_char( "Something disrupts the casting of this spell...\r\n",
+                            send_to_char( "Algo te impide terminar el hechizo...\r\n",
                                           ch );
                             return FALSE;
                         }
@@ -1074,7 +1074,7 @@ bool process_spell_components( CHAR_DATA *ch, int sn )
                 for ( obj = ch->first_carrying; obj; obj = obj->next_content )
                     if ( nifty_is_name( check, obj->name ) ) {
                         if ( fail ) {
-                            send_to_char( "Something disrupts the casting of this spell...\r\n",
+                            send_to_char( "Algo te impide terminar el hechizo...\r\n",
                                           ch );
                             return FALSE;
                         }
@@ -1085,13 +1085,13 @@ bool process_spell_components( CHAR_DATA *ch, int sn )
             case 'G':
                 if ( GET_MONEY( ch, DEFAULT_CURR ) >= value ) {
                     if ( fail ) {
-                        send_to_char( "Something disrupts the casting of this spell...\r\n", ch );
+                        send_to_char( "Algo te impide terminar el hechizo...\r\n", ch );
                         return FALSE;
                     }
                     else {
                         if ( consume ) {
                             set_char_color( AT_GOLD, ch );
-                            send_to_char( "You feel a little lighter...\r\n", ch );
+                            send_to_char( "Te sientes más ligero...\r\n", ch );
                             GET_MONEY( ch, DEFAULT_CURR ) -= value;
                         }
                         continue;
@@ -1101,13 +1101,13 @@ bool process_spell_components( CHAR_DATA *ch, int sn )
             case 'H':
                 if ( ch->hit >= value ) {
                     if ( fail ) {
-                        send_to_char( "Something disrupts the casting of this spell...\r\n", ch );
+                        send_to_char( "Algo te impide terminar el hechizo...\r\n", ch );
                         return FALSE;
                     }
                     else {
                         if ( consume ) {
                             set_char_color( AT_BLOOD, ch );
-                            send_to_char( "You feel a little weaker...\r\n", ch );
+                            send_to_char( "Te sientes algo más débil...\r\n", ch );
                             ch->hit -= value;
                             update_pos( ch );
                         }
@@ -1123,34 +1123,34 @@ bool process_spell_components( CHAR_DATA *ch, int sn )
         if ( fail )
             continue;
         if ( !found ) {
-            send_to_char( "Something is missing...\r\n", ch );
+            send_to_char( "Algo ha fallado...\r\n", ch );
             return FALSE;
         }
         if ( obj ) {
             if ( val >= 0 && val < 6 ) {
                 separate_obj( obj );
                 if ( obj->value[val] <= 0 ) {
-                    act( AT_MAGIC, "$p disappears in a puff of smoke!", ch, obj, NULL, TO_CHAR );
-                    act( AT_MAGIC, "$p disappears in a puff of smoke!", ch, obj, NULL, TO_ROOM );
+                    act( AT_MAGIC, "¡$p desaparece en una nube de humo!", ch, obj, NULL, TO_CHAR );
+                    act( AT_MAGIC, "¡$p desaparece en una nube de humo!", ch, obj, NULL, TO_ROOM );
                     extract_obj( obj );
                     return FALSE;
                 }
                 else if ( --obj->value[val] == 0 ) {
-                    act( AT_MAGIC, "$p glows briefly, then disappears in a puff of smoke!", ch, obj,
+                    act( AT_MAGIC, "$p brilla brevemente, ¡y desaparece!", ch, obj,
                          NULL, TO_CHAR );
-                    act( AT_MAGIC, "$p glows briefly, then disappears in a puff of smoke!", ch, obj,
+                    act( AT_MAGIC, "$p brilla brevemente, ¡y desaparece!", ch, obj,
                          NULL, TO_ROOM );
                     extract_obj( obj );
                 }
                 else
-                    act( AT_MAGIC, "$p glows briefly and a whisp of smoke rises from it.", ch, obj,
+                    act( AT_MAGIC, "$p se ilumina brevemente.", ch, obj,
                          NULL, TO_CHAR );
             }
             else if ( consume ) {
                 separate_obj( obj );
-                act( AT_MAGIC, "$p glows brightly, then disappears in a puff of smoke!", ch, obj,
+                act( AT_MAGIC, "$p brilla brevemente, ¡y desaparece!", ch, obj,
                      NULL, TO_CHAR );
-                act( AT_MAGIC, "$p glows brightly, then disappears in a puff of smoke!", ch, obj,
+                act( AT_MAGIC, "$p brilla brevemente, ¡y desaparece!", ch, obj,
                      NULL, TO_ROOM );
                 extract_obj( obj );
             }
@@ -1158,7 +1158,7 @@ bool process_spell_components( CHAR_DATA *ch, int sn )
                 int                     count = obj->count;
 
                 obj->count = 1;
-                act( AT_MAGIC, "$p glows briefly.", ch, obj, NULL, TO_CHAR );
+                act( AT_MAGIC, "$p se ilumina.", ch, obj, NULL, TO_CHAR );
                 obj->count = count;
             }
         }
@@ -1177,7 +1177,7 @@ bool                    silence_locate_targets;
 bool check_casting_distance( CHAR_DATA *ch )
 {
     if ( ch->fighting != NULL && ch->fighting->distance < 3 ) {
-        send_to_char( "You're too close to cast that.\r\n", ch );
+        send_to_char( "No puedes lanzar ese hechizo ahora.\r\n", ch );
         return TRUE;
     }
     else
