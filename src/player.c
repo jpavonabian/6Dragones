@@ -2185,7 +2185,7 @@ void glory_add( CHAR_DATA *ch, OBJ_DATA *obj, char *argument )
         send_to_char
             ( "&cAtributos válidos - &Pmana vida fuerza inteligencia sabiduría destreza constitución carisma\r\n",
               ch );
-        send_to_char( "                &Phitroll damroll armadura renombrar rekey\r\n", ch );
+        send_to_char( "                &Phitroll damroll armadura\r\n", ch );
         send_to_char
             ( "&cAfecciones válidas     - &Pdetectar_invisible detectar_oculto detectar_magia disimular oculto invisible infravision\r\n",
               ch );
@@ -2787,11 +2787,11 @@ void do_glory( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    send_to_char( "&cSintaxis: gloria <&campo&c> <&Cobjeto&c> <&Cafecci´ón&c> <&CValor&c>", ch );
+    send_to_char( "&cSintaxis: gloria <&ccampo&c> <&Cobjeto&c> <&Cafecci´ón&c> <&CValor&c>", ch );
     send_to_char( "\r\n&cCampo puede ser: &Pagregar borrar info coste \r\n\r\n", ch );
     send_to_char( "&CAñadir gloria a un objeto\r\n", ch );
     send_to_char( "&cgloria agregar espada bendecir\r\n", ch );
-    send_to_char( "&cgloria agregar sword mana 5\r\n", ch );
+    send_to_char( "&cgloria agregar escudo mana 5\r\n", ch );
     send_to_char( "&cgloria quitar espada - (Elimina todas las afecciones)\r\n", ch );
     send_to_char( "&cgloria info espada - (muestra información)&w\r\n", ch );
     send_to_char( "&cgloria coste - (ver afecciones y precios)&w\r\n", ch );
