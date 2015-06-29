@@ -4953,7 +4953,7 @@ void do_config( CHAR_DATA *ch, char *argument )
                        s2 );
             ch_printf( ch, "%-14s%s\r\n", xIS_SET( ch->act, PLR_RP ) ? "rp on" : "rp off", s2 );
             ch_printf( ch, "%-14s%s\r\n",
-                       IS_SET( ch->pcdata->flags, PCFLAG_SHOWSLOTS ) ? "slots on" : "slots off",
+                       IS_SET( ch->pcdata->flags, PCFLAG_SHOWSLOTS ) ? "hueco on" : "hueco off",
                        s2 );
             ch_printf( ch, "%-14s%s", xIS_SET( ch->act, PLR_OBJID ) ? "id on" : "id off", s2 );
         }
@@ -4977,7 +4977,7 @@ void do_config( CHAR_DATA *ch, char *argument )
                        s2 );
             ch_printf( ch, "%-14s%s", xIS_SET( ch->act, PLR_RP ) ? "&Grp on" : "&Rrp off", s2 );
             ch_printf( ch, "%-14s%s",
-                       IS_SET( ch->pcdata->flags, PCFLAG_SHOWSLOTS ) ? "&Gslots on" : "&Rslots off",
+                       IS_SET( ch->pcdata->flags, PCFLAG_SHOWSLOTS ) ? "&Ghueco on" : "&Rhueco off",
                        s2 );
             ch_printf( ch, "%-14s%s", xIS_SET( ch->act, PLR_OBJID ) ? "&Gid on" : "&Rid off", s2 );
         }
@@ -4985,61 +4985,61 @@ void do_config( CHAR_DATA *ch, char *argument )
         send_to_char( "\r\n\r\nAuto:", ch );
         if ( IS_BLIND( ch ) ) {
             ch_printf( ch, "\r\n%s%-16s%s\r\n", s2,
-                       xIS_SET( ch->act, PLR_AUTORECAST ) ? "autorecast on" : "autorecast off",
+                       xIS_SET( ch->act, PLR_AUTORECAST ) ? "autoconjurar on" : "autoconjurar off",
                        s2 );
             ch_printf( ch, "\r\n%s%-16s%s\r\n", s2,
-                       xIS_SET( ch->act, PLR_AUTOWAKE ) ? "autowake on" : "autowake off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOWAKE ) ? "autodespertar on" : "autodespertar off", s2 );
             ch_printf( ch, "%s%-16s%s\r\n", s2,
-                       xIS_SET( ch->act, PLR_AUTOTRASH ) ? "autotrash on" : "autotrash off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOTRASH ) ? "autotirar on" : "autotirar off", s2 );
             ch_printf( ch, "%s%-16s%s\r\n", s2,
-                       xIS_SET( ch->act, PLR_AUTODOOR ) ? "autodoor on" : "autodoor off", s2 );
+                       xIS_SET( ch->act, PLR_AUTODOOR ) ? "autopuerta on" : "autopuerta off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
-                       xIS_SET( ch->act, PLR_AUTOMONEY ) ? "automoney on" : "automoney off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOMONEY ) ? "autodinero on" : "autodinero off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
-                       xIS_SET( ch->act, PLR_AUTOLOOT ) ? "autoloot on" : "autoloot off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOLOOT ) ? "autorobo on" : "autorobo off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
-                       xIS_SET( ch->act, PLR_AUTOEXIT ) ? "autoexit on" : "autoexit off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOEXIT ) ? "autosalida on" : "autosalida off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
-                       xIS_SET( ch->act, PLR_AUTOGLANCE ) ? "autoglance on" : "autoglance off",
+                       xIS_SET( ch->act, PLR_AUTOGLANCE ) ? "autoojear on" : "autoojear off",
                        s2 );
             ch_printf( ch, "%-16s%s\r\n",
-                       IS_SET( ch->pcdata->flags, PCFLAG_HINTS ) ? "hints on" : "hints off", s2 );
+                       IS_SET( ch->pcdata->flags, PCFLAG_HINTS ) ? "Consejos on" : "Consejos off", s2 );
         }
         else {
             ch_printf( ch, "\r\n%s%-18s%s", s2,
-                       xIS_SET( ch->act, PLR_AUTORECAST ) ? "&Gautorecast on" : "&Rautorecast off",
+                       xIS_SET( ch->act, PLR_AUTORECAST ) ? "&Gautoconjurar on" : "&Rautoconjurar off",
                        s2 );
             ch_printf( ch, "%s%-18s%s", s2,
-                       xIS_SET( ch->act, PLR_AUTOWAKE ) ? "&Gautowake on" : "&Rautowake off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOWAKE ) ? "&Gautodespertar on" : "&Rautodespertar off", s2 );
             ch_printf( ch, "%s%-18s%s", s2,
-                       xIS_SET( ch->act, PLR_AUTOTRASH ) ? "&Gautotrash on" : "&Rautotrash off",
+                       xIS_SET( ch->act, PLR_AUTOTRASH ) ? "&Gautotirar on" : "&Rautotirar off",
                        s2 );
             ch_printf( ch, "%s%-18s%s", s2,
-                       xIS_SET( ch->act, PLR_AUTODOOR ) ? "&Gautodoor on" : "&Rautodoor off", s2 );
+                       xIS_SET( ch->act, PLR_AUTODOOR ) ? "&Gautopuerta on" : "&Rautopuerta off", s2 );
             ch_printf( ch, "%-18s%s\r\n",
-                       xIS_SET( ch->act, PLR_AUTOMONEY ) ? "&Gautomoney on" : "&Rautomoney off",
+                       xIS_SET( ch->act, PLR_AUTOMONEY ) ? "&Gautodinero on" : "&Rautodinero off",
                        s2 );
             ch_printf( ch, "%-18s%s",
-                       xIS_SET( ch->act, PLR_AUTOLOOT ) ? "&Gautoloot on" : "&Rautoloot off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOLOOT ) ? "&Gautorobo on" : "&Rautorobo off", s2 );
             ch_printf( ch, "%-18s%s",
-                       xIS_SET( ch->act, PLR_AUTOEXIT ) ? "&Gautoexit on" : "&Rautoexit off", s2 );
+                       xIS_SET( ch->act, PLR_AUTOEXIT ) ? "&Gautosalida on" : "&Rautosalida off", s2 );
             ch_printf( ch, "%-18s%s",
-                       xIS_SET( ch->act, PLR_AUTOGLANCE ) ? "&Gautoglance on" : "&Rautoglance off",
+                       xIS_SET( ch->act, PLR_AUTOGLANCE ) ? "&Gautoojear on" : "&Rautoojear off",
                        s2 );
             ch_printf( ch, "%-18s%s",
-                       IS_SET( ch->pcdata->flags, PCFLAG_HINTS ) ? "&Ghints on" : "&Rhints off",
+                       IS_SET( ch->pcdata->flags, PCFLAG_HINTS ) ? "&Gconsejos on" : "&RConsejos off",
                        s2 );
         }
 
         set_char_color( AT_CYAN, ch );
-        send_to_char( "\r\n\r\nSafeties:", ch );
+        send_to_char( "\r\n\r\nSeguridad:", ch );
         if ( IS_BLIND( ch ) ) {
             ch_printf( ch, "\r\n%s%-16s%s\r\n", s2,
                        IS_SET( ch->pcdata->flags,
                                PCFLAG_NORECALL ) ? "norecall on" : "norecall off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
                        IS_SET( ch->pcdata->flags,
-                               PCFLAG_NOSUMMON ) ? "nosummon on" : "nosummon off", s2 );
+                               PCFLAG_NOSUMMON ) ? "noinvocar on" : "noinvocar off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
                        IS_SET( ch->pcdata->flags, PCFLAG_NOBEEP ) ? "nobeep on" : "nobeep off",
                        s2 );
@@ -5050,20 +5050,20 @@ void do_config( CHAR_DATA *ch, char *argument )
                                PCFLAG_NORECALL ) ? "&Gnorecall on" : "&Rnorecall off", s2 );
             ch_printf( ch, "%-16s%s",
                        IS_SET( ch->pcdata->flags,
-                               PCFLAG_NOSUMMON ) ? "&Gnosummon on" : "&Rnosummon off", s2 );
+                               PCFLAG_NOSUMMON ) ? "&Gnoinvocar on" : "&Rnoinvocar off", s2 );
             ch_printf( ch, "%-16s%s",
                        IS_SET( ch->pcdata->flags, PCFLAG_NOBEEP ) ? "&Gnobeep on" : "&Rnobeep off",
                        s2 );
 
         }
         set_char_color( AT_CYAN, ch );
-        send_to_char( "\r\n\r\nMisc:", ch );
+        send_to_char( "\r\n\r\nGeneral:", ch );
         if ( IS_BLIND( ch ) ) {
             ch_printf( ch, "\r\n%s%-16s%s\r\n", s2,
                        xIS_SET( ch->act, PLR_TELNET_GA ) ? "telnetga on" : "telnetga off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
                        IS_SET( ch->pcdata->flags,
-                               PCFLAG_GROUPWHO ) ? "groupwho on" : "groupwho off", s2 );
+                               PCFLAG_GROUPWHO ) ? "grupo on" : "grupo off", s2 );
             ch_printf( ch, "%-16s%s\r\n",
                        IS_SET( ch->pcdata->flags, PCFLAG_NOINTRO ) ? "nointro on" : "nointro off",
                        s2 );
@@ -5075,7 +5075,7 @@ void do_config( CHAR_DATA *ch, char *argument )
                        xIS_SET( ch->act, PLR_TELNET_GA ) ? "&Gtelnetga on" : "&Rtelnetga off", s2 );
             ch_printf( ch, "%-16s%s",
                        IS_SET( ch->pcdata->flags,
-                               PCFLAG_GROUPWHO ) ? "&Ggroupwho on" : "&Rgroupwho off", s2 );
+                               PCFLAG_GROUPWHO ) ? "&Ggrupo on" : "&Rgrupo off", s2 );
             ch_printf( ch, "%-16s%s",
                        IS_SET( ch->pcdata->flags,
                                PCFLAG_NOINTRO ) ? "&Gnointro on" : "&Rnointro off", s2 );
@@ -5086,14 +5086,14 @@ void do_config( CHAR_DATA *ch, char *argument )
         set_char_color( AT_CYAN, ch );
         send_to_char( "\r\n\r\nAjustes:", ch );
         if ( IS_BLIND( ch ) ) {
-            ch_printf( ch, "\r\n%s[%s%d%s] Wimpy\r\n", s2, ch->wimpy > 0 ? s4 : s3, ch->wimpy, s2 );
-            ch_printf( ch, "%s[%s%d%s] Pager Length\r\n", s2, ch->pcdata->pagerlen > 0 ? s4 : s3,
+            ch_printf( ch, "\r\n%s[%s%d%s] Cobardía\r\n", s2, ch->wimpy > 0 ? s4 : s3, ch->wimpy, s2 );
+            ch_printf( ch, "%s[%s%d%s] Paginador\r\n", s2, ch->pcdata->pagerlen > 0 ? s4 : s3,
                        ch->pcdata->pagerlen, s2 );
             ch_printf( ch, "%sTo use triple experience points type 'config texp'\r\n", s2 );
         }
         else {
-            ch_printf( ch, "\r\n%s[%s%d%s] Wimpy   ", s2, ch->wimpy > 0 ? s4 : s3, ch->wimpy, s2 );
-            ch_printf( ch, "%s[%s%d%s] Pager Length   ", s2, ch->pcdata->pagerlen > 0 ? s4 : s3,
+            ch_printf( ch, "\r\n%s[%s%d%s] Cobardía   ", s2, ch->wimpy > 0 ? s4 : s3, ch->wimpy, s2 );
+            ch_printf( ch, "%s[%s%d%s] Paginador   ", s2, ch->pcdata->pagerlen > 0 ? s4 : s3,
                        ch->pcdata->pagerlen, s2 );
             ch_printf( ch, "%sTo use triple experience points type 'config texp'\r\n", s2 );
         }
@@ -5110,11 +5110,11 @@ void do_config( CHAR_DATA *ch, char *argument )
                                 PLR_COMMUNICATION ) ? "canales on" : "canales off",
                        s2 );
             ch_printf( ch, "%-14s%s",
-                       xIS_SET( ch->act, PLR_CRAFTS ) ? "tradeskills on" : "tradeskills off", s2 );
+                       xIS_SET( ch->act, PLR_CRAFTS ) ? "Fabricar on" : "Fabricar off", s2 );
         }
         else {
             ch_printf( ch, "\r\n%s%-20s%s", s2,
-                       xIS_SET( ch->act, PLR_MUSIC ) ? "&Gmusic on" : "&Rmusic off", s2 );
+                       xIS_SET( ch->act, PLR_MUSIC ) ? "&Gmusica on" : "&Rmusica off", s2 );
             ch_printf( ch, "%-20s%s",
                        xIS_SET( ch->act, PLR_BATTLE ) ? "&Gcombate on" : "&Rcombate off", s2 );
             ch_printf( ch, "%-20s%s",
@@ -5122,13 +5122,13 @@ void do_config( CHAR_DATA *ch, char *argument )
                                 PLR_COMMUNICATION ) ? "&Gcanales on" : "&Rcanales off",
                        s2 );
             ch_printf( ch, "%-20s%s",
-                       xIS_SET( ch->act, PLR_CRAFTS ) ? "&Gtradeskills on" : "&Rtradeskills off",
+                       xIS_SET( ch->act, PLR_CRAFTS ) ? "&GFabricar on" : "&RFabricar off",
                        s2 );
         }
 
         if ( IS_IMMORTAL( ch ) ) {
             set_char_color( AT_CYAN, ch );
-            send_to_char( "\r\n\r\n6 Dragons Staff Toggles:", ch );
+            send_to_char( "\r\n\r\nConfiguraciones de miembros del Staff de 6Dragones:", ch );
             ch_printf( ch, "\r\n%s%-12s%s", s2,
                        xIS_SET( ch->act, PLR_STAFF ) ? "&Gstaff on" : "&Rstaff off", s2 );
         }
@@ -5138,7 +5138,7 @@ void do_config( CHAR_DATA *ch, char *argument )
 
         if ( !str_prefix( arg, "texp" ) ) {
             if ( ch->pcdata->getsdoubleexp == TRUE ) {
-                send_to_char( "You are already into your hour of triple experience!\r\n", ch );
+                send_to_char( "¡ya estás en tu hora de triple experiencia!\r\n", ch );
                 return;
             }
 
@@ -5146,36 +5146,36 @@ void do_config( CHAR_DATA *ch, char *argument )
                 ch->pcdata->double_exp_timer -= 100;
                 ch->pcdata->getsdoubleexp = TRUE;
                 ch->pcdata->last_dexpupdate = current_time;
-                send_to_char( "Your hour of triple experience has begun.\r\n", ch );
+                send_to_char( "Tu hora de experiencia triple ha comenzado.\r\n", ch );
             }
             else
                 send_to_char
-                    ( "You don't have enough points to get an hour of triple experience.\r\n", ch );
+                    ( "No tienes puntos para eso.\r\n", ch );
             return;
         }
-        if ( !str_prefix( arg, "autoexit" ) )
+        if ( !str_prefix( arg, "autosalida" ) )
             bit = PLR_AUTOEXIT;
-        else if ( !str_prefix( arg, "autoloot" ) )
+        else if ( !str_prefix( arg, "autorobo" ) )
             bit = PLR_AUTOLOOT;
-        else if ( !str_prefix( arg, "autorecast" ) )
+        else if ( !str_prefix( arg, "autoconjurar" ) )
             bit = PLR_AUTORECAST;
-        else if ( !str_prefix( arg, "autowake" ) )
+        else if ( !str_prefix( arg, "autodespertar" ) )
             bit = PLR_AUTOWAKE;
-        else if ( !str_prefix( arg, "autotrash" ) )
+        else if ( !str_prefix( arg, "autotirar" ) )
             bit = PLR_AUTOTRASH;
-        else if ( !str_prefix( arg, "autodoor" ) )
+        else if ( !str_prefix( arg, "autopuerta" ) )
             bit = PLR_AUTODOOR;
-        else if ( !str_prefix( arg, "automoney" ) )
+        else if ( !str_prefix( arg, "autodinero" ) )
             bit = PLR_AUTOMONEY;
-        else if ( !str_prefix( arg, "autoglance" ) )
+        else if ( !str_prefix( arg, "autoojear" ) )
             bit = PLR_AUTOGLANCE;
-        else if ( !str_prefix( arg, "blank" ) )
+        else if ( !str_prefix( arg, "blanco" ) )
             bit = PLR_BLANK;
         else if ( !str_prefix( arg, "rp" ) )
             bit = PLR_RP;
-        else if ( !str_prefix( arg, "brief" ) )
+        else if ( !str_prefix( arg, "breve" ) )
             bit = PLR_BRIEF;
-        else if ( !str_prefix( arg, "combine" ) )
+        else if ( !str_prefix( arg, "combinar" ) )
             bit = PLR_COMBINE;
         else if ( !str_prefix( arg, "prompt" ) )
             bit = PLR_PROMPT;
@@ -5185,26 +5185,26 @@ void do_config( CHAR_DATA *ch, char *argument )
             bit = PLR_ANSI;
         else if ( !str_prefix( arg, "rip" ) )
             bit = PLR_RIP;
-        else if ( !str_prefix( arg, "drag" ) )
+        else if ( !str_prefix( arg, "empujar" ) )
             bit = PLR_SHOVEDRAG;
-        else if ( !str_prefix( arg, "screenreader" ) )
+        else if ( !str_prefix( arg, "accesibilidad" ) )
             bit = PLR_BLIND;
-        else if ( !str_prefix( arg, "music" ) )
+        else if ( !str_prefix( arg, "musica" ) )
             bit = PLR_MUSIC;
         else if ( !str_prefix( arg, "id" ) )
             bit = PLR_OBJID;
-        else if ( !str_prefix( arg, "battle" ) )
+        else if ( !str_prefix( arg, "combate" ) )
             bit = PLR_BATTLE;
-        else if ( !str_prefix( arg, "communication" ) )
+        else if ( !str_prefix( arg, "canales" ) )
             bit = PLR_COMMUNICATION;
-        else if ( !str_prefix( arg, "tradeskills" ) )
+        else if ( !str_prefix( arg, "fabricar" ) )
             bit = PLR_CRAFTS;
         else if ( IS_IMMORTAL( ch ) && !str_prefix( arg, "staff" ) )
             bit = PLR_STAFF;
         if ( bit ) {
             if ( ( bit == PLR_FLEE || bit == PLR_SHOVEDRAG )
                  && IS_SET( ch->pcdata->flags, PCFLAG_DEADLY ) ) {
-                send_to_char( "Pkill characters can not config that option.\r\n", ch );
+                send_to_char( "Los jugadores pk no pueden configurar esta opción.\r\n", ch );
                 return;
             }
             xTOGGLE_BIT( ch->act, bit );
@@ -5218,17 +5218,17 @@ void do_config( CHAR_DATA *ch, char *argument )
                 bit = PCFLAG_NORECALL;
             else if ( !str_prefix( arg, "nointro" ) )
                 bit = PCFLAG_NOINTRO;
-            else if ( !str_prefix( arg, "nosummon" ) )
+            else if ( !str_prefix( arg, "noinvocar" ) )
                 bit = PCFLAG_NOSUMMON;
             else if ( !str_prefix( arg, "gag" ) )
                 bit = PCFLAG_GAG;
-            else if ( !str_prefix( arg, "hints" ) )
+            else if ( !str_prefix( arg, "consejos" ) )
                 bit = PCFLAG_HINTS;
-            else if ( !str_prefix( arg, "slots" ) )
+            else if ( !str_prefix( arg, "hueco" ) )
                 bit = PCFLAG_SHOWSLOTS;
-            else if ( !str_prefix( arg, "pager" ) )
+            else if ( !str_prefix( arg, "paginador" ) )
                 bit = PCFLAG_PAGERON;
-            else if ( !str_prefix( arg, "groupwho" ) )
+            else if ( !str_prefix( arg, "grupo" ) )
                 bit = PCFLAG_GROUPWHO;
             else if ( !str_prefix( arg, "@hgflag_" ) )
                 bit = PCFLAG_HIGHGAG;
