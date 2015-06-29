@@ -597,24 +597,24 @@ bool buy_obj( CHAR_DATA *ch, CHAR_DATA *keeper, OBJ_DATA *obj, int noi )
      */
     converted = spend_coins( ch, keeper, cost, obj->currtype );
     if ( obj->currtype == CURR_GOLD )
-        string = "gold";
+        string = "oro";
     else if ( obj->currtype == CURR_SILVER )
-        string = "silver";
+        string = "plata";
     else if ( obj->currtype == CURR_BRONZE )
-        string = "bronze";
+        string = "bronce";
     else
-        string = "copper";
+        string = "cobre";
 
     if ( obj->pIndexData->vnum == 41002 || obj->pIndexData->vnum == 41004 ) {
         cost = obj->cost;
         if ( obj->currtype == CURR_GOLD )
-            string = "gold";
+            string = "oro";
         else if ( obj->currtype == CURR_SILVER )
-            string = "silver";
+            string = "plata";
         else if ( obj->currtype == CURR_BRONZE )
-            string = "bronze";
+            string = "bronce";
         else
-            string = "copper";
+            string = "cobre";
 
     }
 
@@ -623,21 +623,21 @@ bool buy_obj( CHAR_DATA *ch, CHAR_DATA *keeper, OBJ_DATA *obj, int noi )
         if ( converted )
             snprintf( buf, MSL, "Compras $p. Le das todo tu dinero al tendero." );
         else
-            snprintf( buf, MSL, "Compras $p por %d %s moneda%s.", cost, string, cost > 1 ? "s" : "" );
+            snprintf( buf, MSL, "Compras $p por %d moneda%s de %s.", cost, cost > 1 ? "s" : "", string);
         act( AT_ACTION, buf, ch, obj, NULL, TO_CHAR );
         if ( converted )
-            act( AT_ACTION, "El tendero coge lo que $E necesita y te devuelve el resto.",
+            act( AT_ACTION, "El tendero coge lo que necesita y te devuelve el resto.",
                  ch, NULL, keeper, TO_CHAR );
     }
     else if ( noi > 1 ) {
-        snprintf( buf, MSL, "$n compra %d de $p.", noi );
+        snprintf( buf, MSL, "$n compra %d $p.", noi );
         act( AT_ACTION, buf, ch, obj, NULL, TO_ROOM );
         if ( converted )
             snprintf( buf, MSL, "Compras %d de $p. Le das todo tu dinero al tendero.",
                       noi );
         else
-            snprintf( buf, MSL, "Compras %d de $p por %d %s moneda%s.", noi, cost, string,
-                      cost > 1 ? "s" : "" );
+            snprintf( buf, MSL, "Compras %d $p por %d moneda%s de %s.", noi, cost,
+                      cost > 1 ? "s" : "", string);
         act( AT_ACTION, buf, ch, obj, NULL, TO_CHAR );
         act( AT_ACTION, "El tendero pone todo en una bolsa y te la da.", ch, NULL, NULL,
              TO_CHAR );
@@ -705,7 +705,7 @@ void do_buy( CHAR_DATA *ch, char *argument )
         }
 
         if ( ch->level < pet->level ) {
-            send_to_char( "Are you kidding? That thing will take you for walks!\r\n", ch );
+            send_to_char( "¿De verdad? ¡Si es más fuerte que tú!\r\n", ch );
             return;
         }
 
@@ -925,9 +925,9 @@ void do_list( CHAR_DATA *ch, char *argument )
         if ( ( keeper = find_keeper( ch ) ) == NULL )
             return;
 
-        if ( !str_cmp( arg, "stat" ) ) {
+        if ( !str_cmp( arg, "examinar" ) ) {
             if ( !arg2 || arg2[0] == '\0' ) {
-                send_to_char( "Sintaxis: list stat <objeto>\r\n", ch );
+                send_to_char( "Sintaxis: listar examinar <objeto>\r\n", ch );
                 return;
             }
             obj = get_obj_carry( keeper, arg2 );
@@ -965,20 +965,20 @@ void do_list( CHAR_DATA *ch, char *argument )
                 case ITEM_CONTAINER:
                 case ITEM_KEYRING:
                 case ITEM_QUIVER:
-                    snprintf( buf, MSL, "%s aparece en %s.",
+                    snprintf( buf, MSL, "%s parece que %s.",
                               capitalize( obj->short_descr ),
                               obj->value[0] <
-                              76 ? "have a small capacity" : obj->value[0] <
-                              150 ? "have a small to medium capacity" : obj->value[0] <
-                              300 ? "have a medium capacity" : obj->value[0] <
-                              500 ? "have a medium to large capacity" : obj->value[0] <
-                              751 ? "have a large capacity" : "have a giant capacity" );
+                              76 ? "tiene una capacidad pequeña" : obj->value[0] <
+                              150 ? "tiene una capacidad mediana tirando a pequeña" : obj->value[0] <
+                              300 ? "tiene una capacidad mediana" : obj->value[0] <
+                              500 ? "tiene una capacidad mediana tirando a grande" : obj->value[0] <
+                              751 ? "tiene una gran capacidad" : "have a giant capacity" );
                     act( AT_LBLUE, buf, ch, obj, keeper, TO_CHAR );
                     break;
                 case ITEM_PILL:
                 case ITEM_SCROLL:
                 case ITEM_POTION:
-                    snprintf( buf, MSL, "Nivel %d spells of: ", obj->value[0] );
+                    snprintf( buf, MSL, "Nivel %d hechizo de: ", obj->value[0] );
                     if ( obj->value[1] >= 0 && obj->value[1] < top_sn ) {
                         mudstrlcat( buf, "'", MSL );
                         mudstrlcat( buf, skill_table[obj->value[1]]->name, MSL );
@@ -1022,7 +1022,7 @@ void do_list( CHAR_DATA *ch, char *argument )
                 case ITEM_WEAPON:
                     snprintf( buf, MSL, "El daño es %d a %d (media %d)%s", obj->value[1],
                               obj->value[2], ( obj->value[1] + obj->value[2] ) / 2,
-                              IS_OBJ_STAT( obj, ITEM_POISONED ) ? ", and is poisonous." : "." );
+                              IS_OBJ_STAT( obj, ITEM_POISONED ) ? ", y tiene veneno." : "." );
                     act( AT_LBLUE, buf, ch, obj, keeper, TO_CHAR );
                     snprintf( buf, MSL, "Habilidad necesaria: %s", weapon_skills[obj->value[4]] );
                     act( AT_LBLUE, buf, ch, obj, keeper, TO_CHAR );
@@ -1031,7 +1031,7 @@ void do_list( CHAR_DATA *ch, char *argument )
                     act( AT_LBLUE, buf, ch, obj, keeper, TO_CHAR );
                     break;
                 case ITEM_ARMOR:
-                    snprintf( buf, MSL, "Armadura es %d.", obj->value[0] );
+                    snprintf( buf, MSL, "Su armadura es %d.", obj->value[0] );
                     act( AT_LBLUE, buf, ch, obj, keeper, TO_CHAR );
                     break;
             }
@@ -1062,7 +1062,7 @@ void do_list( CHAR_DATA *ch, char *argument )
                 if ( !found ) {
                     found = TRUE;
                     send_to_pager
-                        ( "&C[&WLv   Price  Currency    Name of Object                                 Size&C]\r\n",
+                        ( "&C[&WNIV   precio  tipo nombre                                 Tamaño&C]\r\n",
                           ch );
                 }
                 if ( obj->pIndexData->vnum == 41002 || obj->pIndexData->vnum == 41004 ) {
@@ -1096,7 +1096,7 @@ void do_list( CHAR_DATA *ch, char *argument )
             return;
         }
 
-        send_to_char( "\r\n&CType &WLIST STAT <&Cobject&W>&C - To find out more details.\r\n", ch );
+        send_to_char( "\r\n&CTeclea &Wlistar examinar <&Cobjeto&W>&C - para ver sus características antes de comprar nada.\r\n", ch );
         return;
     }
 }
