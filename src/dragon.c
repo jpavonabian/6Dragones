@@ -918,7 +918,7 @@ void humanform_change( CHAR_DATA *ch, bool tohuman )
             send_to_char( "!!SOUND(sound/humanform.wav)\r\n", ch );
 
         WAIT_STATE( ch, skill_table[gsn_human_form]->beats );
-        act( AT_MAGIC, "Invocas las antiguas energías y adopta forma humana.", ch, NULL, NULL,
+        act( AT_MAGIC, "Invocas las antiguas energías y adoptas forma humana.", ch, NULL, NULL,
              TO_CHAR );
         act( AT_MAGIC, "$n adopta forma humana.", ch, NULL, NULL, TO_ROOM );
         act( AT_CYAN,
@@ -941,6 +941,9 @@ void humanform_change( CHAR_DATA *ch, bool tohuman )
         send_to_char( "\r\nDesvistes tu equipo sabiendo que tu cuerpo cambiará.\r\n",
                       ch );
         remove_all_equipment( ch );
+
+        if ( xIS_SET( ch->act, PLR_BATTLE ) )
+            send_to_char( "!!SOUND(sound/humanform.wav)\r\n", ch );
 
         send_to_char( "Invocas las antiguas energías y retornas a tu forma original de dragón.\r\n", ch );
 
