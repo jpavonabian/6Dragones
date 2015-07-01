@@ -1673,9 +1673,9 @@ bool read_from_descriptor( DESCRIPTOR_DATA *d )
      */
     iStart = strlen( d->inbuf );
     if ( iStart >= sizeof( d->inbuf ) - 50 ) {
-        log_printf( "%s input overflow!", d->host );
+        log_printf( "¡%s está enviando demasiados comandos!", d->host );
         write_to_descriptor( d,
-                             "\r\n*** PUT A LID ON IT!!! ***\r\nYou cannot enter the same command more than 50 consecutive times!\r\n",
+                             "\r\n*** ¡Deja el dedito quieto!!! ***\r\n¡No puedes teclear el mismo comando más de 50 veces!\r\n",
                              0 );
         return FALSE;
     }
@@ -1813,7 +1813,7 @@ void read_from_buffer( DESCRIPTOR_DATA *d )
         else {
             if ( ++d->repeat >= 250 ) {
                 write_to_descriptor( d,
-                                     "\r\n*** PUT A LID ON IT!!! ***\r\nYou cannot enter the same command more than 250 consecutive times!\r\n",
+                                     "\r\n*** ¡Las manos en alto!!! ***\r\n¡No puedes introducir el mismo comando más de 250 veces seguidas!\r\n",
                                      0 );
                 strcpy( d->incomm, "quit" );
             }
@@ -3630,21 +3630,21 @@ void do_speed( CHAR_DATA *ch, char *argument )
     // who don't exist. duh.
 
     if ( argument[0] == '\0' ) {
-        ch_printf( ch, "Your present speed is a %d, which equates to %d bytes per second.\r\n",
+        ch_printf( ch, "Tu velocidad actual es de %d, puedes cambiarla a %d bytes por segundo.\r\n",
                    ch->desc->speed, client_speed( ch->desc->speed ) );
         return;
     }
 
     if ( speed > 5 || speed < 0 ) {
-        send_to_char( "Speed is between 0 and 5.\r\n", ch );
+        send_to_char( "El rango ha de estar entre 0 y 5.\r\n", ch );
         return;
     }
     ch->desc->speed = speed;
-    ch_printf( ch, "The MUD will now send output to you at %d bytes per second.\r\n",
+    ch_printf( ch, "El mud te enviará ahora %d bytes por segundo.\r\n",
                client_speed( speed ) );
     if ( client_speed( speed ) > 2048 )
         ch_printf( ch,
-                   "You should be aware %d is fast enough to lag you if you have a slow connection.\r\n",
+                   "Debes saber que %d puede ser demasiado si tienes una conexión lenta y puedes tener lag.\r\n",
                    client_speed( speed ) );
     return;
 }
