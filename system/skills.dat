@@ -30,20 +30,6 @@ Minlevel     41
 End
 
 #SKILL
-Name         acidic touch~
-Type         Spell
-Info         5
-Flags        0
-Target       1
-Mana         10
-Rounds       5
-Code         spell_acidic_touch
-Dammsg       acidic touch~
-Difficulty   1
-Minlevel     13
-End
-
-#SKILL
 Name         acidmist~
 Type         Spell
 Info         5
@@ -279,9 +265,9 @@ Hitvict      An aura of courage surrounds you.~
 Hitroom      $N is surrounded by an aura of courage.~
 Difficulty   5
 Teachers     2760~
-Affect       'l*4' 17 '-20' -1
-Affect       'l*4' 19 '5' -1
 Affect       'l*4' 18 '8' -1
+Affect       'l*4' 19 '5' -1
+Affect       'l*4' 17 '-20' -1
 Minlevel     51
 End
 
@@ -331,6 +317,16 @@ Wearoff      &RYour head is seized with pain as your battlefield view fades!~
 Difficulty   1
 Teachers     18607~
 Minlevel     3
+End
+
+#SKILL
+Name         bendicion del cielo~
+Type         Spell
+Info         0
+Flags        0
+Code         spell_null
+Wearoff      A sense of doom hits you as your heavens blessing fades away~
+Minlevel     101
 End
 
 #SKILL
@@ -467,9 +463,9 @@ Hitchar      You lay the blessing of your god upon $N.~
 Hitvict      A powerful blessing is laid upon you.~
 Hitroom      $N beams as a powerful blessing is laid upon $M.~
 Difficulty   1
-Affect       '(null)' 60 '109' -1
-Affect       'l*10' 24 '-(l/8)' -1
 Affect       'l*10' 18 'l/8' -1
+Affect       'l*10' 24 '-(l/8)' -1
+Affect       '(null)' 60 '109' -1
 Minlevel     1
 End
 
@@ -581,25 +577,6 @@ Dice         T~
 Difficulty   1
 Teachers     6255~
 Minlevel     13
-End
-
-#SKILL
-Name         chilled ward~
-Type         Spell
-Info         0
-Flags        0
-Target       3
-Minpos       115
-Min_dist     10
-Max_dist     14
-Slot         302
-Mana         15
-Rounds       8
-Code         spell_chilled_ward
-Wearoff      !WEAROFF!~
-Difficulty   4
-Teachers     2302~
-Minlevel     9
 End
 
 #SKILL
@@ -939,9 +916,9 @@ Wearoff      The dark blessings fade leaving you weakened.~
 Hitvict      A dark power suddenly burns within you.~
 Hitroom      A strange look of hatred flashes in $N's eyes.~
 Difficulty   1
-Affect       'l*10' 1 'l/20+1' -1
-Affect       'l*10' 18 'l/20+1' -1
 Affect       'l*10' 19 'l/20+1' -1
+Affect       'l*10' 18 'l/20+1' -1
+Affect       'l*10' 1 'l/20+1' -1
 Minlevel     15
 End
 
@@ -1306,8 +1283,8 @@ Wearoff      The eldritch sphere about you winks from existence.~
 Hitvict      A magical eldritch sphere forms about you...~
 Hitroom      A shimmering eldritch sphere forms about $N...~
 Difficulty   1
-Affect       '(l*3)+25' 27 '8192' -1
 Affect       '(l*3)+25' 27 '1048576' -1
+Affect       '(l*3)+25' 27 '8192' -1
 Minlevel     101
 End
 
@@ -1378,19 +1355,6 @@ Dammsg       energy drain~
 Wearoff      !Energy Drain!~
 Difficulty   2
 Minlevel     8
-End
-
-#SKILL
-Name         energy ward~
-Type         Spell
-Info         0
-Flags        8192
-Minpos       115
-Mana         30
-Rounds       18
-Code         spell_energy_ward
-Difficulty   4
-Minlevel     50
 End
 
 #SKILL
@@ -1571,9 +1535,9 @@ Hitchar      $N is washed in a light of feline grace.~
 Hitvict      Feline grace suddenly washes over your body...~
 Hitroom      $N glows in the light of feline grace.~
 Difficulty   1
-Affect       'l*10' 31 '1' -1
-Affect       'l*10' 2 '1+(l/20)' -1
 Affect       'l*10' 25 '1+(l/20)' -1
+Affect       'l*10' 2 '1+(l/20)' -1
+Affect       'l*10' 31 '1' -1
 Minlevel     6
 End
 
@@ -1798,20 +1762,6 @@ Minlevel     32
 End
 
 #SKILL
-Name         frigid ward~
-Type         Spell
-Info         9096
-Flags        6144
-Target       3
-Minpos       115
-Mana         10
-Rounds       8
-Code         spell_frigid_ward
-Difficulty   4
-Minlevel     70
-End
-
-#SKILL
 Name         frost breath~
 Type         Spell
 Info         2
@@ -1826,18 +1776,6 @@ Dammsg       blast of frost~
 Wearoff      !Frost Breath!~
 Difficulty   2
 Minlevel     35
-End
-
-#SKILL
-Name         frost ward~
-Type         Spell
-Info         0
-Flags        8192
-Minpos       110
-Mana         30
-Rounds       15
-Code         spell_frost_ward
-Minlevel     30
 End
 
 #SKILL
@@ -2002,16 +1940,6 @@ Minlevel     12
 End
 
 #SKILL
-Name         heavens blessing~
-Type         Spell
-Info         0
-Flags        0
-Code         spell_null
-Wearoff      A sense of doom hits you as your heavens blessing fades away~
-Minlevel     101
-End
-
-#SKILL
 Name         helical flow~
 Type         Spell
 Info         0
@@ -2043,9 +1971,9 @@ Hitvict      You feel heroic.~
 Hitroom      $N beams broadly as a heroic blessing is placed on $M.~
 Difficulty   2
 Teachers     2302~
-Affect       'l*4' 24 '-(l/5)' -1
-Affect       'l*4' 18 'l/8' -1
 Affect       'l*4' 19 'l/10' -1
+Affect       'l*4' 18 'l/8' -1
+Affect       'l*4' 24 '-(l/5)' -1
 Minlevel     9
 End
 
@@ -2095,19 +2023,6 @@ Minpos       108
 Rounds       55
 Code         spell_smaug
 Minlevel     101
-End
-
-#SKILL
-Name         ice ward~
-Type         Spell
-Info         9096
-Flags        6144
-Target       3
-Minpos       115
-Rounds       8
-Code         spell_ice_ward
-Difficulty   4
-Minlevel     50
 End
 
 #SKILL
@@ -2198,8 +2113,8 @@ Hitchar      You lay The Fury of The High Gods upon $N.~
 Hitvict      The Fury of The High Gods is temporarily given to you.~
 Hitroom      The Fury of The High Gods is temporarily given to $N.~
 Difficulty   1
-Affect       'l/2' 18 '1+(l/17)' -1
 Affect       'l/2' 19 '1+(l/17)' -1
+Affect       'l/2' 18 '1+(l/17)' -1
 Minlevel     101
 End
 
@@ -2406,20 +2321,6 @@ Minlevel     8
 End
 
 #SKILL
-Name         lightning ward~
-Type         Spell
-Info         0
-Flags        0
-Minpos       115
-Slot         344
-Mana         10
-Rounds       14
-Code         spell_lightning_ward
-Difficulty   3
-Minlevel     70
-End
-
-#SKILL
 Name         locate object~
 Type         Spell
 Info         0
@@ -2562,9 +2463,9 @@ Hitvict      A minor invocation is laid upon you.~
 Hitroom      $N beams as a minor invocation is laid upon $M.~
 Difficulty   1
 Teachers     2760~
-Affect       'l*2' 18 '(l/8)' -1
-Affect       'l*2' 24 '-(l/8)' -1
 Affect       '(null)' 60 '3' -1
+Affect       'l*2' 24 '-(l/8)' -1
+Affect       'l*2' 18 '(l/8)' -1
 Minlevel     101
 End
 
@@ -2628,14 +2529,14 @@ Hitchar      $N suddenly appears powerful, and has a healthy appearance.~
 Hitvict      Ogre vitality overwhelms your senses with power and feeling of vigor.~
 Hitroom      $N suddenly appears more powerful, and has a healthy glow.~
 Difficulty   1
-Affect       'l*10' 1 '1+(l/20)' -1
-Affect       'l*10' 5 '1+(l/20)' -1
 Affect       'l*10' 13 '25+(l/20)' -1
+Affect       'l*10' 5 '1+(l/20)' -1
+Affect       'l*10' 1 '1+(l/20)' -1
 Minlevel     13
 End
 
 #SKILL
-Name         paralyze~
+Name         inmovilizar~
 Type         Spell
 Info         0
 Flags        0
@@ -2735,6 +2636,117 @@ Minlevel     101
 End
 
 #SKILL
+Name         proteccion congelada~
+Type         Spell
+Info         9096
+Flags        6144
+Target       3
+Minpos       115
+Mana         10
+Rounds       8
+Code         spell_frigid_ward
+Difficulty   4
+Minlevel     70
+End
+
+#SKILL
+Name         proteccion de granizo~
+Type         Spell
+Info         9096
+Flags        6144
+Target       3
+Minpos       115
+Rounds       8
+Code         spell_ice_ward
+Difficulty   4
+Minlevel     50
+End
+
+#SKILL
+Name         proteccion de hielo~
+Type         Spell
+Info         0
+Flags        0
+Target       3
+Minpos       115
+Min_dist     10
+Max_dist     14
+Slot         302
+Mana         15
+Rounds       8
+Code         spell_chilled_ward
+Wearoff      !WEAROFF!~
+Difficulty   4
+Teachers     2302~
+Minlevel     9
+End
+
+#SKILL
+Name         proteccion electrica~
+Type         Spell
+Info         0
+Flags        0
+Minpos       115
+Slot         344
+Mana         10
+Rounds       14
+Code         spell_lightning_ward
+Difficulty   3
+Minlevel     70
+End
+
+#SKILL
+Name         proteccion energetica~
+Type         Spell
+Info         0
+Flags        8192
+Minpos       115
+Mana         30
+Rounds       18
+Code         spell_energy_ward
+Difficulty   4
+Minlevel     50
+End
+
+#SKILL
+Name         proteccion estatica~
+Type         Spell
+Info         0
+Flags        0
+Minpos       115
+Rounds       12
+Code         spell_static_ward
+Difficulty   1
+Minlevel     10
+End
+
+#SKILL
+Name         proteccion fisica~
+Type         Spell
+Info         8584
+Flags        6144
+Target       3
+Minpos       115
+Rounds       8
+Code         spell_shocking_ward
+Difficulty   1
+Teachers     18607~
+Minlevel     30
+End
+
+#SKILL
+Name         proteccion helada~
+Type         Spell
+Info         0
+Flags        8192
+Minpos       110
+Mana         30
+Rounds       15
+Code         spell_frost_ward
+Minlevel     30
+End
+
+#SKILL
 Name         protection~
 Type         Spell
 Info         0
@@ -2783,8 +2795,8 @@ Code         spell_smaug
 Wearoff      Your pulse returns to a normal rate.~
 Hitvict      You feel your pulse quicken!~
 Missvict     You fail to gather enough magic to perform this spell.~
-Affect       'l+50' 26 'quickening' -1
 Affect       'l+50' 2 '+2' -1
+Affect       'l+50' 26 'quickening' -1
 Minlevel     101
 End
 
@@ -3036,7 +3048,7 @@ Minlevel     14
 End
 
 #SKILL
-Name         sanctuary~
+Name         santuario~
 Type         Spell
 Info         0
 Flags        0
@@ -3140,20 +3152,6 @@ Minlevel     44
 End
 
 #SKILL
-Name         shocking ward~
-Type         Spell
-Info         8584
-Flags        6144
-Target       3
-Minpos       115
-Rounds       8
-Code         spell_shocking_ward
-Difficulty   4
-Teachers     18607~
-Minlevel     30
-End
-
-#SKILL
 Name         shockshield~
 Type         Spell
 Info         0
@@ -3174,7 +3172,7 @@ Minlevel     24
 End
 
 #SKILL
-Name         silence~
+Name         silencio~
 Type         Spell
 Info         0
 Flags        0
@@ -3399,18 +3397,6 @@ Minlevel     2
 End
 
 #SKILL
-Name         static ward~
-Type         Spell
-Info         0
-Flags        0
-Minpos       115
-Rounds       12
-Code         spell_static_ward
-Difficulty   4
-Minlevel     10
-End
-
-#SKILL
 Name         stone skin~
 Type         Spell
 Info         0
@@ -3481,9 +3467,9 @@ Hitvict      &YA summoned strength suddenly flows into you.~
 Hitroom      &YA summoned strength shows in $N's eyes.~
 Difficulty   1
 Teachers     16722~
-Affect       'l*10' 19 'l/20+1' -1
-Affect       'l*10' 18 'l/20+1' -1
 Affect       'l*10' 1 'l/20+1' -1
+Affect       'l*10' 18 'l/20+1' -1
+Affect       'l*10' 19 'l/20+1' -1
 Minlevel     15
 End
 
@@ -3541,6 +3527,20 @@ Minlevel     101
 End
 
 #SKILL
+Name         toque acido~
+Type         Spell
+Info         5
+Flags        0
+Target       1
+Mana         10
+Rounds       5
+Code         spell_acidic_touch
+Dammsg       acidic touch~
+Difficulty   1
+Minlevel     13
+End
+
+#SKILL
 Name         torrent~
 Type         Spell
 Info         395
@@ -3591,8 +3591,8 @@ Hitchar      $N's face contorts with a bestial vigor...~
 Hitvict      You sense a bestial vigor consume you...~
 Hitroom      $N's face contorts with a bestial vigor...~
 Difficulty   2
-Affect       'l*24' 5 '1+(l/17)' -1
 Affect       'l*24' 25 '-1' -1
+Affect       'l*24' 5 '1+(l/17)' -1
 Minlevel     101
 End
 
@@ -3626,8 +3626,8 @@ Code         spell_smaug
 Wearoff      &zYour unholy shroud suddenly vanishes.~
 Hitvict      &zYou are surrounded in the power of an unholy shroud.~
 Difficulty   1
-Affect       'l*2' 27 '8192' -1
 Affect       'l*2' 17 '-20-i' -1
+Affect       'l*2' 27 '8192' -1
 Minlevel     23
 End
 
@@ -3667,8 +3667,8 @@ Hitvict      Your defenses are unravelled before your very eyes.~
 Hitroom      $N's eyes widen in fear as $S defenses are unravelled.~
 Immchar      Your spell has no effect upon $N.~
 Difficulty   2
-Affect       '(l*3)+25' 29 '1048576' -1
 Affect       '(l*3)+25' 29 '8192' -1
+Affect       '(l*3)+25' 29 '1048576' -1
 Minlevel     101
 End
 
@@ -3850,6 +3850,16 @@ Minlevel     7
 End
 
 #SKILL
+Name         'hablar con la tierra'~
+Type         Skill
+Info         0
+Flags        0
+Code         spell_null
+Teachers     6255~
+Minlevel     101
+End
+
+#SKILL
 Name         Inertial barrier~
 Type         Skill
 Info         0
@@ -3863,8 +3873,8 @@ Wearoff      You're no longer protected by an inertial barrier.~
 Hitchar      You place an inertial barrier around yourself.~
 Hitvict      You place an inertial barrier around yourself.~
 Difficulty   3
-Affect       'l*3' 24 '-4' -1
 Affect       'l*3' 17 '-20' -1
+Affect       'l*3' 24 '-4' -1
 Minlevel     101
 End
 
@@ -3880,25 +3890,79 @@ Code         spell_smaug
 Wearoff      &wA weariness comes over you as your adrenaline rush subsides.&D~
 Hitvict      &RYou feel a burst of adrenaline rush through your body!&D~
 Misschar     &cYou try to call on your adrenaline, but fail to summon any.&D~
-Affect       'l*2+20' 18 '-1' -1
-Affect       'l*2+20' 13 'l/2' -1
 Affect       'l*2+20' 19 '3' -1
+Affect       'l*2+20' 13 'l/2' -1
+Affect       'l*2+20' 18 '-1' -1
 Minlevel     6
 End
 
 #SKILL
-Name         aid~
+Name         agresividad~
+Type         Skill
+Info         0
+Flags        39936
+Target       2
+Minpos       115
+Rounds       18
+Code         do_recoil
+Wearoff      You're no longer recoiled.~
+Hitchar      &w~
+Hitvict      &w~
+Teachers     2302~
+Minlevel     49
+End
+
+#SKILL
+Name         alas~
 Type         Skill
 Info         0
 Flags        0
+Target       3
 Minpos       108
-Rounds       12
-Code         do_aid
+Rounds       13
+Code         do_wings
+Wearoff      Worn out from flying, you land gently in a swirl of dust.~
 Minlevel     1
 End
 
 #SKILL
-Name         angelfire~
+Name         alimentarse~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       14
+Code         do_feed
+Dammsg       mordisco~
+Wearoff      !Feed!~
+Minlevel     1
+End
+
+#SKILL
+Name         alimentos elavorados~
+Type         Skill
+Info         0
+Flags        0
+Slot         401
+Code         spell_null
+Wearoff      &cYour stomach yearns for more homemade food.&D~
+Minlevel     101
+End
+
+#SKILL
+Name         ambidiestro~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Code         spell_null
+Wearoff      !Dual Wield!~
+Teachers     18607~
+Minlevel     8
+End
+
+#SKILL
+Name         fuego angelical~
 Type         Skill
 Info         0
 Flags        0
@@ -3911,7 +3975,7 @@ Minlevel     12
 End
 
 #SKILL
-Name         animal companion~
+Name         llamar animal~
 Type         Skill
 Info         0
 Flags        0
@@ -3922,18 +3986,6 @@ Code         do_animal_companion
 Wearoff      ..~
 Hitchar      &b~
 Minlevel     6
-End
-
-#SKILL
-Name         animal form~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       115
-Rounds       15
-Code         do_animal_form
-Minlevel     10
 End
 
 #SKILL
@@ -3950,7 +4002,44 @@ Minlevel     101
 End
 
 #SKILL
-Name         arteries~
+Name         apunyalar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       12
+Code         do_backstab
+Dammsg       punyalada~
+Wearoff      !Backstab!~
+Difficulty   5
+Minlevel     2
+End
+
+#SKILL
+Name         armadura glacial~
+Type         Skill
+Info         8192
+Flags        0
+Target       3
+Minpos       108
+Rounds       8
+Code         spell_null
+Minlevel     28
+End
+
+#SKILL
+Name         arrebatar~
+Type         Skill
+Info         0
+Flags        0
+Rounds       18
+Code         do_snatch
+Dammsg       massive jaws~
+Minlevel     5
+End
+
+#SKILL
+Name         arterias~
 Type         Skill
 Info         0
 Flags        0
@@ -3965,16 +4054,18 @@ Minlevel     95
 End
 
 #SKILL
-Name         assassinate~
+Name         artes marciales~
 Type         Skill
 Info         0
 Flags        0
-Code         do_assassinate
-Minlevel     85
+Minpos       105
+Code         spell_null
+Difficulty   3
+Minlevel     1
 End
 
 #SKILL
-Name         assault~
+Name         asaltar~
 Type         Skill
 Info         0
 Flags        0
@@ -3983,6 +4074,27 @@ Rounds       12
 Code         do_assault
 Dammsg       assault~
 Minlevel     16
+End
+
+#SKILL
+Name         asesinar~
+Type         Skill
+Info         0
+Flags        0
+Code         do_assassinate
+Minlevel     85
+End
+
+#SKILL
+Name         asir fuerte~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Code         spell_null
+Wearoff      !Grip!~
+Teachers     6255~
+Minlevel     8
 End
 
 #SKILL
@@ -3998,29 +4110,66 @@ Minlevel     35
 End
 
 #SKILL
-Name         backhand~
+Name         ataque doble~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       107
+Mana         20
+Rounds       14
+Code         do_double_slash
+Dammsg       double slash~
+Teachers     16722~
+Minlevel     80
+End
+
+#SKILL
+Name         ataques poderosos~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Code         spell_null
+Wearoff      !Enhanced Damage!~
+Difficulty   5
+Teachers     18607~
+Minlevel     1
+End
+
+#SKILL
+Name         atrapar~
 Type         Skill
 Info         0
 Flags        0
 Minpos       108
-Rounds       8
-Code         do_backhand
-Dammsg       backhand~
-Minlevel     20
+Rounds       20
+Code         do_ensnare
+Wearoff      You're no longer ensnared!~
+Minlevel     15
 End
 
 #SKILL
-Name         backstab~
+Name         aturdir~
 Type         Skill
 Info         0
 Flags        0
-Minpos       115
+Minpos       108
+Rounds       15
+Code         do_daze
+Wearoff      You no longer feel so dazed and confused!~
+Minlevel     18
+End
+
+#SKILL
+Name         ayudar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
 Rounds       12
-Code         do_backstab
-Dammsg       backstab~
-Wearoff      !Backstab!~
-Difficulty   5
-Minlevel     2
+Code         do_aid
+Minlevel     1
 End
 
 #SKILL
@@ -4035,17 +4184,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         ball of fire~
-Type         Skill
-Info         0
-Flags        0
-Minpos       111
-Rounds       12
-Code         do_ball_of_fire
-Minlevel     1
-End
-
-#SKILL
 Name         ballistic~
 Type         Skill
 Info         4
@@ -4056,15 +4194,6 @@ Code         do_ballistic
 Dammsg       ballistic attack~
 Teachers     26001~
 Minlevel     40
-End
-
-#SKILL
-Name         bark skin~
-Type         Skill
-Info         0
-Flags        0
-Code         spell_null
-Minlevel     13
 End
 
 #SKILL
@@ -4096,35 +4225,14 @@ Minlevel     53
 End
 
 #SKILL
-Name         bear spirit~
+Name         bebidas elavoradas~
 Type         Skill
 Info         0
 Flags        0
-Rounds       12
-Code         do_bear_spirit
-Teachers     2302~
-Minlevel     22
-End
-
-#SKILL
-Name         beast meld~
-Type         Skill
-Info         0
-Flags        0
-Code         do_beast_meld
-Minlevel     9
-End
-
-#SKILL
-Name         behead~
-Type         Skill
-Info         0
-Flags        6144
-Target       2
-Minpos       115
-Rounds       8
-Code         do_behead
-Minlevel     1
+Slot         404
+Code         spell_null
+Wearoff      &cYour taste buds yearn for more homemade mixed drink.&D~
+Minlevel     101
 End
 
 #SKILL
@@ -4138,16 +4246,6 @@ Rounds       4
 Code         do_berserk
 Wearoff      You regain your composure...~
 Minlevel     1
-End
-
-#SKILL
-Name         biofeedback~
-Type         Skill
-Info         0
-Flags        0
-Code         spell_null
-Difficulty   3
-Minlevel     5
 End
 
 #SKILL
@@ -4176,32 +4274,6 @@ Minlevel     75
 End
 
 #SKILL
-Name         blizzard~
-Type         Skill
-Info         394
-Flags        6160
-Target       1
-Minpos       108
-Mana         30
-Rounds       12
-Code         do_blizzard
-Dammsg       Blizzard~
-Teachers     26001~
-Minlevel     37
-End
-
-#SKILL
-Name         bloodlet~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Rounds       12
-Code         do_bloodlet
-Minlevel     11
-End
-
-#SKILL
 Name         body drop~
 Type         Skill
 Info         0
@@ -4217,7 +4289,30 @@ Minlevel     80
 End
 
 #SKILL
-Name         bone~
+Name         bofeton~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       16
+Code         do_quivering_palm
+Dammsg       bofetón~
+Minlevel     80
+End
+
+#SKILL
+Name         bola de fuego~
+Type         Skill
+Info         0
+Flags        0
+Minpos       111
+Rounds       12
+Code         do_ball_of_fire
+Minlevel     1
+End
+
+#SKILL
+Name         hueso~
 Type         Skill
 Info         8
 Flags        16384
@@ -4230,57 +4325,12 @@ Minlevel     3
 End
 
 #SKILL
-Name         brain boil~
-Type         Skill
-Info         0
-Flags        6144
-Target       1
-Minpos       108
-Min_dist     12
-Max_dist     12
-Mana         25
-Rounds       15
-Code         do_brain_boil
-Dammsg       brain boil~
-Teachers     16704~
-Minlevel     88
-End
-
-#SKILL
 Name         brass~
 Type         Skill
 Info         0
 Flags        0
 Code         spell_null
 Minlevel     55
-End
-
-#SKILL
-Name         break~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       108
-Mana         20
-Rounds       20
-Code         do_break
-Difficulty   5
-Teachers     28262~
-Minlevel     85
-End
-
-#SKILL
-Name         breathe~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       108
-Rounds       15
-Code         do_breathe
-Dammsg       aliento~
-Minlevel     2
 End
 
 #SKILL
@@ -4311,41 +4361,7 @@ Minlevel     25
 End
 
 #SKILL
-Name         brittle bone~
-Type         Skill
-Info         0
-Flags        0
-Rounds       14
-Code         do_brittle_bone
-Dammsg       bone virus~
-Wearoff      You suddenly feel sturdy, as the brittle bones affect is gone.~
-Teachers     10808~
-Minlevel     45
-End
-
-#SKILL
-Name         broach~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Code         do_broach
-Teachers     2302~
-Minlevel     41
-End
-
-#SKILL
-Name         bull spirit~
-Type         Skill
-Info         0
-Flags        0
-Rounds       12
-Code         do_bull_spirit
-Minlevel     4
-End
-
-#SKILL
-Name         burrow~
+Name         enterrarse~
 Type         Skill
 Info         0
 Flags        0
@@ -4356,20 +4372,43 @@ Minlevel     1
 End
 
 #SKILL
-Name         butterfly kick~
+Name         buscar~
 Type         Skill
 Info         0
 Flags        0
-Target       1
 Minpos       115
-Rounds       8
-Code         do_butterfly_kick
-Dammsg       butterfly kick~
-Minlevel     40
+Rounds       20
+Code         do_search
+Minlevel     1
 End
 
 #SKILL
-Name         cannibalize~
+Name         caer~
+Type         Skill
+Info         0
+Flags        0
+Target       2
+Minpos       108
+Code         spell_null
+Wearoff      !Tumble!~
+Minlevel     11
+End
+
+#SKILL
+Name         cambiarforma~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       14
+Code         do_shapeshift
+Hitchar      You feel a sharp pain as your body assumes another shape!~
+Difficulty   3
+Minlevel     101
+End
+
+#SKILL
+Name         canibalizar~
 Type         Skill
 Info         0
 Flags        0
@@ -4384,6 +4423,28 @@ Minlevel     10
 End
 
 #SKILL
+Name         cataplasma~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Slot         297
+Rounds       12
+Code         do_poultice
+Wearoff      !Nostrum!~
+Minlevel     2
+End
+
+#SKILL
+Name         cazar~
+Type         Skill
+Info         0
+Flags        0
+Code         do_stalk_prey
+Minlevel     6
+End
+
+#SKILL
 Name         chameleon~
 Type         Skill
 Info         0
@@ -4394,13 +4455,13 @@ Minlevel     7
 End
 
 #SKILL
-Name         charge~
+Name         cargar~
 Type         Skill
 Info         0
 Flags        0
 Rounds       8
 Code         do_charge
-Dammsg       lance~
+Dammsg       carga~
 Teachers     28262~
 Minlevel     85
 End
@@ -4426,17 +4487,18 @@ Minlevel     101
 End
 
 #SKILL
-Name         chilled touch~
+Name         chillido~
 Type         Skill
-Info         8192
-Flags        6144
-Target       1
-Minpos       108
-Rounds       8
-Code         do_chilled_touch
-Dammsg       chilled touch~
-Teachers     2760~
-Minlevel     20
+Info         0
+Flags        16
+Minpos       109
+Mana         15
+Rounds       12
+Code         do_shriek
+Dammsg       shriek~
+Dice         R~
+Teachers     2302~
+Minlevel     35
 End
 
 #SKILL
@@ -4449,20 +4511,6 @@ Rounds       18
 Code         do_choke
 Dammsg       mental choking persuasion~
 Minlevel     1
-End
-
-#SKILL
-Name         circle~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Rounds       15
-Code         do_circle
-Dammsg       circle~
-Wearoff      !Circle!~
-Teachers     26001~
-Minlevel     30
 End
 
 #SKILL
@@ -4493,6 +4541,31 @@ Minlevel     1
 End
 
 #SKILL
+Name         codazo~
+Type         Skill
+Info         0
+Flags        0
+Rounds       12
+Code         do_elbow
+Dammsg       codazo~
+Teachers     16704~
+Minlevel     32
+End
+
+#SKILL
+Name         coletazo~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Mana         10
+Rounds       16
+Code         do_entangle
+Wearoff      You're no longer tangled.~
+Minlevel     18
+End
+
+#SKILL
 Name         collect~
 Type         Skill
 Info         0
@@ -4516,7 +4589,42 @@ Minlevel     24
 End
 
 #SKILL
-Name         cone~
+Name         compartir~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Rounds       12
+Code         do_bloodlet
+Minlevel     11
+End
+
+#SKILL
+Name         conjurar elemental~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       20
+Code         do_conjure_elemental
+Teachers     10808~
+Minlevel     16
+End
+
+#SKILL
+Name         conjuros poderosos~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       108
+Rounds       15
+Code         do_higher_magic
+Minlevel     20
+End
+
+#SKILL
+Name         cono~
 Type         Skill
 Info         0
 Flags        0
@@ -4527,15 +4635,39 @@ Minlevel     9
 End
 
 #SKILL
-Name         conjure elemental~
+Name         conocer enemigo~
 Type         Skill
 Info         0
 Flags        0
+Target       2
 Minpos       115
+Mana         50
+Rounds       15
+Code         do_know_enemy
+Minlevel     7
+End
+
+#SKILL
+Name         contenedor energetico~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Code         do_energy_containment
+Wearoff      !sorcery!~
+Teachers     31378~
+Minlevel     85
+End
+
+#SKILL
+Name         contranbandear~
+Type         Skill
+Info         0
+Flags        0
 Rounds       20
-Code         do_conjure_elemental
-Teachers     10808~
-Minlevel     16
+Code         do_smuggle
+Teachers     26001~
+Minlevel     60
 End
 
 #SKILL
@@ -4564,6 +4696,15 @@ Rounds       14
 Code         do_cook
 Misschar     You aren't a very good cook yet.~
 Minlevel     1
+End
+
+#SKILL
+Name         corcel~
+Type         Skill
+Info         0
+Flags        0
+Code         do_steed
+Minlevel     14
 End
 
 #SKILL
@@ -4598,11 +4739,11 @@ Hitvict      Your body grants you the extra courage.~
 Misschar     You call upon extra courage, but fail to do so.~
 Difficulty   3
 Teachers     26001~
-Affect       'l*3' 17 '-25' -1
-Affect       'l*3' 5 '3' -1
-Affect       'l*3' 19 '4' -1
-Affect       'l*3' 18 '6' -1
 Affect       'l*3' 24 '-10' -1
+Affect       'l*3' 18 '6' -1
+Affect       'l*3' 19 '4' -1
+Affect       'l*3' 5 '3' -1
+Affect       'l*3' 17 '-25' -1
 Minlevel     34
 End
 
@@ -4621,28 +4762,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         crafted_drink~
-Type         Skill
-Info         0
-Flags        0
-Slot         404
-Code         spell_null
-Wearoff      &cYour taste buds yearn for more homemade mixed drink.&D~
-Minlevel     101
-End
-
-#SKILL
-Name         crafted_food~
-Type         Skill
-Info         0
-Flags        0
-Slot         401
-Code         spell_null
-Wearoff      &cYour stomach yearns for more homemade food.&D~
-Minlevel     101
-End
-
-#SKILL
 Name         cross stitching~
 Type         Skill
 Info         0
@@ -4652,25 +4771,15 @@ Minlevel     101
 End
 
 #SKILL
-Name         crushing jaw~
+Name         cuarto ataque~
 Type         Skill
 Info         0
 Flags        0
+Minpos       105
 Code         spell_null
-Dammsg       crushing jaw~
-Minlevel     9
-End
-
-#SKILL
-Name         daze~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Rounds       15
-Code         do_daze
-Wearoff      You no longer feel so dazed and confused!~
-Minlevel     18
+Wearoff      !Fourth Attack!~
+Teachers     6255~
+Minlevel     20
 End
 
 #SKILL
@@ -4687,6 +4796,18 @@ Minlevel     45
 End
 
 #SKILL
+Name         decapitar~
+Type         Skill
+Info         0
+Flags        6144
+Target       2
+Minpos       115
+Rounds       8
+Code         do_behead
+Minlevel     1
+End
+
+#SKILL
 Name         decree decay~
 Type         Skill
 Info         0
@@ -4700,16 +4821,7 @@ Minlevel     22
 End
 
 #SKILL
-Name         defend~
-Type         Skill
-Info         0
-Flags        0
-Code         do_defend
-Minlevel     17
-End
-
-#SKILL
-Name         defensive posturing~
+Name         defenderse~
 Type         Skill
 Info         0
 Flags        0
@@ -4723,12 +4835,133 @@ Minlevel     27
 End
 
 #SKILL
-Name         dehydrate~
+Name         defensa poderosa~
+Type         Skill
+Info         0
+Flags        0
+Code         do_defend
+Minlevel     17
+End
+
+#SKILL
+Name         derribar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       24
+Code         do_bashdoor
+Dammsg       patada poderosa~
+Wearoff      !Bash Door!~
+Minlevel     1
+End
+
+#SKILL
+Name         desangrar~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       108
+Rounds       18
+Code         do_maim
+Dammsg       ataque a la femoral~
+Teachers     2302~
+Minlevel     32
+End
+
+#SKILL
+Name         desarmar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       24
+Code         do_disarm
+Wearoff      !Disarm!~
+Minlevel     5
+End
+
+#SKILL
+Name         desatar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       20
+Code         do_untangle
+Minlevel     10
+End
+
+#SKILL
+Name         desbalancear~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       13
+Code         do_tackle
+Dammsg       tackle~
+Minlevel     10
+End
+
+#SKILL
+Name         descanso regenerativo~
+Type         Skill
+Info         0
+Flags        0
+Code         spell_null
+Difficulty   3
+Minlevel     5
+End
+
+#SKILL
+Name         desequilibrar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Rounds       25
+Code         do_sidestep
+Wearoff      You're no longer off balance.~
+Teachers     6255~
+Minlevel     25
+End
+
+#SKILL
+Name         desidratar~
 Type         Skill
 Info         0
 Flags        0
 Code         do_dehydrate
 Minlevel     10
+End
+
+#SKILL
+Name         desmaterializarse~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       14
+Code         do_phase
+Wearoff      &YYour body stops phasing, as your concentration wanes.~
+Difficulty   5
+Teachers     2302~
+Minlevel     21
+End
+
+#SKILL
+Name         desplazamiento~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Code         spell_null
+Wearoff      !Displacement!~
+Difficulty   5
+Teachers     26001~
+Minlevel     76
 End
 
 #SKILL
@@ -4753,15 +4986,16 @@ Minlevel     1
 End
 
 #SKILL
-Name         disarm~
+Name         disfrazar~
 Type         Skill
 Info         0
 Flags        0
-Minpos       108
-Rounds       24
-Code         do_disarm
-Wearoff      !Disarm!~
-Minlevel     5
+Target       3
+Minpos       115
+Mana         35
+Rounds       10
+Code         do_disguise
+Minlevel     12
 End
 
 #SKILL
@@ -4778,48 +5012,45 @@ Wearoff      &cYour confidence returns as you no longer feel disgraced.~
 Hitchar      &cYou point your finger at $N and declare them a disgrace!~
 Hitvict      &c$n points $s finger at you, and declares you a disgrace!~
 Hitroom      &c$n points $s finger at $N and declares them a disgrace!~
-Affect       '(null)' 24 '10' -1
-Affect       '(null)' 20 '10' -1
 Affect       '(null)' 1 '-2' -1
+Affect       '(null)' 20 '10' -1
+Affect       '(null)' 24 '10' -1
 Minlevel     101
 End
 
 #SKILL
-Name         disguise~
+Name         disimular~
 Type         Skill
 Info         0
 Flags        0
 Target       3
 Minpos       115
-Mana         35
-Rounds       10
-Code         do_disguise
-Minlevel     12
-End
-
-#SKILL
-Name         displacement~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Code         spell_null
-Wearoff      !Displacement!~
-Difficulty   5
-Teachers     26001~
-Minlevel     76
-End
-
-#SKILL
-Name         dodge~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Code         spell_null
-Wearoff      !Dodge!~
-Difficulty   5
+Rounds       1
+Code         do_sneak
+Wearoff      You lose your precarious balance and no longer move silently.~
+Misschar     You try to move silently, but something crunches under your foot.~
+Missvict     You try to move silently, but something crunches under your foot.~
 Minlevel     1
+End
+
+#SKILL
+Name         disparo veloz~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       14
+Code         spell_null
+Minlevel     8
+End
+
+#SKILL
+Name         domar~
+Type         Skill
+Info         0
+Flags        0
+Code         do_tame
+Minlevel     5
 End
 
 #SKILL
@@ -4832,34 +5063,6 @@ Rounds       16
 Code         do_dominate
 Teachers     26001~
 Minlevel     37
-End
-
-#SKILL
-Name         doorbash~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Rounds       24
-Code         do_bashdoor
-Dammsg       bashdoor~
-Wearoff      !Bash Door!~
-Minlevel     1
-End
-
-#SKILL
-Name         double slash~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       107
-Mana         20
-Rounds       14
-Code         do_double_slash
-Dammsg       double slash~
-Teachers     16722~
-Minlevel     80
 End
 
 #SKILL
@@ -4900,7 +5103,7 @@ Type         Skill
 Info         0
 Flags        0
 Code         spell_smaug
-Dammsg       drop~
+Dammsg       caida~
 Minlevel     101
 End
 
@@ -4926,28 +5129,6 @@ Minlevel     72
 End
 
 #SKILL
-Name         dual wield~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Code         spell_null
-Wearoff      !Dual Wield!~
-Teachers     18607~
-Minlevel     8
-End
-
-#SKILL
-Name         earthspeak~
-Type         Skill
-Info         0
-Flags        0
-Code         spell_null
-Teachers     6255~
-Minlevel     44
-End
-
-#SKILL
 Name         effloresce~
 Type         Skill
 Info         0
@@ -4967,76 +5148,35 @@ Minlevel     24
 End
 
 #SKILL
-Name         eighth attack~
+Name         empalar~
 Type         Skill
 Info         0
 Flags        0
-Code         spell_null
-Teachers     16704~
-Minlevel     85
-End
-
-#SKILL
-Name         elbow~
-Type         Skill
-Info         0
-Flags        0
+Minpos       115
 Rounds       12
-Code         do_elbow
-Dammsg       downward elbow strike~
-Teachers     16704~
-Minlevel     32
+Code         do_impale
+Dammsg       impale~
+Minlevel     10
 End
 
 #SKILL
-Name         eldritch bolt~
+Name         encontrar agua~
 Type         Skill
 Info         0
 Flags        0
+Code         do_find_water
+Minlevel     6
+End
+
+#SKILL
+Name         enfurecer~
+Type         Skill
+Info         0
+Flags        1024
 Minpos       108
-Rounds       20
-Code         do_eldritch_bolt
-Dammsg       eldritch bolt~
-Teachers     30025~
-Minlevel     90
-End
-
-#SKILL
-Name         endurance~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Code         spell_null
-Wearoff      !ENDURANCE!~
-Difficulty   4
-Teachers     18607~
-Minlevel     1
-End
-
-#SKILL
-Name         energy containment~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Code         do_energy_containment
-Wearoff      !sorcery!~
-Teachers     31378~
-Minlevel     85
-End
-
-#SKILL
-Name         enhanced damage~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Code         spell_null
-Wearoff      !Enhanced Damage!~
-Difficulty   5
-Teachers     18607~
-Minlevel     1
+Rounds       18
+Code         do_enrage
+Minlevel     11
 End
 
 #SKILL
@@ -5054,50 +5194,131 @@ Hitchar      $N's eyes roll back as a sudden elightenment overtakes them.~
 Hitvict      Enlightenment suddenly fills your mind, making things so clear.~
 Hitroom      $N's eyes roll back as a sudden enlightenment overtakes them.~
 Misschar     You failed to enlighten yourself!~
-Affect       'l*5' 12 '25+(l/20)' -1
-Affect       'l*5' 4 '1+(l/20)' -1
 Affect       'l*5' 3 '1+(l/20)' -1
+Affect       'l*5' 4 '1+(l/20)' -1
+Affect       'l*5' 12 '25+(l/20)' -1
 Minlevel     101
 End
 
 #SKILL
-Name         enrage~
+Name         enraizar~
 Type         Skill
 Info         0
-Flags        1024
-Minpos       108
-Rounds       18
-Code         do_enrage
-Minlevel     11
+Flags        0
+Target       3
+Minpos       115
+Rounds       35
+Code         do_root
+Wearoff      Your feet are no longer rooted into the ground.~
+Teachers     6255~
+Minlevel     40
 End
 
 #SKILL
-Name         ensnare~
+Name         envenenar armas~
+Type         Skill
+Info         0
+Flags        0
+Target       4
+Minpos       115
+Rounds       12
+Code         do_poison_weapon
+Dammsg       poisonous concoction~
+Wearoff      !Poison Weapon!~
+Teachers     26001~
+Minlevel     40
+End
+
+#SKILL
+Name         escamas endurecidas~
 Type         Skill
 Info         0
 Flags        0
 Minpos       108
-Rounds       20
-Code         do_ensnare
-Wearoff      You're no longer ensnared!~
+Code         spell_null
+Minlevel     13
+End
+
+#SKILL
+Name         escudo~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       108
+Slot         67
+Rounds       15
+Code         do_shield
+Wearoff      &YYour shield shimmers as it fades away.~
+Minlevel     2
+End
+
+#SKILL
+Name         espiritu de lobo~
+Type         Skill
+Info         0
+Flags        0
+Rounds       12
+Code         do_wolf_spirit
+Teachers     2302~
+Minlevel     40
+End
+
+#SKILL
+Name         espiritu de oso~
+Type         Skill
+Info         0
+Flags        0
+Rounds       12
+Code         do_bear_spirit
+Teachers     2302~
+Minlevel     22
+End
+
+#SKILL
+Name         espiritu de toro~
+Type         Skill
+Info         0
+Flags        0
+Rounds       12
+Code         do_bull_spirit
+Minlevel     4
+End
+
+#SKILL
+Name         espiritu sombrio~
+Type         Skill
+Info         0
+Flags        0
+Code         do_shroud_spirit
 Minlevel     15
 End
 
 #SKILL
-Name         entangle~
+Name         esquivar~
 Type         Skill
 Info         0
 Flags        0
-Minpos       105
-Mana         10
-Rounds       16
-Code         do_entangle
-Wearoff      You're no longer tangled.~
-Minlevel     18
+Minpos       108
+Code         spell_null
+Wearoff      !Dodge!~
+Difficulty   5
+Minlevel     1
 End
 
 #SKILL
-Name         extract skeleton~
+Name         estilo de grendal~
+Type         Skill
+Info         0
+Flags        0
+Rounds       15
+Code         do_grendals_stance
+Teachers     28262~
+Minlevel     31
+End
+
+#SKILL
+Name         extraer esqueleto~
 Type         Skill
 Info         0
 Flags        0
@@ -5137,89 +5358,6 @@ Minlevel     70
 End
 
 #SKILL
-Name         feed~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Rounds       14
-Code         do_feed
-Dammsg       bite~
-Wearoff      !Feed!~
-Minlevel     1
-End
-
-#SKILL
-Name         feign death~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Rounds       16
-Code         do_feign_death
-Teachers     2302~
-Minlevel     24
-End
-
-#SKILL
-Name         fell~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Slot         294
-Rounds       12
-Code         do_fell
-Minlevel     101
-End
-
-#SKILL
-Name         ferocious strike~
-Type         Skill
-Info         0
-Flags        0
-Rounds       14
-Code         do_ferocious_strike
-Dammsg       ferocious strike~
-Teachers     2302~
-Minlevel     58
-End
-
-#SKILL
-Name         festering wound~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Rounds       14
-Code         do_festering_wound
-Dammsg       fungus covered blade~
-Wearoff      The fungal toxins finally leave your body.~
-Minlevel     5
-End
-
-#SKILL
-Name         fifth attack~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Code         spell_null
-Wearoff      !Fifth Attack!~
-Teachers     6255~
-Minlevel     35
-End
-
-#SKILL
-Name         find water~
-Type         Skill
-Info         0
-Flags        0
-Code         do_find_water
-Minlevel     6
-End
-
-#SKILL
 Name         find weakness~
 Type         Skill
 Info         0
@@ -5233,17 +5371,15 @@ Minlevel     19
 End
 
 #SKILL
-Name         flamebreath~
+Name         fingir muerte~
 Type         Skill
-Info         1
+Info         0
 Flags        0
-Target       1
-Minpos       108
-Rounds       12
-Code         do_flamebreath
-Dammsg       breath of flames~
-Teachers     31469~
-Minlevel     27
+Target       3
+Rounds       16
+Code         do_feign_death
+Teachers     2302~
+Minlevel     24
 End
 
 #SKILL
@@ -5260,15 +5396,6 @@ Minlevel     10
 End
 
 #SKILL
-Name         flint fire~
-Type         Skill
-Info         0
-Flags        0
-Code         do_flint_fire
-Minlevel     1
-End
-
-#SKILL
 Name         flurry~
 Type         Skill
 Info         0
@@ -5281,10 +5408,10 @@ Wearoff      &cYour flurry attack rush has subsided leaving you winded...~
 Hitchar      &cYou step in close to $N leaving yourself open, but attack in a flurry!~
 Hitvict      &c$n moves in within range, but attacks in a flurry!~
 Hitroom      &c$n moves in close to $N, and attacks in a flurry!~
-Affect       '20' 17 '50' -1
-Affect       '20' 19 '5' -1
-Affect       '20' 40 '-10' -1
 Affect       '20' 48 '-10' -1
+Affect       '20' 40 '-10' -1
+Affect       '20' 19 '5' -1
+Affect       '20' 17 '50' -1
 Minlevel     101
 End
 
@@ -5299,7 +5426,7 @@ Minlevel     2
 End
 
 #SKILL
-Name         forge~
+Name         forjar~
 Type         Skill
 Info         0
 Flags        0
@@ -5312,15 +5439,37 @@ Minlevel     101
 End
 
 #SKILL
-Name         fourth attack~
+Name         forma animal~
 Type         Skill
 Info         0
 Flags        0
-Minpos       105
-Code         spell_null
-Wearoff      !Fourth Attack!~
-Teachers     6255~
-Minlevel     20
+Target       3
+Minpos       115
+Rounds       15
+Code         do_animal_form
+Minlevel     10
+End
+
+#SKILL
+Name         forma humana~
+Type         Skill
+Info         0
+Flags        0
+Code         do_human_form
+Wearoff      &cYou can no longer function in the body of a human.&w~
+Minlevel     5
+End
+
+#SKILL
+Name         forzar cerraduras~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       12
+Code         do_pick
+Wearoff      !Pick!~
+Minlevel     4
 End
 
 #SKILL
@@ -5353,24 +5502,7 @@ Minlevel     20
 End
 
 #SKILL
-Name         frost touch~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       109
-Max_dist     3
-Slot         5
-Mana         15
-Rounds       12
-Code         do_frost_touch
-Dammsg       frost touch~
-Difficulty   2
-Minlevel     40
-End
-
-#SKILL
-Name         fury~
+Name         furia~
 Type         Skill
 Info         0
 Flags        0
@@ -5384,18 +5516,27 @@ Minlevel     28
 End
 
 #SKILL
-Name         gather~
+Name         garras afiladas~
 Type         Skill
 Info         0
 Flags        0
-Minpos       115
-Rounds       15
-Code         do_gather
-Minlevel     101
+Code         do_sharpen_claws
+Teachers     16706~
+Minlevel     25
 End
 
 #SKILL
-Name         gauge~
+Name         garras infecciosas~
+Type         Skill
+Info         0
+Flags        0
+Code         do_infectious_claws
+Teachers     10808~
+Minlevel     38
+End
+
+#SKILL
+Name         estudio vampirico~
 Type         Skill
 Info         0
 Flags        0
@@ -5406,29 +5547,44 @@ Minlevel     4
 End
 
 #SKILL
-Name         glacial armor~
-Type         Skill
-Info         8192
-Flags        0
-Target       3
-Minpos       108
-Rounds       8
-Code         spell_null
-Minlevel     28
-End
-
-#SKILL
-Name         gouge~
+Name         golpe feroz~
 Type         Skill
 Info         0
 Flags        0
-Minpos       105
-Rounds       10
-Code         do_gouge
-Dammsg       gouge~
-Wearoff      !Gouge!~
-Teachers     6255~
-Minlevel     13
+Rounds       14
+Code         do_ferocious_strike
+Dammsg       golpe feroz~
+Teachers     2302~
+Minlevel     58
+End
+
+#SKILL
+Name         golpe justo~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       108
+Rounds       16
+Code         do_righteous_blow
+Dammsg       golpe justo~
+Teachers     16722~
+Minlevel     20
+End
+
+#SKILL
+Name         golpes precisos~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       108
+Rounds       14
+Code         do_keen_eye
+Wearoff      Your keen vision relaxes.~
+Hitvict      &d~
+Misschar     You try to focus your eyes, but get distracted.~
+Minlevel     18
 End
 
 #SKILL
@@ -5440,39 +5596,6 @@ Rounds       17
 Code         do_graft_weapon
 Teachers     2760~
 Minlevel     20
-End
-
-#SKILL
-Name         granite skin~
-Type         Skill
-Info         0
-Flags        0
-Code         spell_null
-Teachers     2302~
-Minlevel     26
-End
-
-#SKILL
-Name         grendals stance~
-Type         Skill
-Info         0
-Flags        0
-Rounds       15
-Code         do_grendals_stance
-Teachers     28262~
-Minlevel     31
-End
-
-#SKILL
-Name         grip~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Code         spell_null
-Wearoff      !Grip!~
-Teachers     6255~
-Minlevel     8
 End
 
 #SKILL
@@ -5497,16 +5620,6 @@ Rounds       12
 Code         do_gut
 Dammsg       gut attack~
 Minlevel     3
-End
-
-#SKILL
-Name         hardened scales~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Code         spell_null
-Minlevel     13
 End
 
 #SKILL
@@ -5587,28 +5700,33 @@ Minlevel     36
 End
 
 #SKILL
-Name         hide~
+Name         herida infestada~
 Type         Skill
 Info         0
 Flags        0
-Target       3
-Minpos       115
-Rounds       12
-Code         do_hide
-Wearoff      You move out of your concealed position.~
-Minlevel     1
+Target       1
+Rounds       14
+Code         do_festering_wound
+Dammsg       fungus covered blade~
+Wearoff      The fungal toxins finally leave your body.~
+Minlevel     5
 End
 
 #SKILL
-Name         higher magic~
+Name         hervir cerebro~
 Type         Skill
 Info         0
-Flags        0
-Target       3
+Flags        6144
+Target       1
 Minpos       108
+Min_dist     12
+Max_dist     12
+Mana         25
 Rounds       15
-Code         do_higher_magic
-Minlevel     20
+Code         do_brain_boil
+Dammsg       brain boil~
+Teachers     16704~
+Minlevel     101
 End
 
 #SKILL
@@ -5624,13 +5742,16 @@ Minlevel     35
 End
 
 #SKILL
-Name         human form~
+Name         huesos de cristal~
 Type         Skill
 Info         0
 Flags        0
-Code         do_human_form
-Wearoff      &cYou can no longer function in the body of a human.&w~
-Minlevel     5
+Rounds       14
+Code         do_brittle_bone
+Dammsg       bone virus~
+Wearoff      You suddenly feel sturdy, as the brittle bones affect is gone.~
+Teachers     10808~
+Minlevel     45
 End
 
 #SKILL
@@ -5641,36 +5762,6 @@ Flags        0
 Rounds       15
 Code         do_hunt
 Minlevel     101
-End
-
-#SKILL
-Name         icy touch~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       108
-Min_dist     8
-Max_dist     12
-Slot         82
-Mana         15
-Rounds       12
-Code         do_icy_touch
-Dammsg       icy touch~
-Difficulty   1
-Minlevel     60
-End
-
-#SKILL
-Name         impale~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Rounds       12
-Code         do_impale
-Dammsg       impale~
-Minlevel     10
 End
 
 #SKILL
@@ -5687,20 +5778,10 @@ Hitchar      You are surrounded by an inertial barrier.~
 Hitvict      You are surrounded by an inertial barrier.~
 Misschar     You cannot concentrate enough to create an inertial barrier.~
 Teachers     10808~
-Affect       'l*3' 23 '-w/4' -1
-Affect       'l*3' 24 '-i/4' -1
 Affect       'l*3' 17 '-35' -1
+Affect       'l*3' 24 '-i/4' -1
+Affect       'l*3' 23 '-w/4' -1
 Minlevel     44
-End
-
-#SKILL
-Name         infectious claws~
-Type         Skill
-Info         0
-Flags        0
-Code         do_infectious_claws
-Teachers     10808~
-Minlevel     38
 End
 
 #SKILL
@@ -5719,22 +5800,6 @@ Minlevel     35
 End
 
 #SKILL
-Name         iron skin~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       115
-Rounds       30
-Code         do_iron_skin
-Wearoff      Your skin no longer feels as hard as iron.~
-Hitvict      &D~
-Hitroom      $n skin looks hard as stone.~
-Difficulty   2
-Minlevel     17
-End
-
-#SKILL
 Name         jewelry~
 Type         Skill
 Info         0
@@ -5746,7 +5811,7 @@ Minlevel     101
 End
 
 #SKILL
-Name         judge~
+Name         juzgar~
 Type         Skill
 Info         520
 Flags        16384
@@ -5772,36 +5837,6 @@ Minlevel     20
 End
 
 #SKILL
-Name         keen eye~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       108
-Rounds       14
-Code         do_keen_eye
-Wearoff      Your keen vision relaxes.~
-Hitvict      &d~
-Misschar     You try to focus your eyes, but get distracted.~
-Minlevel     18
-End
-
-#SKILL
-Name         kick~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       105
-Min_dist     1
-Max_dist     6
-Rounds       12
-Code         do_kick
-Dammsg       kick~
-Minlevel     5
-End
-
-#SKILL
 Name         kinetic barrier ~
 Type         Skill
 Info         0
@@ -5811,19 +5846,6 @@ Rounds       16
 Code         do_kinetic_barrier
 Wearoff      Your kinetic barrier fades away.~
 Minlevel     15
-End
-
-#SKILL
-Name         knee~
-Type         Skill
-Info         8192
-Flags        6144
-Target       1
-Minpos       108
-Rounds       8
-Code         do_knee
-Dammsg       knee~
-Minlevel     10
 End
 
 #SKILL
@@ -5843,30 +5865,39 @@ Minlevel     101
 End
 
 #SKILL
-Name         know enemy~
+Name         lagrimas~
 Type         Skill
 Info         0
 Flags        0
-Target       2
-Minpos       115
-Mana         50
+Minpos       109
+Mana         25
 Rounds       15
-Code         do_know_enemy
-Minlevel     7
+Code         do_tears
+Teachers     16722~
+Minlevel     43
 End
 
 #SKILL
-Name         layhands~
+Name         lamentos~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       108
+Rounds       12
+Code         do_wailing
+Minlevel     20
+End
+
+#SKILL
+Name         lamer~
 Type         Skill
 Info         0
 Flags        256
-Minpos       110
-Rounds       20
-Code         do_layhands
-Hitchar      A divine surge of healing power is released from your hands into $N.~
-Hitvict      A divine surge of healing power washes over your body!~
-Teachers     16722~
-Minlevel     70
+Minpos       112
+Rounds       13
+Code         do_lick
+Minlevel     2
 End
 
 #SKILL
@@ -5881,7 +5912,7 @@ Minlevel     10
 End
 
 #SKILL
-Name         lesser skeleton~
+Name         reanimar esqueleto~
 Type         Skill
 Info         0
 Flags        0
@@ -5889,17 +5920,6 @@ Minpos       115
 Rounds       13
 Code         do_lesser_skeleton
 Minlevel     8
-End
-
-#SKILL
-Name         lick~
-Type         Skill
-Info         0
-Flags        256
-Minpos       112
-Rounds       13
-Code         do_lick
-Minlevel     2
 End
 
 #SKILL
@@ -5931,6 +5951,20 @@ Minlevel     2
 End
 
 #SKILL
+Name         luchar sucio~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Rounds       10
+Code         do_gouge
+Dammsg       luchar sucio~
+Wearoff      !Gouge!~
+Teachers     6255~
+Minlevel     13
+End
+
+#SKILL
 Name         lunge~
 Type         Skill
 Info         8584
@@ -5948,20 +5982,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         maim~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       108
-Rounds       18
-Code         do_maim
-Dammsg       maim attack~
-Teachers     2302~
-Minlevel     32
-End
-
-#SKILL
 Name         maintain position~
 Type         Skill
 Info         0
@@ -5973,10 +5993,24 @@ Wearoff      &wYou begin to falter in maintaining your position!~
 Hitvict      &cYou assume a defensive stance, to maintain your position!~
 Hitroom      &c$n assumes a defensive stance to maintain $s position!~
 Misschar     &cYou assume a defensive stance, but fail to maintain your position!~
-Affect       'l*2+20' 26 'protection' 13
-Affect       'l*2+20' 17 '-40' -1
 Affect       'l*2+20' 2 '2' -1
+Affect       'l*2+20' 17 '-40' -1
+Affect       'l*2+20' 26 'protection' 13
 Minlevel     13
+End
+
+#SKILL
+Name         manos sanadoras~
+Type         Skill
+Info         0
+Flags        256
+Minpos       110
+Rounds       20
+Code         do_layhands
+Hitchar      A divine surge of healing power is released from your hands into $N.~
+Hitvict      A divine surge of healing power washes over your body!~
+Teachers     16722~
+Minlevel     70
 End
 
 #SKILL
@@ -5991,49 +6025,15 @@ Minlevel     101
 End
 
 #SKILL
-Name         marble skin~
+Name         marca~
 Type         Skill
 Info         0
-Flags        0
-Code         spell_null
-Minlevel     5
-End
-
-#SKILL
-Name         martial arts~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Code         spell_null
-Difficulty   3
-Minlevel     1
-End
-
-#SKILL
-Name         masters eye~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Code         spell_null
-Wearoff      !MASTERSEYE!~
-Difficulty   3
-Teachers     2302~
-Minlevel     92
-End
-
-#SKILL
-Name         maul~
-Type         Skill
-Info         8192
 Flags        6144
-Minpos       109
-Rounds       12
-Code         do_maul
-Dammsg       maul attack~
-Teachers     16706~
-Minlevel     40
+Minpos       108
+Rounds       18
+Code         do_pawn
+Teachers     16722~
+Minlevel     25
 End
 
 #SKILL
@@ -6079,20 +6079,7 @@ Minlevel     101
 End
 
 #SKILL
-Name         mill~
-Type         Skill
-Info         0
-Flags        0
-Min_dist     8
-Max_dist     50
-Rounds       10
-Code         do_mill
-Difficulty   1
-Minlevel     101
-End
-
-#SKILL
-Name         mine~
+Name         minar~
 Type         Skill
 Info         0
 Flags        0
@@ -6122,22 +6109,7 @@ Minlevel     6
 End
 
 #SKILL
-Name         mistwalk~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Slot         290
-Mana         50
-Rounds       12
-Code         do_mistwalk
-Wearoff      !Mist Walk!~
-Teachers     2302~
-Minlevel     43
-End
-
-#SKILL
-Name         mitigate~
+Name         mitigar~
 Type         Skill
 Info         0
 Flags        0
@@ -6161,7 +6133,42 @@ Minlevel     101
 End
 
 #SKILL
-Name         mortify~
+Name         moler~
+Type         Skill
+Info         0
+Flags        0
+Min_dist     8
+Max_dist     50
+Rounds       10
+Code         do_mill
+Difficulty   1
+Minlevel     101
+End
+
+#SKILL
+Name         montar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       10
+Code         do_mount
+Wearoff      !Search!~
+Minlevel     1
+End
+
+#SKILL
+Name         mordisco triturador~
+Type         Skill
+Info         0
+Flags        0
+Code         spell_null
+Dammsg       crushing jaw~
+Minlevel     9
+End
+
+#SKILL
+Name         mortificar~
 Type         Skill
 Info         0
 Flags        0
@@ -6172,15 +6179,31 @@ Minlevel     16
 End
 
 #SKILL
-Name         mount~
+Name         movimiento sombrio~
 Type         Skill
 Info         0
 Flags        0
 Minpos       115
-Rounds       10
-Code         do_mount
-Wearoff      !Search!~
-Minlevel     1
+Slot         290
+Mana         50
+Rounds       12
+Code         do_mistwalk
+Wearoff      !Mist Walk!~
+Teachers     2302~
+Minlevel     43
+End
+
+#SKILL
+Name         mutilar~
+Type         Skill
+Info         8192
+Flags        6144
+Minpos       109
+Rounds       12
+Code         do_maul
+Dammsg       maul attack~
+Teachers     16706~
+Minlevel     40
 End
 
 #SKILL
@@ -6219,6 +6242,17 @@ Minlevel     35
 End
 
 #SKILL
+Name         niebla~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Code         do_broach
+Teachers     2302~
+Minlevel     41
+End
+
+#SKILL
 Name         object reading~
 Type         Skill
 Info         0
@@ -6226,6 +6260,29 @@ Flags        0
 Rounds       17
 Code         do_object_reading
 Minlevel     8
+End
+
+#SKILL
+Name         octavo ataque~
+Type         Skill
+Info         0
+Flags        0
+Code         spell_null
+Teachers     16704~
+Minlevel     85
+End
+
+#SKILL
+Name         ocultarse~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       115
+Rounds       12
+Code         do_hide
+Wearoff      You move out of your concealed position.~
+Minlevel     1
 End
 
 #SKILL
@@ -6243,11 +6300,35 @@ Hitvict      You place yourself in an offensive stance.~
 Misschar     You fail to place yourself in an offensive stance.~
 Missroom     $n shuffles around a bit.~
 Teachers     10808~
-Affect       'l*3' 17 '20' -1
-Affect       'l*3' 1 '3' -1
-Affect       'l*3' 18 '7' -1
 Affect       'l*3' 19 '5' -1
+Affect       'l*3' 18 '7' -1
+Affect       'l*3' 1 '3' -1
+Affect       'l*3' 17 '20' -1
 Minlevel     44
+End
+
+#SKILL
+Name         ojos maestros~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Code         spell_null
+Wearoff      !MASTERSEYE!~
+Difficulty   3
+Teachers     2302~
+Minlevel     92
+End
+
+#SKILL
+Name         olfatear~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       14
+Code         do_smell
+Minlevel     4
 End
 
 #SKILL
@@ -6266,7 +6347,22 @@ Minlevel     40
 End
 
 #SKILL
-Name         parry~
+Name         paralizar~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       108
+Rounds       12
+Code         do_stun
+Dammsg       stun~
+Wearoff      You regain consciousness.~
+Teachers     16722~
+Minlevel     95
+End
+
+#SKILL
+Name         parar~
 Type         Skill
 Info         0
 Flags        0
@@ -6278,7 +6374,7 @@ Minlevel     1
 End
 
 #SKILL
-Name         passage~
+Name         pasage~
 Type         Skill
 Info         0
 Flags        0
@@ -6288,15 +6384,40 @@ Minlevel     101
 End
 
 #SKILL
-Name         pawn mark~
+Name         patada~
 Type         Skill
 Info         0
-Flags        6144
-Minpos       108
-Rounds       18
-Code         do_pawn
-Teachers     16722~
-Minlevel     25
+Flags        0
+Target       1
+Minpos       105
+Min_dist     1
+Max_dist     6
+Rounds       12
+Code         do_kick
+Dammsg       patada~
+Minlevel     5
+End
+
+#SKILL
+Name         patada voladora~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       115
+Rounds       8
+Code         do_butterfly_kick
+Dammsg       patada voladora~
+Minlevel     40
+End
+
+#SKILL
+Name         pedernal~
+Type         Skill
+Info         0
+Flags        0
+Code         do_flint_fire
+Minlevel     1
 End
 
 #SKILL
@@ -6311,29 +6432,56 @@ Minlevel     1
 End
 
 #SKILL
-Name         phase~
+Name         piel de corteza~
 Type         Skill
 Info         0
 Flags        0
-Minpos       108
-Rounds       14
-Code         do_phase
-Wearoff      &YYour body stops phasing, as your concentration wanes.~
-Difficulty   5
-Teachers     2302~
-Minlevel     21
+Code         spell_null
+Minlevel     13
 End
 
 #SKILL
-Name         pick lock~
+Name         piel de granito~
 Type         Skill
 Info         0
 Flags        0
+Code         spell_null
+Teachers     2302~
+Minlevel     26
+End
+
+#SKILL
+Name         piel de marmol~
+Type         Skill
+Info         0
+Flags        0
+Code         spell_null
+Minlevel     5
+End
+
+#SKILL
+Name         piel gruesa~
+Type         Skill
+Info         0
+Flags        0
+Code         spell_null
+Minlevel     13
+End
+
+#SKILL
+Name         piel metalica~
+Type         Skill
+Info         0
+Flags        0
+Target       3
 Minpos       115
-Rounds       12
-Code         do_pick
-Wearoff      !Pick!~
-Minlevel     4
+Rounds       30
+Code         do_iron_skin
+Wearoff      Your skin no longer feels as hard as iron.~
+Hitvict      &D~
+Hitroom      $n skin looks hard as stone.~
+Difficulty   2
+Minlevel     17
 End
 
 #SKILL
@@ -6370,31 +6518,12 @@ Minlevel     22
 End
 
 #SKILL
-Name         poison weapon~
+Name         posesion de bestias~
 Type         Skill
 Info         0
 Flags        0
-Target       4
-Minpos       115
-Rounds       12
-Code         do_poison_weapon
-Dammsg       poisonous concoction~
-Wearoff      !Poison Weapon!~
-Teachers     26001~
-Minlevel     40
-End
-
-#SKILL
-Name         poultice~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Slot         297
-Rounds       12
-Code         do_poultice
-Wearoff      !Nostrum!~
-Minlevel     2
+Code         do_beast_meld
+Minlevel     9
 End
 
 #SKILL
@@ -6411,7 +6540,7 @@ Minlevel     42
 End
 
 #SKILL
-Name         punch~
+Name         punyetazo~
 Type         Skill
 Info         0
 Flags        0
@@ -6419,20 +6548,20 @@ Target       1
 Minpos       108
 Rounds       7
 Code         do_punch
-Dammsg       punch~
+Dammsg       punyetazo~
 Minlevel     1
 End
 
 #SKILL
-Name         quivering palm~
+Name         quinto ataque~
 Type         Skill
 Info         0
 Flags        0
-Minpos       108
-Rounds       16
-Code         do_quivering_palm
-Dammsg       quivering palm~
-Minlevel     80
+Minpos       105
+Code         spell_null
+Wearoff      !Fifth Attack!~
+Teachers     6255~
+Minlevel     35
 End
 
 #SKILL
@@ -6460,8 +6589,8 @@ Wearoff      &wYour concentration of Rallying Cry has been lost.~
 Hitvict      &cYou let out a rallying cry and focus with intense concentration!~
 Misschar     &cYou let out a rallying cry, but lose your voice.~
 Teachers     26001~
-Affect       'l*3' 18 '2' -1
 Affect       'l*3' 2 '1' -1
+Affect       'l*3' 18 '2' -1
 Minlevel     24
 End
 
@@ -6478,34 +6607,32 @@ Minlevel     23
 End
 
 #SKILL
-Name         recoil~
+Name         rastrear~
 Type         Skill
 Info         0
-Flags        39936
-Target       2
+Flags        0
 Minpos       115
-Rounds       18
-Code         do_recoil
-Wearoff      You're no longer recoiled.~
-Hitchar      &w~
-Hitvict      &w~
-Teachers     2302~
-Minlevel     49
-End
-
-#SKILL
-Name         regenerate~
-Type         Skill
-Info         8192
-Flags        6144
-Minpos       108
 Rounds       14
-Code         spell_null
-Minlevel     15
+Code         do_track
+Teachers     18607~
+Minlevel     8
 End
 
 #SKILL
-Name         remember~
+Name         rayo poderoso~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       20
+Code         do_eldritch_bolt
+Dammsg       eldritch bolt~
+Teachers     30025~
+Minlevel     90
+End
+
+#SKILL
+Name         recordar~
 Type         Skill
 Info         0
 Flags        0
@@ -6520,42 +6647,130 @@ Minlevel     30
 End
 
 #SKILL
-Name         restring~
+Name         regenerar~
 Type         Skill
-Info         0
-Flags        0
+Info         8192
+Flags        6144
 Minpos       108
 Rounds       14
 Code         spell_null
-Minlevel     8
+Minlevel     15
 End
 
 #SKILL
-Name         righteous blow~
+Name         resistencia~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Code         spell_null
+Wearoff      !ENDURANCE!~
+Difficulty   4
+Teachers     18607~
+Minlevel     1
+End
+
+#SKILL
+Name         respirar~
 Type         Skill
 Info         0
 Flags        0
 Target       1
 Minpos       108
-Rounds       16
-Code         do_righteous_blow
-Dammsg       righteous blow~
-Teachers     16722~
+Rounds       15
+Code         do_breathe
+Dammsg       aliento~
+Minlevel     2
+End
+
+#SKILL
+Name         respirarfuego~
+Type         Skill
+Info         1
+Flags        0
+Target       1
+Minpos       108
+Rounds       12
+Code         do_flamebreath
+Dammsg       breath of flames~
+Teachers     31469~
+Minlevel     27
+End
+
+#SKILL
+Name         reunir~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       15
+Code         do_gather
+Minlevel     101
+End
+
+#SKILL
+Name         reves~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       8
+Code         do_backhand
+Dammsg       reves~
 Minlevel     20
 End
 
 #SKILL
-Name         root~
+Name         robar~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       24
+Code         do_steal
+Minlevel     2
+End
+
+#SKILL
+Name         rodear~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       15
+Code         do_circle
+Dammsg       ataque a traicion~
+Wearoff      !Circle!~
+Teachers     26001~
+Minlevel     30
+End
+
+#SKILL
+Name         rodillazo~
+Type         Skill
+Info         8192
+Flags        6144
+Target       1
+Minpos       108
+Rounds       8
+Code         do_knee
+Dammsg       rodillazo~
+Minlevel     10
+End
+
+#SKILL
+Name         romper~
 Type         Skill
 Info         0
 Flags        0
 Target       3
-Minpos       115
-Rounds       35
-Code         do_root
-Wearoff      Your feet are no longer rooted into the ground.~
-Teachers     6255~
-Minlevel     40
+Minpos       108
+Mana         20
+Rounds       20
+Code         do_break
+Difficulty   5
+Teachers     28262~
+Minlevel     85
 End
 
 #SKILL
@@ -6585,18 +6800,7 @@ Minlevel     47
 End
 
 #SKILL
-Name         search~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Rounds       20
-Code         do_search
-Minlevel     1
-End
-
-#SKILL
-Name         second attack~
+Name         segundo ataque~
 Type         Skill
 Info         0
 Flags        0
@@ -6606,7 +6810,17 @@ Minlevel     3
 End
 
 #SKILL
-Name         serenity~
+Name         septimo ataque~
+Type         Skill
+Info         0
+Flags        0
+Code         spell_null
+Teachers     2302~
+Minlevel     65
+End
+
+#SKILL
+Name         serenidad~
 Type         Skill
 Info         0
 Flags        0
@@ -6617,26 +6831,13 @@ Minlevel     15
 End
 
 #SKILL
-Name         seventh attack~
+Name         sexto ataque~
 Type         Skill
 Info         0
 Flags        0
 Code         spell_null
-Teachers     2302~
-Minlevel     65
-End
-
-#SKILL
-Name         shapeshift~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Rounds       14
-Code         do_shapeshift
-Hitchar      You feel a sharp pain as your body assumes another shape!~
-Difficulty   3
-Minlevel     101
+Teachers     10808~
+Minlevel     50
 End
 
 #SKILL
@@ -6646,16 +6847,6 @@ Info         0
 Flags        0
 Code         do_sharpen
 Minlevel     101
-End
-
-#SKILL
-Name         sharpen claws~
-Type         Skill
-Info         0
-Flags        0
-Code         do_sharpen_claws
-Teachers     16706~
-Minlevel     25
 End
 
 #SKILL
@@ -6671,36 +6862,7 @@ Minlevel     9
 End
 
 #SKILL
-Name         shield~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       108
-Slot         67
-Rounds       15
-Code         do_shield
-Wearoff      &YYour shield shimmers as it fades away.~
-Minlevel     2
-End
-
-#SKILL
-Name         shriek~
-Type         Skill
-Info         0
-Flags        16
-Minpos       109
-Mana         15
-Rounds       12
-Code         do_shriek
-Dammsg       shriek~
-Dice         R~
-Teachers     2302~
-Minlevel     35
-End
-
-#SKILL
-Name         shrink~
+Name         encoger~
 Type         Skill
 Info         0
 Flags        0
@@ -6714,28 +6876,6 @@ Minlevel     10
 End
 
 #SKILL
-Name         shroud spirit~
-Type         Skill
-Info         0
-Flags        0
-Code         do_shroud_spirit
-Minlevel     15
-End
-
-#SKILL
-Name         sidestep~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Rounds       25
-Code         do_sidestep
-Wearoff      You're no longer off balance.~
-Teachers     6255~
-Minlevel     25
-End
-
-#SKILL
 Name         siphon strength~
 Type         Skill
 Info         0
@@ -6746,16 +6886,6 @@ Code         do_siphon_strength
 Dammsg       siphoning ~
 Wearoff      You feel as if your strength has returned to normal.~
 Minlevel     101
-End
-
-#SKILL
-Name         sixth attack~
-Type         Skill
-Info         0
-Flags        0
-Code         spell_null
-Teachers     10808~
-Minlevel     50
 End
 
 #SKILL
@@ -6788,54 +6918,6 @@ Target       1
 Minpos       115
 Rounds       12
 Code         do_slice
-Minlevel     1
-End
-
-#SKILL
-Name         smell~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Rounds       14
-Code         do_smell
-Minlevel     4
-End
-
-#SKILL
-Name         smuggle~
-Type         Skill
-Info         0
-Flags        0
-Rounds       20
-Code         do_smuggle
-Teachers     26001~
-Minlevel     60
-End
-
-#SKILL
-Name         snatch~
-Type         Skill
-Info         0
-Flags        0
-Rounds       18
-Code         do_snatch
-Dammsg       massive jaws~
-Minlevel     5
-End
-
-#SKILL
-Name         sneak~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       115
-Rounds       1
-Code         do_sneak
-Wearoff      You lose your precarious balance and no longer move silently.~
-Misschar     You try to move silently, but something crunches under your foot.~
-Missvict     You try to move silently, but something crunches under your foot.~
 Minlevel     1
 End
 
@@ -6927,35 +7009,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         stalk prey~
-Type         Skill
-Info         0
-Flags        0
-Code         do_stalk_prey
-Minlevel     6
-End
-
-#SKILL
-Name         steal~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Rounds       24
-Code         do_steal
-Minlevel     2
-End
-
-#SKILL
-Name         steed~
-Type         Skill
-Info         0
-Flags        0
-Code         do_steed
-Minlevel     14
-End
-
-#SKILL
 Name         sting~
 Type         Skill
 Info         0
@@ -7006,21 +7059,6 @@ Minlevel     35
 End
 
 #SKILL
-Name         stun~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       108
-Rounds       12
-Code         do_stun
-Dammsg       stun~
-Wearoff      You regain consciousness.~
-Teachers     16722~
-Minlevel     95
-End
-
-#SKILL
 Name         submerged~
 Type         Skill
 Info         0
@@ -7034,7 +7072,7 @@ Minlevel     10
 End
 
 #SKILL
-Name         surreal speed~
+Name         velocidad surealista~
 Type         Skill
 Info         0
 Flags        0
@@ -7131,18 +7169,6 @@ Minlevel     29
 End
 
 #SKILL
-Name         tackle~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Rounds       13
-Code         do_tackle
-Dammsg       tackle~
-Minlevel     10
-End
-
-#SKILL
 Name         tail swipe~
 Type         Skill
 Info         0
@@ -7156,12 +7182,15 @@ Minlevel     8
 End
 
 #SKILL
-Name         tame~
+Name         talar~
 Type         Skill
 Info         0
 Flags        0
-Code         do_tame
-Minlevel     5
+Minpos       115
+Slot         294
+Rounds       12
+Code         do_fell
+Minlevel     101
 End
 
 #SKILL
@@ -7188,26 +7217,24 @@ Minlevel     2
 End
 
 #SKILL
-Name         tears~
-Type         Skill
-Info         0
-Flags        0
-Minpos       109
-Mana         25
-Rounds       15
-Code         do_tears
-Teachers     16722~
-Minlevel     43
-End
-
-#SKILL
-Name         telepathy~
+Name         telepatia~
 Type         Skill
 Info         0
 Flags        0
 Rounds       12
 Code         do_telepathy
 Minlevel     1
+End
+
+#SKILL
+Name         tercer ataque~
+Type         Skill
+Info         0
+Flags        0
+Minpos       105
+Code         spell_null
+Teachers     16706~
+Minlevel     12
 End
 
 #SKILL
@@ -7226,15 +7253,6 @@ Minlevel     25
 End
 
 #SKILL
-Name         thick hide~
-Type         Skill
-Info         0
-Flags        0
-Code         spell_null
-Minlevel     13
-End
-
-#SKILL
 Name         thicken skin~
 Type         Skill
 Info         0
@@ -7244,17 +7262,6 @@ Rounds       16
 Code         do_thicken_skin
 Wearoff      Your skin feels softer, and more supple, as the thickness wears off.~
 Minlevel     2
-End
-
-#SKILL
-Name         third attack~
-Type         Skill
-Info         0
-Flags        0
-Minpos       105
-Code         spell_null
-Teachers     16706~
-Minlevel     12
 End
 
 #SKILL
@@ -7270,6 +7277,55 @@ Minlevel     101
 End
 
 #SKILL
+Name         toque de hielo~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       108
+Min_dist     8
+Max_dist     12
+Slot         82
+Mana         15
+Rounds       12
+Code         do_icy_touch
+Dammsg       icy touch~
+Difficulty   1
+Minlevel     60
+End
+
+#SKILL
+Name         toque frio~
+Type         Skill
+Info         8192
+Flags        6144
+Target       1
+Minpos       108
+Rounds       8
+Code         do_chilled_touch
+Dammsg       chilled touch~
+Teachers     2760~
+Minlevel     20
+End
+
+#SKILL
+Name         toque helado~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       109
+Max_dist     3
+Slot         5
+Mana         15
+Rounds       12
+Code         do_frost_touch
+Dammsg       frost touch~
+Difficulty   2
+Minlevel     40
+End
+
+#SKILL
 Name         torture mind~
 Type         Skill
 Info         0
@@ -7279,18 +7335,6 @@ Rounds       18
 Code         do_torture_mind
 Dammsg       mind torture~
 Minlevel     60
-End
-
-#SKILL
-Name         track~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Rounds       14
-Code         do_track
-Teachers     18607~
-Minlevel     8
 End
 
 #SKILL
@@ -7321,36 +7365,13 @@ Minlevel     2
 End
 
 #SKILL
-Name         tumble~
-Type         Skill
-Info         0
-Flags        0
-Target       2
-Minpos       108
-Code         spell_null
-Wearoff      !Tumble!~
-Minlevel     11
-End
-
-#SKILL
-Name         unholy sphere~
+Name         esfera profana~
 Type         Skill
 Info         0
 Flags        0
 Code         do_unholy_sphere
 Wearoff      &rYour unholy sphere shimmers then disappears~
 Minlevel     4
-End
-
-#SKILL
-Name         untangle~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Rounds       20
-Code         do_untangle
-Minlevel     10
 End
 
 #SKILL
@@ -7365,14 +7386,14 @@ Code         spell_smaug
 Wearoff      You feel more vulnerable as valtors song ends...~
 Hitchar      &cYou begin to sing Valtors Song.~
 Hitvict      &cYou feel more perceptive of the battle as Valtors Song meets your ears.~
-Affect       'l' 40 '10' -1
-Affect       'l' 48 '10' -1
 Affect       '(null)' 17 '-25' -1
+Affect       'l' 48 '10' -1
+Affect       'l' 40 '10' -1
 Minlevel     43
 End
 
 #SKILL
-Name         vampiric strength~
+Name         fuerza vampirica~
 Type         Skill
 Info         0
 Flags        0
@@ -7381,6 +7402,21 @@ Minpos       115
 Code         do_vampiric_strength
 Wearoff      You lose your concentration suddenly and your vampiric strength wanes.~
 Minlevel     1
+End
+
+#SKILL
+Name         ventisca~
+Type         Skill
+Info         394
+Flags        6160
+Target       1
+Minpos       108
+Mana         30
+Rounds       12
+Code         do_blizzard
+Dammsg       Blizzard~
+Teachers     26001~
+Minlevel     37
 End
 
 #SKILL
@@ -7425,24 +7461,12 @@ Hitroom      $N convulses as $n inflicts a silent curse...~
 Misschar     There seems to be no effect...~
 Missvict     $n extends a clawed hand toward you...~
 Missroom     $n extends a clawed hand toward $N...~
-Affect       '12' 26 'curse' 10
-Affect       '12' 18 '-(l/8)' -1
-Affect       '12' 19 '-(l/8)' -1
-Affect       '12' 24 'l/18' -1
 Affect       '12' 31 '-1' -1
+Affect       '12' 24 'l/18' -1
+Affect       '12' 19 '-(l/8)' -1
+Affect       '12' 18 '-(l/8)' -1
+Affect       '12' 26 'curse' 10
 Minlevel     101
-End
-
-#SKILL
-Name         wailing haze~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       108
-Rounds       12
-Code         do_wailing
-Minlevel     20
 End
 
 #SKILL
@@ -7459,30 +7483,6 @@ Minlevel     32
 End
 
 #SKILL
-Name         wings~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       108
-Rounds       13
-Code         do_wings
-Wearoff      Worn out from flying, you land gently in a swirl of dust.~
-Minlevel     1
-End
-
-#SKILL
-Name         wolf spirit~
-Type         Skill
-Info         0
-Flags        0
-Rounds       12
-Code         do_wolf_spirit
-Teachers     2302~
-Minlevel     40
-End
-
-#SKILL
 Name         woodwinds~
 Type         Skill
 Info         0
@@ -7492,45 +7492,13 @@ Minlevel     18
 End
 
 #SKILL
-Name         1h axes~
+Name         'armas largas mejoradas'~
 Type         Weapon
 Info         0
 Flags        0
 Code         spell_null
 Difficulty   5
-Minlevel     1
-End
-
-#SKILL
-Name         1h bludgeons~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Difficulty   5
-Minlevel     1
-End
-
-#SKILL
-Name         1h long blades~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Wearoff      !swords!~
-Difficulty   5
-Minlevel     1
-End
-
-#SKILL
-Name         1h short blades~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Wearoff      !daggers!~
-Difficulty   5
-Minlevel     1
+Minlevel     101
 End
 
 #SKILL
@@ -7555,16 +7523,6 @@ Minlevel     1
 End
 
 #SKILL
-Name         2h long blades~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Difficulty   5
-Minlevel     1
-End
-
-#SKILL
 Name         archery~
 Type         Weapon
 Info         0
@@ -7576,7 +7534,40 @@ Minlevel     1
 End
 
 #SKILL
-Name         blowguns~
+Name         armas cortas~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Wearoff      !daggers!~
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         armas largas~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Wearoff      !swords!~
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         bastones~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Wearoff      !staves!~
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         cerbatanas~
 Type         Weapon
 Info         0
 Flags        0
@@ -7587,7 +7578,60 @@ Minlevel     1
 End
 
 #SKILL
-Name         flails~
+Name         garras~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Wearoff      !talons!~
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         hachas~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         impactos~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         lanzas~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Wearoff      !spears!~
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         latigos~
+Type         Weapon
+Info         0
+Flags        0
+Code         spell_null
+Wearoff      !whips!~
+Difficulty   5
+Minlevel     1
+End
+
+#SKILL
+Name         mayales~
 Type         Weapon
 Info         0
 Flags        0
@@ -7598,7 +7642,7 @@ Minlevel     1
 End
 
 #SKILL
-Name         lances~
+Name         picas~
 Type         Weapon
 Info         0
 Flags        0
@@ -7609,7 +7653,7 @@ Minlevel     1
 End
 
 #SKILL
-Name         polearms~
+Name         poleas~
 Type         Weapon
 Info         0
 Flags        0
@@ -7623,50 +7667,6 @@ Type         Weapon
 Info         0
 Flags        0
 Code         spell_null
-Difficulty   5
-Minlevel     1
-End
-
-#SKILL
-Name         spears~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Wearoff      !spears!~
-Difficulty   5
-Minlevel     1
-End
-
-#SKILL
-Name         staves~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Wearoff      !staves!~
-Difficulty   5
-Minlevel     1
-End
-
-#SKILL
-Name         talons~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Wearoff      !talons!~
-Difficulty   5
-Minlevel     1
-End
-
-#SKILL
-Name         whips~
-Type         Weapon
-Info         0
-Flags        0
-Code         spell_null
-Wearoff      !whips!~
 Difficulty   5
 Minlevel     1
 End
@@ -7700,7 +7700,7 @@ Minlevel     1
 End
 
 #SKILL
-Name         demonic~
+Name         demonio~
 Type         Tongue
 Info         0
 Flags        0
@@ -7826,18 +7826,31 @@ Minlevel     1
 End
 
 #SKILL
-Name         druidic hymn~
+Name         balada agitadora~
 Type         Song
 Info         0
 Flags        0
-Target       3
-Minpos       106
-Mana         30
-Rounds       20
-Code         do_druidic_hymn
-Wearoff      &OYou feel the regenerating druidic powers suddenly leave you!~
+Rounds       18
+Code         do_stirring_ballad
+Wearoff      You feel drained as healing energies leave your body!!~
+Teachers     26001~
 Somatic      1
-Minlevel     15
+Minlevel     32
+End
+
+#SKILL
+Name         danza irresistible~
+Type         Song
+Info         0
+Flags        0
+Target       1
+Minpos       111
+Slot         343
+Mana         10
+Rounds       12
+Code         do_ottos_dance
+Somatic      1
+Minlevel     24
 End
 
 #SKILL
@@ -7854,34 +7867,22 @@ Minlevel     12
 End
 
 #SKILL
-Name         harmonic melody~
-Type         Song
-Info         0
-Flags        8192
-Minpos       108
-Rounds       18
-Code         do_harmonic_melody
-Wearoff      You feel rage and pent up energy seep from your body!!~
-Minlevel     20
-End
-
-#SKILL
-Name         ottos dance~
+Name         inmunidad druidica~
 Type         Song
 Info         0
 Flags        0
-Target       1
-Minpos       111
-Slot         343
-Mana         10
-Rounds       12
-Code         do_ottos_dance
+Target       3
+Minpos       106
+Mana         30
+Rounds       20
+Code         do_druidic_hymn
+Wearoff      &OYou feel the regenerating druidic powers suddenly leave you!~
 Somatic      1
-Minlevel     24
+Minlevel     15
 End
 
 #SKILL
-Name         rousing tune~
+Name         inspiracion heroica~
 Type         Song
 Info         0
 Flags        0
@@ -7894,7 +7895,33 @@ Minlevel     8
 End
 
 #SKILL
-Name         shrieking note~
+Name         melodia armonica~
+Type         Song
+Info         0
+Flags        8192
+Minpos       108
+Rounds       18
+Code         do_harmonic_melody
+Wearoff      You feel rage and pent up energy seep from your body!!~
+Minlevel     20
+End
+
+#SKILL
+Name         melodia profana~
+Type         Song
+Info         840
+Flags        0
+Target       1
+Minpos       111
+Slot         95
+Mana         15
+Rounds       15
+Code         do_unholy_melody
+Minlevel     80
+End
+
+#SKILL
+Name         notas disonantes~
 Type         Song
 Info         0
 Flags        0
@@ -7907,7 +7934,7 @@ Minlevel     5
 End
 
 #SKILL
-Name         sound waves~
+Name         ondas sonoras~
 Type         Song
 Info         0
 Flags        0
@@ -7921,20 +7948,7 @@ Minlevel     92
 End
 
 #SKILL
-Name         stirring ballad~
-Type         Song
-Info         0
-Flags        0
-Rounds       18
-Code         do_stirring_ballad
-Wearoff      You feel drained as healing energies leave your body!!~
-Teachers     26001~
-Somatic      1
-Minlevel     32
-End
-
-#SKILL
-Name         thunderous hymn~
+Name         sonido destructor~
 Type         Song
 Info         0
 Flags        0
@@ -7943,20 +7957,6 @@ Code         do_thunderous_hymn
 Dammsg       sound wave~
 Teachers     26001~
 Minlevel     55
-End
-
-#SKILL
-Name         unholy melody~
-Type         Song
-Info         840
-Flags        0
-Target       1
-Minpos       111
-Slot         95
-Mana         15
-Rounds       15
-Code         do_unholy_melody
-Minlevel     80
 End
 
 #END

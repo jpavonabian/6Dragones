@@ -818,19 +818,19 @@ void do_mpassist( CHAR_DATA *ch, char *argument )
         target = who_fighting( victim );
 
         if ( !IS_NPC( target ) )
-            ch_printf( victim, "%s takes up a fighting position and attacks %s.\r\n",
+            ch_printf( victim, "%s adopta una posición agresiva y ataca a %s.\r\n",
                        ch->short_descr, target->name );
         else
-            ch_printf( victim, "%s takes up a fighting position and attacks %s.\r\n",
+            ch_printf( victim, "%s adopta una posición agresiva y comienza a atacar a %s.\r\n",
                        ch->short_descr, target->short_descr );
 
         if ( !IS_NPC( victim ) )
             ch_printf( target,
-                       "%s takes up a fighting position and defends %s by attacking you .\r\n",
+                       "%s adopta una posición agresiva y defiende a %s atacándote.\r\n",
                        ch->short_descr, victim->name );
         else
             ch_printf( target,
-                       "%s takes up a fighting position and defends %s by attacking you .\r\n",
+                       "%s adopta una posición agresiva y defiende a %s atacándote.\r\n",
                        ch->short_descr, victim->short_descr );
 
         set_fighting( ch, target );
