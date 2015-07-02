@@ -1055,108 +1055,108 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_bone, "hueso" );
         ASSIGN_GSN( gsn_angelfire, "fuego angelical" );
         ASSIGN_GSN( gsn_unholy_sphere, "esfera profana" );
-        ASSIGN_GSN( gsn_charge, "cargar" ); // ultimo traducido
-        ASSIGN_GSN( gsn_downward_slash, "" );
-        ASSIGN_GSN( gsn_overhead_slash, "overhead slash" );
-        ASSIGN_GSN( gsn_meditate, "meditate" );
+        ASSIGN_GSN( gsn_charge, "cargar" );
+        ASSIGN_GSN( gsn_downward_slash, "envestir" );
+        ASSIGN_GSN( gsn_overhead_slash, "estocada" );
+        ASSIGN_GSN( gsn_meditate, "meditar" );
         ASSIGN_GSN( gsn_trance, "trance" );
-        ASSIGN_GSN( gsn_pluck, "pluck" );
-        ASSIGN_GSN( gsn_drop, "drop" );
-        ASSIGN_GSN( gsn_rage, "rage" );
-        ASSIGN_GSN( gsn_fly_home, "fly home" );
-        ASSIGN_GSN( gsn_breech, "breech" );
-        ASSIGN_GSN( gsn_draw_mana, "draw mana" );      // Taon
-        ASSIGN_GSN( gsn_frigid_touch, "frigid touch" ); // Vladaar
-        ASSIGN_GSN( gsn_siphon_strength, "siphon strength" );   // Vladaar
-        ASSIGN_GSN( gsn_devour, "devour" );
-        ASSIGN_GSN( gsn_spike, "spike" );
-        ASSIGN_GSN( gsn_gut, "gut" );
-        ASSIGN_GSN( gsn_submerged, "submerged" );
+        ASSIGN_GSN( gsn_pluck, "ataqueaereo" );
+        ASSIGN_GSN( gsn_drop, "caida" );
+        ASSIGN_GSN( gsn_rage, "rabia" );
+        ASSIGN_GSN( gsn_fly_home, "volar casa" );
+        ASSIGN_GSN( gsn_breech, "espaciotiempo" );
+        ASSIGN_GSN( gsn_draw_mana, "" );      // Taon
+        ASSIGN_GSN( gsn_frigid_touch, "" ); // Vladaar
+        ASSIGN_GSN( gsn_siphon_strength, "" );   // Vladaar
+        ASSIGN_GSN( gsn_devour, "devorar" );
+        ASSIGN_GSN( gsn_spike, "pinchos" );
+        ASSIGN_GSN( gsn_gut, "destripar" );
+        ASSIGN_GSN( gsn_submerged, "sumergirse" );
         ASSIGN_GSN( gsn_deathroll, "deathroll" );
-        ASSIGN_GSN( gsn_ballistic, "ballistic" );
-        ASSIGN_GSN( gsn_hellfire, "hellfire" );
-        ASSIGN_GSN( gsn_flaming_shield, "flaming shield" );
+        ASSIGN_GSN( gsn_ballistic, "ballistic" ); // revisar
+        ASSIGN_GSN( gsn_hellfire, "fuegoinfernal" );
+        ASSIGN_GSN( gsn_flaming_shield, "escudo igneo" );
         ASSIGN_GSN( gsn_flaming_whip, "flaming whip" );
 
 /* Bard stuff! */
-        ASSIGN_GSN( gsn_play, "play" );
-        ASSIGN_GSN( gsn_vocals, "vocals" );
-        ASSIGN_GSN( gsn_woodwinds, "woodwinds" );
-        ASSIGN_GSN( gsn_strings, "strings" );
-        ASSIGN_GSN( gsn_brass, "brass" );
-        ASSIGN_GSN( gsn_drums, "drums" );
+        ASSIGN_GSN( gsn_play, "interpretar" );
+        ASSIGN_GSN( gsn_vocals, "voz" );
+        ASSIGN_GSN( gsn_woodwinds, "instrumentos de viento" );
+        ASSIGN_GSN( gsn_strings, "instrumentos de cuerda" );
+        ASSIGN_GSN( gsn_brass, "instrumentos metalicos" );
+        ASSIGN_GSN( gsn_drums, "tambores" );
 
 /* Brain guy skills */
-        ASSIGN_GSN( gsn_choke, "choke" );
-        ASSIGN_GSN( gsn_thicken_skin, "thicken skin" );
-        ASSIGN_GSN( gsn_mental_assault, "mental assault" );
-        ASSIGN_GSN( gsn_kinetic_barrier, "kinetic barrier" );
-        ASSIGN_GSN( gsn_leech, "leech" );
-        ASSIGN_GSN( gsn_dream_walk, "dream walk" );
-        ASSIGN_GSN( gsn_psionic_blast, "psionic blast" );
-        ASSIGN_GSN( gsn_graft_weapon, "graft weapon" );
-        ASSIGN_GSN( gsn_chameleon, "chameleon" );
-        ASSIGN_GSN( gsn_heal, "heal" );
-        ASSIGN_GSN( gsn_healing_thoughts, "healing thoughts" );
-        ASSIGN_GSN( gsn_object_reading, "object reading" );
+        ASSIGN_GSN( gsn_choke, "estrangular" );
+        ASSIGN_GSN( gsn_thicken_skin, "piel pesada" );
+        ASSIGN_GSN( gsn_mental_assault, "asalto mental" );
+        ASSIGN_GSN( gsn_kinetic_barrier, "barrera cinetica" );
+        ASSIGN_GSN( gsn_leech, "sanguijuela" );
+        ASSIGN_GSN( gsn_dream_walk, "caminar en suenyos" );
+        ASSIGN_GSN( gsn_psionic_blast, "golpe sionico" );
+        ASSIGN_GSN( gsn_graft_weapon, "injertar arma" );
+        ASSIGN_GSN( gsn_chameleon, "camaleon" );
+        ASSIGN_GSN( gsn_heal, "sanar" );
+        ASSIGN_GSN( gsn_healing_thoughts, "toque sanador" );
+        ASSIGN_GSN( gsn_object_reading, "leer objeto" );
         ASSIGN_GSN( gsn_lore, "lore" );
-        ASSIGN_GSN( gsn_whip_of_murazor, "whip of murazor" );
-        ASSIGN_GSN( gsn_astral_body, "astral body" );
-        ASSIGN_GSN( gsn_sustenance, "sustenance" );
-        ASSIGN_GSN( gsn_fear, "fear" );
-        ASSIGN_GSN( gsn_drowsy, "drowsy" );
-        ASSIGN_GSN( gsn_torture_mind, "torture mind" );
+        ASSIGN_GSN( gsn_whip_of_murazor, "latigo de murazor" );
+        ASSIGN_GSN( gsn_astral_body, "cuerpo astral" );
+        ASSIGN_GSN( gsn_sustenance, "sustento" );
+        ASSIGN_GSN( gsn_fear, "miedo" );
+        ASSIGN_GSN( gsn_drowsy, "adormecer" );
+        ASSIGN_GSN( gsn_torture_mind, "tortura mental" );
 
-        ASSIGN_GSN( gsn_thaitin, "thaitin" );
-        ASSIGN_GSN( gsn_truesight, "truesight" );
-        ASSIGN_GSN( gsn_nosight, "nosight" );
-        ASSIGN_GSN( gsn_tail_swipe, "tail swipe" );
-        ASSIGN_GSN( gsn_gust_of_wind, "gust of wind" );
-        ASSIGN_GSN( gsn_stomp, "stomp" );
-        ASSIGN_GSN( gsn_bite, "bite" );
-        ASSIGN_GSN( gsn_claw, "claw" );
-        ASSIGN_GSN( gsn_sting, "sting" );
-        ASSIGN_GSN( gsn_scribe, "scribe" );
-        ASSIGN_GSN( gsn_brew, "brew" );
-        ASSIGN_GSN( gsn_climb, "climb" );
-        ASSIGN_GSN( gsn_cook, "cook" );
-        ASSIGN_GSN( gsn_scan, "scan" );
-        ASSIGN_GSN( gsn_slice, "slice" );
-        ASSIGN_GSN( gsn_fireball, "fireball" );
-        ASSIGN_GSN( gsn_aqua_breath, "aqua breath" );
-        ASSIGN_GSN( gsn_swim, "swim" );
-        ASSIGN_GSN( gsn_blindness, "blindness" );
-        ASSIGN_GSN( gsn_curse, "curse" );
-        ASSIGN_GSN( gsn_invis, "invis" );
-        ASSIGN_GSN( gsn_spectral_ward, "spectral ward" );
-        ASSIGN_GSN( gsn_spirits_ward, "spirits ward" );
-        ASSIGN_GSN( gsn_mass_invis, "mass invis" );
-        ASSIGN_GSN( gsn_poison, "poison" );
-        ASSIGN_GSN( gsn_sleep, "sleep" );
+        ASSIGN_GSN( gsn_thaitin, "quemar" );
+        ASSIGN_GSN( gsn_truesight, "vision mejorada" );
+        ASSIGN_GSN( gsn_nosight, "nocegar" );
+        ASSIGN_GSN( gsn_tail_swipe, "coletazo" );
+        ASSIGN_GSN( gsn_gust_of_wind, "rafaga de viento" );
+        ASSIGN_GSN( gsn_stomp, "pisar" );
+        ASSIGN_GSN( gsn_bite, "morder" );
+        ASSIGN_GSN( gsn_claw, "zarpazo" );
+        ASSIGN_GSN( gsn_sting, "picar" );
+        ASSIGN_GSN( gsn_scribe, "escribir" );
+        ASSIGN_GSN( gsn_brew, "preparar" );
+        ASSIGN_GSN( gsn_climb, "trepar" );
+        ASSIGN_GSN( gsn_cook, "cocinar" );
+        ASSIGN_GSN( gsn_scan, "otear" );
+        ASSIGN_GSN( gsn_slice, "rebanar" );
+        ASSIGN_GSN( gsn_fireball, "bolafuego" );
+        ASSIGN_GSN( gsn_aqua_breath, "respiracion acuatica" );
+        ASSIGN_GSN( gsn_swim, "nadar" );
+        ASSIGN_GSN( gsn_blindness, "cegar" );
+        ASSIGN_GSN( gsn_curse, "maldecir" );
+        ASSIGN_GSN( gsn_invis, "invisibilidad" );
+        ASSIGN_GSN( gsn_spectral_ward, "proteccion espectral" );
+        ASSIGN_GSN( gsn_spirits_ward, "proteccion espiritual" );
+        ASSIGN_GSN( gsn_mass_invis, "grupo invisible" );
+        ASSIGN_GSN( gsn_poison, "veneno" );
+        ASSIGN_GSN( gsn_sleep, "dormir" );
         ASSIGN_GSN( gsn_possess, "possess" );
-        ASSIGN_GSN( gsn_common, "common" );
-        ASSIGN_GSN( gsn_elven, "elven" );
-        ASSIGN_GSN( gsn_dwarven, "dwarven" );
-        ASSIGN_GSN( gsn_pixish, "pixish" );
-        ASSIGN_GSN( gsn_ogrian, "ogrian" );
-        ASSIGN_GSN( gsn_orcish, "orcish" );
-        ASSIGN_GSN( gsn_trollese, "trollese" );
-        ASSIGN_GSN( gsn_goblic, "goblic" );
+        ASSIGN_GSN( gsn_common, "comun" );
+        ASSIGN_GSN( gsn_elven, "elfico" );
+        ASSIGN_GSN( gsn_dwarven, "enano" );
+        ASSIGN_GSN( gsn_pixish, "duende" );
+        ASSIGN_GSN( gsn_ogrian, "ogro" );
+        ASSIGN_GSN( gsn_orcish, "orco" );
+        ASSIGN_GSN( gsn_trollese, "troll" );
+        ASSIGN_GSN( gsn_goblic, "goblin" );
         ASSIGN_GSN( gsn_hobbit, "hobbit" );
-        ASSIGN_GSN( gsn_draconic, "draconic" );
-        ASSIGN_GSN( gsn_demonic, "demonic" );
-        ASSIGN_GSN( gsn_centaurian, "centaurian" );
-        ASSIGN_GSN( gsn_silent, "silent" );
+        ASSIGN_GSN( gsn_draconic, "draconiano" );
+        ASSIGN_GSN( gsn_demonic, "demoniaco" );
+        ASSIGN_GSN( gsn_centaurian, "centauriano" );
+        ASSIGN_GSN( gsn_silent, "silencio" );
 
-        ASSIGN_GSN( gsn_counterstrike, "counterstrike" );   // Taon
-        ASSIGN_GSN( gsn_blade_master, "blade master" ); // Taon
-        ASSIGN_GSN( gsn_heavy_hands, "heavy hands" );
-        ASSIGN_GSN( gsn_find_weakness, "find weakness" );   // Taon
-        ASSIGN_GSN( gsn_rapid_healing, "rapid healing" );   // Taon
-        ASSIGN_GSN( gsn_decree_decay, "decree decay" ); // Vladaar
-        ASSIGN_GSN( gsn_combat_mind, "combat mind" );  // Taon
-        ASSIGN_GSN( gsn_battle_trance, "battle trance" );   // Taon
-        ASSIGN_GSN( gsn_sharpen, "sharpen" );          /* sharpen skill --Cronel */
+        ASSIGN_GSN( gsn_counterstrike, "contraataque" );   // Taon
+        ASSIGN_GSN( gsn_blade_master, "maestro de armas" ); // Taon
+        ASSIGN_GSN( gsn_heavy_hands, "manos fuertes" );
+        ASSIGN_GSN( gsn_find_weakness, "encontrar debilidad" );   // Taon
+        ASSIGN_GSN( gsn_rapid_healing, "rapida curacion" );   // Taon
+        ASSIGN_GSN( gsn_decree_decay, "campo malevolo" ); // Vladaar
+        ASSIGN_GSN( gsn_combat_mind, "conocimientos de combate" );  // Taon
+        ASSIGN_GSN( gsn_battle_trance, "trance de batalla" );   // Taon
+        ASSIGN_GSN( gsn_sharpen, "afilar" );          /* sharpen skill --Cronel */
 
 /*  PRIESTS */
     }
