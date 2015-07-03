@@ -5556,6 +5556,14 @@ int get_wflag           args( ( char *flag ) );
 void init_area_weather  args( ( void ) );
 void save_weatherdata   args( ( void ) );
 
+/* complicaciones que facilitan la existencia */
+
+void spanish_smash args( ( char *str ) );
+const char* spanish_smash args( ( const char *str ) );
+bool compare( const char *str, const char *str2 );
+bool prefix( const char *str, const char *str2 );
+bool suffix( const char *str, const char *str2 );
+
 /* editor.c */
 #define start_editing(ch, data) start_editing_nolimit(ch, data, MSL)
 void                    start_editing_nolimit( CHAR_DATA *ch, char *data, short max_size );
@@ -5916,6 +5924,7 @@ void gain_craft         args( ( CHAR_DATA *ch, int gain ) );
 void gain_condition     args( ( CHAR_DATA *ch, int iCond, int value ) );
 void update_handler     args( ( void ) );
 void reboot_check       args( ( time_t reset ) );
+void trivia_update( void );
 
 /* build.c */
 int set_hp              args( ( int level ) );

@@ -11,9 +11,13 @@ Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYI
  * - Miscellaneous module                                                  *
  ***************************************************************************/
 
+#include <ctype.h>
 #include <stdarg.h>
 #include <string.h>
 #include "h/mud.h"
+#include <dirent.h>
+#include <stdio.h>
+#include "h/files.h"
 
 extern int              top_exit;
 

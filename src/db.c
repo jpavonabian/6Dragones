@@ -663,7 +663,7 @@ void boot_db( bool fCopyOver )
     GUID = 0;
     log_string( "Loading socials" );
     load_socials(  );
-
+   
     log_string( "Loading skill table" );
     load_skill_table(  );
     sort_skill_table(  );
@@ -903,7 +903,7 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_lick, "lamer" );
         ASSIGN_GSN( gsn_tears, "lagrimas" );
         ASSIGN_GSN( gsn_eldritch_bolt, "rayo poderoso" );
-        ASSIGN_GSN( gsn_taunt, "taunt" ); // hay que regresar aquí...
+        ASSIGN_GSN( gsn_taunt, "incitar" );
         ASSIGN_GSN( gsn_mortify, "mortificar" );
         ASSIGN_GSN( gsn_assault, "asaltar" );
         ASSIGN_GSN( gsn_enrage, "enfurecer" );
@@ -919,14 +919,14 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_1h_long_blades, "armas largas" );
         ASSIGN_GSN( gsn_1h_short_blades, "armas cortas" );
         ASSIGN_GSN( gsn_whips, "latigos" );
-        ASSIGN_GSN( gsn_2h_bludgeons, "impactos mejorados" ); // regresar aquí...
+        ASSIGN_GSN( gsn_2h_bludgeons, "impactos mejorados" );
         ASSIGN_GSN( gsn_1h_bludgeons, "impactos" );
         ASSIGN_GSN( gsn_blowguns, "cerbatanas" );
-        ASSIGN_GSN( gsn_2h_axes, "hachas mejoradas" ); // Regresar aquí...
+        ASSIGN_GSN( gsn_2h_axes, "hachas mejoradas" );
         ASSIGN_GSN( gsn_1h_axes, "1h axes" );
         ASSIGN_GSN( gsn_spears, "lanzas" );
         ASSIGN_GSN( gsn_staves, "bastones" );
-        ASSIGN_GSN( gsn_archery, "archery" ); // Regresar aquí.
+        ASSIGN_GSN( gsn_archery, "arquero" );
         ASSIGN_GSN( gsn_restring, "disparo veloz" );
         ASSIGN_GSN( gsn_lances, "picas" );
         ASSIGN_GSN( gsn_flails, "mayales" );
@@ -943,7 +943,7 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_phase, "desmaterializarse" );
         ASSIGN_GSN( gsn_hide, "ocultarse" );
         ASSIGN_GSN( gsn_smuggle, "contrabandear" ); // revisar
-        ASSIGN_GSN( gsn_peek, "fisgar" ); // regresar aquí
+        ASSIGN_GSN( gsn_peek, "fisgar" );
         ASSIGN_GSN( gsn_pick_lock, "forzar cerraduras" );
         ASSIGN_GSN( gsn_sneak, "disimular" );
         ASSIGN_GSN( gsn_steal, "robar" );
@@ -993,7 +993,7 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_kick, "patada" );
         ASSIGN_GSN( gsn_know_enemy, "conocer enemigo" );
         ASSIGN_GSN( gsn_quivering_palm, "bofeton" );
-        ASSIGN_GSN( gsn_inferno, "infierno" ); // regresar aquí...
+        ASSIGN_GSN( gsn_inferno, "infierno" );
         ASSIGN_GSN( gsn_blizzard, "ventisca" );
         ASSIGN_GSN( gsn_tackle, "desbalancear" );
         ASSIGN_GSN( gsn_backhand, "reves" );
@@ -1003,18 +1003,18 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_second_attack, "segundo ataque" );
         ASSIGN_GSN( gsn_third_attack, "tercer ataque" );
         ASSIGN_GSN( gsn_fourth_attack, "cuarto ataque" );
-        ASSIGN_GSN( gsn_fifth_attack, "" );
+        ASSIGN_GSN( gsn_fifth_attack, "quinto ataque" );
         ASSIGN_GSN( gsn_sixth_attack, "sexto ataque" );
         ASSIGN_GSN( gsn_seventh_attack, "septimo ataque" );
         ASSIGN_GSN( gsn_eighth_attack, "octavo ataque" );
         ASSIGN_GSN( gsn_dual_wield, "ambidiestro" );
         ASSIGN_GSN( gsn_punch, "punyetazo" );
-        ASSIGN_GSN( gsn_bash, "cabezazo" ); // regresar aquí...
+        ASSIGN_GSN( gsn_bash, "cabezazo" );
         ASSIGN_GSN( gsn_stun, "paralizar" );
         ASSIGN_GSN( gsn_bashdoor, "derribar" );
         ASSIGN_GSN( gsn_grip, "asir fuerte" );
         ASSIGN_GSN( gsn_berserk, "berserk" );
-        ASSIGN_GSN( gsn_hitall, "torbellino" ); // regresar aquí...
+        ASSIGN_GSN( gsn_hitall, "torbellino" );
         ASSIGN_GSN( gsn_feed, "alimentarse" );
         ASSIGN_GSN( gsn_bloodlet, "compartir" );
         ASSIGN_GSN( gsn_broach, "niebla" );
@@ -1023,14 +1023,14 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_mistwalk, "movimiento sombrio" );
         ASSIGN_GSN( gsn_forge, "forjar" );
         ASSIGN_GSN( gsn_mill, "moler" );
-        ASSIGN_GSN( gsn_jewelry, "joya" ); // regresar aquí...
-        ASSIGN_GSN( gsn_tan, "tan" ); // regresar aquí.
-        ASSIGN_GSN( gsn_hunt, "hunt" ); // revisar
-        ASSIGN_GSN( gsn_mix, "mezclar" ); // regresar aquí
+        ASSIGN_GSN( gsn_jewelry, "joya" );
+        ASSIGN_GSN( gsn_tan, "tan" ); // hay que regresar aquí...
+        ASSIGN_GSN( gsn_hunt, "presa" );
+        ASSIGN_GSN( gsn_mix, "mezclar" );
         ASSIGN_GSN( gsn_crafted_food, "alimentos elavorados" );
         ASSIGN_GSN( gsn_crafted_drink, "bebidas elavoradas" );
         ASSIGN_GSN( gsn_gather, "reunir" );
-        ASSIGN_GSN( gsn_bake, "hornear" ); // regresar aquí...
+        ASSIGN_GSN( gsn_bake, "hornear" );
         ASSIGN_GSN( gsn_aid, "ayudar" );
         ASSIGN_GSN( gsn_track, "rastrear" );
         ASSIGN_GSN( gsn_smell, "olfatear" );
@@ -1038,10 +1038,10 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_earthspeak, "hablar con la tierra" );
         ASSIGN_GSN( gsn_mount, "montar" );
         ASSIGN_GSN( gsn_snatch, "arrebatar" );
-        ASSIGN_GSN( gsn_shelter, "shelter" ); // regresar aquí...
+        ASSIGN_GSN( gsn_shelter, "refugiarse" );
         ASSIGN_GSN( gsn_gauge, "estudio vampirico" );
         ASSIGN_GSN( gsn_burrow, "enterrarse" );
-        ASSIGN_GSN( gsn_vampiric_strength, "" );
+        ASSIGN_GSN( gsn_vampiric_strength, "fuerza vampirica" );
         ASSIGN_GSN( gsn_surreal_speed, "velocidad surealista" );
         ASSIGN_GSN( gsn_shrink, "encoger" );
         ASSIGN_GSN( gsn_passage, "pasage" );
@@ -1065,15 +1065,15 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_rage, "rabia" );
         ASSIGN_GSN( gsn_fly_home, "volar casa" );
         ASSIGN_GSN( gsn_breech, "espaciotiempo" );
-        ASSIGN_GSN( gsn_draw_mana, "" );      // Taon
-        ASSIGN_GSN( gsn_frigid_touch, "" ); // Vladaar
+        ASSIGN_GSN( gsn_draw_mana, "draw mana" );      // Taon
+        ASSIGN_GSN( gsn_frigid_touch, "toque ardiente" ); // Vladaar
         ASSIGN_GSN( gsn_siphon_strength, "" );   // Vladaar
         ASSIGN_GSN( gsn_devour, "devorar" );
         ASSIGN_GSN( gsn_spike, "pinchos" );
         ASSIGN_GSN( gsn_gut, "destripar" );
         ASSIGN_GSN( gsn_submerged, "sumergirse" );
         ASSIGN_GSN( gsn_deathroll, "deathroll" );
-        ASSIGN_GSN( gsn_ballistic, "ballistic" ); // revisar
+        ASSIGN_GSN( gsn_ballistic, "lanzar" );
         ASSIGN_GSN( gsn_hellfire, "fuegoinfernal" );
         ASSIGN_GSN( gsn_flaming_shield, "escudo igneo" );
         ASSIGN_GSN( gsn_flaming_whip, "flaming whip" );
@@ -4471,6 +4471,88 @@ char                   *show_tilde( char *str )
 }
 
 /*
+ * Removes spanish accents & 'ñ' from a string. --Aryeh
+ */
+void spanish_smash( char *str )
+{
+	for( ; *str != '\0'; str++ )
+		if( *str == 'á' )
+			*str = 'a';
+		if( *str == 'é' )
+			*str = 'e';
+		if( *str == 'í' )
+			*str = 'i';
+		if( *str == 'ó' )
+			*str = 'o';
+		if( *str == 'ú' )
+			*str = 'u';
+		if( *str == 'ï' )
+			*str = 'i';
+		if( *str == 'ü' )
+			*str = 'u';
+		if( *str == 'ñ' )
+			*str = 'n';
+		if( *str == 'Á' )
+			*str = 'A';
+		if( *str == 'É' )
+			*str = 'E';
+		if( *str == 'Í' )
+			*str = 'I';
+		if( *str == 'Ó' )
+			*str = 'O';
+		if( *str == 'Ú' )
+			*str = 'U';
+		if( *str == 'Ï' )
+			*str = 'I';
+		if( *str == 'Ü' )
+			*str = 'U';
+		if( *str == 'Ñ' )
+			*str = 'N';
+	return;
+}
+
+const char* spanish_smash( const char *str )
+{
+    static char buf[MSL];
+	
+    mudstrlcpy( buf, str, sizeof( buf ) );
+    spanish_smash( buf );
+    return buf;
+}
+
+/*
+ * Compare strings, case & spanish characters insensitive.
+ * Return ***FALSE*** if different --Aryeh
+ */
+bool compare( const char *str, const char *str2 )
+{
+	if( !str )
+	{
+		bug( "Compare: null str." );
+		if( str2 )
+			fprintf( stderr, "compare: str: (Null)  str2: %s\n", str2 );
+		return FALSE;
+	}
+
+	if( !str2 )
+	{
+		bug( "Compare: null str2." );
+		if( str )
+			fprintf( stderr, "compare: str: %s  str2: (Null)\n", str );
+		return FALSE;
+	}
+
+	spanish_smash( str );
+	spanish_smash( str2 );
+	for( ; *str || *str2; str++, str2++ )
+	{
+		if( LOWER( *str ) != LOWER( *str2 ) )
+			return FALSE;
+	}
+
+	return TRUE;
+}
+/*
  * Compare strings, case insensitive.
  * Return TRUE if different
  *   (compatibility with historical functions).
@@ -4500,6 +4582,52 @@ bool new_str_cmp( const char *astr, const char *bstr, const char *filename, int 
     return FALSE;
 }
 
+/*
+ * Compare strings, case & spanish characters insensitive, for prefix matching.
+ * Return ***FALSE*** if str not a prefix of str2 --Aryeh
+ */
+bool prefix( const char *str, const char *str2 )
+{
+	if( !str )
+	{
+		bug( "prefix: null str." );
+		return FALSE;
+	}
+
+	if( !str2 )
+	{
+		bug( "prefix: null str2." );
+		return FALSE;
+	}
+ 
+	if( str[0] == '\0' )
+		return FALSE;
+
+	spanish_smash( str );
+	spanish_smash( str2 );
+	for( ; *str; str++, str2++ )
+	{
+		if( LOWER( *str ) != LOWER( *str2 ) )
+			return FALSE;
+	}
+
+	return TRUE;
+}
+
+/*
+ * Compare strings, case & spanish characters insensitive, for suffix matching.
+ * Return TRUE if str is a suffix of str2
+ */
+bool suffix( const char *str, const char *str2 )
+{
+	int sstr, sstr2;
+
+	sstr = strlen( str );
+	sstr2 = strlen( str2 );
+	if( sstr <= sstr2 && compare( str, str2 + sstr2 - sstr ) )
+		return TRUE;
+	return FALSE;
+}
 /* Compare strings, case insensitive, for prefix matching.
  * Return TRUE if astr not a prefix of bstr
  *   (compatibility with historical functions).
