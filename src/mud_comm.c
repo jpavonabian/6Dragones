@@ -256,7 +256,7 @@ void do_mpclanmob( CHAR_DATA *ch, char *argument )
     clan = victim->pcdata->clan;
     if ( VLD_STR( victim->pcdata->clan_name ) )
     {
-    if ( !str_cmp( victim->pcdata->clan_name, "alliance" ) )
+    if ( !str_cmp( victim->pcdata->clan_name, "alianza" ) )
         vnum = number_range( 41021, 41025 );
     }
     else
@@ -1006,7 +1006,7 @@ void do_mpinduct( CHAR_DATA *ch, char *argument )
     }
     if ( victim->race == RACE_DRAGON || victim->Class == CLASS_DRAGONLORD ) {
         send_to_char
-            ( "You cannot join that quest for a clan, your primal instincts demand you stay aloof.\r\n",
+            ( "Tus instintos primarios te instan a mantenerte al margen.\r\n",
               victim );
         return;
     }
@@ -1033,19 +1033,19 @@ void do_mpinduct( CHAR_DATA *ch, char *argument )
 
             if ( days > 0 )
                 ch_printf( victim,
-                           "Outcast, you have %d days, %d hours and %d minutes until you can join another clan!\r\n",
+                           "¡Tienes que permanecer %d días, %d horas y %d minutos para entrar a otro clan!\r\n",
                            days, hours, mins );
             else if ( hours > 0 )
                 ch_printf( victim,
-                           "Outcast, you have %d hours and %d minutes until you can join another clan!\r\n",
+                           "¡Tienes que esperar %d horas y %d para entrar a otro clan!\r\n",
                            hours, mins );
             else if ( mins > 0 )
                 ch_printf( victim,
-                           "Outcast, you have %d mins and %d seconds until you can join another clan!\r\n",
+                           "¡Tienes que esperar %d minutos y %d para entrar a otro clan!\r\n",
                            mins, timer );
             else if ( timer > 0 )
                 ch_printf( victim,
-                           "Outcast, you have %d seconds until you can join another clan!\r\n",
+                           "¡Debes esperar %d segundos para entrar a otro clan!\r\n",
                            timer );
             else
                 progbug( ch, "MpInduct - Target [%s] has a bugged pcdata->clan_timer!",
@@ -1057,10 +1057,10 @@ void do_mpinduct( CHAR_DATA *ch, char *argument )
     }
 
     if ( xIS_SET( ch->act, ACT_HCLAN_LEADER ) )
-        clan = get_clan( "Throng" );                   // Yay vladaar fixed crash here,
+        clan = get_clan( "multitud" );                   // Yay vladaar fixed crash here,
     // it was stilled named horde
     else if ( xIS_SET( ch->act, ACT_ACLAN_LEADER ) )
-        clan = get_clan( "Alliance" );
+        clan = get_clan( "alianza" );
     else if ( xIS_SET( ch->act, ACT_NCLAN_LEADER ) )
         clan = get_clan( "Halcyon" );
     else {
@@ -1083,10 +1083,10 @@ void do_mpinduct( CHAR_DATA *ch, char *argument )
         QUEST_DATA             *quest;
         CHQUEST_DATA           *chquest;
 
-        if ( !str_cmp( clan->name, "throng" ) ) {
+        if ( !str_cmp( clan->name, "multitud" ) ) {
             quest = get_quest_from_name( "throng" );
         }
-        if ( !str_cmp( clan->name, "alliance" ) ) {
+        if ( !str_cmp( clan->name, "alianza" ) ) {
             quest = get_quest_from_name( "alliance" );
         }
         if ( !str_cmp( clan->name, "halcyon" ) ) {
@@ -1113,17 +1113,17 @@ void do_mpinduct( CHAR_DATA *ch, char *argument )
 
     STRFREE( victim->pcdata->clan_name );
     victim->pcdata->clan_name = QUICKLINK( clan->name );
-    act( AT_WHITE, "You induct $N into $t.", ch, clan->name, victim, TO_CHAR );
-    act( AT_WHITE, "$n inducts $N into $t.", ch, clan->name, victim, TO_NOTVICT );
-    act( AT_WHITE, "$n inducts you into $t.", ch, clan->name, victim, TO_VICT );
-    if ( !str_cmp( victim->pcdata->clan_name, "alliance" ) ) {
-        interpret( victim, ( char * ) "listen alliance" );
+    act( AT_WHITE, "Reclutas a $N en $t.", ch, clan->name, victim, TO_CHAR );
+    act( AT_WHITE, "$n recluta a $N en $t.", ch, clan->name, victim, TO_NOTVICT );
+    act( AT_WHITE, "$n te recluta en $t.", ch, clan->name, victim, TO_VICT );
+    if ( !str_cmp( victim->pcdata->clan_name, "alianza" ) ) {
+        interpret( victim, ( char * ) "escuchar alianza" );
     }
-    if ( !str_cmp( victim->pcdata->clan_name, "throng" ) ) {
-        interpret( victim, ( char * ) "listen throng" );
+    if ( !str_cmp( victim->pcdata->clan_name, "multitud" ) ) {
+        interpret( victim, ( char * ) "escuchar multitud" );
     }
     if ( !str_cmp( victim->pcdata->clan_name, "halcyon" ) ) {
-        interpret( victim, ( char * ) "listen halcyon" );
+        interpret( victim, ( char * ) "escuchar halcyon" );
     }
     add_roster( victim->pcdata->clan, victim->name,
                 capitalize( race_table[victim->race]->race_name ), victim->level,
@@ -1516,7 +1516,7 @@ void do_mppardon( CHAR_DATA *ch, char *argument )
         if ( xIS_SET( victim->act, PLR_ATTACKER ) ) {
             xREMOVE_BIT( victim->act, PLR_ATTACKER );
             send_to_char( "Attacker flag removed.\r\n", ch );
-            send_to_char( "Your crime of attack has been pardoned.\r\n", victim );
+            send_to_char( "Tus crímenes por asesinato han sido perdonados.\r\n", victim );
         }
         return;
     }
@@ -1524,7 +1524,7 @@ void do_mppardon( CHAR_DATA *ch, char *argument )
         if ( xIS_SET( victim->act, PLR_KILLER ) ) {
             xREMOVE_BIT( victim->act, PLR_KILLER );
             send_to_char( "Killer flag removed.\r\n", ch );
-            send_to_char( "Your crime of murder has been pardoned.\r\n", victim );
+            send_to_char( "tus crímenes por asesinato han sido perdonados.\r\n", victim );
         }
         return;
     }
@@ -1540,7 +1540,7 @@ void do_mppardon( CHAR_DATA *ch, char *argument )
         if ( xIS_SET( victim->act, PLR_THIEF ) ) {
             xREMOVE_BIT( victim->act, PLR_THIEF );
             send_to_char( "Thief flag removed.\r\n", ch );
-            send_to_char( "Your crime of theft has been pardoned.\r\n", victim );
+            send_to_char( "Tus crímenes por robar han sido perdonados.\r\n", victim );
         }
         return;
     }
@@ -1670,12 +1670,12 @@ void do_mpinvis( CHAR_DATA *ch, char *argument )
 
     if ( xIS_SET( ch->act, ACT_MOBINVIS ) ) {
         xREMOVE_BIT( ch->act, ACT_MOBINVIS );
-        act( AT_IMMORT, "$n slowly fades into existence.", ch, NULL, NULL, TO_ROOM );
+        act( AT_IMMORT, "$n vuelve a la existencia.", ch, NULL, NULL, TO_ROOM );
         send_to_char( "You slowly fade back into existence.\r\n", ch );
     }
     else {
         xSET_BIT( ch->act, ACT_MOBINVIS );
-        act( AT_IMMORT, "$n slowly fades into thin air.", ch, NULL, NULL, TO_ROOM );
+        act( AT_IMMORT, "$n se desvanece.", ch, NULL, NULL, TO_ROOM );
         send_to_char( "You slowly vanish into thin air.\r\n", ch );
     }
     return;
@@ -1804,7 +1804,7 @@ void do_mpadvance( CHAR_DATA *ch, char *argument )
     level = victim->level + 1;
 
     if ( victim->level > ch->level ) {
-        act( AT_TELL, "$n tells you, 'Sorry... you must seek someone more powerful than I.'", ch,
+        act( AT_TELL, "$n te cuenta 'Lo siento, pero tu poder me supera.'", ch,
              NULL, victim, TO_VICT );
         return;
     }
@@ -1812,24 +1812,24 @@ void do_mpadvance( CHAR_DATA *ch, char *argument )
     if ( IS_AVATAR( victim ) || IS_DUALAVATAR( victim ) || IS_TRIAVATAR( victim ) ) {
         set_char_color( AT_IMMORT, victim );
         act( AT_IMMORT,
-             "$n makes some arcane gestures with $s hands, then points $s fingers at you!", ch,
+             "$n realiza unos gestos extraños en el aire, ¡y te señala!", ch,
              NULL, victim, TO_VICT );
         act( AT_IMMORT,
-             "$n makes some arcane gestures with $s hands, then points $s fingers at $N!", ch, NULL,
+             "$n hace una serie de gestos en el aire, ¡y señala a $N!", ch, NULL,
              victim, TO_NOTVICT );
         set_char_color( AT_WHITE, victim );
-        send_to_char( "You suddenly feel very strange...\r\n\r\n", victim );
+        send_to_char( "Sientes un poder recorrerte...\r\n\r\n", victim );
         set_char_color( AT_LBLUE, victim );
     }
 
     switch ( level ) {
         default:
-            send_to_char( "You feel more powerful!\r\n", victim );
+            send_to_char( "¡Te sientes más poderoso!\r\n", victim );
             break;
         case LEVEL_IMMORTAL:
             do_help( victim, ( char * ) "M_GODLVL1_" );
             set_char_color( AT_WHITE, victim );
-            send_to_char( "You awake... all your possessions are gone.\r\n", victim );
+            send_to_char( "Despiertas... sin posesiones.\r\n", victim );
             while ( victim->first_carrying )
                 extract_obj( victim->first_carrying );
             break;
@@ -1849,7 +1849,7 @@ void do_mpadvance( CHAR_DATA *ch, char *argument )
 
     for ( iLevel = victim->level; iLevel < level; iLevel++ ) {
         if ( level < LEVEL_IMMORTAL )
-            send_to_char( "You raise a level!!  ", victim );
+            send_to_char( "¡subes de nivel!!  ", victim );
         victim->level += 1;
 
         advance_level( victim );
@@ -2056,7 +2056,7 @@ void do_mpqkamount( CHAR_DATA *ch, char *argument )
     }
 
     if ( victim->level < quest->level ) {
-        ch_printf( victim, "&RYou must be level %d to start this quest.\r\n&D", quest->level );
+        ch_printf( victim, "&RDebes ser de nivel %d para empezar este quest.\r\n&D", quest->level );
         return;
     }
 
@@ -2064,13 +2064,13 @@ void do_mpqkamount( CHAR_DATA *ch, char *argument )
 
     if ( !chap ) {
         bug( "%s: no chapter %d for quest %d.", __FUNCTION__, chapter, quest->number );
-        ch_printf( victim, "&RCan't do chapter %d for this quest because it doesn't exist.\r\n&D",
+        ch_printf( victim, "&RNo puede hacer el capítulo %d por que no existe.\r\n&D",
                    chapter );
         return;
     }
 
     if ( chap && chap->level > victim->level ) {
-        ch_printf( victim, "&RYou must be level %d to start this chapter.\r\n&D", chap->level );
+        ch_printf( victim, "&RDebes ser nivel %d para empezar este capítulo.\r\n&D", chap->level );
         return;
     }
 
@@ -2145,7 +2145,7 @@ void do_mpquest( CHAR_DATA *ch, char *argument )
         if ( !chap ) {
             bug( "%s: no chapter %d for quest %d.", __FUNCTION__, chapter, quest->number );
             ch_printf( victim,
-                       "&RCan't do chapter %d for this quest because it doesn't exist.\r\n&D",
+                       "&RNo puede hacer el capítulo %d por que no existe.\r\n&D",
                        chapter );
             return;
         }
@@ -2157,12 +2157,12 @@ void do_mpquest( CHAR_DATA *ch, char *argument )
     }
 
     if ( victim->level < quest->level ) {
-        ch_printf( victim, "&RYou must be level %d to start this quest.\r\n&D", quest->level );
+        ch_printf( victim, "&RDebes ser nivel %d para empezar este quest.\r\n&D", quest->level );
         return;
     }
 
     if ( chap && chap->level > victim->level ) {
-        ch_printf( victim, "&RYou must be level %d to start this chapter.\r\n&D", chap->level );
+        ch_printf( victim, "&RDebes ser nivel %d para empezar este capítulo.\r\n&D", chap->level );
         return;
     }
 
@@ -2579,7 +2579,7 @@ void do_mp_practice( CHAR_DATA *ch, char *argument )
          || victim->level < skill_table[sn]->skill_level[victim->secondclass]
          || victim->level < skill_table[sn]->skill_level[victim->thirdclass] ) {
         act_printf( AT_TELL, ch, NULL, victim, TO_VICT,
-                    "$n attempts to tutor you in %s, but it's beyond your comprehension.",
+                    "$n trata de ser tu tutor en %s, pero no lo comprendes.",
                     skill_name );
         return;
     }
@@ -2595,7 +2595,7 @@ void do_mp_practice( CHAR_DATA *ch, char *argument )
 
     if ( ( victim->pcdata->learned[sn] >= adept ) || ( victim->pcdata->learned[sn] >= max ) ) {
         act_printf( AT_TELL, ch, NULL, victim, TO_VICT,
-                    "$n shows some knowledge of %s, but yours is clearly superior.", skill_name );
+                    "$n te muestra sus conocimientos sobre %s, pero eres superior.", skill_name );
         return;
     }
 
@@ -2603,14 +2603,14 @@ void do_mp_practice( CHAR_DATA *ch, char *argument )
      * past here, victim learns something 
      */
     tmp = UMIN( victim->pcdata->learned[sn] + int_app[get_curr_int( victim )].learn, max );
-    act( AT_ACTION, "$N demonstrates $t to you.  You feel more learned in this subject.", victim,
+    act( AT_ACTION, "$N te demuestra el uso de $t. Has aprendido algo.", victim,
          skill_table[sn]->name, ch, TO_CHAR );
 
     victim->pcdata->learned[sn] = max;
 
     if ( victim->pcdata->learned[sn] >= adept ) {
         victim->pcdata->learned[sn] = adept;
-        act( AT_TELL, "$n tells you, 'You have learned all I know on this subject...'", ch, NULL,
+        act( AT_TELL, "$n te cuenta, 'Ahora sabes lo mismo que yo...'", ch, NULL,
              victim, TO_VICT );
     }
     return;
@@ -2725,9 +2725,9 @@ void do_mp_slay( CHAR_DATA *ch, char *argument )
     }
 
     if ( victim->level < LEVEL_IMMORTAL ) {
-        act( AT_IMMORT, "You slay $M in cold blood!", ch, NULL, victim, TO_CHAR );
-        act( AT_IMMORT, "$n slays you in cold blood!", ch, NULL, victim, TO_VICT );
-        act( AT_IMMORT, "$n slays $N in cold blood!", ch, NULL, victim, TO_NOTVICT );
+        act( AT_IMMORT, "¡Le asesinas a sangre fría!", ch, NULL, victim, TO_CHAR );
+        act( AT_IMMORT, "¡$n te asesina a sangre fría!", ch, NULL, victim, TO_VICT );
+        act( AT_IMMORT, "¡$n asesina a $N a sangre fría!", ch, NULL, victim, TO_NOTVICT );
         set_cur_char( victim );
         raw_kill( ch, victim );
         stop_fighting( ch, FALSE );
@@ -2736,9 +2736,9 @@ void do_mp_slay( CHAR_DATA *ch, char *argument )
         stop_hunting( ch );
     }
     else {
-        act( AT_IMMORT, "You attempt to slay $M and fail!", ch, NULL, victim, TO_CHAR );
-        act( AT_IMMORT, "$n attempts to slay you.  What a kneebiter!", ch, NULL, victim, TO_VICT );
-        act( AT_IMMORT, "$n attempts to slay $N.  Needless to say $e fails.", ch, NULL, victim,
+        act( AT_IMMORT, "¡Fallaste!", ch, NULL, victim, TO_CHAR );
+        act( AT_IMMORT, "$n te intenta asesinar pero falla. ¡Qué cerca!", ch, NULL, victim, TO_VICT );
+        act( AT_IMMORT, "$n intenta matar a a $N.  Por que poco...", ch, NULL, victim,
              TO_NOTVICT );
     }
     return;
@@ -3311,9 +3311,9 @@ void do_mptoss( CHAR_DATA *ch, char *argument )
     }
     char_from_room( victim );
     char_to_room( victim, get_room_index( rand ) );
-    act( AT_CYAN, "$n gets tossed by the green dragon and lands on the ground!\r\n", victim, NULL,
+    act( AT_CYAN, "$n aterriza después de ser sacudido por el dragón verde!\r\n", victim, NULL,
          NULL, TO_ROOM );
-    act( AT_TELL, "You get tossed by the green dragon and land on the ground!\r\n", victim, NULL,
+    act( AT_TELL, "¡El dragón verde te sacude y aterrizas en el suelo!\r\n", victim, NULL,
          NULL, TO_CHAR );
     do_look( victim, ( char * ) "auto" );
 }
@@ -3363,9 +3363,9 @@ void do_mpeat( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    act( AT_RED, "$n spots $N holding her dragon egg, and with her mighty jaws, devours $N!", ch,
+    act( AT_RED, "$n es devorado por el dragón al intentar pasar el huevo a $N!", ch,
          NULL, victim, TO_ROOM );
-    snprintf( buf, MIL, "%s has been eaten attempting to tease the dragon!", victim->name );
+    snprintf( buf, MIL, "%s ha sido devorado!", victim->name );
     arena_chan( buf );
 
     if ( xIS_SET( victim->act, PLR_TEASE ) )
@@ -3376,8 +3376,8 @@ void do_mpeat( CHAR_DATA *ch, char *argument )
     char_from_room( victim );
     char_to_room( victim, get_room_index( victim->pcdata->htown->recall ) );
     --arena_population;
-    act( AT_TELL, "$n falls out of the sky!\r\n", victim, NULL, NULL, TO_ROOM );
-    act( AT_TELL, "You fall suddenly out of the sky!\r\n", victim, NULL, NULL, TO_CHAR );
+    act( AT_TELL, "$n cae del cielo!\r\n", victim, NULL, NULL, TO_ROOM );
+    act( AT_TELL, "caes del cielo!\r\n", victim, NULL, NULL, TO_CHAR );
     do_look( victim, ( char * ) "auto" );
 
     // Give an egg back to a player if in Arena room vnum range
@@ -3394,7 +3394,7 @@ void do_mpeat( CHAR_DATA *ch, char *argument )
     }
 
     if ( utarget ) {
-        send_to_char( "You now have the egg.\r\n", utarget );
+        send_to_char( "Tienes el huevo.\r\n", utarget );
 //      log_printf( "%s: egg was given to %s.", __FUNCTION__, utarget->name );
         obj_to_char( dragonegg, utarget );
     }
