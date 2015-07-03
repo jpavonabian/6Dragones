@@ -19,64 +19,64 @@ Expbase        1300
 Craftbase        0
 Resist         0
 Suscept        0
-Skill 'aid' 1 95
-Skill 'bear spirit' 22 95
-Skill 'beast meld' 9 95
-Skill 'bull spirit' 4 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'dodge' 2 95
-Skill 'doorbash' 8 95
-Skill 'dual wield' 17 95
-Skill 'elbow' 32 95
-Skill 'enhanced damage' 44 95
-Skill 'ferocious strike' 58 95
-Skill 'fifth attack' 85 95
-Skill 'find water' 6 95
-Skill 'flint fire' 1 95
-Skill 'fourth attack' 65 95
-Skill 'infectious claws' 38 95
-Skill 'keen eye' 20 95
-Skill 'kick' 5 95
-Skill 'knee' 14 95
+Skill 'silencio' 1 95
+Skill 'ambidiestro' 17 95
+Skill 'ataques poderosos' 44 95
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'cazar' 6 95
+Skill 'cocinar' 1 95
+Skill 'codazo' 32 95
+Skill 'cuarto ataque' 65 95
+Skill 'derribar' 8 95
+Skill 'domar' 5 95
+Skill 'encontrar agua' 6 95
+Skill 'espiritu de lobo' 40 95
+Skill 'espiritu de oso' 22 95
+Skill 'espiritu de toro' 4 95
+Skill 'espiritu sombrio' 15 95
+Skill 'esquivar' 2 95
+Skill 'fisgar' 45 95
+Skill 'garras afiladas' 25 95
+Skill 'garras infecciosas' 38 95
+Skill 'golpe feroz' 58 95
+Skill 'golpes precisos' 20 95
 Skill 'lore' 12 95
+Skill 'nadar' 1 95
 Skill 'net' 35 95
-Skill 'parry' 3 95
-Skill 'peek' 45 95
-Skill 'punch' 1 95
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 7 95
-Skill 'sharpen claws' 25 95
-Skill 'shroud spirit' 15 95
-Skill 'sixth attack' 92 95
-Skill 'slice' 1 95
-Skill 'stalk prey' 6 95
-Skill 'swim' 1 95
-Skill 'tame' 5 95
-Skill 'third attack' 30 95
-Skill 'track' 8 95
-Skill 'wolf spirit' 40 95
-Skill '1h long blades' 1 95
-Skill '1h short blades' 1 95
-Skill 'archery' 1 95
-Skill 'polearms' 1 95
+Skill 'otear' 1 95
+Skill 'parar' 3 95
+Skill 'patada' 5 95
+Skill 'pedernal' 1 95
+Skill 'posesion de bestias' 9 95
+Skill 'punyetazo' 1 95
+Skill 'quinto ataque' 85 95
+Skill 'rastrear' 8 95
+Skill 'rebanar' 1 95
+Skill 'rodillazo' 14 95
+Skill 'segundo ataque' 7 95
+Skill 'sexto ataque' 92 95
+Skill 'tercer ataque' 30 95
+Skill 'trepar' 1 95
+Skill 'armas cortas' 1 95
+Skill 'armas largas' 1 95
+Skill 'arquero' 1 95
+Skill 'poleas' 1 95
 Skill 'celestial' 1 95
-Skill 'centaurian' 1 95
-Skill 'common' 1 95
-Skill 'demonic' 1 95
-Skill 'draconic' 1 95
-Skill 'dwarven' 1 95
-Skill 'elven' 1 95
-Skill 'gnomish' 1 95
-Skill 'goblic' 1 95
+Skill 'centauriano' 1 95
+Skill 'comun' 1 95
+Skill 'demoniaco' 1 95
+Skill 'draconiano' 1 95
+Skill 'duende' 1 95
+Skill 'elfico' 1 95
+Skill 'enano' 1 95
+Skill 'gnomo' 1 95
+Skill 'goblin' 1 95
 Skill 'hobbit' 1 95
 Skill 'infernal' 1 95
-Skill 'ogrian' 1 95
-Skill 'orcish' 1 95
-Skill 'pixish' 1 95
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 95
+Skill 'orco' 1 95
+Skill 'troll' 1 95
 Title
 the animal whisperer~
 the animal whisperer~

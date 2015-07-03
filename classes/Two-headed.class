@@ -29,73 +29,73 @@ Skill 'ethereal shield' 65 95
 Skill 'farsight' 64 95
 Skill 'firestorm' 39 95
 Skill 'healing essence' 12 95
-Skill 'invis' 1 95
+Skill 'invisibilidad' 1 95
 Skill 'locate object' 16 95
 Skill 'refresh' 4 95
-Skill 'sanctuary' 13 95
+Skill 'santuario' 13 95
 Skill 'shadow bolt' 94 95
 Skill 'shadowform' 44 95
 Skill 'shockshield' 27 95
+Skill 'silencio' 1 95
 Skill 'slow' 37 95
 Skill 'transport' 66 95
 Skill 'valiance' 32 95
-Skill 'behead' 1 95
-Skill 'bite' 1 95
-Skill 'breathe' 2 99
-Skill 'brittle bone' 82 95
-Skill 'claw' 1 95
-Skill 'climb' 1 95
-Skill 'cone' 9 95
+Skill 'alas' 1 100
+Skill 'armadura glacial' 28 95
+Skill 'arrebatar' 5 95
+Skill 'ataqueaereo' 22 95
+Skill 'ataques poderosos' 25 95
+Skill 'coletazo' 8 95
+Skill 'cono' 9 95
 Skill 'courage' 34 95
-Skill 'devour' 2 95
-Skill 'dodge' 3 95
-Skill 'doorbash' 8 99
-Skill 'endurance' 68 95
-Skill 'enhanced damage' 25 95
-Skill 'fifth attack' 52 95
-Skill 'find weakness' 56 95
-Skill 'fly home' 2 95
-Skill 'fourth attack' 40 95
-Skill 'glacial armor' 28 95
-Skill 'gust of wind' 26 95
-Skill 'gut' 3 95
-Skill 'human form' 5 95
-Skill 'impale' 54 95
-Skill 'lick' 2 95
+Skill 'cuarto ataque' 40 95
+Skill 'decapitar' 1 95
+Skill 'derribar' 8 99
+Skill 'destripar' 3 95
+Skill 'devorar' 2 95
+Skill 'empalar' 54 95
+Skill 'encontrar debilidad' 56 95
+Skill 'esquivar' 3 95
+Skill 'fisgar' 1 95
+Skill 'forma humana' 5 95
+Skill 'huesos de cristal' 82 95
+Skill 'lamer' 2 95
 Skill 'lore' 11 95
-Skill 'meditate' 10 95
-Skill 'peek' 1 95
-Skill 'pluck' 22 95
-Skill 'rage' 10 95
-Skill 'scan' 1 95
-Skill 'second attack' 5 95
-Skill 'sixth attack' 75 95
-Skill 'slice' 1 95
-Skill 'smell' 4 95
-Skill 'snatch' 5 95
-Skill 'stomp' 15 95
-Skill 'swim' 1 95
-Skill 'tail swipe' 8 95
-Skill 'third attack' 20 95
+Skill 'meditar' 10 95
+Skill 'morder' 1 95
+Skill 'nadar' 1 95
+Skill 'olfatear' 4 95
+Skill 'otear' 1 95
+Skill 'pisar' 15 95
+Skill 'quinto ataque' 52 95
+Skill 'rabia' 10 95
+Skill 'rafaga de viento' 26 95
+Skill 'rebanar' 1 95
+Skill 'resistencia' 68 95
+Skill 'respirar' 2 99
+Skill 'segundo ataque' 5 95
+Skill 'sexto ataque' 75 95
+Skill 'tercer ataque' 20 95
 Skill 'trance' 58 95
-Skill 'truesight' 2 95
-Skill 'wings' 1 100
+Skill 'trepar' 1 95
+Skill 'vision mejorada' 2 95
+Skill 'volar casa' 2 95
+Skill 'zarpazo' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'draconic' 1 95
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'draconiano' 1 95
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Man~
 Woman~

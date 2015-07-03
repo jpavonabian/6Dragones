@@ -19,85 +19,84 @@ Expbase        1100
 Craftbase        0
 Resist         0
 Suscept        0
-Skill 'chilled ward' 9 95
 Skill 'dark blessings' 33 95
-Skill 'frigid ward' 70 95
-Skill 'frost ward' 30 95
-Skill 'ice ward' 50 95
-Skill 'nosight' 55 95
-Skill 'aid' 1 95
-Skill 'assault' 16 95
-Skill 'behead' 1 95
-Skill 'biofeedback' 65 60
-Skill 'brittle bone' 88 95
-Skill 'chilled touch' 20 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'daze' 18 80
-Skill 'decree decay' 22 95
-Skill 'disarm' 7 85
-Skill 'dodge' 4 95
-Skill 'dual wield' 15 95
-Skill 'endurance' 48 75
-Skill 'enhanced damage' 6 80
-Skill 'enrage' 12 95
-Skill 'fifth attack' 42 80
-Skill 'find weakness' 45 65
-Skill 'flint fire' 1 30
-Skill 'fourth attack' 32 95
-Skill 'frigid touch' 80 95
-Skill 'frost touch' 40 95
-Skill 'grip' 68 75
-Skill 'icy touch' 60 95
+Skill 'nocegar' 55 95
+Skill 'proteccion congelada' 70 95
+Skill 'proteccion de granizo' 50 95
+Skill 'proteccion de hielo' 9 95
+Skill 'proteccion helada' 30 95
+Skill 'silencio' 1 95
+Skill 'ambidiestro' 15 95
+Skill 'asaltar' 16 95
+Skill 'asir fuerte' 68 75
+Skill 'ataques poderosos' 6 80
+Skill 'aturdir' 18 80
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'campo malevolo' 22 95
+Skill 'cocinar' 1 95
+Skill 'corcel' 14 95
+Skill 'cuarto ataque' 32 95
+Skill 'decapitar' 1 95
+Skill 'desarmar' 7 85
+Skill 'descanso regenerativo' 65 60
+Skill 'desequilibrar' 49 60
+Skill 'encontrar debilidad' 45 65
+Skill 'enfurecer' 12 95
+Skill 'envenenar armas' 100 25
+Skill 'esquivar' 4 95
+Skill 'huesos de cristal' 88 95
+Skill 'incitar' 3 95
 Skill 'inertial barrier' 44 95
-Skill 'kick' 5 85
-Skill 'knee' 10 95
 Skill 'lore' 21 25
 Skill 'maintain position' 41 95
-Skill 'mount' 1 85
+Skill 'montar' 1 85
+Skill 'nadar' 1 95
 Skill 'offensive stance' 47 95
-Skill 'poison weapon' 100 25
-Skill 'punch' 1 90
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 8 95
-Skill 'seventh attack' 82 30
-Skill 'sidestep' 49 60
-Skill 'sixth attack' 62 75
-Skill 'slice' 1 95
-Skill 'steed' 14 95
-Skill 'swim' 1 95
-Skill 'taunt' 3 95
-Skill 'third attack' 17 95
-Skill 'track' 26 85
-Skill 'truesight' 19 95
-Skill '1h bludgeons' 1 95
-Skill '1h long blades' 1 95
-Skill '1h short blades' 1 95
-Skill '2h axes' 1 80
-Skill '2h bludgeons' 1 80
-Skill '2h long blades' 1 95
-Skill 'archery' 1 95
-Skill 'flails' 1 95
-Skill 'polearms' 1 95
-Skill 'spears' 1 95
-Skill 'staves' 1 95
-Skill 'whips' 1 95
+Skill 'otear' 1 95
+Skill 'patada' 5 85
+Skill 'pedernal' 1 30
+Skill 'punyetazo' 1 90
+Skill 'quinto ataque' 42 80
+Skill 'rastrear' 26 85
+Skill 'rebanar' 1 95
+Skill 'resistencia' 48 75
+Skill 'rodillazo' 10 95
+Skill 'segundo ataque' 8 95
+Skill 'septimo ataque' 82 30
+Skill 'sexto ataque' 62 75
+Skill 'tercer ataque' 17 95
+Skill 'toque ardiente' 80 95
+Skill 'toque de hielo' 60 95
+Skill 'toque frio' 20 95
+Skill 'toque helado' 40 95
+Skill 'trepar' 1 95
+Skill 'vision mejorada' 19 95
+Skill 'armas cortas' 1 95
+Skill 'armas largas' 1 95
+Skill 'arquero' 1 95
+Skill 'bastones' 1 95
+Skill 'hachas mejoradas' 1 80
+Skill 'impactos' 1 95
+Skill 'impactos mejorados' 1 80
+Skill 'lanzas' 1 95
+Skill 'latigos' 1 95
+Skill 'mayales' 1 95
+Skill 'poleas' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 a young adventurer.~
 a young adventuress.~

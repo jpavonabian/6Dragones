@@ -20,7 +20,6 @@ Craftbase        0
 Resist         0
 Suscept        0
 Skill 'angels touch' 10 95
-Skill 'aqua breath' 18 85
 Skill 'armor' 1 90
 Skill 'astral walk' 43 95
 Skill 'aura of courage' 63 95
@@ -40,65 +39,66 @@ Skill 'knock' 17 95
 Skill 'locate object' 52 95
 Skill 'pass door' 21 95
 Skill 'remove curse' 18 85
-Skill 'sanctuary' 11 95
+Skill 'respiracion acuatica' 18 85
+Skill 'santuario' 11 95
 Skill 'shadowform' 90 95
 Skill 'shockshield' 85 95
+Skill 'silencio' 1 95
 Skill 'slow' 42 95
 Skill 'transport' 70 95
 Skill 'weaken' 24 95
 Skill 'word of recall' 8 95
-Skill 'aid' 1 95
-Skill 'angelfire' 12 95
-Skill 'behead' 1 95
-Skill 'climb' 1 80
-Skill 'cook' 1 95
-Skill 'dodge' 5 75
-Skill 'dual wield' 17 90
-Skill 'endurance' 1 95
-Skill 'enhanced damage' 1 90
+Skill 'alas' 1 95
+Skill 'ambidiestro' 17 90
+Skill 'ataques poderosos' 1 90
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'cocinar' 1 95
+Skill 'cuarto ataque' 37 80
+Skill 'decapitar' 1 95
+Skill 'encontrar debilidad' 49 95
+Skill 'esquivar' 5 75
 Skill 'fade' 5 95
-Skill 'fifth attack' 50 65
-Skill 'find weakness' 49 95
-Skill 'fourth attack' 37 80
-Skill 'judge' 7 95
-Skill 'kick' 5 95
-Skill 'layhands' 74 50
-Skill 'meditate' 8 95
-Skill 'mount' 1 90
-Skill 'peek' 45 95
-Skill 'punch' 1 90
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 10 90
-Skill 'sixth attack' 92 35
-Skill 'slice' 1 95
-Skill 'swim' 1 95
-Skill 'telepathy' 1 95
-Skill 'third attack' 20 90
+Skill 'fisgar' 45 95
+Skill 'fuego angelical' 12 95
+Skill 'juzgar' 7 95
+Skill 'manos sanadoras' 74 50
+Skill 'meditar' 8 95
+Skill 'montar' 1 90
+Skill 'nadar' 1 95
+Skill 'otear' 1 95
+Skill 'patada' 5 95
+Skill 'punyetazo' 1 90
+Skill 'quinto ataque' 50 65
+Skill 'rebanar' 1 95
+Skill 'resistencia' 1 95
+Skill 'segundo ataque' 10 90
+Skill 'sexto ataque' 92 35
+Skill 'telepatia' 1 95
+Skill 'tercer ataque' 20 90
 Skill 'trance' 40 95
-Skill 'truesight' 9 95
-Skill 'wings' 1 95
-Skill '1h long blades' 1 95
-Skill '1h short blades' 1 95
+Skill 'trepar' 1 80
+Skill 'vision mejorada' 9 95
+Skill 'armas cortas' 1 95
+Skill 'armas largas' 1 95
+Skill 'lanzas' 1 95
+Skill 'latigos' 1 95
 Skill 'pugilism' 1 95
-Skill 'spears' 1 95
-Skill 'whips' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'draconic' 1 95
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'draconiano' 1 95
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Man~
 Woman~

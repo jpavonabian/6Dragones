@@ -25,68 +25,68 @@ Skill 'dark blessings' 76 95
 Skill 'demonskin' 87 95
 Skill 'detect hidden' 17 95
 Skill 'detect invis' 15 95
+Skill 'dormir' 38 95
 Skill 'energy drain' 8 95
-Skill 'invis' 8 95
+Skill 'inmovilizar' 100 50
+Skill 'invisibilidad' 8 95
 Skill 'lich touch' 84 95
 Skill 'locate object' 18 95
-Skill 'paralyze' 100 50
-Skill 'poison' 9 95
 Skill 'razorbait' 69 95
 Skill 'remove invis' 14 95
 Skill 'shadowform' 98 95
-Skill 'sleep' 38 95
+Skill 'silencio' 1 95
 Skill 'unholy strength' 17 95
+Skill 'veneno' 9 95
 Skill 'weaken' 32 95
 Skill 'wizard sight' 20 95
 Skill 'word of recall' 34 95
-Skill 'aid' 1 95
-Skill 'behead' 1 95
-Skill 'bone' 3 95
-Skill 'brittle bone' 60 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'dehydrate' 10 95
-Skill 'dodge' 20 95
+Skill 'ambidiestro' 85 50
+Skill 'ataques poderosos' 57 95
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'cocinar' 1 95
+Skill 'cuarto ataque' 44 65
+Skill 'decapitar' 1 95
+Skill 'desidratar' 10 95
+Skill 'desmaterializarse' 70 70
 Skill 'drain' 6 95
-Skill 'dual wield' 85 50
-Skill 'enhanced damage' 57 95
-Skill 'extract skeleton' 5 95
-Skill 'flint fire' 1 30
-Skill 'fourth attack' 44 65
-Skill 'gouge' 39 95
+Skill 'esquivar' 20 95
+Skill 'extraer esqueleto' 5 95
 Skill 'harness mana' 32 95
-Skill 'kick' 5 95
-Skill 'lesser skeleton' 8 95
-Skill 'meditate' 20 95
-Skill 'mount' 1 95
+Skill 'hueso' 3 95
+Skill 'huesos de cristal' 60 95
+Skill 'luchar sucio' 39 95
+Skill 'meditar' 20 95
+Skill 'montar' 1 95
+Skill 'nadar' 1 95
 Skill 'necromantic touch' 37 95
-Skill 'parry' 20 95
-Skill 'phase' 70 70
-Skill 'punch' 1 95
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 14 85
-Skill 'slice' 1 95
-Skill 'swim' 1 95
-Skill 'third attack' 28 75
-Skill 'truesight' 10 95
-Skill '1h short blades' 1 95
-Skill 'staves' 1 95
+Skill 'otear' 1 95
+Skill 'parar' 20 95
+Skill 'patada' 5 95
+Skill 'pedernal' 1 30
+Skill 'punyetazo' 1 95
+Skill 'reanimar esqueleto' 8 95
+Skill 'rebanar' 1 95
+Skill 'segundo ataque' 14 85
+Skill 'tercer ataque' 28 75
+Skill 'trepar' 1 95
+Skill 'vision mejorada' 10 95
+Skill 'armas cortas' 1 95
+Skill 'bastones' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'duende' 1 95
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 95
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Man~
 Woman~

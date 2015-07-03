@@ -1067,7 +1067,7 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_breech, "espaciotiempo" );
         ASSIGN_GSN( gsn_draw_mana, "draw mana" );      // Taon
         ASSIGN_GSN( gsn_frigid_touch, "toque ardiente" ); // Vladaar
-        ASSIGN_GSN( gsn_siphon_strength, "" );   // Vladaar
+        ASSIGN_GSN( gsn_siphon_strength, "drenar energias" );   // Vladaar
         ASSIGN_GSN( gsn_devour, "devorar" );
         ASSIGN_GSN( gsn_spike, "pinchos" );
         ASSIGN_GSN( gsn_gut, "destripar" );
@@ -7541,15 +7541,15 @@ char                   *shorttime( time_t updated )
     if ( !updated )
         return ( char * ) "";
     time = localtime( &updated );
-    snprintf( buf, sizeof( buf ), "%2d/%2d/%4.4d", ( time->tm_mon + 1 ), time->tm_mday,
-              ( time->tm_year + 1900 ) );
+    snprintf( buf, sizeof( buf ), "%2d/%2d/%4.4d", time->tm_mday,
+ ( time->tm_mon + 1 ),             ( time->tm_year + 1900 ) );
     return buf;
 }
 
 char                   *distime( time_t updated )
 {
     char                    wday_name[7][4] = {
-        "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+        "Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sav"
     };
     char                    month_name[12][4] = {
         "Jan", "Feb", "Mar", "Apr", "May", "Jun",

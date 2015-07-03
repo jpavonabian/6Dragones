@@ -20,79 +20,78 @@ Craftbase        0
 Resist         0
 Suscept        0
 Skill 'bestow vitae' 95 95
-Skill 'downward slash' 60 95
-Skill 'energy ward' 50 95
-Skill 'lightning ward' 70 95
-Skill 'nosight' 55 95
-Skill 'shocking ward' 30 95
-Skill 'static ward' 10 95
-Skill 'aid' 1 95
-Skill 'assault' 16 95
-Skill 'behead' 1 95
-Skill 'break' 85 95
-Skill 'charge' 85 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'daze' 18 95
-Skill 'disarm' 7 85
-Skill 'dodge' 4 95
-Skill 'doorbash' 1 85
-Skill 'double slash' 80 95
-Skill 'dual wield' 15 95
-Skill 'enhanced damage' 6 80
-Skill 'enrage' 12 95
-Skill 'fifth attack' 42 80
-Skill 'find weakness' 45 65
-Skill 'flint fire' 1 30
-Skill 'fourth attack' 32 90
-Skill 'kick' 5 85
-Skill 'knee' 10 95
+Skill 'envestir' 60 95
+Skill 'nocegar' 55 95
+Skill 'proteccion electrica' 70 95
+Skill 'proteccion energetica' 50 95
+Skill 'proteccion estatica' 10 95
+Skill 'proteccion fisica' 30 95
+Skill 'silencio' 1 95
+Skill 'ambidiestro' 15 95
+Skill 'asaltar' 16 95
+Skill 'ataque doble' 80 95
+Skill 'ataques poderosos' 6 80
+Skill 'aturdir' 18 95
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'cargar' 85 95
+Skill 'cocinar' 1 95
+Skill 'corcel' 14 95
+Skill 'cuarto ataque' 32 90
+Skill 'decapitar' 1 95
+Skill 'derribar' 1 85
+Skill 'desarmar' 7 85
+Skill 'desequilibrar' 49 70
+Skill 'disparo veloz' 11 95
+Skill 'encontrar debilidad' 45 65
+Skill 'enfurecer' 12 95
+Skill 'esquivar' 4 95
+Skill 'estocada' 40 95
+Skill 'golpe justo' 20 95
+Skill 'incitar' 3 95
 Skill 'lore' 25 25
 Skill 'maintain position' 31 95
-Skill 'mount' 1 85
+Skill 'montar' 1 85
+Skill 'nadar' 1 95
 Skill 'offensive stance' 47 95
-Skill 'overhead slash' 40 95
-Skill 'parry' 1 85
-Skill 'punch' 1 90
+Skill 'otear' 1 95
+Skill 'parar' 1 85
+Skill 'patada' 5 85
+Skill 'pedernal' 1 30
+Skill 'punyetazo' 1 90
+Skill 'quinto ataque' 42 80
 Skill 'rallying cry' 24 95
-Skill 'restring' 11 95
-Skill 'righteous blow' 20 95
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 8 95
-Skill 'seventh attack' 82 30
-Skill 'sidestep' 49 70
-Skill 'sixth attack' 62 75
-Skill 'slice' 1 95
-Skill 'steed' 14 95
-Skill 'swim' 1 95
-Skill 'taunt' 3 95
-Skill 'third attack' 17 95
-Skill 'track' 26 85
-Skill '1h axes' 1 95
-Skill '1h bludgeons' 1 95
-Skill '1h long blades' 1 95
-Skill '2h axes' 1 95
-Skill '2h long blades' 1 95
-Skill 'archery' 1 95
-Skill 'lances' 1 95
+Skill 'rastrear' 26 85
+Skill 'rebanar' 1 95
+Skill 'rodillazo' 10 95
+Skill 'romper' 85 95
+Skill 'segundo ataque' 8 95
+Skill 'septimo ataque' 82 30
+Skill 'sexto ataque' 62 75
+Skill 'tercer ataque' 17 95
+Skill 'trepar' 1 95
+Skill 'armas largas' 1 95
+Skill 'arquero' 1 95
+Skill 'hachas' 1 95
+Skill 'hachas mejoradas' 1 95
+Skill 'impactos' 1 95
+Skill 'lanzas' 1 95
+Skill 'picas' 1 95
 Skill 'pugilism' 1 95
-Skill 'spears' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Man~
 Woman~

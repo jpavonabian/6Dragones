@@ -37,87 +37,86 @@ Skill 'feline grace' 6 95
 Skill 'fly' 7 95
 Skill 'greater heal' 33 95
 Skill 'greater restore' 80 95
-Skill 'heal' 13 95
 Skill 'heroism' 9 95
-Skill 'nosight' 7 95
+Skill 'inmovilizar' 88 50
+Skill 'nocegar' 7 95
 Skill 'ogre vitality' 13 95
-Skill 'paralyze' 88 50
 Skill 'pass door' 22 95
 Skill 'portal' 28 95
 Skill 'restore life' 60 95
 Skill 'sagacity' 14 95
-Skill 'sanctuary' 17 95
+Skill 'sanar' 13 95
+Skill 'santuario' 17 95
+Skill 'silencio' 1 95
 Skill 'transport' 23 95
 Skill 'word of recall' 7 95
-Skill 'animal companion' 6 95
-Skill 'backstab' 4 95
-Skill 'behead' 1 95
-Skill 'biofeedback' 52 95
-Skill 'brew' 38 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'disarm' 7 95
-Skill 'dodge' 1 95
-Skill 'dual wield' 15 95
-Skill 'eighth attack' 98 95
-Skill 'eldritch bolt' 90 65
-Skill 'endurance' 5 95
-Skill 'enhanced damage' 1 95
-Skill 'fifth attack' 50 95
-Skill 'flint fire' 1 95
-Skill 'fourth attack' 30 95
-Skill 'grip' 8 95
-Skill 'hide' 2 95
-Skill 'hitall' 35 95
-Skill 'judge' 10 95
+Skill 'ambidiestro' 15 95
+Skill 'apunyalar' 4 95
+Skill 'asir fuerte' 8 95
+Skill 'ataques poderosos' 1 95
+Skill 'cocinar' 1 95
+Skill 'cuarto ataque' 30 95
+Skill 'decapitar' 1 95
+Skill 'desarmar' 7 95
+Skill 'descanso regenerativo' 52 95
+Skill 'escribir' 47 95
+Skill 'esquivar' 1 95
 Skill 'judo chop' 20 95
-Skill 'kick' 5 95
+Skill 'juzgar' 10 95
+Skill 'llamar animal' 6 95
 Skill 'lore' 9 95
-Skill 'meditate' 8 95
-Skill 'mortify' 16 95
-Skill 'parry' 1 95
-Skill 'punch' 1 95
-Skill 'remember' 55 95
-Skill 'scan' 1 95
-Skill 'scribe' 47 95
-Skill 'second attack' 5 95
-Skill 'seventh attack' 86 95
-Skill 'sixth attack' 70 95
-Skill 'slice' 1 95
-Skill 'spirits ward' 42 95
-Skill 'swim' 1 95
-Skill 'third attack' 15 95
-Skill 'track' 11 95
+Skill 'meditar' 8 95
+Skill 'mortificar' 16 95
+Skill 'nadar' 1 95
+Skill 'octavo ataque' 98 95
+Skill 'ocultarse' 2 95
+Skill 'otear' 1 95
+Skill 'parar' 1 95
+Skill 'patada' 5 95
+Skill 'pedernal' 1 95
+Skill 'preparar' 38 95
+Skill 'proteccion espiritual' 42 95
+Skill 'punyetazo' 1 95
+Skill 'quinto ataque' 50 95
+Skill 'rastrear' 11 95
+Skill 'rayo poderoso' 90 65
+Skill 'rebanar' 1 95
+Skill 'recordar' 55 95
+Skill 'resistencia' 5 95
+Skill 'segundo ataque' 5 95
+Skill 'septimo ataque' 86 95
+Skill 'sexto ataque' 70 95
+Skill 'tercer ataque' 15 95
+Skill 'torbellino' 35 95
 Skill 'trance' 37 95
-Skill 'truesight' 12 95
-Skill '1h axes' 1 95
-Skill '1h bludgeons' 1 95
-Skill '1h long blades' 1 95
-Skill '1h short blades' 1 95
-Skill '2h axes' 1 95
-Skill '2h bludgeons' 1 95
-Skill '2h long blades' 1 95
-Skill 'archery' 1 95
-Skill 'flails' 1 95
-Skill 'lances' 1 95
-Skill 'polearms' 1 95
+Skill 'trepar' 1 95
+Skill 'vision mejorada' 12 95
+Skill 'armas cortas' 1 95
+Skill 'armas largas' 1 95
+Skill 'arquero' 1 95
+Skill 'bastones' 1 95
+Skill 'hachas' 1 95
+Skill 'hachas mejoradas' 1 95
+Skill 'impactos' 1 95
+Skill 'impactos mejorados' 1 95
+Skill 'lanzas' 1 95
+Skill 'latigos' 1 95
+Skill 'mayales' 1 95
+Skill 'picas' 1 95
+Skill 'poleas' 1 95
 Skill 'pugilism' 1 95
-Skill 'spears' 1 95
-Skill 'staves' 1 95
-Skill 'whips' 1 95
-Skill 'centaurian' 1 95
-Skill 'common' 1 95
-Skill 'demonic' 1 95
-Skill 'dwarven' 1 95
-Skill 'elven' 1 95
-Skill 'gnomish' 1 95
+Skill 'centauriano' 1 95
+Skill 'comun' 1 95
+Skill 'demoniaco' 1 95
+Skill 'duende' 1 95
+Skill 'elfico' 1 95
+Skill 'enano' 1 95
+Skill 'gnomo' 1 95
 Skill 'hobbit' 1 95
 Skill 'infernal' 1 95
-Skill 'ogrian' 1 95
-Skill 'orcish' 1 95
-Skill 'pixish' 1 95
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 95
+Skill 'orco' 1 95
+Skill 'troll' 1 95
 Title
 Man~
 Woman~

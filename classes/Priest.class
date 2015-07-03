@@ -21,12 +21,11 @@ Resist         0
 Suscept        0
 Skill 'admonishing smite' 12 95
 Skill 'alertness' 37 95
-Skill 'aqua breath' 27 95
 Skill 'arch healing' 12 95
 Skill 'aura of courage' 88 95
 Skill 'bestow vitae' 15 95
 Skill 'bless' 1 95
-Skill 'blindness' 6 95
+Skill 'cegar' 6 95
 Skill 'combat healing' 24 80
 Skill 'continual light' 7 95
 Skill 'create fire' 10 95
@@ -41,73 +40,74 @@ Skill 'cure serious' 9 95
 Skill 'detect hidden' 8 95
 Skill 'detect invis' 6 95
 Skill 'dispel magic' 36 95
+Skill 'dormir' 43 95
 Skill 'earthquake' 7 95
 Skill 'fireshield' 39 95
 Skill 'greater heal' 38 65
 Skill 'greater smite' 60 95
+Skill 'grupo invisible' 17 95
 Skill 'helical flow' 43 95
 Skill 'lethargy' 28 95
 Skill 'lorox mist' 80 95
-Skill 'mass invis' 17 95
-Skill 'poison' 82 95
 Skill 'refresh' 7 95
 Skill 'remove curse' 14 95
+Skill 'respiracion acuatica' 27 95
 Skill 'restore life' 52 75
-Skill 'sanctuary' 18 95
+Skill 'santuario' 18 95
 Skill 'scry' 24 95
-Skill 'sleep' 43 95
+Skill 'silencio' 1 95
 Skill 'smite' 2 95
 Skill 'soothing sermon' 44 95
 Skill 'summon' 54 95
 Skill 'summon strength' 15 95
 Skill 'uplift' 42 95
 Skill 'valiance' 95 95
+Skill 'veneno' 82 95
 Skill 'weaken' 5 95
 Skill 'word of recall' 16 95
-Skill 'aid' 1 95
-Skill 'behead' 1 95
-Skill 'brew' 64 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'dodge' 17 95
-Skill 'dual wield' 85 50
-Skill 'flint fire' 1 30
-Skill 'fourth attack' 50 60
-Skill 'higher magic' 20 95
-Skill 'kick' 5 95
-Skill 'layhands' 70 50
+Skill 'ambidiestro' 85 50
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'cocinar' 1 95
+Skill 'conjuros poderosos' 20 95
+Skill 'cuarto ataque' 50 60
+Skill 'decapitar' 1 95
+Skill 'escribir' 78 95
+Skill 'esquivar' 17 95
 Skill 'lore' 13 95
-Skill 'meditate' 16 95
-Skill 'mount' 1 95
-Skill 'parry' 20 95
-Skill 'pawn mark' 25 95
-Skill 'punch' 1 95
-Skill 'remember' 40 95
-Skill 'scan' 1 95
-Skill 'scribe' 78 95
-Skill 'search' 1 95
-Skill 'second attack' 16 80
-Skill 'slice' 1 95
-Skill 'swim' 1 95
-Skill 'third attack' 30 70
+Skill 'manos sanadoras' 70 50
+Skill 'marca' 25 95
+Skill 'meditar' 16 95
+Skill 'montar' 1 95
+Skill 'nadar' 1 95
+Skill 'otear' 1 95
+Skill 'parar' 20 95
+Skill 'patada' 5 95
+Skill 'pedernal' 1 30
+Skill 'preparar' 64 95
+Skill 'punyetazo' 1 95
+Skill 'rebanar' 1 95
+Skill 'recordar' 40 95
+Skill 'segundo ataque' 16 80
+Skill 'tercer ataque' 30 70
 Skill 'trance' 32 95
-Skill '1h bludgeons' 1 95
-Skill 'staves' 1 95
+Skill 'trepar' 1 95
+Skill 'bastones' 1 95
+Skill 'impactos' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Man~
 Woman~

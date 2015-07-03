@@ -26,79 +26,79 @@ Skill 'demonskin' 34 95
 Skill 'farsight' 68 95
 Skill 'fireshield' 55 95
 Skill 'gate' 14 95
-Skill 'invis' 17 95
+Skill 'inmovilizar' 75 50
+Skill 'invisibilidad' 17 95
 Skill 'locate object' 52 95
 Skill 'minor globe' 25 95
 Skill 'ogre vitality' 30 95
-Skill 'paralyze' 75 50
 Skill 'pass door' 21 95
 Skill 'scry' 24 95
 Skill 'shadow bolt' 96 95
 Skill 'shadowform' 78 95
+Skill 'silencio' 1 95
 Skill 'slow' 42 95
 Skill 'transport' 70 95
 Skill 'word of recall' 8 95
-Skill 'aid' 1 95
-Skill 'ball of fire' 1 95
-Skill 'behead' 1 95
-Skill 'brittle bone' 45 95
-Skill 'climb' 1 80
-Skill 'cook' 1 95
-Skill 'displacement' 85 95
-Skill 'dodge' 5 95
-Skill 'dual wield' 17 90
-Skill 'endurance' 1 95
-Skill 'enhanced damage' 1 90
-Skill 'feed' 3 95
-Skill 'fifth attack' 50 65
-Skill 'find weakness' 49 95
-Skill 'fourth attack' 37 80
-Skill 'fury' 28 95
-Skill 'impale' 15 95
-Skill 'inferno' 62 95
-Skill 'kick' 5 95
-Skill 'mount' 1 90
-Skill 'phase' 40 95
-Skill 'punch' 1 90
-Skill 'remember' 40 95
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 10 90
-Skill 'shield' 12 85
-Skill 'sixth attack' 90 35
-Skill 'slice' 1 95
-Skill 'spike' 13 95
-Skill 'swim' 1 95
-Skill 'telepathy' 1 95
-Skill 'third attack' 20 90
-Skill 'truesight' 10 95
-Skill 'unholy sphere' 4 95
-Skill 'wings' 1 95
-Skill '1h axes' 1 95
-Skill '1h bludgeons' 1 95
-Skill '1h long blades' 1 95
-Skill '1h short blades' 1 95
-Skill '2h bludgeons' 1 95
-Skill 'flails' 1 95
+Skill 'alas' 1 95
+Skill 'alimentarse' 3 95
+Skill 'ambidiestro' 17 90
+Skill 'ataques poderosos' 1 90
+Skill 'ayudar' 1 95
+Skill 'bola de fuego' 1 95
+Skill 'buscar' 1 95
+Skill 'cocinar' 1 95
+Skill 'cuarto ataque' 37 80
+Skill 'decapitar' 1 95
+Skill 'desmaterializarse' 40 95
+Skill 'desplazamiento' 85 95
+Skill 'empalar' 15 95
+Skill 'encontrar debilidad' 49 95
+Skill 'escudo' 12 85
+Skill 'esfera profana' 4 95
+Skill 'esquivar' 5 95
+Skill 'furia' 28 95
+Skill 'huesos de cristal' 45 95
+Skill 'infierno' 62 95
+Skill 'montar' 1 90
+Skill 'nadar' 1 95
+Skill 'otear' 1 95
+Skill 'patada' 5 95
+Skill 'pinchos' 13 95
+Skill 'punyetazo' 1 90
+Skill 'quinto ataque' 50 65
+Skill 'rebanar' 1 95
+Skill 'recordar' 40 95
+Skill 'resistencia' 1 95
+Skill 'segundo ataque' 10 90
+Skill 'sexto ataque' 90 35
+Skill 'telepatia' 1 95
+Skill 'tercer ataque' 20 90
+Skill 'trepar' 1 80
+Skill 'vision mejorada' 10 95
+Skill 'armas cortas' 1 95
+Skill 'armas largas' 1 95
+Skill 'garras' 1 95
+Skill 'hachas' 1 95
+Skill 'impactos' 1 95
+Skill 'impactos mejorados' 1 95
+Skill 'lanzas' 1 95
+Skill 'latigos' 1 95
+Skill 'mayales' 1 95
 Skill 'pugilism' 1 95
-Skill 'spears' 1 95
-Skill 'talons' 1 95
-Skill 'whips' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Hellspawn~
 Hellspawn~

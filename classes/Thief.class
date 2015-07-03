@@ -21,80 +21,80 @@ Resist         0
 Suscept        0
 Skill 'detect hidden' 12 95
 Skill 'detect invis' 9 95
+Skill 'dormir' 14 95
 Skill 'feline grace' 13 95
-Skill 'invis' 8 95
-Skill 'nosight' 31 95
-Skill 'sleep' 14 95
-Skill 'aid' 1 95
-Skill 'arteries' 95 95
-Skill 'assassinate' 100 95
-Skill 'backstab' 3 99
-Skill 'behead' 1 95
-Skill 'circle' 40 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'daze' 90 95
-Skill 'disarm' 9 95
-Skill 'disguise' 12 95
-Skill 'dodge' 7 95
-Skill 'doorbash' 20 95
-Skill 'dual wield' 24 95
-Skill 'eighth attack' 98 25
-Skill 'endurance' 34 80
-Skill 'enhanced damage' 1 95
-Skill 'ensnare' 50 90
-Skill 'feign death' 30 50
-Skill 'festering wound' 5 95
-Skill 'fifth attack' 65 85
-Skill 'find weakness' 55 95
-Skill 'flint fire' 1 30
-Skill 'fourth attack' 45 95
-Skill 'gouge' 17 95
-Skill 'hide' 1 99
-Skill 'kick' 5 95
+Skill 'invisibilidad' 8 95
+Skill 'nocegar' 31 95
+Skill 'silencio' 1 95
+Skill 'ambidiestro' 24 95
+Skill 'apunyalar' 3 99
+Skill 'arterias' 95 95
+Skill 'asesinar' 100 95
+Skill 'ataques poderosos' 1 95
+Skill 'atrapar' 50 90
+Skill 'aturdir' 90 95
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'caer' 11 60
+Skill 'cocinar' 1 95
+Skill 'contranbandear' 60 95
+Skill 'cuarto ataque' 45 95
+Skill 'decapitar' 1 95
+Skill 'derribar' 20 95
+Skill 'desarmar' 9 95
+Skill 'desatar' 10 95
+Skill 'desequilibrar' 28 95
+Skill 'disfrazar' 12 95
+Skill 'disimular' 3 99
+Skill 'disparo veloz' 11 95
+Skill 'encontrar debilidad' 55 95
+Skill 'envenenar armas' 75 95
+Skill 'esquivar' 7 95
+Skill 'fingir muerte' 30 50
+Skill 'fisgar' 2 95
+Skill 'forzar cerraduras' 4 95
+Skill 'herida infestada' 5 95
 Skill 'lore' 15 35
 Skill 'low blow' 2 95
-Skill 'mount' 1 95
-Skill 'parry' 6 95
-Skill 'peek' 2 95
-Skill 'pick lock' 4 95
-Skill 'poison weapon' 75 95
-Skill 'punch' 1 95
-Skill 'restring' 11 95
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 10 95
-Skill 'sidestep' 28 95
-Skill 'sixth attack' 85 75
-Skill 'slice' 1 95
-Skill 'smuggle' 60 95
-Skill 'sneak' 3 99
-Skill 'steal' 2 95
-Skill 'swim' 1 95
-Skill 'third attack' 25 95
-Skill 'track' 10 95
-Skill 'tumble' 11 60
-Skill 'untangle' 10 95
-Skill '1h axes' 1 95
-Skill '1h long blades' 1 95
-Skill '1h short blades' 1 95
-Skill 'archery' 1 95
-Skill 'blowguns' 4 95
-Skill 'flails' 1 95
-Skill 'centaurian' 1 95
-Skill 'common' 1 95
-Skill 'demonic' 1 95
-Skill 'dwarven' 1 95
-Skill 'elven' 1 95
-Skill 'gnomish' 1 95
-Skill 'goblic' 1 95
+Skill 'luchar sucio' 17 95
+Skill 'montar' 1 95
+Skill 'nadar' 1 95
+Skill 'octavo ataque' 98 25
+Skill 'ocultarse' 1 99
+Skill 'otear' 1 95
+Skill 'parar' 6 95
+Skill 'patada' 5 95
+Skill 'pedernal' 1 30
+Skill 'punyetazo' 1 95
+Skill 'quinto ataque' 65 85
+Skill 'rastrear' 10 95
+Skill 'rebanar' 1 95
+Skill 'resistencia' 34 80
+Skill 'robar' 2 95
+Skill 'rodear' 40 95
+Skill 'segundo ataque' 10 95
+Skill 'sexto ataque' 85 75
+Skill 'tercer ataque' 25 95
+Skill 'trepar' 1 95
+Skill 'armas cortas' 1 95
+Skill 'armas largas' 1 95
+Skill 'arquero' 1 95
+Skill 'cerbatanas' 4 95
+Skill 'hachas' 1 95
+Skill 'mayales' 1 95
+Skill 'centauriano' 1 95
+Skill 'comun' 1 95
+Skill 'demoniaco' 1 95
+Skill 'duende' 1 95
+Skill 'elfico' 1 95
+Skill 'enano' 1 95
+Skill 'gnomo' 1 95
+Skill 'goblin' 1 95
 Skill 'hobbit' 1 95
 Skill 'infernal' 1 95
-Skill 'ogrian' 1 95
-Skill 'orcish' 1 95
-Skill 'pixish' 1 95
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 95
+Skill 'orco' 1 95
+Skill 'troll' 1 95
 Title
 Man~
 Woman~

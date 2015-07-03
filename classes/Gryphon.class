@@ -20,49 +20,49 @@ Craftbase        0
 Resist         0
 Suscept        0
 Skill 'locate object' 16 95
+Skill 'silencio' 1 95
 Skill 'word of recall' 20 95
-Skill 'aid' 1 95
-Skill 'animal form' 10 95
-Skill 'bite' 1 95
-Skill 'claw' 1 95
-Skill 'climb' 1 95
-Skill 'cook' 1 95
-Skill 'dodge' 2 95
-Skill 'doorbash' 8 95
-Skill 'enhanced damage' 44 95
-Skill 'fifth attack' 85 95
-Skill 'fourth attack' 65 95
-Skill 'kick' 5 95
+Skill 'alas' 1 95
+Skill 'ataques poderosos' 44 95
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'cocinar' 1 95
+Skill 'cuarto ataque' 65 95
+Skill 'derribar' 8 95
+Skill 'esquivar' 2 95
+Skill 'fisgar' 45 95
+Skill 'forma animal' 10 95
 Skill 'lore' 12 95
-Skill 'peek' 45 95
-Skill 'rage' 18 95
-Skill 'regenerate' 15 95
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 7 95
-Skill 'slice' 1 95
-Skill 'smell' 8 95
-Skill 'swim' 1 95
-Skill 'thick hide' 13 95
-Skill 'third attack' 30 95
-Skill 'truesight' 19 95
-Skill 'wings' 1 95
+Skill 'morder' 1 95
+Skill 'nadar' 1 95
+Skill 'olfatear' 8 95
+Skill 'otear' 1 95
+Skill 'patada' 5 95
+Skill 'piel gruesa' 13 95
+Skill 'quinto ataque' 85 95
+Skill 'rabia' 18 95
+Skill 'rebanar' 1 95
+Skill 'regenerar' 15 95
+Skill 'segundo ataque' 7 95
+Skill 'tercer ataque' 30 95
+Skill 'trepar' 1 95
+Skill 'vision mejorada' 19 95
+Skill 'zarpazo' 1 95
 Skill 'celestial' 1 95
-Skill 'centaurian' 1 95
-Skill 'common' 1 95
-Skill 'demonic' 1 95
-Skill 'draconic' 1 95
-Skill 'dwarven' 1 95
-Skill 'elven' 1 95
-Skill 'gnomish' 1 95
-Skill 'goblic' 1 95
+Skill 'centauriano' 1 95
+Skill 'comun' 1 95
+Skill 'demoniaco' 1 95
+Skill 'draconiano' 1 95
+Skill 'duende' 1 95
+Skill 'elfico' 1 95
+Skill 'enano' 1 95
+Skill 'gnomo' 1 95
+Skill 'goblin' 1 95
 Skill 'hobbit' 1 95
 Skill 'infernal' 1 95
-Skill 'ogrian' 1 95
-Skill 'orcish' 1 95
-Skill 'pixish' 1 95
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 95
+Skill 'orco' 1 95
+Skill 'troll' 1 95
 Title
 Lord~
 Lord~

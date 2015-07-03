@@ -329,19 +329,19 @@ void do_finger( CHAR_DATA *ch, char *argument )
         ch_printf( ch, "&wHaltura    : &G%2d'%2d\"        &wAnchura: &G%d lbs\r\n", feet, inches,
                    victim->weight );
         if ( victim->pcdata->tradeclass == 20 )
-            ch_printf( ch, "&wTrade     : &GBlacksmith    &wCrafting Level:&G %d\r\n",
+            ch_printf( ch, "&wArtesanía  : &GHerreroh    &wNivel:&G %d\r\n",
                        victim->pcdata->tradelevel );
         if ( victim->pcdata->tradeclass == 21 )
-            ch_printf( ch, "&wTrade     : &GBaker         &wCrafting Level:&G %d\r\n",
+            ch_printf( ch, "&wArtesanía: &GPanadero         &wnivel:&G %d\r\n",
                        victim->pcdata->tradelevel );
         if ( victim->pcdata->tradeclass == 22 )
-            ch_printf( ch, "&wTrade     : &GTanner         &wCrafting Level:&G %d\r\n",
+            ch_printf( ch, "&wArtesanía     : &GCurtidor         &wNivel:&G %d\r\n",
                        victim->pcdata->tradelevel );
         if ( victim->pcdata->tradeclass == 24 )
-            ch_printf( ch, "&wTrade     : &GJeweler        &wCrafting Level:&G %d\r\n",
+            ch_printf( ch, "&wArtesanía  : &GJoyero        &wNivel:&G %d\r\n",
                        victim->pcdata->tradelevel );
         if ( victim->pcdata->tradeclass == 25 )
-            ch_printf( ch, "&wTrade     : &GCarpenter      &wCrafting Level:&G %d\r\n",
+            ch_printf( ch, "&wArtesanía     : &GCarpintero      &wNivel:&G %d\r\n",
                        victim->pcdata->tradelevel );
 
         ch_printf( ch, "&wTítulo     :&G%s\r\n", victim->pcdata->title );

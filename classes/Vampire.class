@@ -22,98 +22,97 @@ Suscept        0
 Skill 'armor' 36 95
 Skill 'battlefield view' 70 95
 Skill 'black lightning' 85 95
-Skill 'blindness' 56 80
-Skill 'curse' 38 75
+Skill 'cegar' 56 80
 Skill 'dark blessings' 15 95
 Skill 'detect magic' 20 85
 Skill 'dispel magic' 69 95
+Skill 'dormir' 45 95
 Skill 'enchant weapon' 46 85
 Skill 'farsight' 92 95
 Skill 'fascinate' 95 95
+Skill 'inmovilizar' 79 50
 Skill 'locate object' 64 95
-Skill 'nosight' 31 95
-Skill 'paralyze' 79 50
-Skill 'poison' 44 95
+Skill 'maldecir' 38 75
+Skill 'nocegar' 31 95
 Skill 'remove invis' 35 80
 Skill 'scry' 24 95
 Skill 'shadowform' 86 95
-Skill 'sleep' 45 95
+Skill 'silencio' 1 95
 Skill 'slow' 42 95
 Skill 'transport' 92 40
 Skill 'unholy shroud' 37 95
+Skill 'veneno' 44 95
 Skill 'ventriloquate' 9 95
 Skill 'weaken' 30 95
-Skill 'behead' 1 95
-Skill 'biofeedback' 60 95
-Skill 'bite' 1 95
-Skill 'bloodlet' 11 95
-Skill 'brittle bone' 60 95
-Skill 'broach' 41 60
-Skill 'burrow' 1 95
-Skill 'cannibalize' 10 95
-Skill 'claw' 1 95
-Skill 'climb' 1 95
+Skill 'alas' 17 95
+Skill 'alimentarse' 1 95
+Skill 'ambidiestro' 24 90
+Skill 'ataques poderosos' 28 95
+Skill 'buscar' 1 95
+Skill 'canibalizar' 10 95
+Skill 'chillido' 35 95
+Skill 'compartir' 11 95
 Skill 'control' 20 95
-Skill 'dodge' 3 95
-Skill 'dual wield' 24 90
-Skill 'endurance' 63 50
-Skill 'enhanced damage' 28 95
+Skill 'cuarto ataque' 48 80
+Skill 'decapitar' 1 95
+Skill 'desangrar' 32 80
+Skill 'descanso regenerativo' 60 95
+Skill 'desmaterializarse' 39 60
+Skill 'empalar' 13 95
+Skill 'enterrarse' 1 95
+Skill 'esquivar' 3 95
+Skill 'estudio vampirico' 4 95
 Skill 'fade' 2 95
-Skill 'feed' 1 95
-Skill 'fifth attack' 68 65
-Skill 'fourth attack' 48 80
-Skill 'gauge' 4 95
-Skill 'granite skin' 26 95
-Skill 'impale' 13 95
-Skill 'kick' 5 95
-Skill 'maim' 32 80
-Skill 'marble skin' 5 95
+Skill 'fisgar' 8 95
+Skill 'fuerza vampirica' 1 95
+Skill 'huesos de cristal' 60 95
 Skill 'mistform' 6 95
-Skill 'mistwalk' 43 90
-Skill 'mount' 1 95
-Skill 'parry' 4 95
-Skill 'peek' 8 95
-Skill 'phase' 39 60
-Skill 'punch' 1 95
-Skill 'scan' 1 95
-Skill 'search' 1 95
-Skill 'second attack' 10 95
-Skill 'seventh attack' 98 25
-Skill 'shelter' 9 95
-Skill 'shriek' 35 95
-Skill 'sixth attack' 90 35
-Skill 'slice' 1 95
-Skill 'smell' 17 50
-Skill 'surreal speed' 1 95
-Skill 'swim' 1 95
-Skill 'telepathy' 1 95
-Skill 'thaitin' 25 95
-Skill 'third attack' 30 95
-Skill 'truesight' 10 95
-Skill 'vampiric strength' 1 95
-Skill 'wings' 17 95
-Skill '1h bludgeons' 1 95
-Skill '1h long blades' 1 95
-Skill '1h short blades' 1 95
-Skill '2h bludgeons' 1 95
-Skill '2h long blades' 1 95
-Skill 'talons' 1 95
-Skill 'whips' 1 95
+Skill 'montar' 1 95
+Skill 'morder' 1 95
+Skill 'movimiento sombrio' 43 90
+Skill 'nadar' 1 95
+Skill 'niebla' 41 60
+Skill 'olfatear' 17 50
+Skill 'otear' 1 95
+Skill 'parar' 4 95
+Skill 'patada' 5 95
+Skill 'piel de granito' 26 95
+Skill 'piel de marmol' 5 95
+Skill 'punyetazo' 1 95
+Skill 'quemar' 25 95
+Skill 'quinto ataque' 68 65
+Skill 'rebanar' 1 95
+Skill 'refugiarse' 9 95
+Skill 'resistencia' 63 50
+Skill 'segundo ataque' 10 95
+Skill 'septimo ataque' 98 25
+Skill 'sexto ataque' 90 35
+Skill 'telepatia' 1 95
+Skill 'tercer ataque' 30 95
+Skill 'trepar' 1 95
+Skill 'velocidad surealista' 1 95
+Skill 'vision mejorada' 10 95
+Skill 'zarpazo' 1 95
+Skill 'armas cortas' 1 95
+Skill 'armas largas' 1 95
+Skill 'garras' 1 95
+Skill 'impactos' 1 95
+Skill 'impactos mejorados' 1 95
+Skill 'latigos' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Vampire~
 Vampiress~

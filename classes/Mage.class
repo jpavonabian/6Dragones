@@ -43,7 +43,7 @@ Skill 'fly' 7 95
 Skill 'freeze' 32 95
 Skill 'gas breath' 74 95
 Skill 'incinerate' 30 95
-Skill 'invis' 16 95
+Skill 'invisibilidad' 16 95
 Skill 'lightning strike' 8 95
 Skill 'locate object' 18 95
 Skill 'ogre vitality' 15 95
@@ -51,6 +51,7 @@ Skill 'pass door' 22 95
 Skill 'portal' 34 95
 Skill 'scry' 24 95
 Skill 'shadowform' 88 95
+Skill 'silencio' 1 95
 Skill 'static pulse' 2 95
 Skill 'summon' 48 95
 Skill 'transport' 50 95
@@ -58,56 +59,55 @@ Skill 'valiance' 95 95
 Skill 'wizard eye' 14 95
 Skill 'wizard sight' 10 95
 Skill 'word of recall' 11 95
-Skill 'aid' 1 95
-Skill 'behead' 1 95
-Skill 'blizzard' 37 95
-Skill 'brew' 25 95
-Skill 'climb' 1 95
-Skill 'conjure elemental' 25 95
-Skill 'cook' 1 95
-Skill 'dehydrate' 10 95
-Skill 'dodge' 17 95
-Skill 'dual wield' 85 50
-Skill 'eldritch bolt' 92 50
-Skill 'flint fire' 1 30
-Skill 'fourth attack' 44 60
-Skill 'higher magic' 20 95
-Skill 'inferno' 35 95
-Skill 'kick' 5 95
-Skill 'meditate' 6 95
-Skill 'mount' 1 95
-Skill 'phase' 70 70
-Skill 'punch' 1 95
-Skill 'remember' 30 95
-Skill 'scan' 1 95
-Skill 'scribe' 49 100
-Skill 'search' 1 95
-Skill 'second attack' 10 80
-Skill 'shield' 2 95
-Skill 'shrink' 10 95
-Skill 'slice' 1 95
+Skill 'ambidiestro' 85 50
+Skill 'ayudar' 1 95
+Skill 'buscar' 1 95
+Skill 'cocinar' 1 95
+Skill 'conjurar elemental' 25 95
+Skill 'conjuros poderosos' 20 95
+Skill 'cuarto ataque' 44 60
+Skill 'decapitar' 1 95
+Skill 'desidratar' 10 95
+Skill 'desmaterializarse' 70 70
+Skill 'encoger' 10 95
+Skill 'escribir' 49 100
+Skill 'escudo' 2 95
+Skill 'esquivar' 17 95
+Skill 'infierno' 35 95
+Skill 'lamentos' 20 95
+Skill 'meditar' 6 95
+Skill 'montar' 1 95
+Skill 'nadar' 1 95
+Skill 'otear' 1 95
+Skill 'patada' 5 95
+Skill 'pedernal' 1 30
+Skill 'preparar' 25 95
+Skill 'punyetazo' 1 95
+Skill 'rayo poderoso' 92 50
+Skill 'rebanar' 1 95
+Skill 'recordar' 30 95
+Skill 'segundo ataque' 10 80
 Skill 'spray lightning' 12 95
-Skill 'swim' 1 95
-Skill 'third attack' 28 70
+Skill 'tercer ataque' 28 70
 Skill 'trance' 29 95
-Skill 'wailing haze' 20 95
-Skill '1h short blades' 1 95
-Skill 'staves' 1 95
+Skill 'trepar' 1 95
+Skill 'ventisca' 37 95
+Skill 'armas cortas' 1 95
+Skill 'bastones' 1 95
 Skill 'celestial' 1 99
-Skill 'centaurian' 1 95
-Skill 'common' 1 99
-Skill 'demonic' 1 99
-Skill 'dwarven' 1 99
-Skill 'elven' 1 99
-Skill 'gnomish' 1 99
-Skill 'goblic' 1 99
+Skill 'centauriano' 1 95
+Skill 'comun' 1 99
+Skill 'demoniaco' 1 99
+Skill 'duende' 1 99
+Skill 'elfico' 1 99
+Skill 'enano' 1 99
+Skill 'gnomo' 1 99
+Skill 'goblin' 1 99
 Skill 'hobbit' 1 99
 Skill 'infernal' 1 99
-Skill 'ogrian' 1 99
-Skill 'orcish' 1 99
-Skill 'pixish' 1 99
-Skill 'silent' 1 95
-Skill 'trollese' 1 95
+Skill 'ogro' 1 99
+Skill 'orco' 1 99
+Skill 'troll' 1 95
 Title
 Man~
 Woman~
