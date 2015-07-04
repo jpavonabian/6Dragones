@@ -899,7 +899,7 @@ void boot_db( bool fCopyOver )
         ASSIGN_GSN( gsn_cone, "cono" );
         ASSIGN_GSN( gsn_defend, "defensa poderosa" );
         ASSIGN_GSN( gsn_assassinate, "asesinar" );
-        ASSIGN_GSN( gsn_breath, "respirar" );
+        ASSIGN_GSN( gsn_breath, "aliento" );
         ASSIGN_GSN( gsn_lick, "lamer" );
         ASSIGN_GSN( gsn_tears, "lagrimas" );
         ASSIGN_GSN( gsn_eldritch_bolt, "rayo poderoso" );

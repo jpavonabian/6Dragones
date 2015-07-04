@@ -185,29 +185,29 @@ const char             *const a_flags[] = {
     "detectar_invisible", "detectar_magia", "detectar_oculto",
     "fascinar", "santuario", "faerie_fire",
     "infravision", "maldecir", "escudo",                     // 12
-    "veneno", "protect", "paralysis",                  // 15
+    "veneno", "proteccion", "paralysis",                  // 15
     "disimular", "ocultarse", "dormir",                          // 18
     "encantar", "volar", "traspasar",                    // 21
-    "flotar", "truesight", "detect_traps",
-    "scrying", "fireshield", "shockshield",
-    "detect_sneak", "iceshield", "possess",            // 30
+    "flotar", "vision_mejorada", "detectar_trampas",
+    "scrying", "escudo_igneo", "escudo_electrico",
+    "detectar_sigilo", "escudo_hielo", "possess",            // 30
     "berserk", "respiracion_acuatica", "recurringspell",
     "contagious", "acidmist", "venomshield",
-    "shapeshift", "demonic_sight", "nosight",
-    "spike", "unholy_sphere", "wizard_eye",
-    "thaitin", "shrink", "heavens_bless",              // 45
-    "vampiric_strength", "surreal_speed", "burrow",
-    "age", "silence", "feign", "mana_pool", "maim",
-    "reactive", "nettle", "slow", "ward", "anoint",
-    "fury", "boost", "prayer", "kinetic",
-    "unsearing_skin", "iron_skin",                     // 64
-    "defensive_posturing", "recoil", "sidestep",
-    "thicken_skin", "root", "keen_eye", "murazor",
-    "body", "stirring", "sustain_self", "snare",
-    "ritual", "siphon_strength", "decree_decay",
-    "giant_strength", "wizard_sight", "grendals_stance", "aura_life",
-    "acidic_touch", "tangled", "flaming_shield", "greater_restore", // 81
-    "energy_containment",
+    "cambiarforma", "vista_demoniaca", "nocegado",
+    "pinchos", "esfera_profana", "ojo_magico",
+    "quemar", "encoger", "bendicion_divina",              // 45
+    "fuerza_vampirica", "velocidad_surealista", "enterrar",
+    "age", "silence", "feign", "campo_poderoso", "desangrar",
+    "reactive", "nettle", "lentitud", "ward", "anoint",
+    "furia", "precision", "horacion", "kinetic",
+    "unsearing_skin", "piel_metalica",                     // 64
+    "defenderse", "agresividad", "desequilibrar",
+    "piel_pesada", "enraizar", "keen_eye", "murazor",
+    "body", "stirring", "sustain_self", "atrapar",
+    "ritual", "siphon_strength", "campo_malevolo",
+    "giant_strength", "wizard_sight", "Estilo_grendal", "aura_vital",
+    "acidic_touch", "inmovil", "escudo_fuego", "greater_restore", // 81
+    "contenedor_energetico",
 // afflictions
     "fungal_toxin",
     "asthma", "clumsiness", "confusion", "dizziness", "nausea", "migraine",
@@ -215,8 +215,8 @@ const char             *const a_flags[] = {
     "neurotoxin", "toxin", "corrosive", "venom_toxin", "highermagic",   // 98
     "ptalons", "battlefield", "diseased", "dragonlord", "hate", "crafted_food1", "crafted_food2",   // 105
     "crafted_food3", "crafted_drink1", "crafted_drink2", "crafted_drink3", "noscent", "victim", "graze",    // 112
-    "graft", "ottos_dance", "sound_waves", "mounted", "phase", "tangle", "armor",   // 119
-    "disguise", "animalform", "infectious_claws", "r123", "r124", "r125", "r126", "r127"    // 127
+    "graft", "baile_irresistible", "ondas_sonoras", "mounted", "desmaterializar", "tangle", "armadura",   // 119
+    "disfrazar", "forma_animal", "garras_infectadas", "r123", "r124", "r125", "r126", "r127"    // 127
 };
 
 const char             *const act_flags[] = {

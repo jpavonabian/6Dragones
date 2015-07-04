@@ -2112,7 +2112,7 @@ void char_update( void )
             if ( xIS_SET( ch->act, PLR_AUTOWAKE ) && ch->hit == ch->max_hit ) {
                 send_to_char( "Con la salud recuperada, despiertas de tu reparador sueño.\r\n",
                               ch );
-                interpret( ch, ( char * ) "despierta" );
+                interpret( ch, ( char * ) "levantarse" );
             }
         }
 
