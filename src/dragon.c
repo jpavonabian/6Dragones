@@ -3394,8 +3394,6 @@ ch_ret spell_clavus( int sn, int level, CHAR_DATA *ch, void *vo )
             continue;
 
         if ( IS_IMMORTAL( vch ) && vch->in_room ) {
-            ch_printf( vch, "Permaneces inmóvil, ya que los clavos de %s no pueden golpearte.\r\n",
-                       ch->name );
             continue;
         }
 

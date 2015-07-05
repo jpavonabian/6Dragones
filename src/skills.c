@@ -1789,22 +1789,22 @@ void do_gouge( CHAR_DATA *ch, char *argument )
     int                     chance;
 
     if ( IS_NPC( ch ) && IS_AFFECTED( ch, AFF_CHARM ) ) {
-        send_to_char( "You can't concentrate enough for that.\r\n", ch );
+        send_to_char( "No puedes concentrarte lo suficiente.\r\n", ch );
         return;
     }
 
     if ( !can_use_skill( ch, 0, gsn_gouge ) ) {
-        send_to_char( "You do not yet know of this skill.\r\n", ch );
+        send_to_char( "No conoces esa habilidad... ¡Todavía!.\r\n", ch );
         return;
     }
 
     if ( ch->mount ) {
-        send_to_char( "You can't get close enough while mounted.\r\n", ch );
+        send_to_char( "No puedes acercarte mientras estás montado.\r\n", ch );
         return;
     }
 
     if ( ( victim = who_fighting( ch ) ) == NULL ) {
-        send_to_char( "You aren't fighting anyone.\r\n", ch );
+        send_to_char( "No estás luchando con nadie.\r\n", ch );
         return;
     }
 
@@ -1828,13 +1828,13 @@ void do_gouge( CHAR_DATA *ch, char *argument )
                 af.bitvector = meb( AFF_BLINDNESS );
                 af.level = ch->level;
                 affect_join( victim, &af );
-                act( AT_SKILL, "You can't see a thing!", victim, NULL, NULL, TO_CHAR );
+                act( AT_SKILL, "¡No puedes ver nada!", victim, NULL, NULL, TO_CHAR );
             }
             WAIT_STATE( ch, PULSE_VIOLENCE );
             if ( !IS_NPC( ch ) && !IS_NPC( victim ) ) {
                 if ( number_bits( 1 ) == 0 ) {
-                    ch_printf( ch, "%s looks momentarily dazed.\r\n", victim->name );
-                    send_to_char( "You are momentarily dazed ...\r\n", victim );
+                    ch_printf( ch, "%s parece momentáneamente aturdido.\r\n", victim->name );
+                    send_to_char( "Estás  momentáneamente aturdido...\r\n", victim );
                     WAIT_STATE( victim, PULSE_VIOLENCE );
                 }
             }
@@ -1850,7 +1850,7 @@ void do_gouge( CHAR_DATA *ch, char *argument )
         }
         else if ( global_retcode == rVICT_DIED ) {
             act( AT_BLOOD,
-                 "Your fingers plunge into your victim's brain, causing immediate death!",
+                 "¡Tus dedos se hunden en el cerebro de tu víctima, causando la muerte inmediata!!",
                  ch, NULL, NULL, TO_CHAR );
         }
         if ( global_retcode != rCHAR_DIED && global_retcode != rBOTH_DIED )
@@ -1876,12 +1876,12 @@ void do_detrap( CHAR_DATA *ch, char *argument )
     switch ( ch->substate ) {
         default:
             if ( IS_NPC( ch ) && IS_AFFECTED( ch, AFF_CHARM ) ) {
-                send_to_char( "You can't concentrate enough for that.\r\n", ch );
+                send_to_char( "No puedes concentrarte lo suficiente para eso.\r\n", ch );
                 return;
             }
             argument = one_argument( argument, arg );
             if ( !can_use_skill( ch, 0, gsn_detrap ) ) {
-                send_to_char( "You do not yet know of this skill.\r\n", ch );
+                send_to_char( "Todavía no conoces esa habilidad.\r\n", ch );
                 return;
             }
             if ( arg[0] == '\0' ) {
@@ -1892,11 +1892,11 @@ void do_detrap( CHAR_DATA *ch, char *argument )
                 return;
             found = FALSE;
             if ( ch->mount ) {
-                send_to_char( "You can't do that while mounted.\r\n", ch );
+                send_to_char( "No puedes hacer eso mientras estás montado.\r\n", ch );
                 return;
             }
             if ( !ch->in_room->first_content ) {
-                send_to_char( "You can't find that here.\r\n", ch );
+                send_to_char( "No puedes encontrar eso aquí.\r\n", ch );
                 return;
             }
             for ( obj = ch->in_room->first_content; obj; obj = obj->next_content ) {
@@ -1906,12 +1906,12 @@ void do_detrap( CHAR_DATA *ch, char *argument )
                 }
             }
             if ( !found ) {
-                send_to_char( "You can't find that here.\r\n", ch );
+                send_to_char( "No puedes encontrar eso aquí.\r\n", ch );
                 return;
             }
-            act( AT_ACTION, "You carefully begin your attempt to remove a trap from $p...",
+            act( AT_ACTION, "Cuidadosamenbte empiezas el intento de eliminar una trampa de $p...",
                  ch, obj, NULL, TO_CHAR );
-            act( AT_ACTION, "$n carefully attempts to remove a trap from $p...", ch, obj,
+            act( AT_ACTION, "$n intenta cuidadosamente eliminar una trampa  de $p...", ch, obj,
                  NULL, TO_ROOM );
             ch->alloc_ptr = str_dup( obj->name );
             add_timer( ch, TIMER_DO_FUN, 3, do_detrap, 1 );

@@ -934,7 +934,7 @@ void do_deed( CHAR_DATA *ch, char *argument )
             return;
         }
     if ( ( victim = get_char_room( ch, arg ) ) == NULL ) {
-       	send_to_char( "They aren't here.\r\n", ch );
+       	send_to_char( "No está aquí.\r\n", ch );
         return;
     }
 
