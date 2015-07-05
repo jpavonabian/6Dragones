@@ -1434,7 +1434,7 @@ void do_equipment( CHAR_DATA *ch, char *argument )
             if ( obj->wear_loc == iWear ) {
                 empty_slot = FALSE;
                 if ( ( !IS_NPC( ch ) ) && ( ch->race > 0 ) && ( ch->race < MAX_PC_RACE ) )
-                    send_to_char( race_table[ch->race]->where_name[iWear], ch );
+                    send_to_char( where_name[iWear], ch ); //                   send_to_char( race_table[ch->race]->where_name[iWear], ch );
                 else
                     send_to_char( where_name[iWear], ch );
                 if ( can_see_obj( ch, obj ) ) {
