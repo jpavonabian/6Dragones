@@ -1,4 +1,4 @@
-Name           Black~
+Name           negro~
 Filename       Black~
 Class          8
 Starting       1
@@ -21,9 +21,9 @@ Resist         128
 Suscept        0
 Skill 'armor' 3 95
 Skill 'battlefield view' 29 95
+Skill 'campo mortal' 97 95
 Skill 'continual light' 5 95
 Skill 'create fire' 3 95
-Skill 'death field' 97 95
 Skill 'dispel magic' 28 95
 Skill 'ethereal shield' 68 95
 Skill 'faerie fire' 3 95
@@ -34,7 +34,7 @@ Skill 'knock' 17 95
 Skill 'locate object' 16 95
 Skill 'pass door' 22 95
 Skill 'refresh' 5 95
-Skill 'sagacity' 18 95
+Skill 'sagacidad' 18 95
 Skill 'shadow bolt' 55 95
 Skill 'shadowform' 90 95
 Skill 'shockshield' 32 95
@@ -44,6 +44,7 @@ Skill 'toque acido' 13 95
 Skill 'valiance' 34 95
 Skill 'weaken' 24 95
 Skill 'alas' 1 100
+Skill 'aliento' 3 95
 Skill 'arrebatar' 9 95
 Skill 'ataqueaereo' 27 95
 Skill 'ataques poderosos' 44 30
@@ -73,7 +74,6 @@ Skill 'quinto ataque' 85 85
 Skill 'rabia' 10 99
 Skill 'rafaga de viento' 31 75
 Skill 'rebanar' 1 95
-Skill 'respirar' 3 95
 Skill 'segundo ataque' 7 95
 Skill 'tercer ataque' 30 95
 Skill 'trepar' 1 95

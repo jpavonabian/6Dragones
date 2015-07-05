@@ -1,0 +1,39 @@
+#CLAN
+Name         alianza~
+Filename     alliance.cln~
+Intro        There can be only one.  It will not be the Throng, but Alliance who will prevail!~
+Motto        Knowledge is power, the more you rush it the less you learn.~
+Description  This organization is tightly bound from individuals who are dedicated to the fight against the rising evil.  Commonly beseeched upon by Kings and Lords who wish their lands to be rid of the shadowy figures of darkness. It is expected that every member of this clan is willing to lay down their lives for the cause of good. It requires absolute dedication to excel through the ranks of The Alliance.~
+Warmaster    Kyrigan~
+Chieftain    Gilanthas~
+Badge        (null)~
+PKillRangeNew   0 1 1 0 0 2 0 5 3 0 10
+PDeathRangeNew  10 1 0 3 0 0 2 2 2 5 61757
+MKills       64668
+MDeaths      778
+IllegalPK    2
+Score        0
+Type         0
+Members      24
+MemLimit     1000
+Alignment    0
+Board        0
+ClanObjOne   1163
+ClanObjTwo   1165
+ClanObjThree 1166
+ClanObjFour  1167
+ClanObjFive  1168
+Clanstatus   1
+Recall       1163
+Totalpoints  6553
+GuardOne     25654
+GuardTwo     0
+ArenaVictory 167
+Chieflog     1421579143
+Warlog     1421333330
+PKILLAREA         shattered refuge~
+PKILLAREA         Rift Invasion~
+PKILLAREA         Miden'nir~
+End
+
+#END

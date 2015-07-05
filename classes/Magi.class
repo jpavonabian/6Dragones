@@ -1,4 +1,4 @@
-Name           Sorcerer~
+Name           hechicero~
 Filename       Magi~
 Class          23
 Starting       0
@@ -19,14 +19,14 @@ Expbase        2500
 Craftbase        50
 Resist         0
 Suscept        0
-Skill 'acid breath' 41 95
+Skill 'aliento acido' 41 95
 Skill 'antimagic shell' 49 95
 Skill 'armor' 5 95
 Skill 'astral walk' 14 95
 Skill 'aura of courage' 51 95
 Skill 'bolafuego' 7 95
-Skill 'cause critical' 10 95
-Skill 'cause light' 1 95
+Skill 'causar criticas' 10 95
+Skill 'causar leves' 1 95
 Skill 'cegar' 6 95
 Skill 'chill' 13 95
 Skill 'continual light' 1 95
@@ -53,7 +53,7 @@ Skill 'invisibilidad' 2 95
 Skill 'maldecir' 14 95
 Skill 'portal' 31 95
 Skill 'resilience' 46 95
-Skill 'sagacity' 14 95
+Skill 'sagacidad' 14 95
 Skill 'santuario' 15 95
 Skill 'shadowform' 55 95
 Skill 'shockshield' 24 95

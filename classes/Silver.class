@@ -1,4 +1,4 @@
-Name           Silver~
+Name           plateado~
 Filename       Silver~
 Class          10
 Starting       1
@@ -21,7 +21,7 @@ Resist         256
 Suscept        0
 Skill 'armor' 3 95
 Skill 'battlefield view' 29 95
-Skill 'clavus' 80 95
+Skill 'clavos' 80 95
 Skill 'continual light' 5 95
 Skill 'create fire' 3 95
 Skill 'dispel magic' 28 95
@@ -31,7 +31,7 @@ Skill 'invisibilidad' 60 95
 Skill 'kindred strength' 11 95
 Skill 'locate object' 16 95
 Skill 'refresh' 5 95
-Skill 'sagacity' 18 95
+Skill 'sagacidad' 18 95
 Skill 'shadowform' 90 95
 Skill 'shockshield' 32 95
 Skill 'silencio' 1 95
@@ -39,6 +39,7 @@ Skill 'slow' 42 95
 Skill 'valiance' 34 95
 Skill 'weaken' 24 95
 Skill 'alas' 1 100
+Skill 'aliento' 3 95
 Skill 'arrebatar' 9 95
 Skill 'ataqueaereo' 27 95
 Skill 'ataques poderosos' 44 30
@@ -70,7 +71,6 @@ Skill 'quinto ataque' 85 85
 Skill 'rabia' 17 99
 Skill 'rafaga de viento' 31 75
 Skill 'rebanar' 1 95
-Skill 'respirar' 3 95
 Skill 'segundo ataque' 7 95
 Skill 'tercer ataque' 30 95
 Skill 'trepar' 1 95

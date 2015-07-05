@@ -167,7 +167,7 @@ bool can_use_class_multi( CHAR_DATA *ch, int iClass, bool silent )
               || ch->Class == CLASS_WARRIOR || ch->secondclass == CLASS_WARRIOR ) ) {
         if ( !silent )
             send_to_char
-                ( "\r\nYou can't be a Shadowknight.\r\nPlease select another class.\r\n", ch );
+                ( "\r\nNo puedes escoger esa clase. Escoge otra.\r\n", ch );
         return FALSE;
     }
     if ( iClass == CLASS_CRUSADER

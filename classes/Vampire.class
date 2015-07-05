@@ -1,4 +1,4 @@
-Name           Vampire~
+Name           vampiro~
 Filename       Vampire~
 Class          15
 Starting       1
@@ -21,7 +21,6 @@ Resist         0
 Suscept        0
 Skill 'armor' 36 95
 Skill 'battlefield view' 70 95
-Skill 'black lightning' 85 95
 Skill 'cegar' 56 80
 Skill 'dark blessings' 15 95
 Skill 'detect magic' 20 85
@@ -34,6 +33,7 @@ Skill 'inmovilizar' 79 50
 Skill 'locate object' 64 95
 Skill 'maldecir' 38 75
 Skill 'nocegar' 31 95
+Skill 'rayo negro' 85 95
 Skill 'remove invis' 35 80
 Skill 'scry' 24 95
 Skill 'shadowform' 86 95

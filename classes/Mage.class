@@ -1,4 +1,4 @@
-Name           Mage~
+Name           mago~
 Filename       Mage~
 Class          2
 Starting       1
@@ -19,7 +19,7 @@ Expbase        1300
 Craftbase        0
 Resist         0
 Suscept        0
-Skill 'acid breath' 63 95
+Skill 'aliento acido' 63 95
 Skill 'astral walk' 24 95
 Skill 'battlefield view' 25 95
 Skill 'blaze' 20 95

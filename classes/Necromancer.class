@@ -1,4 +1,4 @@
-Name           Necromancer~
+Name           necromantico~
 Filename       Necromancer~
 Class          3
 Starting       0
@@ -19,7 +19,6 @@ Expbase        1150
 Craftbase        0
 Resist         0
 Suscept        0
-Skill 'black lightning' 96 95
 Skill 'continual light' 2 95
 Skill 'dark blessings' 76 95
 Skill 'demonskin' 87 95
@@ -31,6 +30,7 @@ Skill 'inmovilizar' 100 50
 Skill 'invisibilidad' 8 95
 Skill 'lich touch' 84 95
 Skill 'locate object' 18 95
+Skill 'rayo negro' 96 95
 Skill 'razorbait' 69 95
 Skill 'remove invis' 14 95
 Skill 'shadowform' 98 95

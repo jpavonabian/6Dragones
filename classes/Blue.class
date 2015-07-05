@@ -1,4 +1,4 @@
-Name           Blue~
+Name           azul~
 Filename       Blue~
 Class          12
 Starting       1
@@ -33,13 +33,14 @@ Skill 'kindred strength' 11 95
 Skill 'knock' 17 95
 Skill 'locate object' 16 95
 Skill 'refresh' 5 95
-Skill 'sagacity' 18 95
+Skill 'sagacidad' 18 95
 Skill 'shadowform' 90 95
 Skill 'silencio' 1 95
 Skill 'slow' 42 95
 Skill 'valiance' 34 95
 Skill 'weaken' 24 95
 Skill 'alas' 1 100
+Skill 'aliento' 3 95
 Skill 'armadura glacial' 94 95
 Skill 'arrebatar' 9 95
 Skill 'ataqueaereo' 27 95
@@ -70,7 +71,6 @@ Skill 'quinto ataque' 85 85
 Skill 'rabia' 17 99
 Skill 'rafaga de viento' 31 75
 Skill 'rebanar' 1 95
-Skill 'respirar' 3 95
 Skill 'segundo ataque' 7 95
 Skill 'sumergirse' 10 95
 Skill 'tercer ataque' 30 95
