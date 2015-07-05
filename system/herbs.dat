@@ -54,8 +54,8 @@ Code         spell_smaug
 Wearoff      Your feet slowly lower to the ground.~
 Hitvict      The acrid taste of the smoke overwhelms your senses. You feel light headed.~
 Hitroom      $N grimaces at the acrid flavor of the nooracht.~
-Affect       '(null)' 12 '20' -1
 Affect       '30' 0 '' 21
+Affect       '(null)' 12 '20' -1
 Minlevel     101
 End
 

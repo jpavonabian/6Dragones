@@ -956,6 +956,15 @@ Log         0
 End
 
 #COMMAND
+Name        clase~
+Code        do_slist
+Position    104
+Level       0
+CShow       1
+Log         0
+End
+
+#COMMAND
 Name        dejar~
 Code        do_drop
 Position    106
@@ -1838,6 +1847,15 @@ Code        do_forfeit
 Position    100
 Level       1
 CShow       0
+Log         0
+End
+
+#COMMAND
+Name        hablar~
+Code        do_speak
+Position    106
+Level       0
+CShow       1
 Log         0
 End
 
@@ -4287,15 +4305,6 @@ Log         1
 End
 
 #COMMAND
-Name        slist~
-Code        do_slist
-Position    104
-Level       0
-CShow       1
-Log         0
-End
-
-#COMMAND
 Name        slookup~
 Code        do_slookup
 Position    100
@@ -4345,15 +4354,6 @@ End
 Name        suroeste~
 Code        do_southwest
 Position    115
-Level       0
-CShow       1
-Log         0
-End
-
-#COMMAND
-Name        speak~
-Code        do_speak
-Position    106
 Level       0
 CShow       1
 Log         0

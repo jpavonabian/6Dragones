@@ -290,7 +290,7 @@ void do_score( CHAR_DATA *ch, char *argument )
 
     pager_printf( ch, "Años : %d                                     ", calculate_age( ch ) );
 
-    pager_printf( ch, "Iniciaste sesión: %24.24s\r\n", ctime( &( ch->logon ) ) );
+    pager_printf( ch, " Juego: %24.24s\r\n", ctime( &( ch->logon ) ) );
     snprintf( hr_buf, MSL, "HitRoll: &R%-4d&C", GET_HITROLL( ch ) );
     snprintf( dr_buf, MSL, "DamRoll: &R%-4d&C", GET_DAMROLL( ch ) );
 
@@ -307,10 +307,10 @@ void do_score( CHAR_DATA *ch, char *argument )
     if ( ch->race == RACE_DRAGON )
         pager_printf( ch, "Bonus al tamaño del Dragón: &R%-3d&C", ( bonus / 2 ) + 10 + get_curr_str( ch ) );
     send_to_pager( "\r\n", ch );
-    pager_printf( ch, "FUE   : &Y%2.2d&C(&W%2.2d&C)      %13s              Ficha Salvada : %s",
+    pager_printf( ch, "FUE   : &Y%2.2d&C(&W%2.2d&C)      %13s              Grabó: %s",
                   get_curr_str( ch ), ch->perm_str, hr_buf,
                   ch->save_time ? ctime( &( ch->save_time ) ) : "N/A\r\n" );
-    pager_printf( ch, "INT   : &Y%2.2d&C(&W%2.2d&C)      %13s              Hora  : %s",
+    pager_printf( ch, "INT   : &Y%2.2d&C(&W%2.2d&C)      %13s              Hora: %s",
                   get_curr_int( ch ), ch->perm_int, dr_buf, ctime( &current_time ) );
     if ( GET_AC( ch ) >= 200 )
         mudstrlcpy( buf, "&RDesnudo en el viento", MSL );
@@ -426,14 +426,14 @@ void do_score( CHAR_DATA *ch, char *argument )
             break;
     }
     pager_printf( ch,
-                  "CON   : &Y%2.2d&C(&W%2.2d&C)      Pos: %-17.17s   Peso del equipo: %5.5d\r\n",
+                  "CON   : &Y%2.2d&C(&W%2.2d&C)      Pos: %-17.17s    Peso del equipo: %5.5d\r\n",
                   get_curr_con( ch ), ch->perm_con, buf, ch->carry_weight );
     pager_printf( ch,
-                  "CAR   : &Y%2.2d&C(&W%2.2d&C)      Autohuida: %-5d&C               (Máximo peso que puedes cargar: %7.7d)\r\n",
+                  "CAR   : &Y%2.2d&C(&W%2.2d&C)      Autohuida: %-5d&C          (Máximo peso: %7.7d)\r\n",
                   get_curr_cha( ch ), ch->perm_cha, ch->wimpy, can_carry_w( ch ) );
     pager_printf( ch, "SUE   : &Y%2.2d&C(&W%2.2d&C) \r\n", get_curr_lck( ch ), ch->perm_lck );
     pager_printf( ch,
-                  "PRACT : %4.4d        &YHP: %-6d de %6d&C   Paginador  : [%c]%2d    AutoSalida [%c]",
+                  "PRACT : %4.4d        &YHP: %-6d de %6d&C   Pagina  : [%c]%2d    AutoSalida [%c]",
                   ch->practice, ch->hit, ch->max_hit, IS_SET( ch->pcdata->flags,
                                                               PCFLAG_PAGERON ) ? '*' : ' ',
                   ch->pcdata->pagerlen, xIS_SET( ch->act, PLR_AUTOEXIT ) ? '*' : ' ' );
@@ -446,10 +446,10 @@ void do_score( CHAR_DATA *ch, char *argument )
     pager_printf( ch, "%s", "\r\n" );
 
     snprintf( buf, MSL, "%d", ch->exp );
-    pager_printf( ch, "&CEXP   : %-9.9s   %-29.29s   &CMobs matados : %-5.5d    AutoSaqueo [%c]\r\n", buf,
+    pager_printf( ch, "&CEXP   : %-9.9s   %-29.29s   &CMobsMa: %-5.5d   Autosaqueo[%c]\r\n", buf,
                   print_buf, ch->pcdata->mkills, xIS_SET( ch->act, PLR_AUTOLOOT ) ? '*' : ' ' );
     pager_printf( ch,
-                  "                    &GMov     : %-6d de %6d&C   Muertes por mobs: %-5.5d    AutoReciclaje[%c]\r\n",
+                  "                    &GMov     : %-6d de %6d&C   MuMobs: %-5.5d    Autotirar[%c]\r\n",
                   ch->move, ch->max_move, ch->pcdata->mdeaths, xIS_SET( ch->act,
                                                                         PLR_AUTOTRASH ) ? 'X' :
                   ' ' );
@@ -1083,7 +1083,7 @@ void do_remort( CHAR_DATA *ch, char *argument )
         }
 
         remove_all_equipment( ch );
-        if ( ( iLang = skill_lookup( "common" ) ) == 0 )
+        if ( ( iLang = skill_lookup( "comun" ) ) == 0 )
             ch->pcdata->learned[iLang] = 100;
         ch->max_hit = 200;
         ch->hit = 200;

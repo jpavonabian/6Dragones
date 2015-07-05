@@ -84,34 +84,34 @@ void do_ferocious_strike( CHAR_DATA *ch, char *argument )
         if ( ch->fighting )
             victim = who_fighting( ch );
         else {
-            send_to_char( "Send a ferocious strike at who?\r\n", ch );
+            send_to_char( "¿A quién?\r\n", ch );
             return;
         }
     }
     else if ( ( victim = get_char_room( ch, arg ) ) == NULL ) {
-        send_to_char( "They aren't here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return;
     }
     if ( ch->move < nomore ) {
-        send_to_char( "You do not have enough move to do that.\r\n", ch );
+        send_to_char( "La fatiga te lo impide.\r\n", ch );
         return;
     }
 
     if ( ch == victim ) {
-        send_to_char( "Suicide is a mortal sin.\r\n", ch );
+        send_to_char( "Eso es estúpido.\r\n", ch );
         return;
     }
 
     if ( ch->mount ) {
-        send_to_char( "You cannot deliver a ferocious strike while mounted.\r\n", ch );
+        send_to_char( "Desmonta primero.\r\n", ch );
         return;
     }
-    send_to_char( "\r\n\r\n&OYou attack with an incredible rate of speed!\r\n", ch );
+    send_to_char( "\r\n\r\n&O¡Atacas con una increíble velocidad!\r\n", ch );
     if ( can_use_skill( ch, number_percent(  ), gsn_ferocious_strike ) ) {
         WAIT_STATE( ch, skill_table[gsn_ferocious_strike]->beats );
-        act( AT_GREEN, "You deliver a ferocious strike to $N!", ch, NULL, victim, TO_CHAR );
+        act( AT_GREEN, "¡Intentas lanzar un golpe feroz a $N!", ch, NULL, victim, TO_CHAR );
         act( AT_GREEN,
-             "Your vision blurs from $n's ferocious strike!",
+             "¡Ves estrellas cuando $n te da un golpe feroz!",
              ch, NULL, victim, TO_VICT );
         learn_from_success( ch, gsn_ferocious_strike );
         ch->move = ( ch->move - nomore );
@@ -124,7 +124,7 @@ void do_ferocious_strike( CHAR_DATA *ch, char *argument )
     else {
 	learn_from_failure( ch, gsn_ferocious_strike );
         global_retcode = damage( ch, victim, 0, gsn_ferocious_strike );
-        send_to_char( "&cYour ferocious strike just misses it's target.\r\n", ch );
+        send_to_char( "&cTu ataque falla su objetivo.\r\n", ch );
     }
 }
 

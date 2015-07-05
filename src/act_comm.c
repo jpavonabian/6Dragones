@@ -109,7 +109,7 @@ char                   *translate( int percent, const char *in, const char *name
     char                   *pbuf2 = buf2;
     LANG_DATA              *lng;
 
-    if ( percent > 99 || !str_cmp( name, "common" ) )
+    if ( percent > 99 || !str_cmp( name, "comun" ) )
         return ( char * ) in;
     /*
      * If we don't know this language... use "default"
@@ -1943,10 +1943,10 @@ int const               lang_array[] = {
 };
 
 const char             *const lang_names[] = {
-    "common", "elven", "dwarven", "pixish", "ogrian",
-    "orcish", "trollese", "goblic", "hobbit", "gnomish", "infernal",
-    "celestial", "draconic", "uncommon", "demonic", "centaurian",
-    "silent", "17", "18", "19", "20", "21", "22", "23", "24", "25",
+    "común", "élfico", "enano", "duende", "ogro",
+    "orco", "troll", "goblin", "hobbit", "gnomo", "infernal",
+    "celestial", "draconiano", "no común", "demoníaco", "centauriano",
+    "silencio", "17", "18", "19", "20", "21", "22", "23", "24", "25",
     "26", "27", "28", "29", "30", "31", "32"
 };
 

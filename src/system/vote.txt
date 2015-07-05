@@ -1,3 +1,0 @@
-vote
-Should all citizens be allowed to use fortify and siege commands?~ 75 25 4
-$

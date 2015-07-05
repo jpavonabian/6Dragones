@@ -1885,7 +1885,7 @@ void do_detrap( CHAR_DATA *ch, char *argument )
                 return;
             }
             if ( arg[0] == '\0' ) {
-                send_to_char( "Detrap what?\r\n", ch );
+                send_to_char( "¿¿Desactivar qué trampa?\r\n", ch );
                 return;
             }
             if ( ms_find_obj( ch ) )
@@ -1931,12 +1931,12 @@ void do_detrap( CHAR_DATA *ch, char *argument )
         case SUB_TIMER_DO_ABORT:
             DISPOSE( ch->alloc_ptr );
             ch->substate = SUB_NONE;
-            send_to_char( "You carefully stop what you were doing.\r\n", ch );
+            send_to_char( "Cuidadosamente dejas de hacer lo que estabas haciendo.\r\n", ch );
             return;
     }
 
     if ( !ch->in_room->first_content ) {
-        send_to_char( "You can't find that here.\r\n", ch );
+        send_to_char( "No puedes encontrar éso aquí.\r\n", ch );
         return;
     }
     for ( obj = ch->in_room->first_content; obj; obj = obj->next_content ) {
@@ -1946,11 +1946,11 @@ void do_detrap( CHAR_DATA *ch, char *argument )
         }
     }
     if ( !found ) {
-        send_to_char( "You can't find that here.\r\n", ch );
+        send_to_char( "No puedes encontrar éso aquí.\r\n", ch );
         return;
     }
     if ( ( trap = get_trap( obj ) ) == NULL ) {
-        send_to_char( "You find no trap on that.\r\n", ch );
+        send_to_char( "No encuentras ninguna trampa.\r\n", ch );
         return;
     }
 
@@ -1966,7 +1966,7 @@ void do_detrap( CHAR_DATA *ch, char *argument )
 
     extract_obj( trap );
 
-    send_to_char( "You successfully remove a trap.\r\n", ch );
+    send_to_char( "Desactivas una trampa satisfactoriamente.\r\n", ch );
     learn_from_success( ch, gsn_detrap );
     return;
 }
@@ -1986,17 +1986,17 @@ void do_dig( CHAR_DATA *ch, char *argument )
     switch ( ch->substate ) {
         default:
             if ( IS_NPC( ch ) && IS_AFFECTED( ch, AFF_CHARM ) ) {
-                send_to_char( "You can't concentrate enough for that.\r\n", ch );
+                send_to_char( "No puedes concentrarte lo suficiente para éso.\r\n", ch );
                 return;
             }
             if ( ch->mount ) {
-                send_to_char( "You can't do that while mounted.\r\n", ch );
+                send_to_char( "No puedes hacer éso mientras montas.\r\n", ch );
                 return;
             }
             one_argument( argument, arg );
             if ( arg[0] != '\0' ) {
                 if ( ( pexit = find_door( ch, arg, TRUE ) ) == NULL && get_dir( arg ) == -1 ) {
-                    send_to_char( "What direction is that?\r\n", ch );
+                    send_to_char( "¿Qué dirección es ésa?\r\n", ch );
                     return;
                 }
                 if ( pexit ) {
@@ -2150,7 +2150,7 @@ void do_search( CHAR_DATA *ch, char *argument )
             if ( arg[0] != '\0' && ( door = get_door( arg ) ) == -1 ) {
                 container = get_obj_here( ch, arg );
                 if ( !container ) {
-                    send_to_char( "You can't find that here.\r\n", ch );
+                    send_to_char( "No puedes encontrar éso aquí.\r\n", ch );
                     return;
                 }
                 if ( container->item_type != ITEM_CONTAINER ) {
@@ -2192,7 +2192,7 @@ void do_search( CHAR_DATA *ch, char *argument )
         else {
             container = get_obj_here( ch, arg );
             if ( !container ) {
-                send_to_char( "You can't find that here.\r\n", ch );
+                send_to_char( "No puedes encontrar éso aquí.\r\n", ch );
                 return;
             }
             startobj = container->first_content;
@@ -4331,7 +4331,7 @@ void do_mount( CHAR_DATA *ch, char *argument )
     }
 
     if ( ( victim = get_char_room( ch, argument ) ) == NULL ) {
-        send_to_char( "You can't find that here.\r\n", ch );
+        send_to_char( "No puedes encontrar éso aquí.\r\n", ch );
         return;
     }
 
@@ -5633,7 +5633,7 @@ void do_slice( CHAR_DATA *ch, char *argument )
         }
     }
     if ( ( corpse = get_obj_here( ch, argument ) ) == NULL ) {
-        send_to_char( "You can't find that here.\r\n", ch );
+        send_to_char( "No puedes encontrar éso aquí.\r\n", ch );
         return;
     }
 

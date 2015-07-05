@@ -362,33 +362,33 @@ bool spec_cast_adept( CHAR_DATA *ch )
 
     switch ( number_bits( 3 ) ) {
         case 0:
-            if ( !is_name( "armor", affect ) )
-                spell_smaug( skill_lookup( "armor" ), ch->level, ch, victim );
+            if ( !is_name( "armadura", affect ) )
+                spell_smaug( skill_lookup( "armadura" ), ch->level, ch, victim );
             return TRUE;
         case 1:
-            if ( !is_name( "bless", affect ) )
-                spell_smaug( skill_lookup( "bless" ), ch->level, ch, victim );
+            if ( !is_name( "bendecir", affect ) )
+                spell_smaug( skill_lookup( "bendecir" ), ch->level, ch, victim );
             return TRUE;
         case 2:
             if ( IS_AFFECTED( victim, AFF_BLINDNESS ) )
-                spell_cure_blindness( skill_lookup( "cure blindness" ), ch->level, ch, victim );
+                spell_cure_blindness( skill_lookup( "curar ceguera" ), ch->level, ch, victim );
             return TRUE;
         case 3:
             if ( victim->hit < victim->max_hit ) {
                 if ( victim->level < 5 )
-                    spell_cure_serious( skill_lookup( "cure serious" ), ch->level, ch, victim );
+                    spell_cure_serious( skill_lookup( "curar serias" ), ch->level, ch, victim );
                 else if ( victim->level > 4 && victim->level <= 9 )
-                    spell_cure_critical( skill_lookup( "cure critical" ), ch->level, ch, victim );
+                    spell_cure_critical( skill_lookup( "curar criticas" ), ch->level, ch, victim );
                 else if ( victim->level > 9 && victim->level <= 19 )
-                    spell_heal( skill_lookup( "heal" ), ch->level, ch, victim );
+                    spell_heal( skill_lookup( "sanar" ), ch->level, ch, victim );
                 else if ( victim->level > 19 && victim->level <= 40 && chance != 4 )
-                    spell_greater_heal( skill_lookup( "greater heal" ), ch->level, ch, victim );
+                    spell_greater_heal( skill_lookup( "sanacion maxima" ), ch->level, ch, victim );
                 else if ( victim->level > 40 && chance != 4 )
-                    spell_smaug( skill_lookup( "restore life" ), ch->level, ch, victim );
+                    spell_smaug( skill_lookup( "restaurar vida" ), ch->level, ch, victim );
                 else if ( victim->level > 19 && chance == 4 ) {
                     if ( victim->hit < victim->max_hit / 2 ) {
                         send_to_char
-                            ( "&WA white hot light fills you as your body receives life energies!\r\n",
+                            ( "&W¡Un aura blanca rodea tu cuerpo llenándote de vida!\r\n",
                               victim );
                         victim->hit = victim->max_hit / 2;
                     }
@@ -397,28 +397,28 @@ bool spec_cast_adept( CHAR_DATA *ch )
             }
         case 4:
             if ( IS_AFFECTED( victim, AFF_POISON ) )
-                spell_cure_poison( skill_lookup( "cure affliction" ), ch->level, ch, victim );
+                spell_cure_poison( skill_lookup( "curar afliccion" ), ch->level, ch, victim );
             return TRUE;
         case 5:
             if ( victim->move < victim->max_move )
-                spell_refresh( skill_lookup( "refresh" ), ch->level, ch, victim );
+                spell_refresh( skill_lookup( "refrescar" ), ch->level, ch, victim );
             return TRUE;
         case 6:
             if ( IS_AFFECTED( victim, AFF_CURSE ) )
-                spell_remove_curse( skill_lookup( "remove curse" ), ch->level, ch, victim );
+                spell_remove_curse( skill_lookup( "retirar maldicion" ), ch->level, ch, victim );
             return TRUE;
         case 7:
             if ( victim->hit < victim->max_hit ) {
                 if ( victim->level < 5 )
-                    spell_cure_serious( skill_lookup( "cure serious" ), ch->level, ch, victim );
+                    spell_cure_serious( skill_lookup( "curar serias" ), ch->level, ch, victim );
                 else if ( victim->level > 4 && victim->level <= 9 )
-                    spell_cure_critical( skill_lookup( "cure critical" ), ch->level, ch, victim );
+                    spell_cure_critical( skill_lookup( "curar criticas" ), ch->level, ch, victim );
                 else if ( victim->level > 9 && victim->level <= 19 )
-                    spell_heal( skill_lookup( "heal" ), ch->level, ch, victim );
+                    spell_heal( skill_lookup( "sanar" ), ch->level, ch, victim );
                 else if ( victim->level > 19 && victim->level <= 40 )
-                    spell_greater_heal( skill_lookup( "greater heal" ), ch->level, ch, victim );
+                    spell_greater_heal( skill_lookup( "sanacion maxima" ), ch->level, ch, victim );
                 else if ( victim->level > 40 )
-                    spell_smaug( skill_lookup( "restore life" ), ch->level, ch, victim );
+                    spell_smaug( skill_lookup( "restaurar vida" ), ch->level, ch, victim );
 
             }
             return TRUE;
@@ -455,11 +455,11 @@ bool spec_cast_cleric( CHAR_DATA *ch )
         switch ( number_bits( 4 ) ) {
             case 0:
                 min_level = 0;
-                spell = "cause light";
+                spell = "causar ligeras";
                 break;
             case 1:
                 min_level = 3;
-                spell = "cause serious";
+                spell = "causar serias";
                 break;
             case 2:
                 min_level = 6;
@@ -471,7 +471,7 @@ bool spec_cast_cleric( CHAR_DATA *ch )
                 break;
             case 4:
                 min_level = 9;
-                spell = "cause critical";
+                spell = "causar criticas";
                 break;
             case 5:
                 min_level = 10;

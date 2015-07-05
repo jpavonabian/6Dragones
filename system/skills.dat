@@ -10,26 +10,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         acid breath~
-Type         Spell
-Info         5
-Flags        0
-Target       1
-Minpos       110
-Min_dist     6
-Max_dist     14
-Slot         200
-Mana         20
-Rounds       12
-Code         spell_acid_breath
-Dammsg       blast of acid~
-Wearoff      !Acid Breath!~
-Difficulty   1
-Teachers     10808~
-Minlevel     41
-End
-
-#SKILL
 Name         acidmist~
 Type         Spell
 Info         5
@@ -64,6 +44,7 @@ Code         spell_smaug
 Dammsg       shot of acid~
 Missroom     supress~
 Dice         L/2~
+Difficulty   5
 Minlevel     101
 End
 
@@ -109,6 +90,26 @@ Minlevel     37
 End
 
 #SKILL
+Name         aliento acido~
+Type         Spell
+Info         5
+Flags        0
+Target       1
+Minpos       110
+Min_dist     6
+Max_dist     14
+Slot         200
+Mana         20
+Rounds       12
+Code         spell_acid_breath
+Dammsg       chorro de ácido~
+Wearoff      !Acid Breath!~
+Difficulty   5
+Teachers     10808~
+Minlevel     41
+End
+
+#SKILL
 Name         angels touch~
 Type         Spell
 Info         0
@@ -120,7 +121,7 @@ Code         spell_smaug
 Hitchar      You send your angel's touch through the dimensional fabric to help $N.~
 Hitvict      An angel's touch fills your being with warmth and revives you.~
 Misschar     Your angel's touch cannot reach them.~
-Difficulty   1
+Difficulty   5
 Affect       '(null)' 13 '10+l' -1
 Minlevel     10
 End
@@ -277,7 +278,7 @@ Rounds       12
 Code         spell_barbs
 Dammsg       barbed nettles~
 Missroom     supress~
-Difficulty   4
+Difficulty   1
 Minlevel     101
 End
 
@@ -345,45 +346,6 @@ Minlevel     3
 End
 
 #SKILL
-Name         black fist~
-Type         Spell
-Info         911
-Flags        0
-Target       1
-Minpos       110
-Min_dist     8
-Max_dist     25
-Slot         310
-Mana         15
-Rounds       8
-Code         spell_black_fist
-Dammsg       Black Fist~
-Wearoff      !WEAROFF!~
-Difficulty   2
-Minlevel     101
-End
-
-#SKILL
-Name         black lightning~
-Type         Spell
-Info         908
-Flags        0
-Target       1
-Minpos       109
-Min_dist     8
-Max_dist     25
-Slot         303
-Mana         15
-Rounds       13
-Code         spell_black_lightning
-Dammsg       Black Lightning~
-Wearoff      !WEAROFF!~
-Difficulty   1
-Teachers     2302~
-Minlevel     85
-End
-
-#SKILL
 Name         blaze~
 Type         Spell
 Info         393
@@ -419,6 +381,7 @@ Code         spell_smaug
 Wearoff      The ward of flames ceases to protect you.~
 Hitvict      A yellow glow surrounds you, protecting you from intense heat.~
 Hitroom      $N begins to radiate a yellow light which repels intense heat.~
+Difficulty   1
 Affect       'l*2' 27 '1' -1
 Minlevel     101
 End
@@ -466,7 +429,22 @@ Minlevel     7
 End
 
 #SKILL
-Name         cause critical~
+Name         campo mortal~
+Type         Spell
+Info         0
+Flags        0
+Minpos       109
+Mana         50
+Rounds       30
+Code         spell_death_field
+Dammsg       campo mortal~
+Difficulty   1
+Teachers     26001~
+Minlevel     42
+End
+
+#SKILL
+Name         causar criticas~
 Type         Spell
 Info         4
 Flags        0
@@ -478,14 +456,14 @@ Slot         63
 Mana         20
 Rounds       12
 Code         spell_cause_critical
-Dammsg       spell~
+Dammsg       causar críticas~
 Wearoff      !Cause Critical!~
 Difficulty   5
 Minlevel     10
 End
 
 #SKILL
-Name         cause light~
+Name         causar leves~
 Type         Spell
 Info         4
 Flags        0
@@ -497,14 +475,14 @@ Slot         62
 Mana         15
 Rounds       12
 Code         spell_cause_light
-Dammsg       spell~
+Dammsg       causar leves~
 Wearoff      !Cause Light!~
 Difficulty   5
 Minlevel     1
 End
 
 #SKILL
-Name         cause serious~
+Name         causar serias~
 Type         Spell
 Info         4
 Flags        0
@@ -516,7 +494,7 @@ Slot         64
 Mana         17
 Rounds       12
 Code         spell_cause_serious
-Dammsg       spell~
+Dammsg       causar serias~
 Wearoff      !Cause Serious!~
 Difficulty   5
 Minlevel     101
@@ -538,18 +516,6 @@ Code         spell_blindness
 Wearoff      You can see again.~
 Difficulty   1
 Minlevel     6
-End
-
-#SKILL
-Name         chain lightning~
-Type         Spell
-Info         0
-Flags        0
-Min_dist     12
-Max_dist     25
-Code         spell_chain_lightning
-Dammsg       chain lightning~
-Minlevel     101
 End
 
 #SKILL
@@ -591,7 +557,7 @@ Minlevel     101
 End
 
 #SKILL
-Name         clavus~
+Name         clavos~
 Type         Spell
 Info         904
 Flags        6144
@@ -599,28 +565,10 @@ Minpos       110
 Mana         40
 Rounds       20
 Code         spell_clavus
-Dammsg       metallic spikes~
-Difficulty   1
+Dammsg       montón de clavos~
+Difficulty   5
 Teachers     26001~
 Minlevel     80
-End
-
-#SKILL
-Name         colour spray~
-Type         Spell
-Info         4
-Flags        0
-Target       1
-Minpos       108
-Min_dist     6
-Max_dist     12
-Slot         10
-Mana         15
-Rounds       12
-Code         spell_colour_spray
-Dammsg       colour spray~
-Wearoff      !Colour Spray!~
-Minlevel     101
 End
 
 #SKILL
@@ -897,20 +845,6 @@ Affect       'l*10' 19 'l/20+1' -1
 Affect       'l*10' 18 'l/20+1' -1
 Affect       'l*10' 1 'l/20+1' -1
 Minlevel     15
-End
-
-#SKILL
-Name         death field~
-Type         Spell
-Info         0
-Flags        0
-Minpos       109
-Mana         50
-Rounds       30
-Code         spell_death_field
-Dammsg       death field~
-Teachers     26001~
-Minlevel     42
 End
 
 #SKILL
@@ -1591,20 +1525,6 @@ Minlevel     30
 End
 
 #SKILL
-Name         firestorm~
-Type         Spell
-Info         0
-Flags        8192
-Minpos       110
-Rounds       20
-Code         spell_firestorm
-Dammsg       firestorm~
-Difficulty   1
-Teachers     26001~
-Minlevel     39
-End
-
-#SKILL
 Name         flamestrike~
 Type         Spell
 Info         1
@@ -1783,7 +1703,7 @@ Rounds       12
 Code         spell_gas_breath
 Dammsg       blast of gas~
 Wearoff      !Gas Breath!~
-Difficulty   2
+Difficulty   5
 Teachers     6255~
 Minlevel     74
 End
@@ -2150,7 +2070,7 @@ Wearoff      You are no longer invisible.~
 Hitchar      $N fades from existence.~
 Hitvict      You fade from existence.~
 Hitroom      $N fades from existence.~
-Difficulty   1
+Difficulty   5
 Affect       'l*10' 26 'invis' 1
 Minlevel     1
 End
@@ -2727,6 +2647,25 @@ Minlevel     101
 End
 
 #SKILL
+Name         punyo negro~
+Type         Spell
+Info         911
+Flags        0
+Target       1
+Minpos       110
+Min_dist     8
+Max_dist     25
+Slot         310
+Mana         15
+Rounds       8
+Code         spell_black_fist
+Dammsg       puño negro~
+Wearoff      !WEAROFF!~
+Difficulty   1
+Minlevel     101
+End
+
+#SKILL
 Name         quantum spike~
 Type         Spell
 Info         908
@@ -2784,6 +2723,58 @@ Missroom     &RTorrents of flame burst upwards through the ground just barely mi
 Dice         100D30+((C*l)+(Y*L))~
 Somatic      1
 Affect       '(null)' 1013 '-(l*5)' -1
+Minlevel     101
+End
+
+#SKILL
+Name         rayo colores~
+Type         Spell
+Info         4
+Flags        0
+Target       1
+Minpos       108
+Min_dist     6
+Max_dist     12
+Slot         10
+Mana         15
+Rounds       12
+Code         spell_colour_spray
+Dammsg       rayo colores~
+Wearoff      !Colour Spray!~
+Difficulty   5
+Minlevel     101
+End
+
+#SKILL
+Name         rayo negro~
+Type         Spell
+Info         908
+Flags        0
+Target       1
+Minpos       109
+Min_dist     8
+Max_dist     25
+Slot         303
+Mana         15
+Rounds       13
+Code         spell_black_lightning
+Dammsg       rayo negro~
+Wearoff      !WEAROFF!~
+Difficulty   1
+Teachers     2302~
+Minlevel     85
+End
+
+#SKILL
+Name         rayos encadenados~
+Type         Spell
+Info         0
+Flags        0
+Min_dist     12
+Max_dist     25
+Code         spell_chain_lightning
+Dammsg       rayos encadenados~
+Difficulty   1
 Minlevel     101
 End
 
@@ -3011,7 +3002,7 @@ Minlevel     101
 End
 
 #SKILL
-Name         sagacity~
+Name         sagacidad~
 Type         Spell
 Info         0
 Flags        0
@@ -3021,10 +3012,10 @@ Slot         228
 Mana         12
 Rounds       12
 Code         spell_smaug
-Wearoff      Furrowing your brow, you sense the weight of wisdom leave you.~
-Hitchar      $N grows serious as wisdom takes root within $M.~
-Hitvict      The wisdom of your elders blossoms within you.~
-Hitroom      $N grows serious as wisdom takes root within $M.~
+Wearoff      La antigua sabiduría se desvanece de tu mente.~
+Hitchar      $N adopta una expresión seria cuando su mente es invadida por una antigua sabiduría~
+Hitvict      Una antigua sabiduría invade tu mente.~
+Hitroom      $N adopta una expresión seria cuando su mente es invadida por una antigua sabiduría~
 Difficulty   1
 Affect       'l*24' 4 '1+(l/17)' -1
 Minlevel     14
@@ -3524,6 +3515,20 @@ Minlevel     13
 End
 
 #SKILL
+Name         tormenta fuego~
+Type         Spell
+Info         0
+Flags        8192
+Minpos       110
+Rounds       20
+Code         spell_firestorm
+Dammsg       tormenta de fuego~
+Difficulty   1
+Teachers     26001~
+Minlevel     39
+End
+
+#SKILL
 Name         torrent~
 Type         Spell
 Info         395
@@ -3957,6 +3962,19 @@ Minlevel     1
 End
 
 #SKILL
+Name         aliento~
+Type         Skill
+Info         0
+Flags        0
+Target       1
+Minpos       108
+Rounds       15
+Code         do_breathe
+Dammsg       aliento~
+Minlevel     2
+End
+
+#SKILL
 Name         alimentarse~
 Type         Skill
 Info         0
@@ -4186,17 +4204,6 @@ Minpos       108
 Rounds       12
 Code         do_aid
 Minlevel     1
-End
-
-#SKILL
-Name         hornear~
-Type         Skill
-Info         0
-Flags        0
-Minpos       115
-Rounds       15
-Code         do_bake
-Minlevel     101
 End
 
 #SKILL
@@ -4542,7 +4549,7 @@ Info         0
 Flags        0
 Rounds       14
 Code         do_cone
-Dammsg       cone~
+Dammsg       cono~
 Minlevel     9
 End
 
@@ -5010,6 +5017,19 @@ Minlevel     6
 End
 
 #SKILL
+Name         drenar energias~
+Type         Skill
+Info         0
+Flags        0
+Minpos       108
+Rounds       12
+Code         do_siphon_strength
+Dammsg       siphoning ~
+Wearoff      You feel as if your strength has returned to normal.~
+Minlevel     101
+End
+
+#SKILL
 Name         effloresce~
 Type         Skill
 Info         0
@@ -5036,7 +5056,7 @@ Flags        0
 Minpos       115
 Rounds       12
 Code         do_impale
-Dammsg       impale~
+Dammsg       empalamiento~
 Minlevel     10
 End
 
@@ -5661,6 +5681,17 @@ Rounds       15
 Code         do_brain_boil
 Dammsg       brain boil~
 Teachers     16704~
+Minlevel     101
+End
+
+#SKILL
+Name         hornear~
+Type         Skill
+Info         0
+Flags        0
+Minpos       115
+Rounds       15
+Code         do_bake
 Minlevel     101
 End
 
@@ -6778,6 +6809,18 @@ Minlevel     30
 End
 
 #SKILL
+Name         refugiarse~
+Type         Skill
+Info         0
+Flags        0
+Target       3
+Minpos       108
+Rounds       14
+Code         do_shelter
+Minlevel     9
+End
+
+#SKILL
 Name         regenerar~
 Type         Skill
 Info         8192
@@ -6799,19 +6842,6 @@ Wearoff      !ENDURANCE!~
 Difficulty   4
 Teachers     18607~
 Minlevel     1
-End
-
-#SKILL
-Name         respirar~
-Type         Skill
-Info         0
-Flags        0
-Target       1
-Minpos       108
-Rounds       15
-Code         do_breathe
-Dammsg       aliento~
-Minlevel     2
 End
 
 #SKILL
@@ -6954,31 +6984,6 @@ Flags        0
 Code         spell_null
 Teachers     10808~
 Minlevel     50
-End
-
-#SKILL
-Name         refugiarse~
-Type         Skill
-Info         0
-Flags        0
-Target       3
-Minpos       108
-Rounds       14
-Code         do_shelter
-Minlevel     9
-End
-
-#SKILL
-Name         siphon strength~
-Type         Skill
-Info         0
-Flags        0
-Minpos       108
-Rounds       12
-Code         do_siphon_strength
-Dammsg       siphoning ~
-Wearoff      You feel as if your strength has returned to normal.~
-Minlevel     101
 End
 
 #SKILL

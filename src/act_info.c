@@ -3536,10 +3536,10 @@ int new_who( CHAR_DATA *ch, char *argument )
         if ( first ) {
             if ( !IS_BLIND( ch ) )
                 pager_printf( ch,
-                              "\r\n%s--------------------------------=[ %sPlayers %s]=---------------------------------\r\n\r\n",
+                              "\r\n%s--------------------------------=[ %sJugadores %s]=---------------------------------\r\n\r\n",
                               s5, s6, s5 );
             else
-                pager_printf( ch, "\r\nPlayers\r\n\r\n" );
+                pager_printf( ch, "\r\nJugadores\r\n\r\n" );
             first = FALSE;
         }
 
@@ -3554,7 +3554,7 @@ int new_who( CHAR_DATA *ch, char *argument )
 
         if ( IS_THIRDCLASS( person ) ) {
             if ( IS_BLIND( ch ) )
-                snprintf( rank, 200, "%d tri class %s %s %s.", person->level,
+                snprintf( rank, 200, "%d triclase %s %s %s.", person->level,
                           class_table[person->Class]->who_name,
                           class_table[person->secondclass]->who_name,
                           class_table[person->thirdclass]->who_name );
@@ -3566,7 +3566,7 @@ int new_who( CHAR_DATA *ch, char *argument )
         }
         else if ( IS_SECONDCLASS( person ) ) {
             if ( IS_BLIND( ch ) )
-                snprintf( rank, 200, "%d dual class %s %s.", person->level,
+                snprintf( rank, 200, "%d biclase %s %s.", person->level,
                           class_table[person->Class]->who_name,
                           class_table[person->secondclass]->who_name );
             else
@@ -3576,7 +3576,7 @@ int new_who( CHAR_DATA *ch, char *argument )
         }
         else {
             if ( IS_BLIND( ch ) )
-                snprintf( rank, 200, "%d class %s.", person->level,
+                snprintf( rank, 200, "%d clase %s.", person->level,
                           class_table[person->Class]->who_name );
             else
                 snprintf( rank, 200, "%s[%s%-3d%s][%s%-12.12s%s]", s5, col, person->level, s5, s6,
@@ -3713,10 +3713,10 @@ int new_who( CHAR_DATA *ch, char *argument )
 
             if ( first == TRUE ) {
                 if ( IS_BLIND( ch ) )
-                    pager_printf( ch, "\r\n%sSTAFF  %s\r\n\r\n", s6, s1 );
+                    pager_printf( ch, "\r\n%sAdministración  %s\r\n\r\n", s6, s1 );
                 else
                     pager_printf( ch,
-                                  "\r\n%s--------------------------------=[  %sSTAFF  %s]=---------------------------------\r\n\r\n",
+                                  "\r\n%s--------------------------------=[  %sADMIN  %s]=---------------------------------\r\n\r\n",
                                   s1, s6, s1 );
                 first = FALSE;
             }
@@ -3724,7 +3724,7 @@ int new_who( CHAR_DATA *ch, char *argument )
             if ( !person->pcdata->rank || !*person->pcdata->rank ) {
                 switch ( person->level ) {
                     default:
-                        mudstrlcpy( rank, "&r6 DRAGONS", MIL );
+                        mudstrlcpy( rank, "&r6 DRAGONES", MIL );
                         break;
                     case MAX_LEVEL:
                         mudstrlcpy( rank, "&rIMPLEMENTADOR", MIL );
