@@ -2223,11 +2223,11 @@ ch_ret spell_blindness( int sn, int level, CHAR_DATA *ch, void *vo )
     af.bitvector = meb( AFF_BLINDNESS );
     affect_to_char( victim, &af );
     set_char_color( AT_MAGIC, victim );
-    act( AT_MAGIC, "$n weaves a spell of blindness about you.", ch, NULL, ch, TO_VICT );
-    send_to_char( "You are blinded!\r\n", victim );
+    act( AT_MAGIC, "$n lanza un conjuro de ceguera sobre ti.", ch, NULL, ch, TO_VICT );
+    send_to_char( "¡Te han cegado!\r\n", victim );
     if ( ch != victim ) {
-        act( AT_MAGIC, "You weave a spell of blindness around $N.", ch, NULL, victim, TO_CHAR );
-        act( AT_MAGIC, "$n weaves a spell of blindness about $N.", ch, NULL, victim, TO_NOTVICT );
+        act( AT_MAGIC, "Lanzas un conjuro de ceguera hacia $N.", ch, NULL, victim, TO_CHAR );
+        act( AT_MAGIC, "$n lanza un conjuro de ceguera hacia $N.", ch, NULL, victim, TO_NOTVICT );
     }
     return rNONE;
 }
@@ -2256,16 +2256,16 @@ ch_ret spell_burning_hands( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // A little more flaming shield support. -Taon
     if ( IS_AFFECTED( victim, AFF_FLAMING_SHIELD ) ) {
-        act( AT_RED, "The fireball you cast cannot penetrate $N's flaming shield.", ch, NULL,
+        act( AT_RED, "Tu bola de fuejo no puede penetrar el escudo de fuego de $N.", ch, NULL,
              victim, TO_CHAR );
-        act( AT_RED, "$n's fireball couldn't penetrate your flaming shield.", ch, NULL, victim,
+        act( AT_RED, "La bola de fuego de $n no puede penetrar tu escudo de fuego.", ch, NULL, victim,
              TO_VICT );
         dam = 0;
     }
     if ( IS_AFFECTED( victim, AFF_FIRESHIELD ) && !IS_AFFECTED( victim, AFF_FLAMING_SHIELD ) ) {
-        act( AT_RED, "The fireball you cast only partially penetrates $N's fireshield.", ch, NULL,
+        act( AT_RED, "Tu bola de fuego penetra parcialmente el escudo de fuego de $N.", ch, NULL,
              victim, TO_CHAR );
-        act( AT_RED, "$n's fireball only partially penetrates your fireshield.", ch, NULL, victim,
+        act( AT_RED, "La bola de fuego de $n consigue penetrar parcialmente tu escudo de fuego.", ch, NULL, victim,
              TO_VICT );
         dam = number_range( dam_each[level] / 2, dam_each[level] * 3 );
     }
@@ -2286,14 +2286,14 @@ ch_ret spell_call_lightning( int sn, int level, CHAR_DATA *ch, void *vo )
     ch_ret                  retcode = rNONE;
 
     if ( !IS_OUTSIDE( ch ) ) {
-        send_to_char( "You must be out of doors.\r\n", ch );
+        send_to_char( "Debes estar al aire libre.\r\n", ch );
         return rSPELL_FAILED;
     }
 
     struct WeatherCell     *cell = getWeatherCell( ch->in_room->area );
 
     if ( getPrecip( cell ) < 40 && getEnergy( cell ) < 30 ) {
-        send_to_char( "You need bad weather.\r\n", ch );
+        send_to_char( "necesitas mal tiempo.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -2301,8 +2301,8 @@ ch_ret spell_call_lightning( int sn, int level, CHAR_DATA *ch, void *vo )
         send_to_char( "!!SOUND(sound/thunder5.wav)\r\n", ch );
 
     set_char_color( AT_MAGIC, ch );
-    send_to_char( "You call upon lightning to strike your foes!\r\n", ch );
-    act( AT_MAGIC, "$n calls upon lightning to strike $s foes!", ch, NULL, NULL, TO_ROOM );
+    send_to_char( "¡Llamas rayos de tormenta para arrasar con tus enemigos!\r\n", ch );
+    act( AT_MAGIC, "¡$n invoca rayos de tormenta para arrasar con sus enemigos!", ch, NULL, NULL, TO_ROOM );
 
     ch_died = FALSE;
     for ( vch = first_char; vch; vch = vch_next ) {
@@ -2314,9 +2314,9 @@ ch_ret spell_call_lightning( int sn, int level, CHAR_DATA *ch, void *vo )
             continue;
 
         if ( IS_AFFECTED( vch, AFF_SHOCKSHIELD ) ) {
-            act( AT_YELLOW, "The lightning you called only partially penetrates $N's shockshield.",
+            act( AT_YELLOW, "Tus rayos penetran parcialmente el escudo eléctrico de $N.",
                  ch, NULL, vch, TO_CHAR );
-            act( AT_YELLOW, "$n's lightning only partially penetrates your shockshield.", ch, NULL,
+            act( AT_YELLOW, "Los rayos de tormenta de $n penetran parcialmente tu escudo eléctrico.", ch, NULL,
                  vch, TO_VICT );
             dam = dice( level / 3, 6 );
         }
@@ -2339,7 +2339,7 @@ ch_ret spell_call_lightning( int sn, int level, CHAR_DATA *ch, void *vo )
         if ( !ch_died && vch->in_room->area == ch->in_room->area && IS_OUTSIDE( vch )
              && IS_AWAKE( vch ) ) {
             if ( number_bits( 3 ) == 0 )
-                send_to_char_color( "&BLightning flashes in the sky.\r\n", vch );
+                send_to_char_color( "&BEl cielo se ilumina furiosamente.\r\n", vch );
         }
     }
 
@@ -2393,9 +2393,9 @@ ch_ret spell_armor( int sn, int level, CHAR_DATA *ch, void *vo )
     af.modifier = -20;
     af.bitvector = meb( AFF_ARMOR );
     affect_to_char( victim, &af );
-    act( AT_MAGIC, "Your armor begins to glow softly as it is enhanced by a cantrip.\r\n", ch, NULL,
+    act( AT_MAGIC, "Tu armadura brilla levemente al ser potenciada por la magia.\r\n", ch, NULL,
          NULL, TO_CHAR );
-    act( AT_MAGIC, "$n's armor begins to glow softly as it is enhanced by a cantrip.\r\n", ch, NULL,
+    act( AT_MAGIC, "$n brilla por unos instantes cuando su armadura es potenciada por la magia.\r\n", ch, NULL,
          NULL, TO_NOTVICT );
     return rNONE;
 }
@@ -2428,9 +2428,9 @@ ch_ret spell_sanctuary( int sn, int level, CHAR_DATA *ch, void *vo )
     af.modifier = 0;
     af.bitvector = meb( AFF_SANCTUARY );
     affect_to_char( victim, &af );
-    act( AT_MAGIC, "You are surrounded by the protection of a sanctuary.\r\n", ch, NULL, NULL,
+    act( AT_MAGIC, "Te rodea la protección de un santuario.\r\n", ch, NULL, NULL,
          TO_CHAR );
-    act( AT_MAGIC, "$n is surrounded by the protection of a sanctuary.\r\n", ch, NULL, NULL,
+    act( AT_MAGIC, "A $n le rodea la protección de un santuario.\r\n", ch, NULL, NULL,
          TO_NOTVICT );
     return rNONE;
 }
@@ -2468,9 +2468,9 @@ ch_ret spell_change_sex( int sn, int level, CHAR_DATA *ch, void *vo )
     xCLEAR_BITS( af.bitvector );
     affect_to_char( victim, &af );
     set_char_color( AT_MAGIC, victim );
-    send_to_char( "You feel different.\r\n", victim );
+    send_to_char( "Te sientes diferente.\r\n", victim );
     if ( ch != victim )
-        send_to_char( "You have.\r\n", ch );
+        send_to_char( "Listo.\r\n", ch );
     successful_casting( skill, ch, victim, NULL );
     return rNONE;
 }
@@ -2507,9 +2507,9 @@ ch_ret spell_chill_touch( int sn, int level, CHAR_DATA *ch, void *vo )
     level = UMIN( ( unsigned int ) level, sizeof( dam_each ) / sizeof( dam_each[0] ) - 1 );
     level = UMAX( 0, level );
     if ( IS_AFFECTED( victim, AFF_ICESHIELD ) ) {
-        act( AT_LBLUE, "The chilling touch you cast only partially penetrates $N's iceshield.", ch,
+        act( AT_LBLUE, "Tu conjuro consigue penetrar parcialmente el escudo de hielo de $N.", ch,
              NULL, victim, TO_CHAR );
-        act( AT_LBLUE, "$n's chilling touch only partially penetrates your iceshield.", ch, NULL,
+        act( AT_LBLUE, "El conjuro de $n consigue penetrar tu escudo de hielo .", ch, NULL,
              victim, TO_VICT );
         dam = number_range( dam_each[level] / 2, dam_each[level] );
     }
@@ -2568,21 +2568,21 @@ ch_ret spell_control_weather( int sn, int level, CHAR_DATA *ch, void *vo )
 
     change = URANGE( 5, number_range( 5, 15 ) + ( ch->level / 10 ), 15 );
 
-    if ( !str_cmp( target_name, "warmer" ) )
+    if ( !str_cmp( target_name, "calido" ) )
         IncreaseTemp( cell, change );
-    else if ( !str_cmp( target_name, "colder" ) )
+    else if ( !str_cmp( target_name, "frio" ) )
         DecreaseTemp( cell, change );
-    else if ( !str_cmp( target_name, "wetter" ) )
+    else if ( !str_cmp( target_name, "humedo" ) )
         IncreasePrecip( cell, change );
-    else if ( !str_cmp( target_name, "drier" ) )
+    else if ( !str_cmp( target_name, "seco" ) )
         DecreasePrecip( cell, change );
-    else if ( !str_cmp( target_name, "stormier" ) )
+    else if ( !str_cmp( target_name, "tormentoso" ) )
         IncreaseEnergy( cell, change );
-    else if ( !str_cmp( target_name, "calmer" ) )
+    else if ( !str_cmp( target_name, "calmo" ) )
         DecreaseEnergy( cell, change );
     else {
-        send_to_char( "Do you want it to get warmer, colder, wetter, "
-                      "drier, stormier, or calmer?\r\n", ch );
+        send_to_char( "¿Quieres cambiar el tiempo a qué estado? calido, frio, humedo, "
+                      "seco, tormentoso, calmo.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -2610,7 +2610,7 @@ ch_ret spell_create_food( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( ( ch->carry_number + 1 ) > can_carry_n( ch ) && !xIS_SET( ch->act, PLR_AUTORECAST ) ) {
-        send_to_char( "You can't carry anything else.\r\n", ch );
+        send_to_char( "No puedes cargar nada más.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -2622,8 +2622,8 @@ ch_ret spell_create_food( int sn, int level, CHAR_DATA *ch, void *vo )
         send_to_char( "!!SOUND(sound/create.wav)\r\n", ch );
 
     food->value[0] = 5 + level;
-    act( AT_MAGIC, "$p appears in $n's hands.", ch, food, NULL, TO_ROOM );
-    act( AT_MAGIC, "$p appears in your hands.", ch, food, NULL, TO_CHAR );
+    act( AT_MAGIC, "$p aparece en las manos de $n.", ch, food, NULL, TO_ROOM );
+    act( AT_MAGIC, "$p aparece en tus manos.", ch, food, NULL, TO_CHAR );
     obj_to_char( food, ch );
     return rNONE;
 }
@@ -2638,8 +2638,8 @@ ch_ret spell_summon_light( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/create.wav)\r\n", ch );
 
-    act( AT_MAGIC, "$p appears before $n!", ch, light, NULL, TO_ROOM );
-    act( AT_MAGIC, "$p appears before you.", ch, light, NULL, TO_CHAR );
+    act( AT_MAGIC, "¡$p aparece ante $n!", ch, light, NULL, TO_ROOM );
+    act( AT_MAGIC, "$p aparece ante ti.", ch, light, NULL, TO_CHAR );
     obj_to_room( light, ch->in_room );
     return rNONE;
 }
@@ -2651,11 +2651,11 @@ ch_ret spell_create_water( int sn, int level, CHAR_DATA *ch, void *vo )
     int                     water;
 
     if ( obj->item_type != ITEM_DRINK_CON ) {
-        send_to_char( "It is unable to hold water.\r\n", ch );
+        send_to_char( "Eso no puede contener agua.\r\n", ch );
         return rSPELL_FAILED;
     }
     if ( obj->value[2] != LIQ_WATER && obj->value[1] != 0 ) {
-        send_to_char( "It contains some other liquid.\r\n", ch );
+        send_to_char( "Ya contiene otro líquido.\r\n", ch );
         return rSPELL_FAILED;
     }
     water = UMIN( level * ( getPrecip( cell ) >= 0 ? 4 : 2 ), obj->value[0] - obj->value[1] );
@@ -2663,17 +2663,17 @@ ch_ret spell_create_water( int sn, int level, CHAR_DATA *ch, void *vo )
         separate_obj( obj );
         obj->value[2] = LIQ_WATER;
         obj->value[1] += water;
-        if ( !is_name( "water", obj->name ) ) {
+        if ( !is_name( "agua", obj->name ) ) {
             char                    buf[MSL];
 
-            snprintf( buf, MSL, "%s water", obj->name );
+            snprintf( buf, MSL, "%s agua", obj->name );
             STRFREE( obj->name );
             obj->name = STRALLOC( buf );
         }
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/create.wav)\r\n", ch );
 
-        act( AT_MAGIC, "$p is filled.", ch, obj, NULL, TO_CHAR );
+        act( AT_MAGIC, "$p se ha llenado.", ch, obj, NULL, TO_CHAR );
     }
     return rNONE;
 }
@@ -2691,9 +2691,9 @@ ch_ret spell_cure_blindness( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( !is_affected( victim, gsn_blindness ) ) {
         if ( ch != victim )
-            send_to_char( "You work your cure, but it has no apparent effect.\r\n", ch );
+            send_to_char( "Parece que no tiene efecto alguno.\r\n", ch );
         else
-            send_to_char( "You don't seem to be blind.\r\n", ch );
+            send_to_char( "No lo necesitas.\r\n", ch );
         return rSPELL_FAILED;
     }
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
@@ -2701,9 +2701,9 @@ ch_ret spell_cure_blindness( int sn, int level, CHAR_DATA *ch, void *vo )
 
     affect_strip( victim, gsn_blindness );
     set_char_color( AT_MAGIC, victim );
-    send_to_char( "Your vision returns!\r\n", victim );
+    send_to_char( "¡Tu visión regresa!\r\n", victim );
     if ( ch != victim )
-        send_to_char( "You work your cure, restoring vision.\r\n", ch );
+        send_to_char( "Pronuncias el conjuro y restauras su visión.\r\n", ch );
     return rNONE;
 }
 
@@ -2729,9 +2729,9 @@ ch_ret spell_cure_affliction( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/cure.wav)\r\n", ch );
 
-    send_to_char( "Any minor afflictions you may have had is cured!\r\n", victim );
+    send_to_char( "¡Te sientes mejor!\r\n", victim );
     if ( ch != victim )
-        send_to_char( "You work your cure, removing any minor afflictions.\r\n", ch );
+        send_to_char( "Pronuncias el conjuro curando sus aflicciones.\r\n", ch );
     return rNONE;
 }
 
@@ -2741,7 +2741,7 @@ ch_ret spell_sacral_divinity( int sn, int level, CHAR_DATA *ch, void *vo )
     SKILLTYPE              *skill = get_skilltype( sn );
 
     if ( ch->alignment < 350 ) {
-        act( AT_MAGIC, "Your prayer goes unanswered.", ch, NULL, NULL, TO_CHAR );
+        act( AT_MAGIC, "Tus rezos no son escuchados.", ch, NULL, NULL, TO_CHAR );
         return rSPELL_FAILED;
     }
     if ( IS_SET( ch->immune, RIS_MAGIC ) ) {
@@ -2760,9 +2760,9 @@ ch_ret spell_sacral_divinity( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/defend.wav)\r\n", ch );
 
-    act( AT_MAGIC, "A shroud of glittering light slowly wraps itself about $n.", ch, NULL, NULL,
+    act( AT_MAGIC, "Un aura divina envuelve a $n.", ch, NULL, NULL,
          TO_ROOM );
-    act( AT_MAGIC, "A shroud of glittering light slowly wraps itself around you.", ch, NULL, NULL,
+    act( AT_MAGIC, "Te envuelve un aura divina.", ch, NULL, NULL,
          TO_CHAR );
     return rNONE;
 }
@@ -2779,9 +2779,9 @@ ch_ret spell_expurgation( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( !is_affected( victim, gsn_poison ) )
         return rSPELL_FAILED;
     affect_strip( victim, gsn_poison );
-    act( AT_MAGIC, "You speak an ancient prayer, begging your god for purification.", ch, NULL,
+    act( AT_MAGIC, "Pronuncias unas palabras místicas, invocando el poder de la purificación.", ch, NULL,
          NULL, TO_CHAR );
-    act( AT_MAGIC, "$n speaks an ancient prayer begging $s god for purification.", ch, NULL, NULL,
+    act( AT_MAGIC, "$n pronuncia unas palabras místicas, invocando el poder de la purificación.", ch, NULL, NULL,
          TO_ROOM );
     return rNONE;
 }

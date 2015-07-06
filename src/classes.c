@@ -917,7 +917,7 @@ void do_trades( CHAR_DATA *ch, char *argument )
         ( "&c[&C20&c]&W Herrero\r\n&c[&C21&c]&W Panadero\r\n&c[&C22&c]&W Curtidor\r\n&c[&C24&c]&W Joyero\r\n&c[&C25&c]&W Carpintero",
           ch );
     send_to_char
-        ( "\r\nPara cambiar la artesanía de alguien, usa mset victim tradeclass número.\r\nSee also help classes, and help races.\r\n",
+        ( "\r\nPara cambiar la artesanía de alguien, usa mset victim tradeclass número.\r\nVer ayuda clases y ayuda razas.\r\n",
           ch );
 
     return;
