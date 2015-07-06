@@ -257,7 +257,7 @@ void advance_class_level( CHAR_DATA *ch )
 
     if ( ch->firstexp >= exp_class_level( ch, ch->firstlevel + 1, ch->Class ) ) {   /* Levelled 
                                                                                      */
-        ch_printf( ch, "\r\n&WYou have now obtained %s level %d!&D\r\n",
+        ch_printf( ch, "\r\n&W¡Has subido de nivel en la clase %s y ahora eres %d!&D\r\n",
                    class_table[ch->Class]->who_name, ++ch->firstlevel );
         ch->firstexp =
             URANGE( 0, ( ch->firstexp - exp_class_level( ch, ch->firstlevel, ch->Class ) ),
@@ -267,7 +267,7 @@ void advance_class_level( CHAR_DATA *ch )
 
     if ( IS_SECONDCLASS( ch ) && ch->secondexp >= exp_class_level( ch, ch->secondlevel + 1, ch->secondclass ) ) {   /* Again 
                                                                                                                      */
-        ch_printf( ch, "\r\n&WYou have now obtained %s level %d!&D\r\n",
+        ch_printf( ch, "\r\n&W¡Has subido de nivel en la clase %s y ahora eres %d!&D\r\n",
                    class_table[ch->secondclass]->who_name, ++ch->secondlevel );
         ch->secondexp =
             URANGE( 0, ( ch->secondexp - exp_class_level( ch, ch->secondlevel, ch->secondclass ) ),
@@ -279,7 +279,7 @@ void advance_class_level( CHAR_DATA *ch )
                                                                                                                  * a 
                                                                                                                  * level! 
                                                                                                                  */
-        ch_printf( ch, "\r\n&WYou have now obtained %s level %d!&D\r\n",
+        ch_printf( ch, "\r\n&W¡Has subido de nivel en la clase %s y ahora eres %d!&D\r\n",
                    class_table[ch->thirdclass]->who_name, ++ch->thirdlevel );
         ch->thirdexp =
             URANGE( 0, ( ch->thirdexp - exp_class_level( ch, ch->thirdlevel, ch->thirdclass ) ),
@@ -298,16 +298,16 @@ void advance_class_level( CHAR_DATA *ch )
         char                    buf[MSL];
 
         if ( xIS_SET( ch->act, PLR_EXTREME ) ) {
-            ch_printf( ch, "&GPlaying 6D EXTREME you gain 5 glory!&D\r\n" );
+            ch_printf( ch, "&G¡Ganas 5 puntos de gloria por jugar en modo extremo!&D\r\n" );
             ch->quest_curr += 5;
         }
 
-        ch_printf( ch, "\r\n&WYou have now obtained an overall experience level %d!&D\r\n",
+        ch_printf( ch, "\r\n&W¡Ahora tienes experiencia para subir a nivel %d!&D\r\n",
                    ++ch->level );
         restore_char( ch );
-        send_to_char_color( "&YYou have gained insight in the realms, and have been restored!\r\n",
+        send_to_char_color( "&Y¡Ahora eres un miembro de nuestro reino, te han restaurado!\r\n",
                             ch );
-        snprintf( buf, MSL, "The realms rejoice as %s has just achieved level %d!&D", ch->name,
+        snprintf( buf, MSL, "¡Los reinos se regocijan cuando %s sube a nivel %d!&D", ch->name,
                   ch->level );
         announce( buf );
         snprintf( buf, MSL, "%24.24s: %s obtained level %d!%s%s&D", ctime( &current_time ),
