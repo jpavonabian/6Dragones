@@ -914,10 +914,10 @@ void save_classes(  )
 void do_trades( CHAR_DATA *ch, char *argument )
 {
     send_to_char
-        ( "&c[&C20&c]&W Blacksmith\r\n&c[&C21&c]&W Baker\r\n&c[&C22&c]&W Tanner\r\n&c[&C24&c]&W Jeweler\r\n&c[&C25&c]&W Carpenter",
+        ( "&c[&C20&c]&W Herrero\r\n&c[&C21&c]&W Panadero\r\n&c[&C22&c]&W Curtidor\r\n&c[&C24&c]&W Joyero\r\n&c[&C25&c]&W Carpintero",
           ch );
     send_to_char
-        ( "\r\nTo change a tradeclass, use mset victim tradeclass number.\r\nSee also help classes, and help races.\r\n",
+        ( "\r\nPara cambiar la artesanía de alguien, usa mset victim tradeclass número.\r\nSee also help classes, and help races.\r\n",
           ch );
 
     return;
