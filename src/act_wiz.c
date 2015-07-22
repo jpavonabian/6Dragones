@@ -869,10 +869,10 @@ void do_transfer( CHAR_DATA *ch, char *argument )
     argument = one_argument( argument, arg1 );
     argument = one_argument( argument, arg2 );
     if ( arg1[0] == '\0' ) {
-        send_to_char( "Transfer whom (and where)?\r\n", ch );
+        send_to_char( "¿Transferir a quién (y donde)?\r\n", ch );
         return;
     }
-    if ( !str_cmp( arg1, "all" ) && get_trust( ch ) >= LEVEL_AJ_SGT ) {
+    if ( !str_cmp( arg1, "todos" ) && get_trust( ch ) >= LEVEL_AJ_SGT ) {
         for ( d = first_descriptor; d; d = d->next ) {
             if ( d->connected == CON_PLAYING && d->character != ch && d->character->in_room
                  && d->newstate != 2 && can_see( ch, d->character ) ) {
@@ -894,21 +894,21 @@ void do_transfer( CHAR_DATA *ch, char *argument )
     }
     else {
         if ( ( location = find_location( ch, arg2 ) ) == NULL ) {
-            send_to_char( "No such location.\r\n", ch );
+            send_to_char( "Esa localización no existe.\r\n", ch );
             return;
         }
         if ( room_is_private( location ) && get_trust( ch ) < sysdata.level_override_private ) {
-            send_to_char( "That room is private right now.\r\n", ch );
+            send_to_char( "Esa room es privada ahora mismo.\r\n", ch );
             return;
         }
     }
     if ( ( victim = get_char_world( ch, arg1 ) ) == NULL ) {
-        send_to_char( "They aren't here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return;
     }
 
     if ( !victim->in_room ) {
-        send_to_char( "They have no physical location!\r\n", ch );
+        send_to_char( "¡No tiene una localización física!\r\n", ch );
         return;
     }
     /*
@@ -921,7 +921,7 @@ void do_transfer( CHAR_DATA *ch, char *argument )
          && victim->desc && ( victim->desc->connected == CON_PLAYING
                               || victim->desc->connected == CON_EDITING )
          && IS_SET( victim->pcdata->flags, PCFLAG_DND ) ) {
-        pager_printf( ch, "Sorry. %s does not wish to be disturbed.\r\n", victim->name );
+        pager_printf( ch, "Lo siento. %s no desea ser molestado.\r\n", victim->name );
         pager_printf( victim, "Your DND flag just foiled %s's transfer command.\r\n", ch->name );
         return;
     }
@@ -930,15 +930,15 @@ void do_transfer( CHAR_DATA *ch, char *argument )
      */
 
     if ( get_trust( victim ) >= get_trust( ch ) ) {
-        send_to_char( "&RNever try to use a command against a higher Staff member...\r\n", ch );
-        send_to_char( "&RYou have been warned....\r\n", ch );
-        act( AT_RED, "$n tried to transfer you against your wishes.", ch, NULL, victim, TO_VICT );
+        send_to_char( "&RNunca intentes usar este comando con alguien de rango superior...\r\n", ch );
+        send_to_char( "&REstás avisado....\r\n", ch );
+        act( AT_RED, "$n ha intentado transferirte.", ch, NULL, victim, TO_VICT );
         return;
     }
 
     if ( victim->fighting )
         stop_fighting( victim, TRUE );
-    act( AT_MAGIC, "$n disappears in a cloud of swirling colors.", victim, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n desaparece en una nube de colores.", victim, NULL, NULL, TO_ROOM );
     victim->retran = victim->in_room->vnum;
     char_from_room( victim );
     char_to_room( victim, location );
@@ -956,12 +956,12 @@ void do_transfer( CHAR_DATA *ch, char *argument )
         set_position( victim, POS_STANDING );
     }
 
-    act( AT_MAGIC, "$n arrives from a puff of smoke.", victim, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n aparece en una nube de humo.", victim, NULL, NULL, TO_ROOM );
     if ( ch != victim )
-        act( AT_IMMORT, "$n has transferred you.", ch, NULL, victim, TO_VICT );
+        act( AT_IMMORT, "$n te ha transferido.", ch, NULL, victim, TO_VICT );
     do_look( victim, ( char * ) "auto" );
     if ( !IS_IMMORTAL( victim ) && !IS_NPC( victim ) && !in_hard_range( victim, location->area ) )
-        act( AT_DANGER, "Warning:  this player's level is not within the area's level range.", ch,
+        act( AT_DANGER, "Cuidado:  El nivel de este jugador no se encuentra en el rango de niveles del área.", ch,
              NULL, NULL, TO_CHAR );
 }
 
@@ -975,11 +975,11 @@ void do_retran( CHAR_DATA *ch, char *argument )
 
     argument = one_argument( argument, arg );
     if ( arg[0] == '\0' ) {
-        send_to_char( "Retransfer whom?\r\n", ch );
+        send_to_char( "¿Retransferir a quién?\r\n", ch );
         return;
     }
     if ( !( victim = get_char_world( ch, arg ) ) ) {
-        send_to_char( "They aren't here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return;
     }
     snprintf( buf, MSL, "'%s' %d", victim->name, victim->retran );
@@ -3427,7 +3427,7 @@ void do_restore( CHAR_DATA *ch, char *argument )
 
     argument = one_argument( argument, arg );
     if ( arg[0] == '\0' ) {
-        send_to_char( "Restore whom?\r\n", ch );
+        send_to_char( "¿Restaurar a quién?\r\n", ch );
         return;
     }
     argument = one_argument( argument, arg2 );
@@ -3435,7 +3435,7 @@ void do_restore( CHAR_DATA *ch, char *argument )
         send_to_char( "Boosting!\r\n", ch );
         boost = TRUE;
     }
-    if ( !str_cmp( arg, "all" ) ) {
+    if ( !str_cmp( arg, "todos" ) ) {
         CHAR_DATA              *vch;
         CHAR_DATA              *vch_next;
 
@@ -3444,7 +3444,7 @@ void do_restore( CHAR_DATA *ch, char *argument )
 
         if ( get_trust( ch ) < LEVEL_AJ_SGT ) {
             if ( IS_NPC( ch ) ) {
-                send_to_char( "You can't do that.\r\n", ch );
+                send_to_char( "No puedes hacer eso.\r\n", ch );
                 return;
             }
             else {
@@ -3461,7 +3461,7 @@ void do_restore( CHAR_DATA *ch, char *argument )
         last_restore_all_time = current_time;
         ch->pcdata->restore_time = current_time;
         save_char_obj( ch );
-        send_to_char( "Beginning 'restore all' ...\r\n", ch );
+        send_to_char( "Comenzando a 'restaurar a todos' ...\r\n", ch );
         for ( vch = first_char; vch; vch = vch_next ) {
             vch_next = vch->next;
 
@@ -3480,26 +3480,26 @@ void do_restore( CHAR_DATA *ch, char *argument )
                 }
                 update_pos( vch );
                 if ( boost )
-                    act( AT_IMMORT, "$n has restored you, and boosted your stats above maximum!",
+                    act( AT_IMMORT, "¡$n te ha restaurado y tus atributos quedaron por encima del máximo!",
                          ch, NULL, vch, TO_VICT );
                 else
-                    act( AT_IMMORT, "$n has restored you.", ch, NULL, vch, TO_VICT );
+                    act( AT_IMMORT, "$n te ha restaurado.", ch, NULL, vch, TO_VICT );
             }
         }
-        send_to_char( "Restored.\r\n", ch );
+        send_to_char( "Restaurados.\r\n", ch );
     }
     else {
 
         CHAR_DATA              *victim;
 
         if ( ( victim = get_char_world( ch, arg ) ) == NULL ) {
-            send_to_char( "They aren't here.\r\n", ch );
+            send_to_char( "No está aquí.\r\n", ch );
             return;
         }
 
         if ( get_trust( ch ) < LEVEL_AJ_CPL && victim != ch
              && !( IS_NPC( victim ) && xIS_SET( victim->act, ACT_PROTOTYPE ) ) ) {
-            send_to_char( "You can't do that.\r\n", ch );
+            send_to_char( "No puedes hacer eso.\r\n", ch );
             return;
         }
 
@@ -3517,11 +3517,11 @@ void do_restore( CHAR_DATA *ch, char *argument )
         }
         update_pos( victim );
         if ( boost )
-            act( AT_IMMORT, "$n has restored you, and boosted your stats above maximum!", ch, NULL,
+            act( AT_IMMORT, "¡$n te ha restaurado y tus atributos quedaron por encima del máximo!", ch, NULL,
                  victim, TO_VICT );
         else
-            act( AT_IMMORT, "$n has restored you.", ch, NULL, victim, TO_VICT );
-        send_to_char( "Restored.\r\n", ch );
+            act( AT_IMMORT, "$n te ha restaurado.", ch, NULL, victim, TO_VICT );
+        send_to_char( "Restaurado.\r\n", ch );
         return;
     }
 }
@@ -8320,6 +8320,10 @@ void do_promote( CHAR_DATA *ch, char *argument )
         send_to_char( "You cannot promote yourself\r\n", ch );
         return;
     }
+    if ( IS_NPC( victim ) ) {
+        send_to_char( "No puedes hacer eso sobre mobs, turbio.\r\n", ch );
+        return;
+    }
 
     if ( victim->level >= ch->level ) {
         send_to_char( "You cannot promote someone of equal or higher level then yourself.\r\n",
@@ -9901,7 +9905,10 @@ return;
 send_to_char("ya está casada.\r\n", ch);
 return;
 }
-
+	if (victim->sex == victim2->sex) {
+send_to_char("No se admiten parejas del mismo sexo.\r\n", ch);
+return;
+}
        if ( !str_cmp( victim->pcdata->pareja, victim2->name ) && !str_cmp( victim2->pcdata->pareja, victim->name ) )
           {
 send_to_char("¡ya están casados!\r\n", ch);
@@ -9918,7 +9925,7 @@ return;
                 interpret( victim2, ( char * ) "decir Si, quiero" );
                 interpret( ch, ( char * ) "decir Por el poder que Dios me ha otorgado yo os declaro marido y mujer. Puede besar a la novia." );
             snprintf( buf, MSL, "¡%s y %s se han casado!", victim->name, victim2->name);
-announce( buf);            
+announce( buf);
             victim->pcdata->pareja= str_dup(victim2->name);
             victim2->pcdata->pareja= str_dup(victim->name);
 

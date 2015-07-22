@@ -157,13 +157,13 @@ void                    to_channel( const char *argument, const char *xchannel, 
 void                    trap_sprung(  );
 
 const char             *const sect_names[SECT_MAX][2] = {
-    {"In a room", "inside"}, {"In a city", "cities"},
-    {"In a field", "fields"}, {"In a forest", "forests"},
-    {"hill", "hills"}, {"On a mountain", "mountains"},
-    {"In the water", "waters"}, {"In rough water", "waters"},
-    {"Underwater", "underwaters"}, {"In the air", "air"},
-    {"In a desert", "deserts"}, {"Somewhere", "unknown"},
-    {"ocean floor", "ocean floor"}, {"underground", "underground"}
+    {"En una sala", "sala"}, {"En una ciudad", "ciudades"},
+    {"En un campo", "campos"}, {"En un bosque", "bosques"},
+    {"colina", "colinas"}, {"En una montaña", "montanyas"},
+    {"En el agua", "aguas"}, {"En aguas turbulentas", "aguas"},
+    {"Bajo el agua", "bajoaguas"}, {"En el aire", "aire"},
+    {"En un desierto", "desiertos"}, {"Algún lugar", "desconocido"},
+    {"En el océano", "en el océano"}, {"Bajo tierra", "bajo tierra"}
 };
 
 const int               sent_total[SECT_MAX] = {
@@ -172,54 +172,54 @@ const int               sent_total[SECT_MAX] = {
 
 const char             *const room_sents[SECT_MAX][25] = {
     {
-     "rough hewn walls of granite with the occasional spider crawling around",
-     "signs of a recent battle from the bloodstains on the floor",
-     "a damp musty odour not unlike rotting vegetation"},
+     "ásperas paredes de granito labradas, con ocasionales arañas arrastrándose",
+     "signos de una reciente batalla, como sangre en el suelo",
+     "El olor a vegetación en descomposición"},
     {
-     "the occasional stray digging through some garbage",
-     "merchants trying to lure customers to their tents",
-     "some street people putting on an interesting display of talent",
-     "an argument between a customer and a merchant about the price of an item",
-     "several shady figures talking down a dark alleyway"},
+     "un montón de basura",
+     "mercaderes tratando de vender su mercancía",
+     "algunas personas mostrando su talento en la calle",
+     "una discusión con un comerciante por el precio de un artículo",
+     "varias personas hablando en un oscuro callejón"},
     {
-     "sparce patches of brush and shrubs",
-     "a small cluster of trees far off in the distance",
-     "grassy fields as far as the eye can see",
-     "a wide variety of weeds and wildflowers"},
+     "un montón de arbustos",
+     "un pequeño grupo de árboles a lo lejos",
+     "una enorme extensión de campo",
+     "una gran variedad de flores y malas hierbas"},
     {
-     "tall, dark evergreens prevent you from seeing very far",
-     "many huge oak trees that look several hundred years old",
-     "a solitary lonely weeping willow",
-     "a patch of bright white birch trees slender and tall"},
+     "árboles de oscura hoja perene te impiden ver más lejos",
+     "muchos robles que parecen tener cientos de años",
+     "un solitario sauce llorón",
+     "muchos árboles brillantes y altos"},
     {
-     "rolling hills lightly speckled with violet wildflowers"},
+     "colinas adornadas con flores de color violeta"},
     {
-     "the rocky mountain pass offers many hiding places"},
+     "el paso de la rocosa montaña ofrece muchos escondites"},
     {
-     "the water is smooth as glass"},
+     "el agua que se desplaza con suavidad"},
     {
-     "rough waves splash about angrily"},
+     "olas que mueven el agua furiosamente"},
     {
-     "a small school of fish"},
+     "un pequeño banco de pezes"},
     {
-     "the land far below",
-     "a misty haze of clouds"},
+     "La tierra bajo tus pies",
+     "Una niebla brumosa"},
     {
-     "sand as far as the eye can see",
-     "an oasis far in the distance"},
+     "arena",
+     "un oasis allá lejos"},
     {
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual", "nothing unusual", "nothing unusual",
-     "nothing unusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual", "nada inusual", "nada inusual",
+     "nada inusual",
      },
-    {"rocks and coral which litter the ocean floor."},
-    {"a lengthy tunnel of rock."}
+    {"rocas que cubren el fondo del océano."},
+    {"Un largo túnel de roca."}
 };
 
 char                   *grab_word( char *argument, char *arg_first )

@@ -484,7 +484,7 @@ const char             *hallucinated_object( int ms, bool fShort )
             case 14:
                 return "tu cerebro";
             case 15:
-                return "el pdoder de Erhander";
+                return "el poder de Zlorth";
             case 16:
                 return "el poder de los señores celestiales";
             case 17:
@@ -526,7 +526,7 @@ const char             *hallucinated_object( int ms, bool fShort )
         case 14:
             return "Algo lee en tu mente.";
         case 15:
-            return "El poder de Erhander se siente en el aire.";
+            return "El poder de Zlorth se siente en el aire.";
         case 16:
             return "Algo raro te persigue.";
         case 17:
@@ -1506,174 +1506,174 @@ void gen_wilderness_desc( CHAR_DATA *ch )
         switch ( ch->in_room->sector_type ) {
             case SECT_OCEAN:
                 send_to_char
-                    ( "This magnificent ocean continues beyond the horizons.\r\nThe rolling waves endlessly forming and crashing on\r\nthemselves, the howling wind ever blowing, the sky\r\nseemlessly never ending.\r\n",
+                    ( "Este magnífico océano continúa más allá del horizonte.\r\nLas olas se forman y rompen en\r\ncon fuerza. El viento sopla, el cielo\r\nparece que no tiene final.\r\n",
                       ch );
                 break;
             case SECT_WATERFALL:
                 send_to_char
-                    ( "This glorious waterfall invokes an awe inspiring sight;\r\nas it plunges into the river below, creating a spray\r\nthat fills the surrounding air.\r\n",
+                    ( "Esta gloriosa cascada ofrece una vista imponente;\r\nya que se sumerge en el río, creando un chorro\r\nque moja el aire de su alrededor.\r\n",
                       ch );
                 break;
             case SECT_ARCTIC:
                 send_to_char
-                    ( "This barren wasteland is made up of nothing more then\r\nsheer ice and snow, which boldly stretches across the\r\nsurrounding landscape.\r\n",
+                    ( "Esta tierra estéril se compone nada más que\r\nde puro hielo y de blanca nieve, que se extiende\r\naudazmente a través del paisage circundante.\r\n",
                       ch );
                 break;
             case SECT_GRASSLAND:
                 send_to_char
-                    ( "A grassland covers the entire surrounding landscape\r\nhere. The wild grass growing as thin green stalks\r\nwhich ripple endlessly in the wind.\r\n",
+                    ( "El prado cubre todos tus alrededores.\r\nBajo tus pies ves la verde hierba silvestre,\r\nque se hondula levemente con el viento.\r\n",
                       ch );
                 break;
             case SECT_HIGHMOUNTAIN:
                 send_to_char
-                    ( "The gawking range of this tall mountain expand over\r\nsurrounding landscape. The peaks stretch beyond the\r\nclouds, nearly into the heavens.\r\n",
+                    ( "Una amplia gama de montañas adornan el paisage\r\nque te rodea. Las montañas se extienden más allá\r\nde las nubes, casi llegando a tocar el cielo.\r\n",
                       ch );
                 break;
             case SECT_DOCK:
                 send_to_char
-                    ( "A large, rusty pier stretches out from the shoreline,\r\nproviding a comfortable berth where ships and smaller\r\nboats can dock, before setting off on a new adventure.\r\n",
+                    ( "Un gran muelle oxidado se extiende desde la costa,\r\nproporcionando un lugar cómodo donde los barcos y los botes\r\nmás pequeños pueden atracar, antes de buscar nuevas aventuras.\r\n",
                       ch );
                 break;
             case SECT_LAKE:
                 send_to_char
-                    ( "The shimmering lake sits fairly calm and appears\r\nquite deep. Ever soothing small waves ripple by as\r\nthe water mills about in complex patterns.\r\n",
+                    ( "El resplandeciente lago parece bastante tranquilo\r\ny parece poco profundo. Algunas olas hondulan levemente la superficie del agua\r\nformando calmantes figuras.\r\n",
                       ch );
                 break;
             case SECT_CROSSROAD:
             case SECT_HROAD:
             case SECT_VROAD:
                 send_to_char
-                    ( "This roadway crosses the landscape here, providing\r\nan excellent place for travelers, armies, merchants\r\nand wagons to traverse the wilderness.\r\n",
+                    ( "Esta calle atraviesa el lugar, proporcionando\r\nun lugar escelente para que viajeros, mercaderes o ejércitos\r\nse desplacen con facilidad.\r\n",
                       ch );
                 break;
             case SECT_RIVER:
                 send_to_char
-                    ( "This river travels as a steady stream as it passes\r\nacross the landscape on its way to the ocean.\r\n",
+                    ( "Este río transcurre constantemente\r\nen un lento camino hacia el océano.\r\n",
                       ch );
                 break;
             case SECT_FOREST:
                 send_to_char
-                    ( "A forest of trees stands here, rising up into the\r\nsky, sheltering the earth below, allowing an array\r\nof wildlife to exist here.\r\n",
+                    ( "el bosque ha dado lugar a la existencia de grandes árboles que apenas dejan pasar la luz solar,\r\npermitiendo así que la fauna que lo habita\r\nexista cómodamente y sin grandes dificultades.\r\n",
                       ch );
                 break;
             case SECT_THICKFOREST:
                 send_to_char
-                    ( "A thick forest of trees and underbrush surround the\r\nimmediate area, which has spawned a teeming source\r\nof various sorts of wildlife.\r\n",
+                    ( "Un expeso bosque de árboles rodea la zona,\r\npropiciando la existencia sin mucha dificultad\r\nde varios tipos de especies.\r\n",
                       ch );
                 break;
             case SECT_HILLS:
                 send_to_char
-                    ( "Various rounded hilltops cover the landscape here.\r\nTheir rounded peaks left exposed to the wind and\r\nrain, providing ground for tough grass and trees\r\nto grow.\r\n",
+                    ( "Varias colinas cubren este lugar.\r\nSus picos redondeados quedan expuestos al viento y\r\na la lluvia, proporcionando un duro terreno para árboles y pastos.\r\n",
                       ch );
                 break;
             case SECT_MOUNTAIN:
                 send_to_char
-                    ( "A series of rocky mountains litter the surrounding\r\nlandscape, with peaks that mearly scrape the clouds.\r\nThis rugged, rutted out rocky terrain doesn't prove\r\neasy to traverse.\r\n",
+                    ( "Una serie de montañas rocosas rodean\r\neste lugar, haciendo el caminar por aquí bastante dificultoso.\r\nEste terreno accidentado pone a prueba\r\nhasta al más experto viajero.\r\n",
                       ch );
                 break;
             case SECT_AIR:
                 send_to_char
-                    ( "High above the ground, there are small clouds around here.\r\nEverything appears small on the ground below.  The air is\r\nthinner up in the high altitudes here.",
+                    ( "Ves las nubes a tu alrededor. Mirando abajo, puedes ver.\r\nel suelo. El aire es\r\nfrío a esta altitud.",
                       ch );
                 break;
             case SECT_CITY:
                 send_to_char
-                    ( "Before the massive gates of a city.  There is a small\r\ncobblestone layer that extends into the belly of the city.\r\nHooded lanterns are mounted on both sides of the gates.\r\n ",
+                    ( "Estás ante las macizas puertas de una ciudad. hay una pequeña\r\ncapa de adoquines que se extiende hacia el interior de la ciudad.\r\nUnos centinelas vigilan a cada lado de las puertas.\r\n ",
                       ch );
                 break;
             case SECT_DESERT:
                 send_to_char
-                    ( "Dunes upon dunes of sand sweep the horizon, the\r\nblowing sand throws grit against the few sand-\r\nstone peaks which can be found in this lifeless void.\r\n",
+                    ( "Dunas y más dunas, es lo que ves\r\nen este desierto. Miras el horizonte, y sigues\r\nviendo arena y piedras.\r\n",
                       ch );
                 break;
             case SECT_FIELD:
                 send_to_char
-                    ( "Mounds upon mounds signal the markings of the fields\r\nthat cover the entire landscape here. This place has\r\nan array of various types of well tended to plants.\r\n",
+                    ( "Montículos y montículos señalan las marcas de los campos\r\nque cubren este sitio. Este lugar\r\nposee una amplia variedad de plantas.\r\n",
                       ch );
                 break;
             case SECT_SWAMP:
                 send_to_char
-                    ( "The swampland is moist and quite stagnant here. An\r\neverlasting fog lingers through the area, invoking\r\neerie impluses.\r\n",
+                    ( "El pantano es húmedo y el agua está bastante estancada.\r\nUna eterna niebla inunda el área, invocando\r\nformas misteriosas en el aire.\r\n",
                       ch );
                 break;
             case SECT_JUNGLE:
                 send_to_char
-                    ( "A thick, lush foliage covers the entire area, amidst\r\nthe towering trees and tangled vegetation and roots.\r\nInsects are heard buzzing wildly in the humid air of\r\nthe jungle.\r\n",
+                    ( "Un grueso y exuberante follaje cubre toda el área,\r\nocasionando que avanzar sea difícil, debido a los árboles y las raíces.\r\nLos insectos vuelan por el húmedo aire\r\nde esta jungla.\r\n",
                       ch );
                 break;
             case SECT_CAMPSITE:
                 send_to_char
-                    ( "There is a patch of soft grass covering the surrounding\r\nlandscape, providing a great place to stop and rest. A\r\ntall tree grows in the middle of the area, giving ample\r\nshade to passing travelers.\r\n",
+                    ( "El suelo está cubierto por hierba suave que\r\ninvita a pararse un momento y descansar.\r\nUn árbol enorme crece en el centro del lugar, dando\r\nsombra al viajero que se refugia bajo sus ramas.\r\n",
                       ch );
                 break;
             case SECT_AREA_ENT:
                 send_to_char
-                    ( "The wilderness clears up here.  You may enter or leave the\r\nwilderness here.  The exit to the wilderness appears to enter\r\ninto a new place.\r\n",
+                    ( "La tierra salvaje acaba aquí. Puedes entrar y salir de\r\neste lugar.  La salida parece ser entrando\r\na un nuevo lughar.\r\n",
                       ch );
                 break;
             case SECT_LAVA:
                 send_to_char
-                    ( "Lava gushes over the entire terrain, burning and scalding\r\nanything it touches. Very few creatures can survive within\r\nits immense heat.\r\n",
+                    ( "La lava brota por todo el terreno, quemando\r\ntodo lo que toca. pocas criaturas pueden sobrevivir\r\nen este horrible lugar.\r\n",
                       ch );
                 break;
             case SECT_PORTALSTONE:
                 send_to_char
-                    ( "An ancient stone stands embedded in the ground here.  There\r\nare mystical symbols on the stone side.  A strange looking slot\r\nof the stone appears to be fitted for some object.\r\n",
+                    ( "Una antigua piedra está incrustada en el suelo de este lugar.\r\nLa piedra posee símbolos místicos por su superficie.\r\nUn hueco extraño en el centro de la piedra espera que se introduzca algún objeto en su interior.\r\n",
                       ch );
                 break;
             case SECT_DEEPMUD:
                 send_to_char
-                    ( "The ground is liquidy grained sand that has very little\r\nvegetation growth in it.  A few small creatures scurry on the\r\ntop of the mud.  Some large ruts are in the mud where larger\r\nbeasts have gotten stuck.\r\n",
+                    ( "El suelo es de agua y arena y tiene poca\r\nvegetación.  Unas pocas criaturas se deslizan\r\npor el barro. Hay surcos en el barro, indicando\r\nel sitio más transitado.\r\n",
                       ch );
                 break;
             case SECT_QUICKSAND:
                 send_to_char
-                    ( "The ground is liquidy grained sand that has very little\r\nvegetation growth in it.  There does not appear to be a bottom.\r\nThe more you struggle the deeper you sink.\r\n",
+                    ( "El suelo es de agua y arena y tiene poca\r\nvegetación.  Unas pocas criaturas se deslizan\r\npor el barro. Te hundes lentamente, y cuanto más luchas\r\npeor es tu situación.\r\n",
                       ch );
                 break;
             case SECT_PASTURELAND:
                 send_to_char
-                    ( "A vast grassy flatland with livestock animals in the distance.\r\nA large pond of water is in the distance.  Some wild flowers\r\ngrow scattered about the area.\r\n",
+                    ( "Estás en una basta llanura cubiertta de hierba.\r\nVes un gran estanque de agua a lo lejos. Algunas flores\r\nadornan este lugar.\r\n",
                       ch );
                 break;
             case SECT_VALLEY:
                 send_to_char
-                    ( "A beautiful grassy valley between two mountains.  A few\r\nsmall streams come down from the mountains above.\r\nSmall pine trees grow along the valley.\r\n",
+                    ( "Estás en un hermoso valle verde entre dos montañas.\r\nPequeños aroyos bajan desde las montañas.\r\nPequeños pinos crecen a lo largo del valle.\r\n",
                       ch );
                 break;
             case SECT_MOUNTAINPASS:
                 send_to_char
-                    ( "A small passage between two mountains is here.  There are\r\nrocks and boulders along the sides of the passage that\r\n have fallen from above.  The passage is well worn.\r\n",
+                    ( "Estás en un paso entre dos montañas. Hay\r\nrocas y cantos rodados a los lados del paso que\r\nhan caído desde arriba.\r\n",
                       ch );
                 break;
             case SECT_BEACH:
                 send_to_char
-                    ( "The sandy shoreline has an array of various sea shells\r\nalong the beach.  A few breathing holes are in the sand from\r\nhermit crabs.  Seaweed and jellyfish litter the shoreline.\r\n",
+                    ( "el suelo está compuesto por arena y alguna que otra concha.\r\nVes el agua cerca de ti. Quizás puedas conseguir\r\npescar algún pez o darte un baño.\r\n",
                       ch );
                 break;
             case SECT_FOG:
                 send_to_char
-                    ( "A dense fog obscures everything from view.  The ground\r\nis not even visible, nor are your own hands\r\nwhen held at arm length.\r\n",
+                    ( "Una densa niebla oscurece tu visión. el suelo\r\nno siempre es visible, no puedes ver más allá de tus manos\r\ny caminas con mucha dificultad y lentitud.\r\n",
                       ch );
                 break;
             case SECT_SKY:
                 send_to_char
-                    ( "The clear open sky shows the vastness of the ground below,\r\nand sky around.  Landmarks that cannot be seen on the ground\r\nare easily viewed from the sky.\r\n",
+                    ( "El cielo abierto muestra claramente la inmensidad de la tierra bajo tus pies.\r\nVes cosas que desde el suelo te resultarían imposibles de distinguir.\r\n",
                       ch );
                 break;
             case SECT_CLOUD:
                 send_to_char
-                    ( "The patchy clouds obscure the view of the ground below and\r\nthe sky around.  It is difficult to make out any landmarks.\r\nThe clouds are darker towards the center.\r\n",
+                    ( "Las oscuras nubes que te rodean no te permiten ver casi\r\nnada que no sean ellas mismas y algo del cielo que te rodea.\r\n",
                       ch );
                 break;
             case SECT_SNOW:
                 send_to_char
-                    ( "The land is covered in deep hard packed snow here.  There are\r\nsmall trails in the snow from travelers moving through.\r\nLittle signs of animal life exist here.\r\n",
+("La tierra está cubierta de profunda y compacta nieve. Hay \r\nsurcos pequeños de los viajeros que se desplazan a través de este lugar.\r\n",
                       ch );
                 break;
             case SECT_ORE:
                 send_to_char
-                    ( "A large collection of raw ore is scattered about.  The ore has\r\na light blue coloring to it, and there are gouges in it where it\r\nhas been mined.  The mining has caused recessing into the ground.\r\n",
+                    ( "Puedes ver el brillo del mineral extendiéndose a tu alrededor.\r\nEste lugar es ideal para minar. Ves huecos en los lugares en los que el mineral\r\nha sido extraído.\r\n",
                       ch );
                 break;
             default:
@@ -1694,110 +1694,110 @@ void gen_wilderness_name( CHAR_DATA *ch )
 
     switch ( ch->in_room->sector_type ) {
         case SECT_OCEAN:
-            name = "The Ocean";
+            name = "El océano";
             break;
         case SECT_WATERFALL:
-            name = "A Waterfall";
+            name = "Una cascada";
             break;
         case SECT_ARCTIC:
-            name = "The Arctic";
+            name = "El ártico";
             break;
         case SECT_GRASSLAND:
-            name = "A Grassland";
+            name = "Un prado";
             break;
         case SECT_HIGHMOUNTAIN:
-            name = "A High Mountain";
+            name = "Una alta montaña";
             break;
         case SECT_DOCK:
-            name = "A Dock";
+            name = "Un muelle";
             break;
         case SECT_CROSSROAD:
-            name = "A Crossroad";
+            name = "Una encrucijada";
             break;
         case SECT_LAKE:
-            name = "A Lake";
+            name = "Un lago";
             break;
         case SECT_HROAD:
         case SECT_VROAD:
-            name = "A Roadway";
+            name = "Una calzada";
             break;
         case SECT_RIVER:
-            name = "A River";
+            name = "Un río";
             break;
         case SECT_FOREST:
-            name = "Within a Forest";
+            name = "En un bosque";
             break;
         case SECT_THICKFOREST:
-            name = "A Thick Forest";
+            name = "En lo profundo de un bosque";
             break;
         case SECT_HILLS:
-            name = "A Hilltop";
+            name = "Unas colinas";
             break;
         case SECT_MOUNTAIN:
-            name = "A Mountain";
+            name = "Una montaña";
             break;
         case SECT_AREA_ENT:
-            name = "Wilderness Access Point";
+            name = "Punto de acceso a la tierra salvage";
             break;
         case SECT_CITY:
-            name = "Before a City";
+            name = "Ante una ciudad";
             break;
         case SECT_DESERT:
-            name = "The Desert";
+            name = "El desierto";
             break;
         case SECT_FIELD:
-            name = "A Field";
+            name = "Un campo";
             break;
         case SECT_SWAMP:
-            name = "A Swamp";
+            name = "Un pantano";
             break;
         case SECT_AIR:
-            name = "Up in the Air";
+            name = "En el aire";
             break;
         case SECT_JUNGLE:
-            name = "A Jungle";
+            name = "Una jungla";
             break;
         case SECT_CAMPSITE:
-            name = "A Campsite";
+            name = "Un campin";
             break;
         case SECT_LAVA:
-            name = "A Pool of Lava";
+            name = "Una piscina de lava";
             break;
         case SECT_PORTALSTONE:
-            name = "A Portal Stone";
+            name = "Un portal de piedra";
             break;
         case SECT_DEEPMUD:
-            name = "Within the Deep Mud";
+            name = "En el barro";
             break;
         case SECT_QUICKSAND:
-            name = "Caught Within the Quicksand";
+            name = "En arenas movedizas";
             break;
         case SECT_PASTURELAND:
-            name = "Along the Pasture land";
+            name = "En una tierra de pastos";
             break;
         case SECT_VALLEY:
-            name = "Within a Valley";
+            name = "En un balle";
             break;
         case SECT_MOUNTAINPASS:
-            name = "In a Mountain Pass";
+            name = "En un paso entre montañas";
             break;
         case SECT_BEACH:
-            name = "On the Sandy Beach";
+            name = "En una playa de arena";
             break;
         case SECT_FOG:
-            name = "Within the Dense Fog";
+            name = "En una densa niebla";
             break;
         case SECT_SKY:
-            name = "Within the Vast Sky";
+            name = "En el inmenso cielo";
             break;
         case SECT_CLOUD:
-            name = "Within some Patchy Clouds";
+            name = "En las nubes";
             break;
         case SECT_SNOW:
-            name = "Within Snow Covered Lands";
+            name = "En tierras nevadas";
             break;
         case SECT_ORE:
-            name = "Within an Ore Quarry";
+            name = "En una cantera";
             break;
         default:
             log_printf( "Wilderness Error: Sector out of bounds in %d, couldn't establish name. ",

@@ -2799,13 +2799,13 @@ ch_ret spell_bethsaidean_touch( int sn, int level, CHAR_DATA *ch, void *vo )
         return rSPELL_FAILED;
     affect_strip( victim, gsn_blindness );
     set_char_color( AT_MAGIC, victim );
-    send_to_char( "Your sight is restored!\r\n", victim );
+    send_to_char( "¡La visión regresa a tus ojos!\r\n", victim );
     if ( ch != victim ) {
-        act( AT_MAGIC, "$n lays $s hands over your eyes and concentrates...", ch, NULL, victim,
+        act( AT_MAGIC, "$n se concentra unos instantes mirándote... ¡Recuperas la visión!", ch, NULL, victim,
              TO_VICT );
-        act( AT_MAGIC, "$n lays $s hands over $N's eyes and concentrates...", ch, NULL, victim,
+        act( AT_MAGIC, "$n se concentra unos instantes mirando a $N...", ch, NULL, victim,
              TO_NOTVICT );
-        act( AT_MAGIC, "Laying your hands on $N's eyes, you pray to lift $S blindness.", ch, NULL,
+        act( AT_MAGIC, "Mirando a $N a los ojos, te concentras y curas su ceguera.", ch, NULL,
              victim, TO_CHAR );
     }
     return rNONE;
@@ -2821,20 +2821,20 @@ ch_ret spell_cure_poison( int sn, int level, CHAR_DATA *ch, void *vo )
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/cure.wav)\r\n", ch );
 
-        send_to_char( "A warm feeling runs through your body.\r\n", victim );
+        send_to_char( "Una cálida sensación inunda tu cuerpo.\r\n", victim );
         victim->mental_state = URANGE( -100, victim->mental_state, -10 );
         if ( ch != victim ) {
-            act( AT_MAGIC, "A flush of health washes over $N.", ch, NULL, victim, TO_NOTVICT );
-            act( AT_MAGIC, "You lift the poison from $N's body.", ch, NULL, victim, TO_CHAR );
+            act( AT_MAGIC, "Un aura restauradora envuelve por unos segundos a $N.", ch, NULL, victim, TO_NOTVICT );
+            act( AT_MAGIC, "Envías tu magia curativa absorbiendo el veneno del cuerpo de $N.", ch, NULL, victim, TO_CHAR );
         }
         return rNONE;
     }
     else {
         set_char_color( AT_MAGIC, ch );
         if ( ch != victim )
-            send_to_char( "You work your cure, but it has no apparent effect.\r\n", ch );
+            send_to_char( "No parece ocurrir nada.\r\n", ch );
         else
-            send_to_char( "You don't seem to be poisoned.\r\n", ch );
+            send_to_char( "No lo necesitas.\r\n", ch );
         return rSPELL_FAILED;
     }
 }
@@ -2870,10 +2870,10 @@ ch_ret spell_curse( int sn, int level, CHAR_DATA *ch, void *vo )
         send_to_char( "!!SOUND(sound/cause.wav)\r\n", ch );
 
     set_char_color( AT_MAGIC, victim );
-    send_to_char( "You feel unclean.\r\n", victim );
+    send_to_char( "Te sientes indigno.\r\n", victim );
     if ( ch != victim ) {
-        act( AT_MAGIC, "You utter a curse upon $N.", ch, NULL, victim, TO_CHAR );
-        act( AT_MAGIC, "$n utters a curse upon $N.", ch, NULL, victim, TO_NOTVICT );
+        act( AT_MAGIC, "Envías una potente maldición a $N.", ch, NULL, victim, TO_CHAR );
+        act( AT_MAGIC, "$n lanza una poderosa maldición a $N.", ch, NULL, victim, TO_NOTVICT );
     }
     return rNONE;
 }
@@ -2886,14 +2886,14 @@ ch_ret spell_detect_poison( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( obj->item_type == ITEM_DRINK_CON || obj->item_type == ITEM_FOOD
          || obj->item_type == ITEM_COOK ) {
         if ( obj->item_type == ITEM_COOK && obj->value[2] == 0 )
-            send_to_char( "It looks undercooked.\r\n", ch );
+            send_to_char( "Parece estar mal cocinado.\r\n", ch );
         else if ( obj->value[3] != 0 )
-            send_to_char( "You smell poisonous fumes.\r\n", ch );
+            send_to_char( "Hueles el perfume del corrosivo veneno.\r\n", ch );
         else
-            send_to_char( "It looks very delicious.\r\n", ch );
+            send_to_char( "Tiene una pinta deliciosa.\r\n", ch );
     }
     else {
-        send_to_char( "It doesn't look poisoned.\r\n", ch );
+        send_to_char( "No parece tener veneno.\r\n", ch );
     }
 
     return rNONE;
@@ -2909,12 +2909,12 @@ ch_ret spell_dispel_evil( int sn, int level, CHAR_DATA *ch, void *vo )
         victim = ch;
 
     if ( IS_GOOD( victim ) ) {
-        act( AT_MAGIC, "$N cannot be dispelled.", ch, NULL, victim, TO_ROOM );
+        act( AT_MAGIC, "$N rechaza tu hechizo.", ch, NULL, victim, TO_ROOM );
         return rSPELL_FAILED;
     }
 
     if ( IS_NEUTRAL( victim ) ) {
-        act( AT_MAGIC, "$N does not seem to be affected.", ch, NULL, victim, TO_CHAR );
+        act( AT_MAGIC, "$N ni se inmuta.", ch, NULL, victim, TO_CHAR );
         return rSPELL_FAILED;
     }
 
@@ -2981,7 +2981,7 @@ ch_ret spell_dispel_magic( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 // stop players being changed to human priests - Vladaar
     if ( IS_AFFECTED( victim, AFF_DRAGONLORD ) ) {
-        interpret( victim, ( char * ) "human" );
+        interpret( victim, ( char * ) "forma" );
     }
 
     if ( ch == victim ) {
@@ -2997,14 +2997,14 @@ ch_ret spell_dispel_magic( int sn, int level, CHAR_DATA *ch, void *vo )
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/dispel.wav)\r\n", ch );
 
-        send_to_char( "You pass your hands around your body...\r\n", ch );
+        send_to_char( "pasas tus manos por tu cuerpo...\r\n", ch );
         if ( !IS_NPC( ch ) )
             update_aris( victim );
         return rNONE;
     }
 
     if ( !is_mage && !IS_AFFECTED( ch, AFF_DETECT_MAGIC ) ) {
-        send_to_char( "You don't sense a magical aura to dispel.\r\n", ch );
+        send_to_char( "No sientes ningún aura mágica que disipar.\r\n", ch );
         return rERROR;
     }
 
@@ -3138,7 +3138,7 @@ ch_ret spell_polymorph( int sn, int level, CHAR_DATA *ch, void *vo )
     morph = find_morph( ch, target_name, TRUE );
 
     if ( !morph ) {
-        send_to_char( "You can't morph into anything like that!\r\n", ch );
+        send_to_char( "¡No puedes transformarte en nada como eso!\r\n", ch );
         return rSPELL_FAILED;
     }
     if ( !do_morph_char( ch, morph ) ) {
@@ -3166,8 +3166,8 @@ ch_ret spell_earthquake( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/stomp.wav)\r\n", ch );
 
-    act( AT_MAGIC, "The earth trembles beneath your feet!", ch, NULL, NULL, TO_CHAR );
-    act( AT_MAGIC, "$n makes the earth tremble and shiver.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "¡La tierra tiembla bajo tus pies!", ch, NULL, NULL, TO_CHAR );
+    act( AT_MAGIC, "$n hace que la tierra tiemble y se agriete.", ch, NULL, NULL, TO_ROOM );
 
     for ( vch = first_char; vch; vch = vch_next ) {
         vch_next = vch->next;
@@ -3194,7 +3194,7 @@ ch_ret spell_earthquake( int sn, int level, CHAR_DATA *ch, void *vo )
 
         if ( !ch_died && vch->in_room->area == ch->in_room->area ) {
             if ( number_bits( 3 ) == 0 )
-                send_to_char_color( "&BThe earth trembles and shivers.\r\n", vch );
+                send_to_char_color( "&BLa tierra tiembla y se agrieta.\r\n", vch );
         }
     }
 
@@ -3211,9 +3211,9 @@ ch_ret spell_enchant_weapon( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( obj->item_type != ITEM_WEAPON || IS_OBJ_STAT( obj, ITEM_MAGIC ) || obj->first_affect
          || obj->level > ch->level ) {
-        act( AT_MAGIC, "Your magic twists and winds around $p but cannot take hold.", ch, obj, NULL,
+        act( AT_MAGIC, "Tu magia cubre $p pero se desvanece.", ch, obj, NULL,
              TO_CHAR );
-        act( AT_MAGIC, "$n's magic twists and winds around $p but cannot take hold.", ch, obj, NULL,
+        act( AT_MAGIC, "$ncubre $p con su magia pero esta se desvanece.", ch, obj, NULL,
              TO_NOTVICT );
         return rSPELL_FAILED;
     }
@@ -3254,19 +3254,19 @@ ch_ret spell_enchant_weapon( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( IS_GOOD( ch ) ) {
         xSET_BIT( obj->extra_flags, ITEM_ANTI_EVIL );
-        act( AT_BLUE, "$p gleams with flecks of blue energy.", ch, obj, NULL, TO_ROOM );
-        act( AT_BLUE, "$p gleams with flecks of blue energy.", ch, obj, NULL, TO_CHAR );
+        act( AT_BLUE, "$p brilla momentáneamente con luz azul.", ch, obj, NULL, TO_ROOM );
+        act( AT_BLUE, "$p brilla momentáneamente con luz azul.", ch, obj, NULL, TO_CHAR );
     }
     else if ( IS_EVIL( ch ) ) {
         xSET_BIT( obj->extra_flags, ITEM_ANTI_GOOD );
-        act( AT_BLOOD, "A crimson stain flows slowly over $p.", ch, obj, NULL, TO_CHAR );
-        act( AT_BLOOD, "A crimson stain flows slowly over $p.", ch, obj, NULL, TO_ROOM );
+        act( AT_BLOOD, "$p brilla siniestramente.", ch, obj, NULL, TO_CHAR );
+        act( AT_BLOOD, "$p brilla siniestramente.", ch, obj, NULL, TO_ROOM );
     }
     else {
         xSET_BIT( obj->extra_flags, ITEM_ANTI_EVIL );
         xSET_BIT( obj->extra_flags, ITEM_ANTI_GOOD );
-        act( AT_YELLOW, "$p glows with a disquieting light.", ch, obj, NULL, TO_ROOM );
-        act( AT_YELLOW, "$p glows with a disquieting light.", ch, obj, NULL, TO_CHAR );
+        act( AT_YELLOW, "$p brilla intensamente.", ch, obj, NULL, TO_ROOM );
+        act( AT_YELLOW, "$p brilla intensamente.", ch, obj, NULL, TO_CHAR );
     }
     return rNONE;
 }
@@ -3340,16 +3340,16 @@ ch_ret spell_fireball( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // A little more flaming shield support. -Taon
     if ( IS_AFFECTED( victim, AFF_FLAMING_SHIELD ) ) {
-        act( AT_RED, "The fireball you cast cannot penetrate $N's flaming shield.", ch, NULL,
+        act( AT_RED, "tu bola de fuego choca contra el escudo de fuego de $N y desaparece.", ch, NULL,
              victim, TO_CHAR );
-        act( AT_RED, "$n's fireball couldn't penetrate your flaming shield.", ch, NULL, victim,
+        act( AT_RED, "La bola de fuego de $n choca contra tu escudo de fuego y desaparece.", ch, NULL, victim,
              TO_VICT );
         dam = 0;
     }
     if ( IS_AFFECTED( victim, AFF_FIRESHIELD ) && !IS_AFFECTED( victim, AFF_FLAMING_SHIELD ) ) {
-        act( AT_RED, "The fireball you cast only partially penetrates $N's fireshield.", ch, NULL,
+        act( AT_RED, "Tu bola de fuego penetra parcialmente el escudo de fuego de $N.", ch, NULL,
              victim, TO_CHAR );
-        act( AT_RED, "$n's fireball only partially penetrates your fireshield.", ch, NULL, victim,
+        act( AT_RED, "La bola de fuego de $n consigue penetrar parcialmente tu escudo de fuego.", ch, NULL, victim,
              TO_VICT );
         dam = number_range( dam_each[level] / 2, dam_each[level] );
     }
@@ -3408,16 +3408,16 @@ ch_ret spell_flamestrike( int sn, int level, CHAR_DATA *ch, void *vo )
         send_to_char( "!!SOUND(sound/forgefire.wav)\r\n", ch );
 
     if ( IS_AFFECTED( victim, AFF_FLAMING_SHIELD ) ) {
-        act( AT_RED, "The flamestrike you cast only partially penetrates $N's flaming shield.", ch,
+        act( AT_RED, "El escudo de fuego de $N absorbe parte del daño.", ch,
              NULL, victim, TO_CHAR );
-        act( AT_RED, "$n's flamestrike only partially penetrates your flaming shield.", ch, NULL,
+        act( AT_RED, "El conjuro de $n penetra tu escudo de fuego, que solo puede absorber parte del daño.", ch, NULL,
              victim, TO_VICT );
         dam = dice( 1, 2 );
     }
     if ( IS_AFFECTED( victim, AFF_FIRESHIELD ) && !IS_AFFECTED( victim, AFF_FLAMING_SHIELD ) ) {
-        act( AT_RED, "The flamestrike you cast only partially penetrates $N's fireshield.", ch,
+        act( AT_RED, "El escudo de fuego de $N absorbe parte del daño.", ch,
              NULL, victim, TO_CHAR );
-        act( AT_RED, "$n's flamestrike only partially penetrates your fireshield.", ch, NULL,
+        act( AT_RED, "El conjuro de $n penetra tu escudo de fuego, que solo puede absorber parte del daño.", ch, NULL,
              victim, TO_VICT );
         dam = dice( 3, 4 );
     }
@@ -3456,8 +3456,8 @@ ch_ret spell_faerie_fire( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     af.bitvector = meb( AFF_FAERIE_FIRE );
     affect_to_char( victim, &af );
-    act( AT_PINK, "You are surrounded by a pink outline.", victim, NULL, NULL, TO_CHAR );
-    act( AT_PINK, "$n is surrounded by a pink outline.", victim, NULL, NULL, TO_ROOM );
+    act( AT_PINK, "Te rodea un aura rosa.", victim, NULL, NULL, TO_CHAR );
+    act( AT_PINK, "A $n le rodea un aura rosa.", victim, NULL, NULL, TO_ROOM );
     return rNONE;
 }
 
@@ -3465,8 +3465,8 @@ ch_ret spell_faerie_fog( int sn, int level, CHAR_DATA *ch, void *vo )
 {
     CHAR_DATA              *ich;
 
-    act( AT_MAGIC, "$n conjures a cloud of purple smoke.", ch, NULL, NULL, TO_ROOM );
-    act( AT_MAGIC, "You conjure a cloud of purple smoke.", ch, NULL, NULL, TO_CHAR );
+    act( AT_MAGIC, "$n conjura una nube de humo rosa.", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "Conjuras una nube de humo rosa.", ch, NULL, NULL, TO_CHAR );
 
     for ( ich = ch->in_room->first_person; ich; ich = ich->next_in_room ) {
         if ( !IS_NPC( ich ) && xIS_SET( ich->act, PLR_WIZINVIS ) )
@@ -3482,8 +3482,8 @@ ch_ret spell_faerie_fog( int sn, int level, CHAR_DATA *ch, void *vo )
         xREMOVE_BIT( ich->affected_by, AFF_HIDE );
         xREMOVE_BIT( ich->affected_by, AFF_INVISIBLE );
         xREMOVE_BIT( ich->affected_by, AFF_SNEAK );
-        act( AT_MAGIC, "$n is revealed!", ich, NULL, NULL, TO_ROOM );
-        act( AT_MAGIC, "You are revealed!", ich, NULL, NULL, TO_CHAR );
+        act( AT_MAGIC, "¡$n se hace visible!", ich, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "¡Te haces visible!", ich, NULL, NULL, TO_CHAR );
     }
     return rNONE;
 }
@@ -3565,8 +3565,8 @@ ch_ret spell_invis( int sn, int level, CHAR_DATA *ch, void *vo )
 /* Modifications on 1/2/96 to work on player/object - Scryn */
 
     if ( IS_IMMORTAL( ch ) && ch->level < ( MAX_LEVEL - 1 ) ) {
-        send_to_char( "I'm sorry but 6 Dragons staff members must stay visible.\r\n\r\n", ch );
-        send_to_char( "Players like to see staff online, and staff like to see players.\r\n", ch );
+        send_to_char( "Lo siento, pero como miembro de la administración debes estar visible.\r\n\r\n", ch );
+        send_to_char( "Los jugadores deben poder verte, así como tu los ves a ellos.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -3590,7 +3590,7 @@ ch_ret spell_invis( int sn, int level, CHAR_DATA *ch, void *vo )
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/invis.wav)\r\n", ch );
 
-        act( AT_MAGIC, "$n fades out of existence.", victim, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "$n se desvanece lentamente.", victim, NULL, NULL, TO_ROOM );
         af.type = sn;
         af.duration = ( int ) ( ( ( level / 4 ) + 12 ) * DUR_CONV );
         af.location = APPLY_NONE;
@@ -3599,7 +3599,7 @@ ch_ret spell_invis( int sn, int level, CHAR_DATA *ch, void *vo )
         af.level = ch->level;
         af.bitvector = meb( AFF_INVISIBLE );
         affect_to_char( victim, &af );
-        act( AT_MAGIC, "You fade out of existence.", victim, NULL, NULL, TO_CHAR );
+        act( AT_MAGIC, "Te desvaneces.", victim, NULL, NULL, TO_CHAR );
         return rNONE;
     }
     else {
@@ -3615,11 +3615,11 @@ ch_ret spell_invis( int sn, int level, CHAR_DATA *ch, void *vo )
             }
 
             xSET_BIT( obj->extra_flags, ITEM_INVIS );
-            act( AT_MAGIC, "$p fades out of existence.", ch, obj, NULL, TO_CHAR );
+            act( AT_MAGIC, "$p se desvanece.", ch, obj, NULL, TO_CHAR );
             return rNONE;
         }
     }
-    ch_printf( ch, "You can't find %s!\r\n", target_name );
+    ch_printf( ch, "¡No puedes encontrar %s!\r\n", target_name );
     return rSPELL_FAILED;
 }
 
@@ -3643,19 +3643,19 @@ ch_ret spell_know_alignment( int sn, int level, CHAR_DATA *ch, void *vo )
     ap = victim->alignment;
 
     if ( ap > 700 )
-        msg = "$N has an aura as white as the driven snow.";
+        msg = "$N tiene una poderosa aura blanca y pura a su alrededor.";
     else if ( ap > 350 )
-        msg = "$N is of excellent moral character.";
+        msg = "$N es una escelente persona.";
     else if ( ap > 100 )
-        msg = "$N is often kind and thoughtful.";
+        msg = "$N es neutral.";
     else if ( ap > -100 )
-        msg = "$N doesn't have a firm moral commitment.";
+        msg = "$N no posee una moral muy buena que digamos.";
     else if ( ap > -350 )
-        msg = "$N lies to $S friends.";
+        msg = "$N miente a sus amigos.";
     else if ( ap > -700 )
-        msg = "$N would just as soon kill you as look at you.";
+        msg = "$N podría matarte por mirarle.";
     else
-        msg = "$N is as evil as they come!";
+        msg = "$N es la maldad en persona.";
 
     act( AT_MAGIC, msg, ch, NULL, victim, TO_CHAR );
     return rNONE;
@@ -3683,9 +3683,9 @@ ch_ret spell_lightning_bolt( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/thunder5.wav)\r\n", ch );
     if ( IS_AFFECTED( victim, AFF_SHOCKSHIELD ) ) {
-        act( AT_YELLOW, "The lightning bolt you cast only partially penetrates $N's shockshield.",
+        act( AT_YELLOW, "Tu rayo penetra parcialmente el escudo eléctrico de $N.",
              ch, NULL, victim, TO_CHAR );
-        act( AT_YELLOW, "$n's lightning bolt only partially penetrates your shockshield.", ch, NULL,
+        act( AT_YELLOW, "El rayo de $n penetra parcialmente tu escudo electrico.", ch, NULL,
              victim, TO_VICT );
         dam = number_range( dam_each[level] / 2, dam_each[level] );
     }
@@ -3706,7 +3706,7 @@ ch_ret spell_locate_object( int sn, int level, CHAR_DATA *ch, void *vo )
                             found = 0;
 
     if ( !target_name || target_name[0] == '\0' ) {
-        send_to_char( "Locate what?\r\n", ch );
+        send_to_char( "¿localizar qué?\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -3736,11 +3736,11 @@ ch_ret spell_locate_object( int sn, int level, CHAR_DATA *ch, void *vo )
                 continue;
             }
 
-            snprintf( buf, MAX_INPUT_LENGTH, "%s carried by %s.\r\n", obj_short( obj ),
+            snprintf( buf, MAX_INPUT_LENGTH, "%s llevado por %s.\r\n", obj_short( obj ),
                       PERS( in_obj->carried_by, ch ) );
         }
         else
-            snprintf( buf, MAX_INPUT_LENGTH, "%s in %s.\r\n", obj_short( obj ),
+            snprintf( buf, MAX_INPUT_LENGTH, "%s en %s.\r\n", obj_short( obj ),
                       in_obj->in_room == NULL ? "somewhere" : in_obj->in_room->name );
 
         buf[0] = UPPER( buf[0] );
@@ -3758,7 +3758,7 @@ ch_ret spell_locate_object( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( !found ) {
-        send_to_char( "Nothing like that exists.\r\n", ch );
+        send_to_char( "Eso no existe.\r\n", ch );
         return rSPELL_FAILED;
     }
     return rNONE;
@@ -3813,8 +3813,8 @@ ch_ret spell_pass_door( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     af.bitvector = meb( AFF_PASS_DOOR );
     affect_to_char( victim, &af );
-    act( AT_MAGIC, "$n turns translucent.", victim, NULL, NULL, TO_ROOM );
-    act( AT_MAGIC, "You turn translucent.", victim, NULL, NULL, TO_CHAR );
+    act( AT_MAGIC, "$n se vuelve inmaterial.", victim, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "Te vuelves inmaterial.", victim, NULL, NULL, TO_CHAR );
     return rNONE;
 }
 
@@ -3848,7 +3848,7 @@ ch_ret spell_poison( int sn, int level, CHAR_DATA *ch, void *vo )
     chance = ris_save( victim, level, RIS_POISON );
 
     if ( saves_poison_death( chance, victim ) && speed > 2 ) {
-        send_to_char( "&cYour poison fails to be strong enough to affect them.\r\n", ch );
+        send_to_char( "&cNo consigues completar el hechizo a tiempo.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -3878,12 +3878,12 @@ ch_ret spell_poison( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_join( victim, &af );
     set_char_color( AT_GREEN, victim );
-    send_to_char( "You feel very sick.\r\n", victim );
+    send_to_char( "Te sientes fatal.\r\n", victim );
     victim->mental_state = URANGE( 5, victim->mental_state + ( first ? 5 : 0 ), 100 );
     if ( ch != victim ) {
-        act( AT_GREEN, "$N shivers as your poison spreads through $S body.", ch, NULL, victim,
+        act( AT_GREEN, "$N palidece cuando el veneno mágico entra en su cuerpo.", ch, NULL, victim,
              TO_CHAR );
-        act( AT_GREEN, "$N shivers as $n's poison spreads through $S body.", ch, NULL, victim,
+        act( AT_GREEN, "$N palidece cuando el veneno mágico de $n entra en su cuerpo.", ch, NULL, victim,
              TO_NOTVICT );
     }
     return rNONE;
@@ -3903,10 +3903,10 @@ ch_ret spell_remove_curse( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( is_affected( victim, gsn_curse ) ) {
         affect_strip( victim, gsn_curse );
         set_char_color( AT_MAGIC, victim );
-        send_to_char( "The weight of your curse is lifted.\r\n", victim );
+        send_to_char( "sientes que tu dignidad regresa.\r\n", victim );
         if ( ch != victim ) {
-            act( AT_MAGIC, "You dispel the curses afflicting $N.", ch, NULL, victim, TO_CHAR );
-            act( AT_MAGIC, "$n's dispels the curses afflicting $N.", ch, NULL, victim, TO_NOTVICT );
+            act( AT_MAGIC, "Eliminas la maldición de $N.", ch, NULL, victim, TO_CHAR );
+            act( AT_MAGIC, "$n elimina la maldición de $N.", ch, NULL, victim, TO_NOTVICT );
         }
     }
     else if ( victim->first_carrying ) {
@@ -3918,11 +3918,11 @@ ch_ret spell_remove_curse( int sn, int level, CHAR_DATA *ch, void *vo )
                 if ( IS_OBJ_STAT( obj, ITEM_NODROP ) )
                     xREMOVE_BIT( obj->extra_flags, ITEM_NODROP );
                 set_char_color( AT_MAGIC, victim );
-                send_to_char( "You feel a burden released.\r\n", victim );
+                send_to_char( "Te sientes más libre.\r\n", victim );
                 if ( ch != victim ) {
-                    act( AT_MAGIC, "You dispel the curses afflicting $N.", ch, NULL, victim,
+                    act( AT_MAGIC, "Liberas a $N de su maldición.", ch, NULL, victim,
                          TO_CHAR );
-                    act( AT_MAGIC, "$n's dispels the curses afflicting $N.", ch, NULL, victim,
+                    act( AT_MAGIC, "$n libera a $N de su maldición.", ch, NULL, victim,
                          TO_NOTVICT );
                 }
                 return rNONE;
@@ -3940,14 +3940,14 @@ ch_ret spell_remove_trap( int sn, int level, CHAR_DATA *ch, void *vo )
     SKILLTYPE              *skill = get_skilltype( sn );
 
     if ( !target_name || target_name[0] == '\0' ) {
-        send_to_char( "Remove trap on what?\r\n", ch );
+        send_to_char( "¿Eliminar la trampa de qué?\r\n", ch );
         return rSPELL_FAILED;
     }
 
     found = FALSE;
 
     if ( !ch->in_room->first_content ) {
-        send_to_char( "You can't find that here.\r\n", ch );
+        send_to_char( "No encuentras eso aquí.\r\n", ch );
         return rNONE;
     }
 
@@ -3958,7 +3958,7 @@ ch_ret spell_remove_trap( int sn, int level, CHAR_DATA *ch, void *vo )
         }
 
     if ( !found ) {
-        send_to_char( "You can't find that here.\r\n", ch );
+        send_to_char( "No encuentras eso aquí.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -4001,9 +4001,9 @@ ch_ret spell_shocking_grasp( int sn, int level, CHAR_DATA *ch, void *vo )
     level = UMAX( 0, level );
 
     if ( IS_AFFECTED( victim, AFF_SHOCKSHIELD ) ) {
-        act( AT_YELLOW, "The shocking grasp you cast only partially penetrates $N's shockshield.",
+        act( AT_YELLOW, "Tu conjuro penetra parcialmente el escudo eléctrico de $N.",
              ch, NULL, victim, TO_CHAR );
-        act( AT_YELLOW, "$n's shocking grasp only partially penetrates your shockshield.", ch, NULL,
+        act( AT_YELLOW, "El conjuro de $n penetra parcialmente tu escudo eléctrico.", ch, NULL,
              victim, TO_VICT );
         dam = number_range( dam_each[level] / 2, dam_each[level] );
     }
@@ -4025,12 +4025,12 @@ ch_ret spell_sleep( int sn, int level, CHAR_DATA *ch, void *vo )
     SKILLTYPE              *skill = get_skilltype( sn );
 
     if ( ( victim = get_char_room( ch, target_name ) ) == NULL ) {
-        send_to_char( "They aren't here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return rSPELL_FAILED;
     }
 
     if ( !IS_NPC( victim ) && victim->fighting ) {
-        send_to_char( "You cannot sleep a fighting player.\r\n", ch );
+        send_to_char( "No puedes dormir a alguien que está luchando.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -4075,14 +4075,14 @@ ch_ret spell_sleep( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( !IS_NPC( victim ) ) {
         char                    buf[MSL];
 
-        snprintf( buf, MSL, "%s has cast sleep on %s.", ch->name, victim->name );
+        snprintf( buf, MSL, "%s ha lanzado dormir a %s.", ch->name, victim->name );
         log_string_plus( buf, LOG_NORMAL, ch->level );
         to_channel( buf, "Monitor", UMAX( LEVEL_IMMORTAL, ch->level ) );
     }
 
     if ( IS_AWAKE( victim ) ) {
-        act( AT_MAGIC, "You feel very sleepy ..... zzzzzz.", victim, NULL, NULL, TO_CHAR );
-        act( AT_MAGIC, "$n goes to sleep.", victim, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "Tienes mucho sueño..... zzzzzz.", victim, NULL, NULL, TO_CHAR );
+        act( AT_MAGIC, "$n se pone a dormir.", victim, NULL, NULL, TO_ROOM );
         set_position( victim, POS_SLEEPING );
     }
     if ( IS_NPC( victim ) )
@@ -4121,27 +4121,27 @@ ch_ret spell_summon( int sn, int level, CHAR_DATA *ch, void *vo )
              || ( ( IS_NPC( ch ) == IS_NPC( victim ) ) && chance( ch, 60 ) ) ) {
             failed_casting( skill, ch, victim, NULL );
             set_char_color( AT_MAGIC, victim );
-            send_to_char( "You feel a strange pulling sensation...\r\n", victim );
+            send_to_char( "sientes una sensación extraña...\r\n", victim );
             return rSPELL_FAILED;
         }
     }
 
     if ( !IS_NPC( ch ) ) {
-        act( AT_MAGIC, "You feel a wave of nausea overcome you...", ch, NULL, NULL, TO_CHAR );
-        act( AT_MAGIC, "$n collapses, stunned!", ch, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "Sientes náuseas...", ch, NULL, NULL, TO_CHAR );
+        act( AT_MAGIC, "¡$n colapsa!", ch, NULL, NULL, TO_ROOM );
         set_position( ch, POS_STUNNED );
 
-        snprintf( buf, MSL, "%s summoned %s to room %d.", ch->name, victim->name,
+        snprintf( buf, MSL, "%s invocó a %s a la sala %d.", ch->name, victim->name,
                   ch->in_room->vnum );
         log_string_plus( buf, LOG_NORMAL, ch->level );
         to_channel( buf, "Monitor", UMAX( LEVEL_IMMORTAL, ch->level ) );
     }
 
-    act( AT_MAGIC, "$n disappears suddenly.", victim, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n desaparece repentinamente.", victim, NULL, NULL, TO_ROOM );
     char_from_room( victim );
     char_to_room( victim, ch->in_room );
-    act( AT_MAGIC, "$n arrives suddenly.", victim, NULL, NULL, TO_ROOM );
-    act( AT_MAGIC, "$N has summoned you!", victim, NULL, ch, TO_CHAR );
+    act( AT_MAGIC, "$n aparece repentinamente.", victim, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "¡$N te ha invocado!", victim, NULL, ch, TO_CHAR );
     do_look( victim, ( char * ) "auto" );
     return rNONE;
 }
@@ -4158,37 +4158,37 @@ ch_ret spell_astral_walk( int sn, int level, CHAR_DATA *ch, void *vo )
     struct skill_type      *skill = get_skilltype( sn );
 
     if ( ( victim = get_char_world( ch, target_name ) ) == NULL ) {
-        send_to_char( "&GThey do not exist.\r\n", ch );
+        send_to_char( "&GEso no existe.\r\n", ch );
         return rNONE;
     }
     if ( IS_SET( victim->in_room->room_flags, ROOM_CLANSTOREROOM ) ) {
-        send_to_char( "You cannot astral walk to a clan storeroom location.\r\n", ch );
+        send_to_char( "No puedes.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_SET( victim->in_room->room_flags, ROOM_NO_ASTRAL )
          || IS_SET( victim->in_room->area->flags, AFLAG_NOASTRAL ) ) {
         send_to_char
-            ( "&GYou commit all your mana to astral walk where forces have shielded your magic!\r\n",
+            ( "&G¡Destinas todo tu poder para intentar romper el escudo astral!\r\n",
               ch );
         if ( ch->mana < ( ch->max_mana - 50 ) ) {
             ch->mana = 0;
-            send_to_char( "&GYou did not have enough mana to breach the shielded location.\r\n",
+            send_to_char( "&GNo tienes suficiente poder.\r\n",
                           ch );
             return rNONE;
         }
         ch->mana = 0;
     }
     if ( IS_IMMORTAL( victim ) ) {
-        send_to_char( "&GYou cannot astral walk to a Staff member.\r\n", ch );
+        send_to_char( "&GNo puedes viajar astralmente hacia un miembro de la administración.\r\n", ch );
         return rNONE;
     }
     if ( IS_AFFECTED( ch, AFF_SNARE ) || IS_AFFECTED( ch, AFF_PRAYER )
          || IS_AFFECTED( ch, AFF_ROOT ) ) {
-        send_to_char( "But you can't move right now.\r\n", ch );
+        send_to_char( "No te puedes mover.\r\n", ch );
         return rNONE;
     }
-    act( AT_YELLOW, "$n disappears in a flash of light!", ch, NULL, NULL, TO_ROOM );
+    act( AT_YELLOW, "¡$n desaparece!", ch, NULL, NULL, TO_ROOM );
     send_to_char( "&YYou travel through space and time towards your new destination.&D\r\n", ch );
     char_from_room( ch );
     char_to_room( ch, victim->in_room );
@@ -4200,7 +4200,7 @@ ch_ret spell_astral_walk( int sn, int level, CHAR_DATA *ch, void *vo )
         set_position( ch, POS_STANDING );
     }
 
-    act( AT_YELLOW, "$n appears in a flash of light!", ch, NULL, NULL, TO_ROOM );
+    act( AT_YELLOW, "¡$n aparece repentinamente!", ch, NULL, NULL, TO_ROOM );
     do_look( ch, ( char * ) "auto" );
     return rNONE;
 }
@@ -4232,7 +4232,7 @@ ch_ret spell_teleport( int sn, int level, CHAR_DATA *ch, void *vo )
                 break;
     }
 
-    act( AT_MAGIC, "$n slowly fades out of view.", victim, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "$n desaparece lentamente.", victim, NULL, NULL, TO_ROOM );
     char_from_room( victim );
     char_to_room( victim, pRoomIndex );
     if ( ch->on ) {
@@ -4244,7 +4244,7 @@ ch_ret spell_teleport( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( !IS_NPC( victim ) )
-        act( AT_MAGIC, "$n slowly fades into view.", victim, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "$n aparece lentamente.", victim, NULL, NULL, TO_ROOM );
     do_look( victim, ( char * ) "auto" );
     return rNONE;
 }
@@ -4262,7 +4262,7 @@ ch_ret spell_draw_mana( int sn, int level, CHAR_DATA *ch, void *vo )
         amt = ch->level + ( ( get_curr_wis( ch ) + get_curr_int( ch ) ) * 6 );
 
     ch->mana += amt;
-    send_to_char( "&BA rush of mana fills your body.\r\n", ch );
+    send_to_char( "&BUna corriente mágica inunda tu cuerpo.\r\n", ch );
 
     if ( ch->mana > ch->max_mana )
         ch->mana = ch->max_mana;
@@ -4279,8 +4279,8 @@ ch_ret spell_ventriloquate( int sn, int level, CHAR_DATA *ch, void *vo )
 
     target_name = one_argument( target_name, speaker );
 
-    snprintf( buf1, MSL, "%s says '%s'.\r\n", speaker, target_name );
-    snprintf( buf2, MSL, "Someone makes %s say '%s'.\r\n", speaker, target_name );
+    snprintf( buf1, MSL, "%s dice '%s'.\r\n", speaker, target_name );
+    snprintf( buf2, MSL, "Alguien hace que %s diga '%s'.\r\n", speaker, target_name );
     buf1[0] = UPPER( buf1[0] );
 
     for ( vch = ch->in_room->first_person; vch; vch = vch->next_in_room ) {
@@ -4305,7 +4305,7 @@ ch_ret spell_weaken( int sn, int level, CHAR_DATA *ch, void *vo )
         return rSPELL_FAILED;
     }
     if ( is_affected( victim, sn ) || saves_wands( level, victim ) ) {
-        send_to_char( "Your magic fails to take hold.\r\n", ch );
+        send_to_char( "Tu magia no logra su objetivo.\r\n", ch );
         return rSPELL_FAILED;
     }
     af.type = sn;
@@ -4321,20 +4321,20 @@ ch_ret spell_weaken( int sn, int level, CHAR_DATA *ch, void *vo )
     xCLEAR_BITS( af.bitvector );
     affect_to_char( victim, &af );
     set_char_color( AT_MAGIC, victim );
-    send_to_char( "Your muscles seem to atrophy!\r\n", victim );
+    send_to_char( "¡Tus músculos se atrofian!\r\n", victim );
     if ( ch != victim ) {
         if ( ( ( ( !IS_NPC( victim ) && class_table[victim->Class]->attr_prime == APPLY_STR )
                  || IS_NPC( victim ) ) && get_curr_str( victim ) < 25 )
              || get_curr_str( victim ) < 20 ) {
-            act( AT_MAGIC, "$N labors weakly as your spell atrophies $S muscles.", ch, NULL, victim,
+            act( AT_MAGIC, "$N se debilita debido a tu poderoso hechizo.", ch, NULL, victim,
                  TO_CHAR );
-            act( AT_MAGIC, "$N labors weakly as $n's spell atrophies $S muscles.", ch, NULL, victim,
+            act( AT_MAGIC, "$N se debilita cuando $n termina su hechizo.", ch, NULL, victim,
                  TO_NOTVICT );
         }
         else {
-            act( AT_MAGIC, "You induce a mild atrophy in $N's muscles.", ch, NULL, victim,
+            act( AT_MAGIC, "Los músculos de $N se atrofian.", ch, NULL, victim,
                  TO_CHAR );
-            act( AT_MAGIC, "$n induces a mild atrophy in $N's muscles.", ch, NULL, victim,
+            act( AT_MAGIC, "$n atrofia los músculos de $N.", ch, NULL, victim,
                  TO_NOTVICT );
         }
     }
@@ -4344,9 +4344,9 @@ ch_ret spell_weaken( int sn, int level, CHAR_DATA *ch, void *vo )
 ch_ret spell_word_of_recall( int sn, int level, CHAR_DATA *ch, void *vo )
 {
 
-    act( AT_MAGIC, "A spiral of glowing energy encompasses you, and you recall.", ch, NULL, NULL,
+    act( AT_MAGIC, "Una espiral plateada te envuelve.", ch, NULL, NULL,
          TO_CHAR );
-    act( AT_MAGIC, "$n is encompassed by a spiral of glowing energy, and recalls!", ch, NULL, NULL,
+    act( AT_MAGIC, "¡A $n le envuelve una espiral plateada y desaparece!", ch, NULL, NULL,
          TO_ROOM );
     do_recall( ( CHAR_DATA * ) vo, ( char * ) "" );
     return rNONE;
@@ -4375,7 +4375,7 @@ ch_ret spell_acid_breath( int sn, int level, CHAR_DATA *ch, void *vo )
                 case ITEM_ARMOR:
                     if ( obj_lose->value[0] > 0 ) {
                         separate_obj( obj_lose );
-                        act( AT_DAMAGE, "$p is pitted and etched!", victim, obj_lose, NULL,
+                        act( AT_DAMAGE, "¡$p ha recibido daños por ácido!", victim, obj_lose, NULL,
                              TO_CHAR );
                         if ( ( iWear = obj_lose->wear_loc ) != WEAR_NONE )
                             victim->armor += apply_ac( obj_lose, iWear );
@@ -4388,10 +4388,10 @@ ch_ret spell_acid_breath( int sn, int level, CHAR_DATA *ch, void *vo )
 
                 case ITEM_CONTAINER:
                     separate_obj( obj_lose );
-                    act( AT_DAMAGE, "$p fumes and dissolves!", victim, obj_lose, NULL, TO_CHAR );
-                    act( AT_OBJECT, "The contents of $p held by $N spill onto the ground.", victim,
+                    act( AT_DAMAGE, "¡$p humea y se disuelve!", victim, obj_lose, NULL, TO_CHAR );
+                    act( AT_OBJECT, "El contenido de $p es sostenido por $N pero cae al suelo.", victim,
                          obj_lose, victim, TO_ROOM );
-                    act( AT_OBJECT, "The contents of $p spill out onto the ground!", victim,
+                    act( AT_OBJECT, "¡El contenido de $p cae al suelo!", victim,
                          obj_lose, NULL, TO_CHAR );
                     empty_obj( obj_lose, NULL, victim->in_room, FALSE );
                     extract_obj( obj_lose );
@@ -4429,35 +4429,35 @@ ch_ret spell_fire_breath( int sn, int level, CHAR_DATA *ch, void *vo )
                 default:
                     continue;
                 case ITEM_CONTAINER:
-                    msg = "$p ignites and burns!";
+                    msg = "¡$p arde en llamas!";
                     break;
                 case ITEM_POTION:
-                    msg = "$p bubbles and boils!";
+                    msg = "¡$p arde y explota!";
                     break;
                 case ITEM_SCROLL:
-                    msg = "$p crackles and burns!";
+                    msg = "¡$p arde y se convierte en cenizas!";
                     break;
                 case ITEM_STAFF:
-                    msg = "$p smokes and chars!";
+                    msg = "¡$p humea y queda inservible!";
                     break;
                 case ITEM_WAND:
-                    msg = "$p sparks and sputters!";
+                    msg = "¡$p arde y se convierte en cenizas!";
                     break;
                 case ITEM_COOK:
                 case ITEM_FOOD:
-                    msg = "$p blackens and crisps!";
+                    msg = "¡$p se quema!";
                     break;
                 case ITEM_PILL:
-                    msg = "$p melts and drips!";
+                    msg = "¡$p se quema!";
                     break;
             }
 
             separate_obj( obj_lose );
             act( AT_DAMAGE, msg, victim, obj_lose, NULL, TO_CHAR );
             if ( obj_lose->item_type == ITEM_CONTAINER ) {
-                act( AT_OBJECT, "The contents of $p held by $N spill onto the ground.", victim,
+                act( AT_OBJECT, "El contenido de $p es sostenido por $N pero cae al suelo.", victim,
                      obj_lose, victim, TO_ROOM );
-                act( AT_OBJECT, "The contents of $p spill out onto the ground!", victim, obj_lose,
+                act( AT_OBJECT, "El contenido de $p cae al suelo!", victim, obj_lose,
                      NULL, TO_CHAR );
                 empty_obj( obj_lose, NULL, victim->in_room, FALSE );
             }
@@ -4491,16 +4491,16 @@ ch_ret spell_frost_breath( int sn, int level, CHAR_DATA *ch, void *vo )
                 case ITEM_CONTAINER:
                 case ITEM_DRINK_CON:
                 case ITEM_POTION:
-                    msg = "$p freezes and shatters!";
+                    msg = "¡$p se congela y explota!";
                     break;
             }
 
             separate_obj( obj_lose );
             act( AT_DAMAGE, msg, victim, obj_lose, NULL, TO_CHAR );
             if ( obj_lose->item_type == ITEM_CONTAINER ) {
-                act( AT_OBJECT, "The contents of $p held by $N spill onto the ground.", victim,
+                act( AT_OBJECT, "El contenido de $p es sonstenido por $N pero cae al suelo.", victim,
                      obj_lose, victim, TO_ROOM );
-                act( AT_OBJECT, "The contents of $p spill out onto the ground!", victim, obj_lose,
+                act( AT_OBJECT, "¡El contenido de $p cae al suelo!", victim, obj_lose,
                      NULL, TO_CHAR );
                 empty_obj( obj_lose, NULL, victim->in_room, FALSE );
             }
@@ -4525,7 +4525,7 @@ ch_ret spell_gas_breath( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( IS_SET( ch->in_room->room_flags, ROOM_SAFE ) ) {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "You fail to breathe.\r\n", ch );
+        send_to_char( "Fallas.\r\n", ch );
         return rNONE;
     }
 
@@ -4595,7 +4595,7 @@ ch_ret spell_transport( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( victim->in_room == ch->in_room ) {
-        send_to_char( "They are right beside you!", ch );
+        send_to_char( "¡Está a tu lado!", ch );
         return rSPELL_FAILED;
     }
 
@@ -4610,26 +4610,26 @@ ch_ret spell_transport( int sn, int level, CHAR_DATA *ch, void *vo )
                                                         */
 
     if ( IS_OBJ_STAT( obj, ITEM_NODROP ) ) {
-        send_to_char( "You can't seem to let go of it.\r\n", ch );
+        send_to_char( "No puedes dejar ir eso.\r\n", ch );
         return rSPELL_FAILED;                          /* nice catch, caine */
     }
 
     if ( IS_OBJ_STAT( obj, ITEM_CLANOBJECT ) ) {
-        send_to_char( "You can't seem to let go of it.\r\n", ch );
+        send_to_char( "No puedes transportar eso.\r\n", ch );
         return rSPELL_FAILED;                          /* nice catch, caine */
     }
 
     if ( IS_OBJ_STAT( obj, ITEM_PROTOTYPE ) && get_trust( victim ) < LEVEL_IMMORTAL ) {
-        send_to_char( "That item is not for mortal hands to touch!\r\n", ch );
+        send_to_char( "¡Este objeto no puede ser tocado por las indignas manos de un indigno mortal!\r\n", ch );
         return rSPELL_FAILED;                          /* Thoric */
     }
 
-    act( AT_MAGIC, "$p slowly dematerializes...", ch, obj, NULL, TO_CHAR );
-    act( AT_MAGIC, "$p slowly dematerializes from $n's hands..", ch, obj, NULL, TO_ROOM );
+    act( AT_MAGIC, "$p se desmaterializa...", ch, obj, NULL, TO_CHAR );
+    act( AT_MAGIC, "$p se desmaterializa de las manos de $n..", ch, obj, NULL, TO_ROOM );
     obj_from_char( obj );
     obj_to_char( obj, victim );
-    act( AT_MAGIC, "$p from $n appears in your hands!", ch, obj, victim, TO_VICT );
-    act( AT_MAGIC, "$p appears in $n's hands!", victim, obj, NULL, TO_ROOM );
+    act( AT_MAGIC, "¡$p de $n aparece en tus manos!", ch, obj, victim, TO_VICT );
+    act( AT_MAGIC, "¡$p aparece en las manos de $n!", victim, obj, NULL, TO_ROOM );
     save_char_obj( ch );
     save_char_obj( victim );
     return rNONE;
@@ -4659,35 +4659,35 @@ ch_ret spell_portal( int sn, int level, CHAR_DATA *ch, void *vo )
      */
 
     if ( ( victim = get_char_world( ch, target_name ) ) == NULL ) {
-        send_to_char( "&GThey do not exist.\r\n", ch );
+        send_to_char( "&GNo existe.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_SET( ch->in_room->room_flags, ROOM_NO_ASTRAL )
          || IS_SET( ch->in_room->area->flags, AFLAG_NOASTRAL ) ) {
-        send_to_char( "&GYou sense you cannot portal at your current location.\r\n", ch );
+        send_to_char( "&GNo puedes abrir un portal desde aquí.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_SET( victim->in_room->room_flags, ROOM_NO_ASTRAL )
          || IS_SET( victim->in_room->area->flags, AFLAG_NOASTRAL ) ) {
-        send_to_char( "&GIt is beyond your ability to portal to that location.\r\n", ch );
+        send_to_char( "&GNo puedes abrir un portal ahí.\r\n", ch );
         return rNONE;
     }
 
     if ( victim == ch || !victim->in_room || IS_SET( victim->in_room->room_flags, ROOM_PRIVATE )
          || IS_SET( victim->in_room->room_flags, ROOM_SOLITARY ) ) {
-        send_to_char( "&GIt is beyond your ability to portal to that location.\r\n", ch );
+        send_to_char( "&GNo puedes abrir un portal ahí.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_IMMORTAL( victim ) ) {
-        send_to_char( "&GYou cannot portal to a Staff member.\r\n", ch );
+        send_to_char( "&GNo puedes abrir un portal hacia un miembro de la administración.\r\n", ch );
         return rNONE;
     }
 
     if ( !in_hard_range( ch, victim->in_room->area ) ) {
-        send_to_char( "&GYou cannot portal to the area that your victim is in.\r\n", ch );
+        send_to_char( "&GNo puedes abrir un portal hacia allíin.\r\n", ch );
         return rNONE;
     }
 
@@ -4700,12 +4700,12 @@ ch_ret spell_portal( int sn, int level, CHAR_DATA *ch, void *vo )
      */
     for ( pexit = fromRoom->first_exit; pexit; pexit = pexit->next ) {
         if ( IS_SET( pexit->exit_info, EX_PORTAL ) ) {
-            send_to_char( "There is already a portal in this room.\r\n", ch );
+            send_to_char( "ya hay un portal aquí.\r\n", ch );
             return rSPELL_FAILED;
         }
 
         if ( pexit->vdir == DIR_PORTAL ) {
-            send_to_char( "You may not create a portal in this room.\r\n", ch );
+            send_to_char( "No puedes crear un portal aquí.\r\n", ch );
             return rSPELL_FAILED;
         }
     }
@@ -4718,14 +4718,14 @@ ch_ret spell_portal( int sn, int level, CHAR_DATA *ch, void *vo )
 
     pexit = make_exit( fromRoom, targetRoom, DIR_PORTAL );
     pexit->keyword = STRALLOC( "portal" );
-    pexit->description = STRALLOC( "You gaze into the shimmering portal...\r\n" );
+    pexit->description = STRALLOC( "Ves un portal dimensional...\r\n" );
     pexit->key = -1;
     pexit->exit_info = EX_PORTAL | EX_xENTER | EX_HIDDEN | EX_xLOOK;
     pexit->vnum = targetRoomVnum;
 
     portalObj = create_object( get_obj_index( OBJ_VNUM_PORTAL ), 0 );
     portalObj->timer = 3;
-    snprintf( buf, MSL, "a magical portal" );
+    snprintf( buf, MSL, "un portal mágico" );
     STRFREE( portalObj->short_descr );
     portalObj->short_descr = STRALLOC( buf );
     STRFREE( portalObj->description );
@@ -4737,17 +4737,17 @@ ch_ret spell_portal( int sn, int level, CHAR_DATA *ch, void *vo )
      */
     if ( !skill->hit_char || skill->hit_char[0] == '\0' ) {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "You utter an incantation, and a portal forms in front of you!\r\n", ch );
+        send_to_char( "Pronuncias los encantamientos con suma lentitud. Una línea de luz plateada se forma en el aire y un portal se abre frente a ti.\r\n", ch );
     }
     else
         act( AT_MAGIC, skill->hit_char, ch, NULL, victim, TO_CHAR );
     if ( !skill->hit_room || skill->hit_room[0] == '\0' )
-        act( AT_MAGIC, "$n utters an incantation, and a portal forms in front of you!", ch, NULL,
+        act( AT_MAGIC, "$n pronuncia un encantamiento y una línea plateada aparece en el aire, para convertirse lentamente en un portal que se abre frente a ti.", ch, NULL,
              NULL, TO_ROOM );
     else
         act( AT_MAGIC, skill->hit_room, ch, NULL, victim, TO_ROOM );
     if ( !skill->hit_vict || skill->hit_vict[0] == '\0' )
-        act( AT_MAGIC, "A shimmering portal forms in front of you!", victim, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "¡Un brillante portal aparece frente a ti!", victim, NULL, NULL, TO_ROOM );
     else
         act( AT_MAGIC, skill->hit_vict, victim, NULL, victim, TO_ROOM );
     portalObj = obj_to_room( portalObj, ch->in_room );
@@ -4766,7 +4766,7 @@ ch_ret spell_portal( int sn, int level, CHAR_DATA *ch, void *vo )
     portalObj->description =
         STRALLOC( "&ZA whirling portal of energy turns slowly, beckoning to the unknown." );
     portalObj = obj_to_room( portalObj, targetRoom );
-    act( AT_MAGIC, "A shimmering portal forms in front of you!", ch, NULL, victim, TO_VICT );
+    act( AT_MAGIC, "¡Un brillante portal se abre frente a ti!", ch, NULL, victim, TO_VICT );
     return rNONE;
 }
 
@@ -4821,8 +4821,8 @@ ch_ret spell_recharge( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( obj->item_type == ITEM_STAFF || obj->item_type == ITEM_WAND ) {
         separate_obj( obj );
         if ( obj->value[2] == obj->value[1] || obj->value[1] > ( obj->pIndexData->value[1] * 4 ) ) {
-            act( AT_FIRE, "$p bursts into flames, injuring you!", ch, obj, NULL, TO_CHAR );
-            act( AT_FIRE, "$p bursts into flames, charring $n!", ch, obj, NULL, TO_ROOM );
+            act( AT_FIRE, "¡$p explota y te daña!", ch, obj, NULL, TO_CHAR );
+            act( AT_FIRE, "¡$p explota, dañando a $n!", ch, obj, NULL, TO_ROOM );
             extract_obj( obj );
             if ( damage( ch, ch, obj->level * 2, TYPE_UNDEFINED ) == rCHAR_DIED || char_died( ch ) )
                 return rCHAR_DIED;
@@ -4831,37 +4831,37 @@ ch_ret spell_recharge( int sn, int level, CHAR_DATA *ch, void *vo )
         }
 
         if ( chance( ch, 2 ) ) {
-            act( AT_YELLOW, "$p glows with a blinding magical luminescence.", ch, obj, NULL,
+            act( AT_YELLOW, "$p brilla fuertemente.", ch, obj, NULL,
                  TO_CHAR );
             obj->value[1] *= 2;
             obj->value[2] = obj->value[1];
             return rNONE;
         }
         else if ( chance( ch, 5 ) ) {
-            act( AT_YELLOW, "$p glows brightly for a few seconds...", ch, obj, NULL, TO_CHAR );
+            act( AT_YELLOW, "$p brilla unos pocos segundos...", ch, obj, NULL, TO_CHAR );
             obj->value[2] = obj->value[1];
             return rNONE;
         }
         else if ( chance( ch, 10 ) ) {
-            act( AT_WHITE, "$p disintegrates into a void.", ch, obj, NULL, TO_CHAR );
-            act( AT_WHITE, "$n's attempt at recharging fails, and $p disintegrates.", ch, obj, NULL,
+            act( AT_WHITE, "$p se desintegra.", ch, obj, NULL, TO_CHAR );
+            act( AT_WHITE, "El intento de $n falla y $p se desintegra.", ch, obj, NULL,
                  TO_ROOM );
             extract_obj( obj );
             return rSPELL_FAILED;
         }
         else if ( chance( ch, 50 - ( ch->level / 2 ) ) ) {
-            send_to_char( "Nothing happens.\r\n", ch );
+            send_to_char( "No pasa nada.\r\n", ch );
             return rSPELL_FAILED;
         }
         else {
-            act( AT_MAGIC, "$p feels warm to the touch.", ch, obj, NULL, TO_CHAR );
+            act( AT_MAGIC, "$p parece distinto.", ch, obj, NULL, TO_CHAR );
             --obj->value[1];
             obj->value[2] = obj->value[1];
             return rNONE;
         }
     }
     else {
-        send_to_char( "You can't recharge that!\r\n", ch );
+        send_to_char( "¡No puedes!\r\n", ch );
         return rSPELL_FAILED;
     }
 }
@@ -4894,15 +4894,15 @@ ch_ret spell_plant_pass( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( ch->in_room->sector_type == SECT_FOREST )
-        act( AT_MAGIC, "$n melds into a nearby tree!", ch, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "¡$n se funde en un árbol!", ch, NULL, NULL, TO_ROOM );
     else
-        act( AT_MAGIC, "$n melds into the grass!", ch, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "¡$n se funde en la hierba!", ch, NULL, NULL, TO_ROOM );
     char_from_room( ch );
     char_to_room( ch, victim->in_room );
     if ( ch->in_room->sector_type == SECT_FOREST )
-        act( AT_MAGIC, "$n appears from behind a nearby tree!", ch, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "¡$n aparece de un árbol!", ch, NULL, NULL, TO_ROOM );
     else
-        act( AT_MAGIC, "$n grows up from the grass!", ch, NULL, NULL, TO_ROOM );
+        act( AT_MAGIC, "¡$n aparece de entre la hierba!", ch, NULL, NULL, TO_ROOM );
     do_look( ch, ( char * ) "auto" );
     return rNONE;
 }
@@ -4919,7 +4919,7 @@ ch_ret spell_mist_walk( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( ( victim = get_char_world( ch, target_name ) ) == NULL || victim == ch ) {
         failed_casting( skill, ch, victim, NULL );
-        send_to_char( "You cannot sense your victim...", ch );
+        send_to_char( "No puedes sentir a tu víctima...", ch );
         return rSPELL_FAILED;
     }
 
@@ -4933,9 +4933,19 @@ ch_ret spell_mist_walk( int sn, int level, CHAR_DATA *ch, void *vo )
                                                                                    ACT_PROTOTYPE ) ) )
     {
         failed_casting( skill, ch, victim, NULL );
-        send_to_char( "You cannot sense your victim, or are too weak on blood.", ch );
+        send_to_char( "Necesitas sangre, o no puedes sentir a tu víctima.", ch );
         return rSPELL_FAILED;
     }
+    if ( IS_IMMORTAL( victim ) ) {
+        send_to_char( "&GNo puedes.\r\n", ch );
+        return rNONE;
+    }
+
+    if ( !in_hard_range( ch, victim->in_room->area ) ) {
+        send_to_char( "&GNo puedesin.\r\n", ch );
+        return rNONE;
+    }
+
 
     /*
      * Subtract 22 extra bp for mist walk from 0500 to 2100 SB
@@ -4943,11 +4953,11 @@ ch_ret spell_mist_walk( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( time_info.hour < 21 && time_info.hour > 5 && !IS_NPC( ch ) )
         ch->blood = ch->blood - 22;
 
-    act( AT_DGREEN, "$n dissolves into a cloud of glowing mist, then vanishes!", ch, NULL, NULL,
+    act( AT_DGREEN, "¡$n desaparece!", ch, NULL, NULL,
          TO_ROOM );
     char_from_room( ch );
     char_to_room( ch, victim->in_room );
-    act( AT_DGREEN, "A cloud of glowing mist engulfs you, then withdraws to unveil $n!", ch, NULL,
+    act( AT_DGREEN, "¡Apareces frente a $n!", ch, NULL,
          NULL, TO_ROOM );
     do_look( ch, ( char * ) "auto" );
     return rNONE;
@@ -4962,39 +4972,39 @@ ch_ret spell_solar_flight( int sn, int level, CHAR_DATA *ch, void *vo )
     SKILLTYPE              *skill = get_skilltype( sn );
 
     if ( ( victim = get_char_world( ch, target_name ) ) == NULL ) {
-        send_to_char( "&GThey do not exist.\r\n", ch );
+        send_to_char( "&GNo existe.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_SET( ch->in_room->room_flags, ROOM_NO_ASTRAL )
          || IS_SET( ch->in_room->area->flags, AFLAG_NOASTRAL ) ) {
-        send_to_char( "&GYou sense you cannot solar flight at your current location.\r\n", ch );
+        send_to_char( "&GNo sientes el sol por allí.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_SET( victim->in_room->room_flags, ROOM_NO_ASTRAL )
          || IS_SET( victim->in_room->area->flags, AFLAG_NOASTRAL ) ) {
-        send_to_char( "&GIt is beyond your ability to solar flight to that location.\r\n", ch );
+        send_to_char( "&GSupera tu habilidad ir por allí.\r\n", ch );
         return rNONE;
     }
 
     if ( victim == ch || !victim->in_room || IS_SET( victim->in_room->room_flags, ROOM_PRIVATE )
          || IS_SET( victim->in_room->room_flags, ROOM_SOLITARY ) ) {
-        send_to_char( "&GIt is beyond your ability to solar flight to that location.\r\n", ch );
+        send_to_char( "&Gsupera tu habilidad ir por allí.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_IMMORTAL( victim ) ) {
-        send_to_char( "&GYou cannot solar flight to a Staff member.\r\n", ch );
+        send_to_char( "&GNo puedes.\r\n", ch );
         return rNONE;
     }
 
     if ( !in_hard_range( ch, victim->in_room->area ) ) {
-        send_to_char( "&GYou cannot solar flight to the area that your victim is in.\r\n", ch );
+        send_to_char( "&GNo puedesin.\r\n", ch );
         return rNONE;
     }
 
-    act( AT_MAGIC, "$n disappears in a blinding flash of light!", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "¡$n desaparece!", ch, NULL, NULL, TO_ROOM );
     char_from_room( ch );
     char_to_room( ch, victim->in_room );
     if ( ch->on ) {
@@ -5005,7 +5015,7 @@ ch_ret spell_solar_flight( int sn, int level, CHAR_DATA *ch, void *vo )
         set_position( ch, POS_STANDING );
     }
 
-    act( AT_MAGIC, "$n appears in a blinding flash of light!", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "¡$n aparece!", ch, NULL, NULL, TO_ROOM );
     do_look( ch, ( char * ) "auto" );
     return rNONE;
 }
@@ -5017,7 +5027,7 @@ ch_ret spell_remove_invis( int sn, int level, CHAR_DATA *ch, void *vo )
     SKILLTYPE              *skill = get_skilltype( sn );
 
     if ( target_name[0] == '\0' ) {
-        send_to_char( "What should the spell be cast upon?\r\n", ch );
+        send_to_char( "¡Lanzar el hechizo a qué?\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -5025,12 +5035,12 @@ ch_ret spell_remove_invis( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( obj ) {
         if ( !IS_OBJ_STAT( obj, ITEM_INVIS ) ) {
-            send_to_char( "Its not invisible!\r\n", ch );
+            send_to_char( "¡No es invisible!\r\n", ch );
             return rSPELL_FAILED;
         }
 
         xREMOVE_BIT( obj->extra_flags, ITEM_INVIS );
-        act( AT_MAGIC, "$p becomes visible again.", ch, obj, NULL, TO_CHAR );
+        act( AT_MAGIC, "$p Se vuelve visible.", ch, obj, NULL, TO_CHAR );
 
         return rNONE;
     }
@@ -5041,15 +5051,15 @@ ch_ret spell_remove_invis( int sn, int level, CHAR_DATA *ch, void *vo )
 
         if ( victim ) {
             if ( !can_see( ch, victim ) ) {
-                ch_printf( ch, "You don't see %s!\r\n", target_name );
+                ch_printf( ch, "¡No ves %s!\r\n", target_name );
                 return rSPELL_FAILED;
             }
 
             if ( !IS_AFFECTED( victim, AFF_INVISIBLE ) ) {
                 if ( ch == victim )
-                    send_to_char( "You are not invisible!\r\n", ch );
+                    send_to_char( "¡No eres invisible!\r\n", ch );
                 else
-                    send_to_char( "They are not invisible!\r\n", ch );
+                    send_to_char( "¡No es invisible!\r\n", ch );
                 return rSPELL_FAILED;
             }
 
@@ -5084,7 +5094,7 @@ ch_ret spell_remove_invis( int sn, int level, CHAR_DATA *ch, void *vo )
             return rNONE;
         }
 
-        ch_printf( ch, "You can't find %s!\r\n", target_name );
+        ch_printf( ch, "¡No puedes encontrar %s!\r\n", target_name );
         return rSPELL_FAILED;
     }
 }
@@ -5119,7 +5129,7 @@ ch_ret spell_animate_skeleton( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( !found ) {
-        send_to_char( "You cannot find a suitable skeleton here.\r\n", ch );
+        send_to_char( "No encuentras ningún esqueleto aquí.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -5136,14 +5146,14 @@ ch_ret spell_animate_skeleton( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( !IS_NPC( ch ) ) {
         if ( IS_BLOODCLASS( ch ) ) {
             if ( !IS_IMMORTAL( ch ) && ch->blood - ( pMobIndex->level / 2 ) < 0 ) {
-                send_to_char( "You do not have enough blood power to reanimate this"
-                              " skeleton.\r\n", ch );
+                send_to_char( "No tienes suficiente sangre para reanimar este"
+                              " esqueleto.\r\n", ch );
                 return rSPELL_FAILED;
             }
             ch->blood = ch->blood - pMobIndex->level / 2;
         }
         else if ( ch->mana - ( pMobIndex->level * 2 ) < 0 ) {
-            send_to_char( "You do not have enough mana to reanimate this " "skeleton.\r\n", ch );
+            send_to_char( "No tienes suficiente mana para reanimar este esqueleto.\r\n", ch );
             return rSPELL_FAILED;
         }
         else
@@ -5176,21 +5186,21 @@ ch_ret spell_animate_skeleton( int sn, int level, CHAR_DATA *ch, void *vo )
         mob->hitroll = ch->level / 8;
         mob->alignment = ch->alignment;
 
-        act( AT_MAGIC, "$n's magic stirs forgotten life in $T!", ch, NULL, pMobIndex->short_descr,
+        act( AT_MAGIC, "¡$n reanima $T!", ch, NULL, pMobIndex->short_descr,
              TO_ROOM );
-        act( AT_MAGIC, "Your magic causes $T to stir, and rise up!", ch, NULL,
+        act( AT_MAGIC, "¡Tu magia causa que $T se levante!", ch, NULL,
              pMobIndex->short_descr, TO_CHAR );
 
-        snprintf( buf, MSL, "animated skeleton %s", pMobIndex->player_name );
+        snprintf( buf, MSL, "esqueleto animado %s", pMobIndex->player_name );
         STRFREE( mob->name );
         mob->name = STRALLOC( buf );
 
-        snprintf( buf, MSL, "the animated skeleton of %s", pMobIndex->short_descr );
+        snprintf( buf, MSL, "El esqueleto animado de %s", pMobIndex->short_descr );
         STRFREE( mob->short_descr );
         mob->short_descr = STRALLOC( buf );
 
         snprintf( buf, MSL,
-                  "An animated skeleton of %s swaggers mechanically, it's skull fixed in a toothy grin.\r\n",
+                  "El esqueleto animado de %s permanece inmutable a la espera de órdenes.\r\n",
                   pMobIndex->short_descr );
         STRFREE( mob->long_descr );
         mob->long_descr = STRALLOC( buf );
@@ -5245,7 +5255,7 @@ ch_ret spell_animate_corpse( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( !found ) {
-        send_to_char( "You cannot find a suitable corpse here.\r\n", ch );
+        send_to_char( "No encuentras un cuerpo adecuado para eso.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -5262,14 +5272,14 @@ ch_ret spell_animate_corpse( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( !IS_NPC( ch ) ) {
         if ( IS_BLOODCLASS( ch ) ) {
             if ( !IS_IMMORTAL( ch ) && ch->blood - ( pMobIndex->level / 4 ) < 0 ) {
-                send_to_char( "You do not have enough blood power to reanimate this" " corpse.\r\n",
+                send_to_char( "No tienes sangre suficiente para reanimar este" " cuerpo.\r\n",
                               ch );
                 return rSPELL_FAILED;
             }
             ch->blood = ch->blood - pMobIndex->level / 3;
         }
         else if ( ch->mana - ( pMobIndex->level * 4 ) < 0 ) {
-            send_to_char( "You do not have enough mana to reanimate this " "corpse.\r\n", ch );
+            send_to_char( "No tienes suficiente mana para reanimar este " "cuerpo.\r\n", ch );
             return rSPELL_FAILED;
         }
         else
@@ -5302,21 +5312,21 @@ ch_ret spell_animate_corpse( int sn, int level, CHAR_DATA *ch, void *vo )
         mob->hitroll = ch->level / 4;
         mob->alignment = ch->alignment;
 
-        act( AT_MAGIC, "$n makes $T rise from the grave!", ch, NULL, pMobIndex->short_descr,
+        act( AT_MAGIC, "¡$n reanima $T usando su magia negra!", ch, NULL, pMobIndex->short_descr,
              TO_ROOM );
-        act( AT_MAGIC, "You make $T rise from the grave!", ch, NULL, pMobIndex->short_descr,
+        act( AT_MAGIC, "¡Reanimas $T con tu magia negra!", ch, NULL, pMobIndex->short_descr,
              TO_CHAR );
 
-        snprintf( buf, MSL, "animated corpse %s", pMobIndex->player_name );
+        snprintf( buf, MSL, "cuerpo animado %s", pMobIndex->player_name );
         STRFREE( mob->name );
         mob->name = STRALLOC( buf );
 
-        snprintf( buf, MSL, "the animated corpse of %s", pMobIndex->short_descr );
+        snprintf( buf, MSL, "el cuerpo animado de %s", pMobIndex->short_descr );
         STRFREE( mob->short_descr );
         mob->short_descr = STRALLOC( buf );
 
         snprintf( buf, MSL,
-                  "An animated corpse of %s struggles with the horror of its undeath.\r\n",
+                  "El cuerpo animado de %s permanece inmutable a la espera de órdenes.\r\n",
                   pMobIndex->short_descr );
         STRFREE( mob->long_descr );
         mob->long_descr = STRALLOC( buf );
@@ -5355,27 +5365,27 @@ ch_ret spell_possess( int sn, int level, CHAR_DATA *ch, void *vo )
     int                     ctry;
 
     if ( !ch->desc || ch->desc->original ) {
-        send_to_char( "You are not in your original state.\r\n", ch );
+        send_to_char( "No estás en tu estado original.\r\n", ch );
         return rSPELL_FAILED;
     }
 
     if ( ( victim = get_char_room( ch, target_name ) ) == NULL ) {
-        send_to_char( "They aren't here!\r\n", ch );
+        send_to_char( "¡No está aquí!\r\n", ch );
         return rSPELL_FAILED;
     }
 
     if ( victim == ch ) {
-        send_to_char( "You can't possess yourself!\r\n", ch );
+        send_to_char( "¡No puedes poseerte a ti mismo!\r\n", ch );
         return rSPELL_FAILED;
     }
 
     if ( !IS_NPC( victim ) ) {
-        send_to_char( "You can't possess another player!\r\n", ch );
+        send_to_char( "¡No puedes poseer jugadores!\r\n", ch );
         return rSPELL_FAILED;
     }
 
     if ( victim->desc ) {
-        ch_printf( ch, "%s is already possessed.\r\n", victim->short_descr );
+        ch_printf( ch, "%s ya está poseído.\r\n", victim->short_descr );
         return rSPELL_FAILED;
     }
 
@@ -5399,7 +5409,7 @@ ch_ret spell_possess( int sn, int level, CHAR_DATA *ch, void *vo )
     af.bitvector = meb( AFF_POSSESS );
     affect_to_char( victim, &af );
 
-    ch_printf( ch, "You have possessed %s!\r\n", victim->short_descr );
+    ch_printf( ch, "¡Posees a %s!\r\n", victim->short_descr );
 
     ch->desc->character = victim;
     ch->desc->original = ch;
@@ -5427,7 +5437,7 @@ ch_ret spell_knock( int sn, int level, CHAR_DATA *ch, void *vo )
             get_obj_list_rev( ch, target_name, ch->in_room->last_content );
 
         if ( obj )
-            send_to_char( "Knock can only be cast on doors (exits)!\r\n", ch );
+            send_to_char( "¡solo puedes lanzarlo contra las puertas!\r\n", ch );
         failed_casting( skill, ch, NULL, NULL );
         return rSPELL_FAILED;
     }
@@ -5448,20 +5458,20 @@ ch_ret spell_dream( int sn, int level, CHAR_DATA *ch, void *vo )
     target_name = one_argument( target_name, arg );
     set_char_color( AT_MAGIC, ch );
     if ( !( victim = get_char_world( ch, arg ) ) || victim->in_room->area != ch->in_room->area ) {
-        send_to_char( "They aren't here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return rSPELL_FAILED;
     }
     if ( victim->position != POS_SLEEPING ) {
-        send_to_char( "They aren't asleep.\r\n", ch );
+        send_to_char( "No está durmiento.\r\n", ch );
         return rSPELL_FAILED;
     }
     if ( !target_name ) {
-        send_to_char( "What do you want them to dream about?\r\n", ch );
+        send_to_char( "¿Decirle qué en sueños?\r\n", ch );
         return rSPELL_FAILED;
     }
 
     set_char_color( AT_TELL, victim );
-    ch_printf( victim, "You have dreams about %s telling you '%s'.\r\n", PERS( ch, victim ),
+    ch_printf( victim, "%s aparece en tus sueños y te dice '%s'.\r\n", PERS( ch, victim ),
                target_name );
     successful_casting( get_skilltype( sn ), ch, victim, NULL );
     return rNONE;
@@ -5481,7 +5491,7 @@ ch_ret spell_spiral_blast( int sn, int level, CHAR_DATA *ch, void *vo )
 
     if ( IS_SET( ch->in_room->room_flags, ROOM_SAFE ) ) {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "You fail to breathe.\r\n", ch );
+        send_to_char( "Fallas.\r\n", ch );
         return rNONE;
     }
 
@@ -5495,9 +5505,9 @@ ch_ret spell_spiral_blast( int sn, int level, CHAR_DATA *ch, void *vo )
             continue;
 
         if ( IS_NPC( ch ) ? !IS_NPC( vch ) : IS_NPC( vch ) ) {
-            act( AT_MAGIC, "Swirling colours radiate from $n" ", encompassing $N.", ch, ch, vch,
+            act( AT_MAGIC, "Una espiral se desprende de las manos de $n" ", envolviendo a $N.", ch, ch, vch,
                  TO_ROOM );
-            act( AT_MAGIC, "Swirling colours radiate from you," " encompassing $N", ch, ch, vch,
+            act( AT_MAGIC, "Una espiral se desprende de tus manos," " envolviendo a $N", ch, ch, vch,
                  TO_CHAR );
 
             if ( damage( ch, vch, medium, sn ) == rCHAR_DIED || char_died( ch ) )
@@ -5532,8 +5542,8 @@ ch_ret spell_scorching_surge( int sn, int level, CHAR_DATA *ch, void *vo )
     dam = number_range( dam_each[level] / 2, dam_each[level] * 2 );
     if ( saves_spell_staff( level, victim ) )
         dam /= 2;
-    act( AT_MAGIC, "A fiery current lashes through $n's body!", ch, NULL, NULL, TO_ROOM );
-    act( AT_MAGIC, "A fiery current lashes through your body!", ch, NULL, NULL, TO_CHAR );
+    act( AT_MAGIC, "¡Un poderoso hechizo corta a $n!", ch, NULL, NULL, TO_ROOM );
+    act( AT_MAGIC, "¡Un poderoso hechizo te corta!", ch, NULL, NULL, TO_CHAR );
     return damage( ch, victim, ( int ) ( dam * 1.4 ), sn );
 }
 
@@ -5543,39 +5553,39 @@ ch_ret spell_helical_flow( int sn, int level, CHAR_DATA *ch, void *vo )
     SKILLTYPE              *skill = get_skilltype( sn );
 
     if ( ( victim = get_char_world( ch, target_name ) ) == NULL ) {
-        send_to_char( "&GThey do not exist.\r\n", ch );
+        send_to_char( "&GNo existe.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_SET( ch->in_room->room_flags, ROOM_NO_ASTRAL )
          || IS_SET( ch->in_room->area->flags, AFLAG_NOASTRAL ) ) {
-        send_to_char( "&GYou sense you cannot helical flow at your current location.\r\n", ch );
+        send_to_char( "&GNo puedes.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_SET( victim->in_room->room_flags, ROOM_NO_ASTRAL )
          || IS_SET( victim->in_room->area->flags, AFLAG_NOASTRAL ) ) {
-        send_to_char( "&GIt is beyond your ability to helical flow to that location.\r\n", ch );
+        send_to_char( "&GEse lugar supera tu habilidad.\r\n", ch );
         return rNONE;
     }
 
     if ( victim == ch || !victim->in_room || IS_SET( victim->in_room->room_flags, ROOM_PRIVATE )
          || IS_SET( victim->in_room->room_flags, ROOM_SOLITARY ) ) {
-        send_to_char( "&GIt is beyond your ability to helical flow to that location.\r\n", ch );
+        send_to_char( "&GEse lugar supera tu habilidad.\r\n", ch );
         return rNONE;
     }
 
     if ( IS_IMMORTAL( victim ) ) {
-        send_to_char( "&GYou cannot helical flow to a Staff member.\r\n", ch );
+        send_to_char( "&Gforma parte de la administración, no puedes.\r\n", ch );
         return rNONE;
     }
 
     if ( !in_hard_range( ch, victim->in_room->area ) ) {
-        send_to_char( "&GYou cannot helical flow to the area that your victim is in.\r\n", ch );
+        send_to_char( "&GNo puedes ir allí.\r\n", ch );
         return rNONE;
     }
 
-    act( AT_MAGIC, "$n coils into an ascending column of colour," " vanishing into thin air.", ch,
+    act( AT_MAGIC, "$n hace aparecer a su alrededor una columna de luz de colores y desaparece.", ch,
          NULL, NULL, TO_ROOM );
     char_from_room( ch );
     char_to_room( ch, victim->in_room );
@@ -5587,7 +5597,7 @@ ch_ret spell_helical_flow( int sn, int level, CHAR_DATA *ch, void *vo )
         set_position( ch, POS_STANDING );
     }
 
-    act( AT_MAGIC, "A coil of colours descends from above, " "revealing $n as it dissipates.", ch,
+    act( AT_MAGIC, "Una columna de colores desciende del cielo, revelando a $n tras disiparse.", ch,
          NULL, NULL, TO_ROOM );
     do_look( ch, ( char * ) "auto" );
     return rNONE;
@@ -5666,9 +5676,9 @@ ch_ret spell_attack( int sn, int level, CHAR_DATA *ch, void *vo )
                 break;
 
             case SE_ABSORB:                           /* victim absorbs spell for hp's */
-                act( AT_MAGIC, "$N absorbs your $t!", ch, skill->noun_damage, victim, TO_CHAR );
-                act( AT_MAGIC, "You absorb $N's $t!", victim, skill->noun_damage, ch, TO_CHAR );
-                act( AT_MAGIC, "$N absorbs $n's $t!", ch, skill->noun_damage, victim, TO_NOTVICT );
+                act( AT_MAGIC, "¡$N absorbe tu $t!", ch, skill->noun_damage, victim, TO_CHAR );
+                act( AT_MAGIC, "¡Absorbes el $t de $N!", victim, skill->noun_damage, ch, TO_CHAR );
+                act( AT_MAGIC, "¡$N absorbe el $t de $n!", ch, skill->noun_damage, victim, TO_NOTVICT );
                 victim->hit = URANGE( 0, victim->hit + dam, victim->max_hit );
                 update_pos( victim );
                 if ( ( dam > 0 && ch->fighting && ch->fighting->who == victim )
@@ -5771,9 +5781,9 @@ ch_ret spell_area_attack( int sn, int level, CHAR_DATA *ch, void *vo )
                     break;
 
                 case SE_ABSORB:                       /* victim absorbs spell for hp's */
-                    act( AT_MAGIC, "$N absorbs your $t!", ch, skill->noun_damage, vch, TO_CHAR );
-                    act( AT_MAGIC, "You absorb $N's $t!", vch, skill->noun_damage, ch, TO_CHAR );
-                    act( AT_MAGIC, "$N absorbs $n's $t!", ch, skill->noun_damage, vch, TO_NOTVICT );
+                act( AT_MAGIC, "¡$N absorbe tu $t!", ch, skill->noun_damage, vch, TO_CHAR );
+                act( AT_MAGIC, "¡Absorbes el $t de $N!", vch, skill->noun_damage, ch, TO_CHAR );
+                act( AT_MAGIC, "¡$N absorbe el $t de $n!", ch, skill->noun_damage, vch, TO_NOTVICT );
                     vch->hit = URANGE( 0, vch->hit + dam, vch->max_hit );
                     update_pos( vch );
                     if ( ( dam > 0 && ch->fighting && ch->fighting->who == vch )
@@ -6109,12 +6119,12 @@ ch_ret spell_obj_inv( int sn, int level, CHAR_DATA *ch, void *vo )
                 struct WeatherCell     *cell = getWeatherCell( ch->in_room->area );
 
                 if ( obj->item_type != ITEM_DRINK_CON ) {
-                    send_to_char( "It is unable to hold water.\r\n", ch );
+                    send_to_char( "No puede contenerr agua.\r\n", ch );
                     return rSPELL_FAILED;
                 }
 
                 if ( obj->value[2] != LIQ_WATER && obj->value[1] != 0 ) {
-                    send_to_char( "It contains some other liquid.\r\n", ch );
+                    send_to_char( "Ya contiene otro líquido.\r\n", ch );
                     return rSPELL_FAILED;
                 }
 
@@ -6129,7 +6139,7 @@ ch_ret spell_obj_inv( int sn, int level, CHAR_DATA *ch, void *vo )
                     if ( !is_name( "water", obj->name ) ) {
                         char                    buf[MSL];
 
-                        snprintf( buf, MSL, "%s water", obj->name );
+                        snprintf( buf, MSL, "%s agua", obj->name );
                         STRFREE( obj->name );
                         obj->name = STRALLOC( buf );
                     }
@@ -6227,14 +6237,14 @@ ch_ret spell_obj_inv( int sn, int level, CHAR_DATA *ch, void *vo )
                 if ( obj->item_type == ITEM_DRINK_CON || obj->item_type == ITEM_FOOD
                      || obj->item_type == ITEM_COOK ) {
                     if ( obj->item_type == ITEM_COOK && obj->value[2] == 0 )
-                        send_to_char( "It looks undercooked.\r\n", ch );
+                        send_to_char( "Parece mal cocinado.\r\n", ch );
                     else if ( obj->value[3] != 0 )
-                        send_to_char( "You smell poisonous fumes.\r\n", ch );
+                        send_to_char( "Hueles el veneno.\r\n", ch );
                     else
-                        send_to_char( "It looks very delicious.\r\n", ch );
+                        send_to_char( "Parece delicioso.\r\n", ch );
                 }
                 else
-                    send_to_char( "It doesn't look poisoned.\r\n", ch );
+                    send_to_char( "No parece tener veneno.\r\n", ch );
                 return rNONE;
             }
             return rNONE;
@@ -6440,7 +6450,7 @@ ch_ret spell_smaug( int sn, int level, CHAR_DATA *ch, void *vo )
       if(!IS_NPC(ch) && (victim = get_char_room(ch, target_name)) && !IS_NPC(victim) && (!IS_PKILL(ch) || !IS_PKILL(victim)) )  // one or both PCs are peaceful
       {
         set_char_color(AT_WHITE, ch);
-        send_to_char("You must MURDER a player.\r\n", ch);
+        send_to_char("Debes asesinar jugadores.\r\n", ch);
         return rNONE;
       }
 
@@ -6465,7 +6475,7 @@ Volk - works fine but not fixing the problem. Need to follow back to DO_CAST, ch
                  ( ch->position == POS_FIGHTING || ch->position == POS_EVASIVE
                    || ch->position == POS_DEFENSIVE || ch->position == POS_AGGRESSIVE
                    || ch->position == POS_BERSERK ) ) {
-                send_to_char( "You can't concentrate enough for that!\r\n", ch );
+                send_to_char( "¡No puedes concentrarte!\r\n", ch );
                 return rNONE;
             }
 
@@ -6786,23 +6796,23 @@ ch_ret spell_midas_touch( int sn, int level, CHAR_DATA *ch, void *vo )
     separate_obj( obj );                               /* nice, alty :) */
 
     if ( IS_OBJ_STAT( obj, ITEM_NODROP ) ) {
-        send_to_char( "You can't seem to let go of it.\r\n", ch );
+        send_to_char( "No puedes dejarlo ir.\r\n", ch );
         return rSPELL_FAILED;
     }
 
     if ( IS_OBJ_STAT( obj, ITEM_PROTOTYPE ) && get_trust( victim ) < LEVEL_IMMORTAL ) {
-        send_to_char( "That item is not for mortal hands to touch!\r\n", ch );
+        send_to_char( "¡Este objeto no puede ser tocado por las indignas manos de un indigno mortal!\r\n", ch );
         return rSPELL_FAILED;                          /* Thoric */
     }
 
     if ( GET_VALUE( obj, type ) != CURR_GOLD ) {
-        act( AT_MAGIC, "You cannot produce gold from a $p.", ch, obj, NULL, TO_CHAR );
+        act( AT_MAGIC, "No puedes producir oro de $p.", ch, obj, NULL, TO_CHAR );
         return rNONE;
     }
 
     if ( !CAN_WEAR( obj, ITEM_TAKE ) || ( obj->item_type == ITEM_CORPSE_NPC )
          || ( obj->item_type == ITEM_CORPSE_PC ) ) {
-        send_to_char( "You cannot seem to turn this item to gold!", ch );
+        send_to_char( "¡No puedes convertir eso en oro!", ch );
         return rNONE;
     }
 
@@ -6818,8 +6828,8 @@ ch_ret spell_midas_touch( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( obj_extracted( obj ) )
         return rNONE;
     extract_obj( obj );
-    act( AT_YELLOW, "You transmogrify $p into gold!", ch, obj, NULL, TO_CHAR );
-    act( AT_YELLOW, "$n points at $p, causing it to glow and take the shape of gold coins!", ch,
+    act( AT_YELLOW, "¡Conviertes $p en oro!", ch, obj, NULL, TO_CHAR );
+    act( AT_YELLOW, "¡$n toca $p, transformando el objeto en monedas de oro!", ch,
          obj, NULL, TO_ROOM );
     return rNONE;
 }
@@ -6834,18 +6844,18 @@ ch_ret spell_remove_silence( int sn, int level, CHAR_DATA *ch, void *vo )
     }
 
     if ( !xIS_SET( victim->act, PLR_SILENCE ) ) {
-        send_to_char( "Your intended victim is not silenced.\r\n", ch );
+        send_to_char( "tu víctima no está silenciada.\r\n", ch );
         return rNONE;
     }
     else {
         affect_strip( victim, gsn_silence );
         REMOVE_AFFECTED( victim, AFF_SILENCE );
         xREMOVE_BIT( victim->act, PLR_SILENCE );
-        act( AT_MAGIC, "$n points at you and utters the word, 'vocalas purus'!", ch, NULL, victim,
+        act( AT_MAGIC, "$n te señala y pronuncia, 'vocalas purus'!", ch, NULL, victim,
              TO_VICT );
-        act( AT_MAGIC, "You point at $N and utter the word, vocalas purus'!", ch, NULL, victim,
+        act( AT_MAGIC, "Señalas a $N y pronuncias, vocalas purus'!", ch, NULL, victim,
              TO_CHAR );
-        send_to_char( "Your throat suddenly cools, and you gain your vocal ability!\r\n", victim );
+        send_to_char( "¡Vuelves a poder hablar!\r\n", victim );
         return rNONE;
     }
     failed_casting( skill, ch, victim, NULL );
@@ -6865,12 +6875,12 @@ ch_ret spell_silence( int sn, int level, CHAR_DATA *ch, void *vo )
         return rSPELL_FAILED;
 
     if ( ch == victim ) {
-        send_to_char( "You cannot silence yourself.\r\n", ch );
+        send_to_char( "Eso sería estúpido por tu parte.\r\n", ch );
         return rNONE;
     }
 
     if ( xIS_SET( victim->act, PLR_SILENCE ) ) {
-        send_to_char( "Your intended victim is already silenced.\r\n", ch );
+        send_to_char( "ya está.\r\n", ch );
         return rNONE;
     }
     else {
@@ -6888,11 +6898,11 @@ ch_ret spell_silence( int sn, int level, CHAR_DATA *ch, void *vo )
         affect_to_char( victim, &af );
 
         xSET_BIT( victim->act, PLR_SILENCE );
-        act( AT_MAGIC, "$n points at you and utters the word, 'vocalas nomas'!", ch, NULL, victim,
+        act( AT_MAGIC, "$n te señala y pronuncia las palabras, 'vocalas nomas'!", ch, NULL, victim,
              TO_VICT );
-        act( AT_MAGIC, "You point at $N and utter the word, vocalas nomas'!", ch, NULL, victim,
+        act( AT_MAGIC, "Señalas a $N y pronuncias las palabras, vocalas nomas'!", ch, NULL, victim,
              TO_CHAR );
-        send_to_char( "Your throat suddenly burns, and you lose your vocal ability!\r\n", victim );
+        send_to_char( "¡No puedes hablar!\r\n", victim );
         return rNONE;
     }
     failed_casting( skill, ch, victim, NULL );
@@ -6907,12 +6917,12 @@ ch_ret spell_fascinate( int sn, int level, CHAR_DATA *ch, void *vo )
     CHAR_DATA              *rch;
 
     if ( ( victim = get_char_room( ch, target_name ) ) == NULL ) {
-        send_to_char( "They aren't here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return rSPELL_FAILED;
     }
 
     if ( !IS_NPC( victim ) ) {
-        send_to_char( "This magic only works on dumb beasts.\r\n", ch );
+        send_to_char( "solo se puede usar en bestias.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -6920,7 +6930,7 @@ ch_ret spell_fascinate( int sn, int level, CHAR_DATA *ch, void *vo )
         return rSPELL_FAILED;
 
     if ( IS_AFFECTED( victim, AFF_FASCINATE ) ) {
-        send_to_char( "They are already fascinated.\r\n", ch );
+        send_to_char( "Ya le afecta ese hechizo.\r\n", ch );
         return rNONE;
     }
 
@@ -6935,9 +6945,9 @@ ch_ret spell_fascinate( int sn, int level, CHAR_DATA *ch, void *vo )
             af.bitvector = meb( AFF_FASCINATE );
             affect_join( victim, &af );
             act( AT_CYAN,
-                 "You draw the outline of a symbol in the air.\r\n&YThe symbol glows a fascinating bright yellow!",
+                 "Dibujas un símbolo en el aire.\r\n&Y¡El símbolo brilla de un fascinante color amarillo!",
                  ch, NULL, NULL, TO_CHAR );
-            act( AT_YELLOW, "$n creates a fascinating bright symbol in the air at $N!", ch, NULL,
+            act( AT_YELLOW, "¡$n crea un símbolo de fascinación en el aire frente a $N!", ch, NULL,
                  victim, TO_ROOM );
             for ( rch = ch->in_room->first_person; rch; rch = rch->next_in_room ) {
                 if ( is_same_group( ch, rch ) )
@@ -6962,9 +6972,9 @@ ch_ret spell_fascinate( int sn, int level, CHAR_DATA *ch, void *vo )
         af.bitvector = meb( AFF_FASCINATE );
         affect_join( victim, &af );
         act( AT_CYAN,
-             "You draw the outline of a symbol in the air.\r\n&YThe symbol glows a fascinating bright yellow!",
+             "Dibujas un símbolo en el aire.\r\n&Y¡El símbolo brilla de un fascinante color amarillo!",
              ch, NULL, NULL, TO_CHAR );
-        act( AT_YELLOW, "$n creates a fascinating bright symbol in the air at $N!", ch, NULL,
+        act( AT_YELLOW, "¡$n crea un símbolo de facciónación en el aire frente a $N!", ch, NULL,
              victim, TO_ROOM );
         for ( rch = ch->in_room->first_person; rch; rch = rch->next_in_room ) {
             if ( is_same_group( ch, rch ) )
@@ -6988,17 +6998,17 @@ ch_ret spell_bestow_vitae( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( !VLD_STR( target_name ) )
         victim = ch;
     else if ( ( victim = get_char_room( ch, target_name ) ) == NULL ) {
-        send_to_char( "They're not here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return rNONE;
     }
 
     // Prevent casting this on someone you're fighting. -Taon
     if ( ch->fighting && who_fighting( ch ) == victim ) {
-        send_to_char( "You cannot bestow vitae to someone you're fighting.\r\n", ch );
+        send_to_char( "No mientras luches.\r\n", ch );
         return rNONE;
     }
     if ( IS_AFFECTED( victim, AFF_REACTIVE ) ) {
-        send_to_char( "It is already bestowed.\r\n", ch );
+        send_to_char( "No puedes.\r\n", ch );
         return rNONE;
     }
 
@@ -7018,9 +7028,9 @@ ch_ret spell_bestow_vitae( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/bestowvitae.wav)\r\n", ch );
 
-    act( AT_MAGIC, "$n says, 'Besto'vala Vi'taae' and gestures dramatically.", ch, NULL, NULL,
+    act( AT_MAGIC, "$n dice, 'Besto'vala Vi'taae' y gesticula dramáticamente.", ch, NULL, NULL,
          TO_ROOM );
-    act( AT_MAGIC, "You say, 'Besto'vala Vi'taae' and gesture dramatically.", ch, NULL, NULL,
+    act( AT_MAGIC, "dices, 'Besto'vala Vi'taae' y gesticulas dramáticamente.", ch, NULL, NULL,
          TO_CHAR );
 
     return rNONE;
@@ -7036,17 +7046,17 @@ ch_ret spell_giant_strength( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( target_name[0] == '\0' )
         victim = ch;
     else if ( ( victim = get_char_room( ch, target_name ) ) == NULL ) {
-        send_to_char( "They're not here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return rNONE;
     }
 
     // Prevent casting this on someone you're fighting. -Taon
     if ( ch->fighting && who_fighting( ch ) == victim ) {
-        send_to_char( "You cannot giant strength someone you're fighting.\r\n", ch );
+        send_to_char( "Eso sería estúpido.\r\n", ch );
         return rNONE;
     }
     if ( IS_AFFECTED( victim, AFF_GIANT_STRENGTH ) ) {
-        send_to_char( "They already have the strength of a giant.\r\n", ch );
+        send_to_char( "ya posee la fuerza de un gigante.\r\n", ch );
         return rNONE;
     }
 
@@ -7072,10 +7082,10 @@ ch_ret spell_giant_strength( int sn, int level, CHAR_DATA *ch, void *vo )
     affect_to_char( victim, &af );
 
     if ( victim != ch )
-        act( AT_MAGIC, "Your muscles ripple with the strength of a giant.", ch, NULL, victim,
+        act( AT_MAGIC, "tus músculos consiguen la fuerza de un gigante.", ch, NULL, victim,
              TO_VICT );
     else
-        act( AT_MAGIC, "Your muscles ripple with the strength of a giant.", ch, NULL, NULL,
+        act( AT_MAGIC, "tus músculos consiguen la fuerza de un gigante.", ch, NULL, NULL,
              TO_CHAR );
 
     return rNONE;
@@ -7093,7 +7103,7 @@ ch_ret spell_slow( int sn, int level, CHAR_DATA *ch, void *vo )
         victim = who_fighting( ch );
 
     if ( victim == ch ) {
-        send_to_char( "You can't use slow on yourself.\r\n", ch );
+        send_to_char( "Eso sería estúpido.\r\n", ch );
         return rNONE;
     }
     /*
@@ -7101,7 +7111,7 @@ ch_ret spell_slow( int sn, int level, CHAR_DATA *ch, void *vo )
      * slowness.\r\n", ch); return rNONE; }
      */
     if ( IS_IMMORTAL( victim ) && number_chance( 1, 10 ) >= 8 ) {
-        send_to_char( "A magical force bounces the spell at you.", ch );
+        send_to_char( "Una fuerrza mágica te detiene.", ch );
         victim = ch;
     }
 
@@ -7115,13 +7125,13 @@ ch_ret spell_slow( int sn, int level, CHAR_DATA *ch, void *vo )
         affect_to_char( victim, &af );
 
         if ( victim != ch )
-            ch_printf( ch, "\r\n&GYou notice %s slowing down their pace.\r\n", victim->name );
+            ch_printf( ch, "\r\n&GTe das cuenta de que %s relentiza sus movimientos.\r\n", victim->name );
 
-        send_to_char( "\r\n&GYou feel yourself slowing down.\r\n", victim );
+        send_to_char( "\r\n&Gsientes como tu cuerpo se relentiza.\r\n", victim );
 
     }
     else
-        send_to_char( "\r\n&cYou've failed to slow down your target!\r\n", ch );
+        send_to_char( "\r\n&c¡fallaste!\r\n", ch );
 
     return rNONE;
 }
@@ -7140,7 +7150,7 @@ ch_ret spell_nettle_skin( int sn, int level, CHAR_DATA *ch, void *vo )
         victim = get_char_room( ch, target_name );
 
     if ( IS_AFFECTED( victim, AFF_NETTLE ) ) {
-        send_to_char( "They already have nettle skin.\r\n", ch );
+        send_to_char( "ya tiene piel de hortiga.\r\n", ch );
         return rNONE;
     }
 
@@ -7154,16 +7164,16 @@ ch_ret spell_nettle_skin( int sn, int level, CHAR_DATA *ch, void *vo )
     affect_to_char( victim, &af );
 
     if ( victim == ch ) {
-        act( AT_ORANGE, "\r\nLarge barbed nettles begin to grow from your skin.", ch, NULL, NULL,
+        act( AT_ORANGE, "\r\ntu piel cambia.", ch, NULL, NULL,
              TO_CHAR );
     }
     else {
-        act( AT_ORANGE, "\r\nLarge barbed nettles begin to grow from $N's skin.", ch, NULL, victim,
+        act( AT_ORANGE, "\r\nA $N le cambia la piel.", ch, NULL, victim,
              TO_CHAR );
     }
-    act( AT_ORANGE, "\r\nLarge barbed nettles begin to grow from $n's skin.", ch, NULL, NULL,
+    act( AT_ORANGE, "\r\nA $n le cambia la piel.", ch, NULL, NULL,
          TO_ROOM );
-    act( AT_ORANGE, "\r\nLarge barbed nettles begin to grow from your skin.", ch, NULL, victim,
+    act( AT_ORANGE, "\r\nTe cambia la piel.", ch, NULL, victim,
          TO_VICT );
     return rNONE;
 }
@@ -7194,11 +7204,11 @@ ch_ret spell_greater_smite( int sn, int level, CHAR_DATA *ch, void *vo )
     }
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/thunder5.wav)\r\n", ch );
-    act( AT_YELLOW, "You summon the greater smite, and lightning slams into $N!", ch, NULL, victim,
+    act( AT_YELLOW, "¡Invocas un rayo sobre $N!", ch, NULL, victim,
          TO_CHAR );
-    act( AT_YELLOW, "$n summon's the greater smite, and lightning slams into you!", ch, NULL,
+    act( AT_YELLOW, "¡$n invoca un rayo sobre ti!", ch, NULL,
          victim, TO_VICT );
-    act( AT_YELLOW, "$n summon's the greater smite, and lightning slams into $N!", ch, NULL, victim,
+    act( AT_YELLOW, "¡$n invoca un rayo sobre $N!", ch, NULL, victim,
          TO_NOTVICT );
     damage( ch, victim, dam, sn );
     return rNONE;
@@ -7247,7 +7257,7 @@ ch_ret spell_chain_lightning( int sn, int level, CHAR_DATA *ch, void *vo )
 
         if ( !ch_died && vch->in_room->area == ch->in_room->area && vch->in_room != ch->in_room ) {
             set_char_color( AT_MAGIC, vch );
-            send_to_char( "You hear a loud thunderclap...\r\n", vch );
+            send_to_char( "Escuchas un trueno...\r\n", vch );
         }
     }
 
@@ -7264,17 +7274,18 @@ ch_ret spell_enchant_armor( int sn, int level, CHAR_DATA *ch, void *vo )
     int                     chance;
 
     if ( obj->item_type != ITEM_ARMOR || IS_OBJ_STAT( obj, ITEM_MAGIC ) || obj->first_affect ) {
-        act( AT_MAGIC, "Your magic twists and winds around $p but cannot take hold.", ch, obj, NULL,
+        act( AT_MAGIC, "tu magia se retuerce sobre $p pero no pasa nada.", ch, obj, NULL,
              TO_CHAR );
-        act( AT_MAGIC, "$n's magic twists and winds around $p but cannot take hold.", ch, obj, NULL,
+        act( AT_MAGIC, "$n retuerce su magia sobre $p pero no pasa nada.", ch, obj, NULL,
              TO_NOTVICT );
         return rSPELL_FAILED;
     }
 
     if ( obj->level > ch->level ) {
-        act( AT_MAGIC,
-             "Your magic twists and winds around $p but is not strong enough for this object.", ch,
-             obj, NULL, TO_CHAR );
+        act( AT_MAGIC, "tu magia se retuerce sobre $p pero no pasa nada.", ch, obj, NULL,
+             TO_CHAR );
+        act( AT_MAGIC, "$n retuerce su magia sobre $p pero no pasa nada.", ch, obj, NULL,
+             TO_NOTVICT );
         return rSPELL_FAILED;
     }
 
@@ -7343,27 +7354,27 @@ ch_ret spell_enchant_armor( int sn, int level, CHAR_DATA *ch, void *vo )
         LINK( paf, obj->first_affect, obj->last_affect, next, prev );
     }
     else if ( chance == 4 ) {
-        act( AT_MAGIC, "You lost your concentration while binding $p.", ch, obj, NULL, TO_CHAR );
-        act( AT_MAGIC, "$n failes to bind $p properly.", ch, obj, NULL, TO_NOTVICT );
+        act( AT_MAGIC, "Pierdes la concentración intentando encantar $p.", ch, obj, NULL, TO_CHAR );
+        act( AT_MAGIC, "$n falla al encantar $p.", ch, obj, NULL, TO_NOTVICT );
         return rSPELL_FAILED;
     }
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/enchant.wav)\r\n", ch );
     if ( IS_GOOD( ch ) ) {
         xSET_BIT( obj->extra_flags, ITEM_ANTI_EVIL );
-        act( AT_BLUE, "$p gleams with flecks of blue energy.", ch, obj, NULL, TO_ROOM );
-        act( AT_BLUE, "$p gleams with flecks of blue energy.", ch, obj, NULL, TO_CHAR );
+        act( AT_BLUE, "$p brilla con energía azul.", ch, obj, NULL, TO_ROOM );
+        act( AT_BLUE, "$p brilla con energía azul.", ch, obj, NULL, TO_CHAR );
     }
     else if ( IS_EVIL( ch ) ) {
         xSET_BIT( obj->extra_flags, ITEM_ANTI_GOOD );
-        act( AT_BLOOD, "A crimson stain flows slowly over $p.", ch, obj, NULL, TO_CHAR );
-        act( AT_BLOOD, "A crimson stain flows slowly over $p.", ch, obj, NULL, TO_ROOM );
+        act( AT_BLOOD, "Una energía oscura inunda $p.", ch, obj, NULL, TO_CHAR );
+        act( AT_BLOOD, "Una energía oscura inunda $p.", ch, obj, NULL, TO_ROOM );
     }
     else {
         xSET_BIT( obj->extra_flags, ITEM_ANTI_EVIL );
         xSET_BIT( obj->extra_flags, ITEM_ANTI_GOOD );
-        act( AT_YELLOW, "$p glows with a disquieting light.", ch, obj, NULL, TO_ROOM );
-        act( AT_YELLOW, "$p glows with a disquieting light.", ch, obj, NULL, TO_CHAR );
+        act( AT_YELLOW, "$p Brilla levemente.", ch, obj, NULL, TO_ROOM );
+        act( AT_YELLOW, "$p brilla levemente.", ch, obj, NULL, TO_CHAR );
     }
     xSET_BIT( obj->extra_flags, ITEM_MAGIC );
     return rNONE;
@@ -7379,7 +7390,7 @@ ch_ret spell_wizard_eye( int sn, int level, CHAR_DATA *ch, void *vo )
     pMobIndex = 0;
 
     if ( IS_AFFECTED( ch, AFF_WIZARD_EYE ) ) {
-        send_to_char( "You can only concentrate enough to control one wizard eye.\r\n", ch );
+        send_to_char( "No puedes concentrarte.\r\n", ch );
         return rNONE;
     }
 
@@ -7389,7 +7400,7 @@ ch_ret spell_wizard_eye( int sn, int level, CHAR_DATA *ch, void *vo )
     }
     ch->mana = ch->mana - 10;
     mob = create_mobile( get_mob_index( MOB_VNUM_WIZARD_EYE ) );
-    snprintf( buf, MSL, "%s's wizard eye", ch->name );
+    snprintf( buf, MSL, "%s's ojo magico", ch->name );
     STRFREE( mob->short_descr );
     mob->short_descr = STRALLOC( buf );
 
@@ -7419,9 +7430,9 @@ ch_ret spell_wizard_eye( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/summon.wav)\r\n", ch );
 
-    act( AT_MAGIC, "$n creates a floating wizard eye in a flash of light!", ch, NULL, NULL,
+    act( AT_MAGIC, "¡$n crea un ojo mágico en un flash de luz!", ch, NULL, NULL,
          TO_ROOM );
-    act( AT_MAGIC, "You create a floating wizard eye in a flash of light!", ch, NULL, NULL,
+    act( AT_MAGIC, "¡Creas un ojo mágico en un flash de luz!", ch, NULL, NULL,
          TO_CHAR );
 
     return rNONE;
@@ -7433,19 +7444,19 @@ ch_ret spell_shadowform( int sn, int level, CHAR_DATA *ch, void *vo )
     CHAR_DATA              *rch;
     AFFECT_DATA             af;
 
-    act( AT_MAGIC, "$n says, 'Julsoa lok Vardan', and gestures in a broad circle.", ch, NULL, NULL,
+    act( AT_MAGIC, "$n dice, 'Julsoa lok Vardan', y dibuja un círculo en el aire.", ch, NULL, NULL,
          TO_ROOM );
-    send_to_char( "&BYou say, 'Julsoa lok Vardan', and gesture in a broad circle.\r\n", ch );
+    send_to_char( "&BDices, 'Julsoa lok Vardan', y dibujas un círculo en el aire.\r\n", ch );
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/mistform.wav)\r\n", ch );
 
     for ( rch = ch->in_room->first_person; rch; rch = rch->next_in_room ) {
         if ( is_same_group( ch, rch ) ) {
             if ( ch == rch )
-                act( AT_MAGIC, "Your body takes on a shadowy form in appearance.", ch, NULL, NULL,
+                act( AT_MAGIC, "Tu cuerpo toma la forma de una sombra.", ch, NULL, NULL,
                      TO_CHAR );
             else
-                act( AT_MAGIC, "$n causes a shadowy field to surround everyone.", rch, NULL, NULL,
+                act( AT_MAGIC, "$n crea un campo de sombras.", rch, NULL, NULL,
                      TO_CHAR );
 
             affect_strip( rch, skill_lookup( "shadowform" ) );
@@ -7508,7 +7519,7 @@ ch_ret spell_wizard_sight( int sn, int level, CHAR_DATA *ch, void *vo )
         return rNONE;
 
     if ( IS_AFFECTED( ch, AFF_WIZARD_SIGHT ) ) {
-        send_to_char( "&BYou are already affected by this spell.&w\r\n", ch );
+        send_to_char( "&Bya te afecta este hechizo.&w\r\n", ch );
         return rNONE;
     }
 
@@ -7529,10 +7540,10 @@ ch_ret spell_wizard_sight( int sn, int level, CHAR_DATA *ch, void *vo )
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/battlefield.wav)\r\n", ch );
 
-    act( AT_MAGIC, "$n gestures dramatically, then points to his eyes and speaks a word of power.",
+    act( AT_MAGIC, "$n gesticula dramáticamente señanalando sus ojos y pronuncia una palabra mágica.",
          ch, NULL, NULL, TO_ROOM );
-    act( AT_MAGIC, "You touch your eyes and speak a word of power.", ch, NULL, NULL, TO_CHAR );
-    send_to_char( "&BYou see a bird's eye view of your position.&w\r\n", ch );
+    act( AT_MAGIC, "Tocas tus ojos y pronuncia una palabra mágica.", ch, NULL, NULL, TO_CHAR );
+    send_to_char( "&BAhora ves mejor.&w\r\n", ch );
     return rNONE;
 
 }
@@ -7545,7 +7556,7 @@ ch_ret spell_battlefield_view( int sn, int level, CHAR_DATA *ch, void *vo )
         return rNONE;
 
     if ( IS_AFFECTED( ch, AFF_BATTLEFIELD ) ) {
-        send_to_char( "&BYou are already affected by this spell.&w\r\n", ch );
+        send_to_char( "&BYa te afecta.&w\r\n", ch );
         return rNONE;
     }
 
@@ -7567,11 +7578,11 @@ ch_ret spell_battlefield_view( int sn, int level, CHAR_DATA *ch, void *vo )
         send_to_char( "!!SOUND(sound/battlefield.wav)\r\n", ch );
 
     act( AT_MAGIC,
-         "$n gestures dramatically, then points to his eyes and speaks a word of greater power.",
+         "$n toca sus ojos y pronuncia una palabra mágica.",
          ch, NULL, NULL, TO_ROOM );
-    act( AT_MAGIC, "You touch your eyes and speak a word of greater power.", ch, NULL, NULL,
+    act( AT_MAGIC, "Tocas tus ojos y pronuncias una palabra mágica.", ch, NULL, NULL,
          TO_CHAR );
-    send_to_char( "&BYou get a mental image of the entire battlefield around you.&w\r\n", ch );
+    send_to_char( "&Bconsigues una imagen mental de la batalla que te rodea.&w\r\n", ch );
     return rNONE;
 
 }
@@ -7581,18 +7592,18 @@ ch_ret spell_refresh( int sn, int level, CHAR_DATA *ch, void *vo )
     CHAR_DATA              *victim = ( CHAR_DATA * ) vo;
 
     if ( IS_AFFECTED( victim, AFF_GRENDALS_STANCE ) ) {
-        send_to_char( "&BMagic cannot aid one utilizing the grendals stance.&w\r\n", ch );
+        send_to_char( "&BNo puedes usar la magia en esta postura.&w\r\n", ch );
         return rNONE;
     }
 
     if ( victim->move >= victim->max_move ) {
-        send_to_char( "They do not need your revitalizing energies.\r\n", ch );
+        send_to_char( "No lo necesita.\r\n", ch );
         return rNONE;
     }
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/refresh.wav)\r\n", ch );
-    act( AT_MAGIC, "You focus on calling forth revitalizing energies.", ch, NULL, NULL, TO_CHAR );
-    act( AT_WHITE, "You suddenly feel alive with revitalizing energies!", ch, NULL, victim,
+    act( AT_MAGIC, "te concentras en la revitalización de energías.", ch, NULL, NULL, TO_CHAR );
+    act( AT_WHITE, "¡Te sientes con más energías!", ch, NULL, victim,
          TO_VICT );
 
     if ( victim->move < victim->max_move ) {
@@ -7641,7 +7652,7 @@ ch_ret spell_arch_healing( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // Lets stop the healing of mobs whom the character is fighting. -Taon
     if ( IS_NPC( victim ) && who_fighting( ch ) == victim ) {
-        send_to_char( "You can't bring yourself to heal your foe!\r\n", ch );
+        send_to_char( "¡No puedes! ¡Te va a matar!\r\n", ch );
         return rNONE;
     }
 
@@ -7649,16 +7660,16 @@ ch_ret spell_arch_healing( int sn, int level, CHAR_DATA *ch, void *vo )
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/cure.wav)\r\n", ch );
 
-        act( AT_MAGIC, "$N's begins to heal as you focus on their wounds.", ch, NULL, victim,
+        act( AT_MAGIC, "$N sana lentamente.", ch, NULL, victim,
              TO_NOTVICT );
         if ( victim != ch ) {
-            act( AT_MAGIC, "You focus on $N's wounds, giving them a warmth of healing.", ch, NULL,
+            act( AT_MAGIC, "Te concentras en $N, curando sus heridas.", ch, NULL,
                  victim, TO_CHAR );
-            act( AT_MAGIC, "Your wounds begin to heal and you feel much better.", ch, NULL, victim,
+            act( AT_MAGIC, "Tus heridas se cierran y te sientes mucho mejor.", ch, NULL, victim,
                  TO_VICT );
         }
         else
-            act( AT_MAGIC, "Your wounds start to heal, leaving you feeling better.", ch, NULL,
+            act( AT_MAGIC, "tus heridas se cierran, te sientes mucho mejor.", ch, NULL,
                  victim, TO_CHAR );
 
         if ( ch->faith < 25 )
@@ -7671,14 +7682,14 @@ ch_ret spell_arch_healing( int sn, int level, CHAR_DATA *ch, void *vo )
 
         if ( victim->hit > victim->max_hit ) {
             set_char_color( AT_MAGIC, ch );
-            send_to_char( "You are at full health.\r\n", victim );
+            send_to_char( "No necesitas curarte.\r\n", victim );
             victim->hit = victim->max_hit;
         }
         return rNONE;
     }
     else {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "They're already at maximum health.\r\n", ch );
+        send_to_char( "no necesita curarse.\r\n", ch );
         return rNONE;
     }
 }
@@ -7689,35 +7700,35 @@ ch_ret spell_cure_critical( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // Lets stop the healing of mobs whom the character is fighting. -Taon
     if ( IS_NPC( victim ) && who_fighting( ch ) == victim ) {
-        send_to_char( "You can't bring yourself to heal your foe!\r\n", ch );
+        send_to_char( "¡Eso sería estúpido!\r\n", ch );
         return rNONE;
     }
     if ( victim->hit < victim->max_hit ) {
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/cure.wav)\r\n", ch );
 
-        act( AT_MAGIC, "$N's critical wounds heal and $E seems much better.", ch, NULL, victim,
+        act( AT_MAGIC, "$N parece sentirse mucho mejor cuando sus heridas se cierran.", ch, NULL, victim,
              TO_NOTVICT );
         if ( victim != ch ) {
-            act( AT_MAGIC, "You focus on $N's critical wounds, healing them and restoring $M.", ch,
+            act( AT_MAGIC, "Te concentras en $N y sus heridas se cierran.", ch,
                  NULL, victim, TO_CHAR );
-            act( AT_MAGIC, "Your critical wounds heal and you feel much better.", ch, NULL, victim,
+            act( AT_MAGIC, "Tus heridas se cierran, te sientes mejor.", ch, NULL, victim,
                  TO_VICT );
         }
         else
-            act( AT_MAGIC, "Your critical wounds heal and you feel much better.", ch, NULL, victim,
+            act( AT_MAGIC, "Tus heridas se cierran, te sientes mejor.", ch, NULL, victim,
                  TO_CHAR );
         victim->hit += 70 + ( ch->level );
         if ( victim->hit > victim->max_hit ) {
             set_char_color( AT_MAGIC, ch );
-            send_to_char( "You are at full health.\r\n", victim );
+            send_to_char( "No necesitas curarte.\r\n", victim );
             victim->hit = victim->max_hit;
         }
         return rNONE;
     }
     else {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "They're already at maximum health.\r\n", ch );
+        send_to_char( "No necesita curarse.\r\n", ch );
         return rNONE;
     }
 }
@@ -7728,35 +7739,36 @@ ch_ret spell_heal( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // Stop the healing of mobs whom someone is fighting. -Taon
     if ( IS_NPC( victim ) && who_fighting( ch ) == victim ) {
-        send_to_char( "You cant bring yourself to heal your foe.\r\n", ch );
+        send_to_char( "Sería estúpido.\r\n", ch );
         return rNONE;
     }
     if ( victim->hit < victim->max_hit ) {
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/cure.wav)\r\n", ch );
 
-        act( AT_MAGIC, "$n's healing touch washes over $N's wounds.", ch, NULL, victim,
+        act( AT_MAGIC, "$N sana lentamente.", ch, NULL, victim,
              TO_NOTVICT );
         if ( victim != ch ) {
-            act( AT_MAGIC, "You focus on $N's wounds, and your healing touch washes over $M.", ch,
-                 NULL, victim, TO_CHAR );
-            act( AT_MAGIC, "Your wounds fade as $n's healing touch washes over you.", ch, NULL,
-                 victim, TO_VICT );
+            act( AT_MAGIC, "Te concentras en $N, curando sus heridas.", ch, NULL,
+                 victim, TO_CHAR );
+            act( AT_MAGIC, "Tus heridas se cierran y te sientes mucho mejor.", ch, NULL, victim,
+                 TO_VICT );
         }
         else
-            act( AT_MAGIC, "Your healing touch washes over you, mending your wounds.", ch, NULL,
+            act( AT_MAGIC, "tus heridas se cierran, te sientes mucho mejor.", ch, NULL,
                  victim, TO_CHAR );
+
         victim->hit += 100 + ( ch->level );
         if ( victim->hit > victim->max_hit ) {
             set_char_color( AT_MAGIC, ch );
-            send_to_char( "You are at full health.\r\n", victim );
+            send_to_char( "No necesitas curarte.\r\n", victim );
             victim->hit = victim->max_hit;
         }
         learn_from_success( ch, gsn_heal );
     }
     else {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "They're already at maximum health.\r\n", ch );
+        send_to_char( "No necesita curarse.\r\n", ch );
     }
     return rNONE;
 }
@@ -7767,7 +7779,7 @@ ch_ret spell_greater_heal( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // Prevent ch from healing a mob they're fighting. -Taon
     if ( IS_NPC( victim ) && who_fighting( ch ) == victim ) {
-        send_to_char( "You cant bring yourself to heal your foe.\r\n", ch );
+        send_to_char( "Sería estúpido.\r\n", ch );
         return rNONE;
     }
 
@@ -7777,28 +7789,28 @@ ch_ret spell_greater_heal( int sn, int level, CHAR_DATA *ch, void *vo )
 
         if ( victim != ch ) {
             act( AT_MAGIC,
-                 "&BYou utter the words, 'greater heal'.\r\n&cTheir wounds begin to close and heal up.",
+                 "&BPronuncias las palabras, 'vitae vitae'.\r\n&csus heridas se cierran y parece sentirse mucho mejor.",
                  ch, NULL, victim, TO_CHAR );
-            act( AT_MAGIC, "\r\n&cYour wounds begin to close and heal up.", ch, NULL, victim,
+            act( AT_MAGIC, "\r\n&ctus heridas se cierran, te sientes mucho mejor.", ch, NULL, victim,
                  TO_VICT );
         }
         else {
-            act( AT_MAGIC, "\r\n&c$n's wounds begin to close up and heal.", victim, NULL, NULL,
+            act( AT_MAGIC, "\r\n&cLas heridas de $n se cierran y parece mejorar notablemente.", victim, NULL, NULL,
                  TO_ROOM );
-            act( AT_MAGIC, "\r\n&cYour wounds begin to close up and heal up.", ch, NULL, victim,
+            act( AT_MAGIC, "\r\n&ctus heridas se cierran, te sientes muchísimo mejor.", ch, NULL, victim,
                  TO_CHAR );
         }
         victim->hit += 350 + ( ch->level );
         if ( victim->hit > victim->max_hit ) {
             set_char_color( AT_MAGIC, ch );
-            send_to_char( "You are at full health.\r\n", victim );
+            send_to_char( "No necesitas curarte.\r\n", victim );
             victim->hit = victim->max_hit;
         }
         return rNONE;
     }
     else {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "They're already at maximum health.\r\n", ch );
+        send_to_char( "No necesitas curarle.\r\n", ch );
         return rSPELL_FAILED;
     }
 }
@@ -7809,28 +7821,28 @@ ch_ret spell_cure_serious( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // Prevent ch from healing a mob they're fighting. -Taon
     if ( IS_NPC( victim ) && who_fighting( ch ) == victim ) {
-        send_to_char( "You cant bring yourself to heal your foe.\r\n", ch );
+        send_to_char( "No puedes curar a tu oponente, sería estúpido.\r\n", ch );
         return rNONE;
     }
     if ( victim->hit < victim->max_hit ) {
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/cure.wav)\r\n", ch );
 
-        act( AT_MAGIC, "You feel your wounds close and begin to heal.", ch, NULL, victim, TO_VICT );
-        act( AT_MAGIC, "$N's wounds close, and begin to heal.", ch, NULL, victim, TO_NOTVICT );
-        act( AT_MAGIC, "You focus on closing $N's wounds and cure some of their health.", ch, NULL,
+        act( AT_MAGIC, "Sientes como tus heridas se cierran y te sientes mucho mejor.", ch, NULL, victim, TO_VICT );
+        act( AT_MAGIC, "Las heridas de $N se cierran y parece mejorar.", ch, NULL, victim, TO_NOTVICT );
+        act( AT_MAGIC, "Te concentras en cerrar las heridas de $N y parece que mejora.", ch, NULL,
              victim, TO_CHAR );
         victim->hit += 30 + ( ch->level );
         if ( victim->hit > victim->max_hit ) {
             set_char_color( AT_MAGIC, ch );
-            send_to_char( "You are at full health.\r\n", victim );
+            send_to_char( "No necesitas curarte.\r\n", victim );
             victim->hit = victim->max_hit;
         }
         return rNONE;
     }
     else {
         set_char_color( AT_MAGIC, ch );
-        send_to_char( "They're already at maximum health.\r\n", ch );
+        send_to_char( "No necesita curarse.\r\n", ch );
         return rSPELL_FAILED;
     }
 }
@@ -7841,16 +7853,16 @@ ch_ret spell_cure_light( int sn, int level, CHAR_DATA *ch, void *vo )
 
     // Prevent ch from healing mob they're fighting. -Taon
     if ( IS_NPC( victim ) && who_fighting( ch ) == victim ) {
-        send_to_char( "You cant bring yourself to heal your foe.\r\n", ch );
+        send_to_char( "Eso sería estúpido.\r\n", ch );
         return rNONE;
     }
     if ( victim->hit < victim->max_hit ) {
         if ( xIS_SET( ch->act, PLR_BATTLE ) )
             send_to_char( "!!SOUND(sound/cure.wav)\r\n", ch );
 
-        act( AT_MAGIC, "You feel a little better.", ch, NULL, victim, TO_VICT );
-        act( AT_MAGIC, "$N looks a little better.", ch, NULL, victim, TO_NOTVICT );
-        act( AT_MAGIC, "$N's wounds suddenly begin to start healing.", ch, NULL, victim, TO_CHAR );
+        act( AT_MAGIC, "Te sientes algo mejor.", ch, NULL, victim, TO_VICT );
+        act( AT_MAGIC, "$N parece estar algo mejor.", ch, NULL, victim, TO_NOTVICT );
+        act( AT_MAGIC, "Las heridas de $N se cierran y parece mejorar.", ch, NULL, victim, TO_CHAR );
         if ( victim->level < 20 ) {
             victim->hit += number_range( 1, 6 );
         }
@@ -7877,7 +7889,7 @@ ch_ret spell_static_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "Ya tienes una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
     af.bitvector = meb( AFF_WARD );
@@ -7888,8 +7900,8 @@ ch_ret spell_static_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 200 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Stakal'c Tienaar!" );
-    act( AT_WHITE, "\r\nA static ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Stakal'c Tienaar!" );
+    act( AT_WHITE, "\r\nNotas como la magia actúa como una poderosa protección.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 
 }
@@ -7900,7 +7912,7 @@ ch_ret spell_shocking_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "ya te afecta una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
     af.bitvector = meb( AFF_WARD );
@@ -7911,8 +7923,8 @@ ch_ret spell_shocking_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 800 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Shokal'c Tienaar!" );
-    act( AT_WHITE, "\r\nA shocking ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Shokal'c Tienaar!" );
+    act( AT_WHITE, "\r\nLa magia te proteje contra la electricidad.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 }
 
@@ -7922,7 +7934,7 @@ ch_ret spell_energy_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "Ya te afecta una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
     af.bitvector = meb( AFF_WARD );
@@ -7933,8 +7945,8 @@ ch_ret spell_energy_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 2000 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Enekal'c Tienaar!" );
-    act( AT_WHITE, "\r\nA energy ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Enekal'c Tienaar!" );
+    act( AT_WHITE, "\r\nLa magia forma una escelente protección energética a tu alrededor.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 }
 
@@ -7944,7 +7956,7 @@ ch_ret spell_lightning_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "ya te afecta una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
     af.bitvector = meb( AFF_WARD );
@@ -7955,8 +7967,8 @@ ch_ret spell_lightning_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 3000 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Ligkal'c Tienaar!" );
-    act( AT_WHITE, "\r\nA lightning ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Ligkal'c Tienaar!" );
+    act( AT_WHITE, "\r\nLa magia forma una escelente protección de lectricidad a tu alrededor.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 }
 
@@ -7966,7 +7978,7 @@ ch_ret spell_chilled_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "ya te afecta una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
     af.bitvector = meb( AFF_WARD );
@@ -7977,8 +7989,8 @@ ch_ret spell_chilled_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 200 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Chilaed'c Tienaar!" );
-    act( AT_WHITE, "\r\nA chilled ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Chilaed'c Tienaar!" );
+    act( AT_WHITE, "\r\nLa magia forma una protección helada a tu alrededor.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 
 }
@@ -7989,7 +8001,7 @@ ch_ret spell_frost_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "ya te afecta una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
     af.bitvector = meb( AFF_WARD );
@@ -8000,8 +8012,8 @@ ch_ret spell_frost_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 800 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Frosaed'c Tienaar!" );
-    act( AT_WHITE, "\r\nA frosted ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Frosaed'c Tienaar!" );
+    act( AT_WHITE, "\r\nLa magia forma una protección de granizo a tu alrededor.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 }
 
@@ -8011,7 +8023,7 @@ ch_ret spell_ice_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "ya te afecta una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -8023,8 +8035,8 @@ ch_ret spell_ice_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 2000 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Icelaed'c Tienaar!" );
-    act( AT_WHITE, "\r\nA icy ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Icelaed'c Tienaar!" );
+    act( AT_WHITE, "\r\nLa magia forma una protección de hielo a tu alrededor.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 
 }
@@ -8035,7 +8047,7 @@ ch_ret spell_frigid_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     AFFECT_DATA             af;
 
     if ( IS_AFFECTED( ch, AFF_WARD ) ) {
-        send_to_char( "You already are affected by a ward.\r\n", ch );
+        send_to_char( "Ya te afecta una protección.\r\n", ch );
         return rSPELL_FAILED;
     }
 
@@ -8047,7 +8059,7 @@ ch_ret spell_frigid_ward( int sn, int level, CHAR_DATA *ch, void *vo )
     af.level = ch->level;
     affect_to_char( ch, &af );
     ch->ward_dam = ( 3000 + get_curr_int( ch ) * 10 );
-    interpret( ch, ( char * ) "say Friglaed'c Tienaar!" );
-    act( AT_WHITE, "\r\nA frigid ward of air forms around your body.", ch, NULL, NULL, TO_CHAR );
+    interpret( ch, ( char * ) "'Friglaed'c Tienaar!" );
+    act( AT_WHITE, "\r\nLa magia forma una protección helada a tu alrededor.", ch, NULL, NULL, TO_CHAR );
     return rNONE;
 }

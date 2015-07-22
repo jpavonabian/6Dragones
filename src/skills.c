@@ -566,7 +566,7 @@ void do_slookup( CHAR_DATA *ch, char *argument )
         if ( arg[0] == 'h' && is_number( arg + 1 ) ) {
             sn = atoi( arg + 1 );
             if ( !IS_VALID_HERB( sn ) ) {
-                send_to_char( "Invalid herb.\r\n", ch );
+                send_to_char( "Hierba inválida.\r\n", ch );
                 return;
             }
             skill = herb_table[sn];
@@ -584,11 +584,11 @@ void do_slookup( CHAR_DATA *ch, char *argument )
         else if ( ( sn = herb_lookup( arg ) ) >= 0 )
             skill = herb_table[sn];
         else {
-            send_to_char( "No such skill, spell, proficiency or tongue.\r\n", ch );
+            send_to_char( "No existe habilidad, hechizo, competencia o lengua.\r\n", ch );
             return;
         }
         if ( !skill ) {
-            send_to_char( "Not created yet.\r\n", ch );
+            send_to_char( "No se ha creado todavía.\r\n", ch );
             return;
         }
 
@@ -599,7 +599,7 @@ void do_slookup( CHAR_DATA *ch, char *argument )
         ch_printf( ch, "Sn: %4d Slot: %4d %s: '%-20s'\r\n", sn, skill->slot,
                    skill_tname[skill->type], skill->name );
         if ( skill->info )
-            ch_printf( ch, "DamType: %s  ActType: %s   ClassType: %s   PowerType: %s\r\n",
+            ch_printf( ch, "Tipo de Daño: %s  ActType: %s   ClassType: %s   PowerType: %s\r\n",
                        spell_damage[SPELL_DAMAGE( skill )],
                        spell_action[SPELL_ACTION( skill )],
                        spell_class[SPELL_CLASS( skill )], spell_power[SPELL_POWER( skill )] );
@@ -622,7 +622,7 @@ void do_slookup( CHAR_DATA *ch, char *argument )
                    skill->somatic ? "TRUE" : "FALSE", skill->verbal ? "TRUE" : "FALSE" );
 
         if ( skill->difficulty != '\0' )
-            ch_printf( ch, "Difficulty: %d\r\n", ( int ) skill->difficulty );
+            ch_printf( ch, "Dificultad: %d\r\n", ( int ) skill->difficulty );
 
         ch_printf( ch,
                    "Type: %s  Target: %s  Minpos: %d  Mana: %d  Beats: %d  Range: %d\r\n",
@@ -635,19 +635,19 @@ void do_slookup( CHAR_DATA *ch, char *argument )
                    skill->min_dist, skill->max_dist,
                    skill->skill_fun ? skill_name( skill->
                                                   skill_fun ) : spell_name( skill->spell_fun ) );
-        ch_printf( ch, "Sectors Allowed: %s\n",
+        ch_printf( ch, "Sectores Permitidos: %s\n",
                    skill->spell_sector ? flag_string( skill->spell_sector, sec_flags ) : "All" );
-        ch_printf( ch, "Dammsg: %s\r\nWearoff: %s\n",
+        ch_printf( ch, "Dammsg: %s\r\nDesaparecer: %s\n",
                    VLD_STR( skill->noun_damage ) ? skill->noun_damage : "(none set)",
                    VLD_STR( skill->msg_off ) ? skill->msg_off : "(none set)" );
         if ( skill->dice && skill->dice[0] != '\0' )
             ch_printf( ch, "Dice: %s\r\n", skill->dice );
         if ( VLD_STR( skill->teachers ) )
-            ch_printf( ch, "Teachers: %s\r\n", skill->teachers );
+            ch_printf( ch, "Maestros: %s\r\n", skill->teachers );
         if ( VLD_STR( skill->components ) )
-            ch_printf( ch, "\r\nComponents: %s\r\n", skill->components );
+            ch_printf( ch, "\r\nComponentes: %s\r\n", skill->components );
         if ( skill->participants )
-            ch_printf( ch, "Participants: %d\r\n", ( int ) skill->participants );
+            ch_printf( ch, "Participantes: %d\r\n", ( int ) skill->participants );
         if ( skill->userec.num_uses )
             send_timer( &skill->userec, ch );
         for ( aff = skill->affects; aff; aff = aff->next ) {
@@ -1990,13 +1990,13 @@ void do_dig( CHAR_DATA *ch, char *argument )
                 return;
             }
             if ( ch->mount ) {
-                send_to_char( "No puedes hacer éso mientras montas.\r\n", ch );
+                send_to_char( "You can't do that while mounted.\r\n", ch );
                 return;
             }
             one_argument( argument, arg );
             if ( arg[0] != '\0' ) {
                 if ( ( pexit = find_door( ch, arg, TRUE ) ) == NULL && get_dir( arg ) == -1 ) {
-                    send_to_char( "¿Qué dirección es ésa?\r\n", ch );
+                    send_to_char( "What direction is that?\r\n", ch );
                     return;
                 }
                 if ( pexit ) {

@@ -77,6 +77,7 @@ void do_copyover( CHAR_DATA *ch, char *argument )
     do_fclear( ch, ( char * ) "sys_bugs" );
     end_tag(  );
 
+
     for ( d = first_descriptor; d; d = d->next ) {
         /*
          * Volk - this needs to go here 
@@ -102,21 +103,21 @@ void do_copyover( CHAR_DATA *ch, char *argument )
 
     if ( ch ) {
         if ( fighting_count || editing_count || deleting_count ) {
-            ch_printf( ch, "%s", "Can't hotboot at this time.\r\n" );
+            ch_printf( ch, "%s", "no puedes hacer reboot ahora.\r\n" );
             if ( fighting_count )
-                ch_printf( ch, "There are %d combats in progress.\r\n", fighting_count );
+                ch_printf( ch, "Hay %d combates en progreso.\r\n", fighting_count );
             if ( editing_count )
-                ch_printf( ch, "There are %d players editing things.\r\n", editing_count );
+                ch_printf( ch, "Hay %d jugadores editando cosas.\r\n", editing_count );
             if ( deleting_count )
-                ch_printf( ch, "There are %d players deleting.\r\n", deleting_count );
+                ch_printf( ch, "Hay %d jugadores que están pensando si se borran o si no.\r\n", deleting_count );
             if ( auction->item != NULL )
-                send_to_char( "There is an auction currently in progress.\r\n", ch );
+                send_to_char( "Hay una subasta en progreso.\r\n", ch );
             return;
         }
     }
 
     if ( first_siege ) {
-        send_to_char( "You can't copyover now because their is a siege in progress.\r\n", ch );
+        send_to_char( "No puedes hasta que el asedio que está en progreso no finalice.\r\n", ch );
         return;
     }
 
@@ -148,7 +149,7 @@ void do_copyover( CHAR_DATA *ch, char *argument )
                                                         * need to save this */
 //    if(!d->character || d->connected < CON_PLAYING) /* drop those logging on */
         if ( !d->character || d->connected < CON_PLAYING ) {
-            write_to_descriptor( d, "\r\nSorry, we are rebooting. Come back in a few minutes.\r\n",
+            write_to_descriptor( d, "\r\nEstamos reinicando.l Vuelve en unos segundos.\r\n",
                                  0 );
             close_socket( d, FALSE );                  /* throw'em out */
         }
@@ -271,8 +272,8 @@ void copyover_recover(  )
                             maxp = 0;
     bool                    fOld;
     ROOM_INDEX_DATA        *location;
-
-    fp = FileOpen( COPYOVER_FILE, "r" );
+    
+	fp = FileOpen( COPYOVER_FILE, "r" );
     if ( !fp ) {                                       /* there are some descriptors open 
                                                         * which will hang forever then ? */
         perror( "copyover_recover: FileOpen" );

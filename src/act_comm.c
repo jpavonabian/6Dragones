@@ -623,7 +623,7 @@ return;
                 color_str( AT_TELL, ch ) );
 
     if ( !IS_NPC( victim ) && !IS_NPC( ch ) ) {
-        snprintf( buf2, MSL, "&W%s tells: %s %s&D", ch->name, victim->name, argument );
+        snprintf( buf2, MSL, "&W%s dice: %s %s&D", ch->name, victim->name, argument );
         append_to_file( CSAVE_FILE, buf2 );
     }
 
@@ -1862,10 +1862,10 @@ void do_gtell( CHAR_DATA *ch, char *argument )
                     ch_printf( gch, "%s cuenta al grupo '%s'.\r\n", ch->name,
                                translate( speakswell, argument, lang_names[speaking] ) );
                 else
-                    ch_printf( gch, "%s cuenta val grupo '%s'.\r\n", ch->name, argument );
+                    ch_printf( gch, "%s cuenta al grupo '%s'.\r\n", ch->name, argument );
             }
             else
-                ch_printf( gch, "%s tells cuenta al grupo '%s'.\r\n", ch->name, argument );
+                ch_printf( gch, "%s cuenta al grupo '%s'.\r\n", ch->name, argument );
 #else
             if ( knows_language( gch, ch->speaking, gch ) || ( IS_NPC( ch ) && !ch->speaking ) )
                 ch_printf( gch, "%s cuenta al grupo '%s'.\r\n", ch->name, argument );
@@ -2364,12 +2364,10 @@ void do_talk_to_char( CHAR_DATA *ch, char *argument )
 
 void do_cpareja( CHAR_DATA *ch, char *argument )
 {
-	char buf[MSL];
+    char                    buf[MSL];
     CHAR_DATA              *victim;
-    char arg1[MAX_INPUT_LENGTH];
-    argument = one_argument( argument, arg1 );
 
-       if ( arg1[0] == '\0') {
+       if ( argument[0] == '\0') {
 send_to_char("¿Decirle a tu gran amor qué?\r\n", ch);
 return;
 }
@@ -2390,10 +2388,10 @@ return;
 		send_to_char( buf, ch );
 		return;
 	}
-		sprintf( buf, "&CTransmites telepáticamente con dulzura a %s '%s'.&w\r\n", ch->pcdata->pareja, arg1);
+		sprintf( buf, "&CTransmites telepáticamente con dulzura a %s '%s'.&w\r\n", ch->pcdata->pareja, argument);
 send_to_char(buf, ch);
 victim= get_char_world ( ch, ch->pcdata->pareja);
-		sprintf( buf, "&%s te transmite telepáticamente con dulzura '%s'.&w\r\n", ch->name, arg1);
+		sprintf( buf, "&%s te transmite telepáticamente con dulzura '%s'.&w\r\n", ch->name, argument);
 send_to_char(buf, victim);
 return;
 }
