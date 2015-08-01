@@ -1239,7 +1239,7 @@ a drow longsword~
 A bright sword lays here rusting away.~
 ~
 5 0 8193
-0 14 24 0 0 0 0
+0 17 25 0 0 0 0
 1 111 11
 2
 0
@@ -1250,7 +1250,7 @@ A drow spear~
 A long spear lays here rotting~
 ~
 5 0 8193
-0 5 15 7 10 0 0
+0 3 10 7 10 0 0
 1 92 9
 2
 0
@@ -1261,7 +1261,7 @@ A drow dagger~
 A small dagger lays here glittering~
 ~
 5 8192 8193
-0 3 10 2 2 0 0
+0 5 15 2 2 0 0
 1 104 10
 2
 0
@@ -1325,7 +1325,7 @@ A green vial has been left here.~
 1 2 0
 2
 9
-'heal' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #2211
 A scroll of recall~

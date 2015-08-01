@@ -1,61 +1,4 @@
 #IDEA
-MadeBy        Riyu~
-MadeWhen      07-27-2014 04:45:41PM~
-IdeaDesc      There's another site for screen reader users it's www.nvaccess.org It's home to the NVDA Screen reader
-~
-Type          1
-UsedBy        Vladaar~
-UsedWhen      07-29-2014 09:47:11PM~
-UseDesc       thanks
-~
-Reward        0
-RewardBonus   1
-Room          5100
-End
-
-#IDEA
-MadeBy        Malukus~
-MadeWhen      08-15-2014 08:17:30PM~
-IdeaDesc      The commands "junk" and "sacrifice" could be aliases for "trash", for ease of discovering how to get rid of useless items.
-Another alternative could be a donation room, where you could leave items for newbies.
-~
-Type          1
-UsedBy        Vladaar~
-UsedWhen      08-15-2014 10:08:39PM~
-UseDesc       Used junk alternative
-~
-Reward        0
-RewardBonus   1
-Room          16007
-End
-
-#IDEA
-MadeBy        Vladaar~
-MadeWhen      08-25-2014 07:56:13AM~
-IdeaDesc      Go through each area and make sure all objects and mobs have extra descriptions
-~
-Type          -1
-Reward        0
-RewardBonus   0
-Room          1201
-End
-
-#IDEA
-MadeBy        Kalryn~
-MadeWhen      10-14-2014 00:19:35PM~
-IdeaDesc      remove the help wizlist file
-~
-Type          1
-UsedBy        Vladaar~
-UsedWhen      10-14-2014 03:27:14PM~
-UseDesc       done
-~
-Reward        0
-RewardBonus   1
-Room          16016
-End
-
-#IDEA
 MadeBy        Vladaar~
 MadeWhen      10-16-2014 05:22:40PM~
 IdeaDesc      make a CP for percentage till crafting level, when players crafting instead of fighting.

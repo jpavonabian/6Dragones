@@ -426,7 +426,7 @@ a blackened cadaver chest plate~
 A blackened cadaver chest plate lays here.~
 ~
 9 0 9
-35 35 0 0 0 0 0
+30 30 0 0 0 0 0
 10 146 14
 3
 13
@@ -440,7 +440,7 @@ a blackened cadaver pair of leggings~
 A blackened cadaver pair of leggings lays here.~
 ~
 9 0 33
-30 30 0 0 0 0 0
+35 35 0 0 0 0 0
 4 69 19
 4
 13
@@ -454,7 +454,7 @@ a blackened bracer~
 A blackened bracer lays here.~
 ~
 9 0 4097
-30 30 0 0 0 0 0
+35 35 0 0 0 0 0
 1 134 13
 3
 13
@@ -538,7 +538,7 @@ a vorpal bladed dagger~
 A vorpal bladed dagger is laying here.~
 ~
 5 0 8193
-0 15 30 6 2 0 0
+0 20 35 6 2 0 0
 3 146 14
 3
 8

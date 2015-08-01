@@ -453,7 +453,7 @@ a nightgaunt's tickler~
 A nightgaunt's tickler has been left here.~
 tickle~
 5 128 8193
-0 3 10 4 13 0 0
+0 5 15 4 13 0 0
 8 5000 500
 1
 0
@@ -718,7 +718,7 @@ A yellowing, tightly-rolled scroll lies here.~
 5 5000 500
 1
 0
-'colour spray' 'flamestrike' 'magic missile'
+'NONE' 'flamestrike' 'magic missile'
 S 3 0
 E
 scroll tightly rolled~
@@ -937,11 +937,11 @@ The stench of death is heavy in these caverns.
 D2
 ~
 ~
-0 0 3415
+0 0 3411
 D3
 ~
 ~
-0 0 3411
+0 0 3415
 R R 0 3410 4
 S
 #3411
@@ -1054,11 +1054,11 @@ D1
 D2
 ~
 ~
-0 0 3410
+0 0 3420
 D3
 ~
 ~
-0 0 3420
+0 0 3410
 R R 0 3415 4
 R M 0 3400 8 3415
   R E 1 3421 1 16
@@ -1177,11 +1177,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3415
+0 0 3425
 D3
 ~
 ~
-0 0 3425
+0 0 3415
 R R 0 3420 4
 S
 #3421
@@ -1321,11 +1321,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3420
+0 0 3426
 D3
 ~
 ~
-0 0 3426
+0 0 3420
 R R 0 3425 4
 S
 #3426
@@ -1337,11 +1337,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3425
+0 0 3430
 D2
 ~
 ~
-0 0 3430
+0 0 3425
 R R 0 3426 4
 R M 0 3413 5 3426
   R G 1 3422 1
@@ -1443,11 +1443,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3430
+0 0 3436
 D2
 ~
 ~
-0 0 3436
+0 0 3430
 R R 0 3431 4
 R M 0 3409 4 3431
 S
@@ -1509,7 +1509,7 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3440
+0 0 3430
 D1
 ~
 ~
@@ -1517,7 +1517,7 @@ D1
 D3
 ~
 ~
-0 0 3430
+0 0 3440
 R R 0 3435 4
 R M 0 3400 8 3435
   R E 1 3421 1 16
@@ -1532,7 +1532,7 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3441
+0 0 3435
 D2
 ~
 ~
@@ -1540,7 +1540,7 @@ D2
 D3
 ~
 ~
-0 0 3435
+0 0 3441
 R R 0 3436 4
 S
 #3437
@@ -1607,15 +1607,15 @@ D0
 D1
 ~
 ~
-35 0 3435
+35 0 3441
 D2
 ~
 ~
-35 0 3441
+3 -1 3449
 D3
 ~
 ~
-3 -1 3449
+35 0 3435
 R R 0 3440 4
 R D 0 3440 1 1
 S
@@ -1628,7 +1628,7 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3440
+0 0 3436
 D1
 ~
 ~
@@ -1636,7 +1636,7 @@ D1
 D2
 ~
 ~
-0 0 3436
+0 0 3440
 R R 0 3441 4
 S
 #3442
@@ -1711,11 +1711,11 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3447
+0 0 3445
 D1
 ~
 ~
-0 0 3445
+0 0 3447
 D3
 ~
 ~
@@ -1737,11 +1737,11 @@ D0
 D1
 ~
 ~
-0 0 3442
+0 0 3448
 D2
 ~
 ~
-0 0 3448
+0 0 3442
 R R 0 3447 4
 S
 #3448

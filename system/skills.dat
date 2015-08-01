@@ -156,26 +156,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         antimagic shell~
-Type         Spell
-Info         0
-Flags        0
-Target       3
-Minpos       111
-Slot         224
-Mana         40
-Rounds       12
-Code         spell_smaug
-Wearoff      The shimmering shell and its protection from magic fade away...~
-Hitvict      A shimmering translucent shell forms about you.~
-Hitroom      A shimmering translucent shell forms about $N.~
-Difficulty   1
-Teachers     26001~
-Affect       'l*10' 27 '1048576' -1
-Minlevel     28
-End
-
-#SKILL
 Name         arch healing~
 Type         Spell
 Info         0
@@ -195,7 +175,7 @@ Minlevel     12
 End
 
 #SKILL
-Name         armor~
+Name         armadura~
 Type         Spell
 Info         0
 Flags        0
@@ -244,9 +224,9 @@ Hitvict      An aura of courage surrounds you.~
 Hitroom      $N is surrounded by an aura of courage.~
 Difficulty   5
 Teachers     2760~
-Affect       'l*4' 18 '8' -1
-Affect       'l*4' 19 '5' -1
 Affect       'l*4' 17 '-20' -1
+Affect       'l*4' 19 '5' -1
+Affect       'l*4' 18 '8' -1
 Minlevel     51
 End
 
@@ -296,6 +276,30 @@ Wearoff      &RYour head is seized with pain as your battlefield view fades!~
 Difficulty   1
 Teachers     18607~
 Minlevel     3
+End
+
+#SKILL
+Name         bendecir~
+Type         Spell
+Info         0
+Flags        0
+Target       2
+Minpos       109
+Min_dist     8
+Max_dist     12
+Slot         3
+Mana         5
+Rounds       12
+Code         spell_smaug
+Wearoff      The blessing fades away.~
+Hitchar      You lay the blessing of your god upon $N.~
+Hitvict      A powerful blessing is laid upon you.~
+Hitroom      $N beams as a powerful blessing is laid upon $M.~
+Difficulty   1
+Affect       '(null)' 60 '109' -1
+Affect       'l*10' 24 '-(l/8)' -1
+Affect       'l*10' 18 'l/8' -1
+Minlevel     1
 End
 
 #SKILL
@@ -384,30 +388,6 @@ Hitroom      $N begins to radiate a yellow light which repels intense heat.~
 Difficulty   1
 Affect       'l*2' 27 '1' -1
 Minlevel     101
-End
-
-#SKILL
-Name         bless~
-Type         Spell
-Info         0
-Flags        0
-Target       2
-Minpos       109
-Min_dist     8
-Max_dist     12
-Slot         3
-Mana         5
-Rounds       12
-Code         spell_smaug
-Wearoff      The blessing fades away.~
-Hitchar      You lay the blessing of your god upon $N.~
-Hitvict      A powerful blessing is laid upon you.~
-Hitroom      $N beams as a powerful blessing is laid upon $M.~
-Difficulty   1
-Affect       'l*10' 18 'l/8' -1
-Affect       'l*10' 24 '-(l/8)' -1
-Affect       '(null)' 60 '109' -1
-Minlevel     1
 End
 
 #SKILL
@@ -566,7 +546,7 @@ Mana         40
 Rounds       20
 Code         spell_clavus
 Dammsg       montón de clavos~
-Difficulty   5
+Difficulty   1
 Teachers     26001~
 Minlevel     80
 End
@@ -589,6 +569,26 @@ Difficulty   2
 Teachers     2760~
 Affect       '(null)' 13 'l+200' -1
 Minlevel     20
+End
+
+#SKILL
+Name         concha antimagia~
+Type         Spell
+Info         0
+Flags        0
+Target       3
+Minpos       111
+Slot         224
+Mana         40
+Rounds       12
+Code         spell_smaug
+Wearoff      The shimmering shell and its protection from magic fade away...~
+Hitvict      A shimmering translucent shell forms about you.~
+Hitroom      A shimmering translucent shell forms about $N.~
+Difficulty   1
+Teachers     26001~
+Affect       'l*10' 27 '1048576' -1
+Minlevel     28
 End
 
 #SKILL
@@ -728,7 +728,7 @@ Minlevel     2
 End
 
 #SKILL
-Name         cure affliction~
+Name         curar afliccion~
 Type         Spell
 Info         0
 Flags        6144
@@ -740,7 +740,7 @@ Minlevel     21
 End
 
 #SKILL
-Name         cure blindness~
+Name         curar ceguera~
 Type         Spell
 Info         0
 Flags        0
@@ -757,7 +757,7 @@ Minlevel     4
 End
 
 #SKILL
-Name         cure critical~
+Name         curar criticas~
 Type         Spell
 Info         0
 Flags        0
@@ -773,6 +773,24 @@ Wearoff      !cure_critical!~
 Difficulty   1
 Teachers     2760~
 Minlevel     101
+End
+
+#SKILL
+Name         curar serias~
+Type         Spell
+Info         0
+Flags        256
+Target       2
+Minpos       108
+Min_dist     8
+Max_dist     50
+Slot         61
+Mana         20
+Rounds       10
+Code         spell_cure_serious
+Wearoff      !cure_serious!~
+Difficulty   4
+Minlevel     9
 End
 
 #SKILL
@@ -808,24 +826,6 @@ Minlevel     9
 End
 
 #SKILL
-Name         cure serious~
-Type         Spell
-Info         0
-Flags        256
-Target       2
-Minpos       108
-Min_dist     8
-Max_dist     50
-Slot         61
-Mana         20
-Rounds       10
-Code         spell_cure_serious
-Wearoff      !cure_serious!~
-Difficulty   4
-Minlevel     9
-End
-
-#SKILL
 Name         dark blessings~
 Type         Spell
 Info         0
@@ -841,9 +841,9 @@ Wearoff      The dark blessings fade leaving you weakened.~
 Hitvict      A dark power suddenly burns within you.~
 Hitroom      A strange look of hatred flashes in $N's eyes.~
 Difficulty   1
-Affect       'l*10' 19 'l/20+1' -1
-Affect       'l*10' 18 'l/20+1' -1
 Affect       'l*10' 1 'l/20+1' -1
+Affect       'l*10' 18 'l/20+1' -1
+Affect       'l*10' 19 'l/20+1' -1
 Minlevel     15
 End
 
@@ -1192,8 +1192,8 @@ Wearoff      The eldritch sphere about you winks from existence.~
 Hitvict      A magical eldritch sphere forms about you...~
 Hitroom      A shimmering eldritch sphere forms about $N...~
 Difficulty   1
-Affect       '(l*3)+25' 27 '1048576' -1
 Affect       '(l*3)+25' 27 '8192' -1
+Affect       '(l*3)+25' 27 '1048576' -1
 Minlevel     101
 End
 
@@ -1480,9 +1480,9 @@ Hitchar      $N is washed in a light of feline grace.~
 Hitvict      Feline grace suddenly washes over your body...~
 Hitroom      $N glows in the light of feline grace.~
 Difficulty   1
-Affect       'l*10' 25 '1+(l/20)' -1
-Affect       'l*10' 2 '1+(l/20)' -1
 Affect       'l*10' 31 '1' -1
+Affect       'l*10' 2 '1+(l/20)' -1
+Affect       'l*10' 25 '1+(l/20)' -1
 Minlevel     6
 End
 
@@ -1740,21 +1740,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         greater heal~
-Type         Spell
-Info         0
-Flags        256
-Target       2
-Minpos       108
-Mana         75
-Rounds       14
-Code         spell_greater_heal
-Difficulty   1
-Teachers     2760~
-Minlevel     30
-End
-
-#SKILL
 Name         greater restore~
 Type         Spell
 Info         0
@@ -1824,21 +1809,6 @@ Minlevel     101
 End
 
 #SKILL
-Name         healing essence~
-Type         Spell
-Info         0
-Flags        0
-Target       3
-Minpos       108
-Mana         50
-Rounds       18
-Code         spell_healing_essence
-Wearoff      Your healing essence suddenly fades.~
-Difficulty   1
-Minlevel     12
-End
-
-#SKILL
 Name         helical flow~
 Type         Spell
 Info         0
@@ -1870,9 +1840,9 @@ Hitvict      You feel heroic.~
 Hitroom      $N beams broadly as a heroic blessing is placed on $M.~
 Difficulty   2
 Teachers     2302~
-Affect       'l*4' 19 'l/10' -1
-Affect       'l*4' 18 'l/8' -1
 Affect       'l*4' 24 '-(l/5)' -1
+Affect       'l*4' 18 'l/8' -1
+Affect       'l*4' 19 'l/10' -1
 Minlevel     9
 End
 
@@ -2012,8 +1982,8 @@ Hitchar      You lay The Fury of The High Gods upon $N.~
 Hitvict      The Fury of The High Gods is temporarily given to you.~
 Hitroom      The Fury of The High Gods is temporarily given to $N.~
 Difficulty   1
-Affect       'l/2' 19 '1+(l/17)' -1
 Affect       'l/2' 18 '1+(l/17)' -1
+Affect       'l/2' 19 '1+(l/17)' -1
 Minlevel     101
 End
 
@@ -2070,7 +2040,7 @@ Wearoff      You are no longer invisible.~
 Hitchar      $N fades from existence.~
 Hitvict      You fade from existence.~
 Hitroom      $N fades from existence.~
-Difficulty   5
+Difficulty   2
 Affect       'l*10' 26 'invis' 1
 Minlevel     1
 End
@@ -2381,9 +2351,9 @@ Hitvict      A minor invocation is laid upon you.~
 Hitroom      $N beams as a minor invocation is laid upon $M.~
 Difficulty   1
 Teachers     2760~
-Affect       '(null)' 60 '3' -1
-Affect       'l*2' 24 '-(l/8)' -1
 Affect       'l*2' 18 '(l/8)' -1
+Affect       'l*2' 24 '-(l/8)' -1
+Affect       '(null)' 60 '3' -1
 Minlevel     101
 End
 
@@ -2447,9 +2417,9 @@ Hitchar      $N suddenly appears powerful, and has a healthy appearance.~
 Hitvict      Ogre vitality overwhelms your senses with power and feeling of vigor.~
 Hitroom      $N suddenly appears more powerful, and has a healthy glow.~
 Difficulty   1
-Affect       'l*10' 13 '25+(l/20)' -1
-Affect       'l*10' 5 '1+(l/20)' -1
 Affect       'l*10' 1 '1+(l/20)' -1
+Affect       'l*10' 5 '1+(l/20)' -1
+Affect       'l*10' 13 '25+(l/20)' -1
 Minlevel     13
 End
 
@@ -2695,8 +2665,8 @@ Code         spell_smaug
 Wearoff      Your pulse returns to a normal rate.~
 Hitvict      You feel your pulse quicken!~
 Missvict     You fail to gather enough magic to perform this spell.~
-Affect       'l+50' 2 '+2' -1
 Affect       'l+50' 26 'quickening' -1
+Affect       'l+50' 2 '+2' -1
 Minlevel     101
 End
 
@@ -2816,7 +2786,7 @@ Minlevel     101
 End
 
 #SKILL
-Name         refresh~
+Name         refrescar~
 Type         Spell
 Info         0
 Flags        0
@@ -2829,22 +2799,6 @@ Code         spell_refresh
 Wearoff      &YA surge of energy feels your being!~
 Difficulty   1
 Minlevel     4
-End
-
-#SKILL
-Name         remove curse~
-Type         Spell
-Info         0
-Flags        0
-Target       2
-Minpos       111
-Slot         35
-Mana         5
-Rounds       12
-Code         spell_remove_curse
-Wearoff      !Remove Curse!~
-Difficulty   1
-Minlevel     14
 End
 
 #SKILL
@@ -2932,25 +2886,7 @@ Minlevel     18
 End
 
 #SKILL
-Name         restoration~
-Type         Spell
-Info         0
-Flags        14336
-Minpos       110
-Slot         113
-Mana         80
-Rounds       20
-Code         spell_smaug
-Hitvict      A warm feeling flows through you.~
-Hitroom      A warm feeling flows through $N.~
-Participants 2
-Components   V@43~
-Affect       '(null)' 13 '125' -1
-Minlevel     101
-End
-
-#SKILL
-Name         restore life~
+Name         restaurar vida~
 Type         Spell
 Info         0
 Flags        6400
@@ -2969,6 +2905,24 @@ Minlevel     52
 End
 
 #SKILL
+Name         restoration~
+Type         Spell
+Info         0
+Flags        14336
+Minpos       110
+Slot         113
+Mana         80
+Rounds       20
+Code         spell_smaug
+Hitvict      A warm feeling flows through you.~
+Hitroom      A warm feeling flows through $N.~
+Participants 2
+Components   V@43~
+Affect       '(null)' 13 '125' -1
+Minlevel     101
+End
+
+#SKILL
 Name         restore mana~
 Type         Spell
 Info         0
@@ -2984,6 +2938,22 @@ Hitvict      A surge of mana spreads throughout your being.~
 Difficulty   1
 Affect       '(null)' 12 'l+2d10' -1
 Minlevel     101
+End
+
+#SKILL
+Name         retirar maldicion~
+Type         Spell
+Info         0
+Flags        0
+Target       2
+Minpos       111
+Slot         35
+Mana         5
+Rounds       12
+Code         spell_remove_curse
+Wearoff      !Remove Curse!~
+Difficulty   1
+Minlevel     14
 End
 
 #SKILL
@@ -3022,6 +2992,36 @@ Minlevel     14
 End
 
 #SKILL
+Name         sanacion maxima~
+Type         Spell
+Info         0
+Flags        256
+Target       2
+Minpos       108
+Mana         75
+Rounds       14
+Code         spell_greater_heal
+Difficulty   1
+Teachers     2760~
+Minlevel     30
+End
+
+#SKILL
+Name         sanar~
+Type         Spell
+Info         0
+Flags        0
+Target       3
+Minpos       108
+Mana         50
+Rounds       18
+Code         spell_healing_essence
+Wearoff      Your healing essence suddenly fades.~
+Difficulty   1
+Minlevel     12
+End
+
+#SKILL
 Name         sanar~
 Type         Spell
 Info         0
@@ -3034,7 +3034,7 @@ Rounds       15
 Code         spell_heal
 Wearoff      !Heal!~
 Difficulty   2
-Minlevel     13
+Minlevel     101
 End
 
 #SKILL
@@ -3441,9 +3441,9 @@ Hitvict      &YA summoned strength suddenly flows into you.~
 Hitroom      &YA summoned strength shows in $N's eyes.~
 Difficulty   1
 Teachers     16722~
-Affect       'l*10' 1 'l/20+1' -1
-Affect       'l*10' 18 'l/20+1' -1
 Affect       'l*10' 19 'l/20+1' -1
+Affect       'l*10' 18 'l/20+1' -1
+Affect       'l*10' 1 'l/20+1' -1
 Minlevel     15
 End
 
@@ -3579,8 +3579,8 @@ Hitchar      $N's face contorts with a bestial vigor...~
 Hitvict      You sense a bestial vigor consume you...~
 Hitroom      $N's face contorts with a bestial vigor...~
 Difficulty   2
-Affect       'l*24' 25 '-1' -1
 Affect       'l*24' 5 '1+(l/17)' -1
+Affect       'l*24' 25 '-1' -1
 Minlevel     101
 End
 
@@ -3614,8 +3614,8 @@ Code         spell_smaug
 Wearoff      &zYour unholy shroud suddenly vanishes.~
 Hitvict      &zYou are surrounded in the power of an unholy shroud.~
 Difficulty   1
-Affect       'l*2' 17 '-20-i' -1
 Affect       'l*2' 27 '8192' -1
+Affect       'l*2' 17 '-20-i' -1
 Minlevel     23
 End
 
@@ -3655,8 +3655,8 @@ Hitvict      Your defenses are unravelled before your very eyes.~
 Hitroom      $N's eyes widen in fear as $S defenses are unravelled.~
 Immchar      Your spell has no effect upon $N.~
 Difficulty   2
-Affect       '(l*3)+25' 29 '8192' -1
 Affect       '(l*3)+25' 29 '1048576' -1
+Affect       '(l*3)+25' 29 '8192' -1
 Minlevel     101
 End
 
@@ -3888,8 +3888,8 @@ Wearoff      You're no longer protected by an inertial barrier.~
 Hitchar      You place an inertial barrier around yourself.~
 Hitvict      You place an inertial barrier around yourself.~
 Difficulty   3
-Affect       'l*3' 17 '-20' -1
 Affect       'l*3' 24 '-4' -1
+Affect       'l*3' 17 '-20' -1
 Minlevel     101
 End
 
@@ -3917,9 +3917,9 @@ Code         spell_smaug
 Wearoff      &wA weariness comes over you as your adrenaline rush subsides.&D~
 Hitvict      &RYou feel a burst of adrenaline rush through your body!&D~
 Misschar     &cYou try to call on your adrenaline, but fail to summon any.&D~
-Affect       'l*2+20' 19 '3' -1
-Affect       'l*2+20' 13 'l/2' -1
 Affect       'l*2+20' 18 '-1' -1
+Affect       'l*2+20' 13 'l/2' -1
+Affect       'l*2+20' 19 '3' -1
 Minlevel     6
 End
 
@@ -4658,11 +4658,11 @@ Hitvict      Your body grants you the extra courage.~
 Misschar     You call upon extra courage, but fail to do so.~
 Difficulty   3
 Teachers     26001~
-Affect       'l*3' 24 '-10' -1
-Affect       'l*3' 18 '6' -1
-Affect       'l*3' 19 '4' -1
-Affect       'l*3' 5 '3' -1
 Affect       'l*3' 17 '-25' -1
+Affect       'l*3' 5 '3' -1
+Affect       'l*3' 19 '4' -1
+Affect       'l*3' 18 '6' -1
+Affect       'l*3' 24 '-10' -1
 Minlevel     34
 End
 
@@ -4942,9 +4942,9 @@ Wearoff      &cYour confidence returns as you no longer feel disgraced.~
 Hitchar      &cYou point your finger at $N and declare them a disgrace!~
 Hitvict      &c$n points $s finger at you, and declares you a disgrace!~
 Hitroom      &c$n points $s finger at $N and declares them a disgrace!~
-Affect       '(null)' 1 '-2' -1
-Affect       '(null)' 20 '10' -1
 Affect       '(null)' 24 '10' -1
+Affect       '(null)' 20 '10' -1
+Affect       '(null)' 1 '-2' -1
 Minlevel     101
 End
 
@@ -5122,9 +5122,9 @@ Hitchar      $N's eyes roll back as a sudden elightenment overtakes them.~
 Hitvict      Enlightenment suddenly fills your mind, making things so clear.~
 Hitroom      $N's eyes roll back as a sudden enlightenment overtakes them.~
 Misschar     You failed to enlighten yourself!~
-Affect       'l*5' 3 '1+(l/20)' -1
-Affect       'l*5' 4 '1+(l/20)' -1
 Affect       'l*5' 12 '25+(l/20)' -1
+Affect       'l*5' 4 '1+(l/20)' -1
+Affect       'l*5' 3 '1+(l/20)' -1
 Minlevel     101
 End
 
@@ -5419,10 +5419,10 @@ Wearoff      &cYour flurry attack rush has subsided leaving you winded...~
 Hitchar      &cYou step in close to $N leaving yourself open, but attack in a flurry!~
 Hitvict      &c$n moves in within range, but attacks in a flurry!~
 Hitroom      &c$n moves in close to $N, and attacks in a flurry!~
-Affect       '20' 48 '-10' -1
-Affect       '20' 40 '-10' -1
-Affect       '20' 19 '5' -1
 Affect       '20' 17 '50' -1
+Affect       '20' 19 '5' -1
+Affect       '20' 40 '-10' -1
+Affect       '20' 48 '-10' -1
 Minlevel     101
 End
 
@@ -5746,9 +5746,9 @@ Hitchar      You are surrounded by an inertial barrier.~
 Hitvict      You are surrounded by an inertial barrier.~
 Misschar     You cannot concentrate enough to create an inertial barrier.~
 Teachers     10808~
-Affect       'l*3' 17 '-35' -1
-Affect       'l*3' 24 '-i/4' -1
 Affect       'l*3' 23 '-w/4' -1
+Affect       'l*3' 24 '-i/4' -1
+Affect       'l*3' 17 '-35' -1
 Minlevel     44
 End
 
@@ -6028,9 +6028,9 @@ Wearoff      &wYou begin to falter in maintaining your position!~
 Hitvict      &cYou assume a defensive stance, to maintain your position!~
 Hitroom      &c$n assumes a defensive stance to maintain $s position!~
 Misschar     &cYou assume a defensive stance, but fail to maintain your position!~
-Affect       'l*2+20' 2 '2' -1
-Affect       'l*2+20' 17 '-40' -1
 Affect       'l*2+20' 26 'protection' 13
+Affect       'l*2+20' 17 '-40' -1
+Affect       'l*2+20' 2 '2' -1
 Minlevel     13
 End
 
@@ -6363,10 +6363,10 @@ Hitvict      You place yourself in an offensive stance.~
 Misschar     You fail to place yourself in an offensive stance.~
 Missroom     $n shuffles around a bit.~
 Teachers     10808~
-Affect       'l*3' 19 '5' -1
-Affect       'l*3' 18 '7' -1
-Affect       'l*3' 1 '3' -1
 Affect       'l*3' 17 '20' -1
+Affect       'l*3' 1 '3' -1
+Affect       'l*3' 18 '7' -1
+Affect       'l*3' 19 '5' -1
 Minlevel     44
 End
 
@@ -6728,8 +6728,8 @@ Wearoff      &wYour concentration of Rallying Cry has been lost.~
 Hitvict      &cYou let out a rallying cry and focus with intense concentration!~
 Misschar     &cYou let out a rallying cry, but lose your voice.~
 Teachers     26001~
-Affect       'l*3' 2 '1' -1
 Affect       'l*3' 18 '2' -1
+Affect       'l*3' 2 '1' -1
 Minlevel     24
 End
 
@@ -7377,9 +7377,9 @@ Code         spell_smaug
 Wearoff      You feel more vulnerable as valtors song ends...~
 Hitchar      &cYou begin to sing Valtors Song.~
 Hitvict      &cYou feel more perceptive of the battle as Valtors Song meets your ears.~
-Affect       '(null)' 17 '-25' -1
-Affect       'l' 48 '10' -1
 Affect       'l' 40 '10' -1
+Affect       'l' 48 '10' -1
+Affect       '(null)' 17 '-25' -1
 Minlevel     43
 End
 
@@ -7467,11 +7467,11 @@ Hitroom      $N convulses as $n inflicts a silent curse...~
 Misschar     There seems to be no effect...~
 Missvict     $n extends a clawed hand toward you...~
 Missroom     $n extends a clawed hand toward $N...~
-Affect       '12' 31 '-1' -1
-Affect       '12' 24 'l/18' -1
-Affect       '12' 19 '-(l/8)' -1
-Affect       '12' 18 '-(l/8)' -1
 Affect       '12' 26 'curse' 10
+Affect       '12' 18 '-(l/8)' -1
+Affect       '12' 19 '-(l/8)' -1
+Affect       '12' 24 'l/18' -1
+Affect       '12' 31 '-1' -1
 Minlevel     101
 End
 

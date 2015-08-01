@@ -4646,7 +4646,7 @@ A red potion bottle has been left here.~
 1 5 0
 3
 3
-'cure critical' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 3 0
 E
 16008 red potion bottle~
@@ -4695,7 +4695,7 @@ A green vial has been left here.~
 1 2 5
 2
 9
-'heal' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 3 0
 E
 16011 green vial health~
@@ -4759,7 +4759,7 @@ an iron spear~
 An iron spear has been left here.~
 ~
 5 0 8193
-10 3 10 2 10 0 0
+10 5 15 2 10 0 0
 6 60 6
 2
 13
@@ -4950,7 +4950,7 @@ A strange looking pill has been left here.~
 1 25 2
 2
 5
-'cure serious' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #16034
 jalaxsa ointment~
@@ -7051,7 +7051,7 @@ A potion of cures has been left here.~
 1 10 1
 2
 5
-'cure affliction' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #16240
 plans parchment~

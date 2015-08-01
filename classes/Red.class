@@ -19,7 +19,7 @@ Expbase        2000
 Craftbase        0
 Resist         1
 Suscept        0
-Skill 'armor' 3 95
+Skill 'armadura' 3 95
 Skill 'battlefield view' 29 95
 Skill 'continual light' 5 95
 Skill 'create fire' 3 95
@@ -32,7 +32,7 @@ Skill 'fireshield' 32 95
 Skill 'invisibilidad' 60 95
 Skill 'kindred strength' 11 95
 Skill 'locate object' 16 95
-Skill 'refresh' 5 95
+Skill 'refrescar' 5 95
 Skill 'sagacidad' 18 95
 Skill 'shadowform' 90 95
 Skill 'silencio' 1 95

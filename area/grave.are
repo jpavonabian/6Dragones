@@ -265,7 +265,7 @@ An ugly little maggot crawls along here.~
 1 250 25
 1
 0
-'cure critical' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #3610
 skeleton~
@@ -320,7 +320,7 @@ a silver dagger~
 A long silver dagger is lying here.~
 pierce~
 5 0 8193
-0 5 15 2 2 0 0
+0 3 10 2 2 0 0
 1 100 10
 1
 0

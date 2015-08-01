@@ -2674,7 +2674,7 @@ A White Robe~
 A White Robe litters the ground~
 ~
 9 0 9
-50 50 0 0 0 0 0
+55 55 0 0 0 0 0
 1 0 0
 1
 0
@@ -2750,7 +2750,7 @@ a iron helmet~
 A iron helmet, litters the ground here.~
 ~
 9 0 17
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 1 10 32
 2
 8
@@ -2778,7 +2778,7 @@ a pair of chain-mail gloves~
 Some chain-mail gloves, have been placed neatly on the ground~
 ~
 9 0 129
-35 35 0 0 0 0 0
+40 40 0 0 0 0 0
 4 25 60
 2
 8
@@ -3138,7 +3138,7 @@ a thin metal shield~
 A thin metal shield lays on its side on the ground.~
 ~
 9 0 513
-30 30 0 0 0 0 0
+35 35 0 0 0 0 0
 15 150 15
 2
 8
@@ -3159,7 +3159,7 @@ a golden dagger~
 &YA long thin dagger made of gold is stuck in the ground.&D~
 ~
 5 0 8193
-0 25 45 6 2 0 0
+0 20 35 6 2 0 0
 2 100 10
 2
 14
@@ -3174,7 +3174,7 @@ a pocket knife~
 A folded up pocket knife lays in the floor.~
 ~
 5 0 8193
-0 20 40 2 2 0 0
+0 25 45 2 2 0 0
 2 27 2
 2
 8
@@ -3185,7 +3185,7 @@ a heavy stone shield~
 A heavy stone shield lays ontop of the ground here.~
 ~
 9 0 513
-35 35 0 0 0 0 0
+40 40 0 0 0 0 0
 25 200 20
 2
 13
@@ -3286,7 +3286,7 @@ a necklace of beads~
 A necklace made out of tiny beads, litters the ground here.~
 ~
 9 0 5
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 2 30 3
 2
 4
@@ -3305,7 +3305,7 @@ a silver bracelet~
 A silver bracelet lays on the ground.~
 ~
 9 524288 4097
-40 40 5 0 0 0 0
+35 35 5 0 0 0 0
 1 123 12
 2
 8
@@ -3324,7 +3324,7 @@ A glowing blue potion has been placed on the ground.~
 3 15 1
 3
 4
-'armor' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #31360
 a pale white potion~
@@ -3368,7 +3368,7 @@ a short axe~
 A short axe has been stuck in the ground here.~
 ~
 5 0 8193
-0 5 15 3 9 0 0
+0 10 20 3 9 0 0
 7 340 34
 2
 1
@@ -3391,7 +3391,7 @@ a double-sided axe~
 A double-sided axe lays on it side on the ground.~
 ~
 5 0 8193
-0 20 40 3 9 0 0
+0 20 35 3 9 0 0
 15 1000 100
 2
 1
@@ -3410,7 +3410,7 @@ a silver sword~
 A sword made of silver lays on its side on the ground.~
 ~
 5 0 8193
-0 20 40 1 1 0 0
+0 20 35 1 1 0 0
 5 40 4
 2
 8
@@ -3429,7 +3429,7 @@ a belt of gold~
 A belt made of gold lays here in the floor.~
 ~
 9 2 2049
-35 35 0 0 0 0 0
+40 40 0 0 0 0 0
 10 500 50
 2
 14
@@ -3456,7 +3456,7 @@ a wood cutters axe~
 A axe used for cutting wood lays on its side here.~
 ~
 5 0 8193
-0 20 40 3 9 0 0
+0 20 35 3 9 0 0
 6 532 53
 2
 1
@@ -3768,7 +3768,7 @@ a torn shirt~
 A torn shirt lays on the ground.~
 ~
 9 0 9
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 2 1 0
 3
 1
@@ -4238,7 +4238,7 @@ a brilliant white dress~
 A brilliant white dress, is getting dirty on the ground here.~
 ~
 9 64 9
-35 35 0 0 0 0 0
+40 40 0 0 0 0 0
 6 100 10
 3
 5
@@ -4458,7 +4458,7 @@ a dark trench coat~
 A dark leather trench coat, lays on the ground here.~
 ~
 9 0 9
-35 35 0 0 0 0 0
+30 30 0 0 0 0 0
 1 103 10
 2
 13
@@ -4623,7 +4623,7 @@ a pair of reading glasses~
 A pair of glasses that can be used for reading is here.~
 ~
 9 0 131073
-35 35 0 0 0 0 0
+30 30 0 0 0 0 0
 1 1 2
 4
 0

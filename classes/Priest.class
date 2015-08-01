@@ -23,8 +23,8 @@ Skill 'admonishing smite' 12 95
 Skill 'alertness' 37 95
 Skill 'arch healing' 12 95
 Skill 'aura of courage' 88 95
+Skill 'bendecir' 1 95
 Skill 'bestow vitae' 15 95
-Skill 'bless' 1 95
 Skill 'cegar' 6 95
 Skill 'combat healing' 24 80
 Skill 'continual light' 7 95
@@ -32,27 +32,27 @@ Skill 'create fire' 10 95
 Skill 'create food' 3 95
 Skill 'create spring' 11 95
 Skill 'create water' 6 95
-Skill 'cure affliction' 25 95
-Skill 'cure blindness' 4 95
+Skill 'curar afliccion' 25 95
+Skill 'curar ceguera' 4 95
+Skill 'curar serias' 9 95
 Skill 'cure light' 2 95
 Skill 'cure poison' 9 95
-Skill 'cure serious' 9 95
 Skill 'detect hidden' 8 95
 Skill 'detect invis' 6 95
 Skill 'dispel magic' 36 95
 Skill 'dormir' 43 95
 Skill 'earthquake' 7 95
 Skill 'fireshield' 39 95
-Skill 'greater heal' 38 65
 Skill 'greater smite' 60 95
 Skill 'grupo invisible' 17 95
 Skill 'helical flow' 43 95
 Skill 'lethargy' 28 95
 Skill 'lorox mist' 80 95
-Skill 'refresh' 7 95
-Skill 'remove curse' 14 95
+Skill 'refrescar' 7 95
 Skill 'respiracion acuatica' 27 95
-Skill 'restore life' 52 75
+Skill 'restaurar vida' 52 75
+Skill 'retirar maldicion' 14 95
+Skill 'sanacion maxima' 38 65
 Skill 'santuario' 18 95
 Skill 'scry' 24 95
 Skill 'silencio' 1 95

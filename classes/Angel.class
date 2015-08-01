@@ -20,26 +20,26 @@ Craftbase        0
 Resist         0
 Suscept        0
 Skill 'angels touch' 10 95
-Skill 'armor' 1 90
+Skill 'armadura' 1 90
 Skill 'astral walk' 43 95
 Skill 'aura of courage' 63 95
 Skill 'battlefield view' 60 95
+Skill 'bendecir' 13 90
 Skill 'bestow vitae' 3 95
-Skill 'bless' 13 90
 Skill 'combat healing' 20 80
 Skill 'create food' 2 95
 Skill 'create water' 2 80
-Skill 'cure affliction' 21 95
+Skill 'curar afliccion' 21 95
 Skill 'farsight' 68 95
-Skill 'greater heal' 30 65
 Skill 'greater restore' 94 95
 Skill 'heroism' 27 95
 Skill 'iceshield' 55 95
 Skill 'knock' 17 95
 Skill 'locate object' 52 95
 Skill 'pass door' 21 95
-Skill 'remove curse' 18 85
 Skill 'respiracion acuatica' 18 85
+Skill 'retirar maldicion' 18 85
+Skill 'sanacion maxima' 30 65
 Skill 'santuario' 11 95
 Skill 'shadowform' 90 95
 Skill 'shockshield' 85 95

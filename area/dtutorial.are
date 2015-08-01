@@ -1005,7 +1005,7 @@ A small bucket of dragon saliva has been left here.~
 3 5 0
 3
 1
-'cure critical' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 E
 'small' 'bucket' 'saliva' 'dragon'~
@@ -1022,7 +1022,7 @@ A large bucket of dragon saliva has been left here.~
 8 2 0
 2
 1
-'heal' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 E
 'large' 'bucket' 'saliva'~
@@ -1394,12 +1394,11 @@ S 0 0
 
 #ROOMS
 #19000
-At the Base of a Mountain~
+En la base de la montaña~
 ~
-A gravel trail climbs up the length of the mountain above. There are many 
-pine trees surrounding the mountain, and hills in the area. A small pond 
-of water with cat tail weeds growing along the edge of it forms just to 
-the west of the trail. 
+Un sendero de grava sube por la longitud de la montaña. Muchos pinos la 
+rodean, así como a las colinas de la zona. El sendero está rodeado por un 
+estanque de agua que nace por el oeste. 
 ~
 1 4 36
 D1
@@ -1408,12 +1407,12 @@ D1
 0 -1 19001
 S
 #19001
-Along a Mountain Trail~
+Por el sendero de la montaña~
 ~
-The mountain edge has a loose gravel surface throughout the trail. A few 
-pine trees, and different vegetation growths growing along the trail. A 
-few large boulders of moss covered stone edge out along the sides of the 
-trail. The trail edge has a long drop to the ground below. 
+El borde de la montaña tiene una superficie de grava suelta a lo largo del 
+camino, del cual crecen gran cantidad de pinos y diferentes tipos de 
+vegetación. Encuentras alrededor del camino ciertas rocas llenas de musgo. 
+Al borde del camino hay una larga caída. 
 ~
 1 4 36
 D3
@@ -1426,12 +1425,12 @@ D8
 0 -1 19002
 S
 #19002
-Within a Mountain Trail~
+Dentro de un sendero de la montaña~
 ~
-A loose gravel surface covers the length of the mountain trail. Small 
-trees, and different vegetation growths growing along the trail. The 
-remains of a campfire are beside the trail here. The trail edge has a long 
-drop to the ground below. 
+Una superficie de grava suelta cubre la longitud del sendero de la 
+montaña. Hay pequeños árboles y diferentes tipos de vegetación a lo largo 
+del camino. Puedes ver restos de una fogata al lado del sendero. Al borde 
+del camino hay una gran caída. 
 ~
 1 4 36
 D4
@@ -1444,12 +1443,13 @@ D7
 0 -1 19001
 S
 #19003
-A Steep Incline in the Trail~
+Una pendiente pronunciada en el sendero~
 ~
-The mountain edge has a loose gravel surface along the trail. Many small 
-trees, and different vegetation growths growing along the trail. Some 
-small animal tracks are visibly along the trail. The trail edge has a long 
-drop to the ground below. 
+El borde de la montaña tiene una superficie de grava suelta del camino. 
+Hay muchos árboles pequeños y crecimientos de diferente vegetación que 
+crecen a lo largo del camino. Algunas pequeñas pistas animales son 
+visiblemente a lo largo del sendero. Al borde del sendero hay una gran 
+caída. 
 ~
 1 4 36
 D4
@@ -1462,12 +1462,12 @@ D5
 0 -1 19002
 S
 #19004
-Along a Mountain Trail~
+A lo largo de un sendero de la montaña~
 ~
-The trail along the mountain edge has a loose gravel surface. There are 
-small trees, and different vegetation growths growing along the trail. A 
-large boulder is embedded in the center of the trail. The trail edge has a 
-long drop to the ground below. 
+El borde de la montaña tiene una superficie de grava suelta del camino. 
+Hay árboles pequeños y crecimientos de diferente vegetación crecen a lo 
+largo del camino. Una gran roca está incrustada en el centro del sendero. 
+Al borde del sendero hay una gran caída. 
 ~
 1 4 36
 D1
@@ -1480,12 +1480,12 @@ D5
 0 -1 19003
 S
 #19005
-Along the Edge of a Trail~
+A lo largo del borde de un sendero~
 ~
-The trail has a very sharp incline along the mountain face here. There are 
-jagged rocks along it that make traveling very difficult. A cluster of 
-small pine trees and a few small shrubs grow out along the trail edge. The 
-ground is a soft gravel surface. 
+El sendero tiene una pendiente muy aguda a lo largo de la cara de la 
+montaña. Hay rocas irregulares en lo que hacen muy difícil el viajar. Un 
+grupo de pinos pequeños y unos pequeños arbustos crecen hacia fuera a lo 
+largo del borde del sendero. El suelo es una superficie de grava suave. 
 ~
 1 4 36
 D3
@@ -1498,12 +1498,13 @@ D8
 0 -1 19006
 S
 #19006
-At the Base of a Steep Incline~
+En la base de una pendiente escarpada~
 ~
-The mountain face has a sharp incline trail here. Jagged rocks along it 
-that make traveling very difficult. Many odd looking shrubs, and small 
-trees are growing out along the trail edge. The ground is a soft gravel 
-surface.  A shallow dug hole is along the trail side.
+La cara de la montaña tiene una fuerte pendiente en el sendero. Hay rocas 
+irregulares lo que hace muy difícil el viajar. Hay muchos arbustos de 
+aspecto extraño y pequeños árboles crecen hacia fuera a lo largo del 
+borde. El terreno presenta una superficie de grava suave. Un agujero poco 
+profundo está al lado del sendero. 
 ~
 1 4 36
 D4
@@ -1516,12 +1517,13 @@ D7
 0 -1 19005
 S
 #19007
-On a Steep Incline~
+En una pendiente pronunciada~
 ~
-A sharp incline in the trail moves up the mountain face here. Many jagged 
-rocks along it that make traveling very difficult. Odd looking shrubs, and 
-small trees grow out along the trail edge. There is soft gravel along the 
-trail path. 
+Una fuerte pendiente en el sendero se mueve hacia arriba de la cara de la 
+montaña aquí. Hay muchas rocas irregulares a lo largo del sendero que 
+hacen muy difícil el viajar. Hay unos arbustos de aspecto extraño, y 
+pequeños árboles crecen hacia fuera a lo largo del borde del sendero. Hay 
+grava suave a lo largo del sendero. 
 ~
 1 4 36
 D4
@@ -1534,12 +1536,13 @@ D5
 0 -1 19006
 S
 #19008
-Along a Steep Incline~
+A lo largo de una pendiente escarpada~
 ~
-The trail has a sharp incline along the mountain face here. There are 
-jagged rocks along it that make traveling very difficult. A few odd 
-looking shrubs, and small trees grow out along the trail edge. The ground 
-is a soft gravel surface. 
+El sendero tiene una fuerte inclinación a lo largo de la cara de la 
+montaña. Hay unas rocas irregulares que dificultan la posibilidad de 
+viajar. Hay unos arbustos de aspecto extraño, y pequeños árboles crecen 
+hacia fuera a lo largo del borde del sendero. El suelo es una superficie 
+de grava suave. 
 ~
 1 4 36
 D4
@@ -1552,12 +1555,12 @@ D5
 0 -1 19007
 S
 #19009
-On a Landing Platform~
+En una plataforma de aterrizaje~
 ~
-A massive outcropping of rock that has been completely leveled of 
-vegetation, and debris. This point gives a view of the entire valley and 
-sides of the mountain range. There are two wooden poles with chains 
-attached to them on the edge of the platform. 
+Una roca llena de musgo que ha sido liberada completamente de vegetación, 
+y escombros. Desde este punto de vista ves todos los lados de la montaña. 
+Hay dos postes de madera con cadenas fijadas a ellos a los bordes de la 
+plataforma. 
 ~
 1 4 36
 D1

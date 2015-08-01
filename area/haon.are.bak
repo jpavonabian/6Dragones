@@ -570,7 +570,7 @@ a lumber axe~
 A heavy lumber axe lies here.~
 ~
 5 0 8193
-0 1 5 3 9 0 0
+0 3 10 3 9 0 0
 10 50 5
 1
 0
@@ -595,7 +595,7 @@ a chequered shirt~
 A chequered shirt lies here.~
 ~
 9 0 9
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 2 20 2
 1
 0
@@ -614,7 +614,7 @@ a pair of leather boots~
 A pair of leather boots lies here.~
 ~
 9 0 65
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 4 60 6
 1
 0
@@ -842,7 +842,7 @@ A humming yellow potion lies here.~
 2 1000 100
 1
 0
-'kindred strength' 'stone skin' 'armor'
+'kindred strength' 'stone skin' 'NONE'
 S 0 0
 E
 potion yellow~

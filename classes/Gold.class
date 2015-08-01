@@ -19,27 +19,27 @@ Expbase        2000
 Craftbase        0
 Resist         1048576
 Suscept        0
-Skill 'antimagic shell' 28 95
-Skill 'armor' 3 95
+Skill 'armadura' 3 95
 Skill 'aura of life' 55 95
 Skill 'battlefield view' 29 95
+Skill 'concha antimagia' 28 95
 Skill 'continual light' 5 95
 Skill 'create fire' 3 95
-Skill 'cure affliction' 23 95
+Skill 'curar afliccion' 23 95
 Skill 'dispel magic' 28 95
 Skill 'dormir' 23 95
 Skill 'ethereal shield' 68 95
 Skill 'extradimensional portal' 38 95
 Skill 'faerie fog' 19 95
 Skill 'greater restore' 80 95
-Skill 'healing essence' 13 95
 Skill 'invisibilidad' 60 95
 Skill 'kindred strength' 11 95
 Skill 'knock' 17 95
 Skill 'lend health' 19 95
 Skill 'locate object' 16 95
-Skill 'refresh' 5 95
+Skill 'refrescar' 5 95
 Skill 'sagacidad' 18 95
+Skill 'sanar' 13 95
 Skill 'searing light' 40 95
 Skill 'shadowform' 90 95
 Skill 'shockshield' 32 95

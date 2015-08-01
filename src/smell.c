@@ -62,19 +62,19 @@ void do_smell( CHAR_DATA *ch, char *argument )
     bool                    firststep = true;
 
     if ( !IS_NPC( ch ) && ch->pcdata->learned[gsn_smell] <= 0 ) {
-        send_to_char( "You do not know of this skill yet.\r\n", ch );
+        send_to_char( "No conoces esta habilidad.\r\n", ch );
         return;
     }
 
     if ( ch->Class == CLASS_DRUID || ch->secondclass == CLASS_DRUID
          || ch->thirdclass == CLASS_DRUID ) {
-        send_to_char( "You cannot use this skill yet.\r\n", ch );
+        send_to_char( "No puedes usar esta habilidad todavía.\r\n", ch );
         return;
     }
 
     one_argument( argument, arg );
     if ( arg == NULL || arg[0] == '\0' ) {
-        send_to_char( "Whom are you trying to catch the scent of?\r\n", ch );
+        send_to_char( "¿A quién?", ch );
         return;
     }
     WAIT_STATE( ch, skill_table[gsn_smell]->beats );

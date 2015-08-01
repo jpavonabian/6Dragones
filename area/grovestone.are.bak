@@ -584,7 +584,7 @@ A humming yellow potion lies here.~
 1 1 0
 4
 14
-'kindred strength' 'stone skin' 'armor'
+'kindred strength' 'stone skin' 'NONE'
 S 0 0
 #32002
 bloody potion~
@@ -596,7 +596,7 @@ A bloody potion lies here.~
 1 6 0
 4
 3
-'cure critical' 'cure critical' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #32003
 dark short sword~

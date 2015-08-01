@@ -940,7 +940,7 @@ A large, greenish pill lies here~
 1 50 500
 1
 9
-'aqua breath' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #18002
 Flask air~
@@ -952,7 +952,7 @@ A tiny flask of air lies here~
 1 50 5
 1
 0
-'aqua breath' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #18003
 conch shell~

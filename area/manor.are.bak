@@ -1064,7 +1064,7 @@ a rolling pin~
 A rolling pin lies on the ground, forgotten.~
 ~
 5 8454208 8193
-12 3 10 4 5 0 0
+12 1 5 4 5 0 0
 3 500 50
 1
 0
@@ -1105,7 +1105,7 @@ A book entitled "50 Ways to Heal the Dying" lies on the ground.~
 1 0 0
 1
 0
-'cure critical'
+'NONE'
 S 3 0
 E
 book~
@@ -1118,7 +1118,7 @@ a plaid smoking jacket~
 A old, plaid smoking jacket has been left on the ground.~
 ~
 9 256 9
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 8 0 0
 1
 0
@@ -1203,7 +1203,7 @@ A fang filled with python's venom has been dropped here.~
 1 2000 200
 1
 0
-'poison'
+'NONE'
 S 3 0
 #2416
 dresser~
@@ -1243,7 +1243,7 @@ A bar of soap is here for you to trip over.~
 1 3000 300
 1
 0
-'heal' 'armor' 'refresh'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #2419
 nightshirt shirt~
@@ -1277,7 +1277,7 @@ a silk bathrobe~
 A soft silk bathrobe sits here, waiting to be worn.~
 ~
 9 262144 9
-5 5 0 0 0 0 0
+10 10 0 0 0 0 0
 7 1600 160
 1
 0
@@ -1306,7 +1306,7 @@ black patent leather shoes~
 Some rich person has left their black patent leather shoes here.~
 ~
 9 262144 65
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 2 1000 100
 1
 0
@@ -1353,7 +1353,7 @@ On the ground is a vial of undead spirit potion.~
 1 3000 300
 1
 0
-'heal' 'detect evil' 'invis'
+'NONE' 'detect evil' 'invisibilidad'
 S 3 0
 #2427
 dog collar~
@@ -1482,7 +1482,7 @@ A book of fairy tales has been left on the floor.~
 1 1000 100
 1
 0
-'detect magic' 'fly' 'armor'
+'detect magic' 'fly' 'NONE'
 S 3 0
 #2436
 pocket watch~
@@ -1531,7 +1531,7 @@ A brush drips with fresh watercolor paint.~
 1 0 0
 1
 0
-'colour spray'
+'NONE'
 S 3 0
 #2440
 make-up compact~
@@ -1579,7 +1579,7 @@ a panther-crested shield~
 Lying here is a shield with the crest of a panther.~
 ~
 9 0 513
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 3 50 5
 1
 0
@@ -1609,7 +1609,7 @@ An avatar's scroll lies here.~
 1 10000 1000
 1
 0
-'kindred strength' 'sagacity' 'dragon wit'
+'kindred strength' 'NONE' 'dragon wit'
 S 3 0
 E
 scroll~
@@ -1714,7 +1714,7 @@ a nasty torturer's whip~
 A long, nasty-looking whip lies here.~
 ~
 5 199252 8193
-12 3 10 5 3 0 0
+12 5 15 5 3 0 0
 2 5400 540
 1
 0
@@ -1731,7 +1731,7 @@ black torturer's mask~
 On the ground lies a black mask with two eyeholes.~
 ~
 9 199188 17
-5 5 0 0 0 0 0
+10 10 0 0 0 0 0
 3 3000 300
 1
 0
@@ -1746,7 +1746,7 @@ a pair of torn pants~
 An old pair of torn pants have been dropped here.~
 ~
 9 0 33
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 1 100 10
 1
 0
@@ -1770,7 +1770,7 @@ a riding stick~
 A riding stick has been dropped here.~
 ~
 5 64 8193
-12 3 10 7 5 0 0
+12 5 15 7 5 0 0
 4 450 45
 1
 0
@@ -1787,7 +1787,7 @@ a pair of leather chaps~
 A pair of leather chaps have been discarded here.~
 ~
 9 262144 33
-5 5 0 0 0 0 0
+10 10 0 0 0 0 0
 2 630 63
 1
 0
@@ -1850,7 +1850,7 @@ A head of lettuce is growing here.~
 4 500 50
 1
 0
-'cure critical' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #2463
 port barrel wine~
@@ -1891,7 +1891,7 @@ a deck of playing cards~
 A deck of playing cards lies here.~
 ~
 9 0 16385
-5 5 0 0 0 0 0
+10 10 0 0 0 0 0
 2 0 0
 1
 0
@@ -1938,7 +1938,7 @@ A Sprite~
 1 0 0
 1
 0
-'heal' 'heal' 'heal'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #0
 

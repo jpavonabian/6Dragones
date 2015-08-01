@@ -35,7 +35,6 @@ Skill 'extradimensional portal' 2 95
 Skill 'farsight' 21 95
 Skill 'feline grace' 6 95
 Skill 'fly' 7 95
-Skill 'greater heal' 33 95
 Skill 'greater restore' 80 95
 Skill 'heroism' 9 95
 Skill 'inmovilizar' 88 50
@@ -43,8 +42,9 @@ Skill 'nocegar' 7 95
 Skill 'ogre vitality' 13 95
 Skill 'pass door' 22 95
 Skill 'portal' 28 95
-Skill 'restore life' 60 95
+Skill 'restaurar vida' 60 95
 Skill 'sagacidad' 14 95
+Skill 'sanacion maxima' 33 95
 Skill 'sanar' 13 95
 Skill 'santuario' 17 95
 Skill 'silencio' 1 95

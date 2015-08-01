@@ -1228,7 +1228,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 500 100
 1
 0
-'greater heal' 'restore mana' 'refresh'
+'NONE' 'restore mana' 'NONE'
 S 3 0
 #3769
 sapphire potion~
@@ -1240,7 +1240,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 2
 0
-'refresh' 'refresh' 'refresh'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #3770
 amethyst potion~
@@ -1252,7 +1252,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 2
 0
-'dragonskin' 'armor' 'bless'
+'dragonskin' 'NONE' 'NONE'
 S 3 0
 #3771
 ruby potion~
@@ -1264,7 +1264,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 2
 0
-'stone skin' 'armor' 'bless'
+'stone skin' 'NONE' 'NONE'
 S 3 0
 #3772
 topaz potion~
@@ -1276,7 +1276,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 1
 0
-'sneak' 'invis' 'mass invis'
+'NONE' 'invisibilidad' 'NONE'
 S 3 0
 #3773
 emerald potion~
@@ -1288,7 +1288,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 2
 0
-'dispel magic' 'invis' 'refresh'
+'dispel magic' 'invisibilidad' 'NONE'
 S 3 0
 #3774
 diamond potion~
@@ -1312,7 +1312,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 2
 0
-'cure poison' 'cure blindness' 'remove curse'
+'cure poison' 'NONE' 'NONE'
 S 3 0
 #3776
 pearl potion~
@@ -1336,7 +1336,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 2
 0
-'invis' 'heal' 'refresh'
+'invisibilidad' 'NONE' 'NONE'
 S 3 0
 #3778
 gold potion~
@@ -1360,7 +1360,7 @@ A glass flask with some sort of color changing liquid in it lies here.~
 2 1000 100
 2
 0
-'sanctuary' 'bless' 'armor'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #3780
 platinum potion~

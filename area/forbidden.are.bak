@@ -16,7 +16,7 @@ $
 #SPELLLIMIT 0
 #WEATHERCELL 0 0
 
-#RESETMSG &cThere is a clattering noise suddenly of something moving along the passageway.~
+#RESETMSG De pronto escuchas el ruído que ocasiona algo al moverse por los pasillos.~
 
 #FLAGS
 49152
@@ -1456,7 +1456,7 @@ A small bucket of dragon saliva has been left here.~
 3 5 0
 3
 1
-'cure critical' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 E
 'small' 'bucket' 'saliva' 'dragon'~
@@ -1473,7 +1473,7 @@ A large bucket of dragon saliva has been left here.~
 8 2 0
 2
 1
-'heal' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 E
 'large' 'bucket' 'saliva'~
@@ -1825,7 +1825,7 @@ A bucket of cures has been left here.~
 1 10 1
 2
 5
-'cure affliction' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #35541
 thrashing tail~
@@ -1922,8 +1922,8 @@ E
 cartel~
 Es una piedra gigante en forma de rectángulo que llega casi al techo. 
 mediante el uso de su magia, los dragones importantes de la ciudad 
-escriben noticias y anuncios importantes para sus cuiudadanos. Para echar 
-un vestazo, mira las noticias. 
+escriben noticias y anuncios importantes para sus ciudadanos. Para echar 
+un vistazo, mira las noticias. 
 ~
 E
 noticias~
@@ -1951,7 +1951,7 @@ Extra Lairs~
 1 1073741828 1
 S
 #35500
-At the Base of a Mountain~
+en la base de la montaña~
 ~
 A gravel trail climbs up the length of the mountain above. There are many 
 pine trees surrounding the mountain, and hills in the area. A small pond 
@@ -2420,7 +2420,7 @@ D3
 0 -1 35522
 S
 #35522
-Before an Ancient Temple~
+ante un antiguo templo~
 ~
 An enormous cavern that has many columns that have many intricate designs 
 along them is to the south. Large blocks of perfectly cut stone slabs make 
@@ -2438,7 +2438,7 @@ D2
 0 -1 35523
 S
 #35523
-Altar to the Creator~
+Altar del Creador~
 ~
 The vast room has giant pillars of marble supporting the ceiling. There 
 are lush tapestries hanging from the walls. A massive stone altar in the 

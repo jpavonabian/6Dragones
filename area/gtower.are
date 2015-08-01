@@ -807,7 +807,7 @@ A glowing yellow potion was left here.~
 1 5 0
 4
 14
-'bless' 'cure critical' 'refresh'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #18608
 glowing green potion~
@@ -819,7 +819,7 @@ A glowing green potion has been left here.~
 2 20 2
 2
 9
-'cure critical' 'cure critical' 'kindred strength'
+'NONE' 'NONE' 'kindred strength'
 S 0 0
 #18609
 elegant rapier~
@@ -877,7 +877,7 @@ a long handled knife~
 A long handled knife has been left here.~
 ~
 5 0 8193
-0 3 10 1 2 0 0
+0 5 15 1 2 0 0
 2 89 8
 4
 8

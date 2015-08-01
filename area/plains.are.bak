@@ -236,7 +236,7 @@ Some herbs are lying here, small green leaves and tiny pink flowers.~
 1 5 0
 1
 0
-'bless' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 E
 herbs herb timian~
@@ -254,7 +254,7 @@ Some black gyvel is lying here, dark green with black leaves and tiny
 1 50 5
 1
 0
-'poison' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 E
 herbs herb gyvel~
@@ -376,7 +376,7 @@ A strange template made of an exotic green metal is placed here~
 1 15000 1500
 1
 0
-'NONE' 'blindness' 'fireball'
+'NONE' 'NONE' 'NONE'
 S 0 0
 E
 template scroll metal~

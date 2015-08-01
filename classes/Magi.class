@@ -20,8 +20,7 @@ Craftbase        50
 Resist         0
 Suscept        0
 Skill 'aliento acido' 41 95
-Skill 'antimagic shell' 49 95
-Skill 'armor' 5 95
+Skill 'armadura' 5 95
 Skill 'astral walk' 14 95
 Skill 'aura of courage' 51 95
 Skill 'bolafuego' 7 95
@@ -29,6 +28,7 @@ Skill 'causar criticas' 10 95
 Skill 'causar leves' 1 95
 Skill 'cegar' 6 95
 Skill 'chill' 13 95
+Skill 'concha antimagia' 49 95
 Skill 'continual light' 1 95
 Skill 'create spring' 3 95
 Skill 'detect hidden' 5 95
@@ -47,13 +47,13 @@ Skill 'flamestrike' 24 95
 Skill 'fly' 4 95
 Skill 'frost breath' 35 95
 Skill 'grupo invisible' 17 95
-Skill 'healing essence' 14 95
 Skill 'iceshield' 22 95
 Skill 'invisibilidad' 2 95
 Skill 'maldecir' 14 95
 Skill 'portal' 31 95
 Skill 'resilience' 46 95
 Skill 'sagacidad' 14 95
+Skill 'sanar' 14 95
 Skill 'santuario' 15 95
 Skill 'shadowform' 55 95
 Skill 'shockshield' 24 95

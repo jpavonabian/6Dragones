@@ -1391,7 +1391,7 @@ some cloud boots~
 A pair of cloud boots float here.~
 ~
 9 259 65
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 1 100 2
 1
 0
@@ -1577,7 +1577,7 @@ the Heaume of Solomon~
 A gleaming silver heaume glows here.~
 ~
 9 524617 17
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 20 104 500
 4
 14
@@ -1594,7 +1594,7 @@ the Guard of Solomon~
 A polished guard shield is here, humming softly.~
 ~
 9 524618 513
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 40 93 500
 4
 14
@@ -1892,7 +1892,7 @@ $n blow$q upon a long silver trumpet, sound blasting loudly!~
 5 500 50
 2
 8
-'colour spray'
+'NONE'
 S 0 0
 E
 long silver trumpet~

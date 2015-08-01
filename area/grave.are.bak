@@ -246,7 +246,7 @@ a rake~
 A rake is lying here.~
 ~
 5 0 8193
-0 7 16 5 0 0 0
+0 14 24 5 0 0 0
 8 30 3
 1
 0
@@ -265,7 +265,7 @@ An ugly little maggot crawls along here.~
 1 250 25
 1
 0
-'cure critical' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #3610
 skeleton~

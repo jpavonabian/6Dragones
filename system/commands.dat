@@ -387,6 +387,15 @@ Log         0
 End
 
 #COMMAND
+Name        administracion~
+Code        do_stafflist
+Position    100
+Level       1
+CShow       1
+Log         0
+End
+
+#COMMAND
 Name        balzhur~
 Code        do_balzhur
 Position    108
@@ -965,6 +974,15 @@ Log         0
 End
 
 #COMMAND
+Name        correr~
+Code        do_run
+Position    100
+Level       1
+CShow       1
+Log         0
+End
+
+#COMMAND
 Name        dejar~
 Code        do_drop
 Position    106
@@ -1284,7 +1302,7 @@ Flags       128
 End
 
 #COMMAND
-Name        enter~
+Name        entrar~
 Code        do_enter
 Position    115
 Level       0
@@ -1923,7 +1941,7 @@ Log         3
 End
 
 #COMMAND
-Name        ignore~
+Name        ignorar~
 Code        do_ignore
 Position    100
 Level       1
@@ -3827,7 +3845,7 @@ Log         3
 End
 
 #COMMAND
-Name        restore~
+Name        restaurar~
 Code        do_restore
 Position    100
 Level       108
@@ -4072,15 +4090,6 @@ End
 #COMMAND
 Name        rolcalificar~
 Code        do_rprate
-Position    100
-Level       1
-CShow       1
-Log         0
-End
-
-#COMMAND
-Name        run~
-Code        do_run
 Position    100
 Level       1
 CShow       1
@@ -4333,7 +4342,7 @@ Log         4
 End
 
 #COMMAND
-Name        socials~
+Name        sociales~
 Code        do_socials
 Position    100
 Level       0
@@ -4534,15 +4543,6 @@ End
 #COMMAND
 Name        speed~
 Code        do_speed
-Position    100
-Level       1
-CShow       1
-Log         0
-End
-
-#COMMAND
-Name        stafflist~
-Code        do_stafflist
 Position    100
 Level       1
 CShow       1
@@ -4759,7 +4759,7 @@ Log         0
 End
 
 #COMMAND
-Name        transfer~
+Name        transferir~
 Code        do_transfer
 Position    100
 Level       101

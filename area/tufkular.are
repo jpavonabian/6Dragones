@@ -880,7 +880,7 @@ a worthless shield~
 A small metal shield lies on the ground.~
 ~
 9 0 513
-30 30 0 0 0 0 0
+20 20 0 0 0 0 0
 1 0 0
 1
 6
@@ -920,7 +920,7 @@ a worthless axe~
 A sharp rock tied to a stick is lying here.~
 ~
 5 0 8193
-0 10 20 3 9 0 40
+0 15 30 3 9 0 40
 1 0 0
 1
 0
@@ -931,7 +931,7 @@ a cheap buckler~
 A piece of hide tied to some wood lies here undisturbed.~
 ~
 9 0 513
-30 30 0 0 0 0 0
+20 20 0 0 0 0 0
 1 0 0
 1
 0
@@ -955,7 +955,7 @@ a spatula~
 A small spatula lies here.~
 ~
 5 0 8193
-8 10 20 3 2 0 40
+8 5 15 3 2 0 40
 1 0 0
 1
 0
@@ -977,7 +977,7 @@ a newly created white apron~
 Some god dropped a newly created white apron here.~
 ~
 9 0 2049 32
-20 20 0 0 0 0 0
+10 10 0 0 0 0 0
 1 0 0
 1
 0
@@ -1082,7 +1082,7 @@ A pair of aether shoes~
 A pair of shoes made entirely out of light.~
 ~
 9 524289 65 32
-10 10 0 0 0 0 0
+20 20 0 0 0 0 0
 1 500 50
 1
 0
@@ -1097,7 +1097,7 @@ A pair of aether boots~
 A pair of tough boots made entirely out of light.~
 ~
 9 524289 65 32
-10 10 0 0 0 0 0
+20 20 0 0 0 0 0
 1 750 75
 1
 0
@@ -1112,7 +1112,7 @@ A pair of aether sandals~
 A pair of sandals made entirely out of light.~
 ~
 9 524289 65 2
-20 20 0 0 0 0 0
+30 30 0 0 0 0 0
 1 900 90
 1
 0
@@ -1125,7 +1125,7 @@ A set of aether armor~
 A set of armor made entirely out of light.~
 ~
 9 524289 9 12
-20 20 0 0 0 0 0
+30 30 0 0 0 0 0
 1 1000 100
 1
 0
@@ -1138,7 +1138,7 @@ A pair of aether gloves~
 A pair of gloves made entirely of light.~
 ~
 9 524289 129 32
-30 30 0 0 0 0 0
+10 10 0 0 0 0 0
 1 350 35
 1
 0
@@ -1250,7 +1250,7 @@ An aether dagger~
 A dagger made entirely out of light.~
 ~
 5 524289 8193
-0 15 30 2 2 0 50
+0 10 20 2 2 0 50
 1 750 75
 1
 0
@@ -1304,7 +1304,7 @@ A crystal vial containing a slightly glowing liquid.~
 1 750 75
 1
 0
-'sanctuary' 'armor' 'bless'
+'NONE' 'NONE' 'NONE'
 S 3 0
 #28283
 aether crystal sack~

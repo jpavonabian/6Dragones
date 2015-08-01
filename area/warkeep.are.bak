@@ -583,7 +583,7 @@ A bright green potion has been left here.~
 1 2500 250
 1
 0
-'stone skin' 'protection' 'cause light'
+'stone skin' 'protection' 'NONE'
 S 0 0
 #15706
 potion~
@@ -595,7 +595,7 @@ A bright red potion has been left here.~
 1 2500 250
 1
 0
-'curse' 'armor' 'cure serious'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #15707
 scroll~
@@ -619,7 +619,7 @@ A fire scroll is curled up on the floor here.~
 1 2500 250
 1
 0
-'fire breath' 'flamestrike' 'fireball'
+'fire breath' 'flamestrike' 'NONE'
 S 0 0
 #15709
 wand~
@@ -631,7 +631,7 @@ A wand inscribed with strange runes lies here.~
 1 2500 250
 1
 0
-'cause critical'
+'NONE'
 S 0 0
 #15710
 dagger~
@@ -639,7 +639,7 @@ a dagger~
 &wA rune-covered dagger has been left here.&D~
 ~
 5 594 8193
-0 10 20 2 2 0 543516788
+0 15 30 2 2 0 543516788
 5 100 10
 1
 8
@@ -703,7 +703,7 @@ a fire drake hide~
 &rA hide of a fire drake has been left here.&D~
 ~
 9 514 1025
-30 30 0 0 0 0 0
+20 20 0 0 0 0 0
 25 0 0
 1
 6
@@ -796,7 +796,7 @@ a spellbook~
 4 0 0
 1
 1
-'blindness' 'weaken' 'word of recall'
+'NONE' 'weaken' 'word of recall'
 S 0 0
 #15723
 pit~
@@ -858,7 +858,7 @@ a steel sword~
 &wA rare steel sword covered in runes lies here.&D~
 ~
 5 65 8193
-0 10 30 1 1 0 0
+0 15 30 1 1 0 0
 10 300 30
 1
 8
@@ -873,7 +873,7 @@ a magic ring~
 &bA magic ring floats around here.&D~
 ~
 9 32833 3
-30 30 0 0 0 0 0
+20 20 0 0 0 0 0
 1 0 0
 1
 7
@@ -907,7 +907,7 @@ a green elven cloak~
 &GA green elven cloak has been left here.&D~
 ~
 9 0 1025
-20 20 0 0 0 0 0
+30 30 0 0 0 0 0
 3 0 0
 1
 9
@@ -970,7 +970,7 @@ a flind bar~
 &wA flind bar has been left here.&D~
 ~
 9 512 1
-20 20 0 7 0 0 0
+10 10 0 7 0 0 0
 5 0 0
 1
 8

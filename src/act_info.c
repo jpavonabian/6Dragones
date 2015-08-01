@@ -1608,7 +1608,7 @@ void gen_wilderness_desc( CHAR_DATA *ch )
                 break;
             case SECT_AREA_ENT:
                 send_to_char
-                    ( "La tierra salvaje acaba aquí. Puedes entrar y salir de\r\neste lugar.  La salida parece ser entrando\r\na un nuevo lughar.\r\n",
+                    ( "La tierra salvaje acaba aquí. Puedes entrar y salir de\r\neste lugar.  La salida parece ser entrando\r\na un nuevo lugar.\r\n",
                       ch );
                 break;
             case SECT_LAVA:

@@ -1355,7 +1355,7 @@ a gnarled staff~
 A gnarled staff is here.~
 ~
 5 0 8193
-0 3 10 4 11 0 0
+0 1 5 4 11 0 0
 15 600 60
 1
 0
@@ -1397,7 +1397,7 @@ A bloody potion lies here.~
 22 1500 150
 1
 0
-'cure critical' 'cure critical' 'kindred strength'
+'NONE' 'NONE' 'kindred strength'
 S 2 0
 #1507
 cloak bloody~
@@ -1503,7 +1503,7 @@ a pair of gnome boots~
 You notice a pair of gnomish boots.~
 ~
 9 0 65
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 12 12000 1200
 1
 0
@@ -1599,7 +1599,7 @@ A potion of life healing has left here.~
 1 1 0
 1
 0
-'heal' 'bless' 'refresh'
+'NONE' 'NONE' 'NONE'
 S 2 0
 #1524
 lever~
@@ -1819,7 +1819,7 @@ A weathered vellum scroll rests here.~
 1 0 0
 1
 0
-'dispel magic' 'bless' 'protection'
+'dispel magic' 'NONE' 'protection'
 S 2 0
 E
 scroll~
@@ -1908,7 +1908,7 @@ A beaker full of a glowing liquid sits here, brewing and boilding.~
 1 0 0
 1
 0
-'bless' 'cure critical' 'refresh'
+'NONE' 'NONE' 'NONE'
 S 2 0
 #1538
 grey ratty labcoat~
@@ -1983,7 +1983,7 @@ A fizzing vial was left here.~
 1 20 150
 2
 0
-'cure critical' 'cure critical' 'kindred strength'
+'NONE' 'NONE' 'kindred strength'
 S 2 0
 #1543
 cloak plaid cotton~

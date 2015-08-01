@@ -2461,7 +2461,7 @@ A strange looking herb is on the ground here.~
 1 2 0
 2
 0
-'cure serious' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #30020
 ball of return~

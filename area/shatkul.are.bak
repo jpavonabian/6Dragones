@@ -1977,7 +1977,7 @@ a pickaxe~
 A mining pickaxe has been left here.~
 ~
 5 0 8193
-0 15 30 2 1 0 0
+0 10 20 2 1 0 0
 6 0 0
 1
 8
@@ -2022,7 +2022,7 @@ a skull helmet~
 A skull helmet has been left here.~
 ~
 9 0 17
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 3 97 9
 2
 5

@@ -1626,7 +1626,7 @@ a ruby sabre~
 A long sabre, completely covered in rubies, is stuck in the ground here.~
 ~
 5 147457 8193
-0 20 35 1 1 0 0
+0 15 30 1 1 0 0
 5 244 -15536
 3
 0
@@ -1803,7 +1803,7 @@ A single marigold is pushing up through the soil here.~
 1 2000000 3392
 1
 0
-'sanctuary'
+'NONE'
 S 0 0
 #24813
 pansy flower~
@@ -1815,7 +1815,7 @@ A tasty-looking pansy grows by itself off to the side here.~
 1 2000000 3392
 1
 0
-'stone skin' 'shield' 'protection'
+'stone skin' 'NONE' 'protection'
 S 0 0
 #24814
 primrose flower~
@@ -1995,7 +1995,7 @@ the Ice Breastplate~
 A large breastplate made entirely of ice lies here twinkling the ground.~
 ~
 9 1 9
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 10 500 -15536
 1
 0
@@ -2061,7 +2061,7 @@ the Ice Gauntlets~
 Two rock-hard gauntlets made entirely of ice lie here waiting to be picked up.~
 ~
 9 1 129
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 3 225000 22500
 1
 0
@@ -2401,7 +2401,7 @@ A crystal clear, perfectly formed sphere gives off its own light here.~
 1 1000000 -31072
 1
 0
-'sanctuary'
+'NONE'
 S 0 0
 #24858
 ice tooth~
@@ -2409,7 +2409,7 @@ the Ice Tooth~
 The razor-sharp tooth of a white dragon lies here embedded in the ground.~
 ~
 5 25313281 8193
-0 25 45 2 2 0 0
+0 20 40 2 2 0 0
 2 800 18928
 1
 0
@@ -2722,7 +2722,7 @@ the Slave Crown~
 An ordinary-looking crown with a blood red stone lies here.~
 ~
 9 208 17
-10 10 0 0 0 0 0
+20 20 0 0 0 0 0
 1 13 1
 1
 0
@@ -2831,7 +2831,7 @@ a clear visor~
 A flimsy-looking visor lies here crumpled on the ground.~
 ~
 9 0 17
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 1 1000 100
 1
 0

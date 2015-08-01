@@ -1045,7 +1045,7 @@ A large golden orb draws your eye.~
 8 14 1
 2
 14
-'sanctuary'
+'NONE'
 S 0 0
 A
 12 25
@@ -2335,7 +2335,7 @@ now, and the resigned sense of calmness has overcome you as you prepare
 to tumble over the waterfall unless you can somehow manage to leap onto
 one of the several overhanging redwood limbs.
 ~
-1 19922948 25
+1 19922948 0
 D3
 ~
 ~

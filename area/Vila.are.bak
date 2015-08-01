@@ -733,7 +733,7 @@ A voodoo broth lays here.~
 1 10 8
 1
 2
-'remove curse' 'cure poison' 'cure blindness'
+'NONE' 'cure poison' 'NONE'
 S 3 0
 #10209
 small drum~
@@ -872,7 +872,7 @@ A strange looking bottle is laying here.~
 1 300 30
 1
 8
-'sanctuary' 'cure light' 'bless'
+'NONE' 'cure light' 'NONE'
 S 3 0
 #10221
 feces bamboo short spear~

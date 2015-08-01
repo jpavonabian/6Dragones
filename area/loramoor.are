@@ -834,7 +834,7 @@ an elven crafted chainmail leggings~
 A set of well crafted iron chainmail leggings was left here.~
 ~
 9 0 33
-30 30 0 0 0 0 0
+40 40 0 0 0 0 0
 8 5 0
 2
 8
@@ -860,7 +860,7 @@ A packet of some ugly yellow weeds has been left here.~
 1 100 10
 3
 14
-'cure serious' 'NONE'
+'NONE' 'NONE'
 S 0 0
 #31610
 talkan herb~
@@ -872,7 +872,7 @@ A packet of green foliage has been left here.~
 1 30 3
 3
 11
-'bless' 'NONE'
+'NONE' 'NONE'
 S 0 0
 #31611
 garlanta flowers homebound~
@@ -907,7 +907,7 @@ A slice of bread has been left here.~
 1 40 4
 2
 1
-'NONE' 'NONE' 'refresh'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #31620
 Medallion Narcista~

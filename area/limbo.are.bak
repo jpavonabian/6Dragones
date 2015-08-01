@@ -1167,7 +1167,7 @@ A pulsing orb lies here, probably lost.~
 1 1 0
 1
 0
-'heal'
+'NONE'
 S 0 0
 > use_prog 100~
 mpecho $n blows sweet dragon's breath over you.
@@ -2984,7 +2984,7 @@ The Shores of The Dragon Sea~
 You have come to these shores in an attempt to aid others, your very 
 blood may soon cover this beach though.
 ~
-1 1075847168 25
+1 1075847168 0
 D6
 ~
 ~

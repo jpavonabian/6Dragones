@@ -1098,7 +1098,7 @@ a sharp bone~
 A small sharp bone with a tiny bit of meat left on it.~
 ~
 5 0 1
-10 15 30 6 2 0 0
+10 10 20 6 2 0 0
 1 20 2
 1
 0
@@ -1521,7 +1521,7 @@ A Red Potion rests unbroken on the ground.~
 1 10 1
 2
 3
-'cure critical' 'NONE' 'elven beauty'
+'NONE' 'NONE' 'elven beauty'
 S 0 0
 #28032
 blue potion~
@@ -1545,7 +1545,7 @@ A Foamy Potion is on the ground.~
 1 10 1
 1
 0
-'remove curse' 'cure poison' 'word of recall'
+'NONE' 'cure poison' 'word of recall'
 S 0 0
 > get_prog 100~
 if quest(Karnae) == 2
@@ -1563,7 +1563,7 @@ A Grey Potion rests on the ground.~
 1 10 1
 1
 0
-'float' 'alertness' 'armor'
+'float' 'alertness' 'NONE'
 S 0 0
 #28035
 tattered scroll~
@@ -1575,7 +1575,7 @@ A Tattered Scroll is on the ground.~
 1 10 1
 1
 0
-'aqua breath' 'detect hidden' 'detect invis'
+'NONE' 'detect hidden' 'detect invis'
 S 0 0
 #28036
 frayed scroll~
@@ -1587,7 +1587,7 @@ A Frayed Scroll is laying on the ground.~
 1 100 10
 1
 0
-'enchant weapon' 'curse' 'NONE'
+'enchant weapon' 'NONE' 'NONE'
 S 0 0
 #28037
 stained scroll~
@@ -1599,7 +1599,7 @@ A Stained Scroll is here.~
 1 20 2
 1
 0
-'sagacity' 'trollish vigor' 'dragon wit'
+'NONE' 'trollish vigor' 'dragon wit'
 S 0 0
 #28038
 healers staff~
@@ -1611,7 +1611,7 @@ A long staff has been left here.~
 1 20 2
 1
 0
-'heal'
+'NONE'
 S 0 0
 #28039
 fuzzy pill~
@@ -1623,7 +1623,7 @@ A Fuzzy Pill has been dropped here.~
 1 5 0
 1
 0
-'cure serious' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #28040
 green pill~
@@ -1635,7 +1635,7 @@ A Green Pill is on the ground.~
 1 8 0
 2
 11
-'cure critical' 'NONE' 'NONE'
+'NONE' 'NONE' 'NONE'
 S 0 0
 #28041
 pink pill~
@@ -1659,7 +1659,7 @@ An Ebony Wand lays on the ground.~
 1 10 1
 1
 0
-'cure blindness'
+'NONE'
 S 0 0
 #28043
 white wand~

@@ -415,7 +415,7 @@ A handful of violet amaranth berries lies here in a small pile. ~
 1 300 30
 1
 10
-'greater heal' 'refresh' 'draw mana'
+'NONE' 'NONE' 'draw mana'
 S 0 0
 E
 amaranth violet berries~

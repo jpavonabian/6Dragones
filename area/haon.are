@@ -595,7 +595,7 @@ a chequered shirt~
 A chequered shirt lies here.~
 ~
 9 0 9
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 2 20 2
 1
 0
@@ -614,7 +614,7 @@ a pair of leather boots~
 A pair of leather boots lies here.~
 ~
 9 0 65
-2 2 0 0 0 0 0
+5 5 0 0 0 0 0
 4 60 6
 1
 0
@@ -780,7 +780,7 @@ a long, grey branch~
 A long, grey branch rests heavily on the ground.~
 pound~
 5 0 8193
-0 14 24 7 0 0 0
+0 7 16 7 0 0 0
 30 60 6
 1
 0
@@ -842,7 +842,7 @@ A humming yellow potion lies here.~
 2 1000 100
 1
 0
-'kindred strength' 'stone skin' 'armor'
+'kindred strength' 'stone skin' 'NONE'
 S 0 0
 E
 potion yellow~
@@ -896,7 +896,7 @@ a heavy ring of iron~
 A heavy ring of iron has been lost here.~
 ~
 9 64 3
-5 5 0 0 0 0 0
+10 10 0 0 0 0 0
 4 5000 500
 1
 0
