@@ -1712,6 +1712,48 @@ bool read_from_descriptor( DESCRIPTOR_DATA *d )
     d->inbuf[iStart] = '\0';
     return TRUE;
 }
+/*
+ * Funcion que reconoce los caracteres permitidos, incluyendo asi
+ * los caracteres españoles que no están en el ASCII.
+ */
+  
+bool char_que_sirve(char c)
+{
+  if (isascii (c) && isprint (c)  )
+    return TRUE;
+
+  switch(c)
+    {
+    case 'ü':
+    case 'Ü':
+    case 'ñ': 
+    case 'á': 
+    case 'é':
+    case 'í':
+    case 'ó':
+    case 'ú':
+    case 'Ñ':
+    case 'Á':
+    case 'É':
+    case 'Í':
+    case 'Ó':
+    case 'Ú':
+    case 'ç':
+    case 'Ç':
+    case 'à':
+    case 'À':
+    case 'è':
+    case 'È':
+    case 'ò':
+    case 'Ò': return TRUE;
+    default: return FALSE;
+    }
+
+
+}
+
+
+
 
 /*
  * Transfer one line from input buffer to input line.
@@ -1792,8 +1834,10 @@ void read_from_buffer( DESCRIPTOR_DATA *d )
 
         if ( d->inbuf[i] == '\b' && k > 0 )
             --k;
-      else
-         d->incomm[k++] = d->inbuf[i];
+else if ( char_que_sirve(d->inbuf[i]) )
+	{
+	  d->incomm[k++] = d->inbuf[i];
+	}
     }
 
     /*
