@@ -339,9 +339,9 @@ const char             *attack_table_plural[DAM_MAX_TYPE] = {
 };
 
 const char             *weapon_skills[WEP_MAX] = {
-    "2h Espadas largas", "1h Espadas largas", "1h Espadas cortas", "Látigos",
-    "2h Bastones", "1h Bastones", "Tiro con arco", "Cerbatanas", "2h Hachas",
-    "1h Hachas", "Lanza", "Dagas", "Lance", "Trituradora", "Garra", "Polearm"
+    "Armas largas mejoradas", "Armas largas", "Armas cortas", "Látigo",
+    "impactos mejorados", "impactos", "arquero", "Cerbatanas", "hachas mejoradas",
+    "Hachas", "Lanza", "Dagas", "Lance", "Trituradora", "Garra", "Poleas"
 };
 
 const char             *projectiles[PROJ_MAX] = {
