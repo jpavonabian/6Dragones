@@ -2,9 +2,7 @@
 Name          Ciudad Dakar~
 Filename      dakar.city~
 Bank          dakar~
-Duke          Lassiekysh~
-Baron         Krystothon~
-Allegiance    Throng~
+Allegiance    Multitud~
 Defense          221
 Offense          215
 OffenseCatapult  4
@@ -40,16 +38,6 @@ OArrow           41023
 MinHouse         57001
 MaxHouse         58000
 Hardened         0
-End
-
-#ROLLCALL
-Name      Soldurk~
-Joined    1436021637
-Updated    1436023243
-Class     warrior~
-Level     108
-Kills     2
-Deaths    0
 End
 
 #END

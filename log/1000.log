@@ -1,27 +1,23 @@
-Sat Jul 18 10:32:05 2015 :: Copyover: Spawning new log file
-Sat Jul 18 10:32:05 2015 :: Saving player files and connection states....
-Sat Jul 18 10:32:05 2015 :: Saving modified area files...
-Sat Jul 18 10:32:05 2015 :: Executing copyover....
-Sat Jul 18 10:32:05 2015 :: Booting Database
-Sat Jul 18 10:32:05 2015 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
-Sat Jul 18 10:32:05 2015 :: Loading commands
-Sat Jul 18 10:32:05 2015 :: Loading mud channels...
-Sat Jul 18 10:32:05 2015 :: Loading sysdata configuration...
-Sat Jul 18 10:32:05 2015 :: Loading socials
-Sat Jul 18 10:32:05 2015 :: Loading skill table
-Sat Jul 18 10:32:05 2015 :: Sorting skill table...
-Sat Jul 18 10:32:05 2015 :: Remapping slots to sns
-Sat Jul 18 10:32:05 2015 :: Loading classes
-Sat Jul 18 10:32:05 2015 :: Loading races
-Sat Jul 18 10:32:05 2015 :: Loading herb table
-Sat Jul 18 10:32:05 2015 :: Loading tongues
-Sat Jul 18 10:32:05 2015 :: Making 6 Dragons stafflist
-Sat Jul 18 10:32:05 2015 :: Loading MSSP Data...
-Sat Jul 18 10:32:05 2015 :: Building wizinfo
-Sat Jul 18 10:32:05 2015 :: Initializing random number generator
-Sat Jul 18 10:32:05 2015 :: Setting time and weather.
-Sat Jul 18 10:32:05 2015 :: Loading holiday chart...
-Sat Jul 18 10:32:05 2015 :: Assigning gsn's
+Tue Oct 24 15:16:37 2017 :: Booting Database
+Tue Oct 24 15:16:37 2017 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Tue Oct 24 15:16:37 2017 :: Loading commands
+Tue Oct 24 15:16:37 2017 :: Loading mud channels...
+Tue Oct 24 15:16:37 2017 :: Loading sysdata configuration...
+Tue Oct 24 15:16:37 2017 :: Loading socials
+Tue Oct 24 15:16:37 2017 :: Loading skill table
+Tue Oct 24 15:16:37 2017 :: Sorting skill table...
+Tue Oct 24 15:16:37 2017 :: Remapping slots to sns
+Tue Oct 24 15:16:37 2017 :: Loading classes
+Tue Oct 24 15:16:37 2017 :: Loading races
+Tue Oct 24 15:16:37 2017 :: Loading herb table
+Tue Oct 24 15:16:37 2017 :: Loading tongues
+Tue Oct 24 15:16:37 2017 :: Making 6 Dragons stafflist
+Tue Oct 24 15:16:37 2017 :: Loading MSSP Data...
+Tue Oct 24 15:16:37 2017 :: Building wizinfo
+Tue Oct 24 15:16:37 2017 :: Initializing random number generator
+Tue Oct 24 15:16:37 2017 :: Setting time and weather.
+Tue Oct 24 15:16:37 2017 :: Loading holiday chart...
+Tue Oct 24 15:16:37 2017 :: Assigning gsn's
 ASSIGN_GSN: Skill death embrace not found.
 ASSIGN_GSN: Skill heart grab not found.
 ASSIGN_GSN: Skill vista demoniaca not found.
@@ -32,7 +28,7 @@ ASSIGN_GSN: Skill contrabandear not found.
 ASSIGN_GSN: Skill afinidad con cerdos not found.
 ASSIGN_GSN: Skill hablar con la tierra not found.
 ASSIGN_GSN: Skill instrumentos metalicos not found.
-Sat Jul 18 10:32:05 2015 :: Reading in area files...
+Tue Oct 24 15:16:37 2017 :: Reading in area files...
 (help.are)
 limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
 staff.are     : Rooms:  1200 - 1299  Objs:  1200 - 1299  Mobs:  1200 - 1299
@@ -137,104 +133,262 @@ grovestone.are: Rooms: 32000 - 32100 Objs: 32000 - 32100 Mobs: 32000 - 32100
 torain.are    : Rooms: 11600 - 11700 Objs: 11600 - 11700 Mobs: 11600 - 11700
 parade.are    : Rooms: 45150 - 45250 Objs: 45150 - 45250 Mobs: 45150 - 45250
 theatre.are   : Rooms:   500 - 525   Objs:   500 - 525   Mobs:   500 - 525
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54001) has owner set to (Kyrigan), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54002) has owner set to (Galt), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54003) has owner set to (Roselia), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54004) has owner set to (Osaerok), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54005) has owner set to (Koraesag), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54006) has owner set to (Norrindio), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54007) has owner set to (Numair), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54008) has owner set to (Maleficus), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54009) has owner set to (Kimel), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54010) has owner set to (Althea), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54011) has owner set to (Saltus), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54012) has owner set to (Weibble), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54013) has owner set to (Leonem), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54014) has owner set to (Kyndai), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (54015) has owner set to (Gilanthas), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54001) has owner set to (Kyrigan), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54002) has owner set to (Galt), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54003) has owner set to (Roselia), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54004) has owner set to (Osaerok), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54005) has owner set to (Koraesag), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54006) has owner set to (Norrindio), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54007) has owner set to (Numair), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54008) has owner set to (Maleficus), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54009) has owner set to (Kimel), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54010) has owner set to (Althea), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54011) has owner set to (Saltus), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54012) has owner set to (Weibble), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54013) has owner set to (Leonem), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54014) has owner set to (Kyndai), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (54015) has owner set to (Gilanthas), but there is no pfile to go with it.
 phouse.are    : Rooms: 54000 - 55000 Objs: 54000 - 55000 Mobs: 54000 - 55000
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57001) has owner set to (Zaiden), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57002) has owner set to (Yorae), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57003) has owner set to (Lassiekysh), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57004) has owner set to (Bansheena), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57005) has owner set to (Zhaxiaoyen), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57006) has owner set to (Voluntas), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57007) has owner set to (Voluntas), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57008) has owner set to (Voluntas), but there is no pfile to go with it.
-Sat Jul 18 10:32:06 2015 :: load_rooms: Room (57009) has owner set to (Gonth), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57001) has owner set to (Zaiden), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57002) has owner set to (Yorae), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57003) has owner set to (Lassiekysh), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57004) has owner set to (Bansheena), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57005) has owner set to (Zhaxiaoyen), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57006) has owner set to (Voluntas), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57007) has owner set to (Voluntas), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57008) has owner set to (Voluntas), but there is no pfile to go with it.
+Tue Oct 24 15:16:38 2017 :: load_rooms: Room (57009) has owner set to (Gonth), but there is no pfile to go with it.
 dhouse.are    : Rooms: 57000 - 58000 Objs: 57000 - 58000 Mobs: 57000 - 58000
 hive.are      : Rooms: 25000 - 25050 Objs: 25000 - 25050 Mobs: 25000 - 25050
 riders.are    : Rooms: 25200 - 25250 Objs: 25200 - 25250 Mobs: 25200 - 25250
 ships.are     : Rooms: 56300 - 56500 Objs: 56300 - 56500 Mobs: 56300 - 56500
 tomb.are      : Rooms: 28350 - 28400 Objs: 28350 - 28400 Mobs: 28350 - 28400
-Sat Jul 18 10:32:06 2015 :: [*****] BUG: __FileOpen: can't open area/Zlorth.are for r. Called from db.c:6274
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: __FileOpen: can't open area/Zlorth.are for r. Called from db.c:6274
 area/Zlorth.are: No such file or directory
 area/Zlorth.are: No such file or directory
-Sat Jul 18 10:32:06 2015 :: [*****] BUG: load_area: area/Zlorth.are error loading file (can't open)
-Sat Jul 18 10:32:06 2015 :: Loading boards
-Sat Jul 18 10:32:06 2015 :: boards/subastas
-Sat Jul 18 10:32:06 2015 :: boards/Roleplay
-Sat Jul 18 10:32:06 2015 :: boards/General
-Sat Jul 18 10:32:06 2015 :: Loading buildlist
-Sat Jul 18 10:32:06 2015 :: staff/Zlorth
-Sat Jul 18 10:32:06 2015 :: staff/Mewrsuin
-Sat Jul 18 10:32:06 2015 :: staff/Robb
-Sat Jul 18 10:32:06 2015 :: staff/Soldurk
-Sat Jul 18 10:32:06 2015 :: staff/Alanis
-Sat Jul 18 10:32:06 2015 :: staff/Novick
-Sat Jul 18 10:32:06 2015 :: staff/Syldreik
-Sat Jul 18 10:32:06 2015 :: staff/Gerald
-Sat Jul 18 10:32:06 2015 :: staff/Kais
-Sat Jul 18 10:32:06 2015 :: staff/Raoden
-Sat Jul 18 10:32:06 2015 :: Fixing exits
-Sat Jul 18 10:32:06 2015 :: Initializing economy
-Sat Jul 18 10:32:06 2015 :: Resetting areas
-Sat Jul 18 10:32:06 2015 :: Loading storerooms
-Sat Jul 18 10:32:06 2015 :: Loading clans
-Sat Jul 18 10:32:06 2015 :: Loading clans...
-Sat Jul 18 10:32:06 2015 :: throng.cln
-Sat Jul 18 10:32:06 2015 :: alliance.cln
-Sat Jul 18 10:32:06 2015 :: halcyon.cln
-Sat Jul 18 10:32:06 2015 :: $
-Sat Jul 18 10:32:06 2015 ::  Done clans 
-Sat Jul 18 10:32:06 2015 :: Loading quests
-Sat Jul 18 10:32:06 2015 :: Loading currency...
-Sat Jul 18 10:32:06 2015 :: Loading banks
-Sat Jul 18 10:32:06 2015 :: [*****] BUG: fread_bank: Deleting bank kingston because it hasn't been used in at least 366 days.
-Sat Jul 18 10:32:06 2015 :: Loading landmarks
-Sat Jul 18 10:32:06 2015 :: Loading councils
-Sat Jul 18 10:32:06 2015 :: Loading councils...
-Sat Jul 18 10:32:06 2015 :: $
-Sat Jul 18 10:32:06 2015 ::  Done councils 
-Sat Jul 18 10:32:06 2015 :: Loading hometowns
-Sat Jul 18 10:32:06 2015 :: Loading htowns...
-Sat Jul 18 10:32:06 2015 :: paleon.city
-Sat Jul 18 10:32:06 2015 :: Valnaes.htown
-Sat Jul 18 10:32:06 2015 :: forbidden.htown
-Sat Jul 18 10:32:06 2015 :: $
-Sat Jul 18 10:32:06 2015 ::  Done htowns 
-Sat Jul 18 10:32:06 2015 :: Loading cities
-Sat Jul 18 10:32:06 2015 :: Loading cities...
-Sat Jul 18 10:32:06 2015 :: paleon.city
-Sat Jul 18 10:32:06 2015 :: dakar.city
-Sat Jul 18 10:32:06 2015 :: forbidden.city
-Sat Jul 18 10:32:06 2015 ::  Done cities 
-Sat Jul 18 10:32:06 2015 :: Loading bans
-Sat Jul 18 10:32:06 2015 :: Done.
-Sat Jul 18 10:32:06 2015 :: Loading reserved names
-Sat Jul 18 10:32:06 2015 :: Loading auth namelist
-Sat Jul 18 10:32:06 2015 :: Loading corpses
-Sat Jul 18 10:32:06 2015 :: Loading News
-Sat Jul 18 10:32:06 2015 :: Loading Hints...
-Sat Jul 18 10:32:06 2015 :: Loading Morphs
-Sat Jul 18 10:32:06 2015 :: Optimizing Morphs.
-Sat Jul 18 10:32:06 2015 :: Done.
-Sat Jul 18 10:32:06 2015 :: Initializing Autoboot
-Sat Jul 18 10:32:06 2015 :: Initializing socket
-Sat Jul 18 10:32:06 2015 :: 6 Dragones ready at address portent.digital-genesis.com on port 2020.
-Sat Jul 18 10:32:06 2015 :: Initiating copyover recovery.
-Sat Jul 18 10:32:06 2015 :: Loading player data for Zlorth (25K)
-Sat Jul 18 10:32:06 2015 :: Reinicio completado.
-Sat Jul 18 10:32:06 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sat Jul 18 10:32:06 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sat Jul 18 10:32:10 2015 :: Log Zlorth: copyo
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: load_area: area/Zlorth.are error loading file (can't open)
+Tue Oct 24 15:16:38 2017 :: Loading boards
+Tue Oct 24 15:16:38 2017 :: boards/subastas
+Tue Oct 24 15:16:38 2017 :: boards/Roleplay
+Tue Oct 24 15:16:38 2017 :: boards/General
+Tue Oct 24 15:16:38 2017 :: Loading buildlist
+Tue Oct 24 15:16:38 2017 :: staff/Raoden
+Tue Oct 24 15:16:38 2017 :: staff/Alanis
+Tue Oct 24 15:16:38 2017 :: staff/Kais
+Tue Oct 24 15:16:38 2017 :: staff/Syldreik
+Tue Oct 24 15:16:38 2017 :: staff/Zlorth
+Tue Oct 24 15:16:38 2017 :: staff/Gerald
+Tue Oct 24 15:16:38 2017 :: staff/Robb
+Tue Oct 24 15:16:38 2017 :: staff/Soldurk
+Tue Oct 24 15:16:38 2017 :: staff/Novick
+Tue Oct 24 15:16:38 2017 :: Fixing exits
+Tue Oct 24 15:16:38 2017 :: Initializing economy
+Tue Oct 24 15:16:38 2017 :: Resetting areas
+Tue Oct 24 15:16:38 2017 :: Loading storerooms
+Tue Oct 24 15:16:38 2017 :: Loading clans
+Tue Oct 24 15:16:38 2017 :: Loading clans...
+Tue Oct 24 15:16:38 2017 :: throng.cln
+Tue Oct 24 15:16:38 2017 :: alliance.cln
+Tue Oct 24 15:16:38 2017 :: halcyon.cln
+Tue Oct 24 15:16:38 2017 :: $
+Tue Oct 24 15:16:38 2017 ::  Done clans 
+Tue Oct 24 15:16:38 2017 :: Loading quests
+Tue Oct 24 15:16:38 2017 :: Loading currency...
+Tue Oct 24 15:16:38 2017 :: Loading banks
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank accound because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank account because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank althea because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank atlan because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank brinug because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank caelum because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank cellban because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank clamatastra because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank dagg because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank dakar because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank doidus because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank dullin because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank duratus because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank ferrum because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank forbidden because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank galt because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank garrius because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank gonth because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank kairi because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank kentor because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank kimel because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank kingston because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank klorawn because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank kyrigan because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank leonem because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank lyra because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank maleficus because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank mirinda because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank monicashot because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank mordion because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank myrlan because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank paleon because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank playerall because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank raoden because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank saltus because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank sasiri because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank sing because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank varchild because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank vladaar because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank voluntas because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank weib because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank yordstorm because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: fread_bank: Deleting bank zaiden because it hasn't been used in at least 366 days.
+Tue Oct 24 15:16:38 2017 :: Loading landmarks
+Tue Oct 24 15:16:38 2017 :: Loading councils
+Tue Oct 24 15:16:38 2017 :: Loading councils...
+Tue Oct 24 15:16:38 2017 :: $
+Tue Oct 24 15:16:38 2017 ::  Done councils 
+Tue Oct 24 15:16:38 2017 :: Loading hometowns
+Tue Oct 24 15:16:38 2017 :: Loading htowns...
+Tue Oct 24 15:16:38 2017 :: paleon.city
+Tue Oct 24 15:16:38 2017 :: Valnaes.htown
+Tue Oct 24 15:16:38 2017 :: forbidden.htown
+Tue Oct 24 15:16:38 2017 :: $
+Tue Oct 24 15:16:38 2017 ::  Done htowns 
+Tue Oct 24 15:16:38 2017 :: Loading cities
+Tue Oct 24 15:16:38 2017 :: Loading cities...
+Tue Oct 24 15:16:38 2017 :: paleon.city
+Tue Oct 24 15:16:38 2017 :: dakar.city
+Tue Oct 24 15:16:38 2017 :: forbidden.city
+Tue Oct 24 15:16:38 2017 ::  Done cities 
+Tue Oct 24 15:16:38 2017 :: Loading bans
+Tue Oct 24 15:16:38 2017 :: Done.
+Tue Oct 24 15:16:38 2017 :: Loading reserved names
+Tue Oct 24 15:16:38 2017 :: Loading auth namelist
+Tue Oct 24 15:16:38 2017 :: Loading corpses
+Tue Oct 24 15:16:38 2017 :: Loading News
+Tue Oct 24 15:16:38 2017 :: Loading Hints...
+Tue Oct 24 15:16:38 2017 :: Loading Morphs
+Tue Oct 24 15:16:38 2017 :: Optimizing Morphs.
+Tue Oct 24 15:16:38 2017 :: Done.
+Tue Oct 24 15:16:38 2017 :: Initializing Autoboot
+Tue Oct 24 15:16:38 2017 :: Initializing socket
+Tue Oct 24 15:16:38 2017 :: 6 Dragones ready at address jpavonabian on port 4000.
+Tue Oct 24 15:16:38 2017 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:16:40 2017 :: Preloading player data for: Zlorth
+Tue Oct 24 15:16:41 2017 :: Loading player data for Zlorth (25K)
+Tue Oct 24 15:16:41 2017 :: Zlorth (127.0.0.1) has connected.
+Tue Oct 24 15:16:42 2017 :: [*****] BUG: Room #5522: Unknown affect being checked [At an Intersection].
+Tue Oct 24 15:16:46 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 15:16:50 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:16:58 2017 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:16:58 2017 :: [*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:02 2017 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:02 2017 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:02 2017 :: [*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:02 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 15:17:10 2017 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
+Tue Oct 24 15:17:10 2017 :: [*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:14 2017 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:14 2017 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:18 2017 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:18 2017 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:18 2017 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:22 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 15:17:29 2017 :: Log Zlorth: loadup alanis
+Tue Oct 24 15:17:34 2017 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:38 2017 :: [*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:38 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:38 2017 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:42 2017 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:17:58 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 15:17:58 2017 :: [*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:00 2017 :: Log Zlorth: makestafflist 
+Tue Oct 24 15:18:01 2017 :: Log Zlorth: makestafflist 
+Tue Oct 24 15:18:06 2017 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:06 2017 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:10 2017 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:10 2017 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:10 2017 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:10 2017 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:10 2017 :: [*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:14 2017 :: [*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates].
+Tue Oct 24 15:18:14 2017 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:18 2017 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 15:18:22 2017 :: Log Zlorth: reboot mud now
+Tue Oct 24 15:18:22 2017 :: Normal termination of game.
+Tue Oct 24 15:18:22 2017 :: Cleaning up Memory.
+Tue Oct 24 15:18:22 2017 :: Local Channels.
+Tue Oct 24 15:18:22 2017 :: Commands.
+Tue Oct 24 15:18:22 2017 :: Help files.
+Tue Oct 24 15:18:22 2017 :: Reserved name list.
+Tue Oct 24 15:18:22 2017 :: Socials.
+Tue Oct 24 15:18:22 2017 :: Whacking supermob.
+Tue Oct 24 15:18:22 2017 :: Freeing mppause data.
+Tue Oct 24 15:18:22 2017 :: Objects.
+Tue Oct 24 15:18:22 2017 :: Characters.
+Tue Oct 24 15:18:23 2017 :: Descriptors.
+Tue Oct 24 15:18:23 2017 :: Wizinfo Data.
+Tue Oct 24 15:18:23 2017 :: Classes.
+Tue Oct 24 15:18:23 2017 :: Races.
+Tue Oct 24 15:18:23 2017 :: Currency.
+Tue Oct 24 15:18:23 2017 :: Clans.
+Tue Oct 24 15:18:23 2017 :: HTowns.
+Tue Oct 24 15:18:23 2017 :: Cities.
+Tue Oct 24 15:18:23 2017 :: Councils.
+Tue Oct 24 15:18:23 2017 :: Morphs.
+Tue Oct 24 15:18:23 2017 :: Title table.
+Tue Oct 24 15:18:23 2017 :: Bans.
+Tue Oct 24 15:18:23 2017 :: Boards.
+Tue Oct 24 15:18:23 2017 :: Area and Build data.
+Tue Oct 24 15:18:23 2017 :: Languages.
+Tue Oct 24 15:18:23 2017 :: Auction.
+Tue Oct 24 15:18:23 2017 :: System data.
+Tue Oct 24 15:18:23 2017 :: Mudprog act lists.
+Tue Oct 24 15:18:23 2017 :: Herbs.
+Tue Oct 24 15:18:23 2017 :: Skills.
+Tue Oct 24 15:18:23 2017 :: Mprog act list.
+Tue Oct 24 15:18:23 2017 :: Globals.
+Tue Oct 24 15:18:23 2017 :: News.
+Tue Oct 24 15:18:23 2017 :: Ideas.
+Tue Oct 24 15:18:23 2017 :: Bugs.
+Tue Oct 24 15:18:23 2017 :: Typos.
+Tue Oct 24 15:18:23 2017 :: Quests.
+Tue Oct 24 15:18:23 2017 :: Locations.
+Tue Oct 24 15:18:23 2017 :: Holidays.
+Tue Oct 24 15:18:23 2017 :: Banks.
+Tue Oct 24 15:18:23 2017 :: &RSTRFREE called on str_dup pointer: bank.c, line 83&D
+
+*** glibc detected *** ./6dragons: double free or corruption (out): 0x4036b748 ***
+======= Backtrace: =========
+/lib/i386-linux-gnu/i686/cmov/libc.so.6(+0x6ff41)[0x40275f41]
+/lib/i386-linux-gnu/i686/cmov/libc.so.6(+0x717a8)[0x402777a8]
+/lib/i386-linux-gnu/i686/cmov/libc.so.6(cfree+0x6d)[0x4027a8ed]
+./6dragons[0x80a041d]
+======= Memory map: ========
+08048000-082f9000 r-xp 00000000 fe:00 262501     /root/6Dragones/6dragons
+082f9000-082fa000 rw-p 002b0000 fe:00 262501     /root/6Dragones/6dragons
+082fa000-0837e000 rw-p 00000000 00:00 0 
+091e7000-0a2a6000 rw-p 00000000 00:00 0          [heap]
+40000000-40001000 r-xp 00000000 00:00 0          [vdso]
+40001000-40003000 rw-p 00000000 00:00 0 
+40009000-40020000 r-xp 00000000 fe:00 128        /lib/i386-linux-gnu/libz.so.1.2.7
+40020000-40021000 r--p 00016000 fe:00 128        /lib/i386-linux-gnu/libz.so.1.2.7
+40021000-40022000 rw-p 00017000 fe:00 128        /lib/i386-linux-gnu/libz.so.1.2.7
+40022000-40023000 rw-p 00000000 00:00 0 
+40023000-40047000 r-xp 00000000 fe:00 1611       /lib/i386-linux-gnu/i686/cmov/libm-2.13.so
+40047000-40048000 r--p 00023000 fe:00 1611       /lib/i386-linux-gnu/i686/cmov/libm-2.13.so
+40048000-40049000 rw-p 00024000 fe:00 1611       /lib/i386-linux-gnu/i686/cmov/libm-2.13.so
+40049000-40065000 r-xp 00000000 fe:00 13         /lib/i386-linux-gnu/libgcc_s.so.1
+40065000-40066000 rw-p 0001b000 fe:00 13         /lib/i386-linux-gnu/libgcc_s.so.1
+40066000-40068000 rw-p 00000000 00:00 0 
+400fc000-40118000 r-xp 00000000 fe:00 6514       /lib/i386-linux-gnu/ld-2.13.so
+40118000-40119000 r--p 0001b000 fe:00 6514       /lib/i386-linux-gnu/ld-2.13.so
+40119000-4011a000 rw-p 0001c000 fe:00 6514       /lib/i386-linux-gnu/ld-2.13.so
+4011a000-401fa000 r-xp 00000000 fe:00 392787     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+401fa000-401fe000 r--p 000e0000 fe:00 392787     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+401fe000-401ff000 rw-p 000e4000 fe:00 392787     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+401ff000-40206000 rw-p 00000000 00:00 0 
+40206000-40367000 r-xp 00000000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+40367000-40368000 ---p 00161000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+40368000-4036a000 r--p 00161000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+4036a000-4036b000 rw-p 00163000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+4036b000-4036e000 rw-p 00000000 00:00 0 
+40400000-40421000 rw-p 00000000 00:00 0 
+40421000-40500000 ---p 00000000 00:00 0 
+bfda5000-bfdc6000 rw-p 00000000 00:00 0          [stack]

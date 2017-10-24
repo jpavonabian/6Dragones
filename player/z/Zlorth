@@ -12,12 +12,12 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       1862018
-Room         5100
-HpManaMove   30000 30000 30000 30000 30000 30000
+Played       1872755
+Room         35515
+HpManaMove   30000 30000 29486 30000 29307 30000
 BaseHp       0 
 Blood        459 459
-Money         0 199794 8 4 9 -1
+Money         0 199794 8 63 9 -1
 Exp           0
 Firstexp      0
 Secondexp     0
@@ -25,8 +25,8 @@ Thirdexp      0
 Height        993
 Weight        8436
 Act           536878920&-351266768
-AffectedBy    512&0&4194304
-Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d halcyon paleon dakar decir inmortales shout yell~
+AffectedBy    640&0&4194304
+Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales shout yell alianza multitud halcyon~
 Position      115
 Style         2
 Practice      1196
@@ -40,7 +40,7 @@ Wimpy         6000
 Resistant     8320
 Password      b380617b098aa3255255c678dc2e66e83d10294da277f4a2f94b4ebf1523b5ba~
 Title          El Señor de los Dragones~
-Lastip         77.230.130.35~
+Lastip         150.244.199.37~
 RECAST          0
 Bio          Llego del Cielo Como Nubes de Tormenta
 Ya me Conocen y Por eso se Lamentan
@@ -54,12 +54,12 @@ Danos Hechizos de Rabia y Seremos Desolación.
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1437593139
+LDExpUpdate  1508851247
 tmpcrawl 72
 extlevel 108
 tmpsecond -1
 tmpthird -1
-tmproom 16007
+tmproom 35515
 timezone 13
 Textspeed          5
 PotionTimer        0 0 0
@@ -134,25 +134,26 @@ Heaven_time 1430830310
 WizInvis     108
 Htown      Ciudad Prohibida~
 City      Ciudad Prohibida~
-Flags        33554466
+Flags        34
 Siege        1431545934
 Bardtimer    0
 Bardsn       0
 PKills       0
 PDeaths      0
-MKills       298
+MKills       309
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
 AttrMod      0 0 0 0 0 0 0
 Condition    0 100 100 0
-Site         (Link-Dead)
+Site         150.244.199.37
 LastNews     1432380664
 Holdbreath 0
 Frostbite 15
 Adjust 0
 NNSpell       100 100 'acidmist' 0 0
 NNSpell       100 100 'acidshot' 0 0
+NNSpell       100 100 'admonishing smite' 0 0
 NNSpell       100 100 'alertness' 0 0
 NNSpell       100 100 'aliento acido' 0 0
 NNSpell       100 100 'angels touch' 0 0
@@ -687,6 +688,17 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
+AffectDataL   'santuario' 108 852   0  26 128
+Killed       1503
+Killed       1532
+Killed       1504
+Killed       1531
+Killed       35531
+Killed       35531
+Killed       35531
+Killed       35531
+Killed       35531
+Killed       35531
 THYQuestN 58 1 0 0 1 0
 THYQuestN 89 1 0 0 1 0
 MaxColors    111

@@ -2,8 +2,7 @@
 Name          Ciudad Prohibida~
 Filename      forbidden.city~
 Bank          forbidden~
-Duke          Mirkoros~
-Baron         Kingston~
+Duke          zlorth~
 Allegiance    Halcyon~
 Defense          500
 Offense          445
@@ -45,20 +44,10 @@ End
 #ROLLCALL
 Name      Zlorth~
 Joined    1435933029
-Updated    1438181043
+Updated    1508851248
 Class     twoheaded~
 Level     108
-Kills     298
-Deaths    0
-End
-
-#ROLLCALL
-Name      Wolfe~
-Joined    1433787548
-Updated    1437528482
-Class     gold~
-Level     108
-Kills     1
+Kills     309
 Deaths    0
 End
 
@@ -79,16 +68,6 @@ Updated    1431673915
 Class     blue~
 Level     108
 Kills     8
-Deaths    0
-End
-
-#ROLLCALL
-Name      Wolfe~
-Joined    1431359610
-Updated    1431657302
-Class     gold~
-Level     108
-Kills     0
 Deaths    0
 End
 
