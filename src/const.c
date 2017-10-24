@@ -16,8 +16,8 @@ Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYI
 #define AA 95
 
 const char             *obj_sizes[] = {
-    "magical", "tiny", "small", "average", "large",
-    "enormous", "colossal", "gargantuan"
+    "magico", "diminuto", "pequenyo", "medio", "grande",
+    "enorme", "colosal", "descomunal"
 };
 
 #if 0
@@ -314,15 +314,15 @@ const struct liq_type   liq_table[LIQ_MAX] = {
 /* Working in monks here. -Taon */
 
 const char             *m_attack_table[8] = {
-    "karate chop", "uppercut", "roundhouse kick", "left hook",
-    "right hook", "jab", "left knee",
-    "right knee"
+    "golpe de karate", "uppercuts", "patada circular", "gancho de izquierda",
+    "gancho de derecha", "jabs", "rodillazo izquierdo",
+    "rodillazo derecho"
 };
 
 const char             *m_attack_table_plural[8] = {
-    "karate chops", "uppercuts", "roundhouse kicks", "left hooks",
-    "right hooks", "jabs", "left knees",
-    "right knees"
+    "golpe de karate", "uppercuts", "patada circular", "gancho de izquierda",
+    "gancho de derecha", "jabs", "rodillazo izquierdo",
+    "rodillazo derecho"
 };
 
 /* removed "pea" and added chop, spear, smash - Grimm */
@@ -339,9 +339,9 @@ const char             *attack_table_plural[DAM_MAX_TYPE] = {
 };
 
 const char             *weapon_skills[WEP_MAX] = {
-    "2h Long Swords", "1h Long Blades", "1h Short Blades", "Whips",
-    "2h Bludgeons", "1h Bludgeons", "Archery", "Blowguns", "2h Axes",
-    "1h Axes", "Spear", "Staff", "Lance", "Flail", "Talon", "Polearm"
+    "2h Espadas largas", "1h Espadas largas", "1h Espadas cortas", "Látigos",
+    "2h Bastones", "1h Bastones", "Tiro con arco", "Cerbatanas", "2h Hachas",
+    "1h Hachas", "Lanza", "Dagas", "Lance", "Trituradora", "Garra", "Polearm"
 };
 
 const char             *projectiles[PROJ_MAX] = {
