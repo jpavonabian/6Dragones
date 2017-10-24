@@ -463,13 +463,13 @@ void do_landmark( CHAR_DATA *ch, char *argument )
      */
     if ( !VLD_STR( argument ) ) {
         show_landmark_list( ch );
-        send_to_char( "\r\nType landmark <name>\r\n", ch );
-        send_to_char( "     landmark clear\r\n", ch );
+        send_to_char( "\r\nTeclea hito <nombre>\r\n", ch );
+        send_to_char( "     hito limpiar\r\n", ch );
         return;
     }
 
     if ( !str_cmp( argument, "limpiar" ) ) {
-        send_to_char( "You are no longer looking at that landmark.\r\n", ch );
+        send_to_char( "Ya no miras este hito.\r\n", ch );
         if ( ch->landmark )
             STRFREE( ch->landmark );
         return;
@@ -477,21 +477,21 @@ void do_landmark( CHAR_DATA *ch, char *argument )
 
     // Make sure players can always find their hometowns
     if ( ch->in_room && !str_cmp( ch->in_room->area->filename, "ywild.are" ) ) {
-        if ( !str_cmp( argument, "paleon city" ) ) {
+        if ( !str_cmp( argument, "ciudad paleon" ) ) {
             send_to_char
-                ( "You are too far north to see the landmark..\r\nYou remember heading south should get you back to paleon city.\r\n",
+                ( "Estás demasiado al norte para ver tu destino...\r\nRecuerda dirigirte hacia el sur para regresar.\r\n",
                   ch );
             return;
         }
-        else if ( !str_cmp( argument, "forbidden city" ) ) {
+        else if ( !str_cmp( argument, "ciudad prohibida" ) ) {
             send_to_char
-                ( "You are too far north to see the landmark..\r\nYou remember heading south should get you back to paleon city.\r\n",
+                ( "Estás demasiado al norte para ver tu destino...\r\nRecuerda dirigirte hacia el sur para regresar...\r\n",
                   ch );
             return;
         }
         else if ( !str_cmp( argument, "kirwood swamp" ) ) {
             send_to_char
-                ( "You are too far north to see the landmark..\r\nYou remember heading south should get you back to paleon city.\r\n",
+                ( "Estás demasiado al norte para ver tu destino...\r\nRecuerda dirigirte hacia el sur para regresar...\r\n",
                   ch );
             return;
         }
@@ -501,26 +501,26 @@ void do_landmark( CHAR_DATA *ch, char *argument )
     if ( ch->in_room && !str_cmp( ch->in_room->area->filename, "xwild.are" ) ) {
         if ( !str_cmp( argument, "paleon city" ) ) {
             send_to_char
-                ( "You are too far north to see the landmark..\r\nYou remember heading north should get you back to paleon city.\r\n",
+                ( "Estás demasiado al norte para ver tu destino...\r\nYou remember heading north should get you back to paleon city.\r\n",
                   ch );
             return;
         }
         else if ( !str_cmp( argument, "forbidden city" ) ) {
             send_to_char
-                ( "You are too far north to see the landmark..\r\nYou remember heading north should get you back to paleon city.\r\n",
+                ( "Estás demasiado al norte para ver tu destino...\r\nYou remember heading north should get you back to paleon city.\r\n",
                   ch );
             return;
         }
         else if ( !str_cmp( argument, "kirwood swamp" ) ) {
             send_to_char
-                ( "You are too far north to see the landmark..\r\nYou remember heading north should get you back to paleon city.\r\n",
+                ( "Estás demasiado al norte para ver tu destino...\r\nYou remember heading north should get you back to paleon city.\r\n",
                   ch );
             return;
         }
     }
 
     if ( !( room = get_landmark_room( argument ) ) ) {
-        send_to_char( "You can't find any such landmark.\n\r", ch );
+        send_to_char( "No ves ese hito.\n\r", ch );
         return;
     }
 
@@ -534,22 +534,22 @@ void do_landmark( CHAR_DATA *ch, char *argument )
 
     switch ( dir ) {
         case BFS_ERROR:
-            send_to_char( "&cHmm... something seems to be wrong.&D\n\r", ch );
+            send_to_char( "&cHmm... Algo no va bien.&D\n\r", ch );
             break;
 
         case BFS_ALREADY_THERE:
-            send_to_char( "\r\n&cYou're at your landmark! and can now type &WEXPLORE&c to enter.&D",
+            send_to_char( "\r\n&c¡Ya estás en tu hito! Teclea &WEXPLORAR&c para entrar.&D",
                           ch );
             if ( ch->landmark )
                 STRFREE( ch->landmark );
             break;
 
         case BFS_NO_PATH:
-            send_to_char( "&cThat landmark is too far to see from here.&D\n\r", ch );
+            send_to_char( "&cEse hito está muy lejos para verlo desde aquí.&D\n\r", ch );
             break;
 
         default:
-            ch_printf( ch, "\r\n&cHead &C%s&c to get to %s.\n\r", dir_name[dir], argument );
+            ch_printf( ch, "\r\n&cDirígete hacia el &C%s&c para ir a %s.\n\r", dir_name[dir], argument );
             break;
     }
 }
