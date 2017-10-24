@@ -328,12 +328,12 @@ const char             *m_attack_table_plural[8] = {
 /* removed "pea" and added chop, spear, smash - Grimm */
 /* Removed duplication in damage types - Samson 1-9-00 */
 const char             *attack_table[DAM_MAX_TYPE] = {
-    "porrazo", "tajo", "cuchillazo", "hachazo", "aplastamiento", "latigazo", "apuñalamiento",
+    "porrazo", "tajo", "apuñalamiento", "hachazo", "aplastamiento", "latigazo", "apuñalamiento",
     "empujón"
 };
 
 const char             *attack_table_plural[DAM_MAX_TYPE] = {
-    "porrazo", "tajo", "cuchillazo", "hachazo", "aplastamiento", "latigazo", "apuñalamiento",
+    "porrazo", "tajo", "apuñalamiento", "hachazo", "aplastamiento", "latigazo", "apuñalamiento",
     "empujón"
 
 };
