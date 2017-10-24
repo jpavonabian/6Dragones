@@ -194,7 +194,7 @@ void show_landmark_list( CHAR_DATA *ch )
     LANDMARK_DATA          *landmark;
 
     if ( !first_landmark ) {
-        send_to_char( "No landmarks currently.\r\n", ch );
+        send_to_char( "No hay hitos actualmente.\r\n", ch );
         return;
     }
     int                     count,
@@ -202,7 +202,7 @@ void show_landmark_list( CHAR_DATA *ch )
 
     count = 0;
     scount = 0;
-    send_to_char( "You can see the following landmarks:\r\n", ch );
+    send_to_char( "Puedes ver los siguientes hitos:\r\n", ch );
     for ( landmark = first_landmark; landmark; landmark = landmark->next ) {
         /*
          * Show full list to Staff only landmarks for that area to players 
