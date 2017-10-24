@@ -500,19 +500,19 @@ void do_landmark( CHAR_DATA *ch, char *argument )
     if ( ch->in_room && !str_cmp( ch->in_room->area->filename, "xwild.are" ) ) {
         if ( !str_cmp( argument, "paleon city" ) ) {
             send_to_char
-                ( "Estás demasiado al norte para ver tu destino...\r\nYou remember heading north should get you back to paleon city.\r\n",
+                ( "Estás demasiado al sur para ver tu destino...\r\nRecuerda dirigirte hacia el norte para regresar...\r\n",
                   ch );
             return;
         }
         else if ( !str_cmp( argument, "forbidden city" ) ) {
             send_to_char
-                ( "Estás demasiado al norte para ver tu destino...\r\nYou remember heading north should get you back to paleon city.\r\n",
+                ( "Estás demasiado al sur para ver tu destino...\r\nRecuerda dirigirte hacia el norte para regresar...\r\n",
                   ch );
             return;
         }
         else if ( !str_cmp( argument, "kirwood swamp" ) ) {
             send_to_char
-                ( "Estás demasiado al norte para ver tu destino...\r\nYou remember heading north should get you back to paleon city.\r\n",
+                ( "Estás demasiado al sur para ver tu destino...\r\nRecuerda dirigirte hacia el norte para regresar...\r\n",
                   ch );
             return;
         }
