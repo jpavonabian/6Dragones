@@ -11959,24 +11959,28 @@ void do_double_slash( CHAR_DATA *ch, char *argument )
         if ( ch->fighting )
             victim = who_fighting( ch );
         else {
-            send_to_char( "Send a double slash against whom?\r\n", ch );
+            send_to_char( "¿Ataque doble contra quién?\r\n", ch );
             return;
         }
     }
     else if ( ( victim = get_char_room( ch, arg ) ) == NULL ) {
-        send_to_char( "They aren't here.\r\n", ch );
+        send_to_char( "No está aquí.\r\n", ch );
         return;
     }
 
     if ( is_safe( ch, victim, TRUE ) )
         return;
     if ( !IS_NPC( ch ) && ch->pcdata->learned[gsn_double_slash] <= 0 ) {
-        send_to_char( "That isn't quite one of your natural skills.\r\n", ch );
+        send_to_char( "No sabes hacer eso.\r\n", ch );
+        return;
+    }
+    if ( ( obj = get_eq_char( ch, WEAR_WIELD ) ) == NULL ) {
+        send_to_char( "No empuñas ningún arma.\r\n", ch );
         return;
     }
 
     if ( obj->value[3] != DAM_SLASH ) {
-        send_to_char( "You need to wield a slashing weapon.\r\n", ch );
+        send_to_char( "No posees el arma adecuada para eso.\r\n", ch );
         return;
     }
 
