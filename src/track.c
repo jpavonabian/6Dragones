@@ -1,5 +1,4 @@
 /* Copyright 2014, 2015 Jesús Pavón Abián
-Programa bajo licencia GPL. Encontrará una copia de la misma en el archivo COPYING.txt que se encuentra en la raíz de los fuentes. */
 /***************************************************************************
  * - Chronicles Copyright 2001, 2002 by Brad Ensley (Orion Elder)          *
  * - SMAUG 1.4  Copyright 1994, 1995, 1996, 1998 by Derek Snider           *
@@ -477,7 +476,7 @@ void do_landmark( CHAR_DATA *ch, char *argument )
 
     // Make sure players can always find their hometowns
     if ( ch->in_room && !str_cmp( ch->in_room->area->filename, "ywild.are" ) ) {
-        if ( !str_cmp( argument, "ciudad paleon" ) ) {
+        if ( !str_cmp( argument, "ciudad paleon" ) ) {
             send_to_char
                 ( "Estás demasiado al norte para ver tu destino...\r\nRecuerda dirigirte hacia el sur para regresar.\r\n",
                   ch );
