@@ -11988,14 +11988,14 @@ void do_double_slash( CHAR_DATA *ch, char *argument )
     if ( can_use_skill( ch, number_percent(  ), gsn_double_slash ) ) {
         int                     dam;
 
-        act( AT_CYAN, "You send a double slash attack at $N!\r\n", ch, NULL, victim, TO_CHAR );
-        act( AT_CYAN, "$n attacks you with a double slash!", ch, NULL, victim, TO_VICT );
-        act( AT_CYAN, "$n attacks $N with a double slash!", ch, NULL, victim, TO_NOTVICT );
+        act( AT_CYAN, "¡Encadenas un ataque doble rápidamente hacia $N!\r\n", ch, NULL, victim, TO_CHAR );
+        act( AT_CYAN, "¡$n te ataca con dos ataques dobles encadenados!", ch, NULL, victim, TO_VICT );
+        act( AT_CYAN, "¡$n encadena dos ataques de forma rápida contra $N!", ch, NULL, victim, TO_NOTVICT );
         learn_from_success( ch, gsn_double_slash );
         global_retcode = damage( ch, victim, ludicrous, gsn_double_slash );
     }
     else {
-        act( AT_CYAN, "You try to double slash $N, but are too weary.", ch, NULL, victim, TO_CHAR );
+        act( AT_CYAN, "Intentas encadenar dos ataques contra $N, pero fallas extrepitosamente.", ch, NULL, victim, TO_CHAR );
         learn_from_failure( ch, gsn_double_slash );
         global_retcode = damage( ch, victim, 0, gsn_double_slash );
     }

@@ -3370,9 +3370,9 @@ ch_ret spell_clavus( int sn, int level, CHAR_DATA *ch, void *vo )
         return rSPELL_FAILED;
     }
 
-    act( AT_MAGIC, "Gritas con furia y sueltas docenas de clavos metálicos en el aire.", ch,
+    act( AT_MAGIC, "Gritas con furia y sueltas docenas de clavos metálicos al aire.", ch,
          NULL, NULL, TO_CHAR );
-    act( AT_MAGIC, "$n grita furiosamente y lanza una docena de clavos metálicos en el aire.", ch,
+    act( AT_MAGIC, "$n grita furiosamente y lanza una docena de clavos metálicos al aire.", ch,
          NULL, NULL, TO_ROOM );
     if ( xIS_SET( ch->act, PLR_BATTLE ) )
         send_to_char( "!!SOUND(sound/clavus.wav)\r\n", ch );

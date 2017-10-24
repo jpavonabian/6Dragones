@@ -12,9 +12,9 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       1872755
+Played       1873028
 Room         35515
-HpManaMove   30000 30000 29486 30000 29307 30000
+HpManaMove   30000 30000 29686 30000 30000 30000
 BaseHp       0 
 Blood        459 459
 Money         0 199794 8 63 9 -1
@@ -688,7 +688,7 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
-AffectDataL   'santuario' 108 852   0  26 128
+AffectDataL   'santuario' 108 762   0  26 128
 Killed       1503
 Killed       1532
 Killed       1504
