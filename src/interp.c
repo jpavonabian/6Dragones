@@ -55,19 +55,19 @@ bool check_pos( CHAR_DATA *ch, short position )
                 break;
 
             case POS_DEAD:
-                send_to_char( "A little difficult to do when you are DEAD...\r\n", ch );
+                send_to_char( "Un poco difícil estando muerto...\r\n", ch );
                 break;
 
             case POS_MORTAL:
             case POS_INCAP:
-                send_to_char( "You are hurt far too bad for that.\r\n", ch );
-                send_to_char( "You may choose to expire to end your dying state...\r\n", ch );
-                send_to_char( "type 'help expire'\r\n", ch );
+                send_to_char( "Estás demasiado mal para hacer eso.\r\n", ch );
+                send_to_char( "Puedes expirar para finalizar tu estado de muerte cercana...\r\n", ch );
+                send_to_char( "Teclea ayuda expirar\r\n", ch );
                 break;
 
             case POS_STUNNED:
                 if ( !IS_AFFECTED( ch, AFF_FEIGN ) || !IS_AFFECTED( ch, AFF_PARALYSIS ) ) {
-                    send_to_char( "You are too stunned to do that.\r\n", ch );
+                    send_to_char( "Estás inconsciente, no puedes hacer eso.\r\n", ch );
                     break;
                 }
                 else {
@@ -77,60 +77,60 @@ bool check_pos( CHAR_DATA *ch, short position )
 
             case POS_SLEEPING:
                 if ( IS_AFFECTED( ch, AFF_FEIGN ) ) {
-                    send_to_char( "You must stop feigning death and stand up first.\r\n", ch );
+                    send_to_char( "Tienes que dejar de fingir tu muerte y levantarte primero.\r\n", ch );
                     break;
                 }
                 else {
-                    send_to_char( "In your dreams, or what?\r\n", ch );
+                    send_to_char( "en tus sueños, ¿o qué?\r\n", ch );
                 }
                 break;
 
             case POS_MEDITATING:
-                send_to_char( "You are concentrating too hard for that.\r\n", ch );
+                send_to_char( "Hacer eso terminaría con tu concentración.\r\n", ch );
                 break;
 
             case POS_RESTING:
-                send_to_char( "Nah... You feel too relaxed...\r\n", ch );
+                send_to_char( "Estás descansando... Levanta primero...\r\n", ch );
                 break;
 
             case POS_SITTING:
-                send_to_char( "You can't do that sitting down.\r\n", ch );
+                send_to_char( "No puedes hacer eso si no te levantas primero.\r\n", ch );
                 break;
 
             case POS_FIGHTING:
                 if ( position <= POS_EVASIVE ) {
-                    send_to_char( "This fighting style is too demanding for that!\r\n", ch );
+                    send_to_char( "¡tu estilo de lucha demanda demasiado! No puedes hacer eso.\r\n", ch );
                 }
                 else {
-                    send_to_char( "No way!  You are still fighting!\r\n", ch );
+                    send_to_char( "¡Imposible!  ¡Estás luchando!\r\n", ch );
                 }
                 break;
             case POS_DEFENSIVE:
                 if ( position <= POS_EVASIVE ) {
-                    send_to_char( "This fighting style is too demanding for that!\r\n", ch );
+                    send_to_char( "¡Tu estilo de lucha actual demanda demasiada atención! No puedes hacer eso.\r\n", ch );
                 }
                 else {
-                    send_to_char( "No way!  You are still fighting!\r\n", ch );
+                    send_to_char( "¡Imposible!  ¡Estás luchando!\r\n", ch );
                 }
                 break;
             case POS_AGGRESSIVE:
                 if ( position <= POS_EVASIVE ) {
-                    send_to_char( "This fighting style is too demanding for that!\r\n", ch );
+                    send_to_char( "¡Tu estilo de lucha actual demanda demasiada atención! No puedes hacer eso.\r\n", ch );
                 }
                 else {
-                    send_to_char( "No way!  You are still fighting!\r\n", ch );
+                    send_to_char( "¡Imposible!  ¡Estás luchando!\r\n", ch );
                 }
                 break;
             case POS_BERSERK:
                 if ( position <= POS_EVASIVE ) {
-                    send_to_char( "This fighting style is too demanding for that!\r\n", ch );
+                    send_to_char( "¡Tu estilo de lucha actual demanda demasiada atención! No puedes hacer eso.\r\n", ch );
                 }
                 else {
-                    send_to_char( "No way!  You are still fighting!\r\n", ch );
+                    send_to_char( "¡Imposible!  ¡Estás luchando!\r\n", ch );
                 }
                 break;
             case POS_EVASIVE:
-                send_to_char( "No way!  You are still fighting!\r\n", ch );
+                send_to_char( "¡Imposible!  ¡Estás luchando!\r\n", ch );
                 break;
 
         }
@@ -547,25 +547,25 @@ bool check_social( CHAR_DATA *ch, char *command, char *argument )
         return FALSE;
 
     if ( !IS_NPC( ch ) && xIS_SET( ch->act, PLR_NO_EMOTE ) ) {
-        send_to_char( "You are anti-social!\r\n", ch );
+        send_to_char( "¡eres antisocial!\r\n", ch );
         return TRUE;
     }
 
     switch ( ch->position ) {
         case POS_DEAD:
-            send_to_char( "Lie still; you are DEAD.\r\n", ch );
+            send_to_char( "Has muerto.\r\n", ch );
             return TRUE;
 
         case POS_INCAP:
         case POS_MORTAL:
-            send_to_char( "You are hurt far too bad for that.\r\n", ch );
+            send_to_char( "Estás demasiado mal para hacer eso.\r\n", ch );
             return TRUE;
         case POS_MEDITATING:
-            send_to_char( "You are concentrating to much for that.\r\n", ch );
+            send_to_char( "Hacer eso terminaría con tu concentración.\r\n", ch );
             return TRUE;
 
         case POS_STUNNED:
-            send_to_char( "You are too stunned to do that.\r\n", ch );
+            send_to_char( "Estás inconsciente, no puedes hacer eso.\r\n", ch );
             return TRUE;
 
         case POS_SLEEPING:
@@ -575,7 +575,7 @@ bool check_social( CHAR_DATA *ch, char *command, char *argument )
              */
             if ( !str_cmp( social->name, "snore" ) )
                 break;
-            send_to_char( "In your dreams, or what?\r\n", ch );
+            send_to_char( "en tus sueños, ¿o qué?\r\n", ch );
             return TRUE;
 
     }
