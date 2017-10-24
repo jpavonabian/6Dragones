@@ -5850,7 +5850,7 @@ void do_land( CHAR_DATA *ch, char *argument )
 {
     AFFECT_DATA            *paf,
                            *paf_next;
-    char                   *msg = ( char * ) "in a swirl of dust";
+    char                   *msg = ( char * ) "en un remolino de polvo";
     bool                    found = FALSE;
 
     for ( paf = ch->first_affect; paf; paf = paf_next ) {
@@ -5870,12 +5870,12 @@ void do_land( CHAR_DATA *ch, char *argument )
 
     if ( IS_AFFECTED( ch, AFF_FLYING ) || IS_AFFECTED( ch, AFF_FLOATING ) ) {
         if ( ch->race == RACE_PIXIE ) {
-            act( AT_GREY, "Pliegas las alas y aterrizas sobre $T.", ch, NULL, msg, TO_CHAR );
-            act( AT_GREY, "$n pliega las alas y aterriza suavemente sobre $T.", ch, NULL, msg, TO_ROOM );
+            act( AT_GREY, "Pliegas las alas y aterrizas $T.", ch, NULL, msg, TO_CHAR );
+            act( AT_GREY, "$n pliega las alas y aterriza suavemente $T.", ch, NULL, msg, TO_ROOM );
         }
         else {
-            act( AT_GREY, "Aterrizas suavemente sobre $T.", ch, NULL, msg, TO_CHAR );
-            act( AT_GREY, "$n aterriza suavemente sobre $T.", ch, NULL, msg, TO_ROOM );
+            act( AT_GREY, "Aterrizas suavemente $T.", ch, NULL, msg, TO_CHAR );
+            act( AT_GREY, "$n aterriza suavemente $T.", ch, NULL, msg, TO_ROOM );
         }
         xREMOVE_BIT( ch->affected_by, AFF_FLYING );
         xREMOVE_BIT( ch->affected_by, AFF_FLOATING );
@@ -5885,8 +5885,8 @@ void do_land( CHAR_DATA *ch, char *argument )
     if ( found ) {
         if ( ch->race == RACE_DRAGON ) {
             if ( can_use_skill( ch, number_percent(  ), gsn_wings ) ) {
-                act( AT_GREY, "Pliegas tus alas y aterrizas suavemente sobre $T.", ch, NULL, msg, TO_CHAR );
-                act( AT_GREY, "$n pliega las alas y aterrizza suavemente sobre $T.", ch, NULL, msg, TO_ROOM );
+                act( AT_GREY, "Pliegas tus alas y aterrizas suavemente $T.", ch, NULL, msg, TO_CHAR );
+                act( AT_GREY, "$n pliega las alas y aterrizza suavemente $T.", ch, NULL, msg, TO_ROOM );
             }
             else {
                 act( AT_GREY, "Pliegas tus alas, pero lo haces demasiado rápido!", ch, NULL, NULL,
@@ -5907,8 +5907,8 @@ void do_land( CHAR_DATA *ch, char *argument )
             return;
         }
 
-        act( AT_GREY, "Aterrizas con suavidad sobre $T.", ch, NULL, msg, TO_CHAR );
-        act( AT_GREY, "$n aterriza con suavidad sobre $T.", ch, NULL, msg, TO_ROOM );
+        act( AT_GREY, "Aterrizas con suavidad $T.", ch, NULL, msg, TO_CHAR );
+        act( AT_GREY, "$n aterriza con suavidad $T.", ch, NULL, msg, TO_ROOM );
 
         if ( !IS_NPC( ch ) ) {
             if ( ch->race == RACE_VAMPIRE ) {
