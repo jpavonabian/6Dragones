@@ -2017,15 +2017,15 @@ void do_up( CHAR_DATA *ch, char *argument )
 
     if ( IN_WILDERNESS( ch ) && IS_AFFECTED( ch, AFF_FLYING ) ) {
         set_char_color( AT_RMNAME, ch );
-        send_to_char( "\r\nWithin the Vast Sky\r\n", ch );
+        send_to_char( "\r\nFlotando en el cielo\r\n", ch );
         set_char_color( AT_LBLUE, ch );
-        send_to_char( "The clear open sky shows the vastness of the ground below,\r\n", ch );
-        send_to_char( "and sky around.  Landmarks that cannot be seen on the ground\r\n", ch );
-        send_to_char( "are easily viewed from the sky.\r\n", ch );
+        send_to_char( "El claro cielo abierto muestra la inmensidad del suelo debajo de ti,\r\n", ch );
+        send_to_char( "y el cielo a tu alrededor. Los puntos de referencia del suelo\r\n", ch );
+        send_to_char( "son vistos con facilidad desde el cielo.\r\n", ch );
         set_char_color( AT_EXITS, ch );
-        send_to_char( "Exits: up down.\r\n\r\n", ch );
+        send_to_char( "Salidas: arriba abajo.\r\n\r\n", ch );
         WAIT_STATE( ch, 5 );
-        send_to_char( "\r\n&cYou soar up into the sky.\r\n\r\n", ch );
+        send_to_char( "\r\n&cTe elevas hacia el cielo.\r\n\r\n", ch );
     }
     if ( !IS_NPC( ch ) ) {
         if ( IS_IMMORTAL( ch ) && IS_SET( ch->pcdata->flags, PCFLAG_BUILDWALK ) ) {
@@ -3153,7 +3153,7 @@ void do_trance( CHAR_DATA *ch, char *argument )
         if ( get_timer( ch, TIMER_RECENTFIGHT ) > 0 ) {
             set_char_color( AT_RED, ch );
             send_to_char
-                ( "¡Tu adrenalina te impide entrar en trance!\r\n&cYou are able to calm yourself enough for the lesser trance.\r\n",
+                ( "¡Tu adrenalina te impide entrar en trance!\r\n&cEres capaz de calmarte lo suficiente para un trance menor.\r\n",
                   ch );
         }
 
