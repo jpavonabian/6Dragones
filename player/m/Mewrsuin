@@ -12,8 +12,8 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       39955
-Room         19010
+Played       45559
+Room         16152
 HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
 Blood        310 310
@@ -39,7 +39,7 @@ Armor         60
 Resistant     8194
 Password      d98532d16c5572d764a80e8898e9a3ddad778c34cc877cc9da4b4dd2d7d263e2~
 Title          gitano inmortal~
-Lastip         88.11.44.13~
+Lastip         92.56.4.247~
 RECAST          0
 AuthedBy     Zlorth~
 Prompt       >~
@@ -47,7 +47,7 @@ GetsDExp     0
 tmpcrawl 72
 tmpsecond -1
 tmpthird -1
-tmproom 19009
+tmproom 16153
 Textspeed          5
 PotionTimer        0 0 0
 FirstExpR          0
@@ -70,8 +70,12 @@ MapNameToggle      0
 MapType            0
 FoundArea       Wilderness~
 FoundArea       Under the Volcano~
+FoundArea       Tierra salvage~
+FoundArea       Asgard~
+FoundArea       Miden'nir~
 WizInvis     108
 Htown      Ciudad Prohibida~
+City      Ciudad Prohibida~
 Flags        32802
 Bardtimer    0
 Bardsn       0
@@ -82,8 +86,8 @@ MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
 AttrMod      0 0 0 0 0 0 0
-Condition    0 100 100 118
-Site         88.11.44.13
+Condition    0 80 80 118
+Site         92.56.4.247
 LastNews     1417006755
 Holdbreath 0
 Frostbite 0
@@ -97,11 +101,13 @@ NNSpell       100 100 'angels touch' 0 0
 NNSpell       100 100 'animate corpse' 0 0
 NNSpell       100 100 'animate skeleton' 0 0
 NNSpell       100 100 'arch healing' 0 0
+NNSpell       100 100 'armadura' 0 0
 NNSpell       100 100 'astral walk' 0 0
 NNSpell       100 100 'aura of courage' 0 0
 NNSpell       100 100 'aura of life' 0 0
 NNSpell       100 100 'barbs' 0 0
 NNSpell       100 100 'battlefield view' 0 0
+NNSpell       100 100 'bendecir' 0 0
 NNSpell       100 100 'bendicion del cielo' 0 0
 NNSpell       100 100 'benefic aura' 0 0
 NNSpell       100 100 'bestow vitae' 0 0
@@ -117,6 +123,7 @@ NNSpell       100 100 'chill' 0 0
 NNSpell       100 100 'clanrecall' 0 0
 NNSpell       100 100 'clavos' 0 0
 NNSpell       100 100 'combat healing' 0 0
+NNSpell       100 100 'concha antimagia' 0 0
 NNSpell       100 100 'continual light' 0 0
 NNSpell       100 100 'control weather' 0 0
 NNSpell       100 100 'create fire' 0 0
@@ -124,6 +131,10 @@ NNSpell       100 100 'create food' 0 0
 NNSpell       100 100 'create spring' 0 0
 NNSpell       100 100 'create symbol' 0 0
 NNSpell       100 100 'create water' 0 0
+NNSpell       100 100 'curar afliccion' 0 0
+NNSpell       100 100 'curar ceguera' 0 0
+NNSpell       100 100 'curar criticas' 0 0
+NNSpell       100 100 'curar serias' 0 0
 NNSpell       100 100 'cure light' 0 0
 NNSpell       100 100 'cure poison' 0 0
 NNSpell       100 100 'dark blessings' 0 0
@@ -237,15 +248,19 @@ NNSpell       100 100 'rayo negro' 0 0
 NNSpell       100 100 'rayos encadenados' 0 0
 NNSpell       100 100 'razorbait' 0 0
 NNSpell       100 100 'recharge' 0 0
+NNSpell       100 100 'refrescar' 0 0
 NNSpell       100 100 'remove invis' 0 0
 NNSpell       100 100 'remove silence' 0 0
 NNSpell       100 100 'remove trap' 0 0
 NNSpell       100 100 'resilience' 0 0
 NNSpell       100 100 'respiracion acuatica' 0 0
+NNSpell       100 100 'restaurar vida' 0 0
 NNSpell       100 100 'restoration' 0 0
 NNSpell       100 100 'restore mana' 0 0
+NNSpell       100 100 'retirar maldicion' 0 0
 NNSpell       100 100 'sacral divinity' 0 0
 NNSpell       100 100 'sagacidad' 0 0
+NNSpell       100 100 'sanacion maxima' 0 0
 NNSpell       100 100 'sanar' 0 0
 NNSpell       100 100 'santuario' 0 0
 NNSpell       100 100 'scorching surge' 0 0
@@ -415,7 +430,7 @@ NNSkill       100 100 'fingir muerte' 0 0
 NNSkill       100 100 'fisgar' 0 0
 NNSkill       100 100 'flaming whip' 0 0
 NNSkill       100 100 'flurry' 0 0
-NNSkill       0 100 'forjar' 0 0
+NNSkill       100 100 'forjar' 0 0
 NNSkill       100 100 'forma animal' 0 0
 NNSkill       100 100 'forma humana' 0 0
 NNSkill       100 100 'forzar cerraduras' 0 0
@@ -434,7 +449,7 @@ NNSkill       100 100 'harness mana' 0 0
 NNSkill       100 100 'headbutt' 0 0
 NNSkill       100 100 'herida infestada' 0 0
 NNSkill       100 100 'hervir cerebro' 0 0
-NNSkill       0 100 'hornear' 0 0
+NNSkill       100 100 'hornear' 0 0
 NNSkill       100 100 'hueso' 0 0
 NNSkill       100 100 'huesos de cristal' 0 0
 NNSkill       100 100 'incitar' 0 0
@@ -444,7 +459,7 @@ NNSkill       100 100 'injertar arma' 0 0
 NNSkill       100 100 'instrumentos de cuerda' 0 0
 NNSkill       100 100 'instrumentos de viento' 0 0
 NNSkill       100 100 'interpretar' 0 0
-NNSkill       0 100 'joya' 0 0
+NNSkill       100 100 'joya' 0 0
 NNSkill       100 100 'judo chop' 0 0
 NNSkill       100 100 'juzgar' 0 0
 NNSkill       100 100 'knifehand strike' 0 0
@@ -466,13 +481,13 @@ NNSkill       100 100 'manos sanadoras' 0 0
 NNSkill       100 100 'manufacture' 0 0
 NNSkill       100 100 'marca' 0 0
 NNSkill       100 100 'meditar' 0 0
-NNSkill       0 100 'mezclar' 0 0
+NNSkill       100 100 'mezclar' 0 0
 NNSkill       100 100 'miedo' 0 0
 NNSkill       100 100 'migraine field' 0 0
-NNSkill       0 100 'minar' 0 0
+NNSkill       100 100 'minar' 0 0
 NNSkill       100 100 'mistform' 0 0
 NNSkill       100 100 'mitigar' 0 0
-NNSkill       0 100 'moler' 0 0
+NNSkill       100 100 'moler' 0 0
 NNSkill       100 100 'montar' 0 0
 NNSkill       100 100 'morder' 0 0
 NNSkill       100 100 'mordisco triturador' 0 0
@@ -507,7 +522,7 @@ NNSkill       100 100 'pisar' 0 0
 NNSkill       100 100 'plan' 0 0
 NNSkill       100 100 'posesion de bestias' 0 0
 NNSkill       100 100 'preparar' 0 0
-NNSkill       0 100 'presa' 0 0
+NNSkill       100 100 'presa' 0 0
 NNSkill       100 100 'proteccion espectral' 0 0
 NNSkill       100 100 'proteccion espiritual' 0 0
 NNSkill       100 100 'punyetazo' 0 0
@@ -526,7 +541,7 @@ NNSkill       100 100 'refugiarse' 0 0
 NNSkill       100 100 'regenerar' 0 0
 NNSkill       100 100 'resistencia' 0 0
 NNSkill       100 100 'respirarfuego' 0 0
-NNSkill       0 100 'reunir' 0 0
+NNSkill       100 100 'reunir' 0 0
 NNSkill       100 100 'reves' 0 0
 NNSkill       100 100 'robar' 0 0
 NNSkill       100 100 'rodear' 0 0
@@ -548,9 +563,9 @@ NNSkill       100 100 'sustento' 0 0
 NNSkill       100 100 'swarm' 0 0
 NNSkill       100 100 'swat' 0 0
 NNSkill       100 100 'sylvan touch' 0 0
-NNSkill       0 100 'talar' 0 0
+NNSkill       100 100 'talar' 0 0
 NNSkill       100 100 'tambores' 0 0
-NNSkill       0 100 'tan' 0 0
+NNSkill       100 100 'tan' 0 0
 NNSkill       100 100 'telepatia' 0 0
 NNSkill       100 100 'tercer ataque' 0 0
 NNSkill       100 100 'tintar' 0 0

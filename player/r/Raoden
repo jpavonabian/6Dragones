@@ -13,7 +13,7 @@ Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
 Played       211207
-Room         19011
+Room         35515
 HpManaMove   300000 300000 300000 300000 299980 300000
 BaseHp       0 
 Blood        310 310
@@ -107,7 +107,7 @@ IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
 AttrMod      0 0 0 0 0 0 0
 Condition    0 100 100 118
-Site         200.127.198.229
+Site         (Link-Dead)
 LastNews     1417006755
 Holdbreath 0
 Frostbite 46

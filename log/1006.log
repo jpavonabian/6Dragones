@@ -1,29 +1,38 @@
-Sun Jun 14 04:36:22 2015 :: Booting Database
-Sun Jun 14 04:36:22 2015 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
-Sun Jun 14 04:36:22 2015 :: Loading commands
-Sun Jun 14 04:36:22 2015 :: Loading mud channels...
-Sun Jun 14 04:36:22 2015 :: Loading sysdata configuration...
-Sun Jun 14 04:36:22 2015 :: Loading socials
-Sun Jun 14 04:36:22 2015 :: Loading skill table
-Sun Jun 14 04:36:22 2015 :: Sorting skill table...
-Sun Jun 14 04:36:22 2015 :: Remapping slots to sns
-Sun Jun 14 04:36:22 2015 :: Loading classes
-Sun Jun 14 04:36:22 2015 :: Loading races
-Sun Jun 14 04:36:22 2015 :: Loading herb table
-Sun Jun 14 04:36:22 2015 :: Loading tongues
-Sun Jun 14 04:36:22 2015 :: Making 6 Dragons stafflist
-Sun Jun 14 04:36:22 2015 :: Loading MSSP Data...
-Sun Jun 14 04:36:22 2015 :: Building wizinfo
-Sun Jun 14 04:36:22 2015 :: Initializing random number generator
-Sun Jun 14 04:36:22 2015 :: Setting time and weather.
-Sun Jun 14 04:36:22 2015 :: Loading holiday chart...
-Sun Jun 14 04:36:22 2015 :: Assigning gsn's
+Tue Oct 24 16:23:46 2017 :: Copyover: Spawning new log file
+Tue Oct 24 16:23:46 2017 :: Saving player files and connection states....
+Tue Oct 24 16:23:46 2017 :: Saving modified area files...
+Tue Oct 24 16:23:46 2017 :: Executing copyover....
+Tue Oct 24 16:23:46 2017 :: Booting Database
+Tue Oct 24 16:23:46 2017 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Tue Oct 24 16:23:46 2017 :: Loading commands
+Tue Oct 24 16:23:46 2017 :: Loading mud channels...
+Tue Oct 24 16:23:46 2017 :: Loading sysdata configuration...
+Tue Oct 24 16:23:46 2017 :: Loading socials
+Tue Oct 24 16:23:46 2017 :: Loading skill table
+Tue Oct 24 16:23:46 2017 :: Sorting skill table...
+Tue Oct 24 16:23:46 2017 :: Remapping slots to sns
+Tue Oct 24 16:23:46 2017 :: Loading classes
+Tue Oct 24 16:23:46 2017 :: Loading races
+Tue Oct 24 16:23:46 2017 :: Loading herb table
+Tue Oct 24 16:23:46 2017 :: Loading tongues
+Tue Oct 24 16:23:46 2017 :: Making 6 Dragons stafflist
+Tue Oct 24 16:23:46 2017 :: Loading MSSP Data...
+Tue Oct 24 16:23:46 2017 :: Building wizinfo
+Tue Oct 24 16:23:46 2017 :: Initializing random number generator
+Tue Oct 24 16:23:46 2017 :: Setting time and weather.
+Tue Oct 24 16:23:46 2017 :: Loading holiday chart...
+Tue Oct 24 16:23:46 2017 :: Assigning gsn's
 ASSIGN_GSN: Skill death embrace not found.
 ASSIGN_GSN: Skill heart grab not found.
-ASSIGN_GSN: Skill demonic sight not found.
+ASSIGN_GSN: Skill vista demoniaca not found.
 ASSIGN_GSN: Skill boost not found.
-ASSIGN_GSN: Skill hog affinity not found.
-Sun Jun 14 04:36:22 2015 :: Reading in area files...
+ASSIGN_GSN: Skill armas largas mejoradas not found.
+ASSIGN_GSN: Skill 1h axes not found.
+ASSIGN_GSN: Skill contrabandear not found.
+ASSIGN_GSN: Skill afinidad con cerdos not found.
+ASSIGN_GSN: Skill hablar con la tierra not found.
+ASSIGN_GSN: Skill instrumentos metalicos not found.
+Tue Oct 24 16:23:46 2017 :: Reading in area files...
 (help.are)
 limbo.are     : Rooms:     2 - 99    Objs:     2 - 99    Mobs:     1 - 99
 staff.are     : Rooms:  1200 - 1299  Objs:  1200 - 1299  Mobs:  1200 - 1299
@@ -128,229 +137,294 @@ grovestone.are: Rooms: 32000 - 32100 Objs: 32000 - 32100 Mobs: 32000 - 32100
 torain.are    : Rooms: 11600 - 11700 Objs: 11600 - 11700 Mobs: 11600 - 11700
 parade.are    : Rooms: 45150 - 45250 Objs: 45150 - 45250 Mobs: 45150 - 45250
 theatre.are   : Rooms:   500 - 525   Objs:   500 - 525   Mobs:   500 - 525
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54001) has owner set to (Kyrigan), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54002) has owner set to (Galt), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54003) has owner set to (Roselia), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54004) has owner set to (Osaerok), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54005) has owner set to (Koraesag), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54006) has owner set to (Norrindio), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54007) has owner set to (Numair), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54008) has owner set to (Maleficus), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54009) has owner set to (Kimel), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54010) has owner set to (Althea), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54011) has owner set to (Saltus), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54012) has owner set to (Weibble), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54013) has owner set to (Leonem), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54014) has owner set to (Kyndai), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (54015) has owner set to (Gilanthas), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54001) has owner set to (Kyrigan), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54002) has owner set to (Galt), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54003) has owner set to (Roselia), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54004) has owner set to (Osaerok), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54005) has owner set to (Koraesag), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54006) has owner set to (Norrindio), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54007) has owner set to (Numair), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54008) has owner set to (Maleficus), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54009) has owner set to (Kimel), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54010) has owner set to (Althea), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54011) has owner set to (Saltus), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54012) has owner set to (Weibble), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54013) has owner set to (Leonem), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54014) has owner set to (Kyndai), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (54015) has owner set to (Gilanthas), but there is no pfile to go with it.
 phouse.are    : Rooms: 54000 - 55000 Objs: 54000 - 55000 Mobs: 54000 - 55000
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57001) has owner set to (Zaiden), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57002) has owner set to (Yorae), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57003) has owner set to (Lassiekysh), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57004) has owner set to (Bansheena), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57005) has owner set to (Zhaxiaoyen), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57006) has owner set to (Voluntas), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57007) has owner set to (Voluntas), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57008) has owner set to (Voluntas), but there is no pfile to go with it.
-Sun Jun 14 04:36:23 2015 :: load_rooms: Room (57009) has owner set to (Gonth), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57001) has owner set to (Zaiden), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57002) has owner set to (Yorae), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57003) has owner set to (Lassiekysh), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57004) has owner set to (Bansheena), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57005) has owner set to (Zhaxiaoyen), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57006) has owner set to (Voluntas), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57007) has owner set to (Voluntas), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57008) has owner set to (Voluntas), but there is no pfile to go with it.
+Tue Oct 24 16:23:46 2017 :: load_rooms: Room (57009) has owner set to (Gonth), but there is no pfile to go with it.
 dhouse.are    : Rooms: 57000 - 58000 Objs: 57000 - 58000 Mobs: 57000 - 58000
 hive.are      : Rooms: 25000 - 25050 Objs: 25000 - 25050 Mobs: 25000 - 25050
 riders.are    : Rooms: 25200 - 25250 Objs: 25200 - 25250 Mobs: 25200 - 25250
 ships.are     : Rooms: 56300 - 56500 Objs: 56300 - 56500 Mobs: 56300 - 56500
 tomb.are      : Rooms: 28350 - 28400 Objs: 28350 - 28400 Mobs: 28350 - 28400
-Sun Jun 14 04:36:23 2015 :: [*****] BUG: __FileOpen: can't open area/Zlorth.are for r. Called from db.c:6144
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: __FileOpen: can't open area/Zlorth.are for r. Called from db.c:6274
 area/Zlorth.are: No such file or directory
 area/Zlorth.are: No such file or directory
-Sun Jun 14 04:36:23 2015 :: [*****] BUG: load_area: area/Zlorth.are error loading file (can't open)
-Sun Jun 14 04:36:23 2015 :: Loading boards
-Sun Jun 14 04:36:23 2015 :: boards/subastas
-Sun Jun 14 04:36:23 2015 :: boards/Roleplay
-Sun Jun 14 04:36:23 2015 :: boards/General
-Sun Jun 14 04:36:23 2015 :: Loading buildlist
-Sun Jun 14 04:36:23 2015 :: staff/Zlorth
-Sun Jun 14 04:36:23 2015 :: staff/Mewrsuin
-Sun Jun 14 04:36:23 2015 :: staff/Robb
-Sun Jun 14 04:36:23 2015 :: staff/Alanis
-Sun Jun 14 04:36:23 2015 :: staff/Novick
-Sun Jun 14 04:36:23 2015 :: staff/Syldreik
-Sun Jun 14 04:36:23 2015 :: staff/Kais
-Sun Jun 14 04:36:23 2015 :: staff/Raoden
-Sun Jun 14 04:36:23 2015 :: Fixing exits
-Sun Jun 14 04:36:23 2015 :: Initializing economy
-Sun Jun 14 04:36:23 2015 :: Resetting areas
-Sun Jun 14 04:36:23 2015 :: Loading storerooms
-Sun Jun 14 04:36:23 2015 :: Loading clans
-Sun Jun 14 04:36:23 2015 :: Loading clans...
-Sun Jun 14 04:36:23 2015 :: throng.cln
-Sun Jun 14 04:36:23 2015 :: alliance.cln
-Sun Jun 14 04:36:23 2015 :: halcyon.cln
-Sun Jun 14 04:36:23 2015 :: $
-Sun Jun 14 04:36:23 2015 ::  Done clans 
-Sun Jun 14 04:36:23 2015 :: Loading quests
-Sun Jun 14 04:36:23 2015 :: Loading currency...
-Sun Jun 14 04:36:23 2015 :: Loading banks
-Sun Jun 14 04:36:23 2015 :: Loading landmarks
-Sun Jun 14 04:36:23 2015 :: Loading councils
-Sun Jun 14 04:36:23 2015 :: Loading councils...
-Sun Jun 14 04:36:23 2015 :: $
-Sun Jun 14 04:36:23 2015 ::  Done councils 
-Sun Jun 14 04:36:23 2015 :: Loading hometowns
-Sun Jun 14 04:36:23 2015 :: Loading htowns...
-Sun Jun 14 04:36:23 2015 :: paleon.city
-Sun Jun 14 04:36:23 2015 :: Valnaes.htown
-Sun Jun 14 04:36:23 2015 :: forbidden.htown
-Sun Jun 14 04:36:23 2015 :: $
-Sun Jun 14 04:36:23 2015 ::  Done htowns 
-Sun Jun 14 04:36:23 2015 :: Loading cities
-Sun Jun 14 04:36:23 2015 :: Loading cities...
-Sun Jun 14 04:36:23 2015 :: paleon.city
-Sun Jun 14 04:36:23 2015 :: dakar.city
-Sun Jun 14 04:36:23 2015 :: forbidden.city
-Sun Jun 14 04:36:23 2015 ::  Done cities 
-Sun Jun 14 04:36:23 2015 :: Loading bans
-Sun Jun 14 04:36:23 2015 :: Done.
-Sun Jun 14 04:36:23 2015 :: Loading reserved names
-Sun Jun 14 04:36:23 2015 :: Loading auth namelist
-Sun Jun 14 04:36:23 2015 :: Loading corpses
-Sun Jun 14 04:36:23 2015 :: Loading News
-Sun Jun 14 04:36:23 2015 :: Loading Hints...
-Sun Jun 14 04:36:23 2015 :: Loading Morphs
-Sun Jun 14 04:36:23 2015 :: Optimizing Morphs.
-Sun Jun 14 04:36:23 2015 :: Done.
-Sun Jun 14 04:36:23 2015 :: Initializing Autoboot
-Sun Jun 14 04:36:23 2015 :: Initializing socket
-Sun Jun 14 04:36:23 2015 :: 6 Dragones ready at address portent.digital-genesis.com on port 2020.
-Sun Jun 14 04:36:23 2015 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:31 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:32 2015 :: Preloading player data for: Zlorth
-Sun Jun 14 04:36:33 2015 :: Loading player data for Zlorth (23K)
-Sun Jun 14 04:36:33 2015 :: Zlorth (127.0.0.1) has connected.
-Sun Jun 14 04:36:35 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:43 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:43 2015 :: [*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:43 2015 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:47 2015 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:36:51 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:51 2015 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:51 2015 :: [*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:36:55 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:37:03 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:11 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:11 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:19 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:23 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:31 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:31 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:31 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:37:39 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:39 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:43 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:37:47 2015 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:47 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:47 2015 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:47 2015 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:37:51 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:37:51 2015 :: [*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:51 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:55 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:55 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:55 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:37:55 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:37:55 2015 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:38:07 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:38:07 2015 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:11 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:11 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:11 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:38:11 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:15 2015 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:15 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:23 2015 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:27 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:27 2015 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:38:35 2015 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:35 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:39 2015 :: [*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:47 2015 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:51 2015 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:51 2015 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:51 2015 :: [*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates].
-Sun Jun 14 04:38:55 2015 :: [*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop].
-Sun Jun 14 04:38:59 2015 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:38:59 2015 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:07 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:11 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:15 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:19 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:19 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:23 2015 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:23 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:23 2015 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:23 2015 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:27 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:27 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:31 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:39:35 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:39:35 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:40 2015 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:40 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:40 2015 :: [*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates].
-Sun Jun 14 04:39:44 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:48 2015 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:39:48 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:52 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:52 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:52 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:39:56 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:39:56 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:04 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:40:04 2015 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:04 2015 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:08 2015 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:12 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:40:12 2015 :: [*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates].
-Sun Jun 14 04:40:16 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:40:20 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:24 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:32 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:36 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:44 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:44 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:44 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:48 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:40:56 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:04 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:08 2015 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:12 2015 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:41:16 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:41:16 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:41:16 2015 :: [*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:20 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:20 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:41:24 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:24 2015 :: [*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop].
-Sun Jun 14 04:41:40 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:40 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:44 2015 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:41:48 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:42:00 2015 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:42:04 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:42:12 2015 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:42:20 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:42:28 2015 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:42:40 2015 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:42:40 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:42:44 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:42:48 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:42:52 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:43:04 2015 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
-Sun Jun 14 04:43:04 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:43:04 2015 :: [*****] BUG: Room #5522: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:43:08 2015 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:43:16 2015 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:43:16 2015 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:43:16 2015 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:43:20 2015 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:43:24 2015 :: [*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street].
-Sun Jun 14 04:43:28 2015 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
-Sun Jun 14 04:43:30 2015 :: Log Zlorth: copyo
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: load_area: area/Zlorth.are error loading file (can't open)
+Tue Oct 24 16:23:46 2017 :: Loading boards
+Tue Oct 24 16:23:46 2017 :: boards/subastas
+Tue Oct 24 16:23:46 2017 :: boards/Roleplay
+Tue Oct 24 16:23:46 2017 :: boards/General
+Tue Oct 24 16:23:46 2017 :: Loading buildlist
+Tue Oct 24 16:23:46 2017 :: staff/Mewrsuin
+Tue Oct 24 16:23:46 2017 :: staff/Raoden
+Tue Oct 24 16:23:46 2017 :: staff/Syldreik
+Tue Oct 24 16:23:46 2017 :: staff/Zlorth
+Tue Oct 24 16:23:46 2017 :: Fixing exits
+Tue Oct 24 16:23:46 2017 :: Initializing economy
+Tue Oct 24 16:23:46 2017 :: Resetting areas
+Tue Oct 24 16:23:46 2017 :: Loading storerooms
+Tue Oct 24 16:23:46 2017 :: Loading clans
+Tue Oct 24 16:23:46 2017 :: Loading clans...
+Tue Oct 24 16:23:46 2017 :: throng.cln
+Tue Oct 24 16:23:46 2017 :: alliance.cln
+Tue Oct 24 16:23:46 2017 :: halcyon.cln
+Tue Oct 24 16:23:46 2017 :: $
+Tue Oct 24 16:23:46 2017 ::  Done clans 
+Tue Oct 24 16:23:46 2017 :: Loading quests
+Tue Oct 24 16:23:46 2017 :: Loading currency...
+Tue Oct 24 16:23:46 2017 :: Loading banks
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank accound because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank account because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank althea because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank atlan because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank brinug because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank caelum because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank cellban because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank clamatastra because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank dagg because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank dakar because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank doidus because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank dullin because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank duratus because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank ferrum because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank forbidden because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank galt because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank garrius because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank gonth because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank kairi because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank kentor because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank kimel because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank kingston because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank klorawn because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank kyrigan because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank leonem because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank lyra because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank maleficus because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank mirinda because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank monicashot because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank mordion because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank myrlan because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank paleon because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank playerall because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank raoden because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank saltus because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank sasiri because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank sing because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank varchild because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank vladaar because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank voluntas because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank weib because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank yordstorm because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: fread_bank: Deleting bank zaiden because it hasn't been used in at least 366 days.
+Tue Oct 24 16:23:46 2017 :: Loading landmarks
+Tue Oct 24 16:23:46 2017 :: Loading councils
+Tue Oct 24 16:23:46 2017 :: Loading councils...
+Tue Oct 24 16:23:46 2017 :: $
+Tue Oct 24 16:23:46 2017 ::  Done councils 
+Tue Oct 24 16:23:46 2017 :: Loading hometowns
+Tue Oct 24 16:23:46 2017 :: Loading htowns...
+Tue Oct 24 16:23:46 2017 :: paleon.city
+Tue Oct 24 16:23:46 2017 :: Valnaes.htown
+Tue Oct 24 16:23:46 2017 :: forbidden.htown
+Tue Oct 24 16:23:46 2017 :: $
+Tue Oct 24 16:23:46 2017 ::  Done htowns 
+Tue Oct 24 16:23:46 2017 :: Loading cities
+Tue Oct 24 16:23:46 2017 :: Loading cities...
+Tue Oct 24 16:23:46 2017 :: paleon.city
+Tue Oct 24 16:23:46 2017 :: dakar.city
+Tue Oct 24 16:23:46 2017 :: forbidden.city
+Tue Oct 24 16:23:46 2017 ::  Done cities 
+Tue Oct 24 16:23:46 2017 :: Loading bans
+Tue Oct 24 16:23:46 2017 :: Done.
+Tue Oct 24 16:23:46 2017 :: Loading reserved names
+Tue Oct 24 16:23:46 2017 :: Loading auth namelist
+Tue Oct 24 16:23:46 2017 :: Loading corpses
+Tue Oct 24 16:23:46 2017 :: Loading News
+Tue Oct 24 16:23:46 2017 :: Loading Hints...
+Tue Oct 24 16:23:46 2017 :: Loading Morphs
+Tue Oct 24 16:23:46 2017 :: Optimizing Morphs.
+Tue Oct 24 16:23:46 2017 :: Done.
+Tue Oct 24 16:23:46 2017 :: Initializing Autoboot
+Tue Oct 24 16:23:46 2017 :: Initializing socket
+Tue Oct 24 16:23:46 2017 :: 6 Dragones ready at address jpavonabian on port 4000.
+Tue Oct 24 16:23:46 2017 :: Initiating copyover recovery.
+Tue Oct 24 16:23:46 2017 :: Loading player data for Zlorth (25K)
+Tue Oct 24 16:23:46 2017 :: Loading player data for Mewrsuin (23K)
+Tue Oct 24 16:23:46 2017 :: Reinicio completado.
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:23:46 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:23:54 2017 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:23:54 2017 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:23:54 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:23:58 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:24:02 2017 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:02 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:24:07 2017 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:07 2017 :: [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:07 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:24:11 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:24:11 2017 :: [*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:11 2017 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:15 2017 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:15 2017 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:19 2017 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:23 2017 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:23 2017 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:23 2017 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:23 2017 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:23 2017 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:27 2017 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:27 2017 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:28 2017 :: Log Zlorth: cedit landmark
+Tue Oct 24 16:24:31 2017 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:31 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:35 2017 :: [*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:35 2017 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:35 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:24:39 2017 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:43 2017 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:47 2017 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:51 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:24:51 2017 :: [*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:55 2017 :: [*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower].
+Tue Oct 24 16:24:55 2017 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:55 2017 :: [*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates].
+Tue Oct 24 16:24:55 2017 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:24:59 2017 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:03 2017 :: [*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:03 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:07 2017 :: [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:25:11 2017 :: [*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates].
+Tue Oct 24 16:25:15 2017 :: [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:15 2017 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:15 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:25:19 2017 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:19 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:25:23 2017 :: [*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:31 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:25:35 2017 :: [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:43 2017 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:43 2017 :: [*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:43 2017 :: [*****] BUG: Room #5522: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:25:43 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:25:47 2017 :: [*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:51 2017 :: [*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:55 2017 :: [*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:25:55 2017 :: [*****] BUG: Room #5522: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:25:59 2017 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:03 2017 :: [*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:03 2017 :: [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:03 2017 :: [*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:03 2017 :: [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:03 2017 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:11 2017 :: [*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:11 2017 :: [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:15 2017 :: [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:23 2017 :: [*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:27 2017 :: [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street].
+Tue Oct 24 16:26:27 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:26:35 2017 :: [*****] BUG: Room #5509: Unknown affect being checked [At an Intersection].
+Tue Oct 24 16:26:37 2017 :: Log Zlorth: reboot nosave
+Tue Oct 24 16:26:37 2017 :: Normal termination of game.
+Tue Oct 24 16:26:37 2017 :: Cleaning up Memory.
+Tue Oct 24 16:26:37 2017 :: Local Channels.
+Tue Oct 24 16:26:37 2017 :: Commands.
+Tue Oct 24 16:26:37 2017 :: Help files.
+Tue Oct 24 16:26:37 2017 :: Reserved name list.
+Tue Oct 24 16:26:37 2017 :: Socials.
+Tue Oct 24 16:26:37 2017 :: Whacking supermob.
+Tue Oct 24 16:26:37 2017 :: Freeing mppause data.
+Tue Oct 24 16:26:37 2017 :: Objects.
+Tue Oct 24 16:26:37 2017 :: Characters.
+Tue Oct 24 16:26:38 2017 :: Descriptors.
+Tue Oct 24 16:26:38 2017 :: Wizinfo Data.
+Tue Oct 24 16:26:38 2017 :: Classes.
+Tue Oct 24 16:26:38 2017 :: Races.
+Tue Oct 24 16:26:38 2017 :: Currency.
+Tue Oct 24 16:26:38 2017 :: Clans.
+Tue Oct 24 16:26:38 2017 :: HTowns.
+Tue Oct 24 16:26:38 2017 :: Cities.
+Tue Oct 24 16:26:38 2017 :: Councils.
+Tue Oct 24 16:26:38 2017 :: Morphs.
+Tue Oct 24 16:26:38 2017 :: Title table.
+Tue Oct 24 16:26:38 2017 :: Bans.
+Tue Oct 24 16:26:38 2017 :: Boards.
+Tue Oct 24 16:26:38 2017 :: Area and Build data.
+Tue Oct 24 16:26:38 2017 :: Languages.
+Tue Oct 24 16:26:38 2017 :: Auction.
+Tue Oct 24 16:26:38 2017 :: System data.
+Tue Oct 24 16:26:38 2017 :: Mudprog act lists.
+Tue Oct 24 16:26:38 2017 :: Herbs.
+Tue Oct 24 16:26:38 2017 :: Skills.
+Tue Oct 24 16:26:38 2017 :: Mprog act list.
+Tue Oct 24 16:26:38 2017 :: Globals.
+Tue Oct 24 16:26:38 2017 :: News.
+Tue Oct 24 16:26:38 2017 :: Ideas.
+Tue Oct 24 16:26:38 2017 :: Bugs.
+Tue Oct 24 16:26:38 2017 :: Typos.
+Tue Oct 24 16:26:38 2017 :: Quests.
+Tue Oct 24 16:26:38 2017 :: Locations.
+Tue Oct 24 16:26:38 2017 :: Holidays.
+Tue Oct 24 16:26:38 2017 :: Banks.
+Tue Oct 24 16:26:38 2017 :: &RSTRFREE called on str_dup pointer: bank.c, line 83&D
+
+*** glibc detected *** 6dragons: double free or corruption (out): 0x402c0748 ***
+======= Backtrace: =========
+/lib/i386-linux-gnu/i686/cmov/libc.so.6(+0x6ff41)[0x401caf41]
+/lib/i386-linux-gnu/i686/cmov/libc.so.6(+0x717a8)[0x401cc7a8]
+/lib/i386-linux-gnu/i686/cmov/libc.so.6(cfree+0x6d)[0x401cf8ed]
+6dragons[0x80a041d]
+======= Memory map: ========
+08048000-082f9000 r-xp 00000000 fe:00 262501     /root/6Dragones/6dragons
+082f9000-082fa000 rw-p 002b0000 fe:00 262501     /root/6Dragones/6dragons
+082fa000-0837e000 rw-p 00000000 00:00 0 
+095c3000-0a682000 rw-p 00000000 00:00 0          [heap]
+40000000-40001000 r-xp 00000000 00:00 0          [vdso]
+40001000-40003000 rw-p 00000000 00:00 0 
+40009000-40020000 r-xp 00000000 fe:00 128        /lib/i386-linux-gnu/libz.so.1.2.7
+40020000-40021000 r--p 00016000 fe:00 128        /lib/i386-linux-gnu/libz.so.1.2.7
+40021000-40022000 rw-p 00017000 fe:00 128        /lib/i386-linux-gnu/libz.so.1.2.7
+40022000-40023000 rw-p 00000000 00:00 0 
+40023000-40047000 r-xp 00000000 fe:00 1611       /lib/i386-linux-gnu/i686/cmov/libm-2.13.so
+40047000-40048000 r--p 00023000 fe:00 1611       /lib/i386-linux-gnu/i686/cmov/libm-2.13.so
+40048000-40049000 rw-p 00024000 fe:00 1611       /lib/i386-linux-gnu/i686/cmov/libm-2.13.so
+40049000-4004b000 rw-p 00000000 00:00 0 
+40051000-4006d000 r-xp 00000000 fe:00 6514       /lib/i386-linux-gnu/ld-2.13.so
+4006d000-4006e000 r--p 0001b000 fe:00 6514       /lib/i386-linux-gnu/ld-2.13.so
+4006e000-4006f000 rw-p 0001c000 fe:00 6514       /lib/i386-linux-gnu/ld-2.13.so
+4006f000-4014f000 r-xp 00000000 fe:00 392787     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+4014f000-40153000 r--p 000e0000 fe:00 392787     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+40153000-40154000 rw-p 000e4000 fe:00 392787     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+40154000-4015b000 rw-p 00000000 00:00 0 
+4015b000-402bc000 r-xp 00000000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+402bc000-402bd000 ---p 00161000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+402bd000-402bf000 r--p 00161000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+402bf000-402c0000 rw-p 00163000 fe:00 1606       /lib/i386-linux-gnu/i686/cmov/libc-2.13.so
+402c0000-402c3000 rw-p 00000000 00:00 0 
+402c3000-402df000 r-xp 00000000 fe:00 13         /lib/i386-linux-gnu/libgcc_s.so.1
+402df000-402e0000 rw-p 0001b000 fe:00 13         /lib/i386-linux-gnu/libgcc_s.so.1
+40300000-40321000 rw-p 00000000 00:00 0 
+40321000-40400000 ---p 00000000 00:00 0 
+bf8bf000-bf8e0000 rw-p 00000000 00:00 0          [stack]

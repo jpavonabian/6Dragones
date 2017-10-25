@@ -7,17 +7,17 @@ Secondclass  -1
 Thirdclass   -1
 Race         13
 Age          0 12 11 854
-Languages    -1 -65537
+Languages    -1 1
 Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       1873028
-Room         35515
-HpManaMove   30000 30000 29686 30000 30000 30000
+Played       1909233
+Room         4
+HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
 Blood        459 459
-Money         0 199794 8 63 9 -1
+Money         0 199794 8 63 42 -1
 Exp           0
 Firstexp      0
 Secondexp     0
@@ -25,8 +25,8 @@ Thirdexp      0
 Height        993
 Weight        8436
 Act           536878920&-351266768
-AffectedBy    640&0&4194304
-Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales shout yell alianza multitud halcyon~
+AffectedBy    512&0&4194306
+Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales shout yell alianza multitud halcyon prohibida~
 Position      115
 Style         2
 Practice      1196
@@ -34,13 +34,13 @@ SavingThrows  0 0 0 0 0
 Alignment     -3
 AppBlood      0
 Hitroll       0
-Damroll       0
+Damroll       2
 Armor         100
 Wimpy         6000
 Resistant     8320
 Password      b380617b098aa3255255c678dc2e66e83d10294da277f4a2f94b4ebf1523b5ba~
 Title          El Señor de los Dragones~
-Lastip         150.244.199.37~
+Lastip         150.244.199.226~
 RECAST          0
 Bio          Llego del Cielo Como Nubes de Tormenta
 Ya me Conocen y Por eso se Lamentan
@@ -54,13 +54,14 @@ Danos Hechizos de Rabia y Seremos Desolación.
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1508851247
+LDExpUpdate  1508947971
 tmpcrawl 72
 extlevel 108
 tmpsecond -1
 tmpthird -1
-tmproom 35515
+tmproom 5108
 timezone 13
+Alias        inm~ inmortales~
 Textspeed          5
 PotionTimer        0 0 0
 FirstExpR          0
@@ -70,7 +71,7 @@ FocusLevel         0
 UsedTrade          0
 Faith              0
 ChanInvite         0
-QuestCurr          20
+QuestCurr          40
 QuestAccum         185
 MobCount           0
 ObjCount           0
@@ -140,13 +141,13 @@ Bardtimer    0
 Bardsn       0
 PKills       0
 PDeaths      0
-MKills       309
+MKills       311
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
-AttrMod      0 0 0 0 0 0 0
-Condition    0 100 100 0
-Site         150.244.199.37
+AttrMod      5 0 0 0 0 0 0
+Condition    0 80 80 0
+Site         150.244.199.226
 LastNews     1432380664
 Holdbreath 0
 Frostbite 15
@@ -688,7 +689,9 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
-AffectDataL   'santuario' 108 762   0  26 128
+AffectDataL   'agresividad' 108  40   2  19 0&0&2
+AffectDataL   'agresividad' 108  40   5   1 0&0&2
+Killed       16000
 Killed       1503
 Killed       1532
 Killed       1504

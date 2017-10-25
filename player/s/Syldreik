@@ -12,9 +12,9 @@ Level        108
 Firstlevel   0
 Secondlevel  0
 Thirdlevel   0
-Played       15593
-Room         19001
-HpManaMove   29844 30000 27390 30000 29238 30000
+Played       18058
+Room         35510
+HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
 Blood        144 144
 Money         0 10 50 105 1049 -1
@@ -24,8 +24,8 @@ Secondexp     0
 Thirdexp      0
 Height        1011
 Weight        8632
-Act           536878920&1660950544
-AffectedBy    512
+Act           536878920&-436201456
+AffectedBy    524800
 Channels      chat decir ooc shout yell icc wartalk event music Think muse comm info auth warn build counciltalk alianza inmortales avtalk ask answer swear flirt hint osay 6d Multitud reunion halcyon paleon dakar prohibida subastas~
 Position      115
 Style         2
@@ -38,17 +38,16 @@ Damroll       0
 Armor         60
 Password      e87aee194ed1e4d9aa5200bb3053c79e26583c185fc00935d316b0c09824df26~
 Title          aprendiz de la administración de &r6 Dragones&D.~
-Lastip         83.60.88.119~
+Lastip         88.21.159.29~
 RECAST          0
 Clanpoints          6
-Fightingip         81.184.203.58~
 AuthedBy     Zlorth~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1437085442
+LDExpUpdate  1508860457
 tmpsecond -1
 tmpthird -1
-tmproom 19000
+tmproom 35515
 Textspeed          5
 PotionTimer        0 0 0
 FirstExpR          0
@@ -72,6 +71,9 @@ MapType            0
 FoundArea       Wilderness~
 FoundArea       Paleon Sewer~
 FoundArea       Paleon Atheneum ~
+FoundArea       Tierra salvage~
+FoundArea       Nine Planes of Hell~
+FoundArea       Asgard~
 Restore_time 1436029127
 WizInvis     108
 Htown      Ciudad Prohibida~
@@ -81,13 +83,13 @@ Bardtimer    0
 Bardsn       0
 PKills       2
 PDeaths      0
-MKills       51
+MKills       53
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
 AttrMod      0 0 0 0 0 0 0
 Condition    0 100 100 118
-Site         83.60.88.119
+Site         88.21.159.29
 LastNews     0
 Holdbreath 0
 Frostbite 0
@@ -101,11 +103,13 @@ NNSpell       100 100 'angels touch' 0 0
 NNSpell       100 100 'animate corpse' 0 0
 NNSpell       100 100 'animate skeleton' 0 0
 NNSpell       100 100 'arch healing' 0 0
+NNSpell       100 100 'armadura' 0 0
 NNSpell       100 100 'astral walk' 0 0
 NNSpell       100 100 'aura of courage' 0 0
 NNSpell       100 100 'aura of life' 0 0
 NNSpell       100 100 'barbs' 0 0
 NNSpell       100 100 'battlefield view' 0 0
+NNSpell       100 100 'bendecir' 0 0
 NNSpell       100 100 'bendicion del cielo' 0 0
 NNSpell       100 100 'benefic aura' 0 0
 NNSpell       100 100 'bestow vitae' 0 0
@@ -121,6 +125,7 @@ NNSpell       100 100 'chill' 0 0
 NNSpell       100 100 'clanrecall' 0 0
 NNSpell       100 100 'clavos' 0 0
 NNSpell       100 100 'combat healing' 0 0
+NNSpell       100 100 'concha antimagia' 0 0
 NNSpell       100 100 'continual light' 0 0
 NNSpell       100 100 'control weather' 0 0
 NNSpell       100 100 'create fire' 0 0
@@ -128,6 +133,10 @@ NNSpell       100 100 'create food' 0 0
 NNSpell       100 100 'create spring' 0 0
 NNSpell       100 100 'create symbol' 0 0
 NNSpell       100 100 'create water' 0 0
+NNSpell       100 100 'curar afliccion' 0 0
+NNSpell       100 100 'curar ceguera' 0 0
+NNSpell       100 100 'curar criticas' 0 0
+NNSpell       100 100 'curar serias' 0 0
 NNSpell       100 100 'cure light' 0 0
 NNSpell       100 100 'cure poison' 0 0
 NNSpell       100 100 'dark blessings' 0 0
@@ -241,15 +250,19 @@ NNSpell       100 100 'rayo negro' 0 0
 NNSpell       100 100 'rayos encadenados' 0 0
 NNSpell       100 100 'razorbait' 0 0
 NNSpell       100 100 'recharge' 0 0
+NNSpell       100 100 'refrescar' 0 0
 NNSpell       100 100 'remove invis' 0 0
 NNSpell       100 100 'remove silence' 0 0
 NNSpell       100 100 'remove trap' 0 0
 NNSpell       100 100 'resilience' 0 0
 NNSpell       100 100 'respiracion acuatica' 0 0
+NNSpell       100 100 'restaurar vida' 0 0
 NNSpell       100 100 'restoration' 0 0
 NNSpell       100 100 'restore mana' 0 0
+NNSpell       100 100 'retirar maldicion' 0 0
 NNSpell       100 100 'sacral divinity' 0 0
 NNSpell       100 100 'sagacidad' 0 0
+NNSpell       100 100 'sanacion maxima' 0 0
 NNSpell       100 100 'sanar' 0 0
 NNSpell       100 100 'santuario' 0 0
 NNSpell       100 100 'scorching surge' 0 0
@@ -618,6 +631,9 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
+AffectDataL   'alas' 108 221   0   0 524288
+Killed       35531
+Killed       35531
 Killed       5101
 Killed       35531
 Killed       35531
@@ -636,8 +652,6 @@ Killed       4652
 Killed       4650
 Killed       4650
 Killed       4671
-Killed       16111
-Killed       16026
 MaxColors    111
 Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
 Portalstonelag     0
@@ -680,6 +694,15 @@ Level        108
 Currtype     1
 Color        12
 Size   0
+End
+
+#OBJECT
+Vnum         30016
+Timer        5
+Currtype     4
+Color        3
+Size   0
+Values       0 0 100 0 0 0 0
 End
 
 #END

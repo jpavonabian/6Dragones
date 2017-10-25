@@ -2,7 +2,6 @@
 Name          Ciudad Prohibida~
 Filename      forbidden.city~
 Bank          forbidden~
-Duke          zlorth~
 Allegiance    Halcyon~
 Defense          500
 Offense          445
@@ -43,21 +42,31 @@ End
 
 #ROLLCALL
 Name      Zlorth~
-Joined    1435933029
-Updated    1508851521
+Joined    1508861700
+Updated    1508949975
 Class     twoheaded~
 Level     108
-Kills     309
+Kills     311
+Deaths    0
+End
+
+#ROLLCALL
+Name      Mewrsuin~
+Joined    1508852933
+Updated    1508863037
+Class     twoheaded~
+Level     108
+Kills     8
 Deaths    0
 End
 
 #ROLLCALL
 Name      Syldreik~
 Joined    1433609962
-Updated    1437086180
+Updated    1508860547
 Class     red~
 Level     108
-Kills     51
+Kills     53
 Deaths    0
 End
 

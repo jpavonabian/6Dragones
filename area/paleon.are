@@ -16,7 +16,7 @@ $
 #SPELLLIMIT 0
 #WEATHERCELL 0 0
 
-#RESETMSG &GThe sound of a wagon wheel turning on the street echoes through the city.~
+#RESETMSG El sonido de la rueda de un carro suena por la ciudad.~
 
 #FLAGS
 16384 20
@@ -33,20 +33,19 @@ $
 
 #MOBILES
 #16000
-common citizen paleon female~
-a citizen of Paleon~
-A common citizen wanders around, peeking in the stores.
+ciudadana paleon comun~
+una ciudadana de Paleon~
+Una ciudadana común deambula sin rumbo fijo mirando las tiendas.
 ~
-The citizen looks like she takes good care of herself. Her hair is tidy 
-and she looks clean. She has a pale complexion and is garbed in simple 
-clothes of average quality. 
-
+A simple vista parece ser que a esta ciudadana le gusta cuidarse. Parece 
+estar bastante limpia. Su cabello está peinado con pulcritud. Viste ropa 
+sencilla, dirías que es de clase media. 
 ~
 1
 Clanname none~
 0
 0
-1 0 300 C
+513 0 300 C
 8 0 0 0d0+30 0d0+0
 0 0 0 0 2000 
 0
@@ -4759,7 +4758,7 @@ an iron spear~
 An iron spear has been left here.~
 ~
 5 0 8193
-10 5 15 2 10 0 0
+10 3 10 2 10 0 0
 6 60 6
 2
 13

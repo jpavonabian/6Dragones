@@ -1797,15 +1797,6 @@ Log         1
 End
 
 #COMMAND
-Name        hate~
-Code        do_hate
-Position    100
-Level       1
-CShow       1
-Log         0
-End
-
-#COMMAND
 Name        happyhour~
 Code        do_happyhour
 Position    100
@@ -1878,7 +1869,16 @@ Log         0
 End
 
 #COMMAND
-Name        inventory~
+Name        hito~
+Code        do_landmark
+Position    100
+Level       2
+CShow       1
+Log         0
+End
+
+#COMMAND
+Name        inventario~
 Code        do_inventory
 Position    100
 Level       0
@@ -2145,15 +2145,6 @@ Position    100
 Level       101
 CShow       0
 Log         1
-End
-
-#COMMAND
-Name        landmark~
-Code        do_landmark
-Position    100
-Level       2
-CShow       1
-Log         0
 End
 
 #COMMAND
@@ -3466,7 +3457,16 @@ Log         0
 End
 
 #COMMAND
-Name        put~
+Name        odio~
+Code        do_hate
+Position    100
+Level       1
+CShow       1
+Log         0
+End
+
+#COMMAND
+Name        poner~
 Code        do_put
 Position    106
 Level       0
@@ -3709,7 +3709,7 @@ Log         0
 End
 
 #COMMAND
-Name        repair~
+Name        reparar~
 Code        do_repair
 Position    106
 Level       0

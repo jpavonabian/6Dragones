@@ -45,284 +45,716 @@
 [*****] BUG: fread_bank: Deleting bank zaiden because it hasn't been used in at least 366 days. &D
 [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: __FileOpen: can't open area/Zlorth.are for r. Called from db.c:6274 &D
-[*****] BUG: load_area: area/Zlorth.are error loading file (can't open) &D
-[*****] BUG: fread_bank: Deleting bank accound because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank account because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank althea because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank atlan because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank brinug because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank caelum because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank cellban because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank clamatastra because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank dagg because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank dakar because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank doidus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank dullin because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank duratus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank ferrum because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank forbidden because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank galt because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank garrius because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank gonth because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kairi because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kentor because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kimel because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kingston because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank klorawn because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kyrigan because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank leonem because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank lyra because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank maleficus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank mirinda because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank monicashot because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank mordion because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank myrlan because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank paleon because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank playerall because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank raoden because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank saltus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank sasiri because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank sing because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank varchild because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank vladaar because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank voluntas because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank weib because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank yordstorm because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank zaiden because it hasn't been used in at least 366 days. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
 [*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
 [*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
 [*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
 [*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
 [*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: __FileOpen: can't open area/Zlorth.are for r. Called from db.c:6274 &D
-[*****] BUG: load_area: area/Zlorth.are error loading file (can't open) &D
-[*****] BUG: fread_bank: Deleting bank accound because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank account because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank althea because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank atlan because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank brinug because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank caelum because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank cellban because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank clamatastra because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank dagg because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank dakar because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank doidus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank dullin because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank duratus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank ferrum because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank forbidden because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank galt because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank garrius because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank gonth because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kairi because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kentor because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kimel because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kingston because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank klorawn because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank kyrigan because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank leonem because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank lyra because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank maleficus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank mirinda because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank monicashot because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank mordion because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank myrlan because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank paleon because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank playerall because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank raoden because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank saltus because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank sasiri because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank sing because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank varchild because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank vladaar because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank voluntas because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank weib because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank yordstorm because it hasn't been used in at least 366 days. &D
-[*****] BUG: fread_bank: Deleting bank zaiden because it hasn't been used in at least 366 days. &D
-[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
 [*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
-[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
 [*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
-[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
-[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
-[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
 [*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5536: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5520: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5517: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5519: Unknown affect being checked [In a Makeshift Shop]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5518: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5508: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5537: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5533: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5524: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5521: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5545: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5544: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5522: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5511: Unknown affect being checked [At the Iron Gates]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5523: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5542: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5510: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5525: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5507: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5541: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5539: Unknown affect being checked [Outside a Large Iron Tower]. &D
+[*****] BUG: Room #5509: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5535: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5538: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5534: Unknown affect being checked [At an Intersection]. &D
+[*****] BUG: Room #5543: Unknown affect being checked [On an Iron Street]. &D
+[*****] BUG: Room #5526: Unknown affect being checked [On an Iron Street]. &D

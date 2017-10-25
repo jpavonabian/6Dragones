@@ -7,7 +7,7 @@ DoScramble  0
 End
 
 #CHANNEL
-ChanName    shout~
+ChanName    gritar~
 ChanLevel   2
 ChanType    0
 ChanHistory 0
@@ -15,7 +15,7 @@ DoScramble  1
 End
 
 #CHANNEL
-ChanName    yell~
+ChanName    chillar~
 ChanLevel   2
 ChanType    1
 ChanHistory 0
