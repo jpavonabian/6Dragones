@@ -1397,7 +1397,7 @@ D1
 0 -1 5105
 D2
 ~
-door~
+puerta~
 3 -1 5108
 D3
 ~
@@ -1433,15 +1433,16 @@ S
 #5108
 Within the Temple of Light~
 ~
-The room is very clean inside.  There are small shelves set up along the
-walls for donations.  Large elegant tapestries are hanging from the walls.
-A small table is in the center of the room with a hooded lantern on top of
-it.  The ground is made up of large slabs of stone.
+La habitación está muy limpia por dentro. Hay estantes pequeños colocados 
+a lo largo de las paredes para donaciones. Grandes y elegantes tapices 
+están colgados de las paredes. Una mesa pequeña está en el centro de la 
+habitación con una linterna con capucha en la parte superior de la 
+habitación. 
 ~
 1 8 39
 D0
 ~
-door~
+puerta~
 3 -1 5106
 D1
 ~
