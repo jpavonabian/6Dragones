@@ -1285,8 +1285,8 @@ void add_follower( CHAR_DATA *ch, CHAR_DATA *master )
         master->pcdata->pet = ch;
     if ( !xIS_SET( ch->act, PLR_BOAT ) ) {
         if ( can_see( master, ch ) )
-            act( AT_ACTION, "$n te sigue.", ch, NULL, master, TO_VICT );
-        act( AT_ACTION, "Sigues a $N.", ch, NULL, master, TO_CHAR );
+            act( AT_ACTION, "$n comienza a seguirte.", ch, NULL, master, TO_VICT );
+        act( AT_ACTION, "Comienzas a seguir a $N.", ch, NULL, master, TO_CHAR );
     }
     return;
 }
