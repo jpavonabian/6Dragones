@@ -784,10 +784,10 @@ El cuerpo de %s está aquí tirado.~
 0
 S 0 0
 #12
-head~
-the decapitated head of %s~
-The head of %s lies here, a vacant stare of shock on its face.~
-%s gobble$q down $p with gusto... disgusting!~
+cabeza~
+la cabeza decapitada de %s~
+La cabeza decapitada de %s rueda por el suelo.~
+%s se come $p... ¡puagh!~
 61 0 1
 10 0 0 0 0 0 0
 5 0 0
@@ -795,10 +795,10 @@ The head of %s lies here, a vacant stare of shock on its face.~
 0
 S 0 0
 #13
-heart~
-the torn-out heart of %s~
-The torn-out heart of %s lies here, no longer beating with life.~
-%s savagely devour$q $p!~
+corazon~
+el corazón de %s~
+El corazón de %s está aquí tirado, ya no volverá a latir.~
+¡%s devora salvagemente $p!~
 61 0 1
 16 0 0 0 0 0 0
 2 0 0
@@ -806,10 +806,10 @@ The torn-out heart of %s lies here, no longer beating with life.~
 0
 S 0 0
 #14
-arm~
-the mangled arm of %s~
-A writhing arm lies torn from the body of %s.~
-%s chomp$q on $p.~
+brazo~
+el brazo arrancado de %s~
+Un brazo arrancado del cuerpo de %s.~
+%s se come $p.~
 61 0 1
 30 0 0 0 0 0 0
 5 0 0
@@ -817,10 +817,10 @@ A writhing arm lies torn from the body of %s.~
 0
 S 0 0
 #15
-leg~
-the dismembered leg of %s~
-Still twitching as if to kick you, the leg of %s lies here.~
-%s chomp$q on $p.~
+pierna~
+la pierna arrancada de %s~
+La pierna arrancada del cuerpo de %s está aquí.~
+%s se come $p.~
 61 0 1
 40 0 0 0 0 0 0
 5 0 0
@@ -828,9 +828,9 @@ Still twitching as if to kick you, the leg of %s lies here.~
 0
 S 0 0
 #16
-guts~
-the spilled guts of %s~
-The disemboweled guts of %s swarm with maggots.~
+tripas~
+las tripas de %s~
+Las tripas de %s se descomponen desagradablemente.~
 ~
 61 0 1
 5 0 0 1 0 0 0
@@ -839,9 +839,9 @@ The disemboweled guts of %s swarm with maggots.~
 0
 S 0 0
 #17
-blood~
-the spilled blood~
-&rA pool of spilled blood lies here.&D~
+sangre~
+un charco de sangre~
+&rUn charco de sangre adorna el suelo.&D~
 ~
 27 0 0
 5 0 0 1 0 0 0
@@ -850,9 +850,9 @@ the spilled blood~
 6
 S 0 0
 #18
-bloodstain~
-the bloodstain~
-Blood stains the ground.~
+mancha  sangre~
+una mancha de sangre~
+La sangre mancha el suelo.~
 ~
 28 0 0
 5 0 0 1 0 0 0
@@ -861,9 +861,9 @@ Blood stains the ground.~
 0
 S 0 0
 #19
-scraps remnants~
-the remnants of %s~
-The remnants of %s are strewn about.~
+restos cuerpo cadaver~
+los restos del cadáver de %s~
+Los restos del cadáver de %s se descomponen lentamente.~
 ~
 29 0 1
 5 0 0 1 0 0 0
@@ -872,10 +872,10 @@ The remnants of %s are strewn about.~
 0
 S 0 0
 #20
-a magic mushroom food~
-a magic mushroom~
-A magic mushroom appears to have been left here.~
-%s enjoy$q $p.~
+una seta magica~
+una seta mágica~
+Una seta mágica crece aquí.~
+%s disfruta $p.~
 19 0 1
 5 0 0 0 0 0 0
 1 10 1
@@ -883,9 +883,9 @@ A magic mushroom appears to have been left here.~
 1
 S 0 0
 #21
-ball light~
-a ball of light~
-&YA ball of light glows brightly here.&D~
+bola luz~
+una bola de luz~
+&YUna bola de luz brilla aquí.&D~
 ~
 1 65 1
 0 0 -1 0 0 0 0
@@ -894,9 +894,9 @@ a ball of light~
 14
 S 0 0
 #22
-mystical spring flowing~
-a mystical spring~
-A mystical spring flows majestically from a glowing circle of blue.~
+fuente mistica~
+una fuente mística~
+Una fuente mística fluye aquí.~
 ~
 25 64 0
 0 100 0 0 0 0 0
@@ -905,14 +905,14 @@ A mystical spring flows majestically from a glowing circle of blue.~
 0
 S 0 0
 > use_prog 100~
-mpechoat $n You drink deeply from the flow of mystical water.
-mpechoar $n $n drinks deeply from the flow of mystical water.
+mpechoat $n  El agua de la fuente mística sacia tu sed por completo.
+mpechoar $n $n bebe del mágica agua de la fuente mística saciando su sed.
 ~
 |
 #23
-skin~
-the skin of %s~
-The skin of %s lies here.~
+piel~
+la piel de %s~
+La piel de %s está aquí.~
 ~
 8 0 1
 0 0 0 0 0 0 0
@@ -921,9 +921,9 @@ The skin of %s lies here.~
 0
 S 0 0
 #24
-fresh slice of meat~
-slice of raw meat from %s~
-A slice of raw meat from %s lies on the ground.~
+trozo carne fresca~
+un trozo de carne fresca de %s~
+Un trozo de carne fresca de %s está en el suelo.~
 ~
 61 262144 1
 15 0 0 0 0 0 0
@@ -932,8 +932,8 @@ A slice of raw meat from %s lies on the ground.~
 0
 S 0 0
 > use_prog 100~
-mpechoat $n Your mouth waters in delight as you enjoy this fresh meat.
-mpechoaround $n $n chews contentedly, enjoying the flavor of the fresh meat.
+mpechoat $n tu boca se llena de placer mientras disfrutas de esta carne fresca.
+mpechoaround $n $n pone una cara que demuestra su increíble placer cuando disfruta del trozo de carne fresca.
 ~
 |
 #25
