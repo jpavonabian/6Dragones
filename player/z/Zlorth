@@ -12,8 +12,8 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       1909233
-Room         4
+Played       1910790
+Room         16107
 HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
 Blood        459 459
@@ -25,8 +25,8 @@ Thirdexp      0
 Height        993
 Weight        8436
 Act           536878920&-351266768
-AffectedBy    512&0&4194306
-Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales shout yell alianza multitud halcyon prohibida~
+AffectedBy    512&0&4194304
+Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales alianza multitud halcyon prohibida~
 Position      115
 Style         2
 Practice      1196
@@ -34,7 +34,7 @@ SavingThrows  0 0 0 0 0
 Alignment     -3
 AppBlood      0
 Hitroll       0
-Damroll       2
+Damroll       0
 Armor         100
 Wimpy         6000
 Resistant     8320
@@ -54,7 +54,7 @@ Danos Hechizos de Rabia y Seremos Desolación.
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1508947971
+LDExpUpdate  1508951485
 tmpcrawl 72
 extlevel 108
 tmpsecond -1
@@ -145,7 +145,7 @@ MKills       311
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
-AttrMod      5 0 0 0 0 0 0
+AttrMod      0 0 0 0 0 0 0
 Condition    0 80 80 0
 Site         150.244.199.226
 LastNews     1432380664
@@ -689,8 +689,6 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
-AffectDataL   'agresividad' 108  40   2  19 0&0&2
-AffectDataL   'agresividad' 108  40   5   1 0&0&2
 Killed       16000
 Killed       1503
 Killed       1532

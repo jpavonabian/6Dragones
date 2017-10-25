@@ -52,12 +52,14 @@ Clanname none~
 0 4 0 0 1 1 0
 0 0 0 0 0 0 0 0
 #5101
-sumo sacerdote sanador julias~
-Julias, el sanador~
-Un sacerdote humano est√° aqu√≠.
+julias sacerdote~
+Julias el sacerdote~
+Julias, un sacerdote humano est· aquÌ.
 ~
-Este hombre tiene un largo cabello recogido en una trenza. Es Julias
-el sacerdote. Viste una t√∫nica y sandalias.
+Este hombre tiene un largo cabello recogido en una trenza. Es Julias el 
+sacerdote. Viste una t√∫nica y sandalias. Este hombre tiene un largo 
+cabello recogido en una trenza. Es Julias el sacerdote. viste en sus pies 
+unas sandalias y una t˙nica le cubre el cuerpo. 
 ~
 0
 Clanname none~
@@ -75,28 +77,28 @@ Clanname none~
 > act_prog p ha entrado al juego.~
 mptutorial $n
 mppause 8
-mpechoat $n &CLa oscuridad se arremolina a tu alrededor y oyes una voz diciendo, 'es tiempo de volver a la tierra de los vivos'.&D
+mpechoat $n La oscuridad se arremolina a tu alrededor y oyes una voz diciendo, 'es tiempo de volver a la tierra de los vivos'.
 mppause 20
 mpat 4 mirar
 mppause 10
-mpechoat $n &cVes un edificio de piedra acercarse hacia t√≠. O quiz√°s seas t√∫ quien cae directamente hacia √©l... Respiras bruscamente al entrar en tu cuerpo.&D
+mpechoat $n Ves un edificio de piedra acercarse hacia tÌ. O quiz·s seas t˙ quien cae directamente hacia Èl... Respiras bruscamente al entrar en tu cuerpo.
 mppause 20
 mpat 4 mirar
-mpecho &CConsejo: &cPuedes escribir &WTEXTSPEED # &cdonde n√∫mero es un n√∫mero entre 1 y 10, siendo 5 por defecto la velocidad de avance del tutorial.&D
+mpecho Consejo: Puedes escribir TEXTSPEED # donde n˙mero es un n˙mero entre 1 y 10, siendo 5 por defecto la velocidad de del tutorial.
 mppause 20
-mpechoat $n &CJulias te sonr√≠e y dice 'Finalmente has vuelto a nosotros, $n. Estaba preocupado, casi no lo conseguimos. Es hora de continuar.'&D
-mppause 20
-mpat 4 mirar
-mppause 20
-mpechoat $n &cTe pones en pie.&D
-mppause 20
-mpechoat $n &CJulias dice, 'Te ense√±ar√© lo b√°sico. ¬øCrees estar a la altura?'&D
+mpechoat $n Julias te sonrÌe y dice 'Finalmente has vuelto a nosotros, $n. Estaba preocupado, casi no lo conseguimos. Es hora de continuar.'
 mppause 20
 mpat 4 mirar
 mppause 20
-mpechoat $n &cLe sientes con la cabeza a Julias.&D
+mpechoat $n Te pones en pie.
 mppause 20
-mpechoat $n &CJulias dice con una sonrisa, '¬°Estupendo! Vamos fuera para poder comenzar con tu aprendizaje. Escribe &Wseguir Julias&C e iremos juntos a la plataforma central de Ciudad Paleon.'&D
+mpechoat $n Julias dice, 'Te enseÒarÈ lo b·sico. Crees estar a la altura?'
+mppause 20
+mpat 4 mirar
+mppause 20
+mpechoat $n Le asientes con la cabeza a Julias.
+mppause 20
+mpechoat $n Julias dice con una sonrisa, 'Estupendo! Vamos fuera para poder comenzar con tu aprendizaje. Escribe seguir Julias e iremos juntos a la plataforma central de Ciudad Paleon.'
 ~
 > act_prog p comienza a seguirte.~
 mpquest $n tutorial 1
@@ -105,9 +107,9 @@ mpclear $n
 n
 mppause 6
 n
-decir Aqu√≠ est√° la entrada al templo.
+decir AquÌ est la entrada al templo.
 mppause 6
-mpechoat $n &CConsejo:&c Cuando encuentres una puerta, puedes abrirla con el comando &WABRIR&c.
+mpechoat $n Consejo: Cuando encuentres una puerta, puedes abrirla con el comando ABRIR.
 mppause 15
 abrir n
 n
@@ -124,7 +126,7 @@ mppause 12
 s
 mptutorial $n
 mppause 12
-mpechoat $n &CJulias dice, 'Como puedes ver, el Templo se encuentra al noreste de aqu√≠ y las tiendas est√°n al sur.'&D
+mpechoat $n Julias dice, 'Como puedes ver, el Templo se encuentra al noreste de aqu y las tiendas estn al sur.'
 mppause 20
 sonreir
 mppause 20
@@ -134,13 +136,13 @@ mpoload 5101
 coger list
 dar list $n
 mppause 20
-mpechoat $n &CJulias dice, 'Ahora escribe &Wmirar lista&C. Ver√°s una lista de tareas a realizar.'
+mpechoat $n Julias dice, 'Ahora escribe mirar lista. Vers una lista de tareas a realizar.'
 mppause 20
 mpat 4 mirar
 mppause 20
-mpechoat $n &CJulias dice, 'Buena suerte $n, Amelia debe estar en una de las tiendas de la zona sur, escribe &Wsur&C.
+mpechoat $n Julias dice, 'Buena suerte $n, Amelia debe estar en una de las tiendas de la zona sur, escribe sur.
 mppause 5
-mpechoat $n &CConsejo: &cSi te pierdes, escribe &Wayuda Paleon&c, esto te mostrar√° algo de ayuda.&D
+mpechoat $n Consejo: Si te pierdes, escribe ayuda Paleon, esto te mostrar· algo de ayuda.
 mppause 5
 mpechoat $n Julias desaparece.
 mpgoto 4
@@ -1451,12 +1453,12 @@ D2
 0 -1 5109
 S
 #5109
-Altar of Light~
+el altar de la luz~
 ~
-A beautifully engraved golden altar is against the south wall.  It has a
-light blue fabric with purple edging draped across the center of it.  A
-hooded lantern is mounted to the east, and west walls.  There is a dark
-blue rug centered over the stone slab floor.
+Un hermoso altar de oro bellamente grabado se encuentra en la pared sur. 
+Tiene un Tejido azul claro con ribete morado en el centro. Una linterna 
+con capucha est· montada al este, y al oeste. Hay una alfombra azul oscuro 
+centrada sobre el suelo de losa de piedra. 
 ~
 1 8 39
 D0
@@ -2612,7 +2614,7 @@ S
 
 
 #SHOPS
- 5102    0  0  0  0  0   120  90         0 23    ; Shop keeper Amelia
+ 5102    0  0  0  0  0   120  90         0 23    ; amelia la tendera
  5110    0  0  0  0  0   120  90         0 23    ; Shopkeeper Warren
 0
 

@@ -12,12 +12,12 @@ Level        108
 Firstlevel   0
 Secondlevel  0
 Thirdlevel   0
-Played       1780
-Room         16020
-HpManaMove   11735 11735 1010 2410 4480 4480
+Played       2628
+Room         16018
+HpManaMove   11735 11735 1710 2410 4480 4480
 BaseHp       0 
 Blood        10 202
-Money         0 10 281 100 1000 -1
+Money         0 10 546 100 1000 -1
 Exp           0
 Firstexp      0
 Secondexp     0
@@ -44,10 +44,10 @@ RECAST          0
 AuthedBy     Zlorth~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1508936525
+LDExpUpdate  1508951485
 tmpsecond -1
 tmpthird -1
-tmproom 16019
+tmproom 16018
 Alias        inm~ inmortales~
 Textspeed          5
 PotionTimer        0 0 0
@@ -72,7 +72,7 @@ MapType            0
 FoundArea       Paleon Sewer~
 WizInvis     108
 Htown      Ciudad Prohibida~
-Flags        32802
+Flags        34
 Bardtimer    0
 Bardsn       0
 PKills       0
@@ -83,7 +83,7 @@ IllegalPK    0
 AttrPerm     25 18 21 10 16 10 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 100 100 0
-Site         89.128.196.81
+Site         (Link-Dead)
 LastNews     0
 Holdbreath 0
 Frostbite 0

@@ -16,7 +16,7 @@ $
 #SPELLLIMIT 0
 #WEATHERCELL 0 0
 
-#RESETMSG &GThe sound of a wagon wheel turning on the street echoes through the city.~
+#RESETMSG El sonido de una rueda de carro resuena a través de la ciudad.~
 
 #FLAGS
 147908 8
@@ -52,18 +52,20 @@ Clanname none~
 0 4 0 0 1 1 0
 0 0 0 0 0 0 0 0
 #5101
-High Priest healer Julias~
-High Priest Julias~
-An elderly male human priest in white robes is standing here.
+julias sacerdote~
+Julias el sacerdote~
+Julias, un sacerdote humano está aquí.
 ~
-The elderly human has silver hair tied back in a braid.  High Priest Julias
-is wearing white robes, and thin sandals on his feet.
+Este hombre tiene un largo cabello recogido en una trenza. Es Julias el 
+sacerdote. Viste una tÃºnica y sandalias. Este hombre tiene un largo 
+cabello recogido en una trenza. Es Julias el sacerdote. viste en sus pies 
+unas sandalias y una túnica le cubre el cuerpo. 
 ~
 0
 Clanname none~
 0
 0
-131075 4194304 0 C
+1073872899 4194304 0 C
 100 0 0 0d0+-25536 0d0+0
 0 0 0 0 0 
 0
@@ -72,48 +74,48 @@ Clanname none~
 0 0 0 0 0
 0 0 0 0 1 1 0
 0 0 0 0 0 0 0 0
-> act_prog p has entered the game.~
+> act_prog p ha entrado al juego.~
 mptutorial $n
 mppause 8
-mpechoat $n &CDarkness swirls around you and you hear a voice saying to you, 'It is time for you to return to the land of the living.'&D
+mpechoat $n La oscuridad se arremolina a tu alrededor y oyes una voz diciendo, 'es tiempo de volver a la tierra de los vivos'.
 mppause 20
-mpat 4 look
+mpat 4 mirar
 mppause 10
-mpechoat $n &cYou see a simple stone building approaching you, or rather you falling towards it. Through the roof you can see your body lying unconscious on a simple straw pallet. As you enter into your body, you let out a small moan.&D
+mpechoat $n Ves un edificio de piedra acercarse hacia tí. O quizás seas tú quien cae directamente hacia él... Respiras bruscamente al entrar en tu cuerpo.
 mppause 20
-mpat 4 look
-mpecho &CHint: &cYou may type &WTEXTSPEED # &cwhere number is 1 - 10, 5 being default to speed up or slow down the tutorial speed.&D
+mpat 4 mirar
+mpecho Consejo: Puedes escribir TEXTSPEED # donde número es un número entre 1 y 10, siendo 5 por defecto la velocidad de del tutorial.
 mppause 20
-mpechoat $n &CHigh Priest Julias smiles and says 'Finally back with us, $n. I was getting worried, especially on your Rite of Passage Day. Time to get up.'&D
+mpechoat $n Julias te sonríe y dice 'Finalmente has vuelto a nosotros, $n. Estaba preocupado, casi no lo conseguimos. Es hora de continuar.'
 mppause 20
-mpat 4 look
+mpat 4 mirar
 mppause 20
-mpechoat $n &cYou stand up from a simple straw pallet.&D
+mpechoat $n Te pones en pie.
 mppause 20
-mpechoat $n &CHigh Priest Julias says, 'You have several things you need to do before the Rite of Passage can begin. Do you think you are up to it?'&D
+mpechoat $n Julias dice, 'Te enseñaré lo básico. Crees estar a la altura?'
 mppause 20
-mpat 4 look
+mpat 4 mirar
 mppause 20
-mpechoat $n &cStill slightly uncoordinated, you think you can manage. You nod at High Priest Julias.&D
+mpechoat $n Le asientes con la cabeza a Julias.
 mppause 20
-mpechoat $n &CHigh Priest Julias says with a smile, 'Great! Let's go outside so we can get a good bearing about you. Type &WFOLLOW JULIAS&C and we will walk to Paleon Central Platform.'&D
+mpechoat $n Julias dice con una sonrisa, 'Estupendo! Vamos fuera para poder comenzar con tu aprendizaje. Escribe seguir Julias e iremos juntos a la plataforma central de Ciudad Paleon.'
 ~
-> act_prog p follows you.~
+> act_prog p comienza a seguirte.~
 mpquest $n tutorial 1
 mppause 20
 mpclear $n
 n
 mppause 6
 n
-say Here is the entrance to Paleon City's Temple of Light.
+decir Aquí est la entrada al templo.
 mppause 6
-mpechoat $n &CHint:&c When you encounter doors, you can open doors with the &WOPEN&c command.
+mpechoat $n Consejo: Cuando encuentres una puerta, puedes abrirla con el comando ABRIR.
 mppause 15
-open n
+abrir n
 n
-close s
+cerrar s
 mppause 12
-w
+oeste
 mppause 12
 s
 mppause 12
@@ -124,32 +126,32 @@ mppause 12
 s
 mptutorial $n
 mppause 12
-mpechoat $n &CJulias the High Priest says, 'As you can see, the Temple is to the northeast of here, the shop keepers are to the south on Traders Way. The countryside is out towards the east and west through the protective city gates. You won't need to go into the countryside for your tasks, but it's good to know the way to get there.'&D
+mpechoat $n Julias dice, 'Como puedes ver, el Templo se encuentra al noreste de aqu y las tiendas estn al sur.'
 mppause 20
-snicker
+sonreir
 mppause 20
-mpat 4 look
+mpat 4 mirar
 mppause 10
 mpoload 5101
-get list
-give list $n
+coger list
+dar list $n
 mppause 20
-mpechoat $n &CJulias the High Priest says, 'Now type &WLOOK LIST&C. You should be able to see a list of jobs you have to do.'
+mpechoat $n Julias dice, 'Ahora escribe mirar lista. Vers una lista de tareas a realizar.'
 mppause 20
-mpat 4 look
+mpat 4 mirar
 mppause 20
-mpechoat $n &CJulias the High Priest says, 'Good luck $n, Amelia should be in one of the shops to the south on Traders Way, type &WSOUTH&C.
+mpechoat $n Julias dice, 'Buena suerte $n, Amelia debe estar en una de las tiendas de la zona sur, escribe sur.
 mppause 5
-mpechoat $n &CHint: &cAnd if you need help finding your way around, just type &WHELP PALEON&c, that should keep you from getting lost.&D
+mpechoat $n Consejo: Si te pierdes, escribe ayuda Paleon, esto te mostrará algo de ayuda.
 mppause 5
-mpechoat $n Julias the High Priest leaves north.
+mpechoat $n Julias desaparece.
 mpgoto 4
 ~
 |
 #5102
-Shop keeper magical Amelia~
-Shop keeper Amelia~
-Shop keeper Amelia is displaying her wares here.
+amelia tendera magica~
+amelia la tendera~
+Amelia la tendera estÃ¡ vendiendo cosas.
 ~
 Constantly checking and polishing her potion vials and bottles, Amelia 
 looks busy but cheerful. Her white hair, braided loosely and tied with a 
@@ -174,7 +176,7 @@ Clanname none~
 > all_greet_prog 100~
 mppause 8
 if quest(tutorial) != 1
-  mpechoat $n &CHint:  &cIt is important that you complete quests in the order they are tasked to you.  Type &WJOURNAL&c to see what you should be doing next.&D
+  mpechoat $n &CConsejo:  &cLos quests deben completarse en orden.  Teclea &Wdiario&c para ver tu siguiente paso.&D
 else
   mptutorial $n
   mpquest $n tutorial 2
@@ -1451,12 +1453,12 @@ D2
 0 -1 5109
 S
 #5109
-Altar of Light~
+el altar de la luz~
 ~
-A beautifully engraved golden altar is against the south wall.  It has a
-light blue fabric with purple edging draped across the center of it.  A
-hooded lantern is mounted to the east, and west walls.  There is a dark
-blue rug centered over the stone slab floor.
+Un hermoso altar de oro bellamente grabado se encuentra en la pared sur. 
+Tiene un Tejido azul claro con ribete morado en el centro. Una linterna 
+con capucha está montada al este, y al oeste. Hay una alfombra azul oscuro 
+centrada sobre el suelo de losa de piedra. 
 ~
 1 8 39
 D0
@@ -2612,7 +2614,7 @@ S
 
 
 #SHOPS
- 5102    0  0  0  0  0   120  90         0 23    ; Shop keeper Amelia
+ 5102    0  0  0  0  0   120  90         0 23    ; amelia la tendera
  5110    0  0  0  0  0   120  90         0 23    ; Shopkeeper Warren
 0
 
