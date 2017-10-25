@@ -937,9 +937,9 @@ mpechoaround $n $n pone una cara que demuestra su increíble placer cuando disfru
 ~
 |
 #25
-shoppe bag shopping~
-a bag~
-A shoppe bag lies discarded nearby.~
+bolsa combra~
+bolsa compra~
+Una bolsa de la compra está aqí en medio.~
 ~
 15 0&1 1
 50 0 0 1 0 1 0
@@ -948,9 +948,9 @@ A shoppe bag lies discarded nearby.~
 1
 S 0 0
 #26
-blood pool spill bloodlet~
-a quantity of let blood~
-A pool of let blood glistens here.~
+piscina sangre~
+una piscina de sangre~
+Ves una enorme piscina de sangre.~
 ~
 27 0 0
 0 0 0 0 0 0 0
@@ -959,9 +959,9 @@ A pool of let blood glistens here.~
 0
 S 0 0
 #27
-chain vest~
-a chain vest~
-A chain vest has been left here.~
+chaleco~
+un chaleco~
+Un chaleco ha sido tirado aquí.~
 ~
 9 0 9 8
 2 2 0 0 0 1 0
@@ -970,9 +970,9 @@ A chain vest has been left here.~
 13
 S 0 0
 #28
-boots~
-a pair of boots~
-A pair of boots has been left here.~
+par botas~
+un par de botas~
+Un par de botas han sido tiradas aquí.~
 ~
 9 0 65
 2 2 0 0 0 0 0
@@ -983,9 +983,9 @@ S 0 0
 A
 14 25
 #29
-leather belt~
-a leather belt~
-A leather belt has been left behind here.~
+cinturon cuero~
+un cinturón de cuero~
+Alguien ha tirado un cinturón de cuero.~
 ~
 9 0 2049
 2 2 2 0 0 0 0
@@ -994,9 +994,9 @@ A leather belt has been left behind here.~
 1
 S 0 0
 #30
-fire flame cloud~
-a cloud of vaporous flame~
-&RA cloud of vaporous flame blazes here, defying the elements.&D~
+nube fuego~
+una nube de fuego~
+&RUna nube de fuego flota por aquí.&D~
 ~
 34 0 0
 0 0 0 0 0 0 0
@@ -1005,9 +1005,9 @@ a cloud of vaporous flame~
 3
 S 0 0
 #31
-trap~
-a trap~
-You detect a trap.~
+trampa~
+una trampa~
+Detectas una trampa.~
 ~
 44 0 0
 0 0 0 0 0 0 0
@@ -1016,9 +1016,9 @@ You detect a trap.~
 0
 S 0 0
 #32
-portal whirling~
-a whirling portal~
-A whirling portal of energy turns slowly, beckoning to the unknown.~
+portal giratorio energia~
+un portal giratorio de energía~
+Un portal giratorio de energía gira lentamente, haciendo señas a lo desconocido.~
 ~
 46 64 0
 0 0 0 0 0 0 0
@@ -1027,9 +1027,9 @@ A whirling portal of energy turns slowly, beckoning to the unknown.~
 0
 S 0 0
 #33
-black poison powder~
-black poisoning powder~
-A small amount of black poisoning powder sits in a small container on the ground.~
+polvo veneno negro~
+polvo negro de veneno~
+Un montoncito de negro polvo de veneno está aquí almacenado.~
 ~
 70 0 16385
 0 0 0 0 0 1 0
@@ -1038,9 +1038,9 @@ A small amount of black poisoning powder sits in a small container on the ground
 0
 S 0 0
 #34
-scroll scribing blank~
-a blank scroll~
-A blank scroll lays here gathering dust.~
+pergamino escribir blanco~
+un pergamino en blanco~
+Un pergamino en blanco acumula polvo.~
 ~
 2 0 16385
 0 -1 -1 -1 0 0 0
@@ -1050,9 +1050,9 @@ A blank scroll lays here gathering dust.~
 'NONE' 'NONE' 'NONE'
 S 0 0
 #35
-flask empty~
-an empty flask~
-An empty flask lays here gathering dust.~
+frasco vacio~
+un frasco vacío~
+Un frasco vacío está aquí acumulando polvo.~
 ~
 10 0 16385
 1 -1 -1 -1 0 0 0
@@ -1198,10 +1198,10 @@ Grey chunks of the brain of %s lie here attracting flies.~
 0
 S 0 0
 #45
-hand~
-the severed hand of %s~
-The severed hand of %s clenches in a death spasm.~
-%s savagely devour$q $p!~
+mano~
+la mano de %s~
+la mano de %s está aquí llena de sangre.~
+¡%s devora $p!~
 61 0 1
 12 0 0 0 0 0 0
 2 0 0
@@ -1209,10 +1209,10 @@ The severed hand of %s clenches in a death spasm.~
 0
 S 0 0
 #46
-foot~
-the twisted foot of %s~
-The foot of %s lies in a pool of coagulated blood.~
-%s savagely devour$q $p!~
+pie~
+el pie torcido de %s~
+El pie de %s está aquí cubierto de sangre cuagulada.~
+¡%s devora $p!~
 61 0 1
 12 0 0 0 0 0 0
 2 0 0
@@ -1220,10 +1220,10 @@ The foot of %s lies in a pool of coagulated blood.~
 0
 S 0 0
 #47
-finger~
-the wriggling finger of %s~
-Ripped from the hand of %s, a finger lies wriggling here.~
-%s savagely devour$q $p!~
+dedo~
+el dedo cortado de %s~
+Arrancado de la mano de %s, un dedo está aquí tirado.~
+¡%s devora $p!~
 61 0 1
 5 0 0 0 0 0 0
 1 0 0
@@ -1231,10 +1231,10 @@ Ripped from the hand of %s, a finger lies wriggling here.~
 0
 S 0 0
 #48
-ear~
-the torn ear of %s~
-The sliced-off ear of %s lies here, never again to hear battle.~
-%s savagely devour$q $p!~
+oreja~
+la oreja de %s~
+La oreja de %s está aquí tirada.~
+¡%s devora $p!~
 61 0 1
 5 0 0 0 0 0 0
 1 0 0
@@ -1242,10 +1242,10 @@ The sliced-off ear of %s lies here, never again to hear battle.~
 0
 S 0 0
 #49
-eye~
-the gouged-out eye of %s~
-A gouged-out eye forever envisions the gruesome death of %s.~
-%s savagely devour$q $p!~
+ojo~
+el ojo de %s~
+El ojo de %s rueda por aquí.~
+¡%s devora $p!~
 61 0 1
 5 0 0 0 0 0 0
 1 0 0
@@ -1253,10 +1253,10 @@ A gouged-out eye forever envisions the gruesome death of %s.~
 0
 S 0 0
 #50
-long-tongue~
-the long tongue~
-Twisting as if to taste you, the writhing tongue lies here.~
-%s savagely devour$q $p!~
+lengua~
+una lengua~
+Una lengua está aquí tirada.~
+¡%s devora $p!~
 61 0 1
 14 0 0 0 0 0 0
 2 0 0
@@ -1363,9 +1363,9 @@ The severed claw of %s lies mangled here.~
 0
 S 0 0
 #60
-blood fountain~
-a fountain of blood~
-A fountain of fresh blood flows in the corner.~
+fuente sangre~
+una fuente de sangre~
+Una fuente de sangre fluye en una esquina.~
 ~
 27 0 0
 99999 99999 0 0 0 0 0
