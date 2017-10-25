@@ -1073,9 +1073,9 @@ A piece of paper has been left here.~
 5
 S 0 0
 #37
-quill pen~
-a quill~
-A feather dipped in ink lies here.~
+pluma~
+Una pluma~
+Una pluma está aquí sumergida en tinta.~
 ~
 21 0 1
 15 15 0 0 0 0 0
@@ -1084,9 +1084,9 @@ A feather dipped in ink lies here.~
 0
 S 0 0
 #38
-boots travel traveling~
-weathered boots~
-A pair of weathered traveling boots lie here.~
+botas viaje~
+unas botas de viaje~
+unas botas de viaje están aquí tiradas.~
 ~
 9 8391747 65
 11 11 0 0 0 0 0
@@ -1103,9 +1103,9 @@ A
 A
 2 1
 #39
-key gate~
-a gate key~
-A largish key lies here.~
+llave puerta~
+Una llave de una puerta~
+Una llave está aquí tirada.~
 ~
 18 524288 1
 0 0 0 0 0 0 0
@@ -1114,9 +1114,9 @@ A largish key lies here.~
 0
 S 0 0
 #40
-leather wrist band~
-a leather wrist band~
-A leather wrist band has been left here.~
+pulsera cuero~
+una pulsera de cuero~
+Una pulsera de cuero ha sido tirada aquí.~
 ~
 9 0 4097
 2 2 0 0 0 0 0
@@ -1127,9 +1127,9 @@ S 0 0
 A
 18 1
 #41
-orb~
-the orb~
-A small orb tops a slender pedestal of glowing crystal.~
+orbe~
+el orbe~
+Un pequeño orbe corona un pedestal de cristal brillante.~
 ~
 37 0 0
 0 0 0 0 0 0 0
@@ -1138,7 +1138,7 @@ A small orb tops a slender pedestal of glowing crystal.~
 0
 S 0 0
 E
-orb~
+orbe~
 Pulsing atop the crystal column, it seems as though it could be pushed to
 turn it ever so slightly.
 ~
@@ -1158,9 +1158,9 @@ mpat 99 pull orb
 ~
 |
 #42
-orb~
-a pulsing orb~
-A pulsing orb lies here, probably lost.~
+orbe~
+un orbe~
+Un orbe está aquí, probablemente perdido.~
 ~
 4 0 16385
 25 1 1 -1 0 0 0
@@ -1264,10 +1264,10 @@ Una lengua está aquí tirada.~
 0
 S 0 0
 #51
-eyestalk~
-the eyestalk of %s~
-Visions of death fill your mind as you notice the eyestalks of %s.~
-%s savagely devour$q $p!~
+nervio optico~
+el nervio óptico de %s~
+La visión de la muerte invade tu mente al ver en el suelo el nervio óptico de %s.~
+¡%s devora $p!~
 61 0 1
 10 0 0 0 0 0 0
 1 0 0
@@ -1275,10 +1275,10 @@ Visions of death fill your mind as you notice the eyestalks of %s.~
 0
 S 0 0
 #52
-tentacle~
-the slimy tentacle of %s~
-A tentacle of %s thrashes wildly in a feeble attempt to regain life.~
-%s savagely devour$q $p!~
+tentaculo~
+el tentáculo de %s~
+Un tentáculo de %s está aquí tirado.~
+¡%s devora $p!~
 61 0 1
 25 0 0 0 0 0 0
 4 0 0
@@ -1286,9 +1286,9 @@ A tentacle of %s thrashes wildly in a feeble attempt to regain life.~
 0
 S 0 0
 #53
-fin~
-the mutilated fin of %s~
-The mutilated fin of %s lies here, smelling of rot and decay.~
+aleta~
+la aleta mutilada de %s~
+la aleta mutilada de %s está aquí pudriéndose lentamente.~
 ~
 13 0 1
 0 0 0 0 0 0 0
@@ -1297,9 +1297,9 @@ The mutilated fin of %s lies here, smelling of rot and decay.~
 0
 S 0 0
 #54
-wing~
-the wing of %s~
-The mangled wing of %s thrashes in final throes.~
+ala~
+un ala de %s~
+Un ala de %s está aquí tirada.~
 ~
 13 0 0
 0 0 0 0 0 0 0
@@ -1308,9 +1308,9 @@ The mangled wing of %s thrashes in final throes.~
 0
 S 0 0
 #55
-tail~
-the thrashing tail of %s~
-The tail of %s lies here in a heap of morbid decay.~
+cola~
+la cola de %s~
+La cola de %s se pudre lentamente en el suelo.~
 ~
 13 0 1
 0 0 0 0 0 0 0
@@ -1319,9 +1319,9 @@ The tail of %s lies here in a heap of morbid decay.~
 0
 S 0 0
 #56
-scale~
-a scale from %s~
-A scale from %s lies here, caked thickly in blood.~
+escama~
+una escama de %s~
+Una escama de %s está aquí tirada en un charco de sangre.~
 ~
 13 0 1
 0 0 0 0 0 0 0
@@ -1330,9 +1330,9 @@ A scale from %s lies here, caked thickly in blood.~
 0
 S 0 0
 #57
-tusk~
-the broken tusk of %s~
-The broken tusk of %s has dropped here.~
+colmillo~
+un colmillo de %s~
+Un colmillo de %s ha caído aquí.~
 ~
 13 0 1
 0 0 0 0 0 0 0
@@ -1341,9 +1341,9 @@ The broken tusk of %s has dropped here.~
 0
 S 0 0
 #58
-horn~
-the cracked horn of %s~
-The cracked horn of %s lies dislodged here.~
+cuerno~
+un cuerno de %s~
+Un cuerno de %s rueda por aquí.~
 ~
 13 0 1
 0 0 0 0 0 0 0
@@ -1352,9 +1352,9 @@ The cracked horn of %s lies dislodged here.~
 0
 S 0 0
 #59
-claw~
-the severed claw of %s~
-The severed claw of %s lies mangled here.~
+zarpa~
+una zarpa de %s~
+Una zarpa de %s está aquí tirada.~
 ~
 13 0 1
 0 0 0 0 0 0 0
@@ -1504,9 +1504,9 @@ reduction of sentence BUT an increase in time.
 Please read the following help files:  help appeals and help the_panel.
 ~
 #67
-hooded lantern~
-a hooded lantern~
-A hooded lantern was left here.~
+lampara aceite~
+una lámpara de aceite~
+Una lámpara de aceite ha sido dejada aquí.~
 ~
 1 0 16385
 0 0 -1 0 0 0 0
@@ -1515,9 +1515,9 @@ A hooded lantern was left here.~
 14
 S 0 0
 #68
-leather backpack~
-a leather backpack~
-A leather backpack was left here.~
+mochila cuero~
+una mochila de cuero~
+Una mochila de cuerpo ha sido dejada aquí.~
 ~
 15 0 524289
 300 0 0 6 0 0 0
@@ -1537,9 +1537,9 @@ A clothing has been carelessly left behind here.~
 0
 S 0 0
 #70
-fillet mignon steak food~
-a delicate fillet mignon~
-A delicate fillet mignon lies here on a plate, still sizzling.~
+filete comida~
+un delicioso filete~
+Un delicioso filete humea aquí.~
 ~
 19 0 1
 0 0 0 0 0 0 0
@@ -1794,10 +1794,10 @@ A sharpening stone has been cast aside here.~
 13
 S 0 0
 #92
-delicious meat pie food~
-a delicious meat pie~
-A steaming hot, delicious meat pie has been left here.~
-%s scoff$q down $p!~
+delicioso pastel carne comida~
+un delicioso pastel de carne~
+Un delicioso pastel de carne humea en un plato.~
+%s se come lentamente $p.~
 19 64 1
 8 10 0 0 0 0 0
 1 0 0
@@ -1805,10 +1805,10 @@ A steaming hot, delicious meat pie has been left here.~
 0
 S 0 0
 #93
-red apple food~
-a red apple~
-A red apple has been left here.~
-%s slowly devour$q $p.~
+manzana roja comida~
+una manzana roja~
+Una manzana roja ha sido tirada aquí.~
+%s devora lentamente $p.~
 19 64 1
 8 10 0 0 0 0 0
 1 0 0
@@ -1816,10 +1816,10 @@ A red apple has been left here.~
 0
 S 0 0
 #94
-healthy yellow banana food~
-a yellow banana~
-A bright yellow banana has been left here.~
-%s polishes off $p in a few short bites. Oh well, at least it's healthy.~
+platano saludable amarillo comida~
+un plátano amarillo~
+Un plátano amarillo ha sido dejado aquí.~
+%s se come $p.~
 19 64 1
 8 10 0 0 0 0 0
 1 0 0
@@ -1827,10 +1827,10 @@ A bright yellow banana has been left here.~
 0
 S 0 0
 #95
-cheese wheel food~
-a cheese wheel~
-A cheese wheel has been left here.~
-%s thoroughly enjoy$q $p.~
+rueda queso comida~
+una rueda de queso~
+Una rueda de queso.~
+%s se come $p.~
 19 64 1
 8 10 0 0 0 0 0
 1 0 0
@@ -1838,10 +1838,10 @@ A cheese wheel has been left here.~
 0
 S 0 0
 #96
-loaf wheat bread food~
-a loaf of wheat bread~
-A loaf of wheat bread lays here.~
-Peeling back the cloth with care, %s nibble$q on $p until it's all gone.~
+tarta fresa comida~
+una tarta de fresa~
+Una tarta de fresa está aquí tirada.~
+Lentamente, %s  se come $p.~
 19 64 1
 8 10 0 0 0 0 0
 1 0 0
@@ -1849,9 +1849,9 @@ Peeling back the cloth with care, %s nibble$q on $p until it's all gone.~
 0
 S 0 0
 #97
-black potion~
-a black potion~
-A black potion has been left here.~
+pocion negra~
+una poción negra~
+Una poción negra está aquí tirada descuidadamente.~
 ~
 10 65 1
 20 -1 -1 -1 127 0 0
@@ -1861,10 +1861,10 @@ A black potion has been left here.~
 'dark blessings' 'NONE' 'NONE'
 S 0 0
 #98
-slice wedding cake food~
-A slice of wedding cake~
-A slice of heavenly wedding cake sits on a garden table.~
-%s look$q around suspiciously, then scarf$q down $p.~
+racion viaje comida~
+una ración de viaje~
+Una ración de viaje está aquí tirada.~
+%s se come $p.~
 19 0 1
 40 0 0 0 0 0 0
 2 75 7
@@ -1872,13 +1872,13 @@ A slice of heavenly wedding cake sits on a garden table.~
 0
 S 0 0
 E
-angel food angelfood cake~
-This cake appears as if it might just float away...unless you eat it!
+racion viaje~
+¡tiene una pinta deliciosa!
 ~
 #99
-bottle dye~
-a bottle of dye~
-A bottle of dye has been left here.~
+colorante botella~
+una botella de colorante~
+Una botella de colorante ha sido tirada aquí.~
 ~
 71 0 16385
 0 0 0 0 0 1 0
@@ -1887,8 +1887,8 @@ A bottle of dye has been left here.~
 13
 S 0 0
 E
-99 bottle dye~
-This small bottle is round in shape, though flat on both front and back surfaces. A label on the back informs you that the dye can become any color you wish while dying, and to avoid drinking the dye. Inside, a colorless liquid smelling strongly of herbs comes up to the very mouth of this tiny bottle.
+99 botella colorante~
+Es una botella de colorante. En la etiqueta pone que puede tener el color que desees.
 ~
 #0
 
