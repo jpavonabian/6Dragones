@@ -7300,7 +7300,7 @@ void do_foldarea( CHAR_DATA *ch, char *argument )
     if ( ( !str_cmp( argument, "tutorial.are" ) && ch->level < 108 )
          || ( !str_cmp( argument, "etutorial.are" ) && ch->level < 108 )
          || ( !str_cmp( argument, "dtutorial.are" ) && ch->level < 108 ) ) {
-        send_to_char( "You need Vladaar's permission to change anything with tutorials.\r\n", ch );
+        send_to_char( "Necesitas el permiso de Zlorth para modificar los tutoriales.\r\n", ch );
         return;
     }
 
