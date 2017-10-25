@@ -1277,7 +1277,7 @@ void do_fire( CHAR_DATA *ch, char *argument )
     max_dist = URANGE( 1, bow->value[3], 10 );
 
     if ( bow->value[6] != arrow->value[4] ) {
-        const char             *msg = "You have nothing to fire...\r\n";
+        const char             *msg = "No tienes nada que disparar...\r\n";
 
         switch ( bow->value[6] ) {
             case PROJ_BOLT:
