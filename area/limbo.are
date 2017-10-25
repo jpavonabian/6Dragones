@@ -1139,8 +1139,7 @@ Un pequeño orbe corona un pedestal de cristal brillante.~
 S 0 0
 E
 orbe~
-Pulsing atop the crystal column, it seems as though it could be pushed to
-turn it ever so slightly.
+Brillando encima de la columna, este orbe parece que se puede empujar.
 ~
 > push_prog 100~
 mpechoat $n The instant your hand touches the orb, your surroundings change.
@@ -1170,7 +1169,7 @@ Un orbe está aquí, probablemente perdido.~
 'NONE'
 S 0 0
 > use_prog 100~
-mpecho $n blows sweet dragon's breath over you.
+mpecho $n sopla un dulce aliento de dragón sobre tí.
 ~
 |
 #43
@@ -1187,10 +1186,10 @@ S 0 0
 A
 4 2
 #44
-chunk chunks brain brains~
-the splattered brains of %s~
-Grey chunks of the brain of %s lie here attracting flies.~
-%s savagely devour$q $p!~
+trozos pedazos cerebro~
+trozos del cerebro de %s~
+Los trozos del cerebro de %s atraen moscas.~
+¡%s devora $p!~
 19 0 1
 16 0 0 0 0 0 0
 2 0 0
