@@ -1416,27 +1416,27 @@ void pullorpush( CHAR_DATA *ch, OBJ_DATA *obj, bool pull )
         }
         if ( IS_SET( obj->value[0], TRIG_D_NORTH ) ) {
             edir = DIR_NORTH;
-            txt = "to the north";
+            txt = "hacia el norte";
         }
         else if ( IS_SET( obj->value[0], TRIG_D_SOUTH ) ) {
             edir = DIR_SOUTH;
-            txt = "to the south";
+            txt = "hacia el sur";
         }
         else if ( IS_SET( obj->value[0], TRIG_D_EAST ) ) {
             edir = DIR_EAST;
-            txt = "to the east";
+            txt = "hacia el este";
         }
         else if ( IS_SET( obj->value[0], TRIG_D_WEST ) ) {
             edir = DIR_WEST;
-            txt = "to the west";
+            txt = "hacia el oeste";
         }
         else if ( IS_SET( obj->value[0], TRIG_D_UP ) ) {
             edir = DIR_UP;
-            txt = "from above";
+            txt = "desde arriba";
         }
         else if ( IS_SET( obj->value[0], TRIG_D_DOWN ) ) {
             edir = DIR_DOWN;
-            txt = "from below";
+            txt = "desde abajo";
         }
         else {
             bug( "%s", "PullOrPush: door: no direction flag set." );
