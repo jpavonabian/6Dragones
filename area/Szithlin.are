@@ -1239,7 +1239,7 @@ a drow longsword~
 A bright sword lays here rusting away.~
 ~
 5 0 8193
-0 17 25 0 0 0 0
+0 14 24 0 0 0 0
 1 111 11
 2
 0
@@ -1250,7 +1250,7 @@ A drow spear~
 A long spear lays here rotting~
 ~
 5 0 8193
-0 3 10 7 10 0 0
+0 5 15 7 10 0 0
 1 92 9
 2
 0
@@ -1283,7 +1283,7 @@ A pair of drow leg guards~
 A breastplate lays here rusting~
 ~
 9 0 33
-5 5 0 0 0 0 0
+10 10 0 0 0 0 0
 1 124 12
 2
 0
@@ -1294,7 +1294,7 @@ A drow helm~
 A helm lays here gathering dust~
 ~
 9 0 17
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 1 121 12
 2
 0

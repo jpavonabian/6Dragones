@@ -1726,7 +1726,7 @@ an amethyst gauche~
 A long dagger completely covered in amethyst lies here on the ground.~
 ~
 5 147457 8193
-0 15 30 6 2 0 0
+0 20 35 6 2 0 0
 3 80000 32500
 1
 0
@@ -2061,7 +2061,7 @@ the Ice Gauntlets~
 Two rock-hard gauntlets made entirely of ice lie here waiting to be picked up.~
 ~
 9 1 129
-35 35 0 0 0 0 0
+40 40 0 0 0 0 0
 3 225000 22500
 1
 0

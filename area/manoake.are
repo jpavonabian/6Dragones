@@ -2735,7 +2735,7 @@ A pair of leather boots~
 A pair of leather boots have been left laying here.~
 ~
 9 0 65
-35 35 0 0 0 0 0
+30 30 0 0 0 0 0
 1 1 10
 2
 1
@@ -2750,7 +2750,7 @@ a iron helmet~
 A iron helmet, litters the ground here.~
 ~
 9 0 17
-35 35 0 0 0 0 0
+40 40 0 0 0 0 0
 1 10 32
 2
 8
@@ -2778,7 +2778,7 @@ a pair of chain-mail gloves~
 Some chain-mail gloves, have been placed neatly on the ground~
 ~
 9 0 129
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 4 25 60
 2
 8
@@ -3125,7 +3125,7 @@ a wooden shield~
 &OA wooden shield litters the ground here.&D~
 ~
 9 0 513
-35 35 0 0 0 0 0
+30 30 0 0 0 0 0
 7 40 4
 2
 1
@@ -3159,7 +3159,7 @@ a golden dagger~
 &YA long thin dagger made of gold is stuck in the ground.&D~
 ~
 5 0 8193
-0 20 35 6 2 0 0
+0 20 40 6 2 0 0
 2 100 10
 2
 14
@@ -3174,7 +3174,7 @@ a pocket knife~
 A folded up pocket knife lays in the floor.~
 ~
 5 0 8193
-0 25 45 2 2 0 0
+0 15 30 2 2 0 0
 2 27 2
 2
 8
@@ -3185,7 +3185,7 @@ a heavy stone shield~
 A heavy stone shield lays ontop of the ground here.~
 ~
 9 0 513
-40 40 0 0 0 0 0
+30 30 0 0 0 0 0
 25 200 20
 2
 13
@@ -3368,7 +3368,7 @@ a short axe~
 A short axe has been stuck in the ground here.~
 ~
 5 0 8193
-0 10 20 3 9 0 0
+0 5 15 3 9 0 0
 7 340 34
 2
 1
@@ -3391,7 +3391,7 @@ a double-sided axe~
 A double-sided axe lays on it side on the ground.~
 ~
 5 0 8193
-0 20 35 3 9 0 0
+0 20 40 3 9 0 0
 15 1000 100
 2
 1
@@ -3429,7 +3429,7 @@ a belt of gold~
 A belt made of gold lays here in the floor.~
 ~
 9 2 2049
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 10 500 50
 2
 14
@@ -3456,7 +3456,7 @@ a wood cutters axe~
 A axe used for cutting wood lays on its side here.~
 ~
 5 0 8193
-0 20 35 3 9 0 0
+0 20 40 3 9 0 0
 6 532 53
 2
 1
@@ -3768,7 +3768,7 @@ a torn shirt~
 A torn shirt lays on the ground.~
 ~
 9 0 9
-5 5 0 0 0 0 0
+2 2 0 0 0 0 0
 2 1 0
 3
 1
@@ -4151,7 +4151,7 @@ a leather tunic~
 A leather tunic engraved with the dwarven royal page seal lays here.~
 ~
 9 0 9
-30 30 0 0 0 0 0
+20 20 0 0 0 0 0
 4 40 4
 3
 1
@@ -4238,7 +4238,7 @@ a brilliant white dress~
 A brilliant white dress, is getting dirty on the ground here.~
 ~
 9 64 9
-40 40 0 0 0 0 0
+35 35 0 0 0 0 0
 6 100 10
 3
 5
@@ -4786,7 +4786,7 @@ a sterling silver battle-axe~
 A short battle-axe made of silver, lays on the ground here.~
 ~
 5 0 8193
-0 40 90 3 9 0 0
+0 40 80 3 9 0 0
 5 10050 1005
 2
 8

@@ -1340,7 +1340,7 @@ Minlevel     101
 End
 
 #SKILL
-Name         ethereal shield~
+Name         escudo etereo~
 Type         Spell
 Info         0
 Flags        0
@@ -3548,7 +3548,7 @@ Minlevel     101
 End
 
 #SKILL
-Name         transport~
+Name         transportar~
 Type         Spell
 Info         0
 Flags        0

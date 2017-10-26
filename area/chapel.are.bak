@@ -937,11 +937,11 @@ The stench of death is heavy in these caverns.
 D2
 ~
 ~
-0 0 3411
+0 0 3415
 D3
 ~
 ~
-0 0 3415
+0 0 3411
 R R 0 3410 4
 S
 #3411
@@ -1050,15 +1050,15 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3416
+0 0 3420
 D2
 ~
 ~
-0 0 3420
+0 0 3410
 D3
 ~
 ~
-0 0 3410
+0 0 3416
 R R 0 3415 4
 R M 0 3400 8 3415
   R E 1 3421 1 16
@@ -1421,15 +1421,15 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3431
+0 0 3426
 D1
 ~
 ~
-0 0 3426
+0 0 3435
 D2
 ~
 ~
-0 0 3435
+0 0 3431
 R R 0 3430 4
 R M 0 3416 4 3430
 R M 0 3416 4 3430
@@ -1443,11 +1443,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3436
+0 0 3430
 D2
 ~
 ~
-0 0 3430
+0 0 3436
 R R 0 3431 4
 R M 0 3409 4 3431
 S
@@ -1509,11 +1509,11 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3430
+0 0 3436
 D1
 ~
 ~
-0 0 3436
+0 0 3430
 D3
 ~
 ~
@@ -1607,7 +1607,7 @@ D0
 D1
 ~
 ~
-35 0 3441
+35 0 3435
 D2
 ~
 ~
@@ -1615,7 +1615,7 @@ D2
 D3
 ~
 ~
-35 0 3435
+35 0 3441
 R R 0 3440 4
 R D 0 3440 1 1
 S
@@ -1628,11 +1628,11 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3436
+0 0 3446
 D1
 ~
 ~
-0 0 3446
+0 0 3436
 D2
 ~
 ~
@@ -1664,11 +1664,11 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3444
+0 0 3442
 D3
 ~
 ~
-0 0 3442
+0 0 3444
 R R 0 3443 4
 R M 0 3402 8 3443
 S
@@ -1693,11 +1693,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3446
+0 0 3440
 D3
 ~
 ~
-0 0 3440
+0 0 3446
 R R 0 3445 4
 R M 0 3409 4 3445
 R M 0 3416 4 3445
@@ -1715,11 +1715,11 @@ D0
 D1
 ~
 ~
-0 0 3447
+0 0 3441
 D3
 ~
 ~
-0 0 3441
+0 0 3447
 R R 0 3446 4
 R M 0 3400 8 3446
   R E 1 3421 1 16
@@ -1733,15 +1733,15 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3446
+0 0 3448
 D1
 ~
 ~
-0 0 3448
+0 0 3442
 D2
 ~
 ~
-0 0 3442
+0 0 3446
 R R 0 3447 4
 S
 #3448

@@ -12,8 +12,8 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       1910790
-Room         16107
+Played       1923085
+Room         5112
 HpManaMove   30000 30000 30000 30000 30000 30000
 BaseHp       0 
 Blood        459 459
@@ -24,14 +24,14 @@ Secondexp     0
 Thirdexp      0
 Height        993
 Weight        8436
-Act           536878920&-351266768
+Act           671096136&-351266768
 AffectedBy    512&0&4194304
 Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales alianza multitud halcyon prohibida~
 Position      115
 Style         2
 Practice      1196
 SavingThrows  0 0 0 0 0
-Alignment     -3
+Alignment     -25
 AppBlood      0
 Hitroll       0
 Damroll       0
@@ -40,7 +40,7 @@ Wimpy         6000
 Resistant     8320
 Password      b380617b098aa3255255c678dc2e66e83d10294da277f4a2f94b4ebf1523b5ba~
 Title          El Señor de los Dragones~
-Lastip         150.244.199.226~
+Lastip         37.187.117.151~
 RECAST          0
 Bio          Llego del Cielo Como Nubes de Tormenta
 Ya me Conocen y Por eso se Lamentan
@@ -54,12 +54,12 @@ Danos Hechizos de Rabia y Seremos Desolación.
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1508951485
+LDExpUpdate  1509007931
 tmpcrawl 72
 extlevel 108
 tmpsecond -1
 tmpthird -1
-tmproom 5108
+tmproom 5112
 timezone 13
 Alias        inm~ inmortales~
 Textspeed          5
@@ -71,7 +71,7 @@ FocusLevel         0
 UsedTrade          0
 Faith              0
 ChanInvite         0
-QuestCurr          40
+QuestCurr          45
 QuestAccum         185
 MobCount           0
 ObjCount           0
@@ -141,13 +141,13 @@ Bardtimer    0
 Bardsn       0
 PKills       0
 PDeaths      0
-MKills       311
+MKills       313
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
 AttrMod      0 0 0 0 0 0 0
 Condition    0 80 80 0
-Site         150.244.199.226
+Site         37.187.117.151
 LastNews     1432380664
 Holdbreath 0
 Frostbite 15
@@ -223,10 +223,10 @@ NNSpell       100 100 'enchant armor' 0 0
 NNSpell       100 100 'enchant weapon' 0 0
 NNSpell       100 100 'energy drain' 0 0
 NNSpell       100 100 'envestir' 0 0
+NNSpell       100 100 'escudo etereo' 0 0
 NNSpell       100 100 'escudo igneo' 0 0
 NNSpell       100 100 'ethereal fist' 0 0
 NNSpell       100 100 'ethereal funnel' 0 0
-NNSpell       100 100 'ethereal shield' 0 0
 NNSpell       100 100 'extradimensional portal' 0 0
 NNSpell       100 100 'faerie fire' 0 0
 NNSpell       100 100 'faerie fog' 0 0
@@ -351,7 +351,7 @@ NNSpell       100 100 'teleport' 0 0
 NNSpell       100 100 'toque acido' 0 0
 NNSpell       100 100 'tormenta fuego' 0 0
 NNSpell       100 100 'torrent' 0 0
-NNSpell       100 100 'transport' 0 0
+NNSpell       100 100 'transportar' 0 0
 NNSpell       100 100 'trollish vigor' 0 0
 NNSpell       100 100 'true sight' 0 0
 NNSpell       100 100 'unholy shroud' 0 0
@@ -689,16 +689,6 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
-Killed       16000
-Killed       1503
-Killed       1532
-Killed       1504
-Killed       1531
-Killed       35531
-Killed       35531
-Killed       35531
-Killed       35531
-Killed       35531
 Killed       35531
 THYQuestN 58 1 0 0 1 0
 THYQuestN 89 1 0 0 1 0

@@ -453,7 +453,7 @@ a nightgaunt's tickler~
 A nightgaunt's tickler has been left here.~
 tickle~
 5 128 8193
-0 5 15 4 13 0 0
+0 3 10 4 13 0 0
 8 5000 500
 1
 0
@@ -1050,11 +1050,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3420
+0 0 3410
 D2
 ~
 ~
-0 0 3410
+0 0 3420
 D3
 ~
 ~
@@ -1443,11 +1443,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3430
+0 0 3436
 D2
 ~
 ~
-0 0 3436
+0 0 3430
 R R 0 3431 4
 R M 0 3409 4 3431
 S
@@ -1532,15 +1532,15 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3435
+0 0 3431
 D2
 ~
 ~
-0 0 3431
+0 0 3441
 D3
 ~
 ~
-0 0 3441
+0 0 3435
 R R 0 3436 4
 S
 #3437
@@ -1603,7 +1603,7 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-35 0 3445
+35 0 3441
 D1
 ~
 ~
@@ -1615,7 +1615,7 @@ D2
 D3
 ~
 ~
-35 0 3441
+35 0 3445
 R R 0 3440 4
 R D 0 3440 1 1
 S
@@ -1628,11 +1628,11 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3446
+0 0 3436
 D1
 ~
 ~
-0 0 3436
+0 0 3446
 D2
 ~
 ~
@@ -1648,11 +1648,11 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3443
+0 0 3447
 D2
 ~
 ~
-0 0 3447
+0 0 3443
 R R 0 3442 4
 S
 #3443
@@ -1664,11 +1664,11 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3442
+0 0 3444
 D3
 ~
 ~
-0 0 3444
+0 0 3442
 R R 0 3443 4
 R M 0 3402 8 3443
 S
@@ -1693,11 +1693,11 @@ The stench of death is heavy in these caverns.
 D1
 ~
 ~
-0 0 3440
+0 0 3446
 D3
 ~
 ~
-0 0 3446
+0 0 3440
 R R 0 3445 4
 R M 0 3409 4 3445
 R M 0 3416 4 3445
@@ -1733,15 +1733,15 @@ The stench of death is heavy in these caverns.
 D0
 ~
 ~
-0 0 3448
+0 0 3446
 D1
 ~
 ~
-0 0 3442
+0 0 3448
 D2
 ~
 ~
-0 0 3446
+0 0 3442
 R R 0 3447 4
 S
 #3448

@@ -270,3 +270,4 @@ Sat Jul  4 10:49:18 2015: Syldreik started Happy Hour
 Sat Jul  4 10:49:32 2015: Syldreik ended Happy Hour
 Sun Jul  5 08:35:22 2015: Gerald started Happy Hour
 Sun Jul  5 08:36:42 2015: Gerald ended Happy Hour
+Wed Oct 25 22:12:06 2017: Zlorth started Happy Hour
