@@ -117,6 +117,6 @@ void do_distract( CHAR_DATA *ch, char *argument )
     act( AT_LBLUE, "¡Haces una señal a $N para que comienze a distraer a tu enemigo!", ch, NULL, mob, TO_CHAR );
     act( AT_LBLUE, "$n hace una señal a $N para que comience a distraer a su enemigo.", ch, NULL, mob,
          TO_NOTVICT );
-    act( AT_CYAN, "\r\n$N deja de luchar momentáneamente\r\n¡$N gruñe amenazadoramente a $n, y ataca a $m!", mob,
+    act( AT_CYAN, "\r\n$N deja de luchar momentáneamente\r\n¡$N gruñe amenazadoramente a $n y le ataca!", mob,
          NULL, victim, TO_NOTVICT );
 }

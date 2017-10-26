@@ -897,7 +897,7 @@ void do_list( CHAR_DATA *ch, char *argument )
                 if ( !found ) {
                     found = TRUE;
                     send_to_char( "Mascotas a la venta :\r\n", ch );
-                    ch_printf( ch, "[Lv   Price Currency] Item\r\n" );
+                    ch_printf( ch, "[NV   Coste actual] Cosa\r\n" );
                 }
                 if ( pet->level > 100 )
                     pet->level = 100;
@@ -943,7 +943,7 @@ void do_list( CHAR_DATA *ch, char *argument )
                 inventory = TRUE;
             }
             act( AT_CYAN, "$N coge $p de un escaparate.", ch, obj, keeper, TO_CHAR );
-            act( AT_TELL, "$N te cuenta 'este objeto de aquí se usa para......'", ch, NULL, keeper,
+            act( AT_TELL, "$N te cuenta 'este objeto de aquí es...'", ch, NULL, keeper,
                  TO_CHAR );
             snprintf( buf, MSL, "Propiedades especiales: %s",
                       !xIS_EMPTY( obj->extra_flags ) ? ext_flag_string( &obj->extra_flags,

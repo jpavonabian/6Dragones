@@ -1098,7 +1098,7 @@ void genesis( DESCRIPTOR_DATA *d, char *argument )
                              "Puedes usar tus puntos para incrementar tus características.\r\nPor ejemplo escribiendo sab\r\nincrementarás tu sabiduría en un punto.",
                              0 );
             snprintf( buf, MSL,
-                      "\r\nFue: %d  Int: %d  Sab: %d  Des: %d  Con: %d  Car: %d  Sue: %d Points: %d",
+                      "\r\nFue: %d  Int: %d  Sab: %d  Des: %d  Con: %d  Car: %d  Sue: %d Puntos: %d",
                       ch->perm_str, ch->perm_int, ch->perm_wis, ch->perm_dex, ch->perm_con,
                       ch->perm_cha, ch->perm_lck, ch->statpoints );
             write_to_buffer( d, buf, 0 );

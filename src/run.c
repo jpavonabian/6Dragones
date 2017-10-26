@@ -90,7 +90,7 @@ void do_run( CHAR_DATA *ch, char *argument )
     }
 
     send_to_char( "Bajas de velocidad después de correr.\r\n", ch );
-    act( AT_ACTION, "$n baja su velocidad después de $s corer.", ch, NULL, NULL, TO_ROOM );
+    act( AT_ACTION, "$n baja su velocidad después de corer.", ch, NULL, NULL, TO_ROOM );
     // do_look(ch, (char *)"auto");
     return;
 }
