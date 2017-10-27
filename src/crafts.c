@@ -1991,19 +1991,19 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
         obj_to_char( obj, ch );
 
         if ( ch->pcdata->tradelevel >= 20 ) {
-            GET_VALUE( obj, type ) = CURR_oro;
+            GET_VALUE( obj, type ) = CURR_GOLD;
             obj->cost = 30;
         }
         else if ( ch->pcdata->tradelevel >= 15 ) {
-            GET_VALUE( obj, type ) = CURR_oro;
+            GET_VALUE( obj, type ) = CURR_GOLD;
             obj->cost = 25;
         }
         else if ( ch->pcdata->tradelevel >= 10 ) {
-            GET_VALUE( obj, type ) = CURR_oro;
+            GET_VALUE( obj, type ) = CURR_GOLD;
             obj->cost = 15;
         }
         else if ( ch->pcdata->tradelevel >= 5 ) {
-            GET_VALUE( obj, type ) = CURR_plata;
+            GET_VALUE( obj, type ) = CURR_SILVER;
             obj->cost = 50;
         }
         else if ( ch->pcdata->tradelevel >= 1 ) {
@@ -2156,7 +2156,7 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
 
             }
             if ( ch->pcdata->tradelevel >= 20 ) {
-                GET_VALUE( obj, type ) = CURR_oro;
+                GET_VALUE( obj, type ) = CURR_GOLD;
                 obj->cost = 25;
             }
         }
@@ -2178,7 +2178,7 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
                     paf->modifier = 5;
                 else
                     paf->modifier = 3;
-                GET_VALUE( obj, type ) = CURR_oro;
+                GET_VALUE( obj, type ) = CURR_GOLD;
                 obj->cost = 25;
             }
             else if ( ch->pcdata->tradelevel >= 15 ) {
@@ -2192,12 +2192,12 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
                     paf->modifier = 3;
                 else
                     paf->modifier = 2;
-                GET_VALUE( obj, type ) = CURR_plata;
+                GET_VALUE( obj, type ) = CURR_SILVER;
                 obj->cost = 25;
             }
             else if ( ch->pcdata->tradelevel > 5 ) {
                 paf->modifier = 2;
-                GET_VALUE( obj, type ) = CURR_plata;
+                GET_VALUE( obj, type ) = CURR_SILVER;
                 obj->cost = 10;
             }
             else {
@@ -3469,7 +3469,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
                     paf->modifier = modifier;
                     xCLEAR_BITS( paf->bitvector );
                     LINK( paf, item->first_affect, item->last_affect, next, prev );
-                    GET_VALUE( item, type ) = CURR_plata;
+                    GET_VALUE( item, type ) = CURR_SILVER;
                     item->cost = 10;
                 }
                 if ( ch->pcdata->tradelevel >= 15 ) {
@@ -3521,11 +3521,11 @@ void do_forge( CHAR_DATA *ch, char *argument )
                     paf->modifier = modifier;
                     xCLEAR_BITS( paf->bitvector );
                     LINK( paf, item->first_affect, item->last_affect, next, prev );
-                    GET_VALUE( item, type ) = CURR_plata;
+                    GET_VALUE( item, type ) = CURR_SILVER;
                     item->cost = 25;
                 }
                 if ( ch->pcdata->tradelevel >= 20 ) {
-                    GET_VALUE( item, type ) = CURR_oro;
+                    GET_VALUE( item, type ) = CURR_GOLD;
                     item->cost = 25;
                 }
             }
@@ -3547,7 +3547,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
                         paf->modifier = 5;
                     else
                         paf->modifier = 3;
-                    GET_VALUE( item, type ) = CURR_oro;
+                    GET_VALUE( item, type ) = CURR_GOLD;
                     item->cost = 25;
                 }
                 else if ( ch->pcdata->tradelevel >= 15 ) {
@@ -3561,12 +3561,12 @@ void do_forge( CHAR_DATA *ch, char *argument )
                         paf->modifier = 3;
                     else
                         paf->modifier = 2;
-                    GET_VALUE( item, type ) = CURR_plata;
+                    GET_VALUE( item, type ) = CURR_SILVER;
                     item->cost = 25;
                 }
                 else if ( ch->pcdata->tradelevel > 5 ) {
                     paf->modifier = 2;
-                    GET_VALUE( item, type ) = CURR_plata;
+                    GET_VALUE( item, type ) = CURR_SILVER;
                     item->cost = 10;
                 }
                 else {
@@ -4470,7 +4470,7 @@ void do_tan( CHAR_DATA *ch, char *argument )
             paf->modifier = 1;
             xCLEAR_BITS( paf->bitvector );
             LINK( paf, item->first_affect, item->last_affect, next, prev );
-            GET_VALUE( item, type ) = CURR_plata;
+            GET_VALUE( item, type ) = CURR_SILVER;
             item->cost = 10;
         }
 
@@ -4492,7 +4492,7 @@ void do_tan( CHAR_DATA *ch, char *argument )
                 paf->modifier = 2;
             xCLEAR_BITS( paf->bitvector );
             LINK( paf, item->first_affect, item->last_affect, next, prev );
-            GET_VALUE( item, type ) = CURR_plata;
+            GET_VALUE( item, type ) = CURR_SILVER;
             item->cost = 20;
         }
 
@@ -4514,7 +4514,7 @@ void do_tan( CHAR_DATA *ch, char *argument )
                 paf->modifier = 3;
             xCLEAR_BITS( paf->bitvector );
             LINK( paf, item->first_affect, item->last_affect, next, prev );
-            GET_VALUE( item, type ) = CURR_oro;
+            GET_VALUE( item, type ) = CURR_GOLD;
             item->cost = 10;
         }
 
@@ -6123,19 +6123,19 @@ void do_bake( CHAR_DATA *ch, char *argument )
             bakedfood->value[6] = 3;
 
         if ( ch->pcdata->tradelevel >= 20 ) {
-            GET_VALUE( bakedfood, type ) = CURR_oro;
+            GET_VALUE( bakedfood, type ) = CURR_GOLD;
             bakedfood->cost = 30;
         }
         else if ( ch->pcdata->tradelevel >= 15 ) {
-            GET_VALUE( bakedfood, type ) = CURR_oro;
+            GET_VALUE( bakedfood, type ) = CURR_GOLD;
             bakedfood->cost = 25;
         }
         else if ( ch->pcdata->tradelevel >= 10 ) {
-            GET_VALUE( bakedfood, type ) = CURR_oro;
+            GET_VALUE( bakedfood, type ) = CURR_GOLD;
             bakedfood->cost = 15;
         }
         else if ( ch->pcdata->tradelevel >= 5 ) {
-            GET_VALUE( bakedfood, type ) = CURR_plata;
+            GET_VALUE( bakedfood, type ) = CURR_SILVER;
             bakedfood->cost = 50;
         }
         else {
@@ -6891,15 +6891,15 @@ void do_mix( CHAR_DATA *ch, char *argument )
         mixeddrink->cost = 25;
     }
     else if ( ch->pcdata->tradelevel >= 5 && ch->pcdata->tradelevel < 10 ) {
-        GET_VALUE( mixeddrink, type ) = CURR_plata;
+        GET_VALUE( mixeddrink, type ) = CURR_SILVER;
         mixeddrink->cost = 50;
     }
     else if ( ch->pcdata->tradelevel >= 10 && ch->pcdata->tradelevel < 15 ) {
-        GET_VALUE( mixeddrink, type ) = CURR_oro;
+        GET_VALUE( mixeddrink, type ) = CURR_GOLD;
         mixeddrink->cost = 15;
     }
     else if ( ch->pcdata->tradelevel >= 15 ) {
-        GET_VALUE( mixeddrink, type ) = CURR_oro;
+        GET_VALUE( mixeddrink, type ) = CURR_GOLD;
         mixeddrink->cost = 25;
     }
 
@@ -8770,7 +8770,7 @@ void do_mill( CHAR_DATA *ch, char *argument )
                     item->cost = 25;
                 }
                 if ( ch->pcdata->tradelevel >= 20 ) {
-                    GET_VALUE( item, type ) = CURR_plata;
+                    GET_VALUE( item, type ) = CURR_SILVER;
                     item->cost = 25;
                 }
             }
@@ -8792,7 +8792,7 @@ void do_mill( CHAR_DATA *ch, char *argument )
                         paf->modifier = 5;
                     else
                         paf->modifier = 3;
-                    GET_VALUE( item, type ) = CURR_plata;
+                    GET_VALUE( item, type ) = CURR_SILVER;
                     item->cost = 25;
                 }
                 else if ( ch->pcdata->tradelevel >= 15 ) {
@@ -8894,7 +8894,7 @@ void do_mill( CHAR_DATA *ch, char *argument )
                 obj_to_char( item, ch );
             }
 
-            GET_VALUE( item, type ) = CURR_plata;
+            GET_VALUE( item, type ) = CURR_SILVER;
 
             if ( IS_CLANNED( ch ) ) {
                 CLAN_DATA              *clan;
