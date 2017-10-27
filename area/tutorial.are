@@ -149,16 +149,16 @@ mpgoto 4
 ~
 |
 #5102
-amelia tendera magica~
-amelia la tendera~
-Amelia la tendera estÃ¡ vendiendo cosas.
+amelia tendera~
+Amelia la tendera~
+Amelia la tendera está aquí organizando pociones.
 ~
-Constantly checking and polishing her potion vials and bottles, Amelia 
-looks busy but cheerful. Her white hair, braided loosely and tied with a 
-ribbon, hangs over her shoulder and down to her waist. Slightly hooded, 
-her peaceful blue eyes have a patient look to them. Her thin form wrapped 
-in the many folds of a cheerful yellow shawl, Amelia wears a peach-hued 
-dress reaching her ankles. 
+Constantemente revisando y limpiando sus frascos y viales de pociones, 
+Amelia parece ocupada pero alegre. Lleva el pelo blanco trenzado, atado 
+con una cinta que cuelga sobre su hombro y baja hasta su cintura. Sus 
+pacíficos ojos azules tienen una mirada paciente. Su delgado cuerpo está 
+envuelto en un alegre chal amarillo y un vestido color melocotón que llega 
+hasta sus tobillos. 
 ~
 1
 Clanname none~
@@ -176,35 +176,35 @@ Clanname none~
 > all_greet_prog 100~
 mppause 8
 if quest(tutorial) != 1
-  mpechoat $n &CConsejo:  &cLos quests deben completarse en orden.  Teclea &Wdiario&c para ver tu siguiente paso.&D
+  mpechoat $n Consejo:  Los quests deben completarse en orden.  Teclea diario para ver tu siguiente paso.
 else
   mptutorial $n
   mpquest $n tutorial 2
   mppause 10
-  mpechoat $n &CShop Keeper Amelia says, 'Ahh, $n. I was expecting you. You're the last of the apprentices-to-be to come. Come in!'&D
+  decir Ahh, $ n. Te estaba esperando. Eres el último de los aprendices que quedan por venir. Adelante!
   mppause 15
-  mpechoat $n &cShop Keeper Amelia strokes her chin as she gazes upon you.&D
+  mpechoat $n amelia la tendera acaricia su barbilla mientras te mira.
   mppause 20
-  mpechoat $n &CShop keeper Amelia says, 'Alright. Why don't you take a look at my shop first? Take a look with the &WLIST&C command.'&D
+  decir Bien. qué tal si echas un ojo a mis productos? Escribe lista para ver qué vendo.
   mppause 20
-  mpat 4 look
+  mpat 4 mirar
   mppause 10
-  mpechoat $n &CHint:  &cThe red potion bottle grants &WHEALTH&c when you type &WQUAFF POTION NAME&c, use the &WBUY&c command, potions must be &WQUAFFED&c, other types of liquids are utilized with the &WDRINK&c command.&D
+  mpechoat $n Consejo:  La poción roja otorga salud. Utiliza el comando tragar para usarla. El resto de líquidos, como el agua se tienen que beber.
   mppause 4
-  mpechoat $n &CHint:  &cThe glowing blue potion grants MANA when &WQUAFFED&c.&D
+  mpechoat $n Consejo:  La poción azul otorga mana cuando la tragas.
   mppause 20
-  mpat 4 look
+  mpat 4 mirar
   mppause 10
-  mpechoat $n &CShop keeper Amelia says, 'Here have one of each on the house, for your Rite of Passage gift.'&D
+  decir Aquí tienes un par de pociones, regalo de la casa.
   mppause 10
   mpoload 5104 1
   mpoload 5105 1
-  get potion
-  get potion 
-  give red $n
-  give blue $n
+coger pocion
+coger pocion
+dar pocion $n
+dar pocion $n
   mppause 20
-  mpechoat $n &CShop keeper Amelia says, 'Now go and I'll see you at the Rite of Passage'.&D
+decir Ahora vete, nos veremos cuando termines tu aprendizaje en el ritual.
 endif
 ~
 |
@@ -1364,13 +1364,13 @@ D2
 0 -1 5107
 S
 #5105
-The Intersection of Hour Glass Avenue and Serenity Street~
+Intersección entre  la Avenida de la hora de cristal y la Calle de la serenidad~
 ~
-The southeast street is made up red clay bricks that are interlocking.
-The western street that intersects it, is made up of broken old cobble
-stones.  There is a wooden beam at the intersection that has a hooded
-lantern mounted to it.  A large drain is located where streets meet
-and allows rain water, and waste to flow.
+La calle del sureste está formada por ladrillos rojos de arcilla que se 
+entrelazan. La calle occidental que la cruza, está hecha de adoquines 
+rotos. Hay una viga de madera en la intersección que tiene una linterna 
+con capucha montada en ella. Un gran desagüe está situado donde las calles 
+se unen y permite que el agua de lluvia y el desperdicio fluya. 
 ~
 1 0 39
 D1
@@ -1383,12 +1383,13 @@ D3
 0 -1 5106
 S
 #5106
-Hour Glass Avenue~
+Avenida de la hora de cristal~
 ~
-There are small buildings on both sides of the street.  Broken old cobble
-stones make up the street.  Before each building a large wooden beam is
-placed with a hooded lantern mounted to it.  There is a series of small
-drains that line the street to allow rain water, and waste to flow.
+Hay pequeños edificios a ambos lados de la calle. Piedras viejas rotas 
+forman la calle. Delante de cada edificio hay una gran viga de madera con 
+una linterna con capucha montada en ella. Hay una serie de pequeños 
+desagües que bordean la calle para permitir que el agua de lluvia y los 
+residuos fluyan. 
 ~
 1 0 39
 D1
@@ -1398,7 +1399,7 @@ D1
 D2
 ~
 puerta~
-3 -1 5108
+1 -1 5108
 D3
 ~
 ~
@@ -1431,7 +1432,7 @@ D3
 0 -1 5148
 S
 #5108
-Within the Temple of Light~
+Por el templo de la luz~
 ~
 La habitación está muy limpia por dentro. Hay estantes pequeños colocados 
 a lo largo de las paredes para donaciones. Grandes y elegantes tapices 
@@ -1443,7 +1444,7 @@ habitación.
 D0
 ~
 puerta~
-3 -1 5106
+1 -1 5106
 D1
 ~
 ~
@@ -2569,12 +2570,12 @@ D1
 R M 0 5122 1 5176
 S
 #5177
-Garden of Recovery~
+El jardín de recuperación~
 ~
-The entire room is made up of one large garden of flowers, and plants.
-There are three wooden benches in the center of the room.  A large chain
-from the ceiling holds a circular platform with a hooded lantern in the
-center of it.  The ground is made up of stone slabs.
+Toda la sala está compuesta por un gran jardín de flores y plantas. Hay 
+tres bancos de madera en el centro de la sala. Una cadena grande desde el 
+techo sostiene una plataforma circular con una linterna encapuchada en el 
+centro. El suelo está formado por losas de piedra. 
 ~
 1 0 39
 D3
@@ -2615,7 +2616,7 @@ S
 
 
 #SHOPS
- 5102    0  0  0  0  0   120  90         0 23    ; amelia la tendera
+ 5102    0  0  0  0  0   120  90         0 23    ; Amelia la tendera
  5110    0  0  0  0  0   120  90         0 23    ; Shopkeeper Warren
 0
 

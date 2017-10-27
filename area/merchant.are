@@ -913,7 +913,7 @@ a decorative necklace~
 A decorative necklace has been left here.~
 ~
 9 0 5
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 1 40 4
 4
 0
@@ -928,7 +928,7 @@ a pair of decorative earrings~
 A pair of decorative earrings has been left here.~
 ~
 9 0 65537
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 1 58 5
 4
 5
@@ -1007,7 +1007,7 @@ a pair of tanned pants~
 A pair of tanned pants have been left here.~
 ~
 9 0 33
-5 5 0 0 0 0 0
+10 10 0 0 0 0 0
 1 46 4
 4
 1
@@ -1037,7 +1037,7 @@ a tanned belt~
 A tanned belt has been left here.~
 ~
 9 0 2049
-10 10 0 0 0 0 0
+5 5 0 0 0 0 0
 1 59 5
 4
 1

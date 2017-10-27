@@ -12,19 +12,19 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       46844
-Room         5108
-HpManaMove   30000 30000 30000 30000 30000 30000
+Played       49592
+Room         5103
+HpManaMove   30000 30000 30000 30000 29997 30000
 BaseHp       0 
 Blood        310 310
-Money         0 10 211 132 1225 -1
+Money         0 10 374 132 1225 -1
 Exp           0
 Firstexp      0
 Secondexp     0
 Thirdexp      0
 Height        1028
 Weight        8679
-Act           536876872&1644173344
+Act           536876872&1660950560
 AffectedBy    512
 Channels      decir inmortales ooc icc wartalk event music Think muse comm info auth warn build counciltalk avtalk ask answer swear flirt hint osay 6d reunion halcyon paleon dakar chat~
 Position      115
@@ -47,7 +47,7 @@ GetsDExp     0
 tmpcrawl 72
 tmpsecond -1
 tmpthird -1
-tmproom 5108
+tmproom 5105
 Textspeed          5
 PotionTimer        0 0 0
 FirstExpR          0
@@ -166,7 +166,7 @@ NNSpell       100 100 'envestir' 0 0
 NNSpell       100 100 'escudo igneo' 0 0
 NNSpell       100 100 'ethereal fist' 0 0
 NNSpell       100 100 'ethereal funnel' 0 0
-NNSpell       100 100 'ethereal shield' 0 0
+NNSpell       100 100 'escudo etereo' 0 0
 NNSpell       100 100 'extradimensional portal' 0 0
 NNSpell       100 100 'faerie fire' 0 0
 NNSpell       100 100 'faerie fog' 0 0
@@ -291,7 +291,7 @@ NNSpell       100 100 'teleport' 0 0
 NNSpell       100 100 'toque acido' 0 0
 NNSpell       100 100 'tormenta fuego' 0 0
 NNSpell       100 100 'torrent' 0 0
-NNSpell       100 100 'transport' 0 0
+NNSpell       100 100 'transportar' 0 0
 NNSpell       100 100 'trollish vigor' 0 0
 NNSpell       100 100 'true sight' 0 0
 NNSpell       100 100 'unholy shroud' 0 0

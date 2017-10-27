@@ -16,7 +16,7 @@ $
 #SPELLLIMIT 0
 #WEATHERCELL 0 0
 
-#RESETMSG &GThe sound of a wagon wheel turning on the street echoes through the city.~
+#RESETMSG El sonido de la rueda de un carro suena por la ciudad.~
 
 #FLAGS
 16384 20
@@ -7433,7 +7433,7 @@ D1
 0 -1 16002
 D3
 ~
-massive gate~
+portón~
 8389671 16000 16122
 R M 0 16005 1 16001
   R E 0 16002 1 5
@@ -7823,7 +7823,7 @@ allow waste, and river water to flow.
 1 1048576 1
 D1
 ~
-massive gate~
+portón~
 8389671 16000 16141
 D3
 ~
@@ -8578,12 +8578,10 @@ sgn~
 ~
 S
 #16094
-Garden of Tranquility~
+el jardín de la calma~
 ~
-The western half of the room is made up of two sections of beautifully
-maintained gardens.  There are many different types of flowers, plants,
-and small trees growing within the gardens.  There is a small pond that
-has been centered between the gardens.
+en la mitad oeste de la habitación hay dos secciones de plantas y árboles 
+muy bien cuidados. En el centro del jardín hay un estanque. 
 ~
 1 8 1
 D1

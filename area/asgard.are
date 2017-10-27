@@ -2546,7 +2546,7 @@ the hammer Mjolnir~
 A magnificent hammer of dwarven make is imbedded in the ground.~
 ~
 5 1089 8193
-0 45 100 4 5 0 0
+0 50 100 4 5 0 0
 30 0 0
 1
 1
@@ -2627,7 +2627,7 @@ the spear Gungnir~
 A long shaft of polished wood is stuck in the ground.~
 ~
 5 1352 8193
-0 45 100 7 10 0 0
+0 50 100 7 10 0 0
 18 50000 5000
 1
 1
@@ -2780,7 +2780,7 @@ the rapier sword Disease~
 A thin, razor sharp sword lies on the ground.~
 ~
 5 524818 8193
-0 45 100 2 1 0 0
+0 50 100 2 1 0 0
 5 1200000 120000
 1
 8
@@ -3007,7 +3007,7 @@ the sword Brand of Frost~
 A sword of ice slowly melts away.~
 ~
 5 65 8193
-0 50 100 1 1 0 0
+0 45 100 1 1 0 0
 12 223000 22300
 1
 0
@@ -3146,7 +3146,7 @@ Bindings of Thought and Concepts~
 A colossal metal collar lies on the floor.~
 ~
 9 529088 5
-40 40 0 0 0 0 0
+45 45 0 0 0 0 0
 50 0 5600
 1
 13
@@ -3461,7 +3461,7 @@ the Axe of Thrym~
 A massive twin bladed battle axe is buried in the dirt.~
 ~
 5 524880 8193
-0 50 100 3 9 0 0
+0 45 100 3 9 0 0
 45 0 23400
 1
 8

@@ -12,9 +12,9 @@ Level        108
 Firstlevel   0
 Secondlevel  0
 Thirdlevel   0
-Played       2628
-Room         16018
-HpManaMove   11735 11735 1710 2410 4480 4480
+Played       4568
+Room         16094
+HpManaMove   11735 11735 2410 2410 4480 4480
 BaseHp       0 
 Blood        10 202
 Money         0 10 546 100 1000 -1
@@ -24,7 +24,7 @@ Secondexp     0
 Thirdexp      0
 Height        1051
 Weight        8695
-Act           536872776&1660950528
+Act           536880968&1660950528
 AffectedBy    512
 Channels      chat decir reunion inmortales~
 Position      115
@@ -38,7 +38,7 @@ Damroll       0
 Armor         60
 Resistant     8320
 Password      0f20404739196384233f3abd59b28b2107f5cd444718e304541143eba9de6806~
-Title          the very young Black Dragon~
+Title          escamas negras~
 Lastip         89.128.196.81~
 RECAST          0
 AuthedBy     Zlorth~
@@ -47,7 +47,7 @@ GetsDExp     0
 LDExpUpdate  1508951485
 tmpsecond -1
 tmpthird -1
-tmproom 16018
+tmproom 16096
 Alias        inm~ inmortales~
 Textspeed          5
 PotionTimer        0 0 0
@@ -83,7 +83,7 @@ IllegalPK    0
 AttrPerm     25 18 21 10 16 10 12
 AttrMod      0 0 0 0 0 0 0
 Condition    0 100 100 0
-Site         (Link-Dead)
+Site         89.128.196.81
 LastNews     0
 Holdbreath 0
 Frostbite 0
