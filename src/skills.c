@@ -4508,22 +4508,22 @@ bool check_parry( CHAR_DATA *ch, CHAR_DATA *victim )
         if ( spice > 50 ) {
             if ( !IS_NPC( victim ) && !IS_SET( victim->pcdata->flags, PCFLAG_GAG ) )
                 act( AT_GREY,
-                     "Seeing a movement of $n's shoulders, you bring up your weapon parrying $s attack.",
+                     "viendo el movimiento de $n, interpones tu arma y paras su ataque.",
                      ch, NULL, victim, TO_VICT );
 
             if ( !IS_NPC( ch ) && !IS_SET( ch->pcdata->flags, PCFLAG_GAG ) )
-                act( AT_GREEN, "$N's weapon shoots upward suddenly parrying your attack.", ch, NULL,
+                act( AT_GREEN, "$N consigue interponer su arma y para tu ataque.", ch, NULL,
                      victim, TO_CHAR );
         }
         else {
             if ( !IS_NPC( victim ) && !IS_SET( victim->pcdata->flags, PCFLAG_GAG ) )
                 /*SB*/ act( AT_GREY, "As you watch $n you notice $s eyes glance down.", ch, NULL,
                             victim, TO_VICT );
-            act( AT_GREY, "You sweep your weapon downward parrying $s attack.", ch, NULL, victim,
+            act( AT_GREY, "Interpones tu arma y paras su ataque.", ch, NULL, victim,
                  TO_VICT );
 
             if ( !IS_NPC( ch ) && !IS_SET( ch->pcdata->flags, PCFLAG_GAG ) )    /* SB */
-                act( AT_GREEN, "$N's weapon sweeps downward parrying your attack.", ch, NULL,
+                act( AT_GREEN, "$N interpone su arma y para tu ataque.", ch, NULL,
                      victim, TO_CHAR );
         }
         learn_from_success( victim, gsn_parry );
@@ -4568,9 +4568,9 @@ bool check_dodge( CHAR_DATA *ch, CHAR_DATA *victim )
             }
              }
             if ( bm_chance > 13 ) {
-                act( AT_DGREEN, "$N dodges your attack and rapidly strikes back.", ch, NULL, victim,
+                act( AT_DGREEN, "$N esquiva tu ataque y aprovecha la posición para golpearte rápidamente.", ch, NULL, victim,
                      TO_CHAR );
-                act( AT_CYAN, "You dodge $n's attack and rapidly strike back.", ch, NULL, victim,
+                act( AT_CYAN, "Esquivas el ataque de $n y aprovechas la posición para golpearle rápidamente.", ch, NULL, victim,
                      TO_VICT );
                 global_retcode = damage( victim, ch, ludicrous, gsn_blade_master );
                 learn_from_success( victim, gsn_blade_master );
@@ -4585,9 +4585,9 @@ bool check_dodge( CHAR_DATA *ch, CHAR_DATA *victim )
             cs_chance = number_chance( 2, 10 );
 
             if ( cs_chance >= 8 ) {
-                act( AT_DGREEN, "$N dodges your attack and counterstrikes.", ch, NULL, victim,
+                act( AT_DGREEN, "$N esquiva tu ataque y contrataca.", ch, NULL, victim,
                      TO_CHAR );
-                act( AT_CYAN, "You dodge $n's attack and counterstrike.", ch, NULL, victim,
+                act( AT_CYAN, "Esquivas el ataque de $n y contraatacas.", ch, NULL, victim,
                      TO_VICT );
                 global_retcode = damage( victim, ch, mediumhigh, gsn_counterstrike );
                 learn_from_success( victim, gsn_counterstrike );
