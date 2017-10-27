@@ -1506,7 +1506,7 @@ void gen_wilderness_desc( CHAR_DATA *ch )
         switch ( ch->in_room->sector_type ) {
             case SECT_OCEAN:
                 send_to_char
-                    ( "Este magnífico océano continúa más allá del horizonte.\r\nLas olas se forman y rompen en\r\ncon fuerza. El viento sopla, el cielo\r\nparece que no tiene final.\r\n",
+                    ( "Este magnífico océano continúa más allá del horizonte.\r\nLas olas se forman y rompen \r\ncon fuerza. El viento sopla, el cielo\r\nparece que no tiene final.\r\n",
                       ch );
                 break;
             case SECT_WATERFALL:
