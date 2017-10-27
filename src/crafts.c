@@ -618,7 +618,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
         }
     }
 
-    if ( !str_cmp( arg1, "bronze" ) || !str_cmp( arg1, "amatista" ) ) {
+    if ( !str_cmp( arg1, "bronce" ) || !str_cmp( arg1, "amatista" ) ) {
         knows = 15;
         if ( ch->pcdata->tradeclass == 20 ) {
             level = 0;
@@ -691,8 +691,8 @@ void do_mine( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    if ( bag->craft1 >= 1000 && !str_cmp( arg1, "bronze" ) ) {
-        send_to_char( "No puedes poner más bronze en tu bolsa de minería.\r\n", ch );
+    if ( bag->craft1 >= 1000 && !str_cmp( arg1, "bronce" ) ) {
+        send_to_char( "No puedes poner más bronce en tu bolsa de minería.\r\n", ch );
         return;
     }
     else if ( bag->craft2 >= 1000 && !str_cmp( arg1, "plata" ) ) {
@@ -745,7 +745,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    if ( !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "plata" ) || !str_cmp( arg1, "bronze" )
+    if ( !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "plata" ) || !str_cmp( arg1, "bronce" )
          || !str_cmp( arg1, "hierro" ) || !str_cmp( arg1, "acero" )
          || !str_cmp( arg1, "amatista" ) || !str_cmp( arg1, "perla" ) || !str_cmp( arg1, "esmeralda" )
          || !str_cmp( arg1, "ruby" )
@@ -809,7 +809,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
     }
     if ( ch->pcdata->tradeclass == 20 ) {
         if ( ch->pcdata->learned[gsn_mine] < knows || ch->pcdata->tradelevel < slevel ) {
-            if ( !str_cmp( arg1, "bronze" ) || !str_cmp( arg1, "plata" )
+            if ( !str_cmp( arg1, "bronce" ) || !str_cmp( arg1, "plata" )
                  || !str_cmp( arg1, "oro" )
                  || !str_cmp( arg1, "hierro" )
                  || !str_cmp( arg1, "acero" ) || !str_cmp( arg1, "titanio" ) ) {
@@ -838,7 +838,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
         amount += 1;
     }
 
-    if ( !str_cmp( arg1, "bronze" ) ) {
+    if ( !str_cmp( arg1, "bronce" ) ) {
         bag->craft1 += amount;
     }
     else if ( !str_cmp( arg1, "plata" ) ) {
@@ -1139,11 +1139,11 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg1, "plata" ) && bag->craft2 > 0 ) {
         bag->craft2 -= 1;
     }
-    if ( !str_cmp( arg1, "bronze" ) && bag->craft1 < 1 ) {
-        send_to_char( "You don't have enough bronze ore for that.\r\n", ch );
+    if ( !str_cmp( arg1, "bronce" ) && bag->craft1 < 1 ) {
+        send_to_char( "You don't have enough bronce ore for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg1, "bronze" ) && bag->craft1 > 0 ) {
+    else if ( !str_cmp( arg1, "bronce" ) && bag->craft1 > 0 ) {
         bag->craft1 -= 1;
     }
     if ( !str_cmp( arg1, "hierro" ) && bag->craft4 < 1 ) {
@@ -2291,7 +2291,7 @@ void send_forge_syntax( CHAR_DATA *ch )
                 ( "Type forge id number rename new name to change the objects name or forge id number rekey new key to change what you type to get the object.\r\n",
                   ch );
         }
-        send_to_char( "Ore possibilities include bronze, plata, oro, hierro, acero, titanio\r\n",
+        send_to_char( "Ore possibilities include bronce, plata, oro, hierro, acero, titanio\r\n",
                       ch );
         send_to_char
             ( "Note There are 4 steps, keep doing the forge command until the last step.\r\n", ch );
@@ -2312,7 +2312,7 @@ void send_forge_syntax( CHAR_DATA *ch )
             send_to_char
                 ( "Syntax: forge id rename <&Cnew name&c> forge id rekey <<&Cnew name&c>\r\n", ch );
         }
-        send_to_char( "Materials being: bronze, plata, oro, hierro, acero, titanio\r\n", ch );
+        send_to_char( "Materials being: bronce, plata, oro, hierro, acero, titanio\r\n", ch );
         send_to_char
             ( "Note: There are &C4 steps&c, keep doing the forge command until the last step.\r\n",
               ch );
@@ -2732,16 +2732,16 @@ void do_forge( CHAR_DATA *ch, char *argument )
                 return;
             }
 
-            if ( str_cmp( arg1, "bronze" ) && str_cmp( arg1, "plata" ) && str_cmp( arg1, "oro" )
+            if ( str_cmp( arg1, "bronce" ) && str_cmp( arg1, "plata" ) && str_cmp( arg1, "oro" )
                  && str_cmp( arg1, "hierro" ) && str_cmp( arg1, "acero" )
                  && str_cmp( arg1, "titanio" ) ) {
-                send_to_char( "You can only use bronze, plata, oro, hierro, acero, titanio.\r\n",
+                send_to_char( "You can only use bronce, plata, oro, hierro, acero, titanio.\r\n",
                               ch );
                 return;
             }
 
-            if ( !str_cmp( arg1, "bronze" ) && bag->craft1 < 1 ) {
-                send_to_char( "You don't have any bronze en tu bolsa de minería.\r\n", ch );
+            if ( !str_cmp( arg1, "bronce" ) && bag->craft1 < 1 ) {
+                send_to_char( "You don't have any bronce en tu bolsa de minería.\r\n", ch );
                 return;
             }
             else if ( !str_cmp( arg1, "plata" ) && bag->craft2 < 1 ) {
@@ -2765,7 +2765,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
                 return;
             }
 
-            if ( !str_cmp( arg1, "bronze" ) ) {
+            if ( !str_cmp( arg1, "bronce" ) ) {
                 bag->craft1 -= 1;
                 x = 1;
             }
@@ -2880,7 +2880,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
                     obj_from_char( obj );
                     extract_obj( obj );
 
-                    if ( !str_cmp( arg1, "bronze" ) ) {
+                    if ( !str_cmp( arg1, "bronce" ) ) {
                         bag->craft1 -= 1;
                     }
                     else if ( !str_cmp( arg1, "plata" ) ) {
@@ -3016,7 +3016,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
                 obj_from_char( obj );
                 extract_obj( obj );
                 bag->value[6] = 0;
-                if ( !str_cmp( arg1, "bronze" ) ) {
+                if ( !str_cmp( arg1, "bronce" ) ) {
                     bag->craft1 -= 1;
                 }
                 else if ( !str_cmp( arg1, "plata" ) ) {
@@ -3061,7 +3061,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
             learn_from_craft( ch, gsn_forge );
 
             item = create_object( get_obj_index( SMITH_PRODUCT ), 1 );
-            if ( !str_cmp( arg1, "bronze" ) )
+            if ( !str_cmp( arg1, "broce" ) )
                 item->color = 1;
             else if ( !str_cmp( arg1, "plata" ) )
                 item->color = 5;
