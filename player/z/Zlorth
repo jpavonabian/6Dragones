@@ -12,9 +12,9 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       1923085
-Room         5112
-HpManaMove   30000 30000 30000 30000 30000 30000
+Played       1928850
+Room         43088
+HpManaMove   30000 30000 30000 30000 28719 30000
 BaseHp       0 
 Blood        459 459
 Money         0 199794 8 63 42 -1
@@ -24,14 +24,14 @@ Secondexp     0
 Thirdexp      0
 Height        993
 Weight        8436
-Act           671096136&-351266768
+Act           536878920&-351266768
 AffectedBy    512&0&4194304
 Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales alianza multitud halcyon prohibida~
 Position      115
 Style         2
 Practice      1196
 SavingThrows  0 0 0 0 0
-Alignment     -25
+Alignment     -12
 AppBlood      0
 Hitroll       0
 Damroll       0
@@ -54,12 +54,12 @@ Danos Hechizos de Rabia y Seremos Desolación.
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1509007931
+LDExpUpdate  1509094736
 tmpcrawl 72
 extlevel 108
 tmpsecond -1
 tmpthird -1
-tmproom 5112
+tmproom 42988
 timezone 13
 Alias        inm~ inmortales~
 Textspeed          5
@@ -141,7 +141,7 @@ Bardtimer    0
 Bardsn       0
 PKills       0
 PDeaths      0
-MKills       313
+MKills       316
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
@@ -689,12 +689,31 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
+Killed       5110
+Killed       5122
+Killed       5122
 Killed       35531
 THYQuestN 58 1 0 0 1 0
 THYQuestN 89 1 0 0 1 0
 MaxColors    111
 Colors       0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 31 22 27 17 23 28 18 24 29 19 25 30 20 26 16 21 8 8 4 9 0 5 8 8 14 8 8 8 4 8 8 11 2 8 8 4 8 8 8 3 8 4 10 8 8 14 8 8 1 4 3 8 8 9 11 11 1 8 3 8 11 3 4 3 2 14 10 11 10 5 4 4 4 9 8 9 9 14 13 9 10 11 2 3 5 4 11 2 6 3 11 9 8 9 5 
 Portalstonelag     0
+End
+
+#OBJECT
+Owner        Zlorth~
+ShortDescr   Zlorth's bone dagger~
+Vnum         30032
+Level        108
+Timer        51
+Currtype     1
+Color        5
+Size   0
+Values       12 50 100 2 2 3 21
+AffectData   'acidmist' -1 10 18 0
+AffectData   'acidmist' -1 180 30 0
+AffectData   'acidmist' -1 6 19 0
+AffectData   'acidmist' -1 25 30 0
 End
 
 #END

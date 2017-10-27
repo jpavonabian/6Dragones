@@ -176,35 +176,35 @@ Clanname none~
 > all_greet_prog 100~
 mppause 8
 if quest(tutorial) != 1
-  mpechoat $n &CConsejo:  &cLos quests deben completarse en orden.  Teclea &Wdiario&c para ver tu siguiente paso.&D
+  mpechoat $n Consejo:  Los quests deben completarse en orden.  Teclea diario para ver tu siguiente paso.
 else
   mptutorial $n
   mpquest $n tutorial 2
   mppause 10
-  mpechoat $n &CShop Keeper Amelia says, 'Ahh, $n. I was expecting you. You're the last of the apprentices-to-be to come. Come in!'&D
+  decir Ahh, $ n. Te estaba esperando. Eres el último de los aprendices que quedan por venir. Adelante!
   mppause 15
-  mpechoat $n &cShop Keeper Amelia strokes her chin as she gazes upon you.&D
+  mpechoat $n amelia la tendera acaricia su barbilla mientras te mira.
   mppause 20
-  mpechoat $n &CShop keeper Amelia says, 'Alright. Why don't you take a look at my shop first? Take a look with the &WLIST&C command.'&D
+  decir Bien. qué tal si echas un ojo a mis productos? Escribe lista para ver qué vendo.
   mppause 20
-  mpat 4 look
+  mpat 4 mirar
   mppause 10
-  mpechoat $n &CHint:  &cThe red potion bottle grants &WHEALTH&c when you type &WQUAFF POTION NAME&c, use the &WBUY&c command, potions must be &WQUAFFED&c, other types of liquids are utilized with the &WDRINK&c command.&D
+  mpechoat $n Consejo:  La poción roja otorga salud. Utiliza el comando tragar para usarla. El resto de líquidos, como el agua se tienen que beber.
   mppause 4
-  mpechoat $n &CHint:  &cThe glowing blue potion grants MANA when &WQUAFFED&c.&D
+  mpechoat $n Consejo:  La poción azul otorga mana cuando la tragas.
   mppause 20
-  mpat 4 look
+  mpat 4 mirar
   mppause 10
-  mpechoat $n &CShop keeper Amelia says, 'Here have one of each on the house, for your Rite of Passage gift.'&D
+  decir Aquí tienes un par de pociones, regalo de la casa.
   mppause 10
   mpoload 5104 1
   mpoload 5105 1
-  get potion
-  get potion 
-  give red $n
-  give blue $n
+coger pocion
+coger pocion
+dar pocion $n
+dar pocion $n
   mppause 20
-  mpechoat $n &CShop keeper Amelia says, 'Now go and I'll see you at the Rite of Passage'.&D
+decir Ahora vete, nos veremos cuando termines tu aprendizaje en el ritual.
 endif
 ~
 |
