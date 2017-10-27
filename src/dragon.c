@@ -34,27 +34,27 @@ bool can_fly( CHAR_DATA *ch )
         case POS_RESTING:
         case POS_SITTING:
         case POS_MEDITATING:
-            send_to_char( "You must at least be standing to fly!\r\n", ch );
+            send_to_char( "¡Levántate primero para poder volar!\r\n", ch );
             return FALSE;
     }
 
     if ( ch->position < POS_FIGHTING ) {
-        send_to_char( "You can't concentrate enough for that.\r\n", ch );
+        send_to_char( "No puedes concentrarte en eso.\r\n", ch );
         return FALSE;
     }
 
     if ( IS_NPC( ch ) && IS_AFFECTED( ch, AFF_CHARM ) ) {
-        send_to_char( "You can't concentrate enough for that.\r\n", ch );
+        send_to_char( "No puedes concentrarte en eso.\r\n", ch );
         return FALSE;
     }
 
     if ( IS_AFFECTED( ch, AFF_FLYING ) ) {
-        send_to_char( "You are already flying - type 'land' and try again.\r\n", ch );
+        send_to_char( "Ya estás volando. Aterriza primero y luego vuelve a intentarlo.\r\n", ch );
         return 0;
     }
 
     if ( ch->mount ) {
-        send_to_char( "You can't do that while mounted.\r\n", ch );
+        send_to_char( "No puedes hacer eso estando sobre una montura.\r\n", ch );
         return 0;
     }
 
