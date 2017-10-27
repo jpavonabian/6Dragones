@@ -41,7 +41,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
 
     htown = get_htown( ch->pcdata->htown_name );
     if ( !htown ) {
-        send_to_char( "You have no hometown assigned.\r\n", ch );
+        send_to_char( "No tienes ninguna ciudad asignada.\r\n", ch );
         return;
     }
 
@@ -53,13 +53,13 @@ void do_whereis( CHAR_DATA *ch, char *argument )
          && str_cmp( ch->in_room->area->filename, "tutorial.are" )
          && str_cmp( ch->in_room->area->filename, "etutorial.are" )
          && str_cmp( ch->in_room->area->filename, "dtutorial.are" ) ) {
-        send_to_char( "You must be in your home town to use this command.\r\n", ch );
+        send_to_char( "Debes estar en tu ciudad natal para usar este comando.\r\n", ch );
         return;
     }
     if ( arg[0] == '\0' && !str_cmp( htown->name, "Paleon City" ) ) {
         if ( ch->in_room && !str_cmp( ch->in_room->area->filename, "paleon.are" )
              || !str_cmp( ch->in_room->area->filename, "tutorial.are" ) ) {
-            send_to_char( "&c    Destination : Mob name\r\n", ch );
+            send_to_char( "&c    Destino : Nombre del mob\r\n", ch );
             send_to_char( "-----------------------------\r\n", ch );
             send_to_char( "        Armorer : &CVaekon&c\r\n", ch );
             send_to_char( "           Bank : &CJoram&c\r\n", ch );
@@ -80,7 +80,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
             send_to_char( "        Weapons : &CLorax&c\r\n\r\n", ch );
 
             send_to_char
-                ( "Type 'whereis [&Cmob&c]' to get a suggested route (eg. 'whereis Vaekon').\r\n",
+                ( "Escribe 'localizar [&Cmob&c]' para ver una ruta sugerida (Ejemplo 'localizar Julias').\r\n",
                   ch );
             return;
         }
@@ -88,7 +88,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
     else if ( arg[0] == '\0' && !str_cmp( htown->name, "Dakar City" ) ) {
         if ( ch->in_room && !str_cmp( ch->in_room->area->filename, "dakar.are" )
              || !str_cmp( ch->in_room->area->filename, "etutorial.are" ) ) {
-            send_to_char( "&c    Destination : Mob name\r\n", ch );
+            send_to_char( "&c    Destino: Nombre del mob\r\n", ch );
             send_to_char( "-----------------------------\r\n", ch );
             send_to_char( "        Armorer : &CRautal&c\r\n", ch );
             send_to_char( "           Bank : &CGrindatck&c\r\n", ch );
@@ -108,7 +108,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
             send_to_char( "    Black Tower : &CDurgas&c\r\n\r\n", ch );
 
             send_to_char
-                ( "Type 'whereis [&Cmob&c]' to get a suggested route (eg. 'whereis Rautal').\r\n",
+                ( "Teclea 'localizar [&Cmob&c]' para ver una ruta sugerida (ejemplo: 'localizar Rautal').\r\n",
                   ch );
             return;
         }
@@ -116,7 +116,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
     else if ( arg[0] == '\0' && !str_cmp( htown->name, "Forbidden City" ) ) {
         if ( ch->in_room && !str_cmp( ch->in_room->area->filename, "forbidden.are" )
              || !str_cmp( ch->in_room->area->filename, "dtutorial.are" ) ) {
-            send_to_char( "    &cDestination : Mob name\r\n", ch );
+            send_to_char( "    &cDestino: Nombre del mob\r\n", ch );
             send_to_char( "-----------------------------\r\n", ch );
             send_to_char( "        Armorer : &CUmbar&c\r\n", ch );
             send_to_char( "           Bank : &CHaevar&c\r\n", ch );
@@ -133,7 +133,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
             send_to_char( "  City Entrance : &CGsaar&c\r\n\r\n", ch );
 
             send_to_char
-                ( "&cType 'whereis [&Cmob&c]' to get a suggested route (eg. 'whereis Ulave').\r\n",
+                ( "&cEscribe 'localizar [&Cmob&c]' para ver una ruta sugerida (ejemplo: 'localizar Ulave').\r\n",
                   ch );
             return;
         }
@@ -141,7 +141,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
 
     if ( !str_cmp( ch->in_room->area->filename, "forbidden.are" )
          && ( !str_cmp( htown->name, "Paleon City" ) || !str_cmp( htown->name, "Dakar City" ) ) ) {
-        send_to_char( "This is not your homeland you don't know your way around.\r\n", ch );
+        send_to_char( "Esta no es tu ciudad natal y no sabes como moverte bien por ella.\r\n", ch );
         return;
     }
     else if ( !str_cmp( ch->in_room->area->filename, "paleon.are" )
@@ -158,7 +158,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
     }
 
     if ( !str_cmp( arg, "vaskar" ) ) {
-        send_to_char( "&cHis whereabouts are unknown, you must search for him.\r\n", ch );
+        send_to_char( "&cSu paradero es desconocido, deberás buscarle tú.\r\n", ch );
         return;
     }
 
@@ -218,7 +218,7 @@ void do_whereis( CHAR_DATA *ch, char *argument )
                     return;
                 }
                 else if ( dir == BFS_ALREADY_THERE ) {
-                    send_to_char( "You're already in the same room!\r\n", ch );
+                    send_to_char( "¡Le tienes delante!\r\n", ch );
                     return;
                 }
                 else if ( dir == BFS_NO_PATH ) {
@@ -264,5 +264,5 @@ void do_whereis( CHAR_DATA *ch, char *argument )
                                                              * information */
         }
     }
-    ch_printf( ch, "To get to %s walk: %s.\r\n", arg, fpath );
+    ch_printf( ch, "Pra ir a %s dirígete hacia: %s.\r\n", arg, fpath );
 }
