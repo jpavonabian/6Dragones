@@ -428,41 +428,41 @@ void learn_from_craft( CHAR_DATA *ch, int sn )
 
 void send_mine_syntax( CHAR_DATA *ch )
 {
-    send_to_char( "&CThe Listing for Mining&c\r\n", ch );
+    send_to_char( "&CLista de minería&c\r\n", ch );
     if ( IS_BLIND( ch ) ) {
-        send_to_char( "&cType Mine and the name of the material you want to mine.\r\n", ch );
+        send_to_char( "&cTeclea minar y el material que deseas minar.\r\n", ch );
     }
     else {
-        send_to_char( "&cSyntax: Mine <&Cmaterial&c>\r\n", ch );
+        send_to_char( "&csintaxis: minar <&Cmaterial&c>\r\n", ch );
     }
 
     if ( ch->pcdata->tradeclass == 20 || ch->pcdata->tradeclass == 24 ) {
-        send_to_char( " bronze", ch );
+        send_to_char( " bronce", ch );
 
         if ( ch->pcdata->tradelevel >= 3 )
-            send_to_char( " silver", ch );
+            send_to_char( " plata", ch );
         if ( ch->pcdata->tradelevel >= 5 )
-            send_to_char( " gold", ch );
+            send_to_char( " oro", ch );
         if ( ch->pcdata->tradelevel >= 8 )
-            send_to_char( " iron", ch );
+            send_to_char( " hierro", ch );
         if ( ch->pcdata->tradelevel >= 10 )
-            send_to_char( " steel", ch );
+            send_to_char( " acero", ch );
         if ( ch->pcdata->tradelevel >= 15 )
-            send_to_char( " titanium", ch );
+            send_to_char( " titanio", ch );
     }
 
     if ( ch->pcdata->tradeclass == 24 ) {
-        send_to_char( " amethyst", ch );
+        send_to_char( " amatista", ch );
         if ( ch->pcdata->tradelevel >= 3 )
-            send_to_char( " pearl", ch );
+            send_to_char( " perla", ch );
         if ( ch->pcdata->tradelevel >= 5 )
-            send_to_char( " emerald", ch );
+            send_to_char( " esmeralda", ch );
         if ( ch->pcdata->tradelevel >= 8 )
-            send_to_char( " ruby", ch );
+            send_to_char( " rubí", ch );
         if ( ch->pcdata->tradelevel >= 10 )
-            send_to_char( " sapphire", ch );
+            send_to_char( " zafiro", ch );
         if ( ch->pcdata->tradelevel >= 15 )
-            send_to_char( " diamond", ch );
+            send_to_char( " diamante", ch );
     }
     send_to_char( "\r\n", ch );
 
@@ -494,26 +494,26 @@ void do_mine( CHAR_DATA *ch, char *argument )
     }
 
     if ( ch->position != POS_STANDING ) {
-        send_to_char( "You should be standing to attempt this.\r\n", ch );
+        send_to_char( "Deberías levantarte primero para intentar minar.\r\n", ch );
     }
 
     if ( ch->in_room->sector_type != SECT_ORE ) {
-        send_to_char( "You cannot mine here.\r\n", ch );
+        send_to_char( "No puedes minar aquí.\r\n", ch );
         return;
     }
 
     if ( ( obj = get_eq_char( ch, WEAR_HOLD ) ) == NULL ) {
-        send_to_char( "You are not holding a pick tool.\r\n", ch );
+        send_to_char( "No tienes ninguna herramienta adecuada para minar.\r\n", ch );
         return;
     }
 
     if ( obj->item_type != ITEM_TOOL ) {
-        send_to_char( "You must be holding a pick tool.\r\n", ch );
+        send_to_char( "Debes sostener una herramienta adecuada para la minería.\r\n", ch );
         return;
     }
 
     if ( ch->move < 1 ) {
-        send_to_char( "You	don't have enough move points to perform that.\r\n", ch );
+        send_to_char( "El cansancio te impide incluso el pensar en ponerte a minar.\r\n", ch );
         return;
     }
     else {
@@ -527,98 +527,98 @@ void do_mine( CHAR_DATA *ch, char *argument )
     }
 
     if ( chance == 3 && obj->pIndexData->vnum != 41002 ) {
-        send_to_char( "Your pick axe suddenly snapped into!\r\n", ch );
+        send_to_char( "¡Tu pico se rompe!\r\n", ch );
         make_scraps( obj );
         return;
     }
 
     // Add a further check so if not a jeweler can't mine jewels
     if ( ch->pcdata->tradeclass != 20 && ch->pcdata->tradeclass != 24 ) {
-        send_to_char( "You are not a jeweler or miner tradeclass.\r\n", ch );
+        send_to_char( "Ese material está fuera de tu alcance.\r\n", ch );
         return;
     }
 
     if ( ch->pcdata->tradeclass == 20 ) {
         if ( ( ch->pcdata->tradelevel < 3 )
-             && ( !str_cmp( arg1, "silver" ) || !str_cmp( arg1, "gold" ) || !str_cmp( arg1, "iron" )
-                  || !str_cmp( arg1, "steel" )
-                  || !str_cmp( arg1, "titanium" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "plata" ) || !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "hierro" )
+                  || !str_cmp( arg1, "acero" )
+                  || !str_cmp( arg1, "titanio" ) ) ) {
+            send_to_char( "No tienes suficiente habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 5 )
-             && ( !str_cmp( arg1, "gold" ) || !str_cmp( arg1, "iron" ) || !str_cmp( arg1, "steel" )
-                  || !str_cmp( arg1, "titanium" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "hierro" ) || !str_cmp( arg1, "acero" )
+                  || !str_cmp( arg1, "titanio" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 8 )
-             && ( !str_cmp( arg1, "iron" ) || !str_cmp( arg1, "steel" )
-                  || !str_cmp( arg1, "titanium" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "hierro" ) || !str_cmp( arg1, "acero" )
+                  || !str_cmp( arg1, "titanio" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 10 )
-             && ( !str_cmp( arg1, "steel" ) || !str_cmp( arg1, "titanium" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "acero" ) || !str_cmp( arg1, "titanio" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 15 )
-             && ( !str_cmp( arg1, "titanium" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "titanio" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
     }
     // Add a further check so if not a jeweler can't mine jewels
     if ( ( ch->pcdata->tradeclass == 20 )
-         && ( !str_cmp( arg1, "amethyst" ) || !str_cmp( arg1, "pearl" )
-              || !str_cmp( arg1, "emerald" ) || !str_cmp( arg1, "ruby" )
-              || !str_cmp( arg1, "sapphire" ) || !str_cmp( arg1, "diamond" ) ) ) {
-        send_to_char( "You are not a jeweler tradeclass.\r\n", ch );
+         && ( !str_cmp( arg1, "amatista" ) || !str_cmp( arg1, "perla" )
+              || !str_cmp( arg1, "esmeralda" ) || !str_cmp( arg1, "rubi" )
+              || !str_cmp( arg1, "zafiro" ) || !str_cmp( arg1, "diamante" ) ) ) {
+        send_to_char( "No eres joyero.\r\n", ch );
         return;
     }
 
     if ( ch->pcdata->tradeclass == 24 ) {
         if ( ( ch->pcdata->tradelevel < 3 )
-             && ( !str_cmp( arg1, "silver" ) || !str_cmp( arg1, "gold" ) || !str_cmp( arg1, "iron" )
-                  || !str_cmp( arg1, "steel" )
-                  || !str_cmp( arg1, "titanium" ) || !str_cmp( arg1, "pearl" )
-                  || !str_cmp( arg1, "emerald" ) || !str_cmp( arg1, "ruby" )
-                  || !str_cmp( arg1, "sapphire" ) || !str_cmp( arg1, "diamond" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "plata" ) || !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "hierro" )
+                  || !str_cmp( arg1, "acero" )
+                  || !str_cmp( arg1, "titanio" ) || !str_cmp( arg1, "perla" )
+                  || !str_cmp( arg1, "esmeralda" ) || !str_cmp( arg1, "rubi" )
+                  || !str_cmp( arg1, "zafiro" ) || !str_cmp( arg1, "diamante" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 5 )
-             && ( !str_cmp( arg1, "gold" ) || !str_cmp( arg1, "iron" ) || !str_cmp( arg1, "steel" )
-                  || !str_cmp( arg1, "titanium" )
-                  || !str_cmp( arg1, "emerald" ) || !str_cmp( arg1, "ruby" )
-                  || !str_cmp( arg1, "sapphire" ) || !str_cmp( arg1, "diamond" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "hierro" ) || !str_cmp( arg1, "acero" )
+                  || !str_cmp( arg1, "titanio" )
+                  || !str_cmp( arg1, "esmeralda" ) || !str_cmp( arg1, "rubi" )
+                  || !str_cmp( arg1, "zafiro" ) || !str_cmp( arg1, "diamante" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 8 )
-             && ( !str_cmp( arg1, "iron" ) || !str_cmp( arg1, "steel" )
-                  || !str_cmp( arg1, "titanium" )
-                  || !str_cmp( arg1, "ruby" ) || !str_cmp( arg1, "sapphire" )
-                  || !str_cmp( arg1, "diamond" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "hierro" ) || !str_cmp( arg1, "acero" )
+                  || !str_cmp( arg1, "titanio" )
+                  || !str_cmp( arg1, "rubi" ) || !str_cmp( arg1, "zafiro" )
+                  || !str_cmp( arg1, "diamante" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 10 )
-             && ( !str_cmp( arg1, "steel" ) || !str_cmp( arg1, "titanium" )
-                  || !str_cmp( arg1, "sapphire" )
-                  || !str_cmp( arg1, "diamond" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "acero" ) || !str_cmp( arg1, "titanio" )
+                  || !str_cmp( arg1, "zafiro" )
+                  || !str_cmp( arg1, "diamante" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
         if ( ( ch->pcdata->tradelevel < 15 )
-             && ( !str_cmp( arg1, "titanium" ) || !str_cmp( arg1, "diamond" ) ) ) {
-            send_to_char( "You don't have the skill to mine that yet.", ch );
+             && ( !str_cmp( arg1, "titanio" ) || !str_cmp( arg1, "diamante" ) ) ) {
+            send_to_char( "No tienes habilidad para minar eso todavía.", ch );
             return;
         }
     }
 
-    if ( !str_cmp( arg1, "bronze" ) || !str_cmp( arg1, "amethyst" ) ) {
+    if ( !str_cmp( arg1, "bronze" ) || !str_cmp( arg1, "amatista" ) ) {
         knows = 15;
         if ( ch->pcdata->tradeclass == 20 ) {
             level = 0;
@@ -627,7 +627,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
             slevel = 0;
         }
     }
-    else if ( !str_cmp( arg1, "silver" ) || !str_cmp( arg1, "pearl" ) ) {
+    else if ( !str_cmp( arg1, "plata" ) || !str_cmp( arg1, "perla" ) ) {
         knows = 40;
         if ( ch->pcdata->tradeclass == 20 ) {
             level = 3;
@@ -636,7 +636,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
             slevel = 3;
         }
     }
-    else if ( !str_cmp( arg1, "gold" ) || !str_cmp( arg1, "emerald" ) ) {
+    else if ( !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "esmeralda" ) ) {
         knows = 55;
         if ( ch->pcdata->tradeclass == 20 ) {
             level = 5;
@@ -645,7 +645,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
             slevel = 5;
         }
     }
-    else if ( !str_cmp( arg1, "iron" ) || !str_cmp( arg1, "ruby" ) ) {
+    else if ( !str_cmp( arg1, "hierro" ) || !str_cmp( arg1, "rubi" ) ) {
         knows = 65;
         if ( ch->pcdata->tradeclass == 20 ) {
             level = 8;
@@ -654,7 +654,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
             slevel = 8;
         }
     }
-    else if ( !str_cmp( arg1, "steel" ) || !str_cmp( arg1, "sapphire" ) ) {
+    else if ( !str_cmp( arg1, "acero" ) || !str_cmp( arg1, "zafiro" ) ) {
         knows = 85;
         if ( ch->pcdata->tradeclass == 20 ) {
             level = 10;
@@ -664,7 +664,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
         }
 
     }
-    else if ( !str_cmp( arg1, "titanium" ) || !str_cmp( arg1, "diamond" ) ) {
+    else if ( !str_cmp( arg1, "titanio" ) || !str_cmp( arg1, "diamante" ) ) {
         knows = 95;
         if ( ch->pcdata->tradeclass == 20 ) {
             level = 15;
@@ -687,70 +687,70 @@ void do_mine( CHAR_DATA *ch, char *argument )
     }
 
     if ( !bag ) {
-        send_to_char( "You do not have a miner's bag to hold anything with.\r\n", ch );
+        send_to_char( "No tienes bolsa de minería para poner el mineral.\r\n", ch );
         return;
     }
 
     if ( bag->craft1 >= 1000 && !str_cmp( arg1, "bronze" ) ) {
-        send_to_char( "You cannot hold any more bronze ore in your miner's bag.\r\n", ch );
+        send_to_char( "No puedes poner más bronze en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft2 >= 1000 && !str_cmp( arg1, "silver" ) ) {
-        send_to_char( "You cannot hold any more silver ore in your miner's bag.\r\n", ch );
+    else if ( bag->craft2 >= 1000 && !str_cmp( arg1, "plata" ) ) {
+        send_to_char( "No puedes poner más plata en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft3 >= 1000 && !str_cmp( arg1, "gold" ) ) {
-        send_to_char( "You cannot hold any more gold ore in your miner's bag.\r\n", ch );
+    else if ( bag->craft3 >= 1000 && !str_cmp( arg1, "oro" ) ) {
+        send_to_char( "No puedes poner más oro en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft4 >= 1000 && !str_cmp( arg1, "iron" ) ) {
-        send_to_char( "You cannot hold any more iron ore in your miner's bag.\r\n", ch );
+    else if ( bag->craft4 >= 1000 && !str_cmp( arg1, "hierro" ) ) {
+        send_to_char( "No puedes poner más hierro en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft5 >= 1000 && !str_cmp( arg1, "steel" ) ) {
-        send_to_char( "You cannot hold any more steel ore in your miner's bag.\r\n", ch );
+    else if ( bag->craft5 >= 1000 && !str_cmp( arg1, "acero" ) ) {
+        send_to_char( "No puedes poner más acero en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft6 >= 1000 && !str_cmp( arg1, "titanium" ) ) {
-        send_to_char( "You cannot hold any more titanium ore in your miner's bag.\r\n", ch );
+    else if ( bag->craft6 >= 1000 && !str_cmp( arg1, "titanio" ) ) {
+        send_to_char( "No puedes poner más titanio en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft7 >= 1000 && !str_cmp( arg1, "amethyst" ) ) {
-        send_to_char( "You cannot hold any more amethyst gems in your miner's bag.\r\n", ch );
+    else if ( bag->craft7 >= 1000 && !str_cmp( arg1, "amatista" ) ) {
+        send_to_char( "No puedes poner más amatista en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft8 >= 1000 && !str_cmp( arg1, "pearl" ) ) {
-        send_to_char( "You cannot hold any more pearl gems in your miner's bag.\r\n", ch );
+    else if ( bag->craft8 >= 1000 && !str_cmp( arg1, "perla" ) ) {
+        send_to_char( "No puedes poner más perla en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft9 >= 1000 && !str_cmp( arg1, "emerald" ) ) {
-        send_to_char( "You cannot hold any more emerald gems in your miner's bag.\r\n", ch );
+    else if ( bag->craft9 >= 1000 && !str_cmp( arg1, "esmeralda" ) ) {
+        send_to_char( "No puedes poner más esmeralda en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft10 >= 1000 && !str_cmp( arg1, "ruby" ) ) {
-        send_to_char( "You cannot hold any more ruby gems in your miner's bag.\r\n", ch );
+    else if ( bag->craft10 >= 1000 && !str_cmp( arg1, "rubi" ) ) {
+        send_to_char( "No puedes poner más rubí en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft11 >= 1000 && !str_cmp( arg1, "sapphire" ) ) {
-        send_to_char( "You cannot hold any more sapphire gems in your miner's bag.\r\n", ch );
+    else if ( bag->craft11 >= 1000 && !str_cmp( arg1, "zafiro" ) ) {
+        send_to_char( "No puedes poner más zafiro en tu bolsa de minería.\r\n", ch );
         return;
     }
-    else if ( bag->craft12 >= 1000 && !str_cmp( arg1, "diamond" ) ) {
-        send_to_char( "You cannot hold any more diamond gems in your miner's bag.\r\n", ch );
+    else if ( bag->craft12 >= 1000 && !str_cmp( arg1, "diamante" ) ) {
+        send_to_char( "No puedes poner más diamante en tu bolsa de minería.\r\n", ch );
         return;
     }
 
     if ( ch->move < 5 ) {
-        send_to_char( "You don't have enough energy to keep mining.\r\n", ch );
+        send_to_char( "el cansancio te impide seguir minando.\r\n", ch );
         return;
     }
 
-    if ( !str_cmp( arg1, "gold" ) || !str_cmp( arg1, "silver" ) || !str_cmp( arg1, "bronze" )
-         || !str_cmp( arg1, "iron" ) || !str_cmp( arg1, "steel" )
-         || !str_cmp( arg1, "amethyst" ) || !str_cmp( arg1, "pearl" ) || !str_cmp( arg1, "emerald" )
+    if ( !str_cmp( arg1, "oro" ) || !str_cmp( arg1, "plata" ) || !str_cmp( arg1, "bronze" )
+         || !str_cmp( arg1, "hierro" ) || !str_cmp( arg1, "acero" )
+         || !str_cmp( arg1, "amatista" ) || !str_cmp( arg1, "perla" ) || !str_cmp( arg1, "esmeralda" )
          || !str_cmp( arg1, "ruby" )
-         || !str_cmp( arg1, "sapphire" ) );            /* Does nothing and keeps going */
-    else if ( !str_cmp( arg1, "titanium" ) || !str_cmp( arg1, "diamond" ) )
+         || !str_cmp( arg1, "zafiro" ) );            /* Does nothing and keeps going */
+    else if ( !str_cmp( arg1, "titanio" ) || !str_cmp( arg1, "diamante" ) )
         chance = number_chance( 1, 5 );                /* More chance of failing on this */
     else {                                             /* If none of those then give a
                                                         * message */
@@ -763,7 +763,7 @@ void do_mine( CHAR_DATA *ch, char *argument )
 
     if ( !can_use_skill( ch, number_percent(  ), gsn_mine ) ) {
         learn_from_failure( ch, gsn_mine );
-        send_to_char( "You cannot find anything of worth from your mining.\r\n", ch );
+        send_to_char( "tras un rato, no encuentras nada útil.\r\n", ch );
         return;
     }
     if ( xIS_SET( ch->act, PLR_CRAFTS ) )
@@ -775,32 +775,32 @@ void do_mine( CHAR_DATA *ch, char *argument )
 
     if ( chance < 3 ) {
         if ( chance <= 1 ) {
-            act( AT_ORANGE, "$n's mining only digs up a pile of dirt.\r\n", ch, NULL, NULL,
+            act( AT_ORANGE, "$n mina para encontrarse con nada más que tierra.\r\n", ch, NULL, NULL,
                  TO_ROOM );
-            send_to_char( "&OYour mining only digs up a pile of dirt.\r\n", ch );
+            send_to_char( "&ODespués de minar solo encuentras tierra y más tierra.\r\n", ch );
         }
         else if ( chance >= 2 ) {
             act( AT_CYAN,
-                 "$n begins to labor in earnest chipping away at the rock with $s pick axe.\r\n",
+                 "$n comienza a picar roca.\r\n",
                  ch, NULL, NULL, TO_ROOM );
-            send_to_char( "&cYou begin to labor in earnest chipping away at the rock.\r\n", ch );
+            send_to_char( "&cComienzas a picar roca.\r\n", ch );
         }
         return;
     }
 
     if ( ch->pcdata->tradeclass == 24 ) {
         if ( ch->pcdata->learned[gsn_mine] < knows || ch->pcdata->tradelevel < slevel ) {
-            if ( !str_cmp( arg1, "amethyst" ) || !str_cmp( arg1, "pearl" )
-                 || !str_cmp( arg1, "emerald" )
+            if ( !str_cmp( arg1, "amatista" ) || !str_cmp( arg1, "perla" )
+                 || !str_cmp( arg1, "esmeralda" )
                  || !str_cmp( arg1, "ruby" )
-                 || !str_cmp( arg1, "sapphire" ) || !str_cmp( arg1, "diamond" ) ) {
-                send_to_char( "You begin to mine.\r\n", ch );
+                 || !str_cmp( arg1, "zafiro" ) || !str_cmp( arg1, "diamante" ) ) {
+                send_to_char( "Empiezas a minar.\r\n", ch );
                 pager_printf( ch,
-                              "&GYour mining pays off as you successfully unearthed a gem!\r\n" );
-                act( AT_GREEN, "$n's mining suddenly unearths a gem.", ch, NULL, NULL, TO_ROOM );
+                              "&G¡Descubres una gema!\r\n" );
+                act( AT_GREEN, "¡$n descubre una gema!", ch, NULL, NULL, TO_ROOM );
                 pager_printf( ch,
-                              "&GYour lack of mining skills has ruined the gem with a split in it!\r\n" );
-                act( AT_GREEN, "$n's looks away in disgust as $e realizes the gem is ruined.", ch,
+                              "&G¡Fallas al extraerla y la rompes en pedazos!\r\n" );
+                act( AT_GREEN, "¡$n la rompe en pedazos!", ch,
                      NULL, NULL, TO_ROOM );
                 learn_from_failure( ch, gsn_mine );
                 return;
@@ -809,17 +809,17 @@ void do_mine( CHAR_DATA *ch, char *argument )
     }
     if ( ch->pcdata->tradeclass == 20 ) {
         if ( ch->pcdata->learned[gsn_mine] < knows || ch->pcdata->tradelevel < slevel ) {
-            if ( !str_cmp( arg1, "bronze" ) || !str_cmp( arg1, "silver" )
-                 || !str_cmp( arg1, "gold" )
-                 || !str_cmp( arg1, "iron" )
-                 || !str_cmp( arg1, "steel" ) || !str_cmp( arg1, "titanium" ) ) {
-                send_to_char( "You begin to mine for ore.\r\n", ch );
+            if ( !str_cmp( arg1, "bronze" ) || !str_cmp( arg1, "plata" )
+                 || !str_cmp( arg1, "oro" )
+                 || !str_cmp( arg1, "hierro" )
+                 || !str_cmp( arg1, "acero" ) || !str_cmp( arg1, "titanio" ) ) {
+                send_to_char( "Empiezas a minar.\r\n", ch );
                 pager_printf( ch,
-                              "&GYour mining pays off as you successfully unearthed some ore!\r\n" );
-                act( AT_GREEN, "$n's mining suddenly unearths some ore.", ch, NULL, NULL, TO_ROOM );
+                              "&G¡Descubres algo de material!\r\n" );
+                act( AT_GREEN, "¡$n descubre algo de material!", ch, NULL, NULL, TO_ROOM );
                 pager_printf( ch,
-                              "&GYour lack of mining skills has ruined the ore with a split in the ore!\r\n" );
-                act( AT_GREEN, "$n's looks away in disgust as $e realizes the ore is ruined.", ch,
+                              "&G¡Al intentar extraer el material lo rompes en pedazos!\r\n" );
+                act( AT_GREEN, "¡$n lo rompe en pedazos!", ch,
                      NULL, NULL, TO_ROOM );
                 learn_from_failure( ch, gsn_mine );
                 return;
@@ -841,51 +841,51 @@ void do_mine( CHAR_DATA *ch, char *argument )
     if ( !str_cmp( arg1, "bronze" ) ) {
         bag->craft1 += amount;
     }
-    else if ( !str_cmp( arg1, "silver" ) ) {
+    else if ( !str_cmp( arg1, "plata" ) ) {
         bag->craft2 += amount;
     }
-    else if ( !str_cmp( arg1, "gold" ) ) {
+    else if ( !str_cmp( arg1, "oro" ) ) {
         bag->craft3 += amount;
     }
-    else if ( !str_cmp( arg1, "iron" ) ) {
+    else if ( !str_cmp( arg1, "hierro" ) ) {
         bag->craft4 += amount;
     }
-    else if ( !str_cmp( arg1, "steel" ) ) {
+    else if ( !str_cmp( arg1, "acero" ) ) {
         bag->craft5 += amount;
     }
-    else if ( !str_cmp( arg1, "titanium" ) ) {
+    else if ( !str_cmp( arg1, "titanio" ) ) {
         bag->craft6 += amount;
     }
-    else if ( !str_cmp( arg1, "amethyst" ) ) {
+    else if ( !str_cmp( arg1, "amatista" ) ) {
         bag->craft7 += amount;
     }
-    else if ( !str_cmp( arg1, "pearl" ) ) {
+    else if ( !str_cmp( arg1, "perla" ) ) {
         bag->craft8 += amount;
     }
-    else if ( !str_cmp( arg1, "emerald" ) ) {
+    else if ( !str_cmp( arg1, "esmeralda" ) ) {
         bag->craft9 += amount;
     }
     else if ( !str_cmp( arg1, "ruby" ) ) {
         bag->craft10 += amount;
     }
-    else if ( !str_cmp( arg1, "sapphire" ) ) {
+    else if ( !str_cmp( arg1, "zafiro" ) ) {
         bag->craft11 += amount;
     }
-    else if ( !str_cmp( arg1, "diamond" ) ) {
+    else if ( !str_cmp( arg1, "diamante" ) ) {
         bag->craft12 += amount;
     }
-    send_to_char( "You begin to mine.\r\n", ch );
-    if ( !str_cmp( arg1, "amethyst" ) || !str_cmp( arg1, "pearl" ) || !str_cmp( arg1, "emerald" )
+    send_to_char( "Empiezas a minar.\r\n", ch );
+    if ( !str_cmp( arg1, "amatista" ) || !str_cmp( arg1, "perla" ) || !str_cmp( arg1, "esmeralda" )
          || !str_cmp( arg1, "ruby" )
-         || !str_cmp( arg1, "sapphire" ) || !str_cmp( arg1, "diamond" ) ) {
-        ch_printf( ch, "&GYour mining pays off as you successfully unearthed %d %s gem!\r\n",
+         || !str_cmp( arg1, "zafiro" ) || !str_cmp( arg1, "diamante" ) ) {
+        ch_printf( ch, "&G¡Desentierras con éxito %d gemas de %s!\r\n",
                    amount, arg1 );
     }
     else {
-        ch_printf( ch, "&GYour mining pays off as you successfully unearthed %d %s ore!\r\n",
+        ch_printf( ch, "&G¡Desentierras con éxito %d trozos de %s!\r\n",
                    amount, arg1 );
     }
-    act( AT_GREEN, "$n's mining suddenly unearths something.", ch, NULL, NULL, TO_ROOM );
+    act( AT_GREEN, "$n consigue desenterrar algo valioso.", ch, NULL, NULL, TO_ROOM );
     learn_from_craft( ch, gsn_mine );
 }
 
@@ -1125,18 +1125,18 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    if ( !str_cmp( arg1, "gold" ) && bag->craft3 < 1 ) {
-        send_to_char( "You don't have enough gold ore for that.\r\n", ch );
+    if ( !str_cmp( arg1, "oro" ) && bag->craft3 < 1 ) {
+        send_to_char( "You don't have enough oro ore for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg1, "gold" ) && bag->craft3 > 0 ) {
+    else if ( !str_cmp( arg1, "oro" ) && bag->craft3 > 0 ) {
         bag->craft3 -= 1;
     }
-    if ( !str_cmp( arg1, "silver" ) && bag->craft2 < 1 ) {
-        send_to_char( "You don't have enough silver ore for that.\r\n", ch );
+    if ( !str_cmp( arg1, "plata" ) && bag->craft2 < 1 ) {
+        send_to_char( "You don't have enough plata ore for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg1, "silver" ) && bag->craft2 > 0 ) {
+    else if ( !str_cmp( arg1, "plata" ) && bag->craft2 > 0 ) {
         bag->craft2 -= 1;
     }
     if ( !str_cmp( arg1, "bronze" ) && bag->craft1 < 1 ) {
@@ -1146,46 +1146,46 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg1, "bronze" ) && bag->craft1 > 0 ) {
         bag->craft1 -= 1;
     }
-    if ( !str_cmp( arg1, "iron" ) && bag->craft4 < 1 ) {
-        send_to_char( "You don't have enough iron ore for that.\r\n", ch );
+    if ( !str_cmp( arg1, "hierro" ) && bag->craft4 < 1 ) {
+        send_to_char( "You don't have enough hierro ore for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg1, "iron" ) && bag->craft4 > 0 ) {
+    else if ( !str_cmp( arg1, "hierro" ) && bag->craft4 > 0 ) {
         bag->craft4 -= 1;
     }
-    if ( !str_cmp( arg1, "steel" ) && bag->craft5 < 1 ) {
-        send_to_char( "You don't have enough steel ore for that.\r\n", ch );
+    if ( !str_cmp( arg1, "acero" ) && bag->craft5 < 1 ) {
+        send_to_char( "You don't have enough acero ore for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg1, "steel" ) && bag->craft5 > 0 ) {
+    else if ( !str_cmp( arg1, "acero" ) && bag->craft5 > 0 ) {
         bag->craft5 -= 1;
     }
-    if ( !str_cmp( arg1, "titanium" ) && bag->craft6 < 1 ) {
-        send_to_char( "You don't have enough titanium ore for that.\r\n", ch );
+    if ( !str_cmp( arg1, "titanio" ) && bag->craft6 < 1 ) {
+        send_to_char( "You don't have enough titanio ore for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg1, "titanium" ) && bag->craft6 > 0 ) {
+    else if ( !str_cmp( arg1, "titanio" ) && bag->craft6 > 0 ) {
         bag->craft6 -= 1;
     }
-    if ( !str_cmp( arg2, "amethyst" ) && bag->craft7 < 1 ) {
-        send_to_char( "You don't have enough amethysts for that.\r\n", ch );
+    if ( !str_cmp( arg2, "amatista" ) && bag->craft7 < 1 ) {
+        send_to_char( "You don't have enough amatistas for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg2, "amethyst" ) && bag->craft7 > 0 ) {
+    else if ( !str_cmp( arg2, "amatista" ) && bag->craft7 > 0 ) {
         bag->craft7 -= 1;
     }
-    if ( !str_cmp( arg2, "pearl" ) && bag->craft8 < 1 ) {
-        send_to_char( "You don't have enough pearls for that.\r\n", ch );
+    if ( !str_cmp( arg2, "perla" ) && bag->craft8 < 1 ) {
+        send_to_char( "You don't have enough perlas for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg2, "pearl" ) && bag->craft8 > 0 ) {
+    else if ( !str_cmp( arg2, "perla" ) && bag->craft8 > 0 ) {
         bag->craft8 -= 1;
     }
-    if ( !str_cmp( arg2, "emerald" ) && bag->craft9 < 1 ) {
-        send_to_char( "You don't have enough emeralds for that.\r\n", ch );
+    if ( !str_cmp( arg2, "esmeralda" ) && bag->craft9 < 1 ) {
+        send_to_char( "You don't have enough esmeraldas for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg2, "emerald" ) && bag->craft9 > 0 ) {
+    else if ( !str_cmp( arg2, "esmeralda" ) && bag->craft9 > 0 ) {
         bag->craft9 -= 1;
     }
     if ( !str_cmp( arg2, "ruby" ) && bag->craft10 < 1 ) {
@@ -1195,19 +1195,19 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg2, "ruby" ) && bag->craft10 > 0 ) {
         bag->craft10 -= 1;
     }
-    if ( !str_cmp( arg2, "sapphire" ) && bag->craft11 < 1 ) {
-        send_to_char( "You don't have enough sapphires for that.\r\n", ch );
+    if ( !str_cmp( arg2, "zafiro" ) && bag->craft11 < 1 ) {
+        send_to_char( "You don't have enough zafiros for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg2, "sapphire" ) && bag->craft11 > 0 ) {
+    else if ( !str_cmp( arg2, "zafiro" ) && bag->craft11 > 0 ) {
         bag->craft11 -= 1;
     }
 
-    if ( !str_cmp( arg2, "diamond" ) && bag->craft12 < 1 ) {
-        send_to_char( "You don't have enough diamonds for that.\r\n", ch );
+    if ( !str_cmp( arg2, "diamante" ) && bag->craft12 < 1 ) {
+        send_to_char( "You don't have enough diamantes for that.\r\n", ch );
         return;
     }
-    else if ( !str_cmp( arg2, "diamond" ) && bag->craft12 > 0 ) {
+    else if ( !str_cmp( arg2, "diamante" ) && bag->craft12 > 0 ) {
         bag->craft12 -= 1;
     }
 
@@ -1991,19 +1991,19 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
         obj_to_char( obj, ch );
 
         if ( ch->pcdata->tradelevel >= 20 ) {
-            GET_VALUE( obj, type ) = CURR_GOLD;
+            GET_VALUE( obj, type ) = CURR_oro;
             obj->cost = 30;
         }
         else if ( ch->pcdata->tradelevel >= 15 ) {
-            GET_VALUE( obj, type ) = CURR_GOLD;
+            GET_VALUE( obj, type ) = CURR_oro;
             obj->cost = 25;
         }
         else if ( ch->pcdata->tradelevel >= 10 ) {
-            GET_VALUE( obj, type ) = CURR_GOLD;
+            GET_VALUE( obj, type ) = CURR_oro;
             obj->cost = 15;
         }
         else if ( ch->pcdata->tradelevel >= 5 ) {
-            GET_VALUE( obj, type ) = CURR_SILVER;
+            GET_VALUE( obj, type ) = CURR_plata;
             obj->cost = 50;
         }
         else if ( ch->pcdata->tradelevel >= 1 ) {
@@ -2156,7 +2156,7 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
 
             }
             if ( ch->pcdata->tradelevel >= 20 ) {
-                GET_VALUE( obj, type ) = CURR_GOLD;
+                GET_VALUE( obj, type ) = CURR_oro;
                 obj->cost = 25;
             }
         }
@@ -2178,7 +2178,7 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
                     paf->modifier = 5;
                 else
                     paf->modifier = 3;
-                GET_VALUE( obj, type ) = CURR_GOLD;
+                GET_VALUE( obj, type ) = CURR_oro;
                 obj->cost = 25;
             }
             else if ( ch->pcdata->tradelevel >= 15 ) {
@@ -2192,12 +2192,12 @@ void do_jewelry( CHAR_DATA *ch, char *argument )
                     paf->modifier = 3;
                 else
                     paf->modifier = 2;
-                GET_VALUE( obj, type ) = CURR_SILVER;
+                GET_VALUE( obj, type ) = CURR_plata;
                 obj->cost = 25;
             }
             else if ( ch->pcdata->tradelevel > 5 ) {
                 paf->modifier = 2;
-                GET_VALUE( obj, type ) = CURR_SILVER;
+                GET_VALUE( obj, type ) = CURR_plata;
                 obj->cost = 10;
             }
             else {
@@ -2291,7 +2291,7 @@ void send_forge_syntax( CHAR_DATA *ch )
                 ( "Type forge id number rename new name to change the objects name or forge id number rekey new key to change what you type to get the object.\r\n",
                   ch );
         }
-        send_to_char( "Ore possibilities include bronze, silver, gold, iron, steel, titanium\r\n",
+        send_to_char( "Ore possibilities include bronze, plata, oro, hierro, acero, titanio\r\n",
                       ch );
         send_to_char
             ( "Note There are 4 steps, keep doing the forge command until the last step.\r\n", ch );
@@ -2312,7 +2312,7 @@ void send_forge_syntax( CHAR_DATA *ch )
             send_to_char
                 ( "Syntax: forge id rename <&Cnew name&c> forge id rekey <<&Cnew name&c>\r\n", ch );
         }
-        send_to_char( "Materials being: bronze, silver, gold, iron, steel, titanium\r\n", ch );
+        send_to_char( "Materials being: bronze, plata, oro, hierro, acero, titanio\r\n", ch );
         send_to_char
             ( "Note: There are &C4 steps&c, keep doing the forge command until the last step.\r\n",
               ch );
@@ -2732,36 +2732,36 @@ void do_forge( CHAR_DATA *ch, char *argument )
                 return;
             }
 
-            if ( str_cmp( arg1, "bronze" ) && str_cmp( arg1, "silver" ) && str_cmp( arg1, "gold" )
-                 && str_cmp( arg1, "iron" ) && str_cmp( arg1, "steel" )
-                 && str_cmp( arg1, "titanium" ) ) {
-                send_to_char( "You can only use bronze, silver, gold, iron, steel, titanium.\r\n",
+            if ( str_cmp( arg1, "bronze" ) && str_cmp( arg1, "plata" ) && str_cmp( arg1, "oro" )
+                 && str_cmp( arg1, "hierro" ) && str_cmp( arg1, "acero" )
+                 && str_cmp( arg1, "titanio" ) ) {
+                send_to_char( "You can only use bronze, plata, oro, hierro, acero, titanio.\r\n",
                               ch );
                 return;
             }
 
             if ( !str_cmp( arg1, "bronze" ) && bag->craft1 < 1 ) {
-                send_to_char( "You don't have any bronze ore in your miner's bag.\r\n", ch );
+                send_to_char( "You don't have any bronze en tu bolsa de minería.\r\n", ch );
                 return;
             }
-            else if ( !str_cmp( arg1, "silver" ) && bag->craft2 < 1 ) {
-                send_to_char( "You don't have any silver ore in your miner's bag.\r\n", ch );
+            else if ( !str_cmp( arg1, "plata" ) && bag->craft2 < 1 ) {
+                send_to_char( "You don't have any plata en tu bolsa de minería.\r\n", ch );
                 return;
             }
-            else if ( !str_cmp( arg1, "gold" ) && bag->craft3 < 1 ) {
-                send_to_char( "You don't have any gold ore in your miner's bag.\r\n", ch );
+            else if ( !str_cmp( arg1, "oro" ) && bag->craft3 < 1 ) {
+                send_to_char( "You don't have any oro en tu bolsa de minería.\r\n", ch );
                 return;
             }
-            else if ( !str_cmp( arg1, "iron" ) && bag->craft4 < 1 ) {
-                send_to_char( "You don't have any iron ore in your miner's bag.\r\n", ch );
+            else if ( !str_cmp( arg1, "hierro" ) && bag->craft4 < 1 ) {
+                send_to_char( "You don't have any hierro en tu bolsa de minería.\r\n", ch );
                 return;
             }
-            else if ( !str_cmp( arg1, "steel" ) && bag->craft5 < 1 ) {
-                send_to_char( "You don't have any steel ore in your miner's bag.\r\n", ch );
+            else if ( !str_cmp( arg1, "acero" ) && bag->craft5 < 1 ) {
+                send_to_char( "You don't have any acero en tu bolsa de minería.\r\n", ch );
                 return;
             }
-            else if ( !str_cmp( arg1, "titanium" ) && bag->craft6 < 1 ) {
-                send_to_char( "You don't have any titanium ore in your miner's bag.\r\n", ch );
+            else if ( !str_cmp( arg1, "titanio" ) && bag->craft6 < 1 ) {
+                send_to_char( "You don't have any titanio en tu bolsa de minería.\r\n", ch );
                 return;
             }
 
@@ -2769,23 +2769,23 @@ void do_forge( CHAR_DATA *ch, char *argument )
                 bag->craft1 -= 1;
                 x = 1;
             }
-            else if ( !str_cmp( arg1, "silver" ) ) {
+            else if ( !str_cmp( arg1, "plata" ) ) {
                 bag->craft2 -= 1;
                 x = 2;
             }
-            else if ( !str_cmp( arg1, "gold" ) ) {
+            else if ( !str_cmp( arg1, "oro" ) ) {
                 bag->craft3 -= 1;
                 x = 3;
             }
-            else if ( !str_cmp( arg1, "iron" ) ) {
+            else if ( !str_cmp( arg1, "hierro" ) ) {
                 bag->craft4 -= 1;
                 x = 4;
             }
-            else if ( !str_cmp( arg1, "steel" ) ) {
+            else if ( !str_cmp( arg1, "acero" ) ) {
                 bag->craft5 -= 1;
                 x = 5;
             }
-            else if ( !str_cmp( arg1, "titanium" ) ) {
+            else if ( !str_cmp( arg1, "titanio" ) ) {
                 bag->craft6 -= 1;
                 x = 6;
             }
@@ -2883,19 +2883,19 @@ void do_forge( CHAR_DATA *ch, char *argument )
                     if ( !str_cmp( arg1, "bronze" ) ) {
                         bag->craft1 -= 1;
                     }
-                    else if ( !str_cmp( arg1, "silver" ) ) {
+                    else if ( !str_cmp( arg1, "plata" ) ) {
                         bag->craft2 -= 1;
                     }
-                    else if ( !str_cmp( arg1, "gold" ) ) {
+                    else if ( !str_cmp( arg1, "oro" ) ) {
                         bag->craft3 -= 1;
                     }
-                    else if ( !str_cmp( arg1, "iron" ) ) {
+                    else if ( !str_cmp( arg1, "hierro" ) ) {
                         bag->craft4 -= 1;
                     }
-                    else if ( !str_cmp( arg1, "steel" ) ) {
+                    else if ( !str_cmp( arg1, "acero" ) ) {
                         bag->craft5 -= 1;
                     }
-                    else if ( !str_cmp( arg1, "titanium" ) ) {
+                    else if ( !str_cmp( arg1, "titanio" ) ) {
                         bag->craft6 -= 1;
                     }
                     learn_from_failure( ch, gsn_forge );
@@ -3019,19 +3019,19 @@ void do_forge( CHAR_DATA *ch, char *argument )
                 if ( !str_cmp( arg1, "bronze" ) ) {
                     bag->craft1 -= 1;
                 }
-                else if ( !str_cmp( arg1, "silver" ) ) {
+                else if ( !str_cmp( arg1, "plata" ) ) {
                     bag->craft2 -= 1;
                 }
-                else if ( !str_cmp( arg1, "gold" ) ) {
+                else if ( !str_cmp( arg1, "oro" ) ) {
                     bag->craft3 -= 1;
                 }
-                else if ( !str_cmp( arg1, "iron" ) ) {
+                else if ( !str_cmp( arg1, "hierro" ) ) {
                     bag->craft4 -= 1;
                 }
-                else if ( !str_cmp( arg1, "steel" ) ) {
+                else if ( !str_cmp( arg1, "acero" ) ) {
                     bag->craft5 -= 1;
                 }
-                else if ( !str_cmp( arg1, "titanium" ) ) {
+                else if ( !str_cmp( arg1, "titanio" ) ) {
                     bag->craft6 -= 1;
                 }
                 learn_from_failure( ch, gsn_forge );
@@ -3063,15 +3063,15 @@ void do_forge( CHAR_DATA *ch, char *argument )
             item = create_object( get_obj_index( SMITH_PRODUCT ), 1 );
             if ( !str_cmp( arg1, "bronze" ) )
                 item->color = 1;
-            else if ( !str_cmp( arg1, "silver" ) )
+            else if ( !str_cmp( arg1, "plata" ) )
                 item->color = 5;
-            else if ( !str_cmp( arg1, "gold" ) )
+            else if ( !str_cmp( arg1, "oro" ) )
                 item->color = 14;
-            else if ( !str_cmp( arg1, "iron" ) )
+            else if ( !str_cmp( arg1, "hierro" ) )
                 item->color = 13;
-            else if ( !str_cmp( arg1, "steel" ) )
+            else if ( !str_cmp( arg1, "acero" ) )
                 item->color = 13;
-            else if ( !str_cmp( arg1, "titanium" ) )
+            else if ( !str_cmp( arg1, "titanio" ) )
                 item->color = 9;
 
             if ( arg4[0] == '\0' )
@@ -3469,7 +3469,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
                     paf->modifier = modifier;
                     xCLEAR_BITS( paf->bitvector );
                     LINK( paf, item->first_affect, item->last_affect, next, prev );
-                    GET_VALUE( item, type ) = CURR_SILVER;
+                    GET_VALUE( item, type ) = CURR_plata;
                     item->cost = 10;
                 }
                 if ( ch->pcdata->tradelevel >= 15 ) {
@@ -3521,11 +3521,11 @@ void do_forge( CHAR_DATA *ch, char *argument )
                     paf->modifier = modifier;
                     xCLEAR_BITS( paf->bitvector );
                     LINK( paf, item->first_affect, item->last_affect, next, prev );
-                    GET_VALUE( item, type ) = CURR_SILVER;
+                    GET_VALUE( item, type ) = CURR_plata;
                     item->cost = 25;
                 }
                 if ( ch->pcdata->tradelevel >= 20 ) {
-                    GET_VALUE( item, type ) = CURR_GOLD;
+                    GET_VALUE( item, type ) = CURR_oro;
                     item->cost = 25;
                 }
             }
@@ -3547,7 +3547,7 @@ void do_forge( CHAR_DATA *ch, char *argument )
                         paf->modifier = 5;
                     else
                         paf->modifier = 3;
-                    GET_VALUE( item, type ) = CURR_GOLD;
+                    GET_VALUE( item, type ) = CURR_oro;
                     item->cost = 25;
                 }
                 else if ( ch->pcdata->tradelevel >= 15 ) {
@@ -3561,12 +3561,12 @@ void do_forge( CHAR_DATA *ch, char *argument )
                         paf->modifier = 3;
                     else
                         paf->modifier = 2;
-                    GET_VALUE( item, type ) = CURR_SILVER;
+                    GET_VALUE( item, type ) = CURR_plata;
                     item->cost = 25;
                 }
                 else if ( ch->pcdata->tradelevel > 5 ) {
                     paf->modifier = 2;
-                    GET_VALUE( item, type ) = CURR_SILVER;
+                    GET_VALUE( item, type ) = CURR_plata;
                     item->cost = 10;
                 }
                 else {
@@ -3605,15 +3605,15 @@ void do_forge( CHAR_DATA *ch, char *argument )
             {
                 int                     ichange = 0;
 
-                if ( !str_cmp( arg1, "silver" ) )
+                if ( !str_cmp( arg1, "plata" ) )
                     ichange = 3;
-                else if ( !str_cmp( arg1, "gold" ) )
+                else if ( !str_cmp( arg1, "oro" ) )
                     ichange = 5;
-                else if ( !str_cmp( arg1, "iron" ) )
+                else if ( !str_cmp( arg1, "hierro" ) )
                     ichange = 8;
-                else if ( !str_cmp( arg1, "steel" ) )
+                else if ( !str_cmp( arg1, "acero" ) )
                     ichange = 10;
-                else if ( !str_cmp( arg1, "titanium" ) )
+                else if ( !str_cmp( arg1, "titanio" ) )
                     ichange = 12;
 
                 if ( item->item_type == ITEM_WEAPON ) {
@@ -4470,7 +4470,7 @@ void do_tan( CHAR_DATA *ch, char *argument )
             paf->modifier = 1;
             xCLEAR_BITS( paf->bitvector );
             LINK( paf, item->first_affect, item->last_affect, next, prev );
-            GET_VALUE( item, type ) = CURR_SILVER;
+            GET_VALUE( item, type ) = CURR_plata;
             item->cost = 10;
         }
 
@@ -4492,7 +4492,7 @@ void do_tan( CHAR_DATA *ch, char *argument )
                 paf->modifier = 2;
             xCLEAR_BITS( paf->bitvector );
             LINK( paf, item->first_affect, item->last_affect, next, prev );
-            GET_VALUE( item, type ) = CURR_SILVER;
+            GET_VALUE( item, type ) = CURR_plata;
             item->cost = 20;
         }
 
@@ -4514,7 +4514,7 @@ void do_tan( CHAR_DATA *ch, char *argument )
                 paf->modifier = 3;
             xCLEAR_BITS( paf->bitvector );
             LINK( paf, item->first_affect, item->last_affect, next, prev );
-            GET_VALUE( item, type ) = CURR_GOLD;
+            GET_VALUE( item, type ) = CURR_oro;
             item->cost = 10;
         }
 
@@ -4798,83 +4798,83 @@ void do_hunt( CHAR_DATA *ch, char *argument )
     }
 
     if ( bag->craft1 >= 1000 && !str_cmp( arg1, "rabbit" ) ) {
-        send_to_char( "You cannot hold any more rabbits in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más rabbits in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft2 >= 1000 && !str_cmp( arg1, "goose" ) ) {
-        send_to_char( "You cannot hold any more geese in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más geese in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft3 >= 1000 && !str_cmp( arg1, "badger" ) ) {
-        send_to_char( "You cannot hold any more badger in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más badger in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft4 >= 1000 && !str_cmp( arg1, "turkey" ) ) {
-        send_to_char( "You cannot hold any more turkey in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más turkey in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft5 >= 1000 && !str_cmp( arg1, "coyote" ) ) {
-        send_to_char( "You cannot hold any more coyote in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más coyote in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft6 >= 1000 && !str_cmp( arg1, "leopard" ) ) {
-        send_to_char( "You cannot hold any more leopard in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más leopard in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft7 >= 1000 && !str_cmp( arg1, "lion" ) ) {
-        send_to_char( "You cannot hold any more lion in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más lion in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft8 >= 1000 && !str_cmp( arg1, "pheasant" ) ) {
-        send_to_char( "You cannot hold any more pheasant in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más pheasant in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft9 >= 1000 && !str_cmp( arg1, "duck" ) ) {
-        send_to_char( "You cannot hold any more duck in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más duck in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft10 >= 1000 && !str_cmp( arg1, "raccoon" ) ) {
-        send_to_char( "You cannot hold any more raccoon in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más raccoon in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft11 >= 1000 && !str_cmp( arg1, "boar" ) ) {
-        send_to_char( "You cannot hold any more boar in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más boar in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft12 >= 1000 && !str_cmp( arg1, "bobcat" ) ) {
-        send_to_char( "You cannot hold any more wild bobcat in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más wild bobcat in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft13 >= 1000 && !str_cmp( arg1, "bear" ) ) {
-        send_to_char( "You cannot hold any more wild bear in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más wild bear in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft14 >= 1000 && !str_cmp( arg1, "dove" ) ) {
-        send_to_char( "You cannot hold any more dove in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más dove in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft15 >= 1000 && !str_cmp( arg1, "squirrel" ) ) {
-        send_to_char( "You cannot hold any more squirrel in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más squirrel in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft16 >= 1000 && !str_cmp( arg1, "deer" ) ) {
-        send_to_char( "You cannot hold any more deer in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más deer in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft17 >= 1000 && !str_cmp( arg1, "antelope" ) ) {
-        send_to_char( "You cannot hold any more antelope in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más antelope in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft18 >= 1000 && !str_cmp( arg1, "wolf" ) ) {
-        send_to_char( "You cannot hold any more wolves in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más wolves in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft19 >= 1000 && !str_cmp( arg1, "moose" ) ) {
-        send_to_char( "You cannot hold any more moose in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más moose in your hunter's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft20 >= 1000 && !str_cmp( arg1, "bugbear" ) ) {
-        send_to_char( "You cannot hold any more bugbear in your hunter's bag.\r\n", ch );
+        send_to_char( "No puedes poner más bugbear in your hunter's bag.\r\n", ch );
         return;
     }
 
@@ -5155,83 +5155,83 @@ void do_gather( CHAR_DATA *ch, char *argument )
     }
 
     if ( bag->craft1 >= 1000 && !str_cmp( arg1, "strawberries" ) ) {
-        send_to_char( "You cannot hold any more strawberries in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más strawberries in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft2 >= 1000 && !str_cmp( arg1, "watermelons" ) ) {
-        send_to_char( "You cannot hold any more watermelons in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más watermelons in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft3 >= 1000 && !str_cmp( arg1, "lettuce" ) ) {
-        send_to_char( "You cannot hold any more lettuce in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más lettuce in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft4 >= 1000 && !str_cmp( arg1, "pickles" ) ) {
-        send_to_char( "You cannot hold any more pickles in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más pickles in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft5 >= 1000 && !str_cmp( arg1, "wheat" ) ) {
-        send_to_char( "You cannot hold any more wheat in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más wheat in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft6 >= 1000 && !str_cmp( arg1, "oranges" ) ) {
-        send_to_char( "You cannot hold any more oranges in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más oranges in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft7 >= 1000 && !str_cmp( arg1, "peaches" ) ) {
-        send_to_char( "You cannot hold any more peaches in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más peaches in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft8 >= 1000 && !str_cmp( arg1, "carrots" ) ) {
-        send_to_char( "You cannot hold any more carrots in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más carrots in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft9 >= 1000 && !str_cmp( arg1, "cinnamon" ) ) {
-        send_to_char( "You cannot hold any more cinnamon in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más cinnamon in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft10 >= 1000 && !str_cmp( arg1, "fig" ) ) {
-        send_to_char( "You cannot hold any more fig in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más fig in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft11 >= 1000 && !str_cmp( arg1, "blueberries" ) ) {
-        send_to_char( "You cannot hold any more blueberries in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más blueberries in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft12 >= 1000 && !str_cmp( arg1, "pears" ) ) {
-        send_to_char( "You cannot hold any more pears in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más pears in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft13 >= 1000 && !str_cmp( arg1, "onions" ) ) {
-        send_to_char( "You cannot hold any more onions in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más onions in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft14 >= 1000 && !str_cmp( arg1, "sugar-cane" ) ) {
-        send_to_char( "You cannot hold any more sugar-cane in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más sugar-cane in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft15 >= 1000 && !str_cmp( arg1, "ginger" ) ) {
-        send_to_char( "You cannot hold any more ginger in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más ginger in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft16 >= 1000 && !str_cmp( arg1, "raspberries" ) ) {
-        send_to_char( "You cannot hold any more raspberries in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más raspberries in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft17 >= 1000 && !str_cmp( arg1, "corn" ) ) {
-        send_to_char( "You cannot hold any more corn in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más corn in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft18 >= 1000 && !str_cmp( arg1, "radishes" ) ) {
-        send_to_char( "You cannot hold any more radishes in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más radishes in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft19 >= 1000 && !str_cmp( arg1, "garlic" ) ) {
-        send_to_char( "You cannot hold any more garlic in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más garlic in your baker's bag.\r\n", ch );
         return;
     }
     else if ( bag->craft20 >= 1000 && !str_cmp( arg1, "pepper" ) ) {
-        send_to_char( "You cannot hold any more pepper in your baker's bag.\r\n", ch );
+        send_to_char( "No puedes poner más pepper in your baker's bag.\r\n", ch );
         return;
     }
 
@@ -6123,19 +6123,19 @@ void do_bake( CHAR_DATA *ch, char *argument )
             bakedfood->value[6] = 3;
 
         if ( ch->pcdata->tradelevel >= 20 ) {
-            GET_VALUE( bakedfood, type ) = CURR_GOLD;
+            GET_VALUE( bakedfood, type ) = CURR_oro;
             bakedfood->cost = 30;
         }
         else if ( ch->pcdata->tradelevel >= 15 ) {
-            GET_VALUE( bakedfood, type ) = CURR_GOLD;
+            GET_VALUE( bakedfood, type ) = CURR_oro;
             bakedfood->cost = 25;
         }
         else if ( ch->pcdata->tradelevel >= 10 ) {
-            GET_VALUE( bakedfood, type ) = CURR_GOLD;
+            GET_VALUE( bakedfood, type ) = CURR_oro;
             bakedfood->cost = 15;
         }
         else if ( ch->pcdata->tradelevel >= 5 ) {
-            GET_VALUE( bakedfood, type ) = CURR_SILVER;
+            GET_VALUE( bakedfood, type ) = CURR_plata;
             bakedfood->cost = 50;
         }
         else {
@@ -6891,15 +6891,15 @@ void do_mix( CHAR_DATA *ch, char *argument )
         mixeddrink->cost = 25;
     }
     else if ( ch->pcdata->tradelevel >= 5 && ch->pcdata->tradelevel < 10 ) {
-        GET_VALUE( mixeddrink, type ) = CURR_SILVER;
+        GET_VALUE( mixeddrink, type ) = CURR_plata;
         mixeddrink->cost = 50;
     }
     else if ( ch->pcdata->tradelevel >= 10 && ch->pcdata->tradelevel < 15 ) {
-        GET_VALUE( mixeddrink, type ) = CURR_GOLD;
+        GET_VALUE( mixeddrink, type ) = CURR_oro;
         mixeddrink->cost = 15;
     }
     else if ( ch->pcdata->tradelevel >= 15 ) {
-        GET_VALUE( mixeddrink, type ) = CURR_GOLD;
+        GET_VALUE( mixeddrink, type ) = CURR_oro;
         mixeddrink->cost = 25;
     }
 
@@ -7184,27 +7184,27 @@ void do_fell( CHAR_DATA *ch, char *argument )
     }
 
     if ( bag->craft1 >= 1000 && !str_cmp( arg1, "fir" ) ) {
-        send_to_char( "You cannot hold any more fir in your lumber sled.\r\n", ch );
+        send_to_char( "No puedes poner más fir in your lumber sled.\r\n", ch );
         return;
     }
     else if ( bag->craft2 >= 1000 && !str_cmp( arg1, "cedar" ) ) {
-        send_to_char( "You cannot hold any more cedar in your lumber sled.\r\n", ch );
+        send_to_char( "No puedes poner más cedar in your lumber sled.\r\n", ch );
         return;
     }
     else if ( bag->craft3 >= 1000 && !str_cmp( arg1, "pine" ) ) {
-        send_to_char( "You cannot hold any more pine in your lumber sled.\r\n", ch );
+        send_to_char( "No puedes poner más pine in your lumber sled.\r\n", ch );
         return;
     }
     else if ( bag->craft4 >= 1000 && !str_cmp( arg1, "walnut" ) ) {
-        send_to_char( "You cannot hold any more walnut in your lumber sled.\r\n", ch );
+        send_to_char( "No puedes poner más walnut in your lumber sled.\r\n", ch );
         return;
     }
     else if ( bag->craft5 >= 1000 && !str_cmp( arg1, "oak" ) ) {
-        send_to_char( "You cannot hold any more oak in your lumber sled.\r\n", ch );
+        send_to_char( "No puedes poner más oak in your lumber sled.\r\n", ch );
         return;
     }
     else if ( bag->craft6 >= 1000 && !str_cmp( arg1, "hickory" ) ) {
-        send_to_char( "You cannot hold any more hickory in your lumber sled.\r\n", ch );
+        send_to_char( "No puedes poner más hickory in your lumber sled.\r\n", ch );
         return;
     }
 
@@ -8770,7 +8770,7 @@ void do_mill( CHAR_DATA *ch, char *argument )
                     item->cost = 25;
                 }
                 if ( ch->pcdata->tradelevel >= 20 ) {
-                    GET_VALUE( item, type ) = CURR_SILVER;
+                    GET_VALUE( item, type ) = CURR_plata;
                     item->cost = 25;
                 }
             }
@@ -8792,7 +8792,7 @@ void do_mill( CHAR_DATA *ch, char *argument )
                         paf->modifier = 5;
                     else
                         paf->modifier = 3;
-                    GET_VALUE( item, type ) = CURR_SILVER;
+                    GET_VALUE( item, type ) = CURR_plata;
                     item->cost = 25;
                 }
                 else if ( ch->pcdata->tradelevel >= 15 ) {
@@ -8894,7 +8894,7 @@ void do_mill( CHAR_DATA *ch, char *argument )
                 obj_to_char( item, ch );
             }
 
-            GET_VALUE( item, type ) = CURR_SILVER;
+            GET_VALUE( item, type ) = CURR_plata;
 
             if ( IS_CLANNED( ch ) ) {
                 CLAN_DATA              *clan;
