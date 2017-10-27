@@ -16,7 +16,7 @@ $
 #SPELLLIMIT 0
 #WEATHERCELL 10 2
 
-#RESETMSG &cYou suddenly feel you are being watched by something.~
+#RESETMSG Sientes que algo te observa.~
 
 #FLAGS
 131072

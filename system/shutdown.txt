@@ -2614,3 +2614,15 @@
 [*****] <FILE: player/a/Arienn LINE: 587> [*****] FILE: player/a/Arienn LINE: 587
 [*****] <FILE: player/a/Arienn LINE: 587> [*****] FILE: player/a/Arienn LINE: 587
 [*****] <FILE: player/a/Arienn LINE: 587> [*****] FILE: player/a/Arienn LINE: 587
+[*****] <FILE: player/z/Zlorth LINE: 373> [*****] FILE: player/z/Zlorth LINE: 373
+[*****] <FILE: player/z/Zlorth LINE: 373> [*****] FILE: player/z/Zlorth LINE: 373
+[*****] <FILE: player/z/Zlorth LINE: 373> [*****] FILE: player/z/Zlorth LINE: 373
+[*****] <FILE: player/z/Zlorth LINE: 373> [*****] FILE: player/z/Zlorth LINE: 373
+[*****] <FILE: player/z/Zlorth LINE: 374> [*****] FILE: player/z/Zlorth LINE: 374
+[*****] <FILE: player/z/Zlorth LINE: 374> [*****] FILE: player/z/Zlorth LINE: 374
+[*****] <FILE: player/z/Zlorth LINE: 374> [*****] FILE: player/z/Zlorth LINE: 374
+[*****] <FILE: player/z/Zlorth LINE: 374> [*****] FILE: player/z/Zlorth LINE: 374
+[*****] <FILE: player/z/Zlorth LINE: 655> [*****] FILE: player/z/Zlorth LINE: 655
+[*****] <FILE: player/z/Zlorth LINE: 655> [*****] FILE: player/z/Zlorth LINE: 655
+[*****] <FILE: player/z/Zlorth LINE: 655> [*****] FILE: player/z/Zlorth LINE: 655
+[*****] <FILE: player/z/Zlorth LINE: 655> [*****] FILE: player/z/Zlorth LINE: 655

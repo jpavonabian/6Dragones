@@ -12,9 +12,9 @@ Level        108
 Firstlevel   -1
 Secondlevel  -1
 Thirdlevel   -1
-Played       1928850
-Room         43088
-HpManaMove   30000 30000 30000 30000 28719 30000
+Played       1936965
+Room         35543
+HpManaMove   29956 30000 30000 30000 19777 30000
 BaseHp       0 
 Blood        459 459
 Money         0 199794 8 63 42 -1
@@ -25,13 +25,13 @@ Thirdexp      0
 Height        993
 Weight        8436
 Act           536878920&-351266768
-AffectedBy    512&0&4194304
-Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales alianza multitud halcyon prohibida~
+AffectedBy    -2146958848&0&4194304
+Channels      chat ooc icc wartalk event music info ask answer swear flirt hint osay reunion Think muse comm auth warn build counciltalk avtalk 6d paleon dakar decir inmortales alianza multitud halcyon prohibida gritar chillar~
 Position      115
 Style         2
 Practice      1196
 SavingThrows  0 0 0 0 0
-Alignment     -12
+Alignment     110
 AppBlood      0
 Hitroll       0
 Damroll       0
@@ -42,6 +42,9 @@ Password      b380617b098aa3255255c678dc2e66e83d10294da277f4a2f94b4ebf1523b5ba~
 Title          El Señor de los Dragones~
 Lastip         37.187.117.151~
 RECAST          0
+Tradelevel          2
+Tradeclass          20
+Craftpoints          94
 Bio          Llego del Cielo Como Nubes de Tormenta
 Ya me Conocen y Por eso se Lamentan
 Soy Tan Temible Como la Leyenda Cuenta
@@ -54,12 +57,12 @@ Danos Hechizos de Rabia y Seremos Desolación.
 AuthedBy     Galor~
 Prompt       >~
 GetsDExp     0
-LDExpUpdate  1509094736
+LDExpUpdate  1509103533
 tmpcrawl 72
 extlevel 108
 tmpsecond -1
 tmpthird -1
-tmproom 42988
+tmproom 35543
 timezone 13
 Alias        inm~ inmortales~
 Textspeed          5
@@ -128,6 +131,7 @@ FoundArea       Shoreline~
 FoundArea       &Y6 Dragons Staff Tutorial~
 FoundArea       Durdun~
 FoundArea       Tierra salvage~
+FoundArea       Warlock Keep~
 Bamfin       $n aparece ante ti plegando sus poderosas alas~
 Bamfout      $n alza el vuelo desplegando sus enormes alas.~
 Restore_time 1435643619
@@ -141,7 +145,7 @@ Bardtimer    0
 Bardsn       0
 PKills       0
 PDeaths      0
-MKills       316
+MKills       317
 MDeaths      0
 IllegalPK    0
 AttrPerm     25 25 25 25 25 25 25
@@ -426,7 +430,7 @@ NNSkill       100 100 'conocer enemigo' 0 0
 NNSkill       100 100 'conocimientos de combate' 0 0
 NNSkill       100 100 'contenedor energetico' 0 0
 NNSkill       100 100 'contraataque' 0 0
-NNSkill       100 100 'contranbandear' 0 0
+NNSkill       100 100 'contrabandear' 0 0
 NNSkill       100 100 'control' 0 0
 NNSkill       100 100 'corcel' 0 0
 NNSkill       100 100 'courage' 0 0
@@ -490,7 +494,7 @@ NNSkill       100 100 'fingir muerte' 0 0
 NNSkill       100 100 'fisgar' 0 0
 NNSkill       100 100 'flaming whip' 0 0
 NNSkill       100 100 'flurry' 0 0
-NNSkill       0 100 'forjar' 0 0
+NNSkill       100 100 'forjar' 0 0
 NNSkill       100 100 'forma animal' 0 0
 NNSkill       100 100 'forma humana' 0 0
 NNSkill       100 100 'forzar cerraduras' 0 0
@@ -509,7 +513,7 @@ NNSkill       100 100 'harness mana' 0 0
 NNSkill       100 100 'headbutt' 0 0
 NNSkill       100 100 'herida infestada' 0 0
 NNSkill       100 100 'hervir cerebro' 0 0
-NNSkill       0 100 'hornear' 0 0
+NNSkill       100 100 'hornear' 0 0
 NNSkill       100 100 'hueso' 0 0
 NNSkill       100 100 'huesos de cristal' 0 0
 NNSkill       100 100 'incitar' 0 0
@@ -519,7 +523,7 @@ NNSkill       100 100 'injertar arma' 0 0
 NNSkill       100 100 'instrumentos de cuerda' 0 0
 NNSkill       100 100 'instrumentos de viento' 0 0
 NNSkill       100 100 'interpretar' 0 0
-NNSkill       0 100 'joya' 0 0
+NNSkill       100 100 'joya' 0 0
 NNSkill       100 100 'judo chop' 0 0
 NNSkill       100 100 'juzgar' 0 0
 NNSkill       100 100 'knifehand strike' 0 0
@@ -541,13 +545,13 @@ NNSkill       100 100 'manos sanadoras' 0 0
 NNSkill       100 100 'manufacture' 0 0
 NNSkill       100 100 'marca' 0 0
 NNSkill       100 100 'meditar' 0 0
-NNSkill       0 100 'mezclar' 0 0
+NNSkill       100 100 'mezclar' 0 0
 NNSkill       100 100 'miedo' 0 0
 NNSkill       100 100 'migraine field' 0 0
-NNSkill       0 100 'minar' 0 0
+NNSkill       100 100 'minar' 0 0
 NNSkill       100 100 'mistform' 0 0
 NNSkill       100 100 'mitigar' 0 0
-NNSkill       0 100 'moler' 0 0
+NNSkill       100 100 'moler' 0 0
 NNSkill       100 100 'montar' 0 0
 NNSkill       100 100 'morder' 0 0
 NNSkill       100 100 'mordisco triturador' 0 0
@@ -582,7 +586,7 @@ NNSkill       100 100 'pisar' 0 0
 NNSkill       100 100 'plan' 0 0
 NNSkill       100 100 'posesion de bestias' 0 0
 NNSkill       100 100 'preparar' 0 0
-NNSkill       0 100 'presa' 0 0
+NNSkill       100 100 'presa' 0 0
 NNSkill       100 100 'proteccion espectral' 0 0
 NNSkill       100 100 'proteccion espiritual' 0 0
 NNSkill       100 100 'punyetazo' 0 0
@@ -601,7 +605,7 @@ NNSkill       100 100 'refugiarse' 0 0
 NNSkill       100 100 'regenerar' 0 0
 NNSkill       100 100 'resistencia' 0 0
 NNSkill       100 100 'respirarfuego' 0 0
-NNSkill       0 100 'reunir' 0 0
+NNSkill       100 100 'reunir' 0 0
 NNSkill       100 100 'reves' 0 0
 NNSkill       100 100 'robar' 0 0
 NNSkill       100 100 'rodear' 0 0
@@ -623,9 +627,9 @@ NNSkill       100 100 'sustento' 0 0
 NNSkill       100 100 'swarm' 0 0
 NNSkill       100 100 'swat' 0 0
 NNSkill       100 100 'sylvan touch' 0 0
-NNSkill       0 100 'talar' 0 0
+NNSkill       100 100 'talar' 0 0
 NNSkill       100 100 'tambores' 0 0
-NNSkill       0 100 'tan' 0 0
+NNSkill       100 100 'tan' 0 0
 NNSkill       100 100 'telepatia' 0 0
 NNSkill       100 100 'tercer ataque' 0 0
 NNSkill       100 100 'tintar' 0 0
@@ -689,6 +693,9 @@ NNSong        100 100 'melodia profana' 0 0
 NNSong        100 100 'notas disonantes' 0 0
 NNSong        100 100 'ondas sonoras' 0 0
 NNSong        100 100 'sonido destructor' 0 0
+AffectDataL   'sumergirse' 108 604   0   0 -2147483648
+AffectDataL   'alas' 108 138   0   0 524288
+Killed       8101
 Killed       5110
 Killed       5122
 Killed       5122
@@ -701,19 +708,22 @@ Portalstonelag     0
 End
 
 #OBJECT
-Owner        Zlorth~
-ShortDescr   Zlorth's bone dagger~
-Vnum         30032
-Level        108
-Timer        51
-Currtype     1
-Color        5
+Vnum         11300
+Level        1
+Currtype     4
+Color        13
 Size   0
-Values       12 50 100 2 2 3 21
-AffectData   'acidmist' -1 10 18 0
-AffectData   'acidmist' -1 180 30 0
-AffectData   'acidmist' -1 6 19 0
-AffectData   'acidmist' -1 25 30 0
+Values       8 0 0 0 0 1 0
+End
+
+#OBJECT
+Vnum         16243
+Level        108
+Cost         6
+Currtype     4
+Color        1
+Craft1       33
+Size   0
 End
 
 #END

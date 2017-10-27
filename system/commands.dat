@@ -1878,6 +1878,15 @@ Log         0
 End
 
 #COMMAND
+Name        hablara~
+Code        do_talk_to_char
+Position    100
+Level       1
+CShow       0
+Log         0
+End
+
+#COMMAND
 Name        inventario~
 Code        do_inventory
 Position    100
@@ -4836,15 +4845,6 @@ Code        do_talents
 Position    100
 Level       1
 CShow       1
-Log         0
-End
-
-#COMMAND
-Name        talkto~
-Code        do_talk_to_char
-Position    100
-Level       1
-CShow       0
 Log         0
 End
 
