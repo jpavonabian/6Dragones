@@ -410,11 +410,11 @@ void learn_from_craft( CHAR_DATA *ch, int sn )
 
     save_char_obj( ch );
     ch->pcdata->craftpoints += gain;
-    ch_printf( ch, "&WYou receive %d crafting point%s.\r\n", gain, gain == 1 ? "" : "s" );
+    ch_printf( ch, "&WRecibes %d Puntos de fabricación%s.\r\n", gain, gain == 1 ? "" : "" );
 
     if ( ch->pcdata->craftpoints >= craft_level( ch, ch->pcdata->tradelevel + 1 ) ) {
         snprintf( buf, MSL,
-                  "%s has just achieved crafting level %d!\r\n",
+                  "¡%s ha subido al nivel %d de su clase de fabricación!\r\n",
                   ch->name, ++ch->pcdata->tradelevel );
         announce( buf );
 
